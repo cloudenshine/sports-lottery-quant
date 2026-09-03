@@ -1,0 +1,12 @@
+{
+  "name": "lottery-funnel",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Honest SSQ/DLT funnel selector with adversarial tests",
+  "scripts": {
+    "serve": "node serve.js",
+    "test": "node --test --test-reporter=spec test/adversarial.test.js test/prizes-and-budget.test.js test/ui-contract.test.js test/diversity.test.js test/timemachine-and-radar.test.js test/advanced-modules.test.js test/math-genius.test.js test/realtime-sync.test.js test/sports-team-form.test.js test/sports-jingcai.test.js test/sports-sfc.test.js test/sports-beidan.test.js test/sports-lancai.test.js test/sports-ui-contract.test.js",
+    "test:sports": "node --test --test-reporter=spec test/sports-*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage --test-coverage-lines=80 --test-coverage-functions=80 --test-coverage-branches=70 test/adversarial.test.js test/prizes-and-budget.test.js test/ui-contract.test.js test/diversity.test.js test/timemachine-and-radar.test.js test/advanced-modules.test.js test/math-genius.test.js test/realtime-sync.test.js test/sports-*.test.js"
+  }
+}

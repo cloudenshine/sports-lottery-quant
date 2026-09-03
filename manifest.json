@@ -1,0 +1,15 @@
+{
+  "name": "竞技彩票量化工作台",
+  "short_name": "竞技彩票",
+  "start_url": "./sports.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230284c7'/><text x='50' y='65' font-size='40' text-anchor='middle' fill='white'>⚽</text></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

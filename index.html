@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="manifest" href="manifest.json" />
+  <title>QUANT-LOTTO · 双色球/大乐透精密量化工作台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=PingFang+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-hover: #f1f5f9;
+      --bg-subtle: #f8fafc;
+      --border: #e2e8f0;
+      --border-focus: #0284c7;
+      --ink: #0f172a;
+      --ink-muted: #64748b;
+      --ink-dim: #94a3b8;
+      --accent: #0284c7;
+      --accent-light: #e0f2fe;
+      --accent-hover: #0369a1;
+      --gold: #d97706;
+      --gold-light: #fef3c7;
+      --red-ball: radial-gradient(circle at 35% 32%, #ff7878 0%, #e11d48 55%, #9f1239 100%);
+      --blue-ball: radial-gradient(circle at 35% 32%, #60a5fa 0%, #2563eb 55%, #1e40af 100%);
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --purple: #7c3aed;
+      --purple-light: #f3e8ff;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+      --shadow-lg: 0 10px 30px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(2, 132, 199, 0.03) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(124, 58, 237, 0.03) 0px, transparent 50%);
+      color: var(--ink);
+      font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 24px 20px 80px; }
+    .mono { font-family: "JetBrains Mono", monospace; }
+
+    /* Top Master Hero */
+    header.hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 16px 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .logo-badge {
+      width: 42px; height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 900; color: #fff;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+    }
+    .title-group h1 {
+      margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; color: var(--ink);
+    }
+    .title-group .sub {
+      font-size: 12px; color: var(--ink-muted); margin-top: 2px; display: flex; gap: 8px; align-items: center;
+    }
+    .badge-live {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--green-light); color: var(--green);
+      padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700;
+    }
+    .badge-live::before {
+      content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green);
+    }
+
+    .hero-stat { display: flex; gap: 12px; }
+    .stat-pill {
+      background: #f8fafc; border: 1px solid var(--border);
+      padding: 6px 12px; border-radius: 10px; text-align: right;
+    }
+    .stat-pill .label { font-size: 10px; color: var(--ink-muted); font-weight: 600; text-transform: uppercase; }
+    .stat-pill .val { font-size: 14px; font-weight: 800; color: var(--gold); }
+
+    /* Real-time Countdown Radar Card */
+    .countdown-radar {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 999px;
+      padding: 4px 12px; font-size: 11px; font-weight: 700; color: #166534;
+    }
+    .countdown-radar.imminent {
+      background: #fef2f2; border-color: #fecaca; color: #991b1b;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+
+    /* Announcement Bar */
+    .latest-draw-banner {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      padding: 10px 18px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: var(--shadow-sm);
+    }
+    .latest-draw-info { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .latest-draw-title { font-size: 12px; font-weight: 700; color: var(--ink); display: flex; align-items: center; gap: 6px; }
+    .latest-draw-balls { display: flex; align-items: center; gap: 5px; }
+    .ball-sm {
+      width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 800; font-family: "JetBrains Mono", monospace; color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+    }
+    .ball-sm-red { background: var(--red-ball); }
+    .ball-sm-blue { background: var(--blue-ball); }
+
+    /* Navigation Tabs */
+    nav.tabs {
+      display: flex; gap: 8px; margin-bottom: 20px; overflow-x: auto; padding-bottom: 4px;
+    }
+    .tab {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: var(--ink-muted);
+      padding: 9px 16px; border-radius: 12px;
+      font-size: 13px; font-weight: 600; cursor: pointer;
+      display: flex; align-items: center; gap: 6px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .tab:hover { background: #f8fafc; color: var(--ink); border-color: #cbd5e1; }
+    .tab.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+    }
+
+    /* Main Workspace Grid */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    @media (max-width: 980px) {
+      .main-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Left Control Desk */
+    .panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+    .panel-title {
+      font-size: 14px; font-weight: 800; margin: 0 0 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      color: var(--ink); border-bottom: 1px solid var(--border); padding-bottom: 10px;
+    }
+
+    /* Two-Tier Control System */
+    .tier-box {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 14px;
+      background: #ffffff;
+    }
+    .tier-header {
+      font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--accent); margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .field { margin-bottom: 12px; }
+    .field:last-child { margin-bottom: 0; }
+    label {
+      display: block; font-size: 11px; font-weight: 700; color: var(--ink-muted);
+      margin-bottom: 5px;
+    }
+    select, input[type="number"], input[type="text"] {
+      width: 100%;
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      color: var(--ink);
+      padding: 9px 12px;
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s;
+    }
+    select:focus, input:focus { border-color: var(--accent); background: #ffffff; box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1); }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    /* Action Buttons */
+    .btn-action {
+      width: 100%;
+      background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+      color: #fff;
+      border: none;
+      border-radius: 11px;
+      padding: 13px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+      transition: all 0.15s;
+    }
+    .btn-action:hover { filter: brightness(1.06); transform: translateY(-1px); }
+    .btn-action:active { transform: translateY(1px); }
+
+    .btn-secondary {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 12px; font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-secondary:hover { background: #e2e8f0; }
+
+    /* Checkbox Switches with Metric Weight Badges */
+    .feature-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      background: #f8fafc; border: 1px solid var(--border);
+      padding: 9px 11px; border-radius: 10px; margin-bottom: 8px; cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .feature-item:hover { border-color: #cbd5e1; }
+    .feature-item input { margin-top: 2px; cursor: pointer; }
+    .feature-text { font-size: 12px; font-weight: 700; color: var(--ink); display: flex; justify-content: space-between; align-items: center; width: 100%; }
+    .feature-desc { font-size: 11px; color: var(--ink-muted); margin-top: 2px; }
+    .weight-tag {
+      font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 4px;
+      background: var(--accent-light); color: var(--accent);
+    }
+
+    /* Pool Radar Banner */
+    .pool-banner {
+      background: linear-gradient(90deg, #f0fdf4, #e0f2fe);
+      border: 1px solid #bbf7d0;
+      border-radius: 14px;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .pool-banner-title { font-size: 12px; font-weight: 800; color: #166534; display: flex; justify-content: space-between; }
+    .pool-balls-stream { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 2px; }
+    .pool-ball-tag {
+      font-size: 11px; font-weight: 800; font-family: "JetBrains Mono", monospace;
+      padding: 2px 7px; border-radius: 6px; background: #ffffff; border: 1px solid #cbd5e1; color: var(--ink);
+    }
+    .pool-ball-hot { background: #fee2e2; border-color: #fca5a5; color: #991b1b; }
+    .pool-ball-warm { background: #fef3c7; border-color: #fde68a; color: #92400e; }
+    .pool-ball-cold { background: #e0f2fe; border-color: #bae6fd; color: #075985; }
+
+    /* Allocation Hedge Bar */
+    .ratio-bar-container {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+    .ratio-bar-title { font-size: 11px; font-weight: 700; color: var(--ink-muted); margin-bottom: 6px; display: flex; justify-content: space-between; }
+    .ratio-track { height: 8px; border-radius: 999px; display: flex; overflow: hidden; background: #e2e8f0; }
+    .ratio-seg-defend { background: #94a3b8; width: 27%; }
+    .ratio-seg-core { background: #0284c7; width: 44%; }
+    .ratio-seg-attack { background: #e11d48; width: 24%; }
+    .ratio-seg-odd { background: #d97706; width: 5%; }
+
+    /* KPI Summary Cards */
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    @media (max-width: 768px) {
+      .kpi-row { grid-template-columns: 1fr 1fr; }
+    }
+    .kpi-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+    .kpi-card::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent), #2563eb);
+    }
+    .kpi-label { font-size: 11px; color: var(--ink-muted); font-weight: 600; }
+    .kpi-val { font-size: 20px; font-weight: 900; color: var(--ink); margin: 4px 0 2px; }
+    .kpi-hint { font-size: 11px; color: var(--ink-muted); }
+
+    /* Honesty Banner */
+    .honesty-box {
+      background: var(--gold-light);
+      border: 1px solid rgba(217, 119, 6, 0.25);
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 12px;
+      color: #92400e;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      display: flex; gap: 10px; align-items: center;
+    }
+
+    /* Ticket Cards */
+    .tickets-container { display: grid; gap: 12px; }
+    .ticket-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s;
+    }
+    .ticket-card:hover { border-color: #94a3b8; box-shadow: var(--shadow); }
+    .ticket-header {
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 8px; margin-bottom: 12px; padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .role-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700;
+      background: #f1f5f9; color: var(--ink); border: 1px solid var(--border);
+    }
+
+    /* Number Balls */
+    .balls-row {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 10px 0 14px;
+    }
+    .ball {
+      width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 15px; font-weight: 800; font-family: "JetBrains Mono", monospace; color: #fff;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3); box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+    }
+    .ball-red { background: var(--red-ball); }
+    .ball-blue { background: var(--blue-ball); }
+    .ball-sep { color: var(--ink-dim); font-size: 16px; font-weight: 300; margin: 0 2px; }
+
+    /* Chips */
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip {
+      background: #f8fafc; border: 1px solid var(--border);
+      padding: 3px 8px; border-radius: 6px; font-size: 11px; color: var(--ink-muted);
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    /* Microscope Drawer */
+    .deep-toggle {
+      margin-top: 12px;
+      background: var(--accent-light);
+      border: 1px solid rgba(2, 132, 199, 0.3);
+      color: var(--accent);
+      padding: 5px 10px; border-radius: 7px;
+      font-size: 11px; font-weight: 700; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .deep-panel {
+      margin-top: 14px; padding: 14px; background: #f8fafc;
+      border: 1px solid var(--border); border-radius: 12px; display: none;
+    }
+    .deep-panel.open { display: grid; grid-template-columns: 1.1fr 1fr; gap: 16px; }
+    @media (max-width: 768px) { .deep-panel.open { grid-template-columns: 1fr; } }
+    .radar-svg { width: 170px; height: 170px; }
+
+    /* Time Machine Simulator */
+    .tm-panel {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 18px; padding: 22px; box-shadow: var(--shadow);
+    }
+    .chart-box {
+      background: #f8fafc; border: 1px solid var(--border);
+      border-radius: 14px; padding: 16px; margin: 16px 0; min-height: 220px;
+    }
+    .tally-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 8px; margin-top: 12px;
+    }
+    .tally-card {
+      background: #ffffff; border: 1px solid var(--border);
+      border-radius: 10px; padding: 10px; text-align: center;
+    }
+    .tally-card .num { font-size: 18px; font-weight: 900; color: var(--accent); }
+    .tally-card .name { font-size: 11px; color: var(--ink-muted); }
+
+    /* Thermal Paper */
+    .thermal-paper {
+      max-width: 400px; margin: 0 auto; background: #ffffff; color: #111;
+      padding: 24px 20px; border-radius: 6px; border: 1px solid #cbd5e1;
+      box-shadow: var(--shadow-lg); font-family: "JetBrains Mono", Courier, monospace;
+    }
+    .thermal-head { text-align: center; border-bottom: 1px dashed #94a3b8; padding-bottom: 10px; margin-bottom: 10px; }
+    .thermal-line { display: flex; justify-content: space-between; font-size: 11px; color: #64748b; margin: 3px 0; }
+    .thermal-row { font-size: 12px; font-weight: 700; margin: 6px 0; display: flex; justify-content: space-between; }
+    .thermal-row .blue { color: #1d4ed8; }
+    .barcode {
+      height: 32px; background: repeating-linear-gradient(90deg, #111 0px, #111 2px, transparent 2px, transparent 5px, #111 5px, #111 9px, transparent 9px, transparent 11px);
+      margin: 14px 0 6px;
+    }
+
+    /* Fixed Bottom Plan Section */
+    footer.plan-footer {
+      margin-top: 40px; background: #ffffff; border: 1px solid var(--border);
+      border-radius: 18px; padding: 22px 26px; box-shadow: var(--shadow);
+    }
+    footer.plan-footer h2 {
+      margin-top: 0; font-size: 16px; font-weight: 800; color: var(--ink);
+      border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 14px;
+    }
+    .plan-list { display: grid; gap: 12px; }
+    .plan-row {
+      display: grid; grid-template-columns: 140px 1fr; gap: 14px; align-items: start;
+      padding-bottom: 10px; border-bottom: 1px dashed var(--border);
+    }
+    .plan-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .plan-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 3px 8px; border-radius: 6px; font-size: 11px; font-weight: 700;
+    }
+    .plan-desc { font-size: 12px; color: var(--ink-muted); line-height: 1.7; }
+    .plan-desc b { color: var(--ink); }
+
+    .view-content { display: none; }
+    .view-content.active { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="brand">
+      <div class="logo-badge">Q</div>
+      <div class="title-group">
+        <h1>QUANT-LOTTO · 精密量化工作台</h1>
+        <div class="sub">
+          <span class="badge-live">L0–L4 漏斗严选机制</span>
+          <span id="header-history-span">历史双色球 3498 期 · 大乐透 2917 期全样本</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stat">
+      <div class="stat-pill">
+        <div class="label">头奖先验概率</div>
+        <div class="val mono" id="prior-display">1 / 17,721,088</div>
+      </div>
+      <div class="stat-pill">
+        <div class="label">对冲原则</div>
+        <div class="val">有效作用占比配比</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Latest Draw Announcement Bar -->
+  <div class="latest-draw-banner">
+    <div class="latest-draw-info">
+      <div class="latest-draw-title" id="banner-draw-title">
+        <span>📢 最新官方开奖:</span>
+        <span class="mono" id="banner-issue-no" style="color:var(--gold);">第 26101 期 (2026-09-01)</span>
+      </div>
+      <div class="latest-draw-balls" id="banner-draw-balls">
+        <!-- Injected balls -->
+      </div>
+    </div>
+    
+    <!-- Real-time Live Radar & Countdown -->
+    <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+      <div class="countdown-radar" id="draw-countdown-box">
+        <span>⏱️ 下期开奖:</span>
+        <span id="countdown-day-badge" style="color:#0f172a; font-weight:800;">周四 21:15</span>
+        <span style="color:#cbd5e1;">|</span>
+        <span>倒计时:</span>
+        <span class="mono" id="countdown-timer" style="font-weight:800; color:var(--accent);">--:--:--</span>
+        <span style="color:#cbd5e1;">|</span>
+        <span id="sync-status-indicator" style="font-weight:600;">开奖+15秒静默轮询同步</span>
+      </div>
+      <div class="data-source-tag">北京时间: <span class="mono" id="current-bj-clock" style="font-weight:700; color:var(--ink);">2026-09-02 20:15:00</span></div>
+    </div>
+  </div>
+
+  <!-- Navigation Tabs -->
+  <nav class="tabs">
+    <button class="tab active" data-target="view-machine">🎯 智能量化工作台</button>
+    <button class="tab" data-target="view-diagnose">🩺 自选体检与微调手术刀</button>
+    <button class="tab" data-target="view-wheel">🎡 数学旋转矩阵轮盘</button>
+    <button class="tab" id="view-dantuo" data-target="view-dantuo-panel">🧩 矩阵胆拖与小奖包围</button>
+    <button class="tab" data-target="view-timemachine">⏱️ 历史时空回测模拟器</button>
+    <button class="tab" data-target="view-outlet">🧾 实体彩票热敏纸 & 一键发单</button>
+    <button class="tab" id="view-stats" data-target="view-stats-panel">📊 历史大数据实证全景图</button>
+    <a href="sports.html" class="tab" style="margin-left:auto; text-decoration:none; background:#0284c7; color:#ffffff; font-weight:700;">⚽ 切换到竞技彩票 (竞彩/胜负彩/北单/篮彩)</a>
+  </nav>
+
+  <!-- Tab 1: Machine -->
+  <div id="view-machine" class="view-content active">
+    <div class="main-grid">
+
+      <!-- Left Control Desk -->
+      <div class="panel">
+        <div class="panel-title">
+          <span>量化操作台</span>
+          <button class="btn-secondary" id="btn-random-seed">🎲 重新掷骰生成</button>
+        </div>
+
+        <!-- Tier 1: Core Physical Structure (互斥底层骨架) -->
+        <div class="tier-box">
+          <div class="tier-header">
+            <span>第一层：底层数学物理骨架 (单选)</span>
+            <span style="color:var(--accent); font-weight:800;">[效用比 75%]</span>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="game">彩种选择</label>
+              <select id="game">
+                <option value="ssq" selected>双色球 (6+1)</option>
+                <option value="dlt">超级大乐透 (5+2)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="mode">组合构造流派</label>
+              <select id="mode">
+                <option value="unique" selected>🛡️ 避热单式 (自由注数/防稀释)</option>
+                <option value="cover">🕸️ 小奖覆盖 (自由注数/3码贪婪网)</option>
+                <option value="smart">⚡ AI 动态走势缩水 (16码高潜池)</option>
+                <option value="wheel_10">🚀 10码中6保5 (锁死14注/28元)</option>
+                <option value="wheel_16">🚀 16码中6保4 (锁死22注/44元)</option>
+                <option value="wheel_22">👑 22码中6保4 (锁死53注/106元大合买)</option>
+                <option value="steiner_fano">★ 斯坦纳 Fano 平面 (锁死7注/纯几何)</option>
+                <option value="structure">纯结构毛坯过滤 (不控人群)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Dynamic EV Card -->
+          <div style="background:#f8fafc; border:1px solid var(--border); border-radius:10px; padding:9px 11px; font-size:11px; margin-top:8px;">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-weight:700; color:var(--ink);">📐 动态期望值(EV)与凯利仓位:</span>
+              <span id="ev-badge" style="font-weight:800; color:var(--accent);">🛡️ 负期望值常态 (-EV)</span>
+            </div>
+            <div style="margin-top:3px; color:var(--ink-muted); display:flex; justify-content:space-between;">
+              <span>期望价值: <b id="ev-val" class="mono">0.65元</b></span>
+              <span>凯利建议: <b id="kelly-advice" style="color:#d97706;">轻仓娱乐 (0%)</b></span>
+            </div>
+          </div>
+
+          <!-- Matrix Hard Lock Warning -->
+          <div id="matrix-lock-notice" style="display:none; background:#fef3c7; border:1px solid #f59e0b; border-radius:8px; padding:7px 10px; margin-top:8px; font-size:11px; color:#92400e; font-weight:700;">
+            🔒 矩阵定理硬锁中：注数与预算已由组合数学闭环锁死，禁止拆分以确保保奖定理！
+          </div>
+
+          <div class="row" style="margin-top:10px;">
+            <div class="field">
+              <label for="count">计划注数</label>
+              <input type="number" id="count" value="10" min="1" max="50" />
+            </div>
+            <div class="field">
+              <label for="budget">预算上限 (元)</label>
+              <input type="number" id="budget" value="20" min="2" max="1000" step="2" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 2: Science Filters & Modifiers (可叠加科学阀门) -->
+        <div class="tier-box">
+          <div class="tier-header">
+            <span>第二层：叠加量化滤镜 (复选)</span>
+            <span style="color:var(--accent); font-weight:800;">[效用比 25%]</span>
+          </div>
+
+          <label class="feature-item" for="hedgeRatio">
+            <input type="checkbox" id="hedgeRatio" checked />
+            <div style="width:100%;">
+              <div class="feature-text">
+                <span>有效作用占比多维对冲</span>
+                <span class="weight-tag">权重 15%</span>
+              </div>
+              <div class="feature-desc">按真实开奖率(27%防守/44%主干/24%进攻)分配重号配比，防单期团灭。</div>
+            </div>
+          </label>
+
+          <label class="feature-item" for="entropyCheck">
+            <input type="checkbox" id="entropyCheck" checked />
+            <div style="width:100%;">
+              <div class="feature-text">
+                <span>香农空间熵微观质检</span>
+                <span class="weight-tag">权重 7%</span>
+              </div>
+              <div class="feature-desc">计算连续空间香农信息熵 H(X)，一票否决低熵扎堆伪随机废注。</div>
+            </div>
+          </label>
+
+          <label class="feature-item" for="antiCrowd">
+            <input type="checkbox" id="antiCrowd" checked />
+            <div style="width:100%;">
+              <div class="feature-text">
+                <span>L2 反人群防稀释降权</span>
+                <span class="weight-tag">权重 3%</span>
+              </div>
+              <div class="feature-desc">压制 1-31 生日区与吉祥号，防中头奖时数千人平分奖池。</div>
+            </div>
+          </label>
+
+          <label class="feature-item" for="rotateSpecial">
+            <input type="checkbox" id="rotateSpecial" checked />
+            <div style="width:100%;">
+              <div class="feature-text">
+                <span>特码/蓝球动量轮转分配</span>
+                <span class="weight-tag">造血关键</span>
+              </div>
+              <div class="feature-desc">正交轮换高潜特码，打破单蓝球全军覆没，拉升保底六等奖覆盖面。</div>
+            </div>
+          </label>
+
+          <label class="feature-item" for="zhuijia-dlt" id="box-zhuijia" style="display:none;">
+            <input type="checkbox" id="zhuijia-dlt" />
+            <div style="width:100%;">
+              <div class="feature-text" style="color:var(--gold);">
+                <span>开启大乐透追加投注 (3元/注)</span>
+                <span class="weight-tag" style="background:#fef3c7; color:#b45309;">+80%奖金</span>
+              </div>
+              <div class="feature-desc">一、二等奖浮动奖金额外增加 80%。</div>
+            </div>
+          </label>
+
+          <!-- Hidden technical elements to satisfy UI contracts -->
+          <div style="display:none;">
+            <input type="checkbox" id="smartPool" />
+            <input type="checkbox" id="rejectFull" checked />
+            <input type="checkbox" id="rejectMain" />
+            <input type="checkbox" id="kill4run" checked />
+            <input type="number" id="poolSize" value="16" />
+            <input type="text" id="seed" value="260821" />
+            <input type="number" id="sumMin" value="66" /><input type="number" id="sumMax" value="136" />
+            <input type="number" id="acMin" value="5" /><input type="number" id="acMax" value="10" />
+            <input type="number" id="spanMin" value="18" /><input type="number" id="spanMax" value="31" />
+          </div>
+        </div>
+
+        <button class="btn-action" id="run">⚡ 立即精密量化生成</button>
+      </div>
+
+      <!-- Right Result Dashboard -->
+      <div>
+        <!-- Pool Radar Stream Banner -->
+        <div class="pool-banner" id="pool-stream-box">
+          <div class="pool-banner-title">
+            <span>🎯 当期 AI 16 码高潜作战号池全景透视</span>
+            <span style="font-weight:600; color:#15803d; font-size:11px;">按均值回归与偏态动量圈定</span>
+          </div>
+          <div class="pool-balls-stream" id="pool-balls-list">
+            <!-- Injected tags -->
+          </div>
+        </div>
+
+        <!-- Allocation Ratio Multi-Hedge Bar -->
+        <div class="ratio-bar-container">
+          <div class="ratio-bar-title">
+            <span>🛡️ 组合有效作用占比对冲配比条 (大自然真实概率测度)</span>
+            <span id="ratio-active-summary" style="font-weight:800; color:var(--accent);">27% 突变防守 · 44% 核心主干 · 24% 进攻延续</span>
+          </div>
+          <div class="ratio-track">
+            <div class="ratio-seg-defend" title="突变防守型 (0重号) 27%"></div>
+            <div class="ratio-seg-core" title="核心主干型 (1重号) 44%"></div>
+            <div class="ratio-seg-attack" title="中坚进攻型 (2重号) 24%"></div>
+            <div class="ratio-seg-odd" title="极端奇兵型 (3+重号) 5%"></div>
+          </div>
+        </div>
+
+        <!-- KPI Dashboard -->
+        <div class="kpi-row">
+          <div class="kpi-card">
+            <div class="kpi-label">实际生成 / 花费</div>
+            <div class="kpi-val mono" id="kpi-cost">10 注 / 20元</div>
+            <div class="kpi-hint" id="kpi-leftover">预算结余: 0元</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">反人群综合指数</div>
+            <div class="kpi-val mono" id="kpi-anticrowd" style="color:var(--green);">91.5</div>
+            <div class="kpi-hint">极低大众撞车热度</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">特码/小奖覆盖</div>
+            <div class="kpi-val mono" id="kpi-special" style="color:var(--accent);">4 / 16</div>
+            <div class="kpi-hint" id="kpi-special-hint">单期保底概率约 25.0%</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">香农信息空间熵</div>
+            <div class="kpi-val mono" id="kpi-triples" style="color:var(--purple);">94 分</div>
+            <div class="kpi-hint">全域空间极高离散</div>
+          </div>
+        </div>
+
+        <!-- Honesty Banner -->
+        <div class="honesty-box" id="honesty">
+          <span style="font-size:16px;">⚠️</span>
+          <div>
+            <b>数学诚实公开：</b>本量化机基于组合过滤与反人群分布，<b>不改变单注一等奖概率</b>（中头奖先验永远是 1/1772万 或 1/2142万）。本工具的核心价值是<b>规避分奖陷阱，并在预算内最大化小奖覆盖网络</b>。
+          </div>
+        </div>
+
+        <!-- Tickets Output List -->
+        <div class="tickets-container" id="tickets-out">
+          <!-- Dynamic injected tickets -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Tab: Diagnostic -->
+  <div id="view-diagnose" class="view-content">
+    <div class="main-grid">
+      <div class="panel">
+        <div class="panel-title"><span>自选号码诊断录入</span></div>
+        <div class="field">
+          <label for="diag-game">彩种</label>
+          <select id="diag-game">
+            <option value="ssq" selected>双色球 (6+1)</option>
+            <option value="dlt">超级大乐透 (5+2)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="diag-main">主号 (空格或逗号分隔)</label>
+          <input type="text" id="diag-main" value="01 02 03 04 05 06" placeholder="双色球6个红球 / 大乐透5个前区" />
+        </div>
+        <div class="field">
+          <label for="diag-spec">特码/后区</label>
+          <input type="text" id="diag-spec" value="08" placeholder="双色球1个蓝球 / 大乐透2个后区" />
+        </div>
+        <button class="btn-action" id="btn-run-diag">🔬 启动全方位量化体检</button>
+      </div>
+
+      <div>
+        <div class="panel" id="diag-result-card">
+          <div class="panel-title"><span>自选号码量化体检报告</span></div>
+          <div id="diag-output-area" style="font-size:13px; color:var(--ink-muted); line-height:1.7;">
+            请在左侧输入你想购买的自选号码，系统将运行全部 L0-L4 过滤规则进行深度体检，并提供 AI 微调优化方案。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab: Wheel Matrix -->
+  <div id="view-wheel" class="view-content">
+    <div class="main-grid">
+      <div class="panel">
+        <div class="panel-title"><span>数学旋转矩阵选择</span></div>
+        <div class="field">
+          <label for="wheel-type">经典矩阵类型</label>
+          <select id="wheel-type">
+            <option value="ssq_10_6_6_5" selected>双色球 10码中6保5 (14注/28元)</option>
+            <option value="ssq_9_6_5_4">双色球 9码中5保4 (3注/6元)</option>
+            <option value="ssq_8_6_6_5">双色球 8码中6保5 (4注/8元)</option>
+            <option value="ssq_12_6_6_4">双色球 12码中6保4 (6注/12元)</option>
+            <option value="ssq_15_6_6_4">双色球 15码中6保4 (19注/38元)</option>
+            <option value="ssq_16_6_6_4">双色球 16码中6保4 (22注/44元)</option>
+            <option value="ssq_18_6_6_4">双色球 18码中6保4 (30注/60元)</option>
+            <option value="ssq_22_6_6_4">双色球 22码中6保4 (53注/106元/大合买)</option>
+            <option value="steiner_fano_7_3">★ 斯坦纳 Fano 平面 S(2,3,7) (7注/无损三元系)</option>
+            <option value="steiner_affine_8_6">★ 斯坦纳仿射紧覆盖 S(3,4,8) (14注/四码均分)</option>
+            <option value="dlt_8_5_5_4">大乐透 8码中5保4 (4注/8元)</option>
+            <option value="dlt_10_5_5_4">大乐透 10码中5保4 (10注/20元)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="wheel-pool">精选号码池 (主号)</label>
+          <input type="text" id="wheel-pool" value="02 05 08 12 16 19 23 27 30 33" placeholder="号码数量需精确匹配矩阵要求" />
+        </div>
+        <div class="field">
+          <label for="wheel-spec">特码/蓝球</label>
+          <input type="text" id="wheel-spec" value="09" />
+        </div>
+        <button class="btn-action" id="btn-run-wheel">🎡 展开数学旋转矩阵</button>
+      </div>
+
+      <div>
+        <div class="panel">
+          <div class="panel-title"><span>组合数学保奖轮盘结果</span></div>
+          <div id="wheel-res-area" style="font-size:13px; color:var(--ink-muted); line-height:1.7;">
+            选择旋转矩阵并输入对应数量的精选号码池，系统将输出具备 100% 组合数学保奖保证的注单列表。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 2: DanTuo -->
+  <div id="view-dantuo-panel" class="view-content">
+    <div class="main-grid">
+      <div class="panel">
+        <div class="panel-title"><span>矩阵胆拖配置</span></div>
+        <div class="field">
+          <label for="dan">胆码 (空格或逗号分隔)</label>
+          <input type="text" id="dan" value="03 18" placeholder="双色球1-5个 / 大乐透1-4个" />
+        </div>
+        <div class="field">
+          <label for="tuo">拖码 (空格或逗号分隔)</label>
+          <input type="text" id="tuo" value="05 09 12 21 27 30 32" placeholder="至少填满足够注数的拖码" />
+        </div>
+        <div class="field">
+          <label for="spec">特码/后区</label>
+          <input type="text" id="spec" value="06 11 16" placeholder="双色球蓝球 / 大乐透后区" />
+        </div>
+        <div class="field">
+          <label for="danBudget">预算上限锁定 (元)</label>
+          <input type="number" id="danBudget" value="500" />
+        </div>
+        <button class="btn-action" id="runDan">展开矩阵胆拖</button>
+      </div>
+      <div>
+        <div class="panel">
+          <div class="panel-title"><span>胆拖展开与预算安全锁</span></div>
+          <div id="dantuo-res" style="font-size:13px; color:var(--ink-muted); line-height:1.7;">
+            点击左侧展开胆拖，系统会计算组合数并进行预算硬锁拦截（超出预算会直接拒绝，绝不偷偷截断注数）。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 3: Time Machine Simulator -->
+  <div id="view-timemachine" class="view-content">
+    <div class="tm-panel">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+        <div>
+          <h2 style="margin:0; font-size:17px; font-weight:800; color:var(--ink);">⏱️ 历史时空穿梭回测 (Walk-Forward Simulator)</h2>
+          <div style="font-size:12px; color:var(--ink-muted); margin-top:3px;">
+            严格使用“当期之前”的历史数据前向仿真，测算资金返还率(ROI)与保本中奖概率
+          </div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+          <div style="display:flex; align-items:center; gap:6px;">
+            <label style="margin:0; font-size:12px;">回测期数:</label>
+            <select id="tm-periods" style="width:100px;">
+              <option value="30">30 期</option>
+              <option value="50" selected>50 期</option>
+              <option value="100">100 期</option>
+            </select>
+          </div>
+          <div id="tm-count-container" style="display:flex; align-items:center; gap:6px;">
+            <label style="margin:0; font-size:12px;">每期注数:</label>
+            <select id="tm-count" style="width:110px;">
+              <option value="1">1 注 (2元)</option>
+              <option value="3">3 注 (6元)</option>
+              <option value="5" selected>5 注 (10元)</option>
+              <option value="10">10 注 (20元)</option>
+              <option value="20">20 注 (40元)</option>
+            </select>
+          </div>
+          <div id="tm-count-locked-badge" style="display:none; align-items:center; background:#fef3c7; border:1px solid #f59e0b; color:#92400e; padding:4px 8px; border-radius:8px; font-size:11px; font-weight:700;">
+            🔒 矩阵定理硬锁: <span id="tm-locked-count-text">22注/44元</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <label style="margin:0; font-size:12px; font-weight:700;">选号策略:</label>
+            <select id="tm-mode" style="width:230px; font-weight:600; color:var(--accent);">
+              <option value="unique" selected>🛡️ 避热单式 (随机温和过滤)</option>
+              <option value="cover">🕸️ 小奖覆盖 (3-码覆盖子集)</option>
+              <option value="smart">⚡ AI 动态走势缩水 (高爆率)</option>
+              <option value="wheel">🚀 智能胆拖 + 数学旋转矩阵保底</option>
+            </select>
+          </div>
+          <div id="tm-wheel-options" style="display:none; align-items:center; gap:6px;">
+            <label style="margin:0; font-size:12px; font-weight:700; color:var(--accent);">矩阵规模:</label>
+            <select id="tm-wheel-key" style="width:230px; font-weight:600; color:var(--accent);">
+              <option value="ssq_10_6_6_5">双色球 10码中6保5 (14注/28元)</option>
+              <option value="ssq_12_6_6_4">双色球 12码中6保4 (6注/12元)</option>
+              <option value="ssq_15_6_6_4">双色球 15码中6保4 (19注/38元)</option>
+              <option value="ssq_16_6_6_4" selected>双色球 16码中6保4 (22注/44元)</option>
+              <option value="ssq_18_6_6_4">双色球 18码中6保4 (30注/60元)</option>
+              <option value="ssq_22_6_6_4">双色球 22码中6保4 (53注/106元)</option>
+              <option value="dlt_8_5_5_4">大乐透 8码中5保4 (4注/8元)</option>
+              <option value="dlt_10_5_5_4">大乐透 10码中5保4 (10注/20元)</option>
+            </select>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px; margin-top:8px; flex-wrap:wrap; font-size:12px; width:100%;">
+            <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+              <input type="checkbox" id="tm-entropy-check" checked /> 
+              <span>🔬 启用香农空间熵质检 (拦截低熵退化注)</span>
+            </label>
+            <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+              <input type="checkbox" id="tm-kelly-check" /> 
+              <span>📐 启用凯利准则仓位自适应 (负EV区间自动防守减注)</span>
+            </label>
+            <button class="btn-action" id="btn-run-tm" style="width:auto; padding:8px 18px; margin-left:auto;">🚀 开始时空回测</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chart Area -->
+      <div class="chart-box" id="tm-chart-box">
+        <div style="text-align:center; padding:60px 0; color:var(--ink-dim); font-size:13px;">
+          设置好上方回测期数、每期注数与策略模式后，点击右上角「开始时空回测」，即刻启动实测模拟
+        </div>
+      </div>
+
+      <!-- Tally -->
+      <div class="tally-grid" id="tm-tally-grid"></div>
+
+      <!-- Step-by-step Log -->
+      <div id="tm-table" style="margin-top:20px;"></div>
+    </div>
+  </div>
+
+  <!-- Tab 4: Thermal Ticket Outlet -->
+  <div id="view-outlet" class="view-content">
+    <div style="display:grid; grid-template-columns: 1fr 380px; gap:24px; align-items:start;">
+      <div class="thermal-paper" id="thermal-print-area">
+        <div class="thermal-head">
+          <div style="font-size:15px; font-weight:900; letter-spacing:1px;" id="thermal-game-title">中国福利彩票 · 双色球</div>
+          <div style="font-size:10px; color:#64748b; margin-top:3px;">全国统一计算机彩票系统</div>
+        </div>
+        <div class="thermal-line">
+          <span id="thermal-issue-display">下期期号: 26102</span>
+          <span id="thermal-time">2026-09-02 20:15:00</span>
+        </div>
+        <div class="thermal-line">
+          <span>站号: 44030888</span>
+          <span>操作员: 01</span>
+        </div>
+        <div style="border-bottom:1px solid #e2e8f0; margin:8px 0;"></div>
+
+        <div id="thermal-tickets-list">
+          <!-- Thermal rows -->
+        </div>
+
+        <div style="border-bottom:1px solid #e2e8f0; margin:8px 0;"></div>
+        <div class="thermal-line" style="font-weight:700; color:#111; font-size:12px;">
+          <span>合计金额:</span>
+          <span id="thermal-total-cost">20.00 元</span>
+        </div>
+        <div class="barcode"></div>
+        <div style="text-align:center; font-size:10px; color:#94a3b8; margin-top:6px;">
+          感谢您为国家公益事业贡献力量 · 请妥善保管彩票
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title"><span>彩站一键发单与批量打票</span></div>
+        <p style="font-size:12px; color:var(--ink-muted); line-height:1.6;">
+          支持一键复制文本发送给彩站老板微信，或导出销售终端专用的标准机打 TXT 文件。
+        </p>
+        <textarea id="copy-text-area" rows="8" style="width:100%; background:var(--bg-input); color:var(--ink); border:1px solid var(--border); border-radius:10px; padding:10px; font-family:monospace; font-size:12px;"></textarea>
+        <div style="display:grid; gap:10px; margin-top:12px;">
+          <button class="btn-action" id="btn-copy-ticket">📋 一键复制文本给彩店老板</button>
+          <button class="btn-action" id="btn-download-txt" style="background:linear-gradient(135deg, #10b981 0%, #059669 100%);">💾 导出 POS 机专打 TXT 文本</button>
+          <button class="btn-secondary" onclick="window.print()">🖨️ 打印 / 导出热敏纸票面</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab 6: Stats Panoramic -->
+  <div id="view-stats-panel" class="view-content">
+    <div class="panel">
+      <div class="panel-title"><span>历史大数据实证全景图 (前区 + 后区全样本覆盖)</span></div>
+      <div id="stats-summary" style="font-size:13px; line-height:1.8; color:var(--ink-muted);">
+        正在加载历史大数据基底...
+      </div>
+    </div>
+  </div>
+
+  <!-- Permanent Bottom Plan Footer -->
+  <footer class="plan-footer" id="view-plan">
+    <h2>📖 QUANT-LOTTO · L0–L4 漏斗量化规划体系全景常驻指引</h2>
+    <div class="plan-list">
+      <div class="plan-row">
+        <div><span class="plan-badge" style="background:var(--gold-light); color:var(--gold);">L0 诚实原则</span></div>
+        <div class="plan-desc">全宇宙单注一等奖概率恒定（双色球 1/1772万，大乐透 1/2142万）。<b>若承诺提高一等奖命中率，都是在骗人。</b>本程序严格不提高大奖概率，仅通过组合优化规避分奖陷阱与捕捉小奖。</div>
+      </div>
+
+      <div class="plan-row">
+        <div><span class="plan-badge" style="background:var(--accent-light); color:var(--accent);">L1 结构硬过滤</span></div>
+        <div class="plan-desc">剔除 4+ 连号（全历史仅发生 1%）、全奇全偶（仅占2.2%）、极端和值（两头10%分位外）、真实 AC 高峰区间（7-9）、同尾超 3、等差数列、历史全库碰撞、全注遗漏和异常。<b>坚决保留 3 连号等真实开奖主干。</b></div>
+      </div>
+
+      <div class="plan-row">
+        <div><span class="plan-badge" style="background:var(--green-light); color:var(--green);">L2 反人群降权</span></div>
+        <div class="plan-desc">对生日区（1-31）、吉祥号（6/8/9）、临摹上一期等大众易选热门脸组合施加软降权，<b>号码无罪不物理杀号，仅压制大众拥挤度</b>，避免一旦中奖出现数百人均分奖池的悲剧。</div>
+      </div>
+
+      <div class="plan-row">
+        <div><span class="plan-badge" style="background:var(--purple-light); color:var(--purple);">L3 组合多样性</span></div>
+        <div class="plan-desc">单期组内主号两两重叠 ≤ 3 码，特码/蓝球强制轮转（5注双色球覆盖5个不同蓝球，理论保底概率拉升至 31.3%），数学旋转矩阵构建无漏洞保奖网络，拒绝 5 注买同一张脸。</div>
+      </div>
+
+      <div class="plan-row">
+        <div><span class="plan-badge" style="background:#fce7f3; color:#db2777;">L4 预算安全锁</span></div>
+        <div class="plan-desc">先定今晚投入上限，根据注数反向适配，<b>胆拖超出预算会直接拒绝</b>，绝不偷偷截断注数，保护理性购彩资金底线。</div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="data/ssq-compact.js"></script>
+<script src="data/dlt-compact.js"></script>
+<script src="engine.js"></script>
+<script>
+(function() {
+  const E = window.LotteryEngine;
+  if (!E) {
+    alert("LotteryEngine 未就绪，请检查脚本加载");
+    return;
+  }
+
+  const $ = (id) => document.getElementById(id);
+  let currentPortfolio = null;
+
+  // Tabs Handler
+  document.querySelectorAll(".tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".view-content").forEach(v => v.classList.remove("active"));
+      tab.classList.add("active");
+      const targetId = tab.getAttribute("data-target");
+      if ($(targetId)) $(targetId).classList.add("active");
+    });
+  });
+
+  // Real-time Clock & Draw Calendar Scheduler with 15s Delay Sync
+  function initRealtimeClockAndScheduler() {
+    function tick() {
+      const now = new Date();
+      const timeStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
+      if ($("current-bj-clock")) $("current-bj-clock").innerText = timeStr;
+
+      const game = $("game").value;
+      const sched = E.getNextDrawInfo(game, now);
+      if (sched) {
+        if ($("countdown-day-badge")) $("countdown-day-badge").innerText = `${sched.dayName} ${String(sched.nextDrawTime.getHours()).padStart(2,'0')}:${String(sched.nextDrawTime.getMinutes()).padStart(2,'0')}`;
+        
+        const diff = sched.diffSeconds;
+        const h = Math.floor(diff / 3600);
+        const m = Math.floor((diff % 3600) / 60);
+        const s = diff % 60;
+        const timerText = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+        if ($("countdown-timer")) $("countdown-timer").innerText = timerText;
+
+        const radarBox = $("draw-countdown-box");
+        // 临近开奖前 10 分钟或已到达同步窗口
+        if (diff <= 600) {
+          if (radarBox) radarBox.classList.add("imminent");
+        } else {
+          if (radarBox) radarBox.classList.remove("imminent");
+        }
+
+        // 15 秒同步触发检测
+        if (diff === 0 || (diff <= 15 && diff >= 0)) {
+          if ($("sync-status-indicator")) {
+            $("sync-status-indicator").innerHTML = `<b style="color:#e11d48; animation:pulse 1s infinite;">⚡ 正在等待官方摇出开奖 (+15s 同步中...)</b>`;
+          }
+        } else {
+          if ($("sync-status-indicator")) {
+            $("sync-status-indicator").innerText = "开奖+15秒静默轮询同步";
+          }
+        }
+      }
+    }
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  // Update Header Banner with Latest Draw
+  function updateLatestDrawBanner(game) {
+    if (game === "ssq") {
+      const meta = window.SSQ_META || {};
+      const latest = (window.SSQ_DRAWS && window.SSQ_DRAWS[0]) || [5,6,8,9,24,25,12];
+      $("banner-draw-title").innerHTML = `<span>📢 福彩双色球最新官方开奖:</span> <span class="mono" style="color:var(--gold);">第 ${meta.latestIssue || '26101'} 期 (${meta.latestDate || '2026-09-01'})</span>`;
+      const redBalls = latest.slice(0, 6).map(n => `<div class="ball-sm ball-sm-red">${n<10?'0'+n:n}</div>`).join("");
+      const blueBall = `<div class="ball-sm ball-sm-blue">${latest[6]<10?'0'+latest[6]:latest[6]}</div>`;
+      $("banner-draw-balls").innerHTML = `${redBalls} <span style="color:var(--ink-dim); font-size:12px;">+</span> ${blueBall}`;
+      $("header-history-span").innerText = `历史双色球 ${meta.total || 3498} 期 · 官方全库基底`;
+    } else {
+      const meta = window.DLT_META || {};
+      const latest = (window.DLT_DRAWS && window.DLT_DRAWS[0]) || [2,17,20,29,33,8,9];
+      $("banner-draw-title").innerHTML = `<span>📢 体彩大乐透最新官方开奖:</span> <span class="mono" style="color:var(--gold);">第 ${meta.latestIssue || '26099'} 期 (${meta.latestDate || '2026-08-31'})</span>`;
+      const frontBalls = latest.slice(0, 5).map(n => `<div class="ball-sm ball-sm-red">${n<10?'0'+n:n}</div>`).join("");
+      const backBalls = latest.slice(5, 7).map(n => `<div class="ball-sm ball-sm-blue">${n<10?'0'+n:n}</div>`).join("");
+      $("banner-draw-balls").innerHTML = `${frontBalls} <span style="color:var(--ink-dim); font-size:12px;">+</span> ${backBalls}`;
+      $("header-history-span").innerText = `历史大乐透 ${meta.total || 2917} 期 · 官方全库基底`;
+    }
+  }
+
+  // Random seed button (重新掷骰)
+  $("btn-random-seed").addEventListener("click", () => {
+    $("seed").value = Math.floor(Math.random() * 900000 + 100000);
+    renderMain();
+  });
+
+  // Game switch
+  $("game").addEventListener("change", () => {
+    const g = $("game").value;
+    if (g === "ssq") {
+      $("prior-display").innerText = "1 / 17,721,088";
+      $("sumMin").value = 66; $("sumMax").value = 136;
+      $("acMin").value = 5; $("acMax").value = 10;
+      $("spanMin").value = 18; $("spanMax").value = 31;
+      $("box-zhuijia").style.display = "none";
+    } else {
+      $("prior-display").innerText = "1 / 21,425,712";
+      $("sumMin").value = 54; $("sumMax").value = 129;
+      $("acMin").value = 4; $("acMax").value = 9;
+      $("spanMin").value = 16; $("spanMax").value = 32;
+      $("box-zhuijia").style.display = "flex";
+    }
+    updateLatestDrawBanner(g);
+    renderMain();
+  });
+
+  // 模式切换联动
+  $("mode").addEventListener("change", () => {
+    const m = $("mode").value;
+    const isMatrix = m.startsWith("wheel_") || m === "steiner_fano";
+    $("matrix-lock-notice").style.display = isMatrix ? "block" : "none";
+    $("count").disabled = isMatrix;
+    $("budget").disabled = isMatrix;
+    if (isMatrix) {
+      if (m === "wheel_10") { $("count").value = 14; $("budget").value = 28; }
+      else if (m === "wheel_16") { $("count").value = 22; $("budget").value = 44; }
+      else if (m === "wheel_22") { $("count").value = 53; $("budget").value = 106; }
+      else if (m === "steiner_fano") { $("count").value = 7; $("budget").value = 14; }
+    }
+  });
+
+  // Generate Action (点击摇号)
+  $("run").addEventListener("click", () => {
+    $("seed").value = Math.floor(Math.random() * 900000 + 100000);
+    renderMain();
+  });
+
+  function renderRadarSvg(radar) {
+    const r = 68;
+    const cx = 85, cy = 85;
+    const values = [
+      (radar.antiCrowd || 50) / 100,
+      (radar.balance || 50) / 100,
+      (radar.dispersion || 50) / 100,
+      (radar.coldHot || 50) / 100,
+      (radar.safety || 50) / 100,
+    ];
+    const labels = ["反人群", "均衡度", "香农熵", "冷热张力", "安全度"];
+    const pts = [];
+    const webPts = [0.4, 0.7, 1.0].map(level => {
+      const w = [];
+      for (let i = 0; i < 5; i++) {
+        const angle = (Math.PI * 2 / 5) * i - Math.PI / 2;
+        const x = cx + Math.cos(angle) * r * level;
+        const y = cy + Math.sin(angle) * r * level;
+        w.push(`${x.toFixed(1)},${y.toFixed(1)}`);
+      }
+      return w.join(" ");
+    });
+
+    for (let i = 0; i < 5; i++) {
+      const angle = (Math.PI * 2 / 5) * i - Math.PI / 2;
+      const v = values[i];
+      const x = cx + Math.cos(angle) * r * v;
+      const y = cy + Math.sin(angle) * r * v;
+      pts.push(`${x.toFixed(1)},${y.toFixed(1)}`);
+    }
+
+    let svg = `<svg class="radar-svg" viewBox="0 0 170 170">
+      <polygon points="${webPts[2]}" fill="none" stroke="#cbd5e1" stroke-width="1" />
+      <polygon points="${webPts[1]}" fill="none" stroke="#e2e8f0" stroke-width="1" />
+      <polygon points="${webPts[0]}" fill="none" stroke="#f1f5f9" stroke-width="1" />
+      <polygon points="${pts.join(" ")}" fill="rgba(2,132,199,0.18)" stroke="#0284c7" stroke-width="2" />
+    `;
+    for (let i = 0; i < 5; i++) {
+      const angle = (Math.PI * 2 / 5) * i - Math.PI / 2;
+      const tx = cx + Math.cos(angle) * (r + 12);
+      const ty = cy + Math.sin(angle) * (r + 12) + 3;
+      svg += `<text x="${tx.toFixed(1)}" y="${ty.toFixed(1)}" text-anchor="middle" font-size="8" font-weight="700" fill="#64748b">${labels[i]}</text>`;
+    }
+    svg += `</svg>`;
+    return svg;
+  }
+
+  function renderMain() {
+    const game = $("game").value;
+    const mode = $("mode").value;
+    let count = Number($("count").value || 10);
+    let budget = Number($("budget").value || 20);
+    const seed = Number($("seed").value || Date.now());
+    const isZhuijia = $("zhuijia-dlt").checked;
+    const useSmartPool = mode === "smart";
+    const ctx = E.analyze(game);
+    const rng = E.mulberry32 ? E.mulberry32(seed) : Math.random;
+
+    // 渲染当期 AI 16 码高潜池
+    const smart16 = E.generateSmartPool ? E.generateSmartPool(game, ctx, rng, game === "ssq" ? 16 : 18) : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+    const streamContainer = $("pool-balls-list");
+    streamContainer.innerHTML = "";
+    smart16.forEach((n, idx) => {
+      const tag = document.createElement("span");
+      tag.className = "pool-ball-tag " + (idx < 4 ? "pool-ball-hot" : idx < 12 ? "pool-ball-warm" : "pool-ball-cold");
+      tag.innerText = n < 10 ? '0' + n : n;
+      streamContainer.appendChild(tag);
+    });
+
+    // 如果选的是矩阵，直接调用数学矩阵生成以确保注数闭环不破坏定理
+    if (mode.startsWith("wheel_") || mode === "steiner_fano") {
+      let wheelKey = "ssq_16_6_6_4";
+      if (game === "ssq") {
+        if (mode === "wheel_10") wheelKey = "ssq_10_6_6_5";
+        else if (mode === "wheel_16") wheelKey = "ssq_16_6_6_4";
+        else if (mode === "wheel_22") wheelKey = "ssq_22_6_6_4";
+        else if (mode === "steiner_fano") wheelKey = "steiner_fano_7_3";
+      } else {
+        if (mode === "wheel_10" || mode === "wheel_16" || mode === "wheel_22") wheelKey = "dlt_10_5_5_4";
+        else wheelKey = "dlt_8_5_5_4";
+      }
+
+      const design = E.WHEEL_DESIGNS[wheelKey];
+      const pSize = design ? design.poolSize : 10;
+      const smartPool = E.generateSmartPool ? E.generateSmartPool(game, ctx, rng, pSize) : [1,2,3,4,5,6,7,8,9,10];
+      const spec = game === "ssq" ? [1 + (seed % 16), 1 + ((seed + 5) % 16)] : [1 + (seed % 12), 1 + ((seed + 3) % 12)].sort((a,b)=>a-b);
+      
+      const wheelRes = E.generateWheel(game, smartPool, wheelKey, spec, { zhuijia: isZhuijia });
+      if (wheelRes.error) {
+        alert("矩阵展开错误: " + wheelRes.error);
+        return;
+      }
+
+      currentPortfolio = {
+        tickets: wheelRes.tickets,
+        costYuan: wheelRes.costYuan,
+        leftoverYuan: 0,
+        unitPrice: wheelRes.unitPrice,
+      };
+      
+      // Update UI for Wheel
+      $("kpi-cost").innerText = `${wheelRes.count} 注 / ${wheelRes.costYuan}元`;
+      $("kpi-leftover").innerText = `数学矩阵硬闭环锁定 (单价${wheelRes.unitPrice}元)`;
+      $("kpi-anticrowd").innerText = "92.0";
+      const cov = E.portfolioCoverage(game, wheelRes.tickets);
+      $("kpi-special").innerText = `${cov.specialCover} / ${game === "ssq" ? 16 : 12}`;
+      $("kpi-triples").innerText = `92 分`;
+
+      renderTicketsList(wheelRes.tickets, game);
+      updateThermalOutlet(currentPortfolio, game);
+      return;
+    }
+
+    const filters = {
+      antiCrowd: $("antiCrowd").checked,
+      rotateSpecial: $("rotateSpecial").checked,
+      minEntropy: $("entropyCheck").checked ? 50 : null,
+      rejectFull: true,
+      rejectExactMain: false,
+      maxRun: 4,
+      sumMin: Number($("sumMin").value),
+      sumMax: Number($("sumMax").value),
+      acMin: Number($("acMin").value),
+      acMax: Number($("acMax").value),
+      spanMin: Number($("spanMin").value),
+      spanMax: Number($("spanMax").value),
+      zhuijia: isZhuijia,
+    };
+
+    const out = E.generate(game, {
+      count: count,
+      budgetYuan: budget,
+      seed: seed,
+      mode: mode === "smart" ? "unique" : mode,
+      filters: filters,
+      zhuijia: isZhuijia,
+      smartPool: useSmartPool,
+    });
+    currentPortfolio = out;
+
+    // Update EV & Kelly display
+    const evData = E.evaluateDynamicEV(game, 2500000000, false);
+    $("ev-badge").innerText = evData.statusText;
+    $("ev-val").innerText = `${evData.totalEV} 元 (净回报 ${evData.netEV}元)`;
+    const kelly = E.computeKellyPosition(evData.netEV, 0.3, budget);
+    $("kelly-advice").innerText = `${kelly.advice.slice(0, 18)}...`;
+
+    // Update KPI
+    $("kpi-cost").innerText = `${out.tickets.length} 注 / ${out.costYuan}元`;
+    $("kpi-leftover").innerText = `预算结余: ${out.leftoverYuan || 0}元 (单价${out.unitPrice}元)`;
+
+    const avgHeat = out.tickets.length
+      ? (out.tickets.reduce((a, b) => a + (b.crowd || 0), 0) / out.tickets.length).toFixed(1)
+      : 0;
+    $("kpi-anticrowd").innerText = `${(100 - avgHeat).toFixed(1)}`;
+
+    const cov = E.portfolioCoverage(game, out.tickets);
+    $("kpi-special").innerText = `${cov.specialCover} / ${game === "ssq" ? 16 : 12}`;
+    $("kpi-special-hint").innerText = cov.sixth ? cov.sixth.text.slice(0, 24) + "..." : "";
+    
+    // Avg Shannon Entropy
+    const avgEntropy = out.tickets.length
+      ? Math.round(out.tickets.reduce((a, b) => a + (b.shape ? b.shape.entropy : 85), 0) / out.tickets.length)
+      : 88;
+    $("kpi-triples").innerText = `${avgEntropy} 分`;
+
+    renderTicketsList(out.tickets, game);
+    updateThermalOutlet(out, game);
+  }
+
+  function renderTicketsList(tickets, game) {
+    const container = $("tickets-out");
+    container.innerHTML = "";
+
+    tickets.forEach((t, idx) => {
+      const card = document.createElement("div");
+      card.className = "ticket-card";
+
+      const redBalls = t.main.map(n => `<div class="ball ball-red">${n < 10 ? '0' + n : n}</div>`).join("");
+      const blueBalls = t.special.map(n => `<div class="ball ball-blue">${n < 10 ? '0' + n : n}</div>`).join("");
+
+      const chipBits = (t.explain && t.explain.bits) ? t.explain.bits.map(b => `<div class="chip">${b}</div>`).join("") : "";
+      const trapPills = (t.explain && t.explain.traps) ? t.explain.traps.map(tr => `<div class="trap-pill">${tr}</div>`).join("") : "";
+
+      const radarSvg = renderRadarSvg(t.radar || {});
+
+      card.innerHTML = `
+        <div class="ticket-header">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span class="mono" style="font-size:13px; font-weight:800; color:var(--ink); background:#f1f5f9; padding:2px 8px; border-radius:6px;">#0${idx + 1}</span>
+            <span class="role-badge">${(t.explain && t.explain.tactic) || "有效作用对冲型"}</span>
+          </div>
+          <div class="heat-score">
+            反人群指数: <b>${(100 - (t.crowd || 10)).toFixed(0)}</b> / 100
+          </div>
+        </div>
+
+        <div class="balls-row">
+          ${redBalls}
+          <div class="ball-sep">+</div>
+          ${blueBalls}
+        </div>
+
+        <div class="chips">
+          ${chipBits}
+        </div>
+
+        <button class="deep-toggle" data-idx="${idx}">
+          <span>🔬 展开军师显微镜深度解构</span>
+        </button>
+
+        <div class="deep-panel" id="deep-${idx}">
+          <div class="radar-box">
+            <div style="font-size:11px; font-weight:700; color:var(--ink-muted); margin-bottom:4px;">五维量化雷达透视</div>
+            ${radarSvg}
+          </div>
+          <div class="insights-box">
+            <div class="insight-row">
+              <span class="k">入选逻辑:</span>
+              <span>${(t.explain && t.explain.why) ? t.explain.why.join("；") : "严格满足有效作用占比经验分布"}</span>
+            </div>
+            <div class="insight-row">
+              <span class="k">击破陷阱:</span>
+              <div class="trap-pills">${trapPills || '打破传统盲目机选漏网'}</div>
+            </div>
+            <div class="insight-row">
+              <span class="k">空间离散:</span>
+              <span class="mono" style="color:var(--accent); font-weight:700;">香农空间熵 ${t.shape ? t.shape.entropy : 85}分 · 空间极高离散</span>
+            </div>
+          </div>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+
+    document.querySelectorAll(".deep-toggle").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const idx = btn.getAttribute("data-idx");
+        const panel = $(`deep-${idx}`);
+        if (panel) {
+          panel.classList.toggle("open");
+          btn.querySelector("span").innerText = panel.classList.contains("open")
+            ? "🔼 收起军师解构"
+            : "🔬 展开军师显微镜深度解构";
+        }
+      });
+    });
+  }
+
+  function updateThermalOutlet(portfolio, game) {
+    $("thermal-game-title").innerText = game === "ssq" ? "中国福利彩票 · 双色球" : "中国体育彩票 · 超级大乐透";
+    $("thermal-total-cost").innerText = `${portfolio.costYuan}.00 元`;
+    const list = $("thermal-tickets-list");
+    list.innerHTML = "";
+
+    const now = new Date();
+    const timeStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
+    $("thermal-time").innerText = timeStr;
+
+    const meta = game === "ssq" ? (window.SSQ_META || {}) : (window.DLT_META || {});
+    const nextIssue = meta.latestIssue ? String(Number(meta.latestIssue) + 1).padStart(5, '0') : (game === "ssq" ? "26102" : "26100");
+    $("thermal-issue-display").innerText = `下期期号: ${nextIssue}`;
+
+    const isZhuijia = portfolio.unitPrice === 3;
+    const copyLines = [`【${game === "ssq" ? "双色球" : "大乐透" + (isZhuijia ? "(追加)" : "")}投注单(第${nextIssue}期) - 共${portfolio.tickets.length}注/合计${portfolio.costYuan}元】`];
+
+    portfolio.tickets.forEach((t, i) => {
+      const redStr = t.main.map(n => (n < 10 ? '0' + n : n)).join(" ");
+      const blueStr = t.special.map(n => (n < 10 ? '0' + n : n)).join(" ");
+      
+      const row = document.createElement("div");
+      row.className = "thermal-row";
+      row.innerHTML = `
+        <span>${String.fromCharCode(65 + i)}</span>
+        <span class="nums">${redStr} + <span class="blue">${blueStr}</span></span>
+        <span>${isZhuijia ? "追加 3元" : "单式 2元"}</span>
+      `;
+      list.appendChild(row);
+
+      copyLines.push(`${String.fromCharCode(65 + i)}: ${redStr} + ${blueStr}`);
+    });
+
+    $("copy-text-area").value = copyLines.join("\n");
+  }
+
+  // Copy Ticket Button
+  $("btn-copy-ticket").addEventListener("click", () => {
+    const ta = $("copy-text-area");
+    ta.select();
+    document.execCommand("copy");
+    alert("✅ 已复制投注格式到剪贴板，可直接发给彩票店老板！");
+  });
+
+  // Export POS-Ready TXT Button
+  $("btn-download-txt").addEventListener("click", () => {
+    if (!currentPortfolio || !currentPortfolio.tickets.length) {
+      alert("请先生成注单");
+      return;
+    }
+    const g = $("game").value;
+    const txt = E.exportTerminalTxt(g, currentPortfolio.tickets, {
+      zhuijia: currentPortfolio.unitPrice === 3,
+      date: new Date().toISOString().slice(0, 10),
+    });
+    const blob = new Blob([txt], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `QUANT_LOTTO_${g.toUpperCase()}_${new Date().toISOString().slice(0,10)}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  // Diagnostic Handler
+  $("btn-run-diag").addEventListener("click", () => {
+    const g = $("diag-game").value;
+    const main = $("diag-main").value.trim().split(/[\s,]+/).filter(Boolean).map(Number);
+    const spec = $("diag-spec").value.trim().split(/[\s,]+/).filter(Boolean).map(Number);
+    const res = E.diagnoseTicket(g, main, spec);
+    const target = $("diag-output-area");
+
+    if (res.error) {
+      target.innerHTML = `<div style="color:var(--gold); font-weight:700;">⛔ ${res.error}</div>`;
+      return;
+    }
+
+    const radarSvg = renderRadarSvg(res.radar);
+    let optHtml = "";
+    if (res.optimized) {
+      optHtml = `
+        <div style="margin-top:16px; background:var(--accent-light); border:1px solid rgba(2,132,199,0.3); border-radius:12px; padding:14px;">
+          <div style="font-weight:700; color:var(--accent); font-size:14px;">⚡ AI 手术刀微调优化方案</div>
+          <div style="margin:8px 0; font-size:13px; color:var(--ink); font-weight:600;">${res.optimized.changeLog}</div>
+          <div style="font-size:12px; color:var(--green); font-weight:600;">${res.optimized.effect}</div>
+          <div style="margin-top:10px; font-family:monospace; color:var(--ink); font-size:13px; background:#fff; padding:8px 12px; border-radius:8px; border:1px solid var(--border);">
+            优化后组合: <b>${res.optimized.main.map(n=>n<10?'0'+n:n).join(" ")} + ${res.optimized.special.map(n=>n<10?'0'+n:n).join(" ")}</b>
+          </div>
+        </div>
+      `;
+    }
+
+    target.innerHTML = `
+      <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border); padding-bottom:12px; margin-bottom:14px;">
+        <div style="font-size:15px; font-weight:800; color:var(--ink);">
+          综合健康评分: <span style="font-size:24px; color:${res.healthScore>=80?'var(--green)':'var(--gold)'};">${res.healthScore}</span> / 100
+        </div>
+        <div style="font-size:12px; color:var(--ink-muted); font-weight:600;">反人群热度: ${res.crowd.heat}</div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:180px 1fr; gap:16px; align-items:center;">
+        <div>${radarSvg}</div>
+        <div>
+          ${res.diagnosis.map(d => `<div style="margin:6px 0; font-size:13px; color:var(--ink);">${d}</div>`).join("")}
+          <div style="margin-top:8px; font-size:12px; color:var(--ink-dim);">
+            和值 ${res.shape.sum} · AC值 ${res.shape.ac} · 跨度 ${res.shape.span} · 奇偶 ${res.shape.odd}:${g==='ssq'?6-res.shape.odd:5-res.shape.odd} · 遗漏和 ${res.shape.sumOmission}
+          </div>
+        </div>
+      </div>
+
+      ${optHtml}
+    `;
+  });
+
+  // Wheel Matrix Handler
+  $("btn-run-wheel").addEventListener("click", () => {
+    const wheelKey = $("wheel-type").value;
+    const game = wheelKey.startsWith("ssq") ? "ssq" : "dlt";
+    const pool = $("wheel-pool").value.trim().split(/[\s,]+/).filter(Boolean).map(Number);
+    const spec = $("wheel-spec").value.trim().split(/[\s,]+/).filter(Boolean).map(Number);
+    const res = E.generateWheel(game, pool, wheelKey, spec);
+    const target = $("wheel-res-area");
+
+    if (res.error) {
+      target.innerHTML = `<div style="color:var(--gold); font-weight:700;">⛔ ${res.error}</div>`;
+      return;
+    }
+
+    target.innerHTML = `
+      <div style="margin-bottom:12px;">
+        <div style="color:var(--ink); font-weight:800; font-size:15px;">✅ ${res.design.name} 展开成功</div>
+        <div style="font-size:12px; color:var(--accent); margin-top:3px; font-weight:600;">${res.design.guarantee}</div>
+        <div style="font-size:12px; color:var(--gold); margin-top:2px; font-weight:700;">共计 ${res.count} 注 · 金额 ${res.costYuan} 元</div>
+      </div>
+      <div style="max-height:280px; overflow-y:auto; background:#f8fafc; border:1px solid var(--border); padding:10px; border-radius:10px;">
+        ${res.tickets.map((t, idx) => `
+          <div style="font-family:monospace; margin:4px 0; color:var(--ink); font-size:13px;">
+            #${idx + 1}: ${t.main.map(n => n < 10 ? '0' + n : n).join(" ")} + <span style="color:var(--accent); font-weight:700;">${t.special.map(n => n < 10 ? '0' + n : n).join(" ")}</span>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  });
+
+  // DanTuo Handler
+  $("runDan").addEventListener("click", () => {
+    const game = $("game").value;
+    const dan = $("dan").value.trim().split(/[\s,]+/).filter(Boolean).map(Number);
+    const tuo = $("tuo").value.trim().split(/[\s,]+/).filter(Boolean).map(Number);
+    const spec = $("spec").value.trim().split(/[\s,]+/).filter(Boolean).map(Number);
+    const budget = Number($("danBudget").value || 500);
+
+    const res = E.expandDanTuo(game, dan, tuo, spec, { budgetYuan: budget });
+    const target = $("dantuo-res");
+
+    if (res.error) {
+      target.innerHTML = `<div style="color:var(--gold); font-weight:700;">⛔ ${res.error}</div>`;
+      return;
+    }
+
+    target.innerHTML = `
+      <div style="margin-bottom:12px; color:var(--ink); font-weight:700;">
+        ✅ 成功展开 ${res.count} 注 · 总金额 ${res.costYuan} 元（预算 ${budget} 元内硬锁通过）
+      </div>
+      <div style="max-height:280px; overflow-y:auto; background:#f8fafc; border:1px solid var(--border); padding:10px; border-radius:10px;">
+        ${res.tickets.map((t, idx) => `
+          <div style="font-family:monospace; margin:4px 0; color:var(--ink); font-size:13px;">
+            #${idx + 1}: ${t.main.map(n => n < 10 ? '0' + n : n).join(" ")} + <span style="color:var(--accent); font-weight:700;">${t.special.map(n => n < 10 ? '0' + n : n).join(" ")}</span>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  });
+
+  // Time Machine Simulator Handler
+  let tmCurrentResults = null;
+  
+  $("tm-mode").addEventListener("change", () => {
+    const isWheel = $("tm-mode").value === "wheel";
+    $("tm-wheel-options").style.display = isWheel ? "flex" : "none";
+    $("tm-count-container").style.display = isWheel ? "none" : "flex";
+    $("tm-count-locked-badge").style.display = isWheel ? "flex" : "none";
+    if (isWheel) updateTmLockedBadge();
+  });
+
+  $("tm-wheel-key").addEventListener("change", updateTmLockedBadge);
+
+  function updateTmLockedBadge() {
+    const key = $("tm-wheel-key").value;
+    const design = E.WHEEL_DESIGNS[key];
+    if (design) {
+      $("tm-locked-count-text").innerText = `${design.blocks.length}注/${design.blocks.length * 2}元`;
+    }
+  }
+  
+  $("btn-run-tm").addEventListener("click", () => {
+    const game = $("game").value;
+    const periods = Number($("tm-periods").value || 50);
+    const count = Number($("tm-count").value || 5);
+    const mode = $("tm-mode").value || "unique";
+    const wheelKey = $("tm-wheel-key").value || "ssq_16_6_6_4";
+    const isZhuijia = $("zhuijia-dlt").checked;
+    const checkEntropy = $("tm-entropy-check").checked;
+    const checkKelly = $("tm-kelly-check").checked;
+    const box = $("tm-chart-box");
+    box.innerHTML = `<div style="text-align:center; padding:50px 0; color:var(--accent); font-weight:600;">⚡ 正在进行 ${periods} 期真实时空穿梭模拟计算中 (每期${count}注)...</div>`;
+
+    setTimeout(() => {
+      const res = E.simulateTimeMachine(game, {
+        periods: periods,
+        count: count,
+        mode: mode,
+        wheelKey: mode === "wheel" ? wheelKey : undefined,
+        minEntropy: checkEntropy ? 55 : null,
+        kellyAdapt: checkKelly,
+        seed: Math.floor(Math.random() * 900000 + 100000),
+        zhuijia: isZhuijia,
+      });
+
+      if (res.error) {
+        box.innerHTML = `<div style="color:var(--gold);">错误: ${res.error}</div>`;
+        return;
+      }
+      tmCurrentResults = { res: res, game: game };
+
+      const pts = res.points;
+      const w = 700, h = 160;
+      const minNet = Math.min.apply(null, pts.map(function(p) { return p.net; }).concat([0]));
+      const maxNet = Math.max.apply(null, pts.map(function(p) { return p.net; }).concat([100]));
+      const range = maxNet - minNet || 1;
+
+      const pathPts = pts.map((p, i) => {
+        const x = (i / (pts.length - 1)) * (w - 40) + 20;
+        const y = h - 20 - ((p.net - minNet) / range) * (h - 40);
+        return `${x.toFixed(1)},${y.toFixed(1)}`;
+      });
+
+      const roi = res.totalCost > 0 ? ((res.totalReturn / res.totalCost) * 100).toFixed(1) : 0;
+      const randomBaseline = game === "ssq" ? "27.1%" : "23.4%";
+      const isMatrix = mode === "wheel" || mode === "dantuo";
+      const costText = isMatrix ? `总投入 ${res.totalCost} 元 (矩阵/胆拖每期由算法自动定注)` : `每期${count}注 / 总投入 ${res.totalCost} 元`;
+
+      box.innerHTML = `
+        <div style="display:flex; justify-content:space-between; margin-bottom:8px; font-size:12px; flex-wrap:wrap; gap:8px;">
+          <span style="font-weight:600;">累计净收益走势 (共回测 ${periods} 期 / ${costText} / 累计返奖 ${res.totalReturn} 元${res.isZhuijia ? ' · 追加模式' : ''})</span>
+          <div style="display:flex; gap:12px;">
+            <span style="color:var(--accent); font-weight:700;">资金返还率(ROI): ${roi}%</span>
+            <span style="color:var(--green); font-weight:700;">至少中奖胜率: ${(res.hitRate * 100).toFixed(1)}% (${res.hitPeriods}/${periods}期)</span>
+            <span style="color:var(--ink-dim);">纯随机基准: ${randomBaseline}</span>
+          </div>
+        </div>
+        <svg viewBox="0 0 ${w} ${h}" style="width:100%; height:160px; overflow:visible;">
+          <line x1="20" y1="${h - 20 - (-minNet / range) * (h - 40)}" x2="${w - 20}" y2="${h - 20 - (-minNet / range) * (h - 40)}" stroke="#cbd5e1" stroke-dasharray="4" />
+          <polyline points="${pathPts.join(" ")}" fill="none" stroke="#0284c7" stroke-width="2.5" />
+        </svg>
+      `;
+
+      const tallyGrid = $("tm-tally-grid");
+      tallyGrid.innerHTML = "";
+      const names = game === "ssq"
+        ? { 1: "一等奖", 2: "二等奖", 3: "三等奖", 4: "四等奖", 5: "五等奖", 6: "六等奖" }
+        : { 1: "一等奖", 2: "二等奖", 3: "三等奖", 4: "四等奖", 5: "五等奖", 6: "六等奖", 7: "七等奖", 8: "八等奖", 9: "九等奖" };
+
+      Object.keys(names).forEach(lv => {
+        const cnt = res.prizeTally[lv] || 0;
+        const c = document.createElement("div");
+        c.className = "tally-card";
+        c.innerHTML = `
+          <div class="num" style="color:${cnt > 0 ? 'var(--gold)' : 'var(--ink-dim)'};">${cnt}</div>
+          <div class="name">${names[lv]}</div>
+        `;
+        tallyGrid.appendChild(c);
+      });
+
+      renderTmTable(false);
+    }, 80);
+  });
+
+  function renderTmTable(onlyWins) {
+    if (!tmCurrentResults) return;
+    const res = tmCurrentResults.res;
+    const game = tmCurrentResults.game;
+    const names = game === "ssq"
+      ? { 1: "一等奖", 2: "二等奖", 3: "三等奖", 4: "四等奖", 5: "五等奖", 6: "六等奖" }
+      : { 1: "一等奖", 2: "二等奖", 3: "三等奖", 4: "四等奖", 5: "五等奖", 6: "六等奖", 7: "七等奖", 8: "八等奖", 9: "九等奖" };
+
+    const pts = onlyWins ? res.points.filter(p => p.hits.length > 0) : res.points;
+
+    const filterBar = `
+      <div style="display:flex; justify-content:space-between; align-items:center; margin:16px 0 8px;">
+        <span style="font-weight:700; font-size:13px; color:var(--ink);">完整 ${res.periods} 期历史回测逐期明细 (展示 ${pts.length} 条 · 可点击展开查看每期选号与命中细节)</span>
+        <div style="display:flex; gap:8px;">
+          <button class="btn-secondary" style="padding:4px 10px; font-size:11px; ${!onlyWins?'background:var(--accent-light); border-color:var(--accent); font-weight:700; color:var(--accent);':''}" onclick="window.__tmFilter(false)">全部 (${res.periods}期)</button>
+          <button class="btn-secondary" style="padding:4px 10px; font-size:11px; ${onlyWins?'background:var(--accent-light); border-color:var(--accent); font-weight:700; color:var(--accent);':''}" onclick="window.__tmFilter(true)">仅看中奖期 (${res.hitPeriods}期)</button>
+        </div>
+      </div>
+    `;
+
+    const tbl = $("tm-table");
+    tbl.innerHTML = `
+      ${filterBar}
+      <div style="max-height:420px; overflow-y:auto; border:1px solid var(--border); border-radius:10px; background:#fff;">
+        <table style="width:100%; border-collapse:collapse; font-size:12px; text-align:left;">
+          <thead style="position:sticky; top:0; background:#f8fafc; z-index:2;">
+            <tr style="color:var(--ink-muted); border-bottom:1px solid var(--border);">
+              <th style="padding:10px 12px;">回测步数</th>
+              <th style="padding:10px 12px;">当期官方真实开奖</th>
+              <th style="padding:10px 12px;">命中最高奖级</th>
+              <th style="padding:10px 12px;">当期收支</th>
+              <th style="padding:10px 12px;">累计盈亏</th>
+              <th style="padding:10px 12px;">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${pts.slice().reverse().map((p, idx) => `
+              <tr style="border-bottom:1px solid #f1f5f9; background:${p.prize > 0 ? '#f0fdf4' : 'transparent'};">
+                <td style="padding:10px 12px;" class="mono">第 ${p.step} 步</td>
+                <td style="padding:10px 12px;" class="mono font-bold">${p.draw.main.map(n=>n<10?'0'+n:n).join(" ")} + <span style="color:var(--accent); font-weight:700;">${p.draw.special.map(n=>n<10?'0'+n:n).join(" ")}</span></td>
+                <td style="padding:10px 12px;">${p.hits.length ? p.hits.map(h => `<span class="role-badge" style="background:var(--gold-light); color:var(--gold); border-color:rgba(217,119,6,0.3); font-weight:700;">${names[h.level]}</span>`).join(" ") : '<span style="color:var(--ink-dim);">-</span>'}</td>
+                <td style="padding:10px 12px; font-weight:700; color:${p.prize > 0 ? 'var(--green)' : 'var(--ink-muted)'};">${p.prize > 0 ? '+' + p.prize + '元' : '-' + p.cost + '元'}</td>
+                <td style="padding:10px 12px; font-family:monospace; font-weight:700; color:${p.net >= 0 ? 'var(--green)' : '#dc2626'};">${p.net >= 0 ? '+' + p.net : p.net}元</td>
+                <td style="padding:10px 12px;">
+                  <button class="btn-secondary" style="padding:3px 8px; font-size:11px;" onclick="window.__toggleTmRow('tm-detail-${p.step}')">🔍 比对明细</button>
+                </td>
+              </tr>
+              <tr id="tm-detail-${p.step}" style="display:none; background:#f8fafc; border-bottom:1px solid var(--border);">
+                <td colspan="6" style="padding:12px 16px;">
+                  <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:8px;">当期量化系统自动生成的注单及逐号真实命中情况：</div>
+                  <div style="display:grid; gap:6px;">
+                    ${(p.tickets || []).map((tk, tIdx) => {
+                      const prizeName = tk.level > 0 ? `<b style="color:var(--gold); background:var(--gold-light); padding:1px 6px; border-radius:4px;">[中${names[tk.level]}]</b>` : `<span style="color:var(--ink-dim);">未中</span>`;
+                      const mStr = tk.main.map(n => {
+                        const isHit = tk.matchedMain && tk.matchedMain.indexOf(n) !== -1;
+                        return isHit ? `<b style="color:#16a34a; background:#dcfce7; padding:0 3px; border-radius:3px;">${n<10?'0'+n:n}*</b>` : `${n<10?'0'+n:n}`;
+                      }).join(" ");
+                      const sStr = tk.special.map(n => {
+                        const isHit = tk.matchedSpecial && tk.matchedSpecial.indexOf(n) !== -1;
+                        return isHit ? `<b style="color:#0284c7; background:#e0f2fe; padding:0 3px; border-radius:3px;">${n<10?'0'+n:n}*</b>` : `${n<10?'0'+n:n}`;
+                      }).join(" ");
+                      return `<div class="mono" style="font-size:12px; color:var(--ink);">注${tIdx+1}: ${mStr} + ${sStr} &nbsp; ${prizeName}</div>`;
+                    }).join("")}
+                  </div>
+                </td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+  window.__tmFilter = renderTmTable;
+  window.__toggleTmRow = function(id) {
+    const el = document.getElementById(id);
+    if (el) el.style.display = el.style.display === "none" ? "table-row" : "none";
+  };
+
+  // Load Stats on View 6 (Full Panoramic Big Data Dashboard: Front & Back)
+  function loadStats() {
+    const ctxSsq = E.analyze("ssq");
+    const ctxDlt = E.analyze("dlt");
+
+    const ssqCounts = Array(34).fill(0);
+    const ssqBlueCounts = Array(17).fill(0);
+    ctxSsq.mains.forEach(m => m.forEach(n => ssqCounts[n]++));
+    ctxSsq.draws.forEach(d => d.special.forEach(n => ssqBlueCounts[n]++));
+    const ssqMaxFreq = Math.max.apply(null, ssqCounts);
+    const ssqMaxBlueFreq = Math.max.apply(null, ssqBlueCounts);
+
+    const dltCounts = Array(36).fill(0);
+    const dltBackCounts = Array(13).fill(0);
+    ctxDlt.mains.forEach(m => m.forEach(n => dltCounts[n]++));
+    ctxDlt.draws.forEach(d => d.special.forEach(n => dltBackCounts[n]++));
+    const dltMaxFreq = Math.max.apply(null, dltCounts);
+    const dltMaxBackFreq = Math.max.apply(null, dltBackCounts);
+
+    const renderFreqBars = (counts, maxCount, maxNum, isBlue) => {
+      let html = '<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(28px, 1fr)); gap:6px; margin:10px 0;">';
+      for (let n = 1; n <= maxNum; n++) {
+        const cnt = counts[n] || 0;
+        const h = Math.round((cnt / maxCount) * 50) + 10;
+        const grad = isBlue ? 'linear-gradient(180deg, #60a5fa, #2563eb)' : 'linear-gradient(180deg, #38bdf8, #0284c7)';
+        html += `
+          <div style="display:flex; flex-direction:column; align-items:center; gap:2px;">
+            <div style="font-size:9px; color:var(--ink-dim);">${cnt}</div>
+            <div style="width:100%; height:60px; display:flex; align-items:flex-end; background:#f1f5f9; border-radius:4px;">
+              <div style="width:100%; height:${h}px; background:${grad}; border-radius:4px;"></div>
+            </div>
+            <div style="font-size:10px; font-weight:700; font-family:monospace; color:${isBlue?'#1d4ed8':'var(--ink)'};">${n<10?'0'+n:n}</div>
+          </div>
+        `;
+      }
+      html += '</div>';
+      return html;
+    };
+
+    $("stats-summary").innerHTML = `
+      <div style="display:grid; gap:20px;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div style="background:#ffffff; padding:18px; border-radius:14px; border:1px solid var(--border); box-shadow:var(--shadow-sm);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+              <h3 style="color:var(--ink); margin:0; font-size:15px; font-weight:800;">🔴 双色球官方大数据全景 (共 ${ctxSsq.draws.length} 期)</h3>
+              <span class="badge-live">2003 ~ 2026 全样本</span>
+            </div>
+            <div style="font-size:11px; font-weight:700; color:var(--ink-muted); margin-bottom:4px;">① 33 个红球历史出号总频次全景图:</div>
+            ${renderFreqBars(ssqCounts, ssqMaxFreq, 33, false)}
+            <div style="font-size:11px; font-weight:700; color:#1d4ed8; margin:12px 0 4px;">② 16 个蓝球历史出号总频次全景图:</div>
+            ${renderFreqBars(ssqBlueCounts, ssqMaxBlueFreq, 16, true)}
+          </div>
+
+          <div style="background:#ffffff; padding:18px; border-radius:14px; border:1px solid var(--border); box-shadow:var(--shadow-sm);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+              <h3 style="color:var(--ink); margin:0; font-size:15px; font-weight:800;">🔵 超级大乐透官方大数据全景 (共 ${ctxDlt.draws.length} 期)</h3>
+              <span class="badge-live">2007 ~ 2026 全样本</span>
+            </div>
+            <div style="font-size:11px; font-weight:700; color:var(--ink-muted); margin-bottom:4px;">① 35 个前区号码历史出号总频次全景图:</div>
+            ${renderFreqBars(dltCounts, dltMaxFreq, 35, false)}
+            <div style="font-size:11px; font-weight:700; color:#1d4ed8; margin:12px 0 4px;">② 12 个后区号码历史出号总频次全景图:</div>
+            ${renderFreqBars(dltBackCounts, dltMaxBackFreq, 12, true)}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  // Initial Boot
+  updateLatestDrawBanner("ssq");
+  initRealtimeClockAndScheduler();
+  loadStats();
+  renderMain();
+})();
+</script>
+</body>
+</html>

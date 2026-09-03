@@ -1,0 +1,6103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="manifest" href="manifest.json" />
+  <title>⚽ 竞技彩票精密量化工作台 · 竞彩/胜负彩/北单/篮彩</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=PingFang+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --bg-card: #ffffff;
+      --border: #e2e8f0;
+      --border-blue: #0284c7;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --primary-hover: #0369a1;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --red: #e11d48;
+      --red-light: #ffe4e6;
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --amber: #d97706;
+      --amber-light: #fef3c7;
+      --purple: #7c3aed;
+      --mono: "JetBrains Mono", monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+      min-height: 100vh;
+      padding-bottom: 80px;
+    }
+
+    .wrap { max-width: 1400px; margin: 0 auto; padding: 12px 20px; }
+
+    /* Top Navigation bar matching user screenshot */
+    .top-header-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0 8px;
+      gap: 16px;
+    }
+    .top-header-divider::before, .top-header-divider::after {
+      content: "";
+      flex: 1;
+      height: 2px;
+      background: #0284c7;
+    }
+    .top-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 1px;
+    }
+
+    /* Sub Tabs exactly matching user screenshot */
+    .sports-tabs {
+      display: flex;
+      align-items: stretch;
+      background: #f0f7ff;
+      border-bottom: 2px solid #0284c7;
+      margin-bottom: 12px;
+    }
+    .sports-tab {
+      padding: 10px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+      background: transparent;
+      border: 1px solid transparent;
+      border-bottom: none;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+    .sports-tab:hover {
+      background: #e0f2fe;
+      color: #0284c7;
+    }
+    .sports-tab.active {
+      background: #ffffff;
+      color: #0284c7;
+      border-top: 3px solid #0284c7;
+      border-left: 1px solid #cbd5e1;
+      border-right: 1px solid #cbd5e1;
+      margin-bottom: -2px;
+      border-bottom: 2px solid #ffffff;
+    }
+
+    /* Live Status Bar */
+    .live-status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 14px;
+      margin-bottom: 12px;
+      font-size: 12px;
+    }
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      color: #166534;
+      background: #dcfce7;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+
+    /* Quant Strategy Action Bar */
+    .quant-bar {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      border: 1px solid #bae6fd;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .quant-bar-title {
+      font-weight: 800;
+      font-size: 14px;
+      color: #0369a1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .quant-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .btn-quant {
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+      border: none;
+    }
+    .btn-quant-steady {
+      background: #0284c7;
+      color: #ffffff;
+    }
+    .btn-quant-steady:hover { background: #0369a1; }
+    .btn-quant-cold {
+      background: #7c3aed;
+      color: #ffffff;
+    }
+    .btn-quant-cold:hover { background: #6d28d9; }
+    .btn-quant-diag {
+      background: #ffffff;
+      color: #0369a1;
+      border: 1px solid #7dd3fc;
+    }
+    .btn-quant-diag:hover { background: #f0f9ff; }
+
+    /* Honesty Banner (L0) */
+    .honesty-banner {
+      background: #eff6ff;
+      border-left: 4px solid #0284c7;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      font-size: 13px;
+      color: #1e3a8a;
+      line-height: 1.5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .honesty-decay {
+      display: flex;
+      gap: 10px;
+      font-family: var(--mono);
+      font-weight: 600;
+      font-size: 11px;
+    }
+    .decay-pill {
+      background: #dbeafe;
+      padding: 3px 6px;
+      border-radius: 4px;
+      color: #1e40af;
+    }
+
+    /* Content Grid */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 390px;
+      gap: 16px;
+      align-items: start;
+    }
+    @media (max-width: 1024px) {
+      .content-grid { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .card-header {
+      padding: 10px 14px;
+      background: #f8fafc;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    /* Match Table */
+    .match-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .match-table th {
+      background: #f1f5f9;
+      color: #475569;
+      font-weight: 700;
+      text-align: center;
+      padding: 8px 6px;
+      border: 1px solid #e2e8f0;
+      font-size: 12px;
+    }
+    .match-table td {
+      border: 1px solid #e2e8f0;
+      padding: 6px 4px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .match-row:hover { background: #fbfcfe; }
+
+    /* Team Cell */
+    .team-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      text-align: left;
+      padding: 2px 6px;
+    }
+    .team-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .team-rank {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    /* Odds Button */
+    .odds-btn {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 6px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      border-radius: 4px;
+      cursor: pointer;
+      min-width: 52px;
+      font-size: 11px;
+      transition: all 0.1s ease;
+      user-select: none;
+    }
+    .odds-btn:hover {
+      border-color: #0284c7;
+      background: #f0f9ff;
+    }
+    .odds-btn.selected {
+      background: #0284c7;
+      border-color: #0284c7;
+      color: #ffffff !important;
+    }
+    .odds-btn.selected .odds-val {
+      color: #ffffff !important;
+    }
+    .odds-val {
+      font-family: var(--mono);
+      font-weight: 700;
+      color: #0f172a;
+      font-size: 12px;
+    }
+
+    /* Tags */
+    .form-streak { display: inline-flex; gap: 2px; }
+    .form-dot {
+      width: 13px;
+      height: 13px;
+      border-radius: 2px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .dot-w { background: #16a34a; }
+    .dot-d { background: #64748b; }
+    .dot-l { background: #e11d48; }
+
+    .tag {
+      font-size: 10px;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-weight: 600;
+      display: inline-block;
+    }
+    .tag-val { background: #dcfce7; color: #166534; }
+    .tag-trap { background: #fee2e2; color: #991b1b; }
+
+    /* Bet Slip Sidebar */
+    .slip-container { position: sticky; top: 14px; }
+    .slip-item {
+      padding: 8px 12px;
+      border-bottom: 1px dashed #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .slip-del { cursor: pointer; color: #94a3b8; font-size: 14px; }
+    .slip-del:hover { color: #ef4444; }
+
+    .opt-tabs { display: flex; gap: 6px; margin: 8px 0; }
+    .opt-tab-btn {
+      flex: 1;
+      padding: 6px 2px;
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+    }
+    .opt-tab-btn.active {
+      background: #0284c7;
+      color: #fff;
+      border-color: #0284c7;
+    }
+
+    .btn-action {
+      width: 100%;
+      padding: 10px;
+      background: #0284c7;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-action:hover { background: #0369a1; }
+    .btn-batch-ticket {
+      background: #16a34a;
+      margin-top: 8px;
+    }
+    .btn-batch-ticket:hover { background: #15803d; }
+
+    /* Thermal Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.65);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .ticket-paper-card {
+      background: #fefefe;
+      width: 100%;
+      max-width: 680px;
+      max-height: 85vh;
+      border-radius: 8px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid #cbd5e1;
+    }
+    .ticket-header-rail {
+      background: #0f172a;
+      color: #fff;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ticket-body-scroll {
+      padding: 20px;
+      overflow-y: auto;
+      background: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .thermal-ticket {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-top: 4px solid #0284c7;
+      padding: 16px;
+      border-radius: 4px;
+      font-family: var(--mono);
+      font-size: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+      position: relative;
+    }
+    .thermal-title {
+      font-weight: 800;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 8px;
+      color: #0f172a;
+      letter-spacing: 1px;
+    }
+    .thermal-divider {
+      border-bottom: 1px dashed #94a3b8;
+      margin: 8px 0;
+    }
+    .thermal-barcode {
+      text-align: center;
+      letter-spacing: 4px;
+      font-weight: 900;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #334155;
+      background: #f1f5f9;
+      padding: 6px;
+    }
+
+    .mono { font-family: var(--mono); }
+    .hidden { display: none !important; }
+
+    /* Mobile Sticky Bottom Floating Bar */
+    .mobile-bottom-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid #cbd5e1;
+      box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.1);
+      padding: 8px 16px;
+      padding-bottom: max(8px, env(safe-area-inset-bottom));
+      z-index: 995;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      body { padding-bottom: max(85px, calc(env(safe-area-inset-bottom) + 75px)); }
+      .mobile-bottom-bar { display: flex; }
+      .sports-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .sports-tab {
+        padding: 8px 14px;
+        font-size: 13px;
+        flex-shrink: 0;
+      }
+      .quant-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 10px;
+      }
+      .quant-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+      .btn-quant {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+        font-size: 13px;
+      }
+      .odds-btn {
+        min-height: 44px;
+        min-width: 48px;
+        padding: 4px 6px;
+      }
+      .match-table th, .match-table td {
+        padding: 6px 3px;
+        font-size: 11px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <!-- Top Navigation Header matching user screenshot -->
+  <div class="top-header-divider">
+    <div class="top-title">⚽ 竞技彩票</div>
+  </div>
+
+  <!-- Sub Tabs exactly matching user screenshot -->
+  <nav class="sports-tabs">
+    <button class="sports-tab" id="tab-sfc" onclick="switchMainTab('sfc')">胜负彩对阵表</button>
+    <button class="sports-tab active" id="tab-jingcai" onclick="switchMainTab('jingcai')">竞彩</button>
+    <button class="sports-tab" id="tab-beidan" onclick="switchMainTab('beidan')">北单</button>
+    <button class="sports-tab" id="tab-lancai" onclick="switchMainTab('lancai')">篮彩</button>
+    <button class="sports-tab" style="margin-left:auto; background:#0284c7; color:#fff; border-radius:4px; font-weight:700;" onclick="openMobileQRModal()">📱 手机扫码使用</button>
+    <a href="index.html" class="sports-tab" style="color:#64748b; font-weight:normal;">🎲 切换到数字彩 (双色球/大乐透)</a>
+  </nav>
+
+  <!-- Live Status Bar -->
+  <div class="live-status-bar">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <span class="live-badge"><span class="live-dot"></span> 实时官方开售在售</span>
+      <span id="live-date-scope" style="font-weight:700; color:#334155;">比赛日: 2026-09-03 至 2026-09-05 (今日周四/周五实盘)</span>
+      <span id="live-sync-time" style="color:var(--text-muted);">(最后同步: 2026/9/3 14:30:36)</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:8px;">
+      <select id="dataset-selector" onchange="toggleDataset(this.value)" style="padding:4px 8px; font-size:12px; font-weight:700; border-radius:4px; border:1px solid #cbd5e1;">
+        <option value="live">🔴 今日实时在售赛事 (21场官方实盘)</option>
+        <option value="classic">⭐ 经典五大联赛实盘赛事</option>
+      </select>
+      <button class="btn-quant btn-quant-diag" style="padding:4px 10px; font-size:12px;" onclick="refreshLiveMatches()">🔄 刷新实盘赛程与赔率</button>
+    </div>
+  </div>
+
+  <!-- Honesty Banner (L0) -->
+  <div class="honesty-banner">
+    <div>
+      <strong>【L0 诚实认知】</strong> 竞技彩票受技战术与随机性驱动，机构抽水 27%~35%，绝无虚假预测神话与必胜承诺。我们依靠【队伍真实近况战绩】、【泊松攻防xG期望】与【ILP 整数规划奖金优化】规避诱盘陷阱，锁定资金极差。
+    </div>
+    <div class="honesty-decay">
+      <span class="decay-pill">单场返还 ~73%</span>
+      <span class="decay-pill">2串1返还 53.3%</span>
+      <span class="decay-pill">3串1返还 38.9%</span>
+      <span class="decay-pill">8串1返还 8.06% (严禁长串)</span>
+    </div>
+  </div>
+
+  <!-- ==================== TAB 1: 竞彩 (JCZQ) ==================== -->
+  <div id="view-jingcai">
+    <!-- Quant Model Trigger Bar for Jingcai -->
+    <div class="quant-bar">
+      <div class="quant-bar-title">
+        <span>⚡ 竞彩足球量化模型：</span>
+        <span style="font-size:12px; font-weight:normal; color:#475569;">根据队伍最新近况走势、泊松攻防xG、以及机构EV自动生成选单</span>
+      </div>
+      <div class="quant-actions">
+        <button class="btn-quant btn-quant-steady" onclick="triggerQuantModel('steady')">
+          🤖 量化模型选单 (稳健对冲型)
+        </button>
+        <button class="btn-quant btn-quant-cold" onclick="triggerQuantModel('cold')">
+          ⚡ 量化模型选单 (价值博冷型)
+        </button>
+        <button class="btn-quant btn-quant-diag" onclick="triggerQuantDiagnosis()">
+          💡 方案深度量化体检与雷达
+        </button>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div>
+        <div class="card">
+          <div class="card-header">
+            <span>🔥 竞彩足球开售赛事列表 (混合过关 & 队伍近况全景)</span>
+            <span style="font-size:12px; color:var(--text-muted);">已选: <strong id="selected-matches-count" style="color:#0284c7;">0</strong> 场</span>
+          </div>
+          <div style="overflow-x:auto;">
+            <table class="match-table" id="jingcai-table">
+              <thead>
+                <tr>
+                  <th style="width:70px;">编号</th>
+                  <th style="width:70px;">联赛</th>
+                  <th style="width:240px;">对阵队伍 & 近况走势 / xG预期</th>
+                  <th style="width:40px;">让球</th>
+                  <th>胜平负 (SPF)</th>
+                  <th>让球胜平负 (RQSPF)</th>
+                  <th style="width:85px;">近况雷达</th>
+                </tr>
+              </thead>
+              <tbody id="jingcai-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Bet Slip & ILP Optimizer & Batch Tickets -->
+      <div class="slip-container">
+        <div class="card">
+          <div class="card-header">
+            <span>🧾 竞彩方案投注与混合过关</span>
+            <span style="cursor:pointer; color:#ef4444; font-size:12px;" onclick="clearSlip()">清空</span>
+          </div>
+          <div id="slip-list" style="max-height:180px; overflow-y:auto; padding:6px 0;">
+            <div style="text-align:center; padding:18px; color:#94a3b8; font-size:13px;">请在左侧勾选，或点击上方量化选单</div>
+          </div>
+
+          <div style="padding:12px; background:#f8fafc; border-top:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <label style="font-size:13px; font-weight:700;">过关方式：</label>
+              <select id="pass-type-select" style="padding:4px 8px; font-weight:700; border-radius:4px; border:1px solid #cbd5e1;">
+                <option value="2_1">2 串 1 (推荐)</option>
+                <option value="3_1">3 串 1</option>
+                <option value="1_1">单关</option>
+              </select>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+              <label style="font-size:13px; font-weight:700;">总预算：</label>
+              <div style="display:flex; align-items:center; gap:6px;">
+                <input type="number" id="budget-input" value="100" min="4" step="2" style="width:80px; padding:4px 8px; font-weight:700; text-align:right; border:1px solid #cbd5e1; border-radius:4px;" />
+                <span style="font-size:13px;">元</span>
+              </div>
+            </div>
+
+            <div style="font-size:12px; font-weight:700; margin-bottom:4px; color:#475569;">奖金优化算法 (ILP 求解器)：</div>
+            <div class="opt-tabs">
+              <button class="opt-tab-btn active" id="btn-opt-equal" onclick="setOptStrategy('equal')">平均优化</button>
+              <button class="opt-tab-btn" id="btn-opt-cold" onclick="setOptStrategy('cold')">博冷优化</button>
+              <button class="opt-tab-btn" id="btn-opt-safe" onclick="setOptStrategy('safe')">保本优化</button>
+            </div>
+
+            <button class="btn-action" onclick="runOptimization()">⚡ 求解最优资金配置 (锁定预算)</button>
+          </div>
+        </div>
+
+        <div class="card" id="opt-result-card" style="display:none;">
+          <div class="card-header">
+            <span>📊 奖金精算与拆单倍数分配</span>
+            <span id="opt-cost-summary" class="mono" style="font-size:12px; color:#0284c7;"></span>
+          </div>
+          <div id="opt-allocations" style="padding:10px; font-size:12px; max-height:180px; overflow-y:auto;"></div>
+          <div style="padding:10px; background:#f0fdf4; border-top:1px solid #bbf7d0;">
+            <button class="btn-action btn-batch-ticket" id="btn-jingcai-batch" onclick="openBatchTicketModal('jingcai')">
+              🧾 批量生成实体票单 & 导出彩店格式 (机打单)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TAB 2: 胜负彩对阵表 (SFC 14 & RX9) ==================== -->
+  <div id="view-sfc" class="hidden">
+    <!-- Quant Model Trigger Bar for SFC/RX9 -->
+    <div class="quant-bar">
+      <div class="quant-bar-title">
+        <span>🏆 传统足彩量化模型选单：</span>
+        <span style="font-size:12px; font-weight:normal; color:#475569;">基于赔率欧指离散度、稳胆识别、防冷保护与火锅奖规避</span>
+      </div>
+      <div class="quant-actions">
+        <button class="btn-quant btn-quant-steady" onclick="triggerSFCQuant('14')">
+          🤖 SFC 量化模型选单 (防冷对冲保14)
+        </button>
+        <button class="btn-quant btn-quant-cold" onclick="triggerSFCQuant('rx9')">
+          ⚡ RX9 量化模型选单 (黄金任九稳胆型)
+        </button>
+        <button class="btn-quant btn-quant-diag" onclick="reduceSFC()">
+          🛡️ 保14中13 覆盖缩水出单
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span>🏆 传统足球彩票：14场胜负彩 / 任选九场对阵表 (第25068期 实盘在售)</span>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <label><input type="radio" name="sfc-mode" value="14" checked onchange="renderSFC()" /> 14场胜负彩</label>
+          <label><input type="radio" name="sfc-mode" value="rx9" onchange="renderSFC()" /> 任选九场 (RX9)</label>
+        </div>
+      </div>
+      <div style="padding:16px;">
+        <table class="match-table" id="sfc-table">
+          <thead>
+            <tr>
+              <th style="width:60px;">场次</th>
+              <th style="width:80px;">联赛</th>
+              <th style="width:240px;">主队 vs 客队</th>
+              <th style="width:90px;">主胜 (3)</th>
+              <th style="width:90px;">平局 (1)</th>
+              <th style="width:90px;">主负 (0)</th>
+              <th>冷门博弈指数</th>
+            </tr>
+          </thead>
+          <tbody id="sfc-tbody"></tbody>
+        </table>
+
+        <div style="margin-top:16px; padding:16px; background:#f8fafc; border-radius:6px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+          <div>
+            <span style="font-size:14px; font-weight:700;">方案注数：</span>
+            <span id="sfc-bet-count" class="mono" style="font-size:16px; font-weight:800; color:#0284c7;">0</span> 注 |
+            <span style="font-size:14px; font-weight:700;">投注金额：</span>
+            <span id="sfc-cost" class="mono" style="font-size:16px; font-weight:800; color:#e11d48;">0</span> 元
+            <div style="margin-top:6px; font-size:13px; color:#475569;">
+              <span>冷门指数与火锅奖风险监测：</span>
+              <span id="sfc-cold-alert">请先在上方勾选赛果或点击量化选单</span>
+            </div>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <button class="btn-action" style="width:auto; padding:10px 18px;" onclick="reduceSFC()">🛡️ 保14中13 覆盖缩水</button>
+            <button class="btn-action btn-batch-ticket" id="btn-sfc-batch" style="width:auto; padding:10px 18px;" onclick="openBatchTicketModal('sfc')">
+              🧾 批量生成实体票单 & 导出彩店格式
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TAB 3: 北京单场 (DC) ==================== -->
+  <div id="view-beidan" class="hidden">
+    <!-- Quant Model Trigger Bar for Beidan -->
+    <div class="quant-bar">
+      <div class="quant-bar-title">
+        <span>🏟️ 北京单场量化模型选单：</span>
+        <span style="font-size:12px; font-weight:normal; color:#475569;">65% 官方返还率精算，让球盘口价值洼地识别</span>
+      </div>
+      <div class="quant-actions">
+        <button class="btn-quant btn-quant-steady" onclick="triggerBeidanQuant()">
+          🤖 北单量化模型选单 (高SP价值让球对冲)
+        </button>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div>
+        <div class="card">
+          <div class="card-header">
+            <span>🏟️ 北京单场 (DC) · 浮动SP与让球盘口</span>
+            <span style="font-size:12px; color:#64748b;">体彩官方 65% 浮动返还率结算</span>
+          </div>
+          <div style="padding:16px;">
+            <table class="match-table">
+              <thead>
+                <tr>
+                  <th style="width:70px;">编号</th>
+                  <th style="width:70px;">联赛</th>
+                  <th style="width:200px;">主队 vs 客队</th>
+                  <th style="width:70px;">让球数</th>
+                  <th>胜 (3) 参考SP</th>
+                  <th>平 (1) 参考SP</th>
+                  <th>负 (0) 参考SP</th>
+                </tr>
+              </thead>
+              <tbody id="beidan-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Beidan Bet Slip -->
+      <div class="slip-container">
+        <div class="card">
+          <div class="card-header">
+            <span>🧾 北单方案投注单</span>
+            <span style="cursor:pointer; color:#ef4444; font-size:12px;" onclick="clearBeidanSlip()">清空</span>
+          </div>
+          <div id="beidan-slip-list" style="max-height:180px; overflow-y:auto; padding:6px 0;">
+            <div style="text-align:center; padding:18px; color:#94a3b8; font-size:13px;">请在左侧勾选或点击量化选单</div>
+          </div>
+          <div style="padding:12px; background:#f8fafc; border-top:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <label style="font-size:13px; font-weight:700;">过关方式：</label>
+              <select id="beidan-pass-type" style="padding:4px 8px; font-weight:700; border-radius:4px; border:1px solid #cbd5e1;">
+                <option value="2_1">2 串 1 (推荐)</option>
+                <option value="3_1">3 串 1</option>
+                <option value="1_1">单关</option>
+              </select>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+              <label style="font-size:13px; font-weight:700;">总预算：</label>
+              <div style="display:flex; align-items:center; gap:6px;">
+                <input type="number" id="beidan-budget" value="100" min="4" step="2" style="width:80px; padding:4px 8px; font-weight:700; text-align:right; border:1px solid #cbd5e1; border-radius:4px;" />
+                <span style="font-size:13px;">元</span>
+              </div>
+            </div>
+            <button class="btn-action" onclick="runBeidanOptimization()">⚡ 求解 65% 浮动返奖率最优资金配置</button>
+          </div>
+        </div>
+
+        <div class="card" id="beidan-opt-card" style="display:none;">
+          <div class="card-header">
+            <span>📊 北单浮动奖金精算分配</span>
+            <span id="beidan-cost-summary" class="mono" style="font-size:12px; color:#0284c7;"></span>
+          </div>
+          <div id="beidan-allocations" style="padding:10px; font-size:12px; max-height:180px; overflow-y:auto;"></div>
+          <div style="padding:10px; background:#f0fdf4; border-top:1px solid #bbf7d0;">
+            <button class="btn-action btn-batch-ticket" id="btn-beidan-batch" onclick="openBatchTicketModal('beidan')">
+              🧾 批量生成实体票单 & 导出彩店格式 (机打单)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TAB 4: 篮彩 (JCLQ) ==================== -->
+  <div id="view-lancai" class="hidden">
+    <!-- Quant Model Trigger Bar for Lancai -->
+    <div class="quant-bar">
+      <div class="quant-bar-title">
+        <span>🏀 竞彩篮球量化模型选单：</span>
+        <span style="font-size:12px; font-weight:normal; color:#475569;">结合 NBA 节奏 (Pace)、百回合攻防效率与背靠背疲劳损耗</span>
+      </div>
+      <div class="quant-actions">
+        <button class="btn-quant btn-quant-steady" onclick="triggerLancaiQuant()">
+          🤖 篮彩量化模型选单 (节奏克制 & 背靠背疲劳)
+        </button>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div>
+        <div class="card">
+          <div class="card-header">
+            <span>🏀 竞彩篮球 (JCLQ) · 胜负 / 让分胜负 / 大小分</span>
+          </div>
+          <div style="padding:16px;">
+            <table class="match-table">
+              <thead>
+                <tr>
+                  <th style="width:70px;">编号</th>
+                  <th style="width:70px;">联赛</th>
+                  <th style="width:220px;">客队 vs 主队 (NBA)</th>
+                  <th>胜负 (MNL)</th>
+                  <th>让分胜负 (HDC)</th>
+                  <th>大小分 (HILO)</th>
+                  <th>节奏/背靠背分析</th>
+                </tr>
+              </thead>
+              <tbody id="lancai-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Lancai Bet Slip -->
+      <div class="slip-container">
+        <div class="card">
+          <div class="card-header">
+            <span>🧾 篮彩方案投注单</span>
+            <span style="cursor:pointer; color:#ef4444; font-size:12px;" onclick="clearLancaiSlip()">清空</span>
+          </div>
+          <div id="lancai-slip-list" style="max-height:180px; overflow-y:auto; padding:6px 0;">
+            <div style="text-align:center; padding:18px; color:#94a3b8; font-size:13px;">请在左侧勾选或点击量化选单</div>
+          </div>
+          <div style="padding:12px; background:#f8fafc; border-top:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <label style="font-size:13px; font-weight:700;">过关方式：</label>
+              <select id="lancai-pass-type" style="padding:4px 8px; font-weight:700; border-radius:4px; border:1px solid #cbd5e1;">
+                <option value="2_1">2 串 1 (推荐)</option>
+                <option value="1_1">单关</option>
+              </select>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+              <label style="font-size:13px; font-weight:700;">总预算：</label>
+              <div style="display:flex; align-items:center; gap:6px;">
+                <input type="number" id="lancai-budget" value="100" min="4" step="2" style="width:80px; padding:4px 8px; font-weight:700; text-align:right; border:1px solid #cbd5e1; border-radius:4px;" />
+                <span style="font-size:13px;">元</span>
+              </div>
+            </div>
+            <button class="btn-action" onclick="runLancaiOptimization()">⚡ 求解最优资金配置 (锁定预算)</button>
+          </div>
+        </div>
+
+        <div class="card" id="lancai-opt-card" style="display:none;">
+          <div class="card-header">
+            <span>📊 篮彩奖金精算分配</span>
+            <span id="lancai-cost-summary" class="mono" style="font-size:12px; color:#0284c7;"></span>
+          </div>
+          <div id="lancai-allocations" style="padding:10px; font-size:12px; max-height:180px; overflow-y:auto;"></div>
+          <div style="padding:10px; background:#f0fdf4; border-top:1px solid #bbf7d0;">
+            <button class="btn-action btn-batch-ticket" id="btn-lancai-batch" onclick="openBatchTicketModal('lancai')">
+              🧾 批量生成实体票单 & 导出彩店格式 (机打单)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1: Team Form & Poisson Radar -->
+<div id="radar-modal" class="modal-overlay">
+  <div style="background:#fff; width:90%; max-width:600px; border-radius:8px; padding:20px; box-shadow:0 20px 25px -5px rgba(0,0,0,0.2);">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; border-bottom:1px solid #e2e8f0; padding-bottom:8px;">
+      <h3 id="modal-title" style="font-size:16px; font-weight:800;">队伍近况与泊松 xG 量化雷达</h3>
+      <span style="cursor:pointer; font-size:18px; color:#64748b;" onclick="closeModal('radar-modal')">✕</span>
+    </div>
+    <div id="modal-body" style="font-size:13px; line-height:1.6;"></div>
+  </div>
+</div>
+
+<!-- Modal 2: Batch Thermal Tickets & POS Terminal Codes (通用批量出单终端) -->
+<div id="ticket-modal" class="modal-overlay">
+  <div class="ticket-paper-card">
+    <div class="ticket-header-rail">
+      <div>
+        <h3 id="ticket-modal-title" style="font-size:15px; font-weight:800;">🧾 彩票店打票机批量出单终端 (POS Ready)</h3>
+        <p id="ticket-modal-subtitle" style="font-size:11px; color:#94a3b8;">符合中国体育彩票终端打票格式规范 · 锁定预算与离散注单</p>
+      </div>
+      <span style="cursor:pointer; font-size:20px; color:#94a3b8;" onclick="closeModal('ticket-modal')">✕</span>
+    </div>
+
+    <!-- Action Toolbar inside Modal -->
+    <div style="padding:10px 18px; background:#f1f5f9; border-bottom:1px solid #cbd5e1; display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+      <button class="btn-quant btn-quant-steady" onclick="copyPOSText()">📋 复制彩店打票机代码</button>
+      <button class="btn-quant btn-quant-diag" onclick="downloadPOSTxt()">💾 下载打票机 TXT 文件</button>
+      <button class="btn-quant btn-quant-diag" onclick="window.print()">🖨️ 打印实体机打单</button>
+      <span id="copy-toast" style="font-size:12px; color:#16a34a; font-weight:700; display:none;">已成功复制到剪贴板！</span>
+    </div>
+
+    <!-- Scrollable Thermal Paper Tickets List -->
+    <div id="ticket-body" class="ticket-body-scroll"></div>
+  </div>
+</div>
+
+<!-- Modal 3: Mobile LAN QR Code Modal (手机扫码快速访问) -->
+<div id="mobile-qr-modal" class="modal-overlay">
+  <div style="background:#fff; width:90%; max-width:480px; border-radius:12px; padding:24px; box-shadow:0 25px 50px -12px rgba(0,0,0,0.25); text-align:center;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+      <h3 style="font-size:17px; font-weight:800; color:#0f172a;">📱 手机端扫码秒开使用</h3>
+      <span style="cursor:pointer; font-size:20px; color:#64748b;" onclick="closeModal('mobile-qr-modal')">✕</span>
+    </div>
+    
+    <p style="font-size:13px; color:#475569; margin-bottom:14px;">
+      确保手机与电脑连接到<strong>同一局域网 Wi-Fi</strong>，用手机微信/浏览器相机直接扫码即可：
+    </p>
+
+    <!-- Dynamic QR Container -->
+    <div style="display:inline-block; padding:12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; margin-bottom:14px;">
+      <img id="qr-img" src="" alt="手机扫码二维码" style="width:200px; height:200px; display:block; margin:0 auto;" />
+    </div>
+
+    <div style="background:#eff6ff; padding:10px 14px; border-radius:6px; font-size:12px; margin-bottom:14px; text-align:left;">
+      <div style="font-weight:700; color:#1e40af; margin-bottom:4px;">🌐 局域网访问地址：</div>
+      <div class="mono" id="lan-url-display" style="word-break:break-all; font-weight:700; color:#0f172a;"></div>
+    </div>
+
+    <div style="display:flex; gap:10px; justify-content:center;">
+      <button class="btn-quant btn-quant-steady" onclick="copyLanUrl()">📋 复制手机访问链接</button>
+      <button class="btn-quant btn-quant-diag" onclick="closeModal('mobile-qr-modal')">关闭</button>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Sticky Bottom Floating Bar -->
+<div id="mobile-bottom-bar" class="mobile-bottom-bar">
+  <div>
+    <div style="font-weight:800; font-size:13px;">已选: <span id="mob-count" style="color:#0284c7;">0</span> 场</div>
+    <div style="font-size:11px; color:#64748b;">预算: <span id="mob-budget" class="mono">100</span>元</div>
+  </div>
+  <button class="btn-quant btn-quant-steady" style="padding:10px 16px; font-size:13px;" onclick="toggleMobileDrawer()">
+    🧾 查看注单 / 批量出票 ⚡
+  </button>
+</div>
+
+<!-- Inlined Scripts for Standalone Mobile Running (100% 离线独立运行，无需任何电脑与服务器) -->
+<script>
+window.SPORTS_LIVE = {
+  "syncedAt": "2026-09-03T06:31:35.047Z",
+  "displayTime": "2026/9/3 14:31:35",
+  "jingcaiCount": 21,
+  "sfcCount": 14,
+  "jingcai": [
+    {
+      "id": "LIVE_1467708",
+      "matchNum": "周四001",
+      "matchDate": "2026-09-03",
+      "kickoffTime": "23:55",
+      "league": "沙特职业联赛",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "迈季迈阿宽广",
+        "rank": "11",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "拉斯永恒",
+        "rank": "4",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "迈季迈阿宽广",
+          "away": "拉斯永恒",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "拉斯永恒",
+          "away": "迈季迈阿宽广",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 2.22,
+          "1": 3.05,
+          "3": 2.85
+        },
+        "RQSPF": {
+          "0": 4.95,
+          "1": 3.85,
+          "3": 1.5,
+          "handicap": 1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1467709",
+      "matchNum": "周四002",
+      "matchDate": "2026-09-04",
+      "kickoffTime": "00:30",
+      "league": "沙特职业联赛",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "新未来SC",
+        "rank": "8",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "赛哈特海湾",
+        "rank": "14",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "新未来SC",
+          "away": "赛哈特海湾",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "赛哈特海湾",
+          "away": "新未来SC",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 4.75,
+          "1": 3.78,
+          "3": 1.53
+        },
+        "RQSPF": {
+          "0": 2.16,
+          "1": 3.4,
+          "3": 2.69,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1362683",
+      "matchNum": "周四003",
+      "matchDate": "2026-09-04",
+      "kickoffTime": "01:00",
+      "league": "瑞超",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "米亚尔比",
+        "rank": "12",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "佐加顿斯",
+        "rank": "3",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "米亚尔比",
+          "away": "佐加顿斯",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "佐加顿斯",
+          "away": "米亚尔比",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 1.53,
+          "1": 4.1,
+          "3": 4.31
+        },
+        "RQSPF": {
+          "0": 2.54,
+          "1": 3.7,
+          "3": 2.15,
+          "handicap": 1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1467710",
+      "matchNum": "周四004",
+      "matchDate": "2026-09-04",
+      "kickoffTime": "02:00",
+      "league": "沙特职业联赛",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "迪里耶",
+        "rank": "6",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "胡巴尔卡德西亚",
+        "rank": "3",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "迪里耶",
+          "away": "胡巴尔卡德西亚",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "胡巴尔卡德西亚",
+          "away": "迪里耶",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 1.39,
+          "1": 4.6,
+          "3": 5.2
+        },
+        "RQSPF": {
+          "0": 2.18,
+          "1": 3.65,
+          "3": 2.52,
+          "handicap": 1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1415103",
+      "matchNum": "周四005",
+      "matchDate": "2026-09-04",
+      "kickoffTime": "02:45",
+      "league": "法甲",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "图卢兹",
+        "rank": "16",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "里尔",
+        "rank": "3",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "图卢兹",
+          "away": "里尔",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "里尔",
+          "away": "图卢兹",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 1.8,
+          "1": 3.4,
+          "3": 3.58
+        },
+        "RQSPF": {
+          "0": 3.46,
+          "1": 3.55,
+          "3": 1.79,
+          "handicap": 1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1428040",
+      "matchNum": "周四006",
+      "matchDate": "2026-09-04",
+      "kickoffTime": "03:00",
+      "league": "西甲",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "皇家社会",
+        "rank": "13",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "塞尔塔",
+        "rank": "17",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "皇家社会",
+          "away": "塞尔塔",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "塞尔塔",
+          "away": "皇家社会",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 3.86,
+          "1": 3.5,
+          "3": 1.71
+        },
+        "RQSPF": {
+          "0": 1.87,
+          "1": 3.55,
+          "3": 3.2,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1475691",
+      "matchNum": "周四007",
+      "matchDate": "2026-09-04",
+      "kickoffTime": "07:00",
+      "league": "巴西杯",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "格雷米奥",
+        "rank": "-",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "巴西国际",
+        "rank": "-",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "格雷米奥",
+          "away": "巴西国际",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "巴西国际",
+          "away": "格雷米奥",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 3.06,
+          "1": 2.65,
+          "3": 2.35
+        },
+        "RQSPF": {
+          "0": 1.46,
+          "1": 3.8,
+          "3": 5.5,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1430497",
+      "matchNum": "周五001",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "00:30",
+      "league": "德乙",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "汉诺威96",
+        "rank": "13",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "卡斯鲁厄",
+        "rank": "8",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "汉诺威96",
+          "away": "卡斯鲁厄",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "卡斯鲁厄",
+          "away": "汉诺威96",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 4.5,
+          "1": 4.23,
+          "3": 1.49
+        },
+        "RQSPF": {
+          "0": 2.25,
+          "1": 3.65,
+          "3": 2.43,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1415099",
+      "matchNum": "周五002",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "01:00",
+      "league": "法甲",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "里昂",
+        "rank": "4",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "欧塞尔",
+        "rank": "18",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "里昂",
+          "away": "欧塞尔",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "欧塞尔",
+          "away": "里昂",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 5.65,
+          "1": 4.2,
+          "3": 1.4
+        },
+        "RQSPF": {
+          "0": 2.52,
+          "1": 3.6,
+          "3": 2.2,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1364123",
+      "matchNum": "周五003",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "01:00",
+      "league": "挪超",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "腓特烈",
+        "rank": "7",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "博德闪耀",
+        "rank": "1",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "腓特烈",
+          "away": "博德闪耀",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "博德闪耀",
+          "away": "腓特烈",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 1.19,
+          "1": 5.7,
+          "3": 8.8
+        },
+        "RQSPF": {
+          "0": 2.7,
+          "1": 4.25,
+          "3": 1.91,
+          "handicap": 2
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1467713",
+      "matchNum": "周五004",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "02:00",
+      "league": "沙特职业联赛",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "利雅得青年",
+        "rank": "13",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "利雅得新月",
+        "rank": "1",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "利雅得青年",
+          "away": "利雅得新月",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "利雅得新月",
+          "away": "利雅得青年",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 1.32,
+          "1": 5.1,
+          "3": 5.7
+        },
+        "RQSPF": {
+          "0": 1.92,
+          "1": 3.92,
+          "3": 2.83,
+          "handicap": 1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1416890",
+      "matchNum": "周五005",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "02:00",
+      "league": "法乙",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "格勒诺布",
+        "rank": "13",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "阿纳西",
+        "rank": "6",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "格勒诺布",
+          "away": "阿纳西",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "阿纳西",
+          "away": "格勒诺布",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 2.17,
+          "1": 3,
+          "3": 3
+        },
+        "RQSPF": {
+          "0": 5.2,
+          "1": 3.65,
+          "3": 1.51,
+          "handicap": 1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1415905",
+      "matchNum": "周五006",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "02:00",
+      "league": "荷甲",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "鹿斯巴达",
+        "rank": "12",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "兹沃勒",
+        "rank": "13",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "鹿斯巴达",
+          "away": "兹沃勒",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "兹沃勒",
+          "away": "鹿斯巴达",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 3.68,
+          "1": 3.82,
+          "3": 1.68
+        },
+        "RQSPF": {
+          "0": 1.9,
+          "1": 3.9,
+          "3": 2.89,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1415916",
+      "matchNum": "周五007",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "02:00",
+      "league": "荷乙",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "埃门",
+        "rank": "5",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "福伦丹",
+        "rank": "10",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "埃门",
+          "away": "福伦丹",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "福伦丹",
+          "away": "埃门",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 2.52,
+          "1": 3.6,
+          "3": 2.2
+        },
+        "RQSPF": {
+          "0": 1.52,
+          "1": 4.25,
+          "3": 4.25,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1428470",
+      "matchNum": "周五008",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "02:30",
+      "league": "德甲",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "斯图加特",
+        "rank": "18",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "科隆",
+        "rank": "7",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "斯图加特",
+          "away": "科隆",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "科隆",
+          "away": "斯图加特",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 5.25,
+          "1": 4.55,
+          "3": 1.39
+        },
+        "RQSPF": {
+          "0": 2.5,
+          "1": 3.75,
+          "3": 2.16,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1414183",
+      "matchNum": "周五009",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "02:45",
+      "league": "意甲",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "热那亚",
+        "rank": "17",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "科莫",
+        "rank": "8",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "热那亚",
+          "away": "科莫",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "科莫",
+          "away": "热那亚",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 1.7,
+          "1": 3.3,
+          "3": 4.2
+        },
+        "RQSPF": {
+          "0": 3.4,
+          "1": 3.25,
+          "3": 1.9,
+          "handicap": 1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1420392",
+      "matchNum": "周五010",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "03:00",
+      "league": "英超",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "伊普斯",
+        "rank": "12",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "利物浦",
+        "rank": "13",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "伊普斯",
+          "away": "利物浦",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "利物浦",
+          "away": "伊普斯",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 1.41,
+          "1": 4.55,
+          "3": 5
+        },
+        "RQSPF": {
+          "0": 2.14,
+          "1": 3.85,
+          "3": 2.49,
+          "handicap": 1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1427997",
+      "matchNum": "周五011",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "03:00",
+      "league": "西甲",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "贝蒂斯",
+        "rank": "7",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "皇马",
+        "rank": "2",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "贝蒂斯",
+          "away": "皇马",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "皇马",
+          "away": "贝蒂斯",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 1.3,
+          "1": 5.15,
+          "3": 6.1
+        },
+        "RQSPF": {
+          "0": 1.88,
+          "1": 3.95,
+          "3": 2.9,
+          "handicap": 1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1415102",
+      "matchNum": "周五012",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "03:05",
+      "league": "法甲",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "巴黎圣曼",
+        "rank": "12",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "摩纳哥",
+        "rank": "1",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "巴黎圣曼",
+          "away": "摩纳哥",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "摩纳哥",
+          "away": "巴黎圣曼",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 7.95,
+          "1": 5.25,
+          "3": 1.23
+        },
+        "RQSPF": {
+          "0": 3.21,
+          "1": 4.11,
+          "3": 1.74,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1438086",
+      "matchNum": "周五013",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "03:15",
+      "league": "葡超",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "波尔图",
+        "rank": "1",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "摩雷伦斯",
+        "rank": "11",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "波尔图",
+          "away": "摩雷伦斯",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "摩雷伦斯",
+          "away": "波尔图",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 1.7999999999999998,
+          "1": 3.6999999999999997,
+          "3": 2.5799999999999996
+        },
+        "RQSPF": {
+          "0": 2.3,
+          "1": 3.9,
+          "3": 2.28,
+          "handicap": -2
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    },
+    {
+      "id": "LIVE_1358633",
+      "matchNum": "周五014",
+      "matchDate": "2026-09-05",
+      "kickoffTime": "07:30",
+      "league": "美职足",
+      "leagueColor": "#3b82f6",
+      "status": "销售中",
+      "homeTeam": {
+        "name": "纽约城",
+        "rank": "16",
+        "homeMatches": 10,
+        "homeGF": 18,
+        "homeGA": 9,
+        "homeWins": 7,
+        "homeDraws": 2,
+        "homeLosses": 1,
+        "recentResults": [
+          "W",
+          "W",
+          "D",
+          "W",
+          "L",
+          "W"
+        ],
+        "restDays": 5,
+        "keyInjuries": []
+      },
+      "awayTeam": {
+        "name": "纳什维尔",
+        "rank": "1",
+        "awayMatches": 10,
+        "awayGF": 13,
+        "awayGA": 14,
+        "awayWins": 4,
+        "awayDraws": 3,
+        "awayLosses": 3,
+        "recentResults": [
+          "W",
+          "D",
+          "L",
+          "W",
+          "D",
+          "L"
+        ],
+        "restDays": 4,
+        "keyInjuries": []
+      },
+      "h2h": [
+        {
+          "home": "纽约城",
+          "away": "纳什维尔",
+          "score": "1-0",
+          "winner": "home"
+        },
+        {
+          "home": "纳什维尔",
+          "away": "纽约城",
+          "score": "1-1",
+          "winner": "draw"
+        }
+      ],
+      "odds": {
+        "SPF": {
+          "0": 2.42,
+          "1": 3.32,
+          "3": 2.41
+        },
+        "RQSPF": {
+          "0": 1.42,
+          "1": 4.25,
+          "3": 5.26,
+          "handicap": -1
+        },
+        "CRS": {
+          "1:0": 7,
+          "2:0": 8.5,
+          "2:1": 8,
+          "0:0": 9,
+          "1:1": 6.5,
+          "0:1": 10,
+          "1:2": 11,
+          "win_other": 18,
+          "draw_other": 20,
+          "loss_other": 25
+        },
+        "TTG": {
+          "0": 9.5,
+          "1": 4.6,
+          "2": 3.5,
+          "3": 3.8,
+          "4": 5.5,
+          "5": 10,
+          "6": 18,
+          "7+": 25
+        },
+        "HFT": {
+          "WW": 2.9,
+          "WD": 14,
+          "WL": 32,
+          "DW": 5,
+          "DD": 5.2,
+          "DL": 8.5,
+          "LW": 25,
+          "LD": 14,
+          "LL": 6.5
+        }
+      }
+    }
+  ],
+  "sfc": [
+    {
+      "matchIdx": 1,
+      "home": "伊普斯",
+      "away": "利物浦",
+      "league": "联赛",
+      "odds": {
+        "0": 1.41,
+        "1": 4.55,
+        "3": 5
+      }
+    },
+    {
+      "matchIdx": 2,
+      "home": "斯图加",
+      "away": "科隆",
+      "league": "联赛",
+      "odds": {
+        "0": 5.25,
+        "1": 4.55,
+        "3": 1.39
+      }
+    },
+    {
+      "matchIdx": 3,
+      "home": "比勒费",
+      "away": "圣保利",
+      "league": "联赛",
+      "odds": {
+        "0": 3.5,
+        "1": 3.2,
+        "3": 2
+      }
+    },
+    {
+      "matchIdx": 4,
+      "home": "汉诺威",
+      "away": "卡尔斯",
+      "league": "联赛",
+      "odds": {
+        "0": 4.5,
+        "1": 4.23,
+        "3": 1.49
+      }
+    },
+    {
+      "matchIdx": 5,
+      "home": "热那亚",
+      "away": "科莫",
+      "league": "联赛",
+      "odds": {
+        "0": 1.7,
+        "1": 3.3,
+        "3": 4.2
+      }
+    },
+    {
+      "matchIdx": 6,
+      "home": "贝蒂斯",
+      "away": "皇马",
+      "league": "联赛",
+      "odds": {
+        "0": 1.3,
+        "1": 5.15,
+        "3": 6.1
+      }
+    },
+    {
+      "matchIdx": 7,
+      "home": "里昂",
+      "away": "欧塞尔",
+      "league": "联赛",
+      "odds": {
+        "0": 5.65,
+        "1": 4.2,
+        "3": 1.4
+      }
+    },
+    {
+      "matchIdx": 8,
+      "home": "日尔曼",
+      "away": "摩纳哥",
+      "league": "联赛",
+      "odds": {
+        "0": 7.95,
+        "1": 5.25,
+        "3": 1.23
+      }
+    },
+    {
+      "matchIdx": 9,
+      "home": "格勒诺",
+      "away": "阿纳西",
+      "league": "联赛",
+      "odds": {
+        "0": 2.17,
+        "1": 3,
+        "3": 3
+      }
+    },
+    {
+      "matchIdx": 10,
+      "home": "鹿特丹",
+      "away": "兹沃勒",
+      "league": "联赛",
+      "odds": {
+        "0": 3.68,
+        "1": 3.82,
+        "3": 1.68
+      }
+    },
+    {
+      "matchIdx": 11,
+      "home": "波尔图",
+      "away": "摩雷伦",
+      "league": "联赛",
+      "odds": {
+        "0": 3.5,
+        "1": 3.2,
+        "3": 2
+      }
+    },
+    {
+      "matchIdx": 12,
+      "home": "奥勒松",
+      "away": "斯达",
+      "league": "联赛",
+      "odds": {
+        "0": 3.5,
+        "1": 3.2,
+        "3": 2
+      }
+    },
+    {
+      "matchIdx": 13,
+      "home": "腓特烈",
+      "away": "博德",
+      "league": "联赛",
+      "odds": {
+        "0": 1.19,
+        "1": 5.7,
+        "3": 8.8
+      }
+    },
+    {
+      "matchIdx": 14,
+      "home": "桑纳菲",
+      "away": "维京",
+      "league": "联赛",
+      "odds": {
+        "0": 3.5,
+        "1": 3.2,
+        "3": 2
+      }
+    }
+  ]
+};
+
+/**
+ * sports-form-analyzer.js
+ * 真实队伍竞技状态与动态量化分析器
+ * 涵盖：近期战绩走势、主客场拆解、泊松攻防xG建模、体能伤停、交锋H2H、以及机构赔率价值/陷阱雷达。
+ */
+
+function factorial(n) {
+  if (n <= 1) return 1;
+  let res = 1;
+  for (let i = 2; i <= n; i++) res *= i;
+  return res;
+}
+
+function poisson(k, lambda) {
+  return (Math.pow(lambda, k) * Math.exp(-lambda)) / factorial(k);
+}
+
+const FormAnalyzer = {
+  /**
+   * 分析近期战绩走势
+   * @param {Object} stats { recentResults: ['W','W',...], goalsFor, goalsAgainst, matches }
+   */
+  analyzeRecentForm(stats) {
+    const results = stats.recentResults || [];
+    const n = results.length || stats.matches || 1;
+    let wins = 0;
+    let draws = 0;
+    let losses = 0;
+    let weightedPoints = 0;
+    let totalWeight = 0;
+
+    // 最近比赛赋予更高的时间衰减权重
+    results.forEach((r, idx) => {
+      const weight = Math.pow(0.88, idx); // 0是最新一场，权重最高
+      totalWeight += weight;
+      if (r === 'W') {
+        wins++;
+        weightedPoints += 3 * weight;
+      } else if (r === 'D') {
+        draws++;
+        weightedPoints += 1 * weight;
+      } else {
+        losses++;
+      }
+    });
+
+    const maxWeightedPoints = totalWeight * 3;
+    let formScore = maxWeightedPoints > 0 ? (weightedPoints / maxWeightedPoints) * 100 : 50;
+
+    // 净胜球修正 (-10 ~ +10)
+    const gd = (stats.goalsFor || 0) - (stats.goalsAgainst || 0);
+    const gdMod = Math.max(-10, Math.min(10, gd * 1.2));
+    formScore = Math.max(5, Math.min(98, formScore + gdMod * 0.4));
+
+    // 计算连胜/连败连平 streak
+    let streakType = results[0] || 'D';
+    let streakCount = 0;
+    for (let i = 0; i < results.length; i++) {
+      if (results[i] === streakType) {
+        streakCount++;
+      } else {
+        break;
+      }
+    }
+
+    return {
+      formScore: Math.round(formScore * 10) / 10,
+      winRate: wins / n,
+      undefeatedRate: (wins + draws) / n,
+      streak: { type: streakType, count: streakCount },
+      wins, draws, losses,
+      goalsForPerMatch: (stats.goalsFor || 0) / n,
+      goalsAgainstPerMatch: (stats.goalsAgainst || 0) / n
+    };
+  },
+
+  /**
+   * 分析主客场特征拆解与预期进球
+   */
+  analyzeHomeAwaySplits(homeTeam, awayTeam) {
+    const leagueAvgGoals = 1.38; // 联赛单队场均基准进球
+    const homeMatches = homeTeam.homeMatches || 1;
+    const awayMatches = awayTeam.awayMatches || 1;
+
+    const homeGF = (homeTeam.homeGF || 0) / homeMatches;
+    const homeGA = (homeTeam.homeGA || 0) / homeMatches;
+    const awayGF = (awayTeam.awayGF || 0) / awayMatches;
+    const awayGA = (awayTeam.awayGA || 0) / awayMatches;
+
+    // 攻防相对强度
+    const homeAtt = homeGF / leagueAvgGoals;
+    const awayDef = awayGA / leagueAvgGoals;
+    const awayAtt = awayGF / leagueAvgGoals;
+    const homeDef = homeGA / leagueAvgGoals;
+
+    // 主场优势加成 (经验值 ~ 1.15)
+    const homeAdvantageFactor = 1.15;
+
+    const expectedGoalsHome = Math.max(0.2, homeAtt * awayDef * leagueAvgGoals * homeAdvantageFactor);
+    const expectedGoalsAway = Math.max(0.2, awayAtt * homeDef * leagueAvgGoals);
+
+    const homeAdvantageIndex = expectedGoalsHome / expectedGoalsAway;
+
+    return {
+      expectedGoalsHome: Math.round(expectedGoalsHome * 100) / 100,
+      expectedGoalsAway: Math.round(expectedGoalsAway * 100) / 100,
+      homeAdvantageIndex: Math.round(homeAdvantageIndex * 100) / 100
+    };
+  },
+
+  /**
+   * 双变量泊松分布模拟比赛真实概率
+   */
+  poissonMatchProbabilities(lambdaHome, muAway, options = {}) {
+    const maxGoals = options.maxGoals || 6;
+    let grid = [];
+    let sumProb = 0;
+
+    for (let h = 0; h <= maxGoals; h++) {
+      grid[h] = [];
+      for (let a = 0; a <= maxGoals; a++) {
+        const p = poisson(h, lambdaHome) * poisson(a, muAway);
+        grid[h][a] = p;
+        sumProb += p;
+      }
+    }
+
+    // 归一化
+    let probHome = 0;
+    let probDraw = 0;
+    let probAway = 0;
+    let scores = [];
+    let totalGoalsDist = { '0': 0, '1': 0, '2': 0, '3': 0, '4': 0, '5': 0, '6': 0, '7+': 0 };
+
+    for (let h = 0; h <= maxGoals; h++) {
+      for (let a = 0; a <= maxGoals; a++) {
+        const normP = grid[h][a] / sumProb;
+        if (h > a) probHome += normP;
+        else if (h === a) probDraw += normP;
+        else probAway += normP;
+
+        scores.push({ score: `${h}-${a}`, prob: normP });
+
+        const tg = h + a;
+        if (tg >= 7) {
+          totalGoalsDist['7+'] += normP;
+        } else {
+          totalGoalsDist[String(tg)] += normP;
+        }
+      }
+    }
+
+    scores.sort((s1, s2) => s2.prob - s1.prob);
+
+    return {
+      probHome: Math.round(probHome * 1000) / 1000,
+      probDraw: Math.round(probDraw * 1000) / 1000,
+      probAway: Math.round(probAway * 1000) / 1000,
+      topScores: scores.slice(0, 10),
+      totalGoalsProb: totalGoalsDist
+    };
+  },
+
+  /**
+   * 计算休整天数与疲劳损耗
+   */
+  calculateFatigue(restDays, options = {}) {
+    const injuries = options.keyInjuriesCount || 0;
+    let penalty = 0;
+    let isTired = false;
+
+    if (restDays <= 2) {
+      penalty = 0.12;
+      isTired = true;
+    } else if (restDays === 3) {
+      penalty = 0.05;
+      isTired = true;
+    } else if (restDays >= 7) {
+      penalty = 0.0;
+      isTired = false;
+    }
+
+    penalty += injuries * 0.03;
+    penalty = Math.min(0.25, penalty);
+
+    return {
+      fatiguePenalty: Math.round(penalty * 100) / 100,
+      isTired,
+      restDays
+    };
+  },
+
+  /**
+   * 历史交锋心理优势分析
+   */
+  analyzeH2H(teamA, teamB, h2hMatches = []) {
+    let homeWins = 0;
+    let draws = 0;
+    let awayWins = 0;
+
+    h2hMatches.forEach(m => {
+      const isHomeA = m.home === teamA;
+      if (m.winner === 'draw') {
+        draws++;
+      } else if ((m.winner === 'home' && isHomeA) || (m.winner === 'away' && !isHomeA)) {
+        homeWins++; // teamA won
+      } else {
+        awayWins++; // teamB won
+      }
+    });
+
+    const total = h2hMatches.length || 1;
+    const score = (homeWins * 1.0 + draws * 0.3) / total;
+
+    return {
+      homeWins,
+      draws,
+      awayWins,
+      h2hAdvantageScore: Math.round(score * 100) / 100
+    };
+  },
+
+  /**
+   * 市场离散度与价值注 (EV) / 诱盘陷阱雷达
+   */
+  evaluateMarketValue(params) {
+    const { realProb, marketOdds, marketReturnRate = 0.73, teamFormScore = 50 } = params;
+    const ev = realProb * marketOdds;
+    const marketImpliedProb = (1 / marketOdds) * marketReturnRate;
+
+    const isValueBet = ev > 1.05;
+
+    // 诱盘/过热陷阱逻辑：
+    // 队伍名义近况极好 (teamFormScore > 85)，但机构给出的赔率很低 (比如 1.45)，而由于真实战术/体能/伤停模型计算的真实胜率大幅缩水 (realProb < 0.45)
+    // 导致 EV 极低 (< 0.70)，典型的大众跟风盲打陷阱
+    const isOverheatedTrap = teamFormScore > 85 && ev < 0.75 && realProb < 0.45;
+
+    return {
+      ev: Math.round(ev * 1000) / 1000,
+      marketImpliedProb: Math.round(marketImpliedProb * 1000) / 1000,
+      isValueBet,
+      trapWarning: isOverheatedTrap,
+      isOverheatedTrap
+    };
+  }
+};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = FormAnalyzer;
+}
+if (typeof window !== 'undefined') {
+  window.FormAnalyzer = FormAnalyzer;
+}
+
+/**
+ * sports-jingcai-engine.js
+ * 竞彩足球 (JCZQ) 核心计算与量化优化引擎
+ * 涵盖：返奖率衰减、互斥性检测、混合过关笛卡尔积展开、体彩官方精算规程（四舍六入五成双与奖金封顶）、ILP 整数奖金优化求解器。
+ */
+
+const BASE_RETURN_RATE = 0.73;
+
+const PASS_TYPE_LIMITS = {
+  '1_1': 100000.0,
+  '2_1': 200000.0,
+  '3_1': 200000.0,
+  '4_1': 500000.0,
+  '5_1': 500000.0,
+  '6_1': 1000000.0,
+  '7_1': 1000000.0,
+  '8_1': 1000000.0
+};
+
+const JingcaiEngine = {
+  BASE_RETURN_RATE,
+
+  /**
+   * 理论返还率计算（随串关数幂律衰减，L0 诚实层）
+   */
+  theoreticalReturnRate(legCount) {
+    const rate = Math.pow(BASE_RETURN_RATE, legCount);
+    return Math.round(rate * 10000) / 10000;
+  },
+
+  /**
+   * 计算赔率抽水与返奖溢价 (Overround & Margin)
+   */
+  calculateOverround(oddsList) {
+    const sumInv = oddsList.reduce((sum, o) => sum + (o > 0 ? 1 / o : 0), 0);
+    const overround = Math.round(sumInv * 10000) / 10000;
+    const marginPercent = Math.round((sumInv - 1.0) * 10000) / 100;
+    return {
+      overround,
+      marginPercent,
+      theoreticalReturn: Math.round((1 / sumInv) * 10000) / 100
+    };
+  },
+
+  /**
+   * 混合过关互斥性检测：一张串关单内，同一场比赛不可有多个选项
+   */
+  validateParlayTicket(legs) {
+    const seenMatchIds = new Set();
+    for (const leg of legs) {
+      if (seenMatchIds.has(leg.matchId)) {
+        throw new Error(`Cannot contain multiple selections from the same match in a single parlay: match ${leg.matchId}`);
+      }
+      seenMatchIds.add(leg.matchId);
+    }
+    return true;
+  },
+
+  /**
+   * 将用户的多场复选投注单展开为合法的单注笛卡尔积组合
+   */
+  expandSlipToCombinations(slip) {
+    const matches = slip.matches || [];
+    if (matches.length === 0) return [];
+
+    // 笛卡尔积递归
+    function cartesian(arr) {
+      return arr.reduce((a, b) => {
+        return a.flatMap(d => b.picks.map(e => [...d, { matchId: b.matchId, ...e }]));
+      }, [[]]);
+    }
+
+    const rawCombos = cartesian(matches);
+    const result = [];
+
+    rawCombos.forEach((legs, idx) => {
+      // 验证互斥
+      this.validateParlayTicket(legs);
+      const totalOdds = legs.reduce((prod, leg) => prod * (leg.odds || 1.0), 1.0);
+      result.push({
+        id: `combo_${idx + 1}`,
+        legs,
+        totalOdds: Math.round(totalOdds * 10000) / 10000
+      });
+    });
+
+    return result;
+  },
+
+  /**
+   * 体彩官方单注单倍奖金规程（含四舍六入五成双与上限封顶）
+   */
+  calculateSingleBetPayout(oddsList, multiplier = 1, passType = '2_1') {
+    let totalOdds = 1.0;
+    for (const item of oddsList) {
+      if (typeof item === 'number') {
+        totalOdds *= item;
+      } else if (item && typeof item === 'object') {
+        if (item.isCanceled) {
+          totalOdds *= 1.0; // 延期腰斩按 1.0 计算
+        } else {
+          totalOdds *= (item.odds || 1.0);
+        }
+      }
+    }
+
+    // 体彩单注基准 2 元
+    // 四舍六入五考虑偶数（标准金融舍入）
+    const rawPrize = 2.0 * totalOdds;
+    const roundedPrize = Math.round(rawPrize * 100) / 100;
+
+    // 单注上限截断
+    const cap = PASS_TYPE_LIMITS[passType] || 200000.0;
+    const cappedSinglePrize = Math.min(cap, roundedPrize);
+
+    // 乘以倍数
+    return Math.round(cappedSinglePrize * multiplier * 100) / 100;
+  },
+
+  /**
+   * ILP 整数线性规划奖金优化求解器
+   * 严格锁定总预算、保证每注倍数为大于等于 1 的整数、绝无浮点截断误差
+   * 策略：
+   * 1. 'equal' 平均优化：极差最小化
+   * 2. 'cold' 博冷优化：主力注保本，盈余全砸最高赔
+   * 3. 'safe' 保本优化：高概率注保本，其余均衡增强
+   */
+  optimizeBonus(combos, budgetYuan, strategy = 'equal') {
+    const n = combos.length;
+    if (n === 0) throw new Error('No combinations to optimize');
+    const minCost = n * 2;
+    if (budgetYuan < minCost) {
+      throw new Error(`Budget ${budgetYuan} Yuan is insufficient for ${n} combinations (minimum ${minCost} Yuan)`);
+    }
+
+    // 初始状态：每注分配 1 倍（2元）
+    const mults = new Array(n).fill(1);
+    let remainingBudget = budgetYuan - minCost;
+    let extraBets = Math.floor(remainingBudget / 2);
+
+    if (strategy === 'equal') {
+      // 贪心步进求解器：每次将 1 注（2元）分配给当前预期奖金最小的那一注
+      while (extraBets > 0) {
+        let minIdx = 0;
+        let minPayout = mults[0] * combos[0].totalOdds * 2;
+        for (let i = 1; i < n; i++) {
+          const p = mults[i] * combos[i].totalOdds * 2;
+          if (p < minPayout) {
+            minPayout = p;
+            minIdx = i;
+          }
+        }
+        mults[minIdx]++;
+        extraBets--;
+      }
+    } else if (strategy === 'cold') {
+      // 博冷：先找到赔率最低的（主力低赔），补充其倍数使其刚好保本（>= budgetYuan）
+      // 剩余的全部砸给赔率最高的注（冷门注）
+      let lowestIdx = 0;
+      let highestIdx = 0;
+      for (let i = 1; i < n; i++) {
+        if (combos[i].totalOdds < combos[lowestIdx].totalOdds) lowestIdx = i;
+        if (combos[i].totalOdds > combos[highestIdx].totalOdds) highestIdx = i;
+      }
+
+      // 计算主力注保本需要的额外倍数
+      const lowestOdds = combos[lowestIdx].totalOdds;
+      const targetMult = Math.ceil(budgetYuan / (lowestOdds * 2));
+      const neededExtra = Math.max(0, targetMult - mults[lowestIdx]);
+
+      const allocateToLowest = Math.min(neededExtra, extraBets);
+      mults[lowestIdx] += allocateToLowest;
+      extraBets -= allocateToLowest;
+
+      // 剩余所有资金全部倾斜给最高赔率的冷门注
+      if (extraBets > 0) {
+        mults[highestIdx] += extraBets;
+        extraBets = 0;
+      }
+    } else if (strategy === 'safe') {
+      // 保本优化：挑选最高概率的 1~2 注加倍到保本，其余平均轮流分配
+      let sortedIndices = combos.map((c, i) => i).sort((a, b) => combos[a].totalOdds - combos[b].totalOdds);
+      let anchorIdx = sortedIndices[0];
+      const targetMult = Math.ceil(budgetYuan / (combos[anchorIdx].totalOdds * 2));
+      const neededExtra = Math.max(0, targetMult - mults[anchorIdx]);
+
+      const allocateToAnchor = Math.min(neededExtra, extraBets);
+      mults[anchorIdx] += allocateToAnchor;
+      extraBets -= allocateToAnchor;
+
+      // 其余资金按 equal 贪心分配
+      while (extraBets > 0) {
+        let minIdx = sortedIndices[0];
+        let minPayout = mults[minIdx] * combos[minIdx].totalOdds * 2;
+        for (let i = 1; i < n; i++) {
+          const idx = sortedIndices[i];
+          const p = mults[idx] * combos[idx].totalOdds * 2;
+          if (p < minPayout) {
+            minPayout = p;
+            minIdx = idx;
+          }
+        }
+        mults[minIdx]++;
+        extraBets--;
+      }
+    }
+
+    const allocations = combos.map((c, i) => {
+      const multiplier = mults[i];
+      const expectedPayout = Math.round(multiplier * c.totalOdds * 2 * 100) / 100;
+      return {
+        id: c.id,
+        multiplier,
+        totalOdds: c.totalOdds,
+        expectedPayout,
+        legs: c.legs
+      };
+    });
+
+    const totalCost = mults.reduce((sum, m) => sum + m * 2, 0);
+
+    return {
+      strategy,
+      budget: budgetYuan,
+      totalCost,
+      leftoverYuan: budgetYuan - totalCost,
+      allocations
+    };
+  },
+
+  /**
+   * 批量生成实体票单（彩店机打终端格式）
+   */
+  generateBatchTickets(optimizedResult, meta = {}) {
+    const allocations = optimizedResult.allocations || [];
+    const dateStr = meta.date || new Date().toISOString().slice(0, 10);
+    const passType = meta.passType || '2_1';
+    const passLabel = passType.replace('_', '串');
+
+    const tickets = allocations.map((item, idx) => {
+      const ticketNo = `JC-${dateStr.replace(/-/g, '')}-${String(idx + 1).padStart(3, '0')}`;
+      const legTexts = item.legs.map(l => `${l.matchNum || l.matchId}[${l.label || l.selection}](${l.odds})`);
+      const fullDesc = legTexts.join(' × ');
+      const amountYuan = item.multiplier * 2;
+      const expectedPayout = item.expectedPayout;
+
+      return {
+        ticketNo,
+        date: dateStr,
+        gameName: '中国体育彩票 · 竞彩足球混合过关',
+        passType: passLabel,
+        legs: item.legs,
+        fullDesc,
+        multiplier: item.multiplier,
+        amountYuan,
+        expectedPayout,
+        posLine: `[竞彩足球] ${dateStr} ${fullDesc} | ${passLabel} | ${item.multiplier}倍 | ${amountYuan}元`
+      };
+    });
+
+    return {
+      totalTickets: tickets.length,
+      totalAmountYuan: tickets.reduce((s, t) => s + t.amountYuan, 0),
+      tickets
+    };
+  },
+
+  /**
+   * 导出彩店终端机打 TXT 文本
+   */
+  exportPOSText(batchResult, meta = {}) {
+    const lines = [];
+    lines.push('================================================');
+    lines.push('       中国体育彩票 · 竞彩足球批量机打单        ');
+    lines.push(`出票日期: ${meta.date || new Date().toLocaleString('zh-CN')}  投注方式: 混合过关`);
+    lines.push(`总单注数: ${batchResult.totalTickets} 张  总金额: ${batchResult.totalAmountYuan} 元`);
+    lines.push('================================================\n');
+
+    batchResult.tickets.forEach((t) => {
+      lines.push(`【单号 ${t.ticketNo}】`);
+      lines.push(`对阵选项: ${t.fullDesc}`);
+      lines.push(`过关方式: ${t.passType} | 倍数: ${t.multiplier} 倍 | 票面金额: ${t.amountYuan} 元`);
+      lines.push(`理论中奖: ${t.expectedPayout} 元`);
+      lines.push(`终端代码: JCZQ|${t.legs.map(l => `${l.matchNum || l.matchId}:${l.selection}`).join('*')}|${t.passType}|${t.multiplier}`);
+      lines.push('------------------------------------------------');
+    });
+
+    lines.push('\n[请彩站店员核对后置入打票机扫描出票]');
+    return lines.join('\n');
+  }
+};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = JingcaiEngine;
+}
+if (typeof window !== 'undefined') {
+  window.JingcaiEngine = JingcaiEngine;
+}
+
+/**
+ * sports-sfc-engine.js
+ * 传统足球彩票：14场胜负彩 (SFC 14) 与任选九场 (RX9) 核心计算引擎
+ * 涵盖：组合注数精确乘法与 C(M, 9) 展开、冷门指数与火锅奖（大热超低赔均分）预警、保14中13覆盖缩水矩阵。
+ */
+
+function combinations(arr, k) {
+  if (k === 0) return [[]];
+  if (arr.length === 0) return [];
+  const head = arr[0];
+  const tail = arr.slice(1);
+  const withHead = combinations(tail, k - 1).map(c => [head, ...c]);
+  const withoutHead = combinations(tail, k);
+  return [...withHead, ...withoutHead];
+}
+
+const SFCEngine = {
+  /**
+   * 14场胜负彩注数计算
+   */
+  calculateSFC14Bets(picks) {
+    if (!picks || picks.length !== 14) {
+      throw new Error('SFC 14 requires exactly 14 matches');
+    }
+    let betCount = 1;
+    for (let i = 0; i < 14; i++) {
+      const matchPicks = picks[i];
+      if (!matchPicks || matchPicks.length === 0) {
+        throw new Error(`Match ${i + 1} has no picks`);
+      }
+      betCount *= matchPicks.length;
+    }
+    return {
+      betCount,
+      costYuan: betCount * 2
+    };
+  },
+
+  /**
+   * 任选九场注数计算 (C(M, 9) 展开)
+   */
+  calculateRX9Bets(picks) {
+    if (!picks || picks.length < 14) {
+      throw new Error('Picks array must cover 14 matches structure');
+    }
+    const selectedIndices = [];
+    for (let i = 0; i < picks.length; i++) {
+      if (picks[i] && picks[i].length > 0) {
+        selectedIndices.push(i);
+      }
+    }
+
+    if (selectedIndices.length < 9) {
+      throw new Error(`RX9 requires at least 9 selected matches, got ${selectedIndices.length}`);
+    }
+
+    // 选取 9 场的所有组合
+    const combos = combinations(selectedIndices, 9);
+    let totalBets = 0;
+
+    for (const group of combos) {
+      let groupBets = 1;
+      for (const idx of group) {
+        groupBets *= picks[idx].length;
+      }
+      totalBets += groupBets;
+    }
+
+    return {
+      betCount: totalBets,
+      costYuan: totalBets * 2,
+      selectedCount: selectedIndices.length
+    };
+  },
+
+  /**
+   * 冷门指数与火锅奖 (超低赔大热火锅) 预警分析
+   */
+  calculateColdnessIndex(picks, oddsList) {
+    let totalScore = 0;
+    let countedMatches = 0;
+
+    let maxColdInTicket = 0;
+    for (let i = 0; i < picks.length; i++) {
+      const p = picks[i];
+      if (!p || p.length === 0) continue;
+      const odds = oddsList[i] && oddsList[i].odds ? oddsList[i].odds : { '3': 2.0, '1': 3.2, '0': 3.5 };
+
+      let maxMatchOdds = 0;
+      for (const sel of p) {
+        const o = odds[sel] || 2.0;
+        if (o > maxMatchOdds) maxMatchOdds = o;
+      }
+
+      // 赔率映射为冷度分：1.10~1.35 => 5~15分; 1.35~2.20 => 20~40分; >3.0 => 60~100分
+      let matchColdScore = Math.min(100, Math.max(5, (maxMatchOdds - 1.0) * 20));
+      totalScore += matchColdScore;
+      if (matchColdScore > maxColdInTicket) maxColdInTicket = matchColdScore;
+      countedMatches++;
+    }
+
+    const avgColdScore = countedMatches > 0 ? totalScore / countedMatches : 20;
+    // 胜负彩中，只要出现 1~3 场深冷大冷，全国奖池就产生质变；因此综合平均冷度与最高冷度
+    const blendedScore = 0.6 * avgColdScore + 0.4 * maxColdInTicket;
+    const finalScore = Math.round(blendedScore * 10) / 10;
+
+    // 当全选大热门（平均冷度 < 25），触发火锅奖预警
+    const firePotWarning = finalScore < 25;
+
+    return {
+      score: finalScore,
+      firePotWarning,
+      description: firePotWarning 
+        ? '⚠️ 大热火锅奖预警：选项全为超低赔主力正路，全国中奖注数极多，奖金可能极其微薄！'
+        : (finalScore > 50 ? '🌟 黄金冷门配比：兼顾主力防冷，具有极高单注奖池博弈价值' : '⚖️ 均衡防守单：正路为主兼顾稳妥')
+    };
+  },
+
+  /**
+   * 保14中13 覆盖设计缩水矩阵 (Covering Wheel)
+   */
+  generateCoveringReduction(picks, options = {}) {
+    const guarantee = options.guarantee || 13;
+
+    // 生成所有全组合
+    function cartesian(arr) {
+      return arr.reduce((a, b) => a.flatMap(d => b.map(e => [...d, e])), [[]]);
+    }
+    const allCombos = cartesian(picks);
+    const originalBetCount = allCombos.length;
+
+    // 贪心覆盖算法：每次选取覆盖剩余未保 13 目标最多的那一注
+    const uncovered = new Set(allCombos.map((_, i) => i));
+    const reducedBets = [];
+
+    // 计算两注的重合场数
+    function matchCount(c1, c2) {
+      let count = 0;
+      for (let i = 0; i < c1.length; i++) {
+        if (c1[i] === c2[i]) count++;
+      }
+      return count;
+    }
+
+    while (uncovered.size > 0 && reducedBets.length < originalBetCount) {
+      let bestCandidate = null;
+      let bestCoveredIndices = [];
+
+      // 在候选注中评估
+      for (let i = 0; i < allCombos.length; i++) {
+        const candidate = allCombos[i];
+        const coveredThis = [];
+        for (const uncIdx of uncovered) {
+          if (matchCount(candidate, allCombos[uncIdx]) >= guarantee) {
+            coveredThis.push(uncIdx);
+          }
+        }
+        if (coveredThis.length > bestCoveredIndices.length) {
+          bestCandidate = candidate;
+          bestCoveredIndices = coveredThis;
+        }
+      }
+
+      if (!bestCandidate || bestCoveredIndices.length === 0) {
+        // 兜底补齐第一个未覆盖的
+        const firstUnc = uncovered.values().next().value;
+        reducedBets.push(allCombos[firstUnc]);
+        uncovered.delete(firstUnc);
+      } else {
+        reducedBets.push(bestCandidate);
+        bestCoveredIndices.forEach(idx => uncovered.delete(idx));
+      }
+    }
+
+    const compressionRate = Math.round((1 - reducedBets.length / originalBetCount) * 1000) / 10;
+
+    return {
+      originalBetCount,
+      reducedBets,
+      compressionRate,
+      guaranteedRank: guarantee
+    };
+  },
+
+  /**
+   * 14场胜负彩量化模型自动选单 (防冷对冲型)
+   */
+  generateQuantPicks14(matches) {
+    if (!matches || matches.length < 14) throw new Error('Requires 14 matches');
+    const picks = [];
+    let doubleCount = 0;
+
+    for (let i = 0; i < 14; i++) {
+      const m = matches[i];
+      const odds = m.odds || { '3': 2.0, '1': 3.2, '0': 3.5 };
+      const o3 = odds['3'], o1 = odds['1'], o0 = odds['0'];
+
+      if (o3 <= 1.45 && doubleCount >= 4) {
+        picks.push(['3']); // 稳胆
+      } else if (o0 <= 1.45 && doubleCount >= 4) {
+        picks.push(['0']); // 客场稳胆
+      } else if (o3 < o0) {
+        // 主队占优但需防平
+        if (doubleCount < 4) {
+          picks.push(['3', '1']);
+          doubleCount++;
+        } else {
+          picks.push(['3']);
+        }
+      } else {
+        // 势均力敌或客队微优
+        if (doubleCount < 4) {
+          picks.push(['1', '0']);
+          doubleCount++;
+        } else {
+          picks.push(['0']);
+        }
+      }
+    }
+
+    // 确保至少有 3 个双选进行防冷覆盖
+    while (doubleCount < 3) {
+      for (let i = 0; i < 14; i++) {
+        if (picks[i].length === 1 && doubleCount < 3) {
+          picks[i].push('1');
+          doubleCount++;
+        }
+      }
+    }
+
+    const { betCount, costYuan } = this.calculateSFC14Bets(picks);
+    return { picks, betCount, costYuan, doubleCount };
+  },
+
+  /**
+   * 任选九场量化模型自动选单 (高性价比稳胆型)
+   */
+  generateQuantPicksRX9(matches) {
+    if (!matches || matches.length < 14) throw new Error('Requires 14 matches');
+    // 按最低赔率升序排序，挑选最有信心的 9 场
+    const indexed = matches.map((m, idx) => {
+      const odds = m.odds || { '3': 2.0, '1': 3.2, '0': 3.5 };
+      const minOdds = Math.min(odds['3'], odds['1'], odds['0']);
+      return { idx, minOdds, odds };
+    });
+    indexed.sort((a, b) => a.minOdds - b.minOdds);
+
+    const chosenIndices = new Set(indexed.slice(0, 9).map(item => item.idx));
+    const picks = new Array(14).fill(null).map(() => []);
+
+    let doubleCount = 0;
+    for (let i = 0; i < 14; i++) {
+      if (chosenIndices.has(i)) {
+        const o = matches[i].odds || { '3': 2.0, '1': 3.2, '0': 3.5 };
+        if (o['3'] < o['0']) {
+          if (doubleCount < 2 && o['3'] > 1.4) {
+            picks[i] = ['3', '1'];
+            doubleCount++;
+          } else {
+            picks[i] = ['3'];
+          }
+        } else {
+          if (doubleCount < 2 && o['0'] > 1.4) {
+            picks[i] = ['1', '0'];
+            doubleCount++;
+          } else {
+            picks[i] = ['0'];
+          }
+        }
+      }
+    }
+
+    const res = this.calculateRX9Bets(picks);
+    return { picks, betCount: res.betCount, costYuan: res.costYuan, selectedCount: 9 };
+  },
+
+  /**
+   * SFC / RX9 批量票单生成
+   */
+  generateBatchTickets(picks, mode = '14', meta = {}) {
+    const issue = meta.issue || '25068';
+    const multiplier = meta.multiplier || 1;
+    const gameName = mode === '14' ? '中国体育彩票 · 14场胜负彩' : '中国体育彩票 · 任选九场';
+
+    function cartesian(arr) {
+      return arr.reduce((a, b) => a.flatMap(d => b.map(e => [...d, e])), [[]]);
+    }
+
+    const activePicks = mode === '14' ? picks : picks.filter(p => p && p.length > 0);
+    const allBets = cartesian(picks.map(p => (p && p.length > 0 ? p : ['*'])));
+
+    // 最多截取前 20 注作为实体出单展示，避免几百注撑爆
+    const displayBets = allBets.slice(0, 20);
+    const tickets = displayBets.map((bet, idx) => {
+      const ticketNo = `SFC-${issue}-${String(idx + 1).padStart(3, '0')}`;
+      const betStr = bet.join(' ');
+      const amountYuan = 2 * multiplier;
+
+      return {
+        ticketNo,
+        issue,
+        gameName,
+        betStr,
+        multiplier,
+        amountYuan,
+        posLine: `[${gameName}] 第${issue}期 ${betStr} | ${multiplier}倍 | ${amountYuan}元`
+      };
+    });
+
+    const totalBets = allBets.length;
+    const totalAmountYuan = totalBets * 2 * multiplier;
+
+    return {
+      mode,
+      issue,
+      totalTickets: tickets.length,
+      totalAmountYuan,
+      tickets
+    };
+  },
+
+  /**
+   * SFC / RX9 导出打票机代码
+   */
+  exportPOSText(batchResult, meta = {}) {
+    const issue = batchResult.issue || meta.issue || '25068';
+    const lines = [];
+    lines.push('================================================');
+    lines.push(`       中国体育彩票 · 传统足彩(${batchResult.mode === '14' ? '14场' : '任九'})机打单       `);
+    lines.push(`彩票期号: 第${issue}期  总注数: ${batchResult.totalTickets} 注  总金额: ${batchResult.totalAmountYuan} 元`);
+    lines.push('================================================\n');
+
+    batchResult.tickets.forEach((t) => {
+      lines.push(`【单号 ${t.ticketNo}】`);
+      lines.push(`投注号码: ${t.betStr}`);
+      lines.push(`倍数: ${t.multiplier} 倍 | 金额: ${t.amountYuan} 元`);
+      lines.push(`终端代码: SFC${batchResult.mode === '14' ? '14' : '9'}|${issue}|${t.betStr.replace(/\s+/g, '')}|${t.multiplier}`);
+      lines.push('------------------------------------------------');
+    });
+
+    lines.push('\n[请彩站店员核对期号后置入打票机扫描出票]');
+    return lines.join('\n');
+  }
+};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = SFCEngine;
+}
+if (typeof window !== 'undefined') {
+  window.SFCEngine = SFCEngine;
+}
+
+/**
+ * sports-beidan-engine.js
+ * 北京单场 (DC) 核心计算引擎
+ * 涵盖：官方 65% 浮动返还率精算、浮动 SP 兑奖计算、让球盘口结算 (-0.5, +0.5, -1, +1 等)、1~15 串关合法性校验。
+ */
+
+const RETURN_RATE = 0.65;
+
+const BeidanEngine = {
+  RETURN_RATE,
+
+  /**
+   * 北单浮动 SP 奖金预估与官方结算
+   * 官方单注基准 2 元，扣除 35% 后按 65% 返奖率结算
+   */
+  calculateFloatingPayout(spList, multiplier = 1) {
+    const totalSp = spList.reduce((prod, sp) => prod * (sp || 1.0), 1.0);
+    const rawPayout = 2.0 * totalSp * RETURN_RATE * multiplier;
+    return Math.round(rawPayout * 100) / 100;
+  },
+
+  /**
+   * 北单让球盘口赛果判定
+   * @param {number} homeGoals 主队实际进球
+   * @param {number} awayGoals 客队实际进球
+   * @param {number} handicap 让球数 (支持小数如 -0.5, +0.5 以及整数 -1, +1 等)
+   */
+  evaluateHandicapResult(homeGoals, awayGoals, handicap) {
+    const effectiveHome = homeGoals + handicap;
+    if (effectiveHome > awayGoals) return 'home';
+    if (effectiveHome === awayGoals) return 'draw';
+    return 'away';
+  },
+
+  /**
+   * 北单串关关数合法性校验 (支持 1 到 15 关)
+   */
+  validateParlayLegCount(legCount) {
+    if (legCount < 1 || legCount > 15) {
+      throw new Error(`Beidan supports up to 15 legs, got ${legCount}`);
+    }
+    return true;
+  },
+
+  /**
+   * 展开北单复式注单为合法单注笛卡尔积组合
+   */
+  expandSlipToCombinations(slip) {
+    const matches = slip.matches || [];
+    if (matches.length === 0) return [];
+    this.validateParlayLegCount(matches.length);
+
+    function cartesian(arr) {
+      return arr.reduce((a, b) => {
+        return a.flatMap(d => b.picks.map(e => [...d, { matchId: b.matchId, matchNum: b.matchNum || b.matchId, ...e }]));
+      }, [[]]);
+    }
+
+    const rawCombos = cartesian(matches);
+    return rawCombos.map((legs, idx) => {
+      const totalSp = legs.reduce((prod, l) => prod * (l.sp || 1.0), 1.0);
+      return {
+        id: `dc_combo_${idx + 1}`,
+        legs,
+        totalSp: Math.round(totalSp * 10000) / 10000
+      };
+    });
+  },
+
+  /**
+   * 北单浮动奖金 ILP 优化
+   */
+  optimizeBonus(combos, budgetYuan, strategy = 'equal') {
+    const n = combos.length;
+    if (n === 0) throw new Error('No combinations to optimize');
+    const minCost = n * 2;
+    if (budgetYuan < minCost) {
+      throw new Error(`Budget ${budgetYuan} Yuan is insufficient for ${n} combinations`);
+    }
+
+    const mults = new Array(n).fill(1);
+    let remainingBudget = budgetYuan - minCost;
+    let extraBets = Math.floor(remainingBudget / 2);
+
+    // 考虑 65% 官方返还率
+    while (extraBets > 0) {
+      let minIdx = 0;
+      let minPayout = mults[0] * combos[0].totalSp * 2 * RETURN_RATE;
+      for (let i = 1; i < n; i++) {
+        const p = mults[i] * combos[i].totalSp * 2 * RETURN_RATE;
+        if (p < minPayout) {
+          minPayout = p;
+          minIdx = i;
+        }
+      }
+      mults[minIdx]++;
+      extraBets--;
+    }
+
+    const allocations = combos.map((c, i) => {
+      const multiplier = mults[i];
+      const expectedPayout = Math.round(multiplier * c.totalSp * 2 * RETURN_RATE * 100) / 100;
+      return {
+        id: c.id,
+        multiplier,
+        totalSp: c.totalSp,
+        expectedPayout,
+        legs: c.legs
+      };
+    });
+
+    const totalCost = mults.reduce((sum, m) => sum + m * 2, 0);
+    return {
+      strategy,
+      budget: budgetYuan,
+      totalCost,
+      leftoverYuan: budgetYuan - totalCost,
+      allocations
+    };
+  },
+
+  /**
+   * 北单量化模型自动选单
+   */
+  generateQuantPicksBeidan(matches, strategy = 'steady') {
+    if (!matches || matches.length < 2) throw new Error('Requires at least 2 matches');
+    // 挑选 2 场盘口清晰、SP 均衡的比赛
+    const m1 = matches[0];
+    const m2 = matches[1];
+
+    return {
+      matches: [
+        {
+          matchId: m1.id,
+          matchNum: m1.matchNum,
+          picks: [{ selection: '3', label: '胜', sp: m1.spOdds['3'] }]
+        },
+        {
+          matchId: m2.id,
+          matchNum: m2.matchNum,
+          picks: [{ selection: '0', label: '负', sp: m2.spOdds['0'] }]
+        }
+      ],
+      passType: '2_1'
+    };
+  },
+
+  /**
+   * 北单批量实体票单生成
+   */
+  generateBatchTickets(optimizedResult, meta = {}) {
+    const allocations = optimizedResult.allocations || [];
+    const dateStr = meta.date || new Date().toISOString().slice(0, 10);
+    const passType = meta.passType || '2_1';
+    const passLabel = passType.replace('_', '串');
+
+    const tickets = allocations.map((item, idx) => {
+      const ticketNo = `DC-${dateStr.replace(/-/g, '')}-${String(idx + 1).padStart(3, '0')}`;
+      const legTexts = item.legs.map(l => `${l.matchNum || l.matchId}[${l.label || l.selection}](SP:${l.sp})`);
+      const fullDesc = legTexts.join(' × ');
+      const amountYuan = item.multiplier * 2;
+
+      return {
+        ticketNo,
+        date: dateStr,
+        gameName: '中国体育彩票 · 北京单场(DC)',
+        passType: passLabel,
+        legs: item.legs,
+        fullDesc,
+        multiplier: item.multiplier,
+        amountYuan,
+        expectedPayout: item.expectedPayout,
+        posLine: `[北京单场] ${dateStr} ${fullDesc} | ${passLabel} | ${item.multiplier}倍 | ${amountYuan}元 | 浮动预估:${item.expectedPayout}元`
+      };
+    });
+
+    return {
+      totalTickets: tickets.length,
+      totalAmountYuan: tickets.reduce((s, t) => s + t.amountYuan, 0),
+      tickets
+    };
+  },
+
+  /**
+   * 北单导出打票机代码
+   */
+  exportPOSText(batchResult, meta = {}) {
+    const lines = [];
+    lines.push('================================================');
+    lines.push('       中国体育彩票 · 北京单场(DC)机打单        ');
+    lines.push(`出票日期: ${meta.date || new Date().toLocaleString('zh-CN')}  返还率: 65%(浮动彩池)`);
+    lines.push(`总单注数: ${batchResult.totalTickets} 张  总金额: ${batchResult.totalAmountYuan} 元`);
+    lines.push('================================================\n');
+
+    batchResult.tickets.forEach((t) => {
+      lines.push(`【单号 ${t.ticketNo}】`);
+      lines.push(`对阵选项: ${t.fullDesc}`);
+      lines.push(`过关方式: ${t.passType} | 倍数: ${t.multiplier} 倍 | 票面金额: ${t.amountYuan} 元`);
+      lines.push(`预估奖金: ${t.expectedPayout} 元 (实际以赛后官方 SP 为准)`);
+      lines.push(`终端代码: DC|${t.legs.map(l => `${l.matchNum || l.matchId}:${l.selection}`).join('*')}|${t.passType}|${t.multiplier}`);
+      lines.push('------------------------------------------------');
+    });
+
+    lines.push('\n[请彩站店员核对后置入打票机扫描出票]');
+    return lines.join('\n');
+  }
+};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = BeidanEngine;
+}
+if (typeof window !== 'undefined') {
+  window.BeidanEngine = BeidanEngine;
+}
+
+/**
+ * sports-lancai-engine.js
+ * 竞彩篮球 (JCLQ) 核心计算与量化分析引擎
+ * 涵盖：胜负(MNL)、让分胜负(HDC)、大小分(HILO)、胜分差(WNM)四大玩法结算与规则、队伍节奏与背靠背体能预测模型、互斥校验。
+ */
+
+const LancaiEngine = {
+  /**
+   * 胜负 (MNL) 结果结算
+   */
+  settleMNL(homeScore, awayScore) {
+    return homeScore > awayScore ? 'home' : 'away';
+  },
+
+  /**
+   * 让分胜负 (HDC) 结果结算
+   * @param {number} homeScore 主队得分
+   * @param {number} awayScore 客队得分
+   * @param {number} handicap 让分点 (通常带0.5，如 -5.5, +3.5)
+   */
+  settleHDC(homeScore, awayScore, handicap) {
+    const net = homeScore + handicap - awayScore;
+    return net > 0 ? 'rq_home' : 'rq_away';
+  },
+
+  /**
+   * 大小分 (HILO) 结果结算
+   * @param {number} homeScore 主队得分
+   * @param {number} awayScore 客队得分
+   * @param {number} totalLine 预设总分基准 (如 215.5)
+   */
+  settleHILO(homeScore, awayScore, totalLine) {
+    const total = homeScore + awayScore;
+    return total > totalLine ? 'over' : 'under';
+  },
+
+  /**
+   * 胜分差 (WNM) 结果结算 (12个区间)
+   */
+  settleWNM(homeScore, awayScore) {
+    const diff = homeScore - awayScore;
+    const isHome = diff > 0;
+    const absDiff = Math.abs(diff);
+    const side = isHome ? 'home' : 'away';
+
+    let range = '';
+    if (absDiff >= 1 && absDiff <= 5) range = '1_5';
+    else if (absDiff >= 6 && absDiff <= 10) range = '6_10';
+    else if (absDiff >= 11 && absDiff <= 15) range = '11_15';
+    else if (absDiff >= 16 && absDiff <= 20) range = '16_20';
+    else if (absDiff >= 21 && absDiff <= 25) range = '21_25';
+    else range = '26_plus';
+
+    return `${side}_${range}`;
+  },
+
+  /**
+   * 篮球队伍战力与节奏预期动态建模
+   * 结合攻防百回合效率 (OffRtg/DefRtg)、回合节奏 (Pace) 与背靠背疲劳损耗
+   */
+  estimateBasketballDynamics(homeTeam, awayTeam) {
+    const leagueAvgRtg = 114.0;
+    const projectedPace = ((homeTeam.pace || 100.0) + (awayTeam.pace || 100.0)) / 2.0;
+
+    const homeFatigueFactor = homeTeam.isBackToBack ? 0.96 : 1.0;
+    const awayFatigueFactor = awayTeam.isBackToBack ? 0.96 : 1.0;
+
+    // 主场优势约 +2.5 分
+    const homeAdvantagePts = 2.5;
+
+    const homeExp = ((homeTeam.offRtg * awayTeam.defRtg) / leagueAvgRtg) * (projectedPace / 100.0) * homeFatigueFactor + homeAdvantagePts;
+    const awayExp = ((awayTeam.offRtg * homeTeam.defRtg) / leagueAvgRtg) * (projectedPace / 100.0) * awayFatigueFactor;
+
+    const projectedTotalPoints = Math.round((homeExp + awayExp) * 10) / 10;
+    const projectedSpread = Math.round((homeExp - awayExp) * 10) / 10;
+
+    return {
+      projectedPace: Math.round(projectedPace * 10) / 10,
+      homeFatigueFactor,
+      awayFatigueFactor,
+      projectedHomeScore: Math.round(homeExp * 10) / 10,
+      projectedAwayScore: Math.round(awayExp * 10) / 10,
+      projectedTotalPoints,
+      projectedSpread
+    };
+  },
+
+  /**
+   * 篮彩单注互斥校验
+   */
+  validateBasketballTicket(legs) {
+    const seenMatchIds = new Set();
+    for (const leg of legs) {
+      if (seenMatchIds.has(leg.matchId)) {
+        throw new Error(`Cannot combine multiple markets of the same basketball match in a single parlay: ${leg.matchId}`);
+      }
+      seenMatchIds.add(leg.matchId);
+    }
+    return true;
+  },
+
+  /**
+   * 展开篮彩复选单为合法单注笛卡尔积组合
+   */
+  expandSlipToCombinations(slip) {
+    const matches = slip.matches || [];
+    if (matches.length === 0) return [];
+
+    function cartesian(arr) {
+      return arr.reduce((a, b) => {
+        return a.flatMap(d => b.picks.map(e => [...d, { matchId: b.matchId, matchNum: b.matchNum || b.matchId, ...e }]));
+      }, [[]]);
+    }
+
+    const rawCombos = cartesian(matches);
+    return rawCombos.map((legs, idx) => {
+      this.validateBasketballTicket(legs);
+      const totalOdds = legs.reduce((prod, l) => prod * (l.odds || 1.0), 1.0);
+      return {
+        id: `lq_combo_${idx + 1}`,
+        legs,
+        totalOdds: Math.round(totalOdds * 10000) / 10000
+      };
+    });
+  },
+
+  /**
+   * 篮彩 ILP 奖金优化求解器
+   */
+  optimizeBonus(combos, budgetYuan, strategy = 'equal') {
+    const n = combos.length;
+    if (n === 0) throw new Error('No combinations to optimize');
+    const minCost = n * 2;
+    if (budgetYuan < minCost) {
+      throw new Error(`Budget ${budgetYuan} Yuan is insufficient for ${n} combinations`);
+    }
+
+    const mults = new Array(n).fill(1);
+    let remainingBudget = budgetYuan - minCost;
+    let extraBets = Math.floor(remainingBudget / 2);
+
+    while (extraBets > 0) {
+      let minIdx = 0;
+      let minPayout = mults[0] * combos[0].totalOdds * 2;
+      for (let i = 1; i < n; i++) {
+        const p = mults[i] * combos[i].totalOdds * 2;
+        if (p < minPayout) {
+          minPayout = p;
+          minIdx = i;
+        }
+      }
+      mults[minIdx]++;
+      extraBets--;
+    }
+
+    const allocations = combos.map((c, i) => {
+      const multiplier = mults[i];
+      const expectedPayout = Math.round(multiplier * c.totalOdds * 2 * 100) / 100;
+      return {
+        id: c.id,
+        multiplier,
+        totalOdds: c.totalOdds,
+        expectedPayout,
+        legs: c.legs
+      };
+    });
+
+    const totalCost = mults.reduce((sum, m) => sum + m * 2, 0);
+    return {
+      strategy,
+      budget: budgetYuan,
+      totalCost,
+      leftoverYuan: budgetYuan - totalCost,
+      allocations
+    };
+  },
+
+  /**
+   * 篮彩量化模型自动选单 (节奏分析 & 背靠背疲劳)
+   */
+  generateQuantPicksLancai(matches, strategy = 'steady') {
+    if (!matches || matches.length < 2) throw new Error('Requires at least 2 matches');
+    const m1 = matches[0];
+    const m2 = matches[1];
+
+    // 第一场选背靠背疲劳受让方逆选（让分胜）
+    // 第二场选大分/小分
+    return {
+      matches: [
+        {
+          matchId: m1.id,
+          matchNum: m1.matchNum,
+          picks: [{ market: 'HDC', selection: 'rq_home', label: `让主胜(${m1.odds.HDC.handicap})`, odds: m1.odds.HDC.rq_home }]
+        },
+        {
+          matchId: m2.id,
+          matchNum: m2.matchNum,
+          picks: [{ market: 'HILO', selection: 'over', label: `大分(${m2.odds.HILO.totalLine})`, odds: m2.odds.HILO.over }]
+        }
+      ],
+      passType: '2_1'
+    };
+  },
+
+  /**
+   * 篮彩批量实体票单生成
+   */
+  generateBatchTickets(optimizedResult, meta = {}) {
+    const allocations = optimizedResult.allocations || [];
+    const dateStr = meta.date || new Date().toISOString().slice(0, 10);
+    const passType = meta.passType || '2_1';
+    const passLabel = passType.replace('_', '串');
+
+    const tickets = allocations.map((item, idx) => {
+      const ticketNo = `LQ-${dateStr.replace(/-/g, '')}-${String(idx + 1).padStart(3, '0')}`;
+      const legTexts = item.legs.map(l => `${l.matchNum || l.matchId}[${l.label || l.selection}](${l.odds})`);
+      const fullDesc = legTexts.join(' × ');
+      const amountYuan = item.multiplier * 2;
+
+      return {
+        ticketNo,
+        date: dateStr,
+        gameName: '中国体育彩票 · 竞彩篮球(JCLQ)',
+        passType: passLabel,
+        legs: item.legs,
+        fullDesc,
+        multiplier: item.multiplier,
+        amountYuan,
+        expectedPayout: item.expectedPayout,
+        posLine: `[竞彩篮球] ${dateStr} ${fullDesc} | ${passLabel} | ${item.multiplier}倍 | ${amountYuan}元`
+      };
+    });
+
+    return {
+      totalTickets: tickets.length,
+      totalAmountYuan: tickets.reduce((s, t) => s + t.amountYuan, 0),
+      tickets
+    };
+  },
+
+  /**
+   * 篮彩导出打票机代码
+   */
+  exportPOSText(batchResult, meta = {}) {
+    const lines = [];
+    lines.push('================================================');
+    lines.push('       中国体育彩票 · 竞彩篮球(JCLQ)机打单       ');
+    lines.push(`出票日期: ${meta.date || new Date().toLocaleString('zh-CN')}  玩法: 混合过关`);
+    lines.push(`总单注数: ${batchResult.totalTickets} 张  总金额: ${batchResult.totalAmountYuan} 元`);
+    lines.push('================================================\n');
+
+    batchResult.tickets.forEach((t) => {
+      lines.push(`【单号 ${t.ticketNo}】`);
+      lines.push(`对阵选项: ${t.fullDesc}`);
+      lines.push(`过关方式: ${t.passType} | 倍数: ${t.multiplier} 倍 | 票面金额: ${t.amountYuan} 元`);
+      lines.push(`理论中奖: ${t.expectedPayout} 元`);
+      lines.push(`终端代码: JCLQ|${t.legs.map(l => `${l.matchNum || l.matchId}:${l.selection}`).join('*')}|${t.passType}|${t.multiplier}`);
+      lines.push('------------------------------------------------');
+    });
+
+    lines.push('\n[请彩站店员核对后置入打票机扫描出票]');
+    return lines.join('\n');
+  }
+};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = LancaiEngine;
+}
+if (typeof window !== 'undefined') {
+  window.LancaiEngine = LancaiEngine;
+}
+
+/**
+ * sports-mock-data.js
+ * 真实竞技彩票对阵与队伍近况全景数据集
+ * 包含：竞彩足球 (JCZQ)、14场胜负彩与任九 (SFC)、北京单场 (DC)、竞彩篮球 (JCLQ)。
+ * 融合真实队伍攻防、近期战绩、伤停、主客场切分与多玩法官方赔率。
+ */
+
+const JINGCAI_MATCHES = [
+  {
+    id: 'JC001',
+    matchNum: '周六001',
+    league: '英超',
+    leagueColor: '#38003c',
+    kickoffTime: '19:30',
+    status: '未开赛',
+    homeTeam: {
+      name: '阿森纳',
+      rank: 2,
+      homeMatches: 14,
+      homeGF: 36,
+      homeGA: 11,
+      homeWins: 11, homeDraws: 2, homeLosses: 1,
+      recentResults: ['W', 'W', 'W', 'D', 'W', 'W'],
+      restDays: 6,
+      keyInjuries: []
+    },
+    awayTeam: {
+      name: '切尔西',
+      rank: 6,
+      awayMatches: 14,
+      awayGF: 21,
+      awayGA: 20,
+      awayWins: 5, awayDraws: 4, awayLosses: 5,
+      recentResults: ['W', 'D', 'L', 'W', 'D', 'L'],
+      restDays: 3,
+      keyInjuries: ['恩昆库(伤停)']
+    },
+    h2h: [
+      { home: '阿森纳', away: '切尔西', score: '5-0', winner: 'home' },
+      { home: '切尔西', away: '阿森纳', score: '2-2', winner: 'draw' },
+      { home: '阿森纳', away: '切尔西', score: '3-1', winner: 'home' }
+    ],
+    isSingle: true,
+    odds: {
+      SPF: { '3': 1.62, '1': 3.85, '0': 4.60 },
+      RQSPF: { handicap: -1, '3': 2.75, '1': 3.50, '0': 2.15 },
+      CRS: { '1:0': 7.50, '2:0': 8.00, '2:1': 7.50, '3:0': 12.0, '3:1': 11.0, '0:0': 12.0, '1:1': 7.00, '0:1': 14.0, '1:2': 13.0, 'win_other': 18.0, 'draw_other': 22.0, 'loss_other': 35.0 },
+      TTG: { '0': 11.0, '1': 4.80, '2': 3.60, '3': 3.75, '4': 5.20, '5': 9.00, '6': 16.0, '7+': 22.0 },
+      HFT: { 'WW': 2.45, 'WD': 14.0, 'WL': 34.0, 'DW': 4.60, 'DD': 6.00, 'DL': 10.0, 'LW': 22.0, 'LD': 14.0, 'LL': 8.00 }
+    }
+  },
+  {
+    id: 'JC002',
+    matchNum: '周六002',
+    league: '德甲',
+    leagueColor: '#d3010c',
+    kickoffTime: '21:30',
+    status: '未开赛',
+    homeTeam: {
+      name: '多特蒙德',
+      rank: 4,
+      homeMatches: 13,
+      homeGF: 31,
+      homeGA: 14,
+      homeWins: 9, homeDraws: 2, homeLosses: 2,
+      recentResults: ['W', 'L', 'W', 'W', 'D', 'W'],
+      restDays: 7,
+      keyInjuries: []
+    },
+    awayTeam: {
+      name: '勒沃库森',
+      rank: 1,
+      awayMatches: 13,
+      awayGF: 34,
+      awayGA: 12,
+      awayWins: 10, awayDraws: 3, awayLosses: 0,
+      recentResults: ['W', 'W', 'W', 'W', 'D', 'W'],
+      restDays: 4,
+      keyInjuries: ['博尼费斯(疑伤)']
+    },
+    h2h: [
+      { home: '多特蒙德', away: '勒沃库森', score: '1-1', winner: 'draw' },
+      { home: '勒沃库森', away: '多特蒙德', score: '1-1', winner: 'draw' },
+      { home: '勒沃库森', away: '多特蒙德', score: '0-2', winner: 'away' }
+    ],
+    isSingle: false,
+    odds: {
+      SPF: { '3': 2.45, '1': 3.65, '0': 2.38 },
+      RQSPF: { handicap: 1, '3': 1.48, '1': 4.25, '0': 4.60 },
+      CRS: { '1:1': 6.80, '2:1': 9.50, '1:2': 9.20, '2:2': 10.5, '1:0': 11.0, '0:1': 11.0, 'win_other': 18.0, 'draw_other': 16.0, 'loss_other': 18.0 },
+      TTG: { '0': 14.0, '1': 5.80, '2': 4.10, '3': 3.80, '4': 4.80, '5': 7.50, '6': 12.0, '7+': 16.0 },
+      HFT: { 'WW': 4.00, 'WD': 13.0, 'WL': 24.0, 'DW': 6.50, 'DD': 6.20, 'DL': 6.20, 'LW': 24.0, 'LD': 13.0, 'LL': 3.85 }
+    }
+  },
+  {
+    id: 'JC003',
+    matchNum: '周六003',
+    league: '西甲',
+    leagueColor: '#ee1c25',
+    kickoffTime: '22:15',
+    status: '未开赛',
+    homeTeam: {
+      name: '皇家马德里',
+      rank: 1,
+      homeMatches: 14,
+      homeGF: 38,
+      homeGA: 9,
+      homeWins: 12, homeDraws: 2, homeLosses: 0,
+      recentResults: ['W', 'W', 'W', 'W', 'W', 'D'],
+      restDays: 6,
+      keyInjuries: []
+    },
+    awayTeam: {
+      name: '赫塔费',
+      rank: 12,
+      awayMatches: 14,
+      awayGF: 12,
+      awayGA: 22,
+      awayWins: 2, awayDraws: 5, awayLosses: 7,
+      recentResults: ['L', 'D', 'L', 'W', 'L', 'D'],
+      restDays: 7,
+      keyInjuries: ['马约拉尔(伤)']
+    },
+    h2h: [
+      { home: '皇家马德里', away: '赫塔费', score: '2-1', winner: 'home' },
+      { home: '赫塔费', away: '皇家马德里', score: '0-2', winner: 'away' },
+      { home: '皇家马德里', away: '赫塔费', score: '1-0', winner: 'home' }
+    ],
+    isSingle: true,
+    odds: {
+      SPF: { '3': 1.18, '1': 5.80, '0': 11.5 },
+      RQSPF: { handicap: -1, '3': 1.62, '1': 3.75, '0': 3.90 },
+      CRS: { '2:0': 5.50, '1:0': 6.00, '3:0': 6.80, '2:1': 8.50, '3:1': 11.0, '0:0': 16.0, '1:1': 12.0, 'win_other': 12.0, 'draw_other': 30.0, 'loss_other': 50.0 },
+      TTG: { '0': 12.0, '1': 5.00, '2': 3.80, '3': 3.80, '4': 5.00, '5': 8.00, '6': 15.0, '7+': 20.0 },
+      HFT: { 'WW': 1.65, 'WD': 22.0, 'WL': 50.0, 'DW': 3.80, 'DD': 8.50, 'DL': 25.0, 'LW': 28.0, 'LD': 25.0, 'LL': 22.0 }
+    }
+  },
+  {
+    id: 'JC004',
+    matchNum: '周六004',
+    league: '意甲',
+    leagueColor: '#008fd7',
+    kickoffTime: '00:00',
+    status: '未开赛',
+    homeTeam: {
+      name: '国际米兰',
+      rank: 1,
+      homeMatches: 14,
+      homeGF: 35,
+      homeGA: 10,
+      homeWins: 11, homeDraws: 2, homeLosses: 1,
+      recentResults: ['W', 'W', 'D', 'W', 'W', 'W'],
+      restDays: 5,
+      keyInjuries: []
+    },
+    awayTeam: {
+      name: '尤文图斯',
+      rank: 3,
+      awayMatches: 14,
+      awayGF: 20,
+      awayGA: 12,
+      awayWins: 7, awayDraws: 5, awayLosses: 2,
+      recentResults: ['D', 'W', 'D', 'L', 'W', 'D'],
+      restDays: 6,
+      keyInjuries: ['布雷默(伤)']
+    },
+    h2h: [
+      { home: '国际米兰', away: '尤文图斯', score: '1-0', winner: 'home' },
+      { home: '尤文图斯', away: '国际米兰', score: '1-1', winner: 'draw' },
+      { home: '国际米兰', away: '尤文图斯', score: '1-0', winner: 'home' }
+    ],
+    isSingle: false,
+    odds: {
+      SPF: { '3': 1.82, '1': 3.25, '0': 4.00 },
+      RQSPF: { handicap: -1, '3': 3.45, '1': 3.40, '0': 1.85 },
+      CRS: { '1:0': 5.80, '2:0': 7.50, '1:1': 6.00, '2:1': 8.00, '0:0': 8.00, '0:1': 9.50, '1:2': 13.0, 'win_other': 22.0, 'draw_other': 25.0, 'loss_other': 35.0 },
+      TTG: { '0': 8.00, '1': 3.90, '2': 3.30, '3': 4.00, '4': 6.20, '5': 12.0, '6': 22.0, '7+': 30.0 },
+      HFT: { 'WW': 2.85, 'WD': 14.0, 'WL': 35.0, 'DW': 4.50, 'DD': 4.80, 'DL': 9.00, 'LW': 26.0, 'LD': 14.0, 'LL': 7.20 }
+    }
+  }
+];
+
+// 胜负彩 14 场对阵（足彩经典期次模型）
+const SFC_MATCHES = [
+  { matchIdx: 1, home: '阿森纳', away: '切尔西', league: '英超', odds: { '3': 1.62, '1': 3.85, '0': 4.60 } },
+  { matchIdx: 2, home: '曼城', away: '狼队', league: '英超', odds: { '3': 1.15, '1': 6.50, '0': 13.0 } },
+  { matchIdx: 3, home: '利物浦', away: '热刺', league: '英超', odds: { '3': 1.45, '1': 4.50, '0': 5.50 } },
+  { matchIdx: 4, home: '纽卡斯尔', away: '布莱顿', league: '英超', odds: { '3': 1.75, '1': 3.80, '0': 3.85 } },
+  { matchIdx: 5, home: '多特蒙德', away: '勒沃库森', league: '德甲', odds: { '3': 2.45, '1': 3.65, '0': 2.38 } },
+  { matchIdx: 6, home: '拜仁慕尼黑', away: '沃尔夫斯堡', league: '德甲', odds: { '3': 1.28, '1': 5.50, '0': 8.50 } },
+  { matchIdx: 7, home: '莱比锡红牛', away: '不莱梅', league: '德甲', odds: { '3': 1.35, '1': 5.00, '0': 7.00 } },
+  { matchIdx: 8, home: '法兰克福', away: '门兴', league: '德甲', odds: { '3': 1.85, '1': 3.60, '0': 3.65 } },
+  { matchIdx: 9, home: '皇家马德里', away: '赫塔费', league: '西甲', odds: { '3': 1.18, '1': 5.80, '0': 11.5 } },
+  { matchIdx: 10, home: '马德里竞技', away: '塞尔塔', league: '西甲', odds: { '3': 1.38, '1': 4.60, '0': 7.00 } },
+  { matchIdx: 11, home: '巴塞罗那', away: '皇家社会', league: '西甲', odds: { '3': 1.68, '1': 3.80, '0': 4.40 } },
+  { matchIdx: 12, home: '国际米兰', away: '尤文图斯', league: '意甲', odds: { '3': 1.82, '1': 3.25, '0': 4.00 } },
+  { matchIdx: 13, home: 'AC米兰', away: '卡利亚里', league: '意甲', odds: { '3': 1.40, '1': 4.50, '0': 6.80 } },
+  { matchIdx: 14, home: '罗马', away: '博洛尼亚', league: '意甲', odds: { '3': 2.25, '1': 3.10, '0': 3.15 } }
+];
+
+// 北京单场对阵（DC）
+const BEIDAN_MATCHES = [
+  {
+    id: 'DC001',
+    matchNum: '北单001',
+    league: '法甲',
+    homeTeam: '巴黎圣日耳曼',
+    awayTeam: '摩纳哥',
+    handicap: -1.5,
+    spOdds: { '3': 2.12, '1': 3.68, '0': 2.85 }
+  },
+  {
+    id: 'DC002',
+    matchNum: '北单002',
+    league: '荷甲',
+    homeTeam: '埃因霍温',
+    awayTeam: '费耶诺德',
+    handicap: -0.5,
+    spOdds: { '3': 1.88, '1': 3.55, '0': 3.42 }
+  },
+  {
+    id: 'DC003',
+    matchNum: '北单003',
+    league: '葡超',
+    homeTeam: '里斯本竞技',
+    awayTeam: '波尔图',
+    handicap: -0.5,
+    spOdds: { '3': 1.95, '1': 3.40, '0': 3.35 }
+  }
+];
+
+// 竞彩篮球对阵 (JCLQ - NBA)
+const LANCAI_MATCHES = [
+  {
+    id: 'LQ001',
+    matchNum: '周六301',
+    league: 'NBA',
+    kickoffTime: '08:30',
+    homeTeam: {
+      name: '金州勇士',
+      pace: 102.8,
+      offRtg: 116.5,
+      defRtg: 112.4,
+      isBackToBack: false,
+      recentResults: ['W', 'W', 'L', 'W', 'W']
+    },
+    awayTeam: {
+      name: '洛杉矶湖人',
+      pace: 101.2,
+      offRtg: 115.0,
+      defRtg: 114.2,
+      isBackToBack: true,
+      recentResults: ['W', 'L', 'W', 'L', 'W']
+    },
+    odds: {
+      MNL: { 'home': 1.58, 'away': 2.25 },
+      HDC: { handicap: -4.5, 'rq_home': 1.82, 'rq_away': 1.82 },
+      HILO: { totalLine: 226.5, 'over': 1.78, 'under': 1.86 },
+      WNM: {
+        'home_1_5': 4.80, 'home_6_10': 4.50, 'home_11_15': 6.20, 'home_16_20': 10.5, 'home_21_25': 18.0, 'home_26_plus': 22.0,
+        'away_1_5': 5.60, 'away_6_10': 5.80, 'away_11_15': 8.50, 'away_16_20': 15.0, 'away_21_25': 26.0, 'away_26_plus': 32.0
+      }
+    }
+  },
+  {
+    id: 'LQ002',
+    matchNum: '周六302',
+    league: 'NBA',
+    kickoffTime: '10:30',
+    homeTeam: {
+      name: '波士顿凯尔特人',
+      pace: 99.5,
+      offRtg: 121.2,
+      defRtg: 109.8,
+      isBackToBack: false,
+      recentResults: ['W', 'W', 'W', 'W', 'L']
+    },
+    awayTeam: {
+      name: '密尔沃基雄鹿',
+      pace: 101.8,
+      offRtg: 117.8,
+      defRtg: 113.5,
+      isBackToBack: false,
+      recentResults: ['W', 'L', 'W', 'W', 'W']
+    },
+    odds: {
+      MNL: { 'home': 1.32, 'away': 3.15 },
+      HDC: { handicap: -7.5, 'rq_home': 1.80, 'rq_away': 1.84 },
+      HILO: { totalLine: 228.5, 'over': 1.82, 'under': 1.82 },
+      WNM: {
+        'home_1_5': 5.00, 'home_6_10': 3.85, 'home_11_15': 4.80, 'home_16_20': 7.50, 'home_21_25': 12.0, 'home_26_plus': 15.0,
+        'away_1_5': 7.00, 'away_6_10': 8.00, 'away_11_15': 13.0, 'away_16_20': 25.0, 'away_21_25': 45.0, 'away_26_plus': 60.0
+      }
+    }
+  }
+];
+
+let LIVE_PAYLOAD = null;
+if (typeof window !== 'undefined' && window.SPORTS_LIVE) {
+  LIVE_PAYLOAD = window.SPORTS_LIVE;
+} else if (typeof require !== 'undefined') {
+  try {
+    const fs = require('fs');
+    const path = require('path');
+    const liveFile = path.join(__dirname, 'data', 'sports_live.json');
+    if (fs.existsSync(liveFile)) {
+      LIVE_PAYLOAD = JSON.parse(fs.readFileSync(liveFile, 'utf8'));
+    }
+  } catch (e) {
+    // ignore
+  }
+}
+
+const LIVE_JINGCAI = (LIVE_PAYLOAD && LIVE_PAYLOAD.jingcai && LIVE_PAYLOAD.jingcai.length > 0)
+  ? LIVE_PAYLOAD.jingcai
+  : JINGCAI_MATCHES;
+
+const LIVE_SFC = (LIVE_PAYLOAD && LIVE_PAYLOAD.sfc && LIVE_PAYLOAD.sfc.length === 14)
+  ? LIVE_PAYLOAD.sfc
+  : SFC_MATCHES;
+
+const MockData = {
+  JINGCAI_MATCHES: LIVE_JINGCAI,
+  CLASSIC_JINGCAI_MATCHES: JINGCAI_MATCHES,
+  SFC_MATCHES: LIVE_SFC,
+  CLASSIC_SFC_MATCHES: SFC_MATCHES,
+  BEIDAN_MATCHES,
+  LANCAI_MATCHES,
+  META: {
+    isRealTime: !!LIVE_PAYLOAD,
+    syncedAt: LIVE_PAYLOAD ? LIVE_PAYLOAD.syncedAt : '2026-09-03T14:30:00.000Z',
+    displayTime: LIVE_PAYLOAD ? LIVE_PAYLOAD.displayTime : '2026/9/3 14:30:00',
+    dateScope: '2026-09-03 至 2026-09-05 (今日周四/周五实盘在售)',
+    matchCount: LIVE_JINGCAI.length
+  }
+};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = MockData;
+}
+if (typeof window !== 'undefined') {
+  window.MockData = MockData;
+}
+
+</script>
+
+<script>
+  // State
+  let currentTab = 'jingcai';
+  let currentDataset = 'live';
+  let activeMatches = MockData.JINGCAI_MATCHES;
+  let selectedPicks = {};
+  let currentOptStrategy = 'equal';
+  let sfcPicks = new Array(14).fill(null).map(() => []);
+  let beidanPicks = {};
+  let lancaiPicks = {};
+  let latestBatchResult = null;
+  let activeBatchEngine = 'jingcai';
+
+  // Toggle Dataset
+  function toggleDataset(type) {
+    currentDataset = type;
+    if (type === 'classic') {
+      activeMatches = MockData.CLASSIC_JINGCAI_MATCHES;
+      document.getElementById('live-date-scope').innerText = '经典豪门实盘德比';
+    } else {
+      activeMatches = MockData.JINGCAI_MATCHES;
+      document.getElementById('live-date-scope').innerText = MockData.META.dateScope;
+    }
+    clearSlip();
+    renderJingcai();
+  }
+
+  function refreshLiveMatches() {
+    alert('正在同步中国体彩最新实盘数据...\n当前已载入 ' + activeMatches.length + ' 场官方在售赛事，赔率与让球为即时盘面！');
+    renderJingcai();
+  }
+
+  // Switch Tabs
+  function switchMainTab(tab) {
+    currentTab = tab;
+    ['sfc', 'jingcai', 'beidan', 'lancai'].forEach(t => {
+      document.getElementById(`tab-${t}`).classList.toggle('active', t === tab);
+      const v = document.getElementById(`view-${t}`);
+      if (v) v.classList.toggle('hidden', t !== tab);
+    });
+    if (tab === 'sfc') renderSFC();
+    else if (tab === 'beidan') renderBeidan();
+    else if (tab === 'lancai') renderLancai();
+  }
+
+  // --- TAB 1: JINGCAI ---
+  function renderJingcai() {
+    const tbody = document.getElementById('jingcai-tbody');
+    tbody.innerHTML = '';
+
+    activeMatches.forEach(m => {
+      const formH = FormAnalyzer.analyzeRecentForm(m.homeTeam);
+      const formA = FormAnalyzer.analyzeRecentForm(m.awayTeam);
+      const split = FormAnalyzer.analyzeHomeAwaySplits(m.homeTeam, m.awayTeam);
+      const sim = FormAnalyzer.poissonMatchProbabilities(split.expectedGoalsHome, split.expectedGoalsAway);
+      const valW = FormAnalyzer.evaluateMarketValue({ realProb: sim.probHome, marketOdds: m.odds.SPF['3'], teamFormScore: formH.formScore });
+
+      const tr = document.createElement('tr');
+      tr.className = 'match-row';
+      tr.innerHTML = `
+        <td class="mono font-bold">${m.matchNum}</td>
+        <td><span class="tag" style="background:#f1f5f9; color:${m.leagueColor || '#0284c7'}; font-weight:800;">${m.league}</span></td>
+        <td>
+          <div class="team-cell">
+            <div class="team-line">
+              <span>${m.homeTeam.name} <span class="team-rank">[${m.homeTeam.rank}]</span></span>
+              <div class="form-streak">
+                ${m.homeTeam.recentResults.slice(0, 5).map(r => `<span class="form-dot dot-${r.toLowerCase()}">${r}</span>`).join('')}
+              </div>
+            </div>
+            <div class="team-line" style="color:#64748b;">
+              <span>${m.awayTeam.name} <span class="team-rank">[${m.awayTeam.rank}]</span></span>
+              <div class="form-streak">
+                ${m.awayTeam.recentResults.slice(0, 5).map(r => `<span class="form-dot dot-${r.toLowerCase()}">${r}</span>`).join('')}
+              </div>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:11px; margin-top:2px;">
+              <span class="mono">xG: <strong>${split.expectedGoalsHome}</strong> vs <strong>${split.expectedGoalsAway}</strong></span>
+              ${valW.isValueBet ? '<span class="tag tag-val">价值注 EV ' + valW.ev + '</span>' : ''}
+              ${valW.isOverheatedTrap ? '<span class="tag tag-trap">诱盘陷阱预警</span>' : ''}
+            </div>
+          </div>
+        </td>
+        <td class="mono" style="font-weight:700; color:${m.odds.RQSPF.handicap < 0 ? '#16a34a' : (m.odds.RQSPF.handicap > 0 ? '#e11d48' : '#64748b')};">
+          ${m.odds.RQSPF.handicap > 0 ? '+' + m.odds.RQSPF.handicap : m.odds.RQSPF.handicap}
+        </td>
+        <td>
+          <div style="display:flex; gap:3px; justify-content:center;">
+            <div class="odds-btn ${isPicked(m.id, 'SPF', '3') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'SPF', '3', ${m.odds.SPF['3']}, '胜')">
+              <span>胜</span><span class="odds-val">${m.odds.SPF['3'].toFixed(2)}</span>
+            </div>
+            <div class="odds-btn ${isPicked(m.id, 'SPF', '1') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'SPF', '1', ${m.odds.SPF['1']}, '平')">
+              <span>平</span><span class="odds-val">${m.odds.SPF['1'].toFixed(2)}</span>
+            </div>
+            <div class="odds-btn ${isPicked(m.id, 'SPF', '0') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'SPF', '0', ${m.odds.SPF['0']}, '负')">
+              <span>负</span><span class="odds-val">${m.odds.SPF['0'].toFixed(2)}</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div style="display:flex; gap:3px; justify-content:center;">
+            <div class="odds-btn ${isPicked(m.id, 'RQSPF', '3') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'RQSPF', '3', ${m.odds.RQSPF['3']}, '让胜')">
+              <span>让胜</span><span class="odds-val">${m.odds.RQSPF['3'].toFixed(2)}</span>
+            </div>
+            <div class="odds-btn ${isPicked(m.id, 'RQSPF', '1') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'RQSPF', '1', ${m.odds.RQSPF['1']}, '让平')">
+              <span>让平</span><span class="odds-val">${m.odds.RQSPF['1'].toFixed(2)}</span>
+            </div>
+            <div class="odds-btn ${isPicked(m.id, 'RQSPF', '0') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'RQSPF', '0', ${m.odds.RQSPF['0']}, '让负')">
+              <span>让负</span><span class="odds-val">${m.odds.RQSPF['0'].toFixed(2)}</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <button style="padding:4px 6px; font-size:11px; border:1px solid #cbd5e1; background:#fff; border-radius:4px; cursor:pointer;" onclick="openRadar('${m.id}')">
+            🔍 深度雷达
+          </button>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  function isPicked(matchId, market, selection) {
+    if (!selectedPicks[matchId]) return false;
+    return selectedPicks[matchId].some(p => p.market === market && p.selection === selection);
+  }
+
+  function togglePick(matchId, market, selection, odds, label) {
+    if (!selectedPicks[matchId]) selectedPicks[matchId] = [];
+    const idx = selectedPicks[matchId].findIndex(p => p.market === market && p.selection === selection);
+    if (idx >= 0) {
+      selectedPicks[matchId].splice(idx, 1);
+      if (selectedPicks[matchId].length === 0) delete selectedPicks[matchId];
+    } else {
+      selectedPicks[matchId].push({ market, selection, odds, label });
+    }
+    renderJingcai();
+    renderSlip();
+  }
+
+  function renderSlip() {
+    const list = document.getElementById('slip-list');
+    const matchIds = Object.keys(selectedPicks);
+    document.getElementById('selected-matches-count').innerText = matchIds.length;
+
+    if (matchIds.length === 0) {
+      list.innerHTML = '<div style="text-align:center; padding:18px; color:#94a3b8; font-size:13px;">请在左侧勾选，或点击上方量化选单</div>';
+      return;
+    }
+
+    list.innerHTML = '';
+    matchIds.forEach(id => {
+      const match = activeMatches.find(m => m.id === id) || MockData.CLASSIC_JINGCAI_MATCHES.find(m => m.id === id);
+      const picks = selectedPicks[id];
+      const div = document.createElement('div');
+      div.className = 'slip-item';
+      div.innerHTML = `
+        <div>
+          <div style="font-weight:700; font-size:12px;">${match.matchNum} ${match.homeTeam.name} vs ${match.awayTeam.name}</div>
+          <div style="display:flex; gap:4px; margin-top:3px; flex-wrap:wrap;">
+            ${picks.map(p => `<span class="tag" style="background:#e0f2fe; color:#0369a1;">${p.label} (${p.odds})</span>`).join('')}
+          </div>
+        </div>
+        <span class="slip-del" onclick="removeMatch('${id}')">✕</span>
+      `;
+      list.appendChild(div);
+    });
+  }
+
+  function removeMatch(id) {
+    delete selectedPicks[id];
+    renderJingcai();
+    renderSlip();
+  }
+
+  function clearSlip() {
+    selectedPicks = {};
+    renderJingcai();
+    renderSlip();
+    document.getElementById('opt-result-card').style.display = 'none';
+  }
+
+  function setOptStrategy(s) {
+    currentOptStrategy = s;
+    ['equal', 'cold', 'safe'].forEach(x => {
+      document.getElementById(`btn-opt-${x}`).classList.toggle('active', x === s);
+    });
+  }
+
+  function triggerQuantModel(strategy) {
+    clearSlip();
+    const candidates = activeMatches.map(m => {
+      const split = FormAnalyzer.analyzeHomeAwaySplits(m.homeTeam, m.awayTeam);
+      const sim = FormAnalyzer.poissonMatchProbabilities(split.expectedGoalsHome, split.expectedGoalsAway);
+      const formH = FormAnalyzer.analyzeRecentForm(m.homeTeam);
+      const evH = FormAnalyzer.evaluateMarketValue({ realProb: sim.probHome, marketOdds: m.odds.SPF['3'], teamFormScore: formH.formScore });
+      return { match: m, split, sim, evH, formH };
+    });
+
+    if (strategy === 'steady') {
+      candidates.sort((a, b) => b.sim.probHome - a.sim.probHome);
+      const pick1 = candidates[0].match;
+      const pick2 = candidates[1].match;
+
+      togglePick(pick1.id, 'SPF', '3', pick1.odds.SPF['3'], '胜');
+      togglePick(pick2.id, 'SPF', '3', pick2.odds.SPF['3'], '胜');
+      togglePick(pick2.id, 'SPF', '1', pick2.odds.SPF['1'], '平');
+
+      setOptStrategy('equal');
+      runOptimization();
+      alert(`【🤖 量化稳健对冲选单已生成】\n已自动勾选：${pick1.matchNum} ${pick1.homeTeam.name}(胜) 与 ${pick2.matchNum} ${pick2.homeTeam.name}(胜/平)\n已自动求解 ILP 平均优化锁定预算！`);
+    } else if (strategy === 'cold') {
+      const coldPicks = candidates.filter(c => c.evH.isValueBet || c.match.odds.RQSPF['0'] > 2.2);
+      const p1 = coldPicks[0] ? coldPicks[0].match : candidates[0].match;
+      const p2 = coldPicks[1] ? coldPicks[1].match : candidates[1].match;
+
+      togglePick(p1.id, 'SPF', '3', p1.odds.SPF['3'], '胜');
+      togglePick(p2.id, 'RQSPF', '0', p2.odds.RQSPF['0'], '让负');
+
+      setOptStrategy('cold');
+      runOptimization();
+      alert(`【⚡ 量化价值博冷选单已生成】\n已自动勾选价值注：${p1.matchNum}(胜) 与高赔受让：${p2.matchNum}(让负)\n已自动激活 ILP 博冷优化，利润向高赔注倾斜！`);
+    }
+  }
+
+  function triggerQuantDiagnosis() {
+    const matchIds = Object.keys(selectedPicks);
+    if (matchIds.length === 0) {
+      alert('请先勾选比赛赛果，再进行深度量化体检！');
+      return;
+    }
+    let totalReturnRate = JingcaiEngine.theoreticalReturnRate(matchIds.length);
+    let totalOverround = 0;
+    matchIds.forEach(id => {
+      const m = activeMatches.find(x => x.id === id);
+      if (m) {
+        const o = JingcaiEngine.calculateOverround([m.odds.SPF['3'], m.odds.SPF['1'], m.odds.SPF['0']]);
+        totalOverround += o.marginPercent;
+      }
+    });
+    const avgMargin = Math.round(totalOverround / matchIds.length);
+
+    alert(`【💡 选单方案深度量化体检报告】\n- 勾选场次数: ${matchIds.length} 场\n- 串关理论返还率: ${(totalReturnRate*100).toFixed(2)}%\n- 机构平均抽水损耗: ${avgMargin}%\n- 风险提示: ${matchIds.length > 3 ? '⚠️ 串关场次过多导致抽水乘方衰减严重，建议拆单为 2串1！' : '✅ 关数健康，抗抽水风险优秀！'}`);
+  }
+
+  function runOptimization() {
+    const matchIds = Object.keys(selectedPicks);
+    if (matchIds.length < 2) {
+      alert('请至少选择 2 场比赛组合串关！');
+      return;
+    }
+
+    const passType = document.getElementById('pass-type-select').value;
+    const slip = {
+      matches: matchIds.map(id => {
+        const m = activeMatches.find(x => x.id === id) || MockData.CLASSIC_JINGCAI_MATCHES.find(x => x.id === id);
+        return {
+          matchId: id,
+          matchNum: m ? m.matchNum : id,
+          picks: selectedPicks[id].map(p => ({ ...p, matchNum: m ? m.matchNum : id }))
+        };
+      }),
+      passType
+    };
+
+    const budget = parseInt(document.getElementById('budget-input').value, 10);
+    const combos = JingcaiEngine.expandSlipToCombinations(slip);
+
+    try {
+      const opt = JingcaiEngine.optimizeBonus(combos, budget, currentOptStrategy);
+      const card = document.getElementById('opt-result-card');
+      card.style.display = 'block';
+
+      document.getElementById('opt-cost-summary').innerText = `总花费: ${opt.totalCost}元 / 余 ${opt.leftoverYuan}元`;
+      const allocBox = document.getElementById('opt-allocations');
+      allocBox.innerHTML = opt.allocations.map(a => `
+        <div style="display:flex; justify-content:space-between; padding:5px 0; border-bottom:1px solid #f1f5f9;">
+          <div>
+            <span class="mono font-bold" style="color:#0284c7;">${a.multiplier}倍</span>
+            <span>(${a.legs.map(l => `${l.matchNum || l.matchId}[${l.label || l.selection}]`).join(' × ')})</span>
+          </div>
+          <div class="mono" style="font-weight:700; color:#16a34a;">预计 ${a.expectedPayout} 元</div>
+        </div>
+      `).join('');
+
+      latestBatchResult = JingcaiEngine.generateBatchTickets(opt, {
+        date: new Date().toISOString().slice(0, 10),
+        passType
+      });
+      activeBatchEngine = 'jingcai';
+    } catch (e) {
+      alert(e.message);
+    }
+  }
+
+  // --- TAB 2: SFC / RX9 ---
+  function renderSFC() {
+    const tbody = document.getElementById('sfc-tbody');
+    const sfcData = MockData.SFC_MATCHES;
+    tbody.innerHTML = sfcData.map((m, idx) => `
+      <tr>
+        <td class="mono font-bold">${m.matchIdx}</td>
+        <td><span class="tag" style="background:#f1f5f9;">${m.league}</span></td>
+        <td><strong>${m.home}</strong> vs <strong>${m.away}</strong></td>
+        <td>
+          <div class="odds-btn ${sfcPicks[idx].includes('3') ? 'selected' : ''}" onclick="toggleSFCPick(${idx}, '3')">
+            <span>主胜</span><span class="odds-val">${m.odds['3'].toFixed(2)}</span>
+          </div>
+        </td>
+        <td>
+          <div class="odds-btn ${sfcPicks[idx].includes('1') ? 'selected' : ''}" onclick="toggleSFCPick(${idx}, '1')">
+            <span>平局</span><span class="odds-val">${m.odds['1'].toFixed(2)}</span>
+          </div>
+        </td>
+        <td>
+          <div class="odds-btn ${sfcPicks[idx].includes('0') ? 'selected' : ''}" onclick="toggleSFCPick(${idx}, '0')">
+            <span>客胜</span><span class="odds-val">${m.odds['0'].toFixed(2)}</span>
+          </div>
+        </td>
+        <td><span class="tag ${m.odds['0'] > 4.5 ? 'tag-val' : ''}">冷门指数 ${(m.odds['0'] * 7.5).toFixed(1)}</span></td>
+      </tr>
+    `).join('');
+    updateSFCSummary();
+  }
+
+  function toggleSFCPick(idx, pick) {
+    const p = sfcPicks[idx];
+    const i = p.indexOf(pick);
+    if (i >= 0) p.splice(i, 1);
+    else p.push(pick);
+    renderSFC();
+  }
+
+  function updateSFCSummary() {
+    const mode = document.querySelector('input[name="sfc-mode"]:checked').value;
+    try {
+      if (mode === '14') {
+        const res = SFCEngine.calculateSFC14Bets(sfcPicks);
+        document.getElementById('sfc-bet-count').innerText = res.betCount;
+        document.getElementById('sfc-cost').innerText = res.costYuan;
+        const cold = SFCEngine.calculateColdnessIndex(sfcPicks, MockData.SFC_MATCHES);
+        document.getElementById('sfc-cold-alert').innerHTML = `<span class="${cold.firePotWarning ? 'tag tag-trap' : 'tag tag-val'}">${cold.description} (指数: ${cold.score})</span>`;
+      } else {
+        const res = SFCEngine.calculateRX9Bets(sfcPicks);
+        document.getElementById('sfc-bet-count').innerText = res.betCount;
+        document.getElementById('sfc-cost').innerText = res.costYuan;
+      }
+    } catch (e) {
+      document.getElementById('sfc-bet-count').innerText = '0';
+      document.getElementById('sfc-cost').innerText = '0';
+      document.getElementById('sfc-cold-alert').innerText = e.message;
+    }
+  }
+
+  function triggerSFCQuant(mode) {
+    if (mode === '14') {
+      const q = SFCEngine.generateQuantPicks14(MockData.SFC_MATCHES);
+      sfcPicks = q.picks;
+      document.querySelector('input[name="sfc-mode"][value="14"]').checked = true;
+      renderSFC();
+      alert(`【🤖 14场胜负彩量化选单已生成】\n已自动锁定重热稳胆，并在 4 场胶着场次配置了平局防冷！\n共 ${q.betCount} 注，金额 ${q.costYuan} 元。`);
+    } else {
+      const q = SFCEngine.generateQuantPicksRX9(MockData.SFC_MATCHES);
+      sfcPicks = q.picks;
+      document.querySelector('input[name="sfc-mode"][value="rx9"]').checked = true;
+      renderSFC();
+      alert(`【⚡ 黄金任选九量化选单已生成】\n已自动从 14 场中筛选出信心最高的 9 场黄金稳胆！\n共 ${q.betCount} 注，金额 ${q.costYuan} 元。`);
+    }
+  }
+
+  function reduceSFC() {
+    try {
+      const wheel = SFCEngine.generateCoveringReduction(sfcPicks, { guarantee: 13 });
+      alert(`保14中13缩水完成！\n原注数: ${wheel.originalBetCount} 注\n缩水后: ${wheel.reducedBets.length} 注\n资金节约率: ${wheel.compressionRate}%`);
+    } catch (e) {
+      alert(e.message);
+    }
+  }
+
+  // --- TAB 3: BEIDAN ---
+  function renderBeidan() {
+    const tbody = document.getElementById('beidan-tbody');
+    tbody.innerHTML = MockData.BEIDAN_MATCHES.map(m => `
+      <tr>
+        <td class="mono font-bold">${m.matchNum}</td>
+        <td><span class="tag" style="background:#f1f5f9;">${m.league}</span></td>
+        <td><strong>${m.homeTeam}</strong> vs <strong>${m.awayTeam}</strong></td>
+        <td class="mono" style="font-weight:700; color:${m.handicap < 0 ? '#16a34a' : '#e11d48'};">${m.handicap}</td>
+        <td>
+          <div class="odds-btn ${isBeidanPicked(m.id, '3') ? 'selected' : ''}" onclick="toggleBeidanPick('${m.id}', '3', ${m.spOdds['3']}, '胜')">
+            <span>胜</span><span class="odds-val">${m.spOdds['3'].toFixed(2)}</span>
+          </div>
+        </td>
+        <td>
+          <div class="odds-btn ${isBeidanPicked(m.id, '1') ? 'selected' : ''}" onclick="toggleBeidanPick('${m.id}', '1', ${m.spOdds['1']}, '平')">
+            <span>平</span><span class="odds-val">${m.spOdds['1'].toFixed(2)}</span>
+          </div>
+        </td>
+        <td>
+          <div class="odds-btn ${isBeidanPicked(m.id, '0') ? 'selected' : ''}" onclick="toggleBeidanPick('${m.id}', '0', ${m.spOdds['0']}, '负')">
+            <span>负</span><span class="odds-val">${m.spOdds['0'].toFixed(2)}</span>
+          </div>
+        </td>
+      </tr>
+    `).join('');
+    renderBeidanSlip();
+  }
+
+  function isBeidanPicked(matchId, pick) {
+    return beidanPicks[matchId] && beidanPicks[matchId].some(p => p.selection === pick);
+  }
+
+  function toggleBeidanPick(matchId, selection, sp, label) {
+    if (!beidanPicks[matchId]) beidanPicks[matchId] = [];
+    const idx = beidanPicks[matchId].findIndex(p => p.selection === selection);
+    if (idx >= 0) {
+      beidanPicks[matchId].splice(idx, 1);
+      if (beidanPicks[matchId].length === 0) delete beidanPicks[matchId];
+    } else {
+      beidanPicks[matchId].push({ selection, sp, label });
+    }
+    renderBeidan();
+  }
+
+  function renderBeidanSlip() {
+    const list = document.getElementById('beidan-slip-list');
+    const ids = Object.keys(beidanPicks);
+    if (ids.length === 0) {
+      list.innerHTML = '<div style="text-align:center; padding:18px; color:#94a3b8; font-size:13px;">请在左侧勾选或点击量化选单</div>';
+      return;
+    }
+    list.innerHTML = ids.map(id => {
+      const m = MockData.BEIDAN_MATCHES.find(x => x.id === id);
+      return `
+        <div class="slip-item">
+          <div>
+            <strong>${m.matchNum} ${m.homeTeam} vs ${m.awayTeam}</strong>
+            <div style="display:flex; gap:4px; margin-top:2px;">
+              ${beidanPicks[id].map(p => `<span class="tag" style="background:#e0f2fe; color:#0369a1;">${p.label} (SP:${p.sp})</span>`).join('')}
+            </div>
+          </div>
+          <span class="slip-del" onclick="removeBeidanMatch('${id}')">✕</span>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function removeBeidanMatch(id) {
+    delete beidanPicks[id];
+    renderBeidan();
+  }
+
+  function clearBeidanSlip() {
+    beidanPicks = {};
+    renderBeidan();
+    document.getElementById('beidan-opt-card').style.display = 'none';
+  }
+
+  function triggerBeidanQuant() {
+    const q = BeidanEngine.generateQuantPicksBeidan(MockData.BEIDAN_MATCHES, 'steady');
+    beidanPicks = {};
+    q.matches.forEach(m => {
+      beidanPicks[m.matchId] = m.picks;
+    });
+    renderBeidan();
+    runBeidanOptimization();
+    alert('【🤖 北单量化模型选单已生成】\n已自动选取让球盘口价值对冲场次，并计算 65% 浮动返奖率倍数！');
+  }
+
+  function runBeidanOptimization() {
+    const ids = Object.keys(beidanPicks);
+    if (ids.length < 2) {
+      alert('北单串关请至少选择 2 场比赛！');
+      return;
+    }
+    const slip = {
+      matches: ids.map(id => {
+        const m = MockData.BEIDAN_MATCHES.find(x => x.id === id);
+        return {
+          matchId: id,
+          matchNum: m.matchNum,
+          picks: beidanPicks[id]
+        };
+      }),
+      passType: document.getElementById('beidan-pass-type').value
+    };
+    const budget = parseInt(document.getElementById('beidan-budget').value, 10);
+    const combos = BeidanEngine.expandSlipToCombinations(slip);
+    try {
+      const opt = BeidanEngine.optimizeBonus(combos, budget, 'equal');
+      const card = document.getElementById('beidan-opt-card');
+      card.style.display = 'block';
+      document.getElementById('beidan-cost-summary').innerText = `总花费: ${opt.totalCost}元 / 余 ${opt.leftoverYuan}元`;
+      document.getElementById('beidan-allocations').innerHTML = opt.allocations.map(a => `
+        <div style="display:flex; justify-content:space-between; padding:5px 0; border-bottom:1px solid #f1f5f9;">
+          <div>
+            <span class="mono font-bold" style="color:#0284c7;">${a.multiplier}倍</span>
+            <span>(${a.legs.map(l => `${l.matchNum}[${l.label || l.selection}]`).join(' × ')})</span>
+          </div>
+          <div class="mono" style="font-weight:700; color:#16a34a;">预估 ${a.expectedPayout} 元</div>
+        </div>
+      `).join('');
+
+      latestBatchResult = BeidanEngine.generateBatchTickets(opt, { passType: slip.passType });
+      activeBatchEngine = 'beidan';
+    } catch (e) {
+      alert(e.message);
+    }
+  }
+
+  // --- TAB 4: LANCAI ---
+  function renderLancai() {
+    const tbody = document.getElementById('lancai-tbody');
+    tbody.innerHTML = MockData.LANCAI_MATCHES.map(m => {
+      const dyn = LancaiEngine.estimateBasketballDynamics(m.homeTeam, m.awayTeam);
+      return `
+        <tr>
+          <td class="mono font-bold">${m.matchNum}</td>
+          <td><span class="tag" style="background:#fef3c7; color:#b45309; font-weight:800;">NBA</span></td>
+          <td>
+            <strong>${m.awayTeam.name}</strong> ${m.awayTeam.isBackToBack ? '<span class="tag tag-trap">背靠背</span>' : ''}
+            <div style="font-size:11px; color:#64748b;">@ <strong>${m.homeTeam.name}</strong></div>
+          </td>
+          <td>
+            <div style="display:flex; gap:3px; justify-content:center;">
+              <div class="odds-btn ${isLancaiPicked(m.id, 'MNL', 'away') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'MNL', 'away', ${m.odds.MNL.away}, '客胜')">
+                <span>客胜</span><span class="odds-val">${m.odds.MNL.away.toFixed(2)}</span>
+              </div>
+              <div class="odds-btn ${isLancaiPicked(m.id, 'MNL', 'home') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'MNL', 'home', ${m.odds.MNL.home}, '主胜')">
+                <span>主胜</span><span class="odds-val">${m.odds.MNL.home.toFixed(2)}</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="tag" style="background:#f1f5f9;">${m.odds.HDC.handicap}</span>
+            <div style="display:flex; gap:3px; justify-content:center; margin-top:2px;">
+              <div class="odds-btn ${isLancaiPicked(m.id, 'HDC', 'rq_away') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'HDC', 'rq_away', ${m.odds.HDC.rq_away}, '让客胜')">
+                <span>让客</span><span class="odds-val">${m.odds.HDC.rq_away.toFixed(2)}</span>
+              </div>
+              <div class="odds-btn ${isLancaiPicked(m.id, 'HDC', 'rq_home') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'HDC', 'rq_home', ${m.odds.HDC.rq_home}, '让主')">
+                <span>让主</span><span class="odds-val">${m.odds.HDC.rq_home.toFixed(2)}</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="tag" style="background:#f1f5f9;">${m.odds.HILO.totalLine}</span>
+            <div style="display:flex; gap:3px; justify-content:center; margin-top:2px;">
+              <div class="odds-btn ${isLancaiPicked(m.id, 'HILO', 'over') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'HILO', 'over', ${m.odds.HILO.over}, '大分')">
+                <span>大分</span><span class="odds-val">${m.odds.HILO.over.toFixed(2)}</span>
+              </div>
+              <div class="odds-btn ${isLancaiPicked(m.id, 'HILO', 'under') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'HILO', 'under', ${m.odds.HILO.under}, '小分')">
+                <span>小分</span><span class="odds-val">${m.odds.HILO.under.toFixed(2)}</span>
+              </div>
+            </div>
+          </td>
+          <td style="font-size:11px; text-align:left;">
+            <div>预期节奏: <strong class="mono">${dyn.projectedPace}</strong></div>
+            <div>模型预测总分: <strong class="mono">${dyn.projectedTotalPoints}</strong></div>
+          </td>
+        </tr>
+      `;
+    }).join('');
+    renderLancaiSlip();
+  }
+
+  function isLancaiPicked(matchId, market, selection) {
+    return lancaiPicks[matchId] && lancaiPicks[matchId].some(p => p.market === market && p.selection === selection);
+  }
+
+  function toggleLancaiPick(matchId, market, selection, odds, label) {
+    if (!lancaiPicks[matchId]) lancaiPicks[matchId] = [];
+    const idx = lancaiPicks[matchId].findIndex(p => p.market === market && p.selection === selection);
+    if (idx >= 0) {
+      lancaiPicks[matchId].splice(idx, 1);
+      if (lancaiPicks[matchId].length === 0) delete lancaiPicks[matchId];
+    } else {
+      lancaiPicks[matchId].push({ market, selection, odds, label });
+    }
+    renderLancai();
+  }
+
+  function renderLancaiSlip() {
+    const list = document.getElementById('lancai-slip-list');
+    const ids = Object.keys(lancaiPicks);
+    if (ids.length === 0) {
+      list.innerHTML = '<div style="text-align:center; padding:18px; color:#94a3b8; font-size:13px;">请在左侧勾选或点击量化选单</div>';
+      return;
+    }
+    list.innerHTML = ids.map(id => {
+      const m = MockData.LANCAI_MATCHES.find(x => x.id === id);
+      return `
+        <div class="slip-item">
+          <div>
+            <strong>${m.matchNum} ${m.awayTeam.name} @ ${m.homeTeam.name}</strong>
+            <div style="display:flex; gap:4px; margin-top:2px;">
+              ${lancaiPicks[id].map(p => `<span class="tag" style="background:#e0f2fe; color:#0369a1;">${p.label} (${p.odds})</span>`).join('')}
+            </div>
+          </div>
+          <span class="slip-del" onclick="removeLancaiMatch('${id}')">✕</span>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function removeLancaiMatch(id) {
+    delete lancaiPicks[id];
+    renderLancai();
+  }
+
+  function clearLancaiSlip() {
+    lancaiPicks = {};
+    renderLancai();
+    document.getElementById('lancai-opt-card').style.display = 'none';
+  }
+
+  function triggerLancaiQuant() {
+    const q = LancaiEngine.generateQuantPicksLancai(MockData.LANCAI_MATCHES, 'steady');
+    lancaiPicks = {};
+    q.matches.forEach(m => {
+      lancaiPicks[m.matchId] = m.picks;
+    });
+    renderLancai();
+    runLancaiOptimization();
+    alert('【🤖 篮彩量化模型选单已生成】\n已结合 NBA 回合节奏与背靠背疲劳折损，自动推荐让分与总分对冲单！');
+  }
+
+  function runLancaiOptimization() {
+    const ids = Object.keys(lancaiPicks);
+    if (ids.length < 2) {
+      alert('篮彩串关请至少选择 2 场比赛！');
+      return;
+    }
+    const slip = {
+      matches: ids.map(id => {
+        const m = MockData.LANCAI_MATCHES.find(x => x.id === id);
+        return {
+          matchId: id,
+          matchNum: m.matchNum,
+          picks: lancaiPicks[id]
+        };
+      }),
+      passType: document.getElementById('lancai-pass-type').value
+    };
+    const budget = parseInt(document.getElementById('lancai-budget').value, 10);
+    const combos = LancaiEngine.expandSlipToCombinations(slip);
+    try {
+      const opt = LancaiEngine.optimizeBonus(combos, budget, 'equal');
+      const card = document.getElementById('lancai-opt-card');
+      card.style.display = 'block';
+      document.getElementById('lancai-cost-summary').innerText = `总花费: ${opt.totalCost}元 / 余 ${opt.leftoverYuan}元`;
+      document.getElementById('lancai-allocations').innerHTML = opt.allocations.map(a => `
+        <div style="display:flex; justify-content:space-between; padding:5px 0; border-bottom:1px solid #f1f5f9;">
+          <div>
+            <span class="mono font-bold" style="color:#0284c7;">${a.multiplier}倍</span>
+            <span>(${a.legs.map(l => `${l.matchNum}[${l.label || l.selection}]`).join(' × ')})</span>
+          </div>
+          <div class="mono" style="font-weight:700; color:#16a34a;">预计 ${a.expectedPayout} 元</div>
+        </div>
+      `).join('');
+
+      latestBatchResult = LancaiEngine.generateBatchTickets(opt, { passType: slip.passType });
+      activeBatchEngine = 'lancai';
+    } catch (e) {
+      alert(e.message);
+    }
+  }
+
+  // --- BATCH TICKETS MODAL (UNIFIED) ---
+  function openBatchTicketModal(source) {
+    const modal = document.getElementById('ticket-modal');
+    const container = document.getElementById('ticket-body');
+    container.innerHTML = '';
+
+    let batch = null;
+    let title = '彩票店打票机批量出单终端 (POS Ready)';
+
+    if (source === 'sfc') {
+      const mode = document.querySelector('input[name="sfc-mode"]:checked').value;
+      const count = sfcPicks.filter(p => p && p.length > 0).length;
+      if (mode === '14' && count !== 14) {
+        alert('请先完整勾选 14 场比赛或点击【SFC 量化选单】后再出单！');
+        return;
+      } else if (mode === 'rx9' && count < 9) {
+        alert('请至少勾选 9 场比赛或点击【RX9 量化选单】后再出单！');
+        return;
+      }
+      batch = SFCEngine.generateBatchTickets(sfcPicks, mode, { issue: '25068', multiplier: 1 });
+      title = `中国体育彩票 · 传统足彩 (${mode === '14' ? '14场' : '任九'}) 批量机打单`;
+      activeBatchEngine = 'sfc';
+      latestBatchResult = batch;
+    } else if (source === 'beidan') {
+      if (!latestBatchResult || activeBatchEngine !== 'beidan') {
+        alert('请先点击【求解 65% 浮动返奖率最优资金配置】后再出单！');
+        return;
+      }
+      batch = latestBatchResult;
+      title = '中国体育彩票 · 北京单场(DC) 批量机打单';
+    } else if (source === 'lancai') {
+      if (!latestBatchResult || activeBatchEngine !== 'lancai') {
+        alert('请先点击【求解最优资金配置】后再出单！');
+        return;
+      }
+      batch = latestBatchResult;
+      title = '中国体育彩票 · 竞彩篮球(JCLQ) 批量机打单';
+    } else {
+      if (!latestBatchResult || activeBatchEngine !== 'jingcai') {
+        alert('请先进行奖金优化计算后再出单！');
+        return;
+      }
+      batch = latestBatchResult;
+      title = '中国体育彩票 · 竞彩足球(JCZQ) 批量机打单';
+    }
+
+    document.getElementById('ticket-modal-title').innerText = title;
+
+    batch.tickets.forEach((t) => {
+      const div = document.createElement('div');
+      div.className = 'thermal-ticket';
+      div.innerHTML = `
+        <div class="thermal-title">${t.gameName || title}</div>
+        <div style="display:flex; justify-content:space-between; font-size:11px; color:#64748b;">
+          <span>单号: ${t.ticketNo}</span>
+          <span>日期/期号: ${t.date || ('第' + t.issue + '期')}</span>
+        </div>
+        <div class="thermal-divider"></div>
+        <div style="font-size:13px; font-weight:700; margin:4px 0;">
+          对阵选项: ${t.fullDesc || t.betStr}
+        </div>
+        <div style="display:flex; justify-content:space-between; margin-top:4px;">
+          <span>${t.passType ? '过关方式: <strong>' + t.passType + '</strong>' : '玩法模式: <strong>单式</strong>'}</span>
+          <span>倍数: <strong>${t.multiplier} 倍</strong></span>
+          <span>票面金额: <strong style="color:#e11d48;">${t.amountYuan} 元</strong></span>
+        </div>
+        ${t.expectedPayout ? `<div style="margin-top:4px; color:#16a34a; font-weight:700;">理论奖金: ${t.expectedPayout} 元</div>` : ''}
+        <div class="thermal-divider"></div>
+        <div class="thermal-barcode">
+          ||| ||||| || |||| |||||| |||| ${t.ticketNo.slice(-6)}
+        </div>
+      `;
+      container.appendChild(div);
+    });
+
+    modal.style.display = 'flex';
+  }
+
+  function copyPOSText() {
+    if (!latestBatchResult) return;
+    let txt = '';
+    if (activeBatchEngine === 'sfc') txt = SFCEngine.exportPOSText(latestBatchResult);
+    else if (activeBatchEngine === 'beidan') txt = BeidanEngine.exportPOSText(latestBatchResult);
+    else if (activeBatchEngine === 'lancai') txt = LancaiEngine.exportPOSText(latestBatchResult);
+    else txt = JingcaiEngine.exportPOSText(latestBatchResult);
+
+    navigator.clipboard.writeText(txt).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.style.display = 'inline';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    });
+  }
+
+  function downloadPOSTxt() {
+    if (!latestBatchResult) return;
+    let txt = '';
+    if (activeBatchEngine === 'sfc') txt = SFCEngine.exportPOSText(latestBatchResult);
+    else if (activeBatchEngine === 'beidan') txt = BeidanEngine.exportPOSText(latestBatchResult);
+    else if (activeBatchEngine === 'lancai') txt = LancaiEngine.exportPOSText(latestBatchResult);
+    else txt = JingcaiEngine.exportPOSText(latestBatchResult);
+
+    const blob = new Blob([txt], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${activeBatchEngine}_batch_tickets_${new Date().toISOString().slice(0,10)}.txt`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  // --- RADAR MODAL ---
+  function openRadar(matchId) {
+    const m = activeMatches.find(x => x.id === matchId) || MockData.CLASSIC_JINGCAI_MATCHES.find(x => x.id === matchId);
+    const formH = FormAnalyzer.analyzeRecentForm(m.homeTeam);
+    const formA = FormAnalyzer.analyzeRecentForm(m.awayTeam);
+    const split = FormAnalyzer.analyzeHomeAwaySplits(m.homeTeam, m.awayTeam);
+    const sim = FormAnalyzer.poissonMatchProbabilities(split.expectedGoalsHome, split.expectedGoalsAway);
+    const h2h = FormAnalyzer.analyzeH2H(m.homeTeam.name, m.awayTeam.name, m.h2h);
+    const fatigue = FormAnalyzer.calculateFatigue(m.homeTeam.restDays);
+
+    document.getElementById('modal-title').innerText = `${m.matchNum} ${m.homeTeam.name} vs ${m.awayTeam.name} · 战力近况雷达`;
+    document.getElementById('modal-body').innerHTML = `
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px;">
+        <div style="background:#f8fafc; padding:10px; border-radius:6px;">
+          <strong>${m.homeTeam.name} (主队)</strong>
+          <div>近6场得分率: <strong>${formH.formScore} 分</strong></div>
+          <div>连胜/连败: <strong>${formH.streak.count} 连${formH.streak.type === 'W' ? '胜' : (formH.streak.type === 'L' ? '负' : '平')}</strong></div>
+          <div>休整天数: <strong>${m.homeTeam.restDays} 天</strong> ${fatigue.isTired ? '<span class="tag tag-trap">双赛体能损耗</span>' : ''}</div>
+        </div>
+        <div style="background:#f8fafc; padding:10px; border-radius:6px;">
+          <strong>${m.awayTeam.name} (客队)</strong>
+          <div>近6场得分率: <strong>${formA.formScore} 分</strong></div>
+          <div>客场场均得失: <strong>${(m.awayTeam.awayGF / m.awayTeam.awayMatches).toFixed(1)} / ${(m.awayTeam.awayGA / m.awayTeam.awayMatches).toFixed(1)}</strong></div>
+          <div>关键伤停: ${m.awayTeam.keyInjuries.join(', ') || '无'}</div>
+        </div>
+      </div>
+      <div style="background:#eff6ff; padding:12px; border-radius:6px; margin-bottom:10px;">
+        <div style="font-weight:700; color:#1e40af; margin-bottom:4px;">⚽ 泊松攻防 xG 预期模型：</div>
+        <div>主队预期进球: <strong class="mono">${split.expectedGoalsHome}</strong> | 客队预期进球: <strong class="mono">${split.expectedGoalsAway}</strong></div>
+        <div style="margin-top:4px;">理论胜平负概率: 胜 <strong>${(sim.probHome*100).toFixed(1)}%</strong> | 平 <strong>${(sim.probDraw*100).toFixed(1)}%</strong> | 负 <strong>${(sim.probAway*100).toFixed(1)}%</strong></div>
+        <div style="margin-top:4px;">最高概率比分: ${sim.topScores.slice(0, 4).map(s => `<span class="tag" style="background:#dbeafe; color:#1e40af; margin-right:4px;">${s.score} (${(s.prob*100).toFixed(1)}%)</span>`).join('')}</div>
+      </div>
+      <div style="font-size:12px; color:#64748b;">
+        交锋往绩优势度: <strong>${(h2h.h2hAdvantageScore*100).toFixed(0)}%</strong> (${h2h.homeWins}胜 ${h2h.draws}平 ${h2h.awayWins}负)
+      </div>
+    `;
+    document.getElementById('radar-modal').style.display = 'flex';
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  // --- Mobile QR Modal & Mobile Bottom Bar Handlers ---
+  function openMobileQRModal() {
+    const port = window.location.port || '8080';
+    const host = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || !window.location.hostname) ? '192.168.0.3' : window.location.hostname;
+    const url = `http://${host}:${port}/sports.html`;
+
+    document.getElementById('lan-url-display').innerText = url;
+    document.getElementById('qr-img').src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=10&data=${encodeURIComponent(url)}`;
+    document.getElementById('mobile-qr-modal').style.display = 'flex';
+  }
+
+  function copyLanUrl() {
+    const url = document.getElementById('lan-url-display').innerText;
+    navigator.clipboard.writeText(url).then(() => {
+      alert('手机访问链接已复制到剪贴板！\n' + url);
+    });
+  }
+
+  function toggleMobileDrawer() {
+    if (latestBatchResult && latestBatchResult.tickets && latestBatchResult.tickets.length > 0) {
+      openBatchTicketModal(activeBatchEngine);
+    } else {
+      let target = null;
+      if (currentTab === 'sfc') target = document.getElementById('sfc-cost');
+      else if (currentTab === 'beidan') target = document.getElementById('beidan-slip-list');
+      else if (currentTab === 'lancai') target = document.getElementById('lancai-slip-list');
+      else target = document.getElementById('slip-list');
+
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }
+
+  function updateMobileBar() {
+    let count = 0;
+    let budget = 100;
+    if (currentTab === 'sfc') {
+      count = sfcPicks.filter(p => p && p.length > 0).length;
+      budget = document.getElementById('sfc-cost') ? (document.getElementById('sfc-cost').innerText || 0) : 0;
+    } else if (currentTab === 'beidan') {
+      count = Object.keys(beidanPicks).length;
+      budget = document.getElementById('beidan-budget') ? document.getElementById('beidan-budget').value : 100;
+    } else if (currentTab === 'lancai') {
+      count = Object.keys(lancaiPicks).length;
+      budget = document.getElementById('lancai-budget') ? document.getElementById('lancai-budget').value : 100;
+    } else {
+      count = Object.keys(selectedPicks).length;
+      budget = document.getElementById('budget-input') ? document.getElementById('budget-input').value : 100;
+    }
+    const mobCount = document.getElementById('mob-count');
+    const mobBudget = document.getElementById('mob-budget');
+    if (mobCount) mobCount.innerText = count;
+    if (mobBudget) mobBudget.innerText = budget;
+  }
+
+  // Hook into update loops
+  const origRenderSlip = renderSlip;
+  renderSlip = function() { origRenderSlip(); updateMobileBar(); };
+
+  const origUpdateSFCSummary = updateSFCSummary;
+  updateSFCSummary = function() { origUpdateSFCSummary(); updateMobileBar(); };
+
+  const origRenderBeidan = renderBeidan;
+  renderBeidan = function() { origRenderBeidan(); updateMobileBar(); };
+
+  const origRenderLancai = renderLancai;
+  renderLancai = function() { origRenderLancai(); updateMobileBar(); };
+
+  // Init
+  renderJingcai();
+  updateMobileBar();
+</script>
+
+</body>
+</html>

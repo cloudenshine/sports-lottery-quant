@@ -1,0 +1,33 @@
+name: Auto Sync Live Sports Lottery Data
+
+on:
+  schedule:
+    # 每天北京时间 10:30, 14:30, 18:30, 22:30 自动云端触发抓取更新
+    - cron: '30 2,6,10,14 * * *'
+  workflow_dispatch: # 支持手动一键点击触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch and Sync Live Lottery Fixtures & Odds
+        run: |
+          node sync-sports-live.js
+          node build-standalone.js
+
+      - name: Commit and Push Updated Live Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sports_live.json data/sports-live-data.js sports-standalone.html lotto-standalone.html
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync real-time sports lottery data [skip ci]" && git push)
