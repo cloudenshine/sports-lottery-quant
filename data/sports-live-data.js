@@ -1,6 +1,6 @@
 window.SPORTS_LIVE = {
-  "syncedAt": "2026-09-04T14:28:56.611Z",
-  "displayTime": "2026/9/4 22:28:56",
+  "syncedAt": "2026-09-04T17:44:39.231Z",
+  "displayTime": "2026/9/5 01:44:39",
   "jingcaiCount": 46,
   "sfcCount": 14,
   "jingcai": [
