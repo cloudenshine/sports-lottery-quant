@@ -82,6 +82,31 @@ test('cloud number snapshots update the public dashboard while preserving the le
   }
 });
 
+test('an older cloud snapshot cannot downgrade a newer local draw or target issue', () => {
+  const fixture = path.join(root, '.tmp-public-site-test');
+  try {
+    fs.mkdirSync(path.join(fixture, 'data/numbers'), { recursive: true });
+    fs.writeFileSync(path.join(fixture, 'data/numbers/public-snapshot.json'), JSON.stringify({
+      generatedAt: '2026-09-06T12:43:01.000Z', status: { status: 'ok' },
+      games: { ssq: { fetchedAt: '2026-09-06T12:43:01.000Z', draws: [{ issue: '26102', date: '2026-09-03', source: { fetchedAt: '2026-09-06T12:43:01.000Z', bodySha256: 'old' } }], nextIssue: { issue: '26103' } } }
+    }));
+    const before = {
+      generatedAt: '2026-09-06T15:34:47.000Z', sourceGeneratedAt: '2026-09-06T15:34:04.000Z',
+      games: { ssq: { fetchedAt: '2026-09-06T15:34:04.000Z', draws: [
+        { issue: '26102', date: '2026-09-03', source: { fetchedAt: '2026-09-06T15:34:04.000Z', bodySha256: 'new' } },
+        { issue: '26103', date: '2026-09-06' }
+      ], nextIssue: { issue: '26104' }, registration: { status: 'frozen' } } }
+    };
+    const after = mergePublicNumberSnapshot(fixture, before);
+    assert.equal(after.games.ssq.nextIssue.issue, '26104');
+    assert.equal(after.games.ssq.draws.at(-1).issue, '26103');
+    assert.equal(after.games.ssq.draws.find(draw => draw.issue === '26102').source.bodySha256, 'new');
+    assert.equal(after.games.ssq.registration.status, 'frozen');
+  } finally {
+    fs.rmSync(fixture, { recursive: true, force: true });
+  }
+});
+
 test('cloud refresh exposes partial sources, preserves ledgers and archives collected raw bytes', async () => {
   const { refresh } = require('../scripts/cloud-refresh');
   const fixture = path.join(root, '.tmp-cloud-refresh-test');

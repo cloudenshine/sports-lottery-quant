@@ -120,10 +120,26 @@ function mergePublicNumberSnapshot(rootDir, dashboard) {
   if (!fs.existsSync(snapshotFile)) return dashboard;
   const snapshot = projectPublic(JSON.parse(fs.readFileSync(snapshotFile, 'utf8')));
   const games = { ...(dashboard.games || {}) };
+  const timestamp = value => {
+    const parsed = Date.parse(value || '');
+    return Number.isFinite(parsed) ? parsed : -Infinity;
+  };
   for (const [gameId, incoming] of Object.entries(snapshot.games || {})) {
     const existing = games[gameId] || {};
-    const byIssue = new Map([...(existing.draws || []), ...(incoming.draws || [])].map(draw => [draw.issue, draw]));
-    games[gameId] = { ...existing, ...incoming, draws: [...byIssue.values()].sort((a, b) => String(a.date).localeCompare(String(b.date))) };
+    const existingAt = timestamp(existing.fetchedAt || dashboard.sourceGeneratedAt || dashboard.generatedAt);
+    const incomingAt = timestamp(incoming.fetchedAt || snapshot.generatedAt);
+    const incomingIsNewer = incomingAt >= existingAt;
+    const byIssue = new Map();
+    for (const [draw, fallbackAt] of [
+      ...(existing.draws || []).map(draw => [draw, existingAt]),
+      ...(incoming.draws || []).map(draw => [draw, incomingAt])
+    ]) {
+      const previous = byIssue.get(draw.issue);
+      const observedAt = timestamp(draw.source && draw.source.fetchedAt) > -Infinity ? timestamp(draw.source.fetchedAt) : fallbackAt;
+      if (!previous || observedAt >= previous.observedAt) byIssue.set(draw.issue, { draw, observedAt });
+    }
+    const merged = incomingIsNewer ? { ...existing, ...incoming } : { ...incoming, ...existing };
+    games[gameId] = { ...merged, draws: [...byIssue.values()].map(item => item.draw).sort((a, b) => String(a.date).localeCompare(String(b.date))) };
   }
   return { ...dashboard, games, cloudRefresh: { generatedAt: snapshot.generatedAt, status: snapshot.status, evidence: snapshot.evidence } };
 }
