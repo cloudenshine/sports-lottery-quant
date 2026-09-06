@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "e226a786a112ca26b168f0a1c38374c64d5852a481797e9e84c3cafa27620f51",
+  "recordedAt": "2026-09-06T15:33:42.747Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1373229",
+      "kickoffAt": "2026-09-06T10:00:00.000Z",
+      "homeTeam": "安养FC",
+      "awayTeam": "江原FC",
+      "competition": "韩职",
+      "odds": {
+        "home": 2.81,
+        "draw": 2.92,
+        "away": 2.32
+      },
+      "sourceEventId": "1373229",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-06T15:33:32.492Z",
+      "bodySha256": "e3e9922007cc922e4d2fc3b7459974451846ab3532cd435cb9cd3143392756eb"
+    },
+    "observedAt": "2026-09-06T15:33:32.492Z",
+    "revisionReason": null
+  }
+}

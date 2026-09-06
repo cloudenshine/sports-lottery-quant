@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "c3aa1b97b4ace32479f4a3f2f11ff81e31e01d3f9043abe1b3a9db1f8330f8af",
+  "recordedAt": "2026-09-06T15:33:42.658Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1373159",
+      "kickoffAt": "2026-09-06T10:00:00.000Z",
+      "homeTeam": "金泉尚武",
+      "awayTeam": "光州FC",
+      "competition": "韩职",
+      "odds": {
+        "home": 1.4,
+        "draw": 3.95,
+        "away": 6.16
+      },
+      "sourceEventId": "1373159",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-06T15:33:32.492Z",
+      "bodySha256": "e3e9922007cc922e4d2fc3b7459974451846ab3532cd435cb9cd3143392756eb"
+    },
+    "observedAt": "2026-09-06T15:33:32.492Z",
+    "revisionReason": null
+  }
+}

@@ -1,144 +1,128 @@
 {
   "schemaVersion": 1,
-  "fetchedAt": "2026-09-06T10:38:12.830Z",
+  "fetchedAt": "2026-09-06T15:34:04.327Z",
   "status": "ok",
   "results": [
     {
       "sourceId": "500star-ssq-history",
       "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-      "fetchedAt": "2026-09-06T10:38:15.272Z",
-      "bodySha256": "4d3c8580b50eda8987f67d0d620f02fc4b1e486a08f343fb533fa228ee310fd6",
-      "rawRef": "raw/4d3c8580b50eda8987f67d0d620f02fc4b1e486a08f343fb533fa228ee310fd6.body",
+      "fetchedAt": "2026-09-06T15:34:07.731Z",
+      "bodySha256": "23864fbf225ef4c21f25c44a7a71288f649d569e658ace287bf3556a28eb647a",
+      "rawRef": "raw/23864fbf225ef4c21f25c44a7a71288f649d569e658ace287bf3556a28eb647a.body",
       "status": "ok"
     },
     {
       "sourceId": "vipc-ssq-detail",
       "sourceUrl": "https://www.vipc.cn/result/ssq/2026101",
-      "fetchedAt": "2026-09-06T10:38:17.775Z",
-      "bodySha256": "1ee883e331e39e234e10604d55af3969751f24893f037eba71aa9e67843f31ea",
-      "rawRef": "raw/1ee883e331e39e234e10604d55af3969751f24893f037eba71aa9e67843f31ea.body",
-      "status": "ok"
-    },
-    {
-      "sourceId": "vipc-ssq-detail",
-      "sourceUrl": "https://www.vipc.cn/result/ssq/2026100",
-      "fetchedAt": "2026-09-06T10:38:17.797Z",
-      "bodySha256": "4afae9dcb0cd592412af68adceefd9f0f155b800ad883a443a67340b9d5e084f",
-      "rawRef": "raw/4afae9dcb0cd592412af68adceefd9f0f155b800ad883a443a67340b9d5e084f.body",
-      "status": "ok"
-    },
-    {
-      "sourceId": "vipc-ssq-detail",
-      "sourceUrl": "https://www.vipc.cn/result/ssq/2026099",
-      "fetchedAt": "2026-09-06T10:38:17.822Z",
-      "bodySha256": "be8c070ea5d594d023c123d30c480abc8c46c82935a8df2994107349afbf50b6",
-      "rawRef": "raw/be8c070ea5d594d023c123d30c480abc8c46c82935a8df2994107349afbf50b6.body",
+      "fetchedAt": "2026-09-06T15:34:10.451Z",
+      "bodySha256": "29e4fc007c8ff3004846f100a77d1732b86f5cd3e7062ac1e3f724e54af0e9b8",
+      "rawRef": "raw/29e4fc007c8ff3004846f100a77d1732b86f5cd3e7062ac1e3f724e54af0e9b8.body",
       "status": "ok"
     },
     {
       "sourceId": "vipc-ssq-detail",
       "sourceUrl": "https://www.vipc.cn/result/ssq/2026102",
-      "fetchedAt": "2026-09-06T10:38:17.833Z",
-      "bodySha256": "49fe255add0c67f741017ecea6d72afec0248c4578c81b62819952a24fbb4766",
-      "rawRef": "raw/49fe255add0c67f741017ecea6d72afec0248c4578c81b62819952a24fbb4766.body",
+      "fetchedAt": "2026-09-06T15:34:10.493Z",
+      "bodySha256": "6e709acee5cd502323b396034d80b73089270e862bc51f8dbb8bcb7d3af11088",
+      "rawRef": "raw/6e709acee5cd502323b396034d80b73089270e862bc51f8dbb8bcb7d3af11088.body",
+      "status": "ok"
+    },
+    {
+      "sourceId": "vipc-ssq-detail",
+      "sourceUrl": "https://www.vipc.cn/result/ssq/2026103",
+      "fetchedAt": "2026-09-06T15:34:10.593Z",
+      "bodySha256": "640c5c012af51fef39773644cd72945492309a6e58751b5583c3618605282036",
+      "rawRef": "raw/640c5c012af51fef39773644cd72945492309a6e58751b5583c3618605282036.body",
       "status": "ok"
     },
     {
       "sourceId": "vipc-ssq-detail",
       "sourceUrl": "https://www.vipc.cn/result/ssq/2026098",
-      "fetchedAt": "2026-09-06T10:38:18.411Z",
-      "bodySha256": "28405be0b7a489cd4318309373f2792b1a3a2acc75a43efafa4a0404098ebe18",
-      "rawRef": "raw/28405be0b7a489cd4318309373f2792b1a3a2acc75a43efafa4a0404098ebe18.body",
+      "fetchedAt": "2026-09-06T15:34:11.171Z",
+      "bodySha256": "14144205eda80d1a4bb6981e9620333a04e5f94a6e74144ec5edd4e98179b395",
+      "rawRef": "raw/14144205eda80d1a4bb6981e9620333a04e5f94a6e74144ec5edd4e98179b395.body",
       "status": "ok"
     },
     {
       "sourceId": "vipc-ssq-detail",
       "sourceUrl": "https://www.vipc.cn/result/ssq/2026097",
-      "fetchedAt": "2026-09-06T10:38:18.443Z",
-      "bodySha256": "4782cc556f112ce2c0c144f0e650dbdf2c88b2f05b84a79a54d92dc1af84b4a5",
-      "rawRef": "raw/4782cc556f112ce2c0c144f0e650dbdf2c88b2f05b84a79a54d92dc1af84b4a5.body",
+      "fetchedAt": "2026-09-06T15:34:11.291Z",
+      "bodySha256": "41413c9d2494c9bd47a32e0e6fbade06a8ebbaa0c4bb83c0af3df6b2179dd9f3",
+      "rawRef": "raw/41413c9d2494c9bd47a32e0e6fbade06a8ebbaa0c4bb83c0af3df6b2179dd9f3.body",
       "status": "ok"
     },
     {
       "sourceId": "vipc-ssq-detail",
       "sourceUrl": "https://www.vipc.cn/result/ssq/2026096",
-      "fetchedAt": "2026-09-06T10:38:18.470Z",
-      "bodySha256": "080c3129c2a7a68204f571d41862480fc35b781c5ac969f47b071f93250cca77",
-      "rawRef": "raw/080c3129c2a7a68204f571d41862480fc35b781c5ac969f47b071f93250cca77.body",
+      "fetchedAt": "2026-09-06T15:34:11.858Z",
+      "bodySha256": "b4bf941d65c160ea9f51ca4fae688a8c176212dff3c8a3d379554fa6bcc91139",
+      "rawRef": "raw/b4bf941d65c160ea9f51ca4fae688a8c176212dff3c8a3d379554fa6bcc91139.body",
       "status": "ok"
     },
     {
       "sourceId": "vipc-ssq-detail",
       "sourceUrl": "https://www.vipc.cn/result/ssq/2026095",
-      "fetchedAt": "2026-09-06T10:38:18.874Z",
-      "bodySha256": "adac0482030fd282bbef414ba40132ee10b021af9733033af7c517a2ccda6c23",
-      "rawRef": "raw/adac0482030fd282bbef414ba40132ee10b021af9733033af7c517a2ccda6c23.body",
+      "fetchedAt": "2026-09-06T15:34:11.971Z",
+      "bodySha256": "ba98d874f42997e95379c468fb14c00bac72eea3d69e597298f51cfbf4cf23b2",
+      "rawRef": "raw/ba98d874f42997e95379c468fb14c00bac72eea3d69e597298f51cfbf4cf23b2.body",
       "status": "ok"
     },
     {
       "sourceId": "vipc-ssq-detail",
       "sourceUrl": "https://www.vipc.cn/result/ssq/2026094",
-      "fetchedAt": "2026-09-06T10:38:19.036Z",
-      "bodySha256": "f9dd7b546949faf1b3386a26ed95bb2f55318f3a8f09a90b0ced2aca0fcb65f7",
-      "rawRef": "raw/f9dd7b546949faf1b3386a26ed95bb2f55318f3a8f09a90b0ced2aca0fcb65f7.body",
+      "fetchedAt": "2026-09-06T15:34:14.582Z",
+      "bodySha256": "047765ded738102166a3f479967b15b97fc03b25a4f2a752efb5dd208af6b231",
+      "rawRef": "raw/047765ded738102166a3f479967b15b97fc03b25a4f2a752efb5dd208af6b231.body",
       "status": "ok"
     },
     {
       "sourceId": "vipc-ssq-detail",
-      "sourceUrl": "https://www.vipc.cn/result/ssq/2026093",
-      "fetchedAt": "2026-09-06T10:38:19.267Z",
-      "bodySha256": "08f0c27d9be62a4517952c2a8be1fb89813e9e70ab9c433b08db14a8d8576403",
-      "rawRef": "raw/08f0c27d9be62a4517952c2a8be1fb89813e9e70ab9c433b08db14a8d8576403.body",
+      "sourceUrl": "https://www.vipc.cn/result/ssq/2026099",
+      "fetchedAt": "2026-09-06T15:34:14.753Z",
+      "bodySha256": "43a8496521cf442280dff05a459e6f5073768b6b1a8b2d6a73701850e8026e53",
+      "rawRef": "raw/43a8496521cf442280dff05a459e6f5073768b6b1a8b2d6a73701850e8026e53.body",
       "status": "ok"
-    },
-    {
-      "sourceId": "vipc-ssq-detail",
-      "sourceUrl": "https://www.vipc.cn/result/ssq/2025079",
-      "fetchedAt": "2026-09-06T10:38:19.520Z",
-      "bodySha256": "ffff95492f9a758fa23979f46c16cc56f8416e956a3d224634e9598427e447f0",
-      "rawRef": "raw/ffff95492f9a758fa23979f46c16cc56f8416e956a3d224634e9598427e447f0.body",
-      "status": "failed",
-      "error": "Incomplete SSQ prize table",
-      "httpStatus": 200
     },
     {
       "sourceId": "vipc-ssq-detail",
       "sourceUrl": "https://www.vipc.cn/result/ssq/2025069",
-      "fetchedAt": "2026-09-06T10:38:19.576Z",
-      "bodySha256": "8861782db335b5fc870c17cd52346c0ff8a1d312764ff0708a714a9ee9e35e5e",
-      "rawRef": "raw/8861782db335b5fc870c17cd52346c0ff8a1d312764ff0708a714a9ee9e35e5e.body",
+      "fetchedAt": "2026-09-06T15:34:15.998Z",
+      "bodySha256": "dd85964a34a1a2e4fccb3678148a51c042dc77e9bb08ce11df8e2c9aa360665e",
+      "rawRef": "raw/dd85964a34a1a2e4fccb3678148a51c042dc77e9bb08ce11df8e2c9aa360665e.body",
       "status": "failed",
       "error": "Incomplete SSQ prize table",
       "httpStatus": 200
     },
     {
+      "sourceId": "vipc-ssq-detail",
+      "sourceUrl": "https://www.vipc.cn/result/ssq/2025079",
+      "fetchedAt": "2026-09-06T15:34:16.014Z",
+      "bodySha256": "2e472d344cba2ee89eb17c9b42889364eed060763d61dc9907b5785199395481",
+      "rawRef": "raw/2e472d344cba2ee89eb17c9b42889364eed060763d61dc9907b5785199395481.body",
+      "status": "failed",
+      "error": "Incomplete SSQ prize table",
+      "httpStatus": 200
+    },
+    {
+      "sourceId": "vipc-ssq-detail",
+      "sourceUrl": "https://www.vipc.cn/result/ssq/2026100",
+      "fetchedAt": "2026-09-06T15:34:16.033Z",
+      "bodySha256": "128bfd0339527d2a09c090fd2f4469b5ec7bacb4ab75413033d4763bb57ff958",
+      "rawRef": "raw/128bfd0339527d2a09c090fd2f4469b5ec7bacb4ab75413033d4763bb57ff958.body",
+      "status": "ok"
+    },
+    {
       "sourceId": "500star-dlt-history",
       "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-      "fetchedAt": "2026-09-06T10:38:22.010Z",
+      "fetchedAt": "2026-09-06T15:34:18.566Z",
       "bodySha256": "c090b3572939f511b82a1ef2da00a371dc147402de92a508aa490bda02d4f1a3",
       "rawRef": "raw/c090b3572939f511b82a1ef2da00a371dc147402de92a508aa490bda02d4f1a3.body",
       "status": "ok"
     },
     {
       "sourceId": "guangdong-ticai-dlt-detail",
-      "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26098.html",
-      "fetchedAt": "2026-09-06T10:38:23.584Z",
-      "bodySha256": "ed601c50d976f8e1d827ce07b0171becebd3dcb89551017f437bca1be8b53d5d",
-      "rawRef": "raw/ed601c50d976f8e1d827ce07b0171becebd3dcb89551017f437bca1be8b53d5d.body",
-      "status": "ok"
-    },
-    {
-      "sourceId": "guangdong-ticai-dlt-detail",
-      "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26100.html",
-      "fetchedAt": "2026-09-06T10:38:23.602Z",
-      "bodySha256": "ee7d9a2ad480805873943e09c5e9402c1d5460784a2624a242780dd7d6ef168c",
-      "rawRef": "raw/ee7d9a2ad480805873943e09c5e9402c1d5460784a2624a242780dd7d6ef168c.body",
-      "status": "ok"
-    },
-    {
-      "sourceId": "guangdong-ticai-dlt-detail",
       "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26101.html",
-      "fetchedAt": "2026-09-06T10:38:23.660Z",
+      "fetchedAt": "2026-09-06T15:34:21.376Z",
       "bodySha256": "95ae43adc096c5a65e05405a3de1e370aad612715b1f40484518b07ab42bc545",
       "rawRef": "raw/95ae43adc096c5a65e05405a3de1e370aad612715b1f40484518b07ab42bc545.body",
       "status": "ok"
@@ -146,15 +130,31 @@
     {
       "sourceId": "guangdong-ticai-dlt-detail",
       "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26099.html",
-      "fetchedAt": "2026-09-06T10:38:23.669Z",
+      "fetchedAt": "2026-09-06T15:34:21.415Z",
       "bodySha256": "57ff5dc1f6e432a50686d699c7c8e8aa750909f0b96d239220687af1dd4fa725",
       "rawRef": "raw/57ff5dc1f6e432a50686d699c7c8e8aa750909f0b96d239220687af1dd4fa725.body",
       "status": "ok"
     },
     {
       "sourceId": "guangdong-ticai-dlt-detail",
+      "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26098.html",
+      "fetchedAt": "2026-09-06T15:34:21.422Z",
+      "bodySha256": "ed601c50d976f8e1d827ce07b0171becebd3dcb89551017f437bca1be8b53d5d",
+      "rawRef": "raw/ed601c50d976f8e1d827ce07b0171becebd3dcb89551017f437bca1be8b53d5d.body",
+      "status": "ok"
+    },
+    {
+      "sourceId": "guangdong-ticai-dlt-detail",
+      "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26100.html",
+      "fetchedAt": "2026-09-06T15:34:21.437Z",
+      "bodySha256": "ee7d9a2ad480805873943e09c5e9402c1d5460784a2624a242780dd7d6ef168c",
+      "rawRef": "raw/ee7d9a2ad480805873943e09c5e9402c1d5460784a2624a242780dd7d6ef168c.body",
+      "status": "ok"
+    },
+    {
+      "sourceId": "guangdong-ticai-dlt-detail",
       "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26097.html",
-      "fetchedAt": "2026-09-06T10:38:24.093Z",
+      "fetchedAt": "2026-09-06T15:34:21.946Z",
       "bodySha256": "0b1d8651fc5b7b3b3e872fb37760e10b70b54cbc236c7a07f359795ed55dfc29",
       "rawRef": "raw/0b1d8651fc5b7b3b3e872fb37760e10b70b54cbc236c7a07f359795ed55dfc29.body",
       "status": "ok"
@@ -162,7 +162,7 @@
     {
       "sourceId": "guangdong-ticai-dlt-detail",
       "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26096.html",
-      "fetchedAt": "2026-09-06T10:38:24.110Z",
+      "fetchedAt": "2026-09-06T15:34:21.969Z",
       "bodySha256": "3a01c19bc6c0797a9729ae4af5539fac8f2c3622fb530c4d1288f9fe78231251",
       "rawRef": "raw/3a01c19bc6c0797a9729ae4af5539fac8f2c3622fb530c4d1288f9fe78231251.body",
       "status": "ok"
@@ -170,7 +170,7 @@
     {
       "sourceId": "guangdong-ticai-dlt-detail",
       "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26095.html",
-      "fetchedAt": "2026-09-06T10:38:24.182Z",
+      "fetchedAt": "2026-09-06T15:34:22.015Z",
       "bodySha256": "24a1e8874f173a72495d1f8f7a6a8896b134ff1c209cb9045a7358df5df8d48b",
       "rawRef": "raw/24a1e8874f173a72495d1f8f7a6a8896b134ff1c209cb9045a7358df5df8d48b.body",
       "status": "ok"
@@ -178,7 +178,7 @@
     {
       "sourceId": "guangdong-ticai-dlt-detail",
       "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26094.html",
-      "fetchedAt": "2026-09-06T10:38:24.881Z",
+      "fetchedAt": "2026-09-06T15:34:24.940Z",
       "bodySha256": "5dc2b356f236becc85201823fc378849e36e88a748bb04f16e604ee245da148e",
       "rawRef": "raw/5dc2b356f236becc85201823fc378849e36e88a748bb04f16e604ee245da148e.body",
       "status": "ok"
@@ -186,7 +186,7 @@
     {
       "sourceId": "guangdong-ticai-dlt-detail",
       "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26093.html",
-      "fetchedAt": "2026-09-06T10:38:24.894Z",
+      "fetchedAt": "2026-09-06T15:34:24.944Z",
       "bodySha256": "dfd040d6fe957c06598cd29e3118052424d4939f5e0c199a3c811f0ca6949aa3",
       "rawRef": "raw/dfd040d6fe957c06598cd29e3118052424d4939f5e0c199a3c811f0ca6949aa3.body",
       "status": "ok"
@@ -194,7 +194,7 @@
     {
       "sourceId": "guangdong-ticai-dlt-detail",
       "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26092.html",
-      "fetchedAt": "2026-09-06T10:38:24.905Z",
+      "fetchedAt": "2026-09-06T15:34:24.948Z",
       "bodySha256": "fb06c5472862864a9c043ea5d40cf2b712f4dfb9e933ca427319d01ca1462d22",
       "rawRef": "raw/fb06c5472862864a9c043ea5d40cf2b712f4dfb9e933ca427319d01ca1462d22.body",
       "status": "ok"
@@ -202,9 +202,9 @@
     {
       "sourceId": "tifucai-next-issue",
       "sourceUrl": "https://www.tifucai.com/index.php",
-      "fetchedAt": "2026-09-06T10:38:26.811Z",
-      "bodySha256": "37fb24529c45568d79695f187eca976b7da42df17323e28641545374f07e0fc4",
-      "rawRef": "raw/37fb24529c45568d79695f187eca976b7da42df17323e28641545374f07e0fc4.body",
+      "fetchedAt": "2026-09-06T15:34:28.853Z",
+      "bodySha256": "8dd5209eeb81e343c260bbc7142b269941341ea4fac8e2935a77b9c5ee6f2a73",
+      "rawRef": "raw/8dd5209eeb81e343c260bbc7142b269941341ea4fac8e2935a77b9c5ee6f2a73.body",
       "status": "ok"
     }
   ],

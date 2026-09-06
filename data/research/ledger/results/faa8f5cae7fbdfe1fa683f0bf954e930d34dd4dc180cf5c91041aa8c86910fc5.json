@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "faa8f5cae7fbdfe1fa683f0bf954e930d34dd4dc180cf5c91041aa8c86910fc5",
+  "recordedAt": "2026-09-06T15:33:42.608Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1419123",
+      "kickoffAt": "2026-09-06T09:00:00.000Z",
+      "homeTeam": "名古屋鲸",
+      "awayTeam": "町田泽维",
+      "competition": "日职",
+      "odds": {
+        "home": 3.05,
+        "draw": 3.35,
+        "away": 1.99
+      },
+      "sourceEventId": "1419123",
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-06T15:33:32.492Z",
+      "bodySha256": "e3e9922007cc922e4d2fc3b7459974451846ab3532cd435cb9cd3143392756eb"
+    },
+    "observedAt": "2026-09-06T15:33:32.492Z",
+    "revisionReason": null
+  }
+}

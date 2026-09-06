@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "7e439aa97b274f0a1a88e77a1d1e0a638ad7d95534574459bcc35ee7d39f1021",
+  "recordedAt": "2026-09-06T15:33:42.552Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1419038",
+      "kickoffAt": "2026-09-06T09:00:00.000Z",
+      "homeTeam": "鹿岛鹿角",
+      "awayTeam": "浦和红钻",
+      "competition": "日职",
+      "odds": {
+        "home": 1.57,
+        "draw": 3.8,
+        "away": 4.38
+      },
+      "sourceEventId": "1419038",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-06T15:33:32.492Z",
+      "bodySha256": "e3e9922007cc922e4d2fc3b7459974451846ab3532cd435cb9cd3143392756eb"
+    },
+    "observedAt": "2026-09-06T15:33:32.492Z",
+    "revisionReason": null
+  }
+}

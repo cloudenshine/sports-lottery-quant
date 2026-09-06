@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "949bc931469c999a4db0ce8c3d7801b878eeea0dd992bf32c2f596628c4e7c0a",
+  "recordedAt": "2026-09-06T15:33:42.854Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1425432",
+      "kickoffAt": "2026-09-06T11:00:00.000Z",
+      "homeTeam": "伯明翰",
+      "awayTeam": "伍尔弗汉普顿",
+      "competition": "英冠",
+      "odds": {
+        "home": 2.93,
+        "draw": 3.1,
+        "away": 2.15
+      },
+      "sourceEventId": "1425432",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-06T15:33:32.492Z",
+      "bodySha256": "e3e9922007cc922e4d2fc3b7459974451846ab3532cd435cb9cd3143392756eb"
+    },
+    "observedAt": "2026-09-06T15:33:32.492Z",
+    "revisionReason": null
+  }
+}
