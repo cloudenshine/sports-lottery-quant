@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-06T12:26:26.792Z",
+  "status": "degraded",
+  "steps": [
+    {
+      "id": "sports",
+      "status": "degraded",
+      "sourceStatus": {
+        "status": "partial",
+        "jingcai": {
+          "status": "ok",
+          "error": null
+        },
+        "sfc": {
+          "status": "failed",
+          "error": "Invalid SFC fixture 13"
+        },
+        "markets": {
+          "jingcai": {
+            "status": "ok",
+            "error": null
+          },
+          "sfc": {
+            "status": "failed",
+            "error": "Invalid SFC fixture 13"
+          }
+        }
+      },
+      "sourceErrors": {
+        "jingcai": null,
+        "sfc": "Invalid SFC fixture 13"
+      },
+      "jingcaiCount": 26,
+      "sfcCount": 0
+    },
+    {
+      "id": "numbers",
+      "status": "ok",
+      "games": {
+        "ssq": {
+          "draws": 555,
+          "status": "ok"
+        },
+        "dlt": {
+          "draws": 553,
+          "status": "ok"
+        }
+      }
+    }
+  ],
+  "retainedPreviousOnFailure": true,
+  "writes": [
+    "data/sports_live.json",
+    "data/sports-live-data.js",
+    "data/numbers/public-snapshot.json",
+    "data/cloud-refresh-status.json"
+  ],
+  "ledgerWrites": []
+}

@@ -1019,8 +1019,8 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-06T12:09:08.058Z",
-  "displayTime": "2026/9/6 20:09:08",
+  "syncedAt": "2026-09-06T12:26:26.792Z",
+  "displayTime": "2026/9/6 20:26:26",
   "jingcaiCount": 26,
   "sfcCount": 0,
   "jingcai": [
@@ -1046,14 +1046,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 1.72,
-          "1": 3.85,
-          "3": 3.47
+          "0": 1.69,
+          "1": 3.9,
+          "3": 3.55
         },
         "RQSPF": {
-          "0": 2.88,
+          "0": 2.76,
           "1": 4.15,
-          "3": 1.85,
+          "3": 1.9,
           "handicap": 1
         }
       },
@@ -1133,8 +1133,8 @@ window.SPORTS_LIVE = {
       "odds": {
         "SPF": {
           "0": 2.45,
-          "1": 3.33,
-          "3": 2.38
+          "1": 3.45,
+          "3": 2.32
         },
         "RQSPF": {
           "0": 5.5,
@@ -1304,9 +1304,9 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 1.17,
-          "1": 6.1,
-          "3": 9
+          "0": 1.15,
+          "1": 6.25,
+          "3": 10
         },
         "RQSPF": {
           "0": 2.37,
@@ -1476,13 +1476,13 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 3.7,
+          "0": 3.8,
           "1": 3.95,
-          "3": 1.65
+          "3": 1.63
         },
         "RQSPF": {
-          "0": 1.93,
-          "1": 3.6,
+          "0": 1.96,
+          "1": 3.5,
           "3": 3,
           "handicap": -1
         }
@@ -1777,14 +1777,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 1.91,
+          "0": 1.88,
           "1": 3.3,
-          "3": 3.3
+          "3": 3.4
         },
         "RQSPF": {
           "0": 4.1,
-          "1": 3.5,
-          "3": 1.67,
+          "1": 3.4,
+          "3": 1.69,
           "handicap": 1
         }
       },
@@ -4416,6 +4416,11 @@ function validateArbitrage(input, labels, market) {
     result.status = 'invalid'; result.reasonCodes.push('quote_contract_mismatch'); result.reasons.push('套利报价必须来自同一固定赔率市场且每项销售/结算合同均已核验'); return result;
   }
   const terms = input.settlementTerms;
+  const footballComplete = ['jczq','jingcai','竞彩足球','fixed-decimal-1x2','fixed-decimal-1x2-v1'].includes(market) && variants[0] === 'SPF' && lines[0] === 'null' && periods[0] === 'regulation' && labels.length === 3 && ['home','draw','away'].every(label => labelSet.has(label));
+  const basketballComplete = ['jclq','lancai','竞彩篮球'].includes(market) && variants[0] === 'SF' && lines[0] === 'null' && periods[0] === 'including_overtime' && labels.length === 2 && ['home','away'].every(label => labelSet.has(label));
+  if (!footballComplete && !basketballComplete) {
+    result.status = 'invalid'; result.reasonCodes.push('unverified_exhaustive_market'); result.reasons.push('未核验玩法的完整结果空间；足球胜平负必须覆盖胜平负三项，篮球胜负须含加时'); return result;
+  }
   if (!terms || terms.verified !== true || !Number.isFinite(terms.feeRate) || terms.feeRate < 0 || terms.feeRate >= 1 || !Number.isFinite(terms.taxRate) || terms.taxRate < 0 || terms.taxRate >= 1 || (terms.maxPayoutYuan !== null && terms.maxPayoutYuan !== undefined && (!Number.isFinite(terms.maxPayoutYuan) || terms.maxPayoutYuan <= 0))) {
     result.status = 'invalid'; result.reasonCodes.push('net_payout_contract_missing'); result.reasons.push('套利必须有已核验的净赔率、费税和封顶合同'); return result;
   }
@@ -4429,7 +4434,7 @@ function validateArbitrage(input, labels, market) {
   if (kickoffTimes.some(time => time !== kickoffTimes[0]) || kickoffTimes[0] <= now || captureTimes.some(time => time >= kickoffTimes[0]) || captureTimes.some(time => time > now) || captureTimes.some(time => time < now - maxAgeMinutes * 60000) || Math.max(...captureTimes) - Math.min(...captureTimes) > (input.arbitrageMaxAgeSeconds ?? 60) * 1000) {
     result.status = 'invalid'; result.reasonCodes.push('quotes_not_simultaneous_pre_match'); result.reasons.push('套利报价并非同一赛前同时窗口'); return result;
   }
-  const netOdds = canonical.map(item => item.netOdds ?? item.odds * (1 - terms.feeRate) * (1 - terms.taxRate));
+  const netOdds = canonical.map(item => Math.min(item.netOdds ?? Infinity, item.odds * (1 - terms.feeRate) * (1 - terms.taxRate)));
   result.inverseSum = netOdds.reduce((sum, odds) => sum + 1 / odds, 0);
   if (!(result.inverseSum < 1 - EPSILON)) {
     result.status = 'no_arbitrage'; result.reasonCodes.push('overround_nonnegative'); result.reasons.push('全部互斥报价的倒数和不小于1，没有无风险套利'); return result;

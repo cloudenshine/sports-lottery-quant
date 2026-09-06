@@ -6,6 +6,8 @@ dist-public/
 .agents/
 .codex/
 data/**/raw/
+data/sports-source-evidence/*.body
+data/sports-source-evidence/*.meta.json
 data/**/cache/
 data/**/runs/
 data/**/daily-runs/

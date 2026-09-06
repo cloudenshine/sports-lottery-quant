@@ -54,6 +54,8 @@ test('public dashboards retain evidence useful to readers without private archiv
     const research = dashboard(path.join(outDir, 'data/research/dashboard.js'));
     assert.ok(numbers.sources.results.some(source => typeof source.sourceUrl === 'string' && /^https?:\/\//.test(source.sourceUrl)));
     assert.ok(numbers.ledger.batches.some(batch => batch.predictions?.some(prediction => Array.isArray(prediction.tickets))));
+    assert.equal(numbers.games.ssq.report.byModel.length, 7);
+    assert.equal(numbers.games.dlt.report.byModel.length, 7);
     assert.ok(research.recentPredictions.some(row => /^https?:\/\//.test(row.payload?.source?.sourceUrl || '')));
     assert.ok(research.rules.rules.some(rule => rule.sources?.length));
   } finally {
@@ -78,4 +80,31 @@ test('cloud number snapshots update the public dashboard while preserving the le
   } finally {
     fs.rmSync(fixture, { recursive: true, force: true });
   }
+});
+
+test('cloud refresh exposes partial sources, preserves ledgers and archives collected raw bytes', async () => {
+  const { refresh } = require('../scripts/cloud-refresh');
+  const fixture = path.join(root, '.tmp-cloud-refresh-test');
+  fs.mkdirSync(path.join(fixture, 'data/numbers/ledger'), { recursive: true });
+  const ledger = path.join(fixture, 'data/numbers/ledger/untouched.json');
+  fs.writeFileSync(ledger, '{"frozen":true}');
+  const now = new Date('2026-09-06T00:00:00Z');
+  try {
+    const status = await refresh({root:fixture, now,
+      syncSportsImpl:async options => {
+        assert.equal(options.archiveEvidence, true);
+        return {jingcaiCount:26,sfcCount:0,sourceStatus:{status:'partial'},sourceErrors:{sfc:'Missing odds'}};
+      },
+      syncNumbersImpl:async ({dataDir}) => {
+        fs.mkdirSync(path.join(dataDir,'raw'),{recursive:true});
+        fs.writeFileSync(path.join(dataDir,'raw/sample.body'),'public source fixture');
+        return {status:{status:'ok'},games:{ssq:{draws:[],status:'ok'}}};
+      }
+    });
+    assert.equal(status.status,'degraded');
+    assert.equal(status.steps[0].status,'degraded');
+    assert.deepEqual(status.ledgerWrites,[]);
+    assert.equal(fs.readFileSync(ledger,'utf8'),'{"frozen":true}');
+    assert.equal(fs.readFileSync(path.join(fixture,'data/research/raw/cloud-refresh/2026-09-06T00-00-00-000Z/sample.body'),'utf8'),'public source fixture');
+  } finally { fs.rmSync(fixture,{recursive:true,force:true}); }
 });

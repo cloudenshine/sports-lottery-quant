@@ -193,6 +193,11 @@ function validateArbitrage(input, labels, market) {
     result.status = 'invalid'; result.reasonCodes.push('quote_contract_mismatch'); result.reasons.push('套利报价必须来自同一固定赔率市场且每项销售/结算合同均已核验'); return result;
   }
   const terms = input.settlementTerms;
+  const footballComplete = ['jczq','jingcai','竞彩足球','fixed-decimal-1x2','fixed-decimal-1x2-v1'].includes(market) && variants[0] === 'SPF' && lines[0] === 'null' && periods[0] === 'regulation' && labels.length === 3 && ['home','draw','away'].every(label => labelSet.has(label));
+  const basketballComplete = ['jclq','lancai','竞彩篮球'].includes(market) && variants[0] === 'SF' && lines[0] === 'null' && periods[0] === 'including_overtime' && labels.length === 2 && ['home','away'].every(label => labelSet.has(label));
+  if (!footballComplete && !basketballComplete) {
+    result.status = 'invalid'; result.reasonCodes.push('unverified_exhaustive_market'); result.reasons.push('未核验玩法的完整结果空间；足球胜平负必须覆盖胜平负三项，篮球胜负须含加时'); return result;
+  }
   if (!terms || terms.verified !== true || !Number.isFinite(terms.feeRate) || terms.feeRate < 0 || terms.feeRate >= 1 || !Number.isFinite(terms.taxRate) || terms.taxRate < 0 || terms.taxRate >= 1 || (terms.maxPayoutYuan !== null && terms.maxPayoutYuan !== undefined && (!Number.isFinite(terms.maxPayoutYuan) || terms.maxPayoutYuan <= 0))) {
     result.status = 'invalid'; result.reasonCodes.push('net_payout_contract_missing'); result.reasons.push('套利必须有已核验的净赔率、费税和封顶合同'); return result;
   }
@@ -206,7 +211,7 @@ function validateArbitrage(input, labels, market) {
   if (kickoffTimes.some(time => time !== kickoffTimes[0]) || kickoffTimes[0] <= now || captureTimes.some(time => time >= kickoffTimes[0]) || captureTimes.some(time => time > now) || captureTimes.some(time => time < now - maxAgeMinutes * 60000) || Math.max(...captureTimes) - Math.min(...captureTimes) > (input.arbitrageMaxAgeSeconds ?? 60) * 1000) {
     result.status = 'invalid'; result.reasonCodes.push('quotes_not_simultaneous_pre_match'); result.reasons.push('套利报价并非同一赛前同时窗口'); return result;
   }
-  const netOdds = canonical.map(item => item.netOdds ?? item.odds * (1 - terms.feeRate) * (1 - terms.taxRate));
+  const netOdds = canonical.map(item => Math.min(item.netOdds ?? Infinity, item.odds * (1 - terms.feeRate) * (1 - terms.taxRate)));
   result.inverseSum = netOdds.reduce((sum, odds) => sum + 1 / odds, 0);
   if (!(result.inverseSum < 1 - EPSILON)) {
     result.status = 'no_arbitrage'; result.reasonCodes.push('overround_nonnegative'); result.reasons.push('全部互斥报价的倒数和不小于1，没有无风险套利'); return result;

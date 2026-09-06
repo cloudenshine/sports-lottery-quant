@@ -20,6 +20,7 @@ const PUBLIC_FILES = Object.freeze([
   'number-tools-standalone.html',
   'research-standalone.html',
   'manifest.json',
+  'docs/testing/scientific-evaluation.json',
   'engine.js',
   'number-models.js',
   'number-settlement.js',
@@ -48,6 +49,7 @@ const DASHBOARDS = Object.freeze([
 ]);
 
 const OPTIONAL_DASHBOARDS = Object.freeze([
+  ['docs/testing/scientific-evaluation.json', null],
   ['data/returns/crowd-report.js', 'NUMBER_CROWD_REPORT'],
   ['data/returns/crowd-report.json', 'NUMBER_CROWD_REPORT']
 ]);
@@ -81,7 +83,7 @@ function projectPublic(value, context = []) {
     // These are large per-row training artifacts. The public summary retains
     // the model aggregates and the registered ticket batches instead.
     if ((lower === 'rows' || lower === 'periods') && context.includes('evaluation')) continue;
-    if (lower === 'report' && context.includes('games')) continue;
+    if (lower === 'periods' && context.includes('report')) continue;
     if (lower === 'reports' && context.includes('numberTournament')) continue;
     if (lower === 'specialprizeevidence') continue;
     const projected = projectPublic(child, context.concat(key));

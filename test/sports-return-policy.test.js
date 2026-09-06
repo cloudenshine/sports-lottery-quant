@@ -19,6 +19,13 @@ const reliable = {
   stakeUnitYuan: 2
 };
 
+test('two football prices cannot certify an arbitrage that omits the draw', () => {
+  const meta = {eventId:'one',marketVariant:'SPF',line:null,settlementPeriod:'regulation',sourceId:'fixture',officialSale:true,settlementRuleVerified:true,kickoffAt:reliable.kickoffAt,oddsObservedAt:reliable.oddsObservedAt};
+  const result = evaluateDecision({...reliable, odds:{home:3,away:3},probabilities:[0.5,0.5],probabilityLowerBounds:[0.1,0.1], arbitrageQuotes:[{...meta,selection:'home',odds:3},{...meta,selection:'away',odds:3}]});
+  assert.equal(result.arbitrage.conditionalGuarantee,false);
+  assert.ok(result.arbitrage.reasonCodes.includes('unverified_exhaustive_market'));
+});
+
 test('fixed odds decision uses actual odds, worst probability bound and Kelly cap', () => {
   const result = evaluateDecision(reliable);
   assert.equal(result.status, 'supported_trade');
