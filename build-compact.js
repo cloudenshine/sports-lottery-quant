@@ -1,38 +1,27 @@
-const fs = require("fs");
-const path = require("path");
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const { validateDraws } = require('./update-all-history');
+const { writeFileSet } = require('./sync-sports-live');
 
-const ssq = JSON.parse(fs.readFileSync(path.join(__dirname, "data/ssq_history.json"), "utf8"));
-const dlt = JSON.parse(fs.readFileSync(path.join(__dirname, "data/dlt_history.json"), "utf8"));
-
-const ssqRows = ssq.draws.map((d) => [...d.redBalls, d.blueBall]);
-const dltRows = dlt.draws.map((d) => [...d.frontBalls, ...d.backBalls]);
-
-const ssqJs = `window.SSQ_META = ${JSON.stringify({
-  lottery: "ssq",
-  name: "双色球",
-  source: ssq.metadata.source,
-  generatedAt: ssq.metadata.generatedAt,
-  total: ssq.metadata.totalCount,
-  firstIssue: ssq.metadata.firstIssue,
-  latestIssue: ssq.metadata.latestIssue,
-  latestDate: ssq.metadata.latestDate,
-})};
-window.SSQ_DRAWS = ${JSON.stringify(ssqRows)};
-`;
-
-const dltJs = `window.DLT_META = ${JSON.stringify({
-  lottery: "dlt",
-  name: "超级大乐透",
-  source: dlt.source,
-  generatedAt: dlt.generatedAt,
-  total: dlt.totalCount,
-  firstIssue: dlt.firstIssue,
-  latestIssue: dlt.latestIssue,
-  latestDate: dlt.latestDate,
-})};
-window.DLT_DRAWS = ${JSON.stringify(dltRows)};
-`;
-
-fs.writeFileSync(path.join(__dirname, "data/ssq-compact.js"), ssqJs);
-fs.writeFileSync(path.join(__dirname, "data/dlt-compact.js"), dltJs);
-console.log("ssq", ssqRows.length, "dlt", dltRows.length);
+function buildCompact({ dataDir = path.join(__dirname, 'data'), now = new Date() } = {}) {
+  const files = [];
+  const result = {};
+  for (const game of ['ssq', 'dlt']) {
+    const draws = validateDraws(JSON.parse(fs.readFileSync(path.join(dataDir, `${game}_history.json`), 'utf8')), game, { now });
+    const meta = { lottery: game, name: game === 'ssq' ? '双色球' : '超级大乐透', source: 'local validated history',
+      generatedAt: now.toISOString(), total: draws.length, firstIssue: draws.at(-1).issue,
+      latestIssue: draws[0].issue, latestDate: draws[0].date, latestDraw: draws[0] };
+    const name = game.toUpperCase();
+    const rows = draws.map(draw => [...draw.main, ...draw.special]);
+    files.push([path.join(dataDir, `${game}-compact.js`), `window.${name}_META = ${JSON.stringify(meta)};\nwindow.${name}_DRAWS = ${JSON.stringify(rows)};\n`]);
+    result[game] = meta;
+  }
+  writeFileSet(files);
+  return result;
+}
+if (require.main === module) {
+  try { console.log(JSON.stringify(buildCompact(), null, 2)); }
+  catch (error) { console.error('Compact build failed:', error.message); process.exitCode = 1; }
+}
+module.exports = { buildCompact };

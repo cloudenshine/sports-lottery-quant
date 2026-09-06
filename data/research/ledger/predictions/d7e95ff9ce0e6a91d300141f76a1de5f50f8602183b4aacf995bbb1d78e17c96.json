@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "d7e95ff9ce0e6a91d300141f76a1de5f50f8602183b4aacf995bbb1d78e17c96",
+  "recordedAt": "2026-09-05T18:48:55.319Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1415917",
+      "kickoffAt": "2026-09-06T12:30:00.000Z",
+      "homeTeam": "海伦芬",
+      "awayTeam": "阿尔克马",
+      "competition": "荷甲",
+      "odds": {
+        "home": 3.5,
+        "draw": 3.82,
+        "away": 1.72
+      },
+      "sourceEventId": "1415917"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-05T18:48:45.225Z",
+      "bodySha256": "4cbc3cb20383abfff1a449977991566076267ed1ebc7ba6ade20443b6a105e27"
+    },
+    "prediction": {
+      "modelId": "historical",
+      "version": "1.0.0",
+      "probabilities": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "trainingCutoff": "2026-09-05T18:48:51.848Z",
+      "trainingCount": 4,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-05T18:48:45.225Z",
+    "paperTrade": {
+      "selectionWeights": [
+        0,
+        1,
+        0
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "a53b0f5ec38729da3b0fa85f8612c8d9a48a42c70a93001cb9bc3f5092e1dc12"
+  }
+}

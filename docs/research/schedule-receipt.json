@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-05T19:03:44.357Z",
+  "automationId": "automation",
+  "name": "体彩科学研究：每日采集与前瞻验证",
+  "kind": "heartbeat",
+  "status": "ACTIVE",
+  "timezone": "Asia/Shanghai",
+  "hostTimezone": "China Standard Time",
+  "localTimes": [
+    "10:30",
+    "18:30",
+    "23:30"
+  ],
+  "entrypoint": "npm run research:daily",
+  "postRun": "npm run build",
+  "manualLiveRunsVerified": 2,
+  "firstScheduledFiringVerified": false
+}

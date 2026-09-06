@@ -111,3 +111,60 @@ test('Lancai (竞彩篮球 - JCLQ) Engine Tests', async (t) => {
     assert.match(posTxt, /终端代码: JCLQ\|/);
   });
 });
+
+test('Basketball ties and absent observations do not silently settle as away or under', () => {
+  assert.throws(() => LancaiEngine.settleMNL(100, 100));
+  assert.throws(() => LancaiEngine.settleWNM(100, 100));
+  assert.throws(() => LancaiEngine.settleHDC(105, 100, -5));
+  assert.throws(() => LancaiEngine.settleHILO(105, 100, 205));
+  assert.throws(() => LancaiEngine.settleMNL(NaN, 100));
+  assert.throws(() => LancaiEngine.estimateBasketballDynamics({}, {}));
+  assert.throws(() => LancaiEngine.optimizeBonus([{ totalOdds: 2 }], Infinity));
+  assert.throws(() => LancaiEngine.optimizeBonus([{ totalOdds: NaN }], 10));
+});
+
+test('Basketball baseline changes with quotes and is invariant to input ordering', () => {
+  const matches = [
+    { id: 'A', odds: { MNL: { home: 3, away: 1.4 } } },
+    { id: 'B', odds: { HILO: { totalLine: 215.5, over: 3, under: 1.4 } } },
+    { id: 'C', odds: { MNL: { home: 1.9, away: 1.9 } } }
+  ];
+  const slip = LancaiEngine.generateQuantPicksLancai(matches);
+  assert.deepEqual(slip.matches.map(m => m.picks[0].selection), ['away', 'under']);
+  assert.deepEqual(LancaiEngine.generateQuantPicksLancai(matches.slice().reverse()).matches, slip.matches);
+  assert.equal(slip.evidenceOfPredictiveEdge, false);
+  assert.throws(() => LancaiEngine.generateQuantPicksLancai([{ id: 'A' }, { id: 'B' }]));
+});
+
+test('Basketball uses the verified shared decimal prize rules and pre-multiplier caps', () => {
+  assert.equal(LancaiEngine.calculateSingleBetPayout(['1.0025'], 5, '1_1'), 10);
+  assert.equal(LancaiEngine.calculateTicketPayout([
+    [1.65, 1.75], [1.65, 1.46], [1.75, 1.46], [1.65, 1.75, 1.46]
+  ], 5), 120.70);
+  assert.equal(LancaiEngine.calculateSingleBetPayout([500, 500], 5, '2_1'), 1000000);
+  const opt = LancaiEngine.optimizeBonus([{
+    id: 'A', totalOdds: 250000, passType: '2_1', legs: [
+      { matchId: 'A', selection: 'home', odds: 500 }, { matchId: 'B', selection: 'away', odds: 500 }
+    ]
+  }], 202);
+  assert.equal(opt.allocations[0].payoutIfWin, 20200000);
+  const batch = LancaiEngine.generateBatchTickets(opt);
+  assert.deepEqual(batch.tickets.map(t => t.multiplier), [50, 50, 1]);
+  assert.equal(batch.totalAmountYuan, 202);
+  assert.equal(batch.tickets.reduce((sum, t) => sum + t.payoutIfWin, 0), opt.allocations[0].payoutIfWin);
+  assert.equal(opt.payoutRulesStatus, 'verified-fixed-payout-arithmetic-only');
+  assert.throws(() => LancaiEngine.validateTicketLimits(61, 50), /6000/);
+  assert.throws(() => LancaiEngine.validateTicketLimits(1, 51), /50/);
+});
+
+test('Shared payout implementation also works in the browser script loading order', () => {
+  const vm = require('node:vm');
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const context = vm.createContext({ window: {} });
+  for (const filename of ['sports-jingcai-engine.js', 'sports-lancai-engine.js']) {
+    vm.runInContext(fs.readFileSync(path.join(__dirname, '..', filename), 'utf8'), context);
+  }
+  assert.equal(context.window.LancaiEngine.calculateSingleBetPayout([1.25, 1.25]), 3.12);
+  assert.equal(context.window.LancaiEngine.calculateTicketPayout([[1.65, 1.75]], 5), 28.9);
+});

@@ -120,3 +120,44 @@ test('SFC (14场胜负彩) and RX9 (任选九场) Engine Tests', async (t) => {
     assert.match(posTxt, /终端代码: SFC14\|/);
   });
 });
+
+test('RX9 exports every nine-match subset and reconciles displayed stakes', () => {
+  const picks = Array.from({ length: 14 }, (_, i) => i < 10 ? ['3'] : []);
+  picks[0] = ['3', '1'];
+  const count = SFCEngine.calculateRX9Bets(picks);
+  const batch = SFCEngine.generateBatchTickets(picks, '9', { multiplier: 3 });
+  assert.equal(count.betCount, 19);
+  assert.equal(batch.totalTickets, count.betCount);
+  assert.equal(batch.totalAmountYuan, count.costYuan * 3);
+  assert.equal(new Set(batch.tickets.map(t => t.betStr)).size, count.betCount);
+  for (const t of batch.tickets) assert.equal(t.betStr.split(' ').filter(s => s !== '*').length, 9);
+  const many = Array.from({ length: 14 }, (_, i) => i < 5 ? ['3', '1'] : ['0']);
+  const full = SFCEngine.generateBatchTickets(many, '14');
+  assert.equal(full.totalTickets, 32, 'No silent 20-ticket truncation');
+  assert.equal(full.tickets.reduce((sum, t) => sum + t.amountYuan, 0), full.totalAmountYuan);
+});
+
+test('Covering guarantee is checked against every outcome inside the supplied selections', () => {
+  const picks = Array.from({ length: 14 }, (_, i) => i < 4 ? ['3', '1'] : ['0']);
+  const wheel = SFCEngine.generateCoveringReduction(picks, { guarantee: 13 });
+  const all = picks.reduce((a, b) => a.flatMap(x => b.map(y => [...x, y])), [[]]);
+  for (const outcome of all) {
+    assert.ok(wheel.reducedBets.some(bet => bet.filter((v, i) => v === outcome[i]).length >= 13));
+  }
+  assert.match(wheel.guaranteeCondition, /All 14/);
+  assert.throws(() => SFCEngine.generateCoveringReduction(picks, { guarantee: 15 }));
+  assert.throws(() => SFCEngine.generateCoveringReduction(Array.from({ length: 14 }, () => ['3', '1', '0'])));
+  const duplicate = Array.from({ length: 14 }, () => ['3']);
+  duplicate[0] = ['3', '3'];
+  assert.throws(() => SFCEngine.calculateSFC14Bets(duplicate));
+  assert.throws(() => SFCEngine.calculateRX9Bets(Array.from({ length: 15 }, () => ['3'])));
+});
+
+test('Market baseline includes draw favorites and assigns doubles by coverage gain', () => {
+  const matches = Array.from({ length: 14 }, (_, i) => ({ odds: i < 10 ? { '3': 1.2, '1': 10, '0': 15 } : { '3': 3.2, '1': 2.5, '0': 3.5 } }));
+  const result = SFCEngine.generateQuantPicks14(matches);
+  for (let i = 0; i < 10; i++) assert.deepEqual(result.picks[i], ['3']);
+  for (let i = 10; i < 14; i++) assert.deepEqual(result.picks[i], ['1', '3']);
+  assert.equal(result.evidenceOfPredictiveEdge, false);
+  assert.throws(() => SFCEngine.generateQuantPicks14(Array.from({ length: 14 }, () => ({}))));
+});

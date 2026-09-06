@@ -1,0 +1,22 @@
+{
+  "sourceId": "beijing-return",
+  "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043164/index.html",
+  "publisher": "北京市体育局",
+  "status": "ok",
+  "cached": false,
+  "lastAttemptAt": "2026-09-05T18:44:06.036Z",
+  "lastSuccessfulFetchAt": "2026-09-05T18:44:06.036Z",
+  "lastSuccessfulBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
+  "initialBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
+  "previousBodySha256": null,
+  "changeStatus": "initial_archive_needs_review",
+  "reviewRequired": true,
+  "error": null,
+  "observedBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
+  "httpStatus": 200,
+  "finalUrl": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043164/index.html",
+  "contentType": "text/html; charset=utf-8",
+  "bodyBytes": 37591,
+  "comparisonStatus": "initial_archive",
+  "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "b5a9d984f29f1790ccef1b5d9a3fd533e8def7e6a45faa042c5b19c8f64b9394",
+  "recordedAt": "2026-09-05T18:49:04.558Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1438084",
+      "kickoffAt": "2026-09-07T19:15:00.000Z",
+      "homeTeam": "埃斯托里",
+      "awayTeam": "阿罗卡",
+      "competition": "葡超",
+      "odds": {
+        "home": 2.19,
+        "draw": 3.25,
+        "away": 2.75
+      },
+      "sourceEventId": "1438084"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-05T18:48:45.225Z",
+      "bodySha256": "4cbc3cb20383abfff1a449977991566076267ed1ebc7ba6ade20443b6a105e27"
+    },
+    "prediction": {
+      "modelId": "market-power",
+      "version": "1.0.0",
+      "probabilities": [
+        0.4140055113766591,
+        0.26554606316522894,
+        0.32044842545811186
+      ],
+      "trainingCutoff": "2026-09-05T18:48:51.848Z",
+      "trainingCount": 2,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-05T18:48:45.225Z",
+    "paperTrade": null,
+    "batchId": "816d90b5d75ade3e9d81590fe749f4609c2d21156f6241dc417c8a4d6b03d6a4"
+  }
+}

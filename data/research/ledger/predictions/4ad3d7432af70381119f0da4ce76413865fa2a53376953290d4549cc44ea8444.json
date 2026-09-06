@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "4ad3d7432af70381119f0da4ce76413865fa2a53376953290d4549cc44ea8444",
+  "recordedAt": "2026-09-05T18:48:55.498Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1415917",
+      "kickoffAt": "2026-09-06T12:30:00.000Z",
+      "homeTeam": "海伦芬",
+      "awayTeam": "阿尔克马",
+      "competition": "荷甲",
+      "odds": {
+        "home": 3.5,
+        "draw": 3.82,
+        "away": 1.72
+      },
+      "sourceEventId": "1415917"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-05T18:48:45.225Z",
+      "bodySha256": "4cbc3cb20383abfff1a449977991566076267ed1ebc7ba6ade20443b6a105e27"
+    },
+    "prediction": {
+      "modelId": "elo",
+      "version": "1.0.0",
+      "probabilities": [
+        0.4407468955607249,
+        0.24722819774666405,
+        0.312024906692611
+      ],
+      "trainingCutoff": "2026-09-05T18:48:51.848Z",
+      "trainingCount": 4,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Davidson draw model, home advantage 60 Elo, K=24; fixed research assumptions.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-05T18:48:45.225Z",
+    "paperTrade": {
+      "selectionWeights": [
+        1,
+        0,
+        0
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "a53b0f5ec38729da3b0fa85f8612c8d9a48a42c70a93001cb9bc3f5092e1dc12"
+  }
+}

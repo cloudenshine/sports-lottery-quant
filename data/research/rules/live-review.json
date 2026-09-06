@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-05T18:49:39.951Z",
+  "status": "reviewed_with_scope_limits",
+  "sourceCount": 11,
+  "reviewedSourceCount": 11,
+  "hashMismatchCount": 0,
+  "registryMutated": false,
+  "baselineApprovalScope": "Only exact source URL and raw SHA-256 bytes. Reviewed source baseline does not promote pending rule contracts.",
+  "reviews": [
+    {
+      "sourceId": "fj-jc-payout",
+      "url": "https://www.fjtc.com.cn/2024-04/01/content_31550891.htm",
+      "bodySha256": "19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f",
+      "sha256": "19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:02.232Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "jingcai.fixed-gross-payout",
+        "jingcai.rounding",
+        "jingcai.caps"
+      ],
+      "reviewedClauses": "奖金计算一、二（正文61-104行）",
+      "assessment": "Unit decimal third-digit parity rounding, sum then multiplier, and 100k/200k/500k/1m unit caps confirmed.",
+      "limitations": [
+        "Only registered fixed-prize calculation clauses reviewed; third-digit-5 rule is literal, not a claim about all decimal rounding standards."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "fj-jc-football",
+      "url": "https://www.fjtc.com.cn/2024-04/01/content_31550872.htm",
+      "bodySha256": "a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430",
+      "sha256": "a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:02.270Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "jingcai.fixed-gross-payout",
+        "jingcai.market-eligibility",
+        "jingcai.result-scope",
+        "jingcai.void-settlement"
+      ],
+      "reviewedClauses": "第6、7、11、14、15、19、21条",
+      "assessment": "90-minute result scope; available markets selected by match; ticket-time fixed odds; official void refunds/removes legs confirmed.",
+      "limitations": [
+        "Original body still states 20000 yuan, 2-99 multiples and 73% allocation; explicit amendment footnotes require 2019/2020 policy precedence.",
+        "Void determination remains official; no inference from missing score."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "fj-jc-basketball",
+      "url": "https://www.fjtc.com.cn/2024-04/01/content_31550877.htm",
+      "bodySha256": "0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e",
+      "sha256": "0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:02.271Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "jingcai.fixed-gross-payout",
+        "jingcai.market-eligibility",
+        "jingcai.result-scope",
+        "jingcai.void-settlement"
+      ],
+      "reviewedClauses": "第6、7、11、14、15、19、21条",
+      "assessment": "Includes overtime; match eligibility; ticket-time fixed odds; 36-hour treatment and completion exception confirmed.",
+      "limitations": [
+        "Original body retains pre-amendment limits and allocation; apply 2019/2020 policy override.",
+        "35/43 minute exception requires referee or organizer official completion decision."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "beijing-sp",
+      "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043167/index.html",
+      "bodySha256": "381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500",
+      "sha256": "381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:02.272Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "beidan.sp-definition"
+      ],
+      "reviewedClauses": "问答正文30行",
+      "assessment": "Final SP is total stake divided by winning stake; indicative SP is only reference.",
+      "limitations": [
+        "Q&A does not provide full parlay, rounding, cancellation or handicap contract."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "beijing-return",
+      "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043164/index.html",
+      "bodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
+      "sha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:06.036Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "beidan.return-rate"
+      ],
+      "reviewedClauses": "问答正文31行",
+      "assessment": "65% floating-pool return confirmed.",
+      "limitations": [
+        "65% floating return fact alone is not full per-game settlement verification."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "js-dlt-2026",
+      "url": "https://www.js-lottery.com/wfzq/dlt/wfjs/cms/post-146354.html",
+      "bodySha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
+      "sha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:06.058Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "dlt.2026-prizes"
+      ],
+      "reviewedClauses": "第15、16、25条",
+      "assessment": "Seven classes; fixed amounts below and at/above 800m; 80% additional on floating classes; 2026 mapping confirmed.",
+      "limitations": [
+        "Actual draw prizes require correct pre-draw pool timing, risk-control and promotion evidence.",
+        "2026 rules must not be applied to earlier periods."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "js-dlt-effective",
+      "url": "https://www.js-lottery.com/tzgg/tzgg/cms/post-146276.html",
+      "bodySha256": "3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9",
+      "sha256": "3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:06.097Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "dlt.2026-prizes"
+      ],
+      "reviewedClauses": "公告第1、2段",
+      "assessment": "Issue 26014, sales 2026-01-31 21:10 +08:00, including outstanding presales confirmed.",
+      "limitations": [
+        "Effective issue and presale transition reviewed; this notice is not a full prize rule."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "sport-policy-2020",
+      "url": "https://www.sport.gov.cn/gdnps/files/c28047814/28048342.pdf",
+      "bodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
+      "sha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_pdf_pypdf_pages_1_2",
+      "rawFile": "data/research/rules/raw/050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:06.160Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "jingcai.policy-limits"
+      ],
+      "reviewedClauses": "财综〔2020〕42号 第1-2页",
+      "assessment": "70% aggregate return, ticket cap 6000 yuan, effective 2020-11-01 confirmed.",
+      "limitations": [
+        "Reviewed PDF pages 1 and 2 locally with pypdf. Aggregate return ratio is not a multiplier on quoted fixed odds."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "sport-policy-2019",
+      "url": "https://www.sport.gov.cn/cpzx/n5656/c897408/content.html",
+      "bodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
+      "sha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:07.973Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "jingcai.policy-limits"
+      ],
+      "reviewedClauses": "财综〔2019〕4号 第（六）项",
+      "assessment": "Multi-bet range 2-50, effective 2019-02-11 confirmed.",
+      "limitations": [
+        "Reviewed multi-bet range; later 2020 return and stake policy takes precedence."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "js-sfc-rx9",
+      "url": "https://www.js-lottery.com/wfzq/ctzq/wfjs/cms/post-49203.html",
+      "bodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
+      "sha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:08.276Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [
+        "sfc-rx9.prize-classification"
+      ],
+      "reviewedClauses": "胜负游戏第7-13条、任选9场第7-13条",
+      "assessment": "SFC 14 first/13 second; RX9 all selected nine; floating published prize, 5m cap and whole yuan confirmed within historical-source scope.",
+      "limitations": [
+        "Published 2009 rules; only registered prize classification and denomination reviewed. Current pool allocation and amendments not exhaustively established."
+      ],
+      "fullRulebookVerified": false
+    },
+    {
+      "sourceId": "fj-sfc-cancel",
+      "url": "https://www.fjtc.com.cn/2013-07/03/content_31607945.htm",
+      "bodySha256": "72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417",
+      "sha256": "72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417",
+      "reviewedAt": "2026-09-05T18:49:39.951Z",
+      "status": "reviewed",
+      "reviewMethod": "local_raw_utf8_html_content_read",
+      "rawFile": "data/research/rules/raw/72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417.bin",
+      "httpStatus": 200,
+      "fetchedAt": "2026-09-05T18:44:09.089Z",
+      "hashVerified": true,
+      "semanticComparison": "matches_previously_registered_scope",
+      "changesFound": [],
+      "verifiedRuleIds": [],
+      "reviewedClauses": "引用管理办法第13条；该页是规则解读非完整规则",
+      "assessment": "Explanation still uses next draw cutoff; it does not establish complete current exception handling.",
+      "limitations": [
+        "Official-site explanatory article quoting selected clauses, not the complete Management Measures; full exception contract remains pending."
+      ],
+      "fullRulebookVerified": false
+    }
+  ],
+  "unresolvedRules": [
+    {
+      "ruleId": "beidan.full-settlement",
+      "status": "pending",
+      "reason": "Official Q&A proves SP definition and 65% only; full per-game original rules still absent."
+    },
+    {
+      "ruleId": "sfc-rx9.cancellation",
+      "status": "pending",
+      "reason": "Existing live source is partial explanation; direct original Management Measures and current notice requests received HTTP 567.",
+      "discoveryReceipts": [
+        "data/research/rules/sport-sfc-management-discovery.json",
+        "data/research/rules/sport-sfc-20260204-discovery.json"
+      ]
+    }
+  ],
+  "newRuleChangesDetected": [],
+  "reviewCaveats": [
+    "First direct-HTTP baseline: no previous raw baseline existed, so comparison is semantic against previously read scope, not a raw diff.",
+    "Raw changes after this review must require review again.",
+    "Official source archival does not certify every current contract, result, or predictive return advantage."
+  ]
+}

@@ -2,6 +2,7 @@
   "use strict";
 
   function comb(n, k) {
+    if (!Number.isInteger(n) || !Number.isInteger(k) || n < 0) return 0;
     if (k < 0 || k > n) return 0;
     if (k === 0 || k === n) return 1;
     k = Math.min(k, n - k);
@@ -288,13 +289,16 @@
     const sched = LOTTERY_SCHEDULES[gameId];
     if (!sched) throw new Error("未知彩种: " + gameId);
     const now = fromDate ? new Date(fromDate) : new Date();
+    if (!Number.isFinite(now.getTime())) throw new RangeError("无效日期");
+    const beijingNow = new Date(now.getTime() + 8 * 3600000);
 
     // 寻找最近的未来开奖时间点
     for (let dayOffset = 0; dayOffset <= 7; dayOffset++) {
-      const candidate = new Date(now.getTime() + dayOffset * 86400000);
-      candidate.setHours(sched.hour, sched.minute, 0, 0);
+      const localCandidate = new Date(beijingNow.getTime() + dayOffset * 86400000);
+      localCandidate.setUTCHours(sched.hour, sched.minute, 0, 0);
+      const candidate = new Date(localCandidate.getTime() - 8 * 3600000);
 
-      const dayOfWeek = candidate.getDay();
+      const dayOfWeek = localCandidate.getUTCDay();
       if (sched.days.indexOf(dayOfWeek) !== -1) {
         if (candidate.getTime() > now.getTime()) {
           const diffSeconds = Math.max(0, Math.floor((candidate.getTime() - now.getTime()) / 1000));
@@ -308,9 +312,9 @@
             dayOfWeek: dayOfWeek,
             dayName: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"][dayOfWeek],
             isToday: dayOffset === 0,
-            text: candidate.getFullYear() + "-" +
-              String(candidate.getMonth() + 1).padStart(2, "0") + "-" +
-              String(candidate.getDate()).padStart(2, "0") + " " +
+            text: localCandidate.getUTCFullYear() + "-" +
+              String(localCandidate.getUTCMonth() + 1).padStart(2, "0") + "-" +
+              String(localCandidate.getUTCDate()).padStart(2, "0") + " " +
               String(sched.hour).padStart(2, "0") + ":" +
               String(sched.minute).padStart(2, "0"),
           };
@@ -361,8 +365,12 @@
   }
 
   function analyze(gameId) {
+    return analyzeDraws(gameId, loadDraws(gameId));
+  }
+
+  // Draws are newest first; this context is derived exclusively from its input.
+  function analyzeDraws(gameId, loaded) {
     const game = mustGame(gameId);
-    const loaded = loadDraws(gameId);
     const draws = loaded.draws;
     const total = draws.length;
     const mains = draws.map(function (d) {
@@ -735,13 +743,13 @@
     dlt: {
       1: 10000000,
       2: 100000,
-      3: 10000,
-      4: 3000,
-      5: 300,
-      6: 200,
-      7: 100,
-      8: 15,
-      9: 5,
+      // 2026-02-02 rules, pool below 800 million yuan scenario.
+      // https://m.lottery.gov.cn/ksjz/m/yxgz_dlt/
+      3: 5000,
+      4: 300,
+      5: 150,
+      6: 15,
+      7: 5,
     },
   };
 
@@ -792,12 +800,13 @@
     options = options || {};
     const game = mustGame(gameId);
     const dateStr = options.date || new Date().toISOString().slice(0, 10);
-    const issue = options.issue || "26102";
-    const isZhuijia = options.zhuijia === true;
+    tickets.forEach(function(ticket) { validateTicket(gameId, ticket); });
+    const issue = options.issue || "未指定";
+    const isZhuijia = gameId === "dlt" && options.zhuijia === true;
     
     const lines = [];
     lines.push("// ========================================================");
-    lines.push("// QUANT-LOTTO 彩票中心专用打票机标准批量导出格式 (POS-READY)");
+    lines.push("// QUANT-LOTTO 号码文本清单（非销售终端导入协议）");
     lines.push("// 彩种: " + (gameId === "ssq" ? "中国福利彩票·双色球" : "中国体育彩票·超级大乐透" + (isZhuijia ? "(追加)" : "")));
     lines.push("// 期号: 第 " + issue + " 期 | 导出日期: " + dateStr);
     lines.push("// 总注数: " + tickets.length + " 注 | 总投注额: " + (tickets.length * (isZhuijia ? 3 : game.price)) + " 元");
@@ -813,69 +822,71 @@
     }
 
     lines.push("");
-    lines.push("// 校验码: " + Math.abs(Math.sin(tickets.length * 12345)).toString(16).slice(2, 10).toUpperCase());
-    lines.push("// 请直接在彩票网点销售终端导入或交由彩站机打");
+    // FNV-1a detects accidental content changes; it is not an authentication signature.
+    let checksum = 0x811c9dc5;
+    const content = lines.join("\n");
+    for (let i = 0; i < content.length; i++) checksum = Math.imul(checksum ^ content.charCodeAt(i), 0x01000193) >>> 0;
+    lines.push("// 内容校验 FNV-1a/UTF-16: " + checksum.toString(16).padStart(8, "0").toUpperCase() + "（非安全签名）");
+    lines.push("// 请人工核对号码与金额；是否可导入须由具体销售终端确认。");
 
     return lines.join("\n");
   }
 
+  // Binary wager: expectedValue is net return per unit staked, not yuan.
   function computeKellyPosition(expectedValue, winProb, bankroll) {
-    // 凯利公式 f* = (b*p - q) / b
-    // 其中 b 为净赔率 (Net Odds)，p 为胜率，q = 1 - p
-    // 如果期望值 <= 0，凯利公式给出 0 仓位（数学家原则：绝不下注）
-    if (expectedValue <= 0) {
-      return {
-        kellyFraction: 0,
-        suggestedSpend: 0,
-        advice: "期望值处于负区间 (EV <= 0)，数学上不可套利。建议极轻仓娱乐或空仓防守。",
-        color: "#94a3b8",
-        level: "DEFENSIVE",
-      };
-    }
-    // 当期望值大于 0（例如大派奖或滚存下泻期）
-    const b = expectedValue / Math.max(0.0001, winProb);
-    const q = 1 - winProb;
-    const f = Math.max(0, (b * winProb - q) / b);
-    const suggested = Math.min(bankroll * 0.1, Math.round(bankroll * f));
+    if (!Number.isFinite(expectedValue) || !Number.isFinite(winProb) || winProb <= 0 || winProb > 1 ||
+        !Number.isFinite(bankroll) || bankroll < 0) throw new RangeError("凯利输入无效");
+    const b = (expectedValue + 1 - winProb) / winProb;
+    const f = expectedValue > 0 && b > 0 ? Math.min(1, expectedValue / b) : 0;
     return {
-      kellyFraction: Number(f.toFixed(4)),
-      suggestedSpend: Math.max(2, suggested),
-      advice: "当前处于正期望值套利窗口 (+EV)，凯利模型建议配置最佳资金头寸以最大化资本增长对数。",
-      color: "#16a34a",
-      level: "AGGRESSIVE",
+      kellyFraction: f,
+      suggestedSpend: bankroll * Math.min(0.1, f),
+      advice: "仅适用于已知胜率和单一获胜净赔率的二元投注；多奖级彩票不能据此确定仓位。",
+      color: f > 0 ? "#16a34a" : "#94a3b8",
+      level: f > 0 ? "AGGRESSIVE" : "DEFENSIVE",
+      model: "binary-unit-stake",
     };
+  }
+
+  function prizeProbabilities(gameId) {
+    const game = mustGame(gameId);
+    const ticket = { main: Array.from({length: game.mainCount}, function(_, i) { return i + 1; }),
+      special: Array.from({length: game.specialCount}, function(_, i) { return i + 1; }) };
+    const probabilities = {};
+    for (let m = 0; m <= game.mainCount; m++) {
+      for (let s = 0; s <= game.specialCount; s++) {
+        const draw = {
+          main: ticket.main.slice(0, m).concat(Array.from({length: game.mainCount - m}, function(_, i) { return game.mainCount + i + 1; })),
+          special: ticket.special.slice(0, s).concat(Array.from({length: game.specialCount - s}, function(_, i) { return game.specialCount + i + 1; })),
+        };
+        const p = comb(game.mainCount, m) * comb(game.mainMax - game.mainCount, game.mainCount - m) *
+          comb(game.specialCount, s) * comb(game.specialMax - game.specialCount, game.specialCount - s) / game.universeFull;
+        const level = evaluatePrize(gameId, ticket, draw);
+        probabilities[level] = (probabilities[level] || 0) + p;
+      }
+    }
+    return probabilities;
   }
 
   function evaluateDynamicEV(gameId, jackpotYuan, isPaijiang) {
     const game = mustGame(gameId);
-    jackpotYuan = Number(jackpotYuan) || (gameId === "ssq" ? 2500000000 : 1500000000);
-    const unitCost = game.price;
-
-    // 基础小奖理论期望贡献
-    let fixedEV = gameId === "ssq" ? 0.65 : 0.58;
-    if (isPaijiang) {
-      fixedEV *= 1.8; // 派奖期间六等奖/小奖翻倍
-    }
-
-    // 头奖期望贡献 = (奖池分配给单注期望)
-    // 考虑反人群独食概率因子 (避免分奖衰减)
-    const uniquenessFactor = 0.95; 
-    const jackpotEV = (Math.min(10000000, jackpotYuan * 0.0000005) / game.universeFull) * uniquenessFactor;
-
-    const totalEV = fixedEV + jackpotEV;
-    const netEV = totalEV - unitCost;
-    const roiExpected = Number(((totalEV / unitCost) * 100).toFixed(1));
-
+    if (jackpotYuan != null && (!Number.isFinite(jackpotYuan) || jackpotYuan < 0)) throw new RangeError("奖池必须为非负有限数值");
+    const probabilities = prizeProbabilities(gameId);
+    const estimates = Object.assign({}, PRIZE_ESTIMATES[gameId]);
+    if (gameId === "dlt" && jackpotYuan >= 800000000) Object.assign(estimates, {3: 6666, 4: 380, 5: 200, 6: 18, 7: 7});
+    let totalEV = 0;
+    Object.keys(estimates).forEach(function(level) { totalEV += (probabilities[level] || 0) * estimates[level]; });
     return {
-      gameId: gameId,
-      jackpotYuan: jackpotYuan,
-      isPaijiang: isPaijiang,
-      unitCost: unitCost,
-      totalEV: Number(totalEV.toFixed(3)),
-      netEV: Number(netEV.toFixed(3)),
-      roiExpected: roiExpected,
-      isPositiveEV: netEV > 0,
-      statusText: netEV > 0 ? "🔥 正期望值窗口 (+EV)" : "🛡️ 负期望值常态 (-EV)",
+      gameId: gameId, jackpotYuan: jackpotYuan == null ? null : jackpotYuan,
+      isPaijiang: Boolean(isPaijiang), unitCost: game.price,
+      totalEV: totalEV, netEV: totalEV - game.price,
+      roiExpected: totalEV / game.price * 100,
+      isPositiveEV: false,
+      statusText: "奖金情景估算，实际期望值未确定",
+      isEstimate: true, actualEVKnown: false,
+      prizeProbabilities: probabilities,
+      payoutAssumptions: estimates,
+      caveat: "浮动奖金为假设值；未知销量、分奖与派奖细则，不能推定正期望或套利。历史回测不等于实际结算。",
     };
   }
 
@@ -920,6 +931,8 @@
   }
 
   function evaluatePrize(gameId, ticket, draw) {
+    validateTicket(gameId, ticket);
+    validateTicket(gameId, draw);
     const mainHit = overlap(ticket.main, draw.main);
     const specHit = overlap(ticket.special, draw.special);
     if (gameId === "ssq") {
@@ -949,7 +962,9 @@
   }
 
   function walkForwardPassRate(gameId, filters) {
+    filters = Object.assign(defaultFilters(gameId), filters || {});
     const loaded = loadDraws(gameId);
+    const omissions = Array(GAMES[gameId].mainMax + 1).fill(0);
     const chronological = loaded.draws.slice().reverse();
     const historyMain = new Map();
     const historyFull = new Map();
@@ -972,8 +987,9 @@
         hot: freqMap(last20, "main", GAMES[gameId].mainMax),
         historyMain: historyMain,
         historyFull: historyFull,
+        omissions: omissions,
       };
-      const shape = ticketShape(gameId, d.main, d.special);
+      const shape = ticketShape(gameId, d.main, d.special, ctx);
       const reasons = hardReject(gameId, shape, ctx, filters);
       total += 1;
       if (!reasons.length) pass += 1;
@@ -981,6 +997,7 @@
       remember(d);
     }
     function remember(d) {
+      for (let n = 1; n < omissions.length; n++) omissions[n] = d.main.indexOf(n) >= 0 ? 0 : omissions[n] + 1;
       const mk = keyOf(d.main);
       const fk = mk + "+" + keyOf(d.special);
       historyMain.set(mk, (historyMain.get(mk) || 0) + 1);
@@ -1100,6 +1117,7 @@
 
   function generateSmartPool(gameId, ctx, rng, size) {
     const game = GAMES[gameId];
+    if (!Number.isInteger(size) || size < game.mainCount || size > game.mainMax) throw new RangeError("号池大小超出范围");
     const hotMap = ctx.hot || {};
     const omissions = ctx.omissions || [];
     
@@ -1209,8 +1227,11 @@
   }
 
   function honestyPayload(game, tickets) {
+    const distinct = new Set(tickets.map(function(t) { return keyOf(t.main) + "+" + keyOf(t.special); })).size;
     return {
-      jackpotOdds: tickets.length / game.universeFull,
+      jackpotOdds: distinct / game.universeFull,
+      distinctTickets: distinct,
+      strategyEvidence: "形态、冷热和遗漏仅用于选号偏好，未验证预测优势；独立均匀开奖下号池不提高单注中奖概率。",
       disclaimer: "过滤不改变单注概率，一等奖先验不变，不提高一等奖概率。",
       filterImprovesJackpot: false,
       universe: game.universeFull,
@@ -1218,24 +1239,53 @@
   }
 
   function generate(gameId, options) {
+    return generateWithContext(gameId, options, analyze(gameId));
+  }
+
+  function validNumbers(nums, max, count) {
+    return Array.isArray(nums) && (count == null || nums.length === count) &&
+      new Set(nums).size === nums.length && nums.every(function(n) { return Number.isInteger(n) && n >= 1 && n <= max; });
+  }
+
+  function validateTicket(gameId, ticket) {
+    const game = mustGame(gameId);
+    if (!ticket || !validNumbers(ticket.main, game.mainMax, game.mainCount) ||
+        !validNumbers(ticket.special, game.specialMax, game.specialCount)) throw new RangeError("非法彩票号码");
+  }
+
+  function analyzeHistory(gameId, draws) {
+    if (!Array.isArray(draws)) throw new TypeError("历史数据必须为数组（最新一期在前）");
+    draws.forEach(function(draw) { validateTicket(gameId, draw); });
+    return analyzeDraws(gameId, { draws: draws.slice(), meta: { source: "provided-history" } });
+  }
+
+  function generateFromHistory(gameId, options, draws) {
+    return generateWithContext(gameId, options, analyzeHistory(gameId, draws));
+  }
+
+  function generateWithContext(gameId, options, ctx) {
     options = options || {};
     const game = mustGame(gameId);
     const filters = Object.assign(defaultFilters(gameId), options.filters || {});
     if (options.zhuijia != null) filters.zhuijia = options.zhuijia;
     const isZhuijia = gameId === "dlt" && filters.zhuijia;
     const unitPrice = isZhuijia ? 3 : game.price;
-    const ctx = analyze(gameId);
-    const rng = mulberry32((options.seed >>> 0) || (Date.now() % 1e9));
-    const wanted = Math.max(1, Math.min(50, options.count || 5));
+    const rng = mulberry32(options.seed == null ? Date.now() % 1e9 : options.seed >>> 0);
+    const wanted = options.count == null ? 5 : options.count;
     const budgetYuan = options.budgetYuan;
+    if (!Number.isInteger(wanted) || wanted < 0 || wanted > 50) throw new RangeError("注数必须为0到50的整数");
+    if (budgetYuan != null && (!Number.isFinite(budgetYuan) || budgetYuan < 0)) throw new RangeError("预算必须为非负有限数值");
     const affordable = budgetYuan == null ? wanted : Math.floor(budgetYuan / unitPrice);
     const target = Math.max(0, Math.min(wanted, affordable));
     const mode = options.mode || "unique";
+    if (["unique", "structure", "cover"].indexOf(mode) < 0) throw new RangeError("未知选号模式");
+    if (options.poolSize != null && (!Number.isInteger(options.poolSize) || options.poolSize < game.mainCount || options.poolSize > game.mainMax)) throw new RangeError("号池大小超出范围");
     let tickets = [];
     const usedSpecials = [];
     const seen = new Set();
     const useSmartPool = options.smartPool === true;
     let globalPool = null;
+    if (!target) return finish(game, ctx, filters, tickets, mode, budgetYuan, { pool: null, unitPrice: unitPrice, requestedCount: 0, complete: true });
 
     if (useSmartPool && mode !== "cover") {
       globalPool = generateSmartPool(gameId, ctx, rng, gameId === "ssq" ? 16 : 18);
@@ -1247,7 +1297,7 @@
       const candOdd = new Set();
       for (let i = 0; i < 400 && cands.length < 60; i++) {
         const t = generateOne(gameId, ctx, filters, rng, { pool: pool, mode: "structure", usedSpecials: [], usedOdd: candOdd, minOddVariety: 3, maxTries: 2000 });
-        if (!t) continue;
+        if (!t) break;
         const k = keyOf(t.main) + "+" + keyOf(t.special);
         if (seen.has(k)) continue;
         seen.add(k);
@@ -1280,7 +1330,7 @@
         if (game.specialCount === 1) specialsUsed.push(t.special[0]);
         else specialsUsed.push(t.special);
       }
-      return finish(game, ctx, filters, tickets, mode, budgetYuan, { pool: pool, unitPrice: unitPrice });
+      return finish(game, ctx, filters, tickets, mode, budgetYuan, { pool: pool, unitPrice: unitPrice, requestedCount: target, complete: tickets.length === target });
     }
 
     const maxShare = mode === "unique" ? filters.maxShare : mode === "structure" ? 4 : filters.maxShare;
@@ -1288,19 +1338,8 @@
     const usedOdd = new Set();
     let guard = 0;
 
-    // 构建有效作用占比调度序列 (按大自然真实经验概率对冲分配重号拓扑)
-    // 27% 0重号(突变防守), 44% 1重号(主干遗传), 24% 2重号(进攻延续), 5% 3重号
-    const repeatSchedule = [];
-    for (let i = 0; i < target; i++) {
-      const p = i / Math.max(1, target - 1);
-      if (p < 0.28) repeatSchedule.push({ repeat: 0, role: "🛡️ 拓扑突变防守型 (0重号/全换血)", ratio: "27.0%" });
-      else if (p < 0.72) repeatSchedule.push({ repeat: 1, role: "🌲 拓扑核心主干型 (1重号/稳健遗传)", ratio: "43.6%" });
-      else repeatSchedule.push({ repeat: 2, role: "⚔️ 拓扑中坚进攻型 (2重号/双码延续)", ratio: "24.2%" });
-    }
-
     while (tickets.length < target && guard < target * 400) {
       guard += 1;
-      const sched = repeatSchedule[tickets.length] || { repeat: 1, role: "核心遗传", ratio: "43.6%" };
       const t = generateOne(gameId, ctx, filters, rng, {
         pool: globalPool,
         mode: mode,
@@ -1310,10 +1349,11 @@
         usedShapes: usedShapes,
         usedOdd: usedOdd,
         minOddVariety: 3,
-        targetRepeat: sched.repeat,
-        meta: { role: sched.role, actionRatio: sched.ratio },
       });
-      if (!t) continue;
+      if (!t) break; // A full bounded search failed; do not repeat millions of identical infeasible trials.
+      const repeat = ctx.last ? overlap(t.main, ctx.last.main) : null;
+      t.topologyRole = repeat == null ? "无前期数据" : repeat + "重号（描述性标签）";
+      if (repeat != null) t.explain.actionRatio = (100 * comb(game.mainCount, repeat) * comb(game.mainMax - game.mainCount, game.mainCount - repeat) / game.universeMain).toFixed(2) + "%（该重号类别的理论概率，非本票中奖率）";
       const k = keyOf(t.main) + "+" + keyOf(t.special);
       if (seen.has(k)) continue;
       seen.add(k);
@@ -1326,7 +1366,7 @@
     tickets.sort(function (a, b) {
       return b.score - a.score;
     });
-    return finish(game, ctx, filters, tickets, mode, budgetYuan, { pool: globalPool, unitPrice: unitPrice });
+    return finish(game, ctx, filters, tickets, mode, budgetYuan, { pool: globalPool, unitPrice: unitPrice, requestedCount: target, complete: tickets.length === target });
   }
 
   function finish(game, ctx, filters, tickets, mode, budgetYuan, extra) {
@@ -1358,6 +1398,8 @@
   function expandDanTuo(gameId, dans, tuos, specials, options) {
     options = options || {};
     const game = mustGame(gameId);
+    if (!validNumbers(dans || [], game.mainMax) || !validNumbers(tuos || [], game.mainMax) || !validNumbers(specials || [], game.specialMax)) return { error: "胆码、拖码和特码必须为范围内不重复整数", tickets: [], count: 0, costYuan: 0 };
+    if (options.budgetYuan != null && (!Number.isFinite(options.budgetYuan) || options.budgetYuan < 0)) return { error: "预算必须为非负有限数值", tickets: [], count: 0, costYuan: 0 };
     const unitPrice = (gameId === "dlt" && options.zhuijia) ? 3 : game.price;
     const dan = uniqueSorted(dans || []);
     const tuo = uniqueSorted(tuos || []);
@@ -1388,6 +1430,8 @@
           ? combinations(specIn, 2)
           : [];
     if (!specCombos.length) return { error: "请选择特码", tickets: [], count: 0, costYuan: 0 };
+    const requestedCount = comb(tuo.length, need) * specCombos.length;
+    if (requestedCount > 100000 || (options.budgetYuan != null && requestedCount * unitPrice > options.budgetYuan)) return { error: "展开组合超出预算或100000注资源上限", tickets: [], count: 0, costYuan: 0 };
     const mains = combinations(tuo, need).map(function (extra) {
       return cloneSorted(dan.concat(extra));
     });
@@ -1411,15 +1455,18 @@
 
   function portfolioCoverage(gameId, tickets) {
     const game = mustGame(gameId);
+    tickets.forEach(function(t) { validateTicket(gameId, t); });
+    const specialPairs = new Set();
     const mainSet = new Set();
     const specSet = new Set();
     const pair = new Set();
     const triples = new Set();
     for (let t = 0; t < tickets.length; t++) {
       const ticket = tickets[t];
+      specialPairs.add(keyOf(ticket.special));
       for (let i = 0; i < ticket.main.length; i++) mainSet.add(ticket.main[i]);
       for (let i = 0; i < ticket.special.length; i++) specSet.add(ticket.special[i]);
-      const m = ticket.main;
+      const m = cloneSorted(ticket.main);
       for (let i = 0; i < m.length; i++) {
         for (let j = i + 1; j < m.length; j++) pair.add(m[i] + "-" + m[j]);
       }
@@ -1430,24 +1477,23 @@
     if (gameId === "ssq") {
       const p = specSet.size / game.specialMax;
       sixth = {
-        label: "六等奖（只中蓝球）",
+        label: "蓝球命中事件（至少六等奖的充分条件）",
         p: p,
         text:
           "本票组覆盖 " +
           specSet.size +
           "/" +
           game.specialMax +
-          " 个蓝球，单期至少中六等奖的概率约 " +
+          " 个蓝球，单期命中至少一注蓝球的精确概率 " +
           (100 * p).toFixed(1) +
-          "%（各票蓝球不重复时）。",
+          "%；不含蓝球未中而红球中奖的事件。",
       };
     } else {
-      const remain = game.specialMax - specSet.size;
-      const p = specSet.size >= 2 ? 1 - comb(remain, 2) / comb(game.specialMax, 2) : specSet.size / game.specialMax;
+      const p = specialPairs.size / comb(game.specialMax, game.specialCount);
       sixth = {
-        label: "七等奖（含 0+2）",
+        label: "完整后区对子命中（至少七等奖的充分条件）",
         p: p,
-        text: "后区号码覆盖 " + specSet.size + "/" + game.specialMax + "。后区覆盖越广，七/六等奖越容易雨露均沾。",
+        text: "实际投注覆盖 " + specialPairs.size + "/66 个完整后区对子；精确命中概率 " + (p * 100).toFixed(2) + "% 。这是中奖概率的下界，不是总中奖率。",
       };
     }
     return {
@@ -1455,7 +1501,7 @@
       specialCover: specSet.size,
       pairCover: pair.size,
       tripleCover: triples.size,
-      jackpot: tickets.length / game.universeFull,
+      jackpot: honestyPayload(game, tickets).jackpotOdds,
       sixth: sixth,
     };
   }
@@ -1634,12 +1680,43 @@
     }
   };
 
+  // Legacy keys are retained, but the displayed claims reflect exhaustive coverage.
+  const WHEEL_MIN_HITS = {
+    ssq_10_6_6_5: 4, ssq_9_6_5_4: 4, ssq_8_6_6_5: 5, ssq_12_6_6_4: 4,
+    ssq_15_6_6_4: 3, ssq_16_6_6_4: 3, ssq_18_6_6_4: 3, ssq_22_6_6_4: 3,
+    dlt_8_5_5_4: 3, dlt_10_5_5_4: 3, steiner_fano_7_3: 6, steiner_affine_8_6: 5,
+  };
+  Object.keys(WHEEL_DESIGNS).forEach(function(key) {
+    const d = WHEEL_DESIGNS[key];
+    d.conditionHits = key === "ssq_9_6_5_4" ? 5 : d.pickCount;
+    d.minimumMainHits = WHEEL_MIN_HITS[key];
+    d.name = d.poolSize + "码中" + d.conditionHits + "保" + d.minimumMainHits + "（" + d.blocks.length + "注）";
+    d.guarantee = "在开奖号中有" + d.conditionHits + "个主号落入号池的条件下，至少一注命中" + d.minimumMainHits + "个主号。仅为条件覆盖，不保证中奖；后区另算。";
+  });
+
+  function verifyWheelDesign(wheelKey) {
+    const d = WHEEL_DESIGNS[wheelKey];
+    if (!d) throw new RangeError("未知旋转矩阵");
+    const outcomes = combinations(Array.from({length:d.poolSize}, function(_, i) { return i; }), d.conditionHits);
+    let minimum = d.pickCount;
+    let witness = null;
+    outcomes.forEach(function(outcome) {
+      const best = Math.max.apply(null, d.blocks.map(function(block) { return overlap(block, outcome); }));
+      if (best < minimum) { minimum = best; witness = outcome; }
+    });
+    return { verified: minimum === d.minimumMainHits, outcomes: outcomes.length, minimumMainHits: minimum, witness: witness };
+  }
+
   function generateWheel(gameId, pool, wheelKey, specialPool, options) {
     options = options || {};
     const game = mustGame(gameId);
+    if (!validNumbers(pool || [], game.mainMax) || !validNumbers(specialPool || [], game.specialMax)) return { error: "号池必须为范围内不重复整数" };
+    if (options.budgetYuan != null && (!Number.isFinite(options.budgetYuan) || options.budgetYuan < 0)) return { error: "预算必须为非负有限数值" };
     const design = WHEEL_DESIGNS[wheelKey];
     if (!design) return { error: "未知旋转矩阵: " + wheelKey };
     if (design.gameId !== gameId) return { error: "矩阵彩种不匹配" };
+    const requestedCost = design.blocks.length * (gameId === "dlt" && options.zhuijia ? 3 : game.price);
+    if (options.budgetYuan != null && requestedCost > options.budgetYuan) return { error: "矩阵完整展开超出预算" };
     
     const p = uniqueSorted(pool || []);
     if (p.length !== design.poolSize) {
@@ -1840,10 +1917,12 @@
   function simulateTimeMachine(gameId, options) {
     options = options || {};
     const game = mustGame(gameId);
-    const periods = Math.min(200, Math.max(10, options.periods || 50));
-    const count = Math.min(20, Math.max(1, options.count || 5));
+    const periods = options.periods == null ? 50 : options.periods;
+    if (!Number.isInteger(periods) || periods < 10 || periods > 200) throw new RangeError("回测期数必须为10到200的整数");
+    const count = options.count == null ? 5 : options.count;
+    if (!Number.isInteger(count) || count < 1 || count > 20) throw new RangeError("回测注数必须为1到20的整数");
     const mode = options.mode || "unique";
-    const seedBase = options.seed || 12345;
+    const seedBase = options.seed == null ? 12345 : options.seed;
     const isZhuijia = (gameId === "dlt" && (options.zhuijia || (options.filters && options.filters.zhuijia)));
     const unitPrice = isZhuijia ? 3 : game.price;
     const useSmartPool = options.smartPool === true || mode === "smart";
@@ -1871,21 +1950,7 @@
     for (let step = periods - 1; step >= 0; step--) {
       const targetDraw = draws[step];
       const priorDraws = draws.slice(step + 1);
-      const priorFull = new Set(priorDraws.map(function(d) { return keyOf(d.main) + "+" + keyOf(d.special); }));
-      const priorMain = new Set(priorDraws.map(function(d) { return keyOf(d.main); }));
-      const last20 = priorDraws.slice(0, 20);
-      const stepCtx = {
-        game: game,
-        draws: priorDraws,
-        last: priorDraws[0] || null,
-        last5: priorDraws.slice(0, 5),
-        last20: last20,
-        hot: freqMap(last20, "main", game.mainMax),
-        historyFull: priorFull,
-        historyMain: priorMain,
-        stats: ctx.stats,
-        omissions: ctx.omissions,
-      };
+      const stepCtx = analyzeHistory(gameId, priorDraws);
 
       const rng = mulberry32(((seedBase + step * 7919) >>> 0) || 1);
       const filters = Object.assign(defaultFilters(gameId), options.filters || {});
@@ -1894,12 +1959,8 @@
       // 凯利公式与动态 EV 仓位自适应
       let activeCount = count;
       if (useKellyAdapt && mode !== "wheel" && mode !== "dantuo") {
-        // 测算当期奖池估计值（随期数平滑模拟 15-28 亿）
-        const simJackpot = 1800000000 + (step * 23456789) % 1000000000;
-        const evEval = evaluateDynamicEV(gameId, simJackpot, false);
-        const kelly = computeKellyPosition(evEval.netEV, 0.3, 100);
-        // 若处于负期望值常态，凯利建议压缩防守（注数缩为 1-3 注）；若 EV 上行则恢复
-        activeCount = evEval.isPositiveEV ? Math.min(20, count * 2) : Math.max(1, Math.min(3, count));
+        // No calibrated payout distribution is supplied: a Kelly allocation is not identifiable.
+        activeCount = 0;
       }
       
       let out;
@@ -1918,14 +1979,14 @@
           // 取前 4~5 个高频热蓝 + 随机扰动 1 个冷蓝
           const topBlues = sortedBlues.slice(0, 4);
           for (let i = 0; i < topBlues.length; i++) specPool.push(topBlues[i]);
-          while (specPool.length < 4) specPool.push(1 + Math.floor(rng() * 16));
+          while (specPool.length < 4) { const n = 1 + Math.floor(rng() * 16); if (specPool.indexOf(n) < 0) specPool.push(n); }
         } else {
           // 大乐透提取 4 个后区精选号
           const specHot = stepCtx.specialHot || {};
           const sortedSpec = Object.keys(specHot).map(Number).sort(function(a,b) { return (specHot[b]||0) - (specHot[a]||0); });
           const topSpec = sortedSpec.slice(0, 4);
           for (let i = 0; i < topSpec.length; i++) specPool.push(topSpec[i]);
-          while (specPool.length < 4) specPool.push(1 + Math.floor(rng() * 12));
+          while (specPool.length < 4) { const n = 1 + Math.floor(rng() * 12); if (specPool.indexOf(n) < 0) specPool.push(n); }
         }
 
         out = generateWheel(gameId, pool, wheelKey, specPool, { zhuijia: isZhuijia });
@@ -1939,17 +2000,17 @@
         for (let i = 1; i <= game.specialMax; i++) specPool.push(i);
         shuffle(specPool, rng);
         const special = specPool.slice(0, game.specialCount).sort(function(a,b){return a-b;});
-        out = expandDanTuo(gameId, dan, tuo, specPool, { zhuijia: isZhuijia, budgetYuan: 500 });
+        out = expandDanTuo(gameId, dan, tuo, special, { zhuijia: isZhuijia, budgetYuan: 500 });
         if (out.error) return { error: out.error };
       } else {
-        out = generate(gameId, {
+        out = generateWithContext(gameId, {
           count: activeCount,
           seed: (seedBase + step * 7919) >>> 0,
           mode: mode === "smart" ? "unique" : mode,
           filters: filters,
           zhuijia: isZhuijia,
           smartPool: useSmartPool,
-        });
+        }, stepCtx);
       }
 
       const tickets = out.tickets || [];
@@ -2004,44 +2065,32 @@
       prizeTally: prizeTally,
       points: points,
       isZhuijia: isZhuijia,
+      usedPriorContext: true,
+      payoutBasis: "统一奖金情景估算，非历史实际结算；未验证预测优势",
+      kellyStatus: useKellyAdapt ? "未提供已校准收益分布，暂停下注" : "disabled",
     };
   }
 
   function injectNewDraw(gameId, drawData) {
-    // 增量热注入：开奖后 15 秒接收官方增量数据，直接无感推入当前运行时内存
-    mustGame(gameId);
-    if (!drawData || !drawData.main || !drawData.special) {
-      return { error: "无效开奖数据" };
-    }
-    const row = drawData.main.concat(drawData.special);
-    if (gameId === "ssq") {
-      if (!root.SSQ_DRAWS) root.SSQ_DRAWS = [];
-      // 避免重复注入
-      const first = root.SSQ_DRAWS[0];
-      if (first && first.slice(0, 6).join(",") === drawData.main.join(",")) {
-        return { message: "当期已是最新数据，无需重复注入", total: root.SSQ_DRAWS.length };
-      }
-      root.SSQ_DRAWS.unshift(row);
-      if (root.SSQ_META) {
-        root.SSQ_META.total = root.SSQ_DRAWS.length;
-        root.SSQ_META.latestIssue = drawData.issue || root.SSQ_META.latestIssue;
-        root.SSQ_META.latestDate = drawData.date || new Date().toISOString().slice(0, 10);
-      }
-      return { success: true, total: root.SSQ_DRAWS.length, latest: drawData };
-    } else {
-      if (!root.DLT_DRAWS) root.DLT_DRAWS = [];
-      const first = root.DLT_DRAWS[0];
-      if (first && first.slice(0, 5).join(",") === drawData.main.join(",")) {
-        return { message: "当期已是最新数据，无需重复注入", total: root.DLT_DRAWS.length };
-      }
-      root.DLT_DRAWS.unshift(row);
-      if (root.DLT_META) {
-        root.DLT_META.total = root.DLT_DRAWS.length;
-        root.DLT_META.latestIssue = drawData.issue || root.DLT_META.latestIssue;
-        root.DLT_META.latestDate = drawData.date || new Date().toISOString().slice(0, 10);
-      }
-      return { success: true, total: root.DLT_DRAWS.length, latest: drawData };
-    }
+    const game = mustGame(gameId);
+    try { validateTicket(gameId, drawData); }
+    catch (_) { return { error: "无效开奖数据" }; }
+    const dataKey = gameId === "ssq" ? "SSQ_DRAWS" : "DLT_DRAWS";
+    const metaKey = gameId === "ssq" ? "SSQ_META" : "DLT_META";
+    const rows = root[dataKey] || [];
+    const meta = root[metaKey] || {};
+    const row = cloneSorted(drawData.main).concat(cloneSorted(drawData.special));
+    const first = rows[0];
+    const sameNumbers = first && keyOf(first.slice(0, game.mainCount)) === keyOf(drawData.main) &&
+      keyOf(first.slice(game.mainCount)) === keyOf(drawData.special);
+    const sameIssue = drawData.issue && String(meta.latestIssue) === String(drawData.issue);
+    if (sameIssue && !sameNumbers) return { error: "同一期号号码冲突，请核对数据源" };
+    if ((sameIssue && sameNumbers) || (!drawData.issue && sameNumbers)) return { message: "当期已是最新数据，无需重复注入", total: rows.length };
+    root[dataKey] = [row].concat(rows);
+    root[metaKey] = Object.assign({}, meta, { total: rows.length + 1,
+      latestIssue: drawData.issue || meta.latestIssue,
+      latestDate: drawData.date || meta.latestDate });
+    return { success: true, total: rows.length + 1, latest: drawData };
   }
 
   const api = {
@@ -2054,10 +2103,14 @@
     injectNewDraw: injectNewDraw,
     comb: comb,
     analyze: analyze,
+    analyzeHistory: analyzeHistory,
+    generateFromHistory: generateFromHistory,
+    prizeProbabilities: prizeProbabilities,
     defaultFilters: defaultFilters,
     generate: generate,
     expandDanTuo: expandDanTuo,
     generateWheel: generateWheel,
+    verifyWheelDesign: verifyWheelDesign,
     diagnoseTicket: diagnoseTicket,
     generateSmartPool: generateSmartPool,
     shannonEntropy: shannonEntropy,

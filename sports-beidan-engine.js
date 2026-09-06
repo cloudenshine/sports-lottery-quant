@@ -4,6 +4,30 @@
  * 涵盖：官方 65% 浮动返还率精算、浮动 SP 兑奖计算、让球盘口结算 (-0.5, +0.5, -1, +1 等)、1~15 串关合法性校验。
  */
 
+function beidanValidateSlip(matches, passType) {
+  if (!Array.isArray(matches)) throw new RangeError('matches must be an array');
+  if (matches.length > 15) throw new RangeError('Too many parlay matches');
+  if (passType !== undefined && passType !== `${matches.length}_1`) throw new RangeError('Only the matching all-leg n_1 pass type is supported');
+  const ids = new Set();
+  let count = 1;
+  for (const m of matches) {
+    if (!m || m.matchId == null || String(m.matchId).trim() === '') throw new RangeError('matchId is required');
+    const id = String(m.matchId);
+    if (ids.has(id)) throw new RangeError('Cannot contain multiple selections from the same match in a single parlay');
+    ids.add(id);
+    if (!Array.isArray(m.picks) || !m.picks.length) throw new RangeError('Each match requires picks');
+    const selected = new Set();
+    for (const p of m.picks) {
+      if (!p || p.selection == null || !Number.isFinite(p.sp) || p.sp <= 0) throw new RangeError('Selections require finite positive sp');
+      const identity = `${p.market || ''}:${p.selection}`;
+      if (selected.has(identity)) throw new RangeError('Duplicate match selection');
+      selected.add(identity);
+    }
+    count *= m.picks.length;
+    if (count > 100000) throw new RangeError('Slip expansion supports at most 100000 combinations');
+  }
+}
+
 const RETURN_RATE = 0.65;
 
 const BeidanEngine = {
@@ -14,7 +38,11 @@ const BeidanEngine = {
    * 官方单注基准 2 元，扣除 35% 后按 65% 返奖率结算
    */
   calculateFloatingPayout(spList, multiplier = 1) {
-    const totalSp = spList.reduce((prod, sp) => prod * (sp || 1.0), 1.0);
+    if (!Array.isArray(spList) || !spList.length || spList.some(x => !Number.isFinite(x) || x <= 0)) throw new RangeError('SP values must be finite and positive');
+    this.validateParlayLegCount(spList.length);
+    if (!Number.isSafeInteger(multiplier) || multiplier < 1) throw new RangeError('multiplier must be a positive integer');
+    const totalSp = spList.reduce((prod, sp) => prod * sp, 1.0);
+    if (!Number.isFinite(totalSp * multiplier * 2)) throw new RangeError('Payout overflow');
     const rawPayout = 2.0 * totalSp * RETURN_RATE * multiplier;
     return Math.round(rawPayout * 100) / 100;
   },
@@ -26,6 +54,7 @@ const BeidanEngine = {
    * @param {number} handicap 让球数 (支持小数如 -0.5, +0.5 以及整数 -1, +1 等)
    */
   evaluateHandicapResult(homeGoals, awayGoals, handicap) {
+    if (![homeGoals, awayGoals].every(x => Number.isInteger(x) && x >= 0) || !Number.isFinite(handicap)) throw new RangeError('Valid goal counts and handicap are required');
     const effectiveHome = homeGoals + handicap;
     if (effectiveHome > awayGoals) return 'home';
     if (effectiveHome === awayGoals) return 'draw';
@@ -36,7 +65,7 @@ const BeidanEngine = {
    * 北单串关关数合法性校验 (支持 1 到 15 关)
    */
   validateParlayLegCount(legCount) {
-    if (legCount < 1 || legCount > 15) {
+    if (!Number.isInteger(legCount) || legCount < 1 || legCount > 15) {
       throw new Error(`Beidan supports up to 15 legs, got ${legCount}`);
     }
     return true;
@@ -48,29 +77,36 @@ const BeidanEngine = {
   expandSlipToCombinations(slip) {
     const matches = slip.matches || [];
     if (matches.length === 0) return [];
+    beidanValidateSlip(matches, slip.passType);
     this.validateParlayLegCount(matches.length);
 
     function cartesian(arr) {
       return arr.reduce((a, b) => {
-        return a.flatMap(d => b.picks.map(e => [...d, { matchId: b.matchId, matchNum: b.matchNum || b.matchId, ...e }]));
+        return a.flatMap(d => b.picks.map(e => [...d, { ...e, matchId: b.matchId, matchNum: b.matchNum || b.matchId }]));
       }, [[]]);
     }
 
     const rawCombos = cartesian(matches);
     return rawCombos.map((legs, idx) => {
-      const totalSp = legs.reduce((prod, l) => prod * (l.sp || 1.0), 1.0);
+      const totalSp = legs.reduce((prod, l) => prod * l.sp, 1.0);
+      if (!Number.isFinite(totalSp)) throw new RangeError('Combination price overflow');
       return {
         id: `dc_combo_${idx + 1}`,
         legs,
-        totalSp: Math.round(totalSp * 10000) / 10000
+        totalSp
       };
     });
   },
 
   /**
-   * 北单浮动奖金 ILP 优化
+   * 北单浮动条件奖金分配启发式
    */
   optimizeBonus(combos, budgetYuan, strategy = 'equal') {
+    if (!Array.isArray(combos)) throw new RangeError('combinations must be an array');
+    if (!Number.isFinite(budgetYuan) || budgetYuan < 0 || budgetYuan > 200000) throw new RangeError('Budget must be finite, nonnegative and at most 200000 Yuan for this allocation solver');
+    if (combos.some(c => !c || !Number.isFinite(c.totalSp) || c.totalSp <= 0 || !Number.isFinite(c.totalSp * Math.max(2, budgetYuan)))) throw new RangeError('Combination prices must be finite and positive');
+    if (!['equal'].includes(strategy)) throw new RangeError('Unsupported allocation strategy');
+
     const n = combos.length;
     if (n === 0) throw new Error('No combinations to optimize');
     const minCost = n * 2;
@@ -105,6 +141,8 @@ const BeidanEngine = {
         multiplier,
         totalSp: c.totalSp,
         expectedPayout,
+        payoutIfWin: expectedPayout,
+        payoutMeaning: 'conditional-on-winning-not-expected-value',
         legs: c.legs
       };
     });
@@ -115,7 +153,11 @@ const BeidanEngine = {
       budget: budgetYuan,
       totalCost,
       leftoverYuan: budgetYuan - totalCost,
-      allocations
+      allocations,
+      allocationMethod: 'greedy-integer-allocation',
+      guaranteedProfit: false,
+      evidenceOfPredictiveEdge: false,
+      payoutRulesStatus: 'legacy-assumptions-not-officially-verified'
     };
   },
 
@@ -123,26 +165,19 @@ const BeidanEngine = {
    * 北单量化模型自动选单
    */
   generateQuantPicksBeidan(matches, strategy = 'steady') {
-    if (!matches || matches.length < 2) throw new Error('Requires at least 2 matches');
-    // 挑选 2 场盘口清晰、SP 均衡的比赛
-    const m1 = matches[0];
-    const m2 = matches[1];
-
-    return {
-      matches: [
-        {
-          matchId: m1.id,
-          matchNum: m1.matchNum,
-          picks: [{ selection: '3', label: '胜', sp: m1.spOdds['3'] }]
-        },
-        {
-          matchId: m2.id,
-          matchNum: m2.matchNum,
-          picks: [{ selection: '0', label: '负', sp: m2.spOdds['0'] }]
-        }
-      ],
-      passType: '2_1'
-    };
+    if (!Array.isArray(matches) || matches.length < 2) throw new Error('Requires at least 2 matches');
+    const labels = { '3': '胜', '1': '平', '0': '负' };
+    const candidates = matches.map(m => {
+      if (!m || m.id == null || !m.spOdds || ['3', '1', '0'].some(k => !Number.isFinite(m.spOdds[k]) || m.spOdds[k] <= 0)) throw new RangeError('Observed match identity and complete positive SP quotes are required');
+      const total = ['3', '1', '0'].reduce((sum, k) => sum + 1 / m.spOdds[k], 0);
+      const selection = ['3', '1', '0'].sort((a, b) => m.spOdds[a] - m.spOdds[b])[0];
+      const probability = 1 / m.spOdds[selection] / total;
+      return { matchId: m.id, matchNum: m.matchNum, picks: [{ selection, label: labels[selection], sp: m.spOdds[selection] }], probability };
+    });
+    if (new Set(candidates.map(m => String(m.matchId))).size !== candidates.length) throw new RangeError('Duplicate match identity');
+    candidates.sort((a, b) => b.probability - a.probability || String(a.matchId).localeCompare(String(b.matchId)));
+    return { matches: candidates.slice(0, 2), passType: '2_1', modelStatus: 'normalized-SP-baseline', evidenceOfPredictiveEdge: false,
+      assumptions: ['Floating SP is not a fixed future payout or calibrated probability'] };
   },
 
   /**

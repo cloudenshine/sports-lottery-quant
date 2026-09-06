@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "e5328e79cad18f4caa78a2c95b1c40ab2f59eced332574a66a5c0f3c1861e06b",
+  "recordedAt": "2026-09-05T18:48:59.312Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1420378",
+      "kickoffAt": "2026-09-06T15:30:00.000Z",
+      "homeTeam": "阿森纳",
+      "awayTeam": "切尔西",
+      "competition": "英超",
+      "odds": {
+        "home": 1.52,
+        "draw": 3.75,
+        "away": 4.9
+      },
+      "sourceEventId": "1420378"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-05T18:48:45.225Z",
+      "bodySha256": "4cbc3cb20383abfff1a449977991566076267ed1ebc7ba6ade20443b6a105e27"
+    },
+    "prediction": {
+      "modelId": "ensemble",
+      "version": "1.0.0",
+      "probabilities": [
+        0.5829077181740318,
+        0.2362719284332075,
+        0.1808203533927608
+      ],
+      "trainingCutoff": "2026-09-05T18:48:51.848Z",
+      "trainingCount": 6,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-05T18:48:45.225Z",
+    "paperTrade": null,
+    "batchId": "077e8e5d65e5f2a5b68bc574b00be91ba4a31c74908c44ab1e25d2c640c7512d"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "88cb18f3337828df0a3d43c19f1625597c79d2f005de0f6fc2c9202bfe7124a0",
+  "recordedAt": "2026-09-05T18:49:05.083Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1427999",
+      "kickoffAt": "2026-09-07T19:30:00.000Z",
+      "homeTeam": "埃尔切",
+      "awayTeam": "皇家社会",
+      "competition": "西甲",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.3,
+        "away": 2.16
+      },
+      "sourceEventId": "1427999"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-05T18:48:45.225Z",
+      "bodySha256": "4cbc3cb20383abfff1a449977991566076267ed1ebc7ba6ade20443b6a105e27"
+    },
+    "prediction": {
+      "modelId": "ensemble",
+      "version": "1.0.0",
+      "probabilities": [
+        0.32190760059612517,
+        0.2682563338301043,
+        0.4098360655737704
+      ],
+      "trainingCutoff": "2026-09-05T18:48:51.848Z",
+      "trainingCount": 5,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-05T18:48:45.225Z",
+    "paperTrade": null,
+    "batchId": "9660dbe564b6a75449c5b1d07ded0ab48a73dab4e232af55a9bcfbf1cf9f16d8"
+  }
+}

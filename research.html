@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>概率研究 · 证据工作台</title>
+  <style>
+    :root{--ink:#172d38;--muted:#586c76;--line:#d7e1e4;--blue:#14617a;--paper:#fff;--bg:#f3f6f5;--amber:#855811}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.65}a{color:var(--blue)}header{background:#102f3c;color:white;padding:34px max(24px,calc((100vw - 1220px)/2)) 28px}header p{color:#c5d8de;margin:8px 0}header h1{font-size:30px;letter-spacing:1px;margin:8px 0}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{color:#d5edf4;text-decoration:none;font-size:14px}.eyebrow{font-size:12px;letter-spacing:3px;color:#87c6ce}main{max-width:1268px;margin:0 auto;padding:24px}section{background:var(--paper);border:1px solid var(--line);padding:24px;margin-bottom:20px;border-radius:8px}h2{font-size:19px;margin:0 0 8px}h3{font-size:16px;margin:20px 0 8px}.muted,.note{color:var(--muted);font-size:13px}.note{margin:8px 0}.status{display:inline-block;background:#e8f1f3;color:#155568;border-radius:4px;padding:3px 9px;font-size:12px}.status.warn{background:#fff1d9;color:var(--amber)}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}.stat{border:1px solid var(--line);padding:16px;border-radius:6px}.stat strong{display:block;font-size:28px;font-variant-numeric:tabular-nums;line-height:1.4}.stat span{font-size:13px;color:var(--muted)}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px;text-align:left}th{font-weight:600;color:var(--muted);background:#f5f8f8}th,td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}td.number,th.number{font-variant-numeric:tabular-nums;white-space:nowrap}.empty{padding:20px;border:1px dashed var(--line);color:var(--muted);font-size:14px}.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}.progress{height:6px;background:#e6ecec;border-radius:9px;margin:8px 0 14px;overflow:hidden}.progress i{height:100%;display:block;background:#19738a}ul{padding-left:20px}li{margin-bottom:5px}button{border:1px solid #c7d9df;border-radius:5px;background:white;color:#155568;padding:8px 14px;font:inherit;cursor:pointer}button:hover{background:#e8f1f3}footer{padding:0 24px 26px;max-width:1268px;margin:auto;font-size:12px;color:var(--muted)}.probability{white-space:nowrap}.section-head{display:flex;align-items:start;justify-content:space-between;gap:18px}.source-id{overflow-wrap:anywhere;min-width:130px}.error{color:var(--amber);max-width:400px;overflow-wrap:anywhere}
+    @media(max-width:700px){header{padding:22px}header h1{font-size:25px}main{padding:14px}section{padding:17px}.stats{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr;gap:8px}th,td{padding:9px}.section-head{display:block}}
+  </style>
+</head>
+<body>
+  <header><div class="eyebrow">PROBABILITY RESEARCH</div><h1>概率研究 · 证据工作台</h1><p>比较模型的概率质量，逐期积累赛前预测与赛后检验。</p><nav aria-label="应用导航"><a href="research.html" aria-current="page">研究工作台</a><a href="sports.html">竞技彩票</a><a href="index.html">数字彩</a></nav></header>
+  <main id="research-root" aria-live="polite"><section><h2>研究数据尚未载入</h2><p>等待首次研究快照。此页面展示已保存的采集记录。</p></section></main>
+  <noscript><p>请启用 JavaScript 以阅读已保存的研究快照。</p></noscript>
+  <footer>仅用于研究与纸面模拟。历史回测、概率评分与真实收益是不同证据；收益结算以明确的规则及记录为前提。</footer>
+  <script src="data/research/dashboard.js"></script>
+  <script src="research-dashboard.js"></script>
+</body>
+</html>

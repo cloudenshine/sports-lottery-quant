@@ -1,0 +1,22 @@
+{
+  "sourceId": "fj-jc-payout",
+  "url": "https://www.fjtc.com.cn/2024-04/01/content_31550891.htm",
+  "publisher": "福建省体育彩票管理中心",
+  "status": "ok",
+  "cached": false,
+  "lastAttemptAt": "2026-09-05T18:44:02.232Z",
+  "lastSuccessfulFetchAt": "2026-09-05T18:44:02.232Z",
+  "lastSuccessfulBodySha256": "19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f",
+  "initialBodySha256": "19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f",
+  "previousBodySha256": null,
+  "changeStatus": "initial_archive_needs_review",
+  "reviewRequired": true,
+  "error": null,
+  "observedBodySha256": "19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f",
+  "httpStatus": 200,
+  "finalUrl": "https://www.fjtc.com.cn/2024-04/01/content_31550891.htm",
+  "contentType": "text/html",
+  "bodyBytes": 22823,
+  "comparisonStatus": "initial_archive",
+  "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
+}

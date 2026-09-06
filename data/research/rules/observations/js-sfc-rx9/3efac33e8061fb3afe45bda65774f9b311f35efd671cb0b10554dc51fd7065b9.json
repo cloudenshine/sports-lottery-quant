@@ -1,0 +1,22 @@
+{
+  "sourceId": "js-sfc-rx9",
+  "url": "https://www.js-lottery.com/wfzq/ctzq/wfjs/cms/post-49203.html",
+  "publisher": "江苏省体育彩票管理中心",
+  "status": "ok",
+  "cached": false,
+  "lastAttemptAt": "2026-09-05T18:44:08.276Z",
+  "lastSuccessfulFetchAt": "2026-09-05T18:44:08.276Z",
+  "lastSuccessfulBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
+  "initialBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
+  "previousBodySha256": null,
+  "changeStatus": "initial_archive_needs_review",
+  "reviewRequired": true,
+  "error": null,
+  "observedBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
+  "httpStatus": 200,
+  "finalUrl": "https://www.js-lottery.com/wfzq/ctzq/wfjs/cms/post-49203.html",
+  "contentType": "text/html; charset=utf-8",
+  "bodyBytes": 78864,
+  "comparisonStatus": "initial_archive",
+  "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
+}

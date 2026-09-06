@@ -118,6 +118,57 @@ test('Team Form & Dynamics Analyzer', async (t) => {
       teamFormScore: 92
     });
     assert.ok(trapAnalysis.ev < 0.70);
-    assert.strictEqual(trapAnalysis.isOverheatedTrap, true);
+    assert.strictEqual(trapAnalysis.isOverheatedTrap, false, 'A model disagreement is not evidence of bookmaker intent');
+    assert.strictEqual(trapAnalysis.formModelDisagreement, true);
   });
+});
+
+test('Poisson probability conservation, analytic boundary and non-negligible tails', () => {
+  const zero = FormAnalyzer.poissonMatchProbabilities(0, 0, { maxGoals: 0 });
+  assert.equal(zero.probDraw, 1);
+  const oneSided = FormAnalyzer.poissonMatchProbabilities(8, 0, { maxGoals: 0 });
+  assert.ok(Math.abs(oneSided.probHome - (1 - Math.exp(-8))) < 1e-12);
+  assert.ok(Math.abs(oneSided.probDraw - Math.exp(-8)) < 1e-12);
+  const high = FormAnalyzer.poissonMatchProbabilities(8, 2, { maxGoals: 1 });
+  const wide = FormAnalyzer.poissonMatchProbabilities(8, 2, { maxGoals: 60 });
+  assert.ok(Math.abs(high.probHome - wide.probHome) < 1e-12, 'Display support must not condition away high scores');
+  assert.ok(Math.abs(high.totalGoalsProb['0'] - Math.exp(-10)) < 1e-12);
+  assert.ok(high.totalGoalsProb['7+'] > 0.8);
+  assert.ok(high.omittedProbability < 1e-12);
+  for (const [h, a] of [[0, 3], [2.1, 0.9], [15, 15], [100, 100]]) {
+    const p = FormAnalyzer.poissonMatchProbabilities(h, a);
+    assert.ok(Math.abs(p.probHome + p.probDraw + p.probAway - 1) < 1e-12);
+    assert.ok(Math.abs(Object.values(p.totalGoalsProb).reduce((x, y) => x + y, 0) - 1) < 1e-12);
+    assert.equal(p.modelStatus, 'uncalibrated');
+  }
+  for (const invalid of [-1, NaN, Infinity, '2']) assert.throws(() => FormAnalyzer.poissonMatchProbabilities(invalid, 1));
+  assert.throws(() => FormAnalyzer.poissonMatchProbabilities(1, 1, { maxGoals: -1 }));
+});
+
+test('EV and Kelly are conditional arithmetic; removing margin needs a complete market', () => {
+  const value = FormAnalyzer.evaluateMarketValue({ realProb: 0.6, marketOdds: 2, marketReturnRate: 0.01 });
+  assert.equal(value.marketImpliedProb, 0.5);
+  assert.equal(value.fairMarketProbability, null);
+  assert.ok(Math.abs(value.expectedNetReturn - 0.2) < 1e-12);
+  assert.ok(Math.abs(value.fullKellyFraction - 0.2) < 1e-12);
+  assert.equal(value.evidenceOfPredictiveEdge, false);
+  const market = [1.9, 3.2, 3.6];
+  const normalized = market.map(marketOdds => FormAnalyzer.evaluateMarketValue({ realProb: 0.2, marketOdds, marketOddsList: market }));
+  assert.ok(Math.abs(normalized.reduce((sum, p) => sum + p.fairMarketProbability, 0) - 1) < 1e-12);
+  assert.equal(FormAnalyzer.evaluateMarketValue({ realProb: 0.2, marketOdds: 2 }).fullKellyFraction, 0);
+  for (const realProb of [-0.1, 1.1, NaN]) assert.throws(() => FormAnalyzer.evaluateMarketValue({ realProb, marketOdds: 2 }));
+  assert.throws(() => FormAnalyzer.evaluateMarketValue({ realProb: 0.5, marketOdds: 1 }));
+});
+
+test('Missing observations cannot become synthetic form evidence; H2H excludes unrelated fixtures', () => {
+  assert.throws(() => FormAnalyzer.analyzeHomeAwaySplits({}, {}));
+  assert.throws(() => FormAnalyzer.analyzeRecentForm({}));
+  assert.throws(() => FormAnalyzer.analyzeRecentForm({ recentResults: ['X'] }));
+  assert.throws(() => FormAnalyzer.calculateFatigue(-1));
+  const p = FormAnalyzer.analyzeRecentForm({ recentResults: ['W', 'L'], matches: 10, goalsFor: 20, goalsAgainst: 10 });
+  assert.equal(p.winRate, 0.5);
+  assert.equal(p.goalsForPerMatch, 2);
+  const h2h = FormAnalyzer.analyzeH2H('A', 'B', [{ home: 'C', away: 'D', winner: 'home' }]);
+  assert.equal(h2h.sampleSize, 0);
+  assert.equal(h2h.h2hAdvantageScore, null);
 });

@@ -1,0 +1,22 @@
+{
+  "sourceId": "fj-jc-basketball",
+  "url": "https://www.fjtc.com.cn/2024-04/01/content_31550877.htm",
+  "publisher": "福建省体育彩票管理中心",
+  "status": "ok",
+  "cached": false,
+  "lastAttemptAt": "2026-09-05T18:44:02.271Z",
+  "lastSuccessfulFetchAt": "2026-09-05T18:44:02.271Z",
+  "lastSuccessfulBodySha256": "0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e",
+  "initialBodySha256": "0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e",
+  "previousBodySha256": null,
+  "changeStatus": "initial_archive_needs_review",
+  "reviewRequired": true,
+  "error": null,
+  "observedBodySha256": "0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e",
+  "httpStatus": 200,
+  "finalUrl": "https://www.fjtc.com.cn/2024-04/01/content_31550877.htm",
+  "contentType": "text/html",
+  "bodyBytes": 181780,
+  "comparisonStatus": "initial_archive",
+  "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
+}

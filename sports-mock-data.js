@@ -1,8 +1,8 @@
 /**
  * sports-mock-data.js
- * 真实竞技彩票对阵与队伍近况全景数据集
+ * 演示赛事与独立实时快照入口；演示数据不能用于预测能力验证。
  * 包含：竞彩足球 (JCZQ)、14场胜负彩与任九 (SFC)、北京单场 (DC)、竞彩篮球 (JCLQ)。
- * 融合真实队伍攻防、近期战绩、伤停、主客场切分与多玩法官方赔率。
+ * 手工构造的队伍资料和赔率仅用于界面与算法演示。
  */
 
 const JINGCAI_MATCHES = [
@@ -311,13 +311,84 @@ if (typeof window !== 'undefined' && window.SPORTS_LIVE) {
   }
 }
 
-const LIVE_JINGCAI = (LIVE_PAYLOAD && LIVE_PAYLOAD.jingcai && LIVE_PAYLOAD.jingcai.length > 0)
-  ? LIVE_PAYLOAD.jingcai
-  : JINGCAI_MATCHES;
+// Schema version alone does not establish provenance. Validate the complete
+// source-snapshot contract, including the absence of unobserved team statistics.
+function snapshotRecord(value) {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+function snapshotKeys(value, keys) {
+  return snapshotRecord(value) && Object.keys(value).length === keys.length && keys.every(key => Object.hasOwn(value, key));
+}
+function snapshotRequiredKeys(value, keys) {
+  return snapshotRecord(value) && keys.every(key => Object.hasOwn(value, key));
+}
+function snapshotText(value) {
+  return typeof value === 'string' && value.trim().length > 0 && value.length <= 200 && !/[<>\x00-\x1f\x7f]/.test(value);
+}
+function snapshotIso(value) {
+  const stamp = typeof value === 'string' ? Date.parse(value) : NaN;
+  return Number.isFinite(stamp) && new Date(stamp).toISOString() === value;
+}
+function snapshotTeam(team) {
+  return snapshotKeys(team, ['name', 'rank', 'recentResults']) && snapshotText(team.name) && team.rank === null && Array.isArray(team.recentResults) && team.recentResults.length === 0;
+}
+function snapshotOdds(odds, handicap = false) {
+  return snapshotKeys(odds, handicap ? ['3', '1', '0', 'handicap'] : ['3', '1', '0']) &&
+    ['3', '1', '0'].every(key => typeof odds[key] === 'number' && Number.isFinite(odds[key]) && odds[key] > 1) &&
+    (!handicap || Number.isSafeInteger(odds.handicap));
+}
+function snapshotJingcai(match, syncedAt) {
+  if (!snapshotKeys(match, ['id', 'matchNum', 'matchDate', 'kickoffTime', 'kickoffAt', 'league', 'leagueColor', 'status', 'homeTeam', 'awayTeam', 'h2h', 'odds', 'dataQuality'])) return false;
+  if (typeof match.id !== 'string' || !/^LIVE_\d+$/.test(match.id) || !snapshotText(match.matchNum) || !snapshotText(match.league) || match.leagueColor !== '#3b82f6' || match.status !== '来源快照，销售状态未核验') return false;
+  if (!snapshotTeam(match.homeTeam) || !snapshotTeam(match.awayTeam) || !Array.isArray(match.h2h) || match.h2h.length !== 0) return false;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(match.matchDate || '') || !/^([01]\d|2[0-3]):[0-5]\d$/.test(match.kickoffTime || '') || !snapshotIso(match.kickoffAt)) return false;
+  const kickoff = Date.parse(`${match.matchDate}T${match.kickoffTime}:00+08:00`);
+  if (kickoff !== Date.parse(match.kickoffAt) || kickoff <= syncedAt || new Date(kickoff + 8 * 3600000).toISOString().slice(0, 10) !== match.matchDate) return false;
+  if (!snapshotRecord(match.odds)) return false;
+  const markets = Object.keys(match.odds);
+  if (!markets.length || markets.some(key => !['SPF', 'RQSPF'].includes(key) || !snapshotOdds(match.odds[key], key === 'RQSPF'))) return false;
+  const quality = match.dataQuality;
+  return snapshotKeys(quality, ['source', 'teamStatistics', 'salesStatus', 'quotedMarkets']) && quality.source === 'trade.500.com/jczq/' &&
+    quality.teamStatistics === 'unavailable' && quality.salesStatus === 'unverified' && Array.isArray(quality.quotedMarkets) &&
+    quality.quotedMarkets.length === markets.length && new Set(quality.quotedMarkets).size === markets.length && markets.every(key => quality.quotedMarkets.includes(key));
+}
+function snapshotSfc(match, index) {
+  if (!snapshotKeys(match, ['matchIdx', 'home', 'away', 'league', 'odds', 'dataQuality']) || match.matchIdx !== index + 1 || !snapshotText(match.home) || !snapshotText(match.away) || match.league !== '未知' || !snapshotOdds(match.odds)) return false;
+  const quality = match.dataQuality;
+  return snapshotKeys(quality, ['source', 'kickoff', 'issue', 'salesStatus']) && quality.source === 'trade.500.com/sfc/' && quality.kickoff === 'unavailable' && quality.issue === 'unavailable' && quality.salesStatus === 'unverified';
+}
+function snapshotSourceStatus(value) {
+  if (value === undefined) return true;
+  if (!snapshotRequiredKeys(value, ['status', 'markets']) || !['ok', 'partial'].includes(value.status) || !snapshotRecord(value.markets)) return false;
+  return ['jingcai', 'sfc'].every(key => snapshotKeys(value.markets[key], ['status', 'error']) &&
+    ['ok', 'failed'].includes(value.markets[key].status) && (value.markets[key].error === null || snapshotText(value.markets[key].error)) &&
+    (value[key] === undefined || (snapshotKeys(value[key], ['status', 'error']) && value[key].status === value.markets[key].status && value[key].error === value.markets[key].error)));
+}
+function snapshotSourceErrors(value) {
+  if (value === undefined) return true;
+  return snapshotKeys(value, ['jingcai', 'sfc']) && ['jingcai', 'sfc'].every(key => value[key] === null || snapshotText(value[key]));
+}
+function validateSportsSnapshot(payload, now = Date.now()) {
+  if (!snapshotRequiredKeys(payload, ['schemaVersion', 'dataKind', 'salesStatus', 'syncedAt', 'displayTime', 'jingcaiCount', 'sfcCount', 'jingcai', 'sfc']) || payload.schemaVersion !== 2 || payload.dataKind !== 'source-snapshot' || payload.salesStatus !== 'unverified' || !snapshotIso(payload.syncedAt) || !snapshotText(payload.displayTime) || !snapshotSourceStatus(payload.sourceStatus) || !snapshotSourceErrors(payload.sourceErrors)) return { valid: false, stale: false };
+  const observed = Date.parse(payload.syncedAt);
+  if (observed > now) return { valid: false, stale: false };
+  if (now - observed > 24 * 3600000) return { valid: false, stale: true };
+  if (!Array.isArray(payload.jingcai) || !Array.isArray(payload.sfc) || payload.jingcaiCount !== payload.jingcai.length || payload.sfcCount !== payload.sfc.length || ![0, 14].includes(payload.sfc.length)) return { valid: false, stale: false };
+  const valid = payload.jingcai.every(match => snapshotJingcai(match, observed)) && payload.sfc.every(snapshotSfc) &&
+    new Set(payload.jingcai.map(match => match.id)).size === payload.jingcai.length &&
+    new Set(payload.sfc.map(match => JSON.stringify([match.home, match.away]))).size === payload.sfc.length;
+  return { valid, stale: false };
+}
+const snapshotCheck = validateSportsSnapshot(LIVE_PAYLOAD);
+const validLive = snapshotCheck.valid;
+const staleLive = snapshotCheck.stale;
+const LIVE_JINGCAI = validLive ? LIVE_PAYLOAD.jingcai.filter(match => Date.parse(match.kickoffAt) > Date.now()) : [];
+const LIVE_SFC = validLive ? LIVE_PAYLOAD.sfc : [];
 
-const LIVE_SFC = (LIVE_PAYLOAD && LIVE_PAYLOAD.sfc && LIVE_PAYLOAD.sfc.length === 14)
-  ? LIVE_PAYLOAD.sfc
-  : SFC_MATCHES;
+const unavailableSourceStatus = { status: 'partial', jingcai: { status: 'failed', error: '实时快照不可用' }, sfc: { status: 'failed', error: '实时快照不可用' }, markets: { jingcai: { status: 'failed', error: '实时快照不可用' }, sfc: { status: 'failed', error: '实时快照不可用' } } };
+const unavailableSourceErrors = { jingcai: '实时快照不可用', sfc: '实时快照不可用' };
+const exposedSourceStatus = validLive ? LIVE_PAYLOAD.sourceStatus : unavailableSourceStatus;
+const exposedSourceErrors = validLive ? (LIVE_PAYLOAD.sourceErrors || { jingcai: null, sfc: null }) : unavailableSourceErrors;
 
 const MockData = {
   JINGCAI_MATCHES: LIVE_JINGCAI,
@@ -326,11 +397,17 @@ const MockData = {
   CLASSIC_SFC_MATCHES: SFC_MATCHES,
   BEIDAN_MATCHES,
   LANCAI_MATCHES,
+  sourceStatus: exposedSourceStatus,
+  sourceErrors: exposedSourceErrors,
   META: {
-    isRealTime: !!LIVE_PAYLOAD,
-    syncedAt: LIVE_PAYLOAD ? LIVE_PAYLOAD.syncedAt : '2026-09-03T14:30:00.000Z',
-    displayTime: LIVE_PAYLOAD ? LIVE_PAYLOAD.displayTime : '2026/9/3 14:30:00',
-    dateScope: '2026-09-03 至 2026-09-05 (今日周四/周五实盘在售)',
+    isRealTime: false,
+    validSnapshot: validLive,
+    stale: staleLive,
+    syncedAt: validLive ? LIVE_PAYLOAD.syncedAt : null,
+    displayTime: validLive ? LIVE_PAYLOAD.syncedAt : '未载入合格快照',
+    sourceStatus: exposedSourceStatus,
+    sourceErrors: exposedSourceErrors,
+    dateScope: staleLive ? '快照已过期；请重新同步' : (validLive ? '已载入来源快照；在售状态未实时确认' : '实时数据不可用；快照缺失或未通过完整性校验，已隔离'),
     matchCount: LIVE_JINGCAI.length
   }
 };

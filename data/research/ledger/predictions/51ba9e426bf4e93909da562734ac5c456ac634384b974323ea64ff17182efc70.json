@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "51ba9e426bf4e93909da562734ac5c456ac634384b974323ea64ff17182efc70",
+  "recordedAt": "2026-09-05T18:48:58.636Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1438089",
+      "kickoffAt": "2026-09-06T14:30:00.000Z",
+      "homeTeam": "圣克拉拉",
+      "awayTeam": "里奥阿维",
+      "competition": "葡超",
+      "odds": {
+        "home": 1.77,
+        "draw": 3.12,
+        "away": 4.1
+      },
+      "sourceEventId": "1438089"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-05T18:48:45.225Z",
+      "bodySha256": "4cbc3cb20383abfff1a449977991566076267ed1ebc7ba6ade20443b6a105e27"
+    },
+    "prediction": {
+      "modelId": "ensemble",
+      "version": "1.0.0",
+      "probabilities": [
+        0.5002463689903563,
+        0.2837936131772214,
+        0.21596001783242216
+      ],
+      "trainingCutoff": "2026-09-05T18:48:51.848Z",
+      "trainingCount": 2,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-05T18:48:45.225Z",
+    "paperTrade": null,
+    "batchId": "59a0af85937fed173c912edd78b961d49f6eca76d1ac33396376e6d946a764ba"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "sourceId": "fj-sfc-cancel",
+  "url": "https://www.fjtc.com.cn/2013-07/03/content_31607945.htm",
+  "publisher": "福建省体育彩票管理中心刊载中国体育报解释",
+  "status": "ok",
+  "cached": false,
+  "lastAttemptAt": "2026-09-05T18:44:09.089Z",
+  "lastSuccessfulFetchAt": "2026-09-05T18:44:09.089Z",
+  "lastSuccessfulBodySha256": "72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417",
+  "initialBodySha256": "72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417",
+  "previousBodySha256": null,
+  "changeStatus": "initial_archive_needs_review",
+  "reviewRequired": true,
+  "error": null,
+  "observedBodySha256": "72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417",
+  "httpStatus": 200,
+  "finalUrl": "https://www.fjtc.com.cn/2013-07/03/content_31607945.htm",
+  "contentType": "text/html",
+  "bodyBytes": 20825,
+  "comparisonStatus": "initial_archive",
+  "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
+}

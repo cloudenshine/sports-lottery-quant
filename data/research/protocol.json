@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "protocolId": "lottery-research-v1-20260906",
+  "paperOnly": true,
+  "sports": {
+    "market": "1X2_REGULATION",
+    "candidateFamily": [
+      "uniform",
+      "historical",
+      "poisson",
+      "elo",
+      "market",
+      "market-power",
+      "ensemble"
+    ],
+    "forecastWindow": "first-observed-72h-v1",
+    "maximumHoursToKickoff": 72,
+    "minimumMinutesToKickoff": 15,
+    "primaryScore": "multiclass-log-loss",
+    "secondaryScore": "multiclass-brier",
+    "comparators": [
+      "uniform",
+      "market"
+    ],
+    "paperStake": 2,
+    "promotion": {
+      "minimumSettledEvents": 500,
+      "minimumCalendarDays": 90,
+      "familyWiseAlpha": 0.05,
+      "method": "fixed-horizon paired block bootstrap with Bonferroni family correction",
+      "requiresPositiveNetReturnLowerBound": true,
+      "requiresMarketImprovement": true,
+      "reviewOnlyAtRegisteredHorizon": true,
+      "fixedCalendarHorizonDays": 90
+    },
+    "maximumSourceAgeMinutes": 30,
+    "paperDecision": {
+      "policy": "ev-threshold",
+      "minimumExpectedGrossReturn": 1.05,
+      "settlementAssumption": "fixed-decimal-1x2-paper-v1",
+      "singleBetEligibilityRequired": true,
+      "tiePolicy": "exact-expectation-of-uniform-random-tie-selection",
+      "cashOnAbstain": true
+    },
+    "sourceFamilies": [
+      "espn-eng1",
+      "500-jingcai"
+    ]
+  },
+  "numbers": {
+    "candidateFamily": [
+      "uniform",
+      "hot_shrink",
+      "cold_shrink",
+      "coverage"
+    ],
+    "equalTicketBudget": 5,
+    "seeds": [
+      1701,
+      2903,
+      4109
+    ],
+    "periods": 100,
+    "status": "exploratory-current-rule-prize-scenarios"
+  },
+  "decisionPolicy": "All candidates remain research-only. No strategy is promoted by a daily favorable fluctuation. A change to candidates, parameters, lookahead or thresholds creates a new protocol/version.",
+  "draftedAt": "2026-09-05T18:20:00Z"
+}

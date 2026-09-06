@@ -1,0 +1,29 @@
+{
+  "verifiedAt": "2026-09-05T19:03:44.354Z",
+  "method": "Codex in-app browser AX, screenshot and console inspection",
+  "routes": [
+    "/research.html",
+    "/sports.html",
+    "/research-standalone.html"
+  ],
+  "checks": {
+    "realHistory1628": true,
+    "predictionReceipts224": true,
+    "sourceCounts": true,
+    "scheduleStateLabel": true,
+    "strictEVThreshold": true,
+    "officialSources11": true,
+    "ruleFetchFailures0": true,
+    "ruleReviewPending0": true,
+    "eloPaperResultAndIntervals": true,
+    "reloadRetainsSnapshot": true,
+    "appNavigation": true,
+    "standaloneSnapshot": true
+  },
+  "consoleErrors": [],
+  "consoleWarnings": [],
+  "notes": [
+    "Initial compact AX diff was insufficient to assert refresh; full AX state confirmed the unchanged 224 receipts.",
+    "Only paper research and historical scenario returns were displayed."
+  ]
+}

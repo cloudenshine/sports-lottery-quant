@@ -560,46 +560,48 @@
     <button class="sports-tab active" id="tab-jingcai" onclick="switchMainTab('jingcai')">竞彩</button>
     <button class="sports-tab" id="tab-beidan" onclick="switchMainTab('beidan')">北单</button>
     <button class="sports-tab" id="tab-lancai" onclick="switchMainTab('lancai')">篮彩</button>
-    <button class="sports-tab" style="margin-left:auto; background:#0284c7; color:#fff; border-radius:4px; font-weight:700;" onclick="openMobileQRModal()">📱 手机扫码使用</button>
+    <button class="sports-tab" style="margin-left:auto; background:#0284c7; color:#fff; border-radius:4px; font-weight:700;" onclick="openMobileQRModal()">📱 手机访问地址</button>
+    <a href="research.html" class="sports-tab" style="color:#14617a; font-weight:normal;">概率研究</a>
     <a href="index.html" class="sports-tab" style="color:#64748b; font-weight:normal;">🎲 切换到数字彩 (双色球/大乐透)</a>
   </nav>
 
   <!-- Live Status Bar -->
   <div class="live-status-bar">
     <div style="display:flex; align-items:center; gap:10px;">
-      <span class="live-badge"><span class="live-dot"></span> 实时官方开售在售</span>
-      <span id="live-date-scope" style="font-weight:700; color:#334155;">比赛日: 2026-09-03 至 2026-09-05 (今日周四/周五实盘)</span>
-      <span id="live-sync-time" style="color:var(--text-muted);">(最后同步: 2026/9/3 14:30:36)</span>
+      <span class="live-badge"><span class="live-dot"></span> 来源快照 / 演示</span>
+      <span id="live-date-scope" style="font-weight:700; color:#334155;">正在检查数据来源</span>
+      <span id="live-sync-time" style="color:var(--text-muted);"></span>
     </div>
     <div style="display:flex; align-items:center; gap:8px;">
       <select id="dataset-selector" onchange="toggleDataset(this.value)" style="padding:4px 8px; font-size:12px; font-weight:700; border-radius:4px; border:1px solid #cbd5e1;">
-        <option value="live">🔴 今日实时在售赛事 (21场官方实盘)</option>
-        <option value="classic">⭐ 经典五大联赛实盘赛事</option>
+        <option value="live">来源快照（非实时在售确认）</option>
+        <option value="classic">演示数据（手工构造）</option>
       </select>
-      <button class="btn-quant btn-quant-diag" style="padding:4px 10px; font-size:12px;" onclick="refreshLiveMatches()">🔄 刷新实盘赛程与赔率</button>
+      <button class="btn-quant btn-quant-diag" style="padding:4px 10px; font-size:12px;" onclick="refreshLiveMatches()">🔄 刷新已保存快照</button>
     </div>
   </div>
 
   <!-- Honesty Banner (L0) -->
   <div class="honesty-banner">
     <div>
-      <strong>【L0 诚实认知】</strong> 竞技彩票受技战术与随机性驱动，机构抽水 27%~35%，绝无虚假预测神话与必胜承诺。我们依靠【队伍真实近况战绩】、【泊松攻防xG期望】与【ILP 整数规划奖金优化】规避诱盘陷阱，锁定资金极差。
+      <strong>【L0 诚实认知】</strong> 竞技模型输出是待验证的概率估计。缺少真实近况、主客场观测或赛前赔率时不计算预测。奖金分配只比较某张票中奖时的返奖，不构成保本或收益期望；抽水与返还率需结合具体市场。
     </div>
     <div class="honesty-decay">
-      <span class="decay-pill">单场返还 ~73%</span>
-      <span class="decay-pill">2串1返还 53.3%</span>
-      <span class="decay-pill">3串1返还 38.9%</span>
-      <span class="decay-pill">8串1返还 8.06% (严禁长串)</span>
+      <span class="decay-pill">Brier / log-loss 样本外评估</span>
+      <span class="decay-pill">赔率去水市场基线</span>
+      <span class="decay-pill">未证明预测优势</span>
+      <span class="decay-pill">演示数据不作实证</span>
     </div>
   </div>
 
   <!-- ==================== TAB 1: 竞彩 (JCZQ) ==================== -->
+  <section class="returns-workbench" data-returns-workbench="sports"></section>
   <div id="view-jingcai">
     <!-- Quant Model Trigger Bar for Jingcai -->
     <div class="quant-bar">
       <div class="quant-bar-title">
         <span>⚡ 竞彩足球量化模型：</span>
-        <span style="font-size:12px; font-weight:normal; color:#475569;">根据队伍最新近况走势、泊松攻防xG、以及机构EV自动生成选单</span>
+        <span style="font-size:12px; font-weight:normal; color:#475569;">基于已有观测的未校准泊松模型；缺数据不输出预测</span>
       </div>
       <div class="quant-actions">
         <button class="btn-quant btn-quant-steady" onclick="triggerQuantModel('steady')">
@@ -640,7 +642,7 @@
         </div>
       </div>
 
-      <!-- Right Side: Bet Slip & ILP Optimizer & Batch Tickets -->
+      <!-- Right Side: Bet Slip & 启发式 Optimizer & Batch Tickets -->
       <div class="slip-container">
         <div class="card">
           <div class="card-header">
@@ -669,11 +671,11 @@
               </div>
             </div>
 
-            <div style="font-size:12px; font-weight:700; margin-bottom:4px; color:#475569;">奖金优化算法 (ILP 求解器)：</div>
+            <div style="font-size:12px; font-weight:700; margin-bottom:4px; color:#475569;">奖金优化算法 (启发式 求解器)：</div>
             <div class="opt-tabs">
               <button class="opt-tab-btn active" id="btn-opt-equal" onclick="setOptStrategy('equal')">平均优化</button>
               <button class="opt-tab-btn" id="btn-opt-cold" onclick="setOptStrategy('cold')">博冷优化</button>
-              <button class="opt-tab-btn" id="btn-opt-safe" onclick="setOptStrategy('safe')">保本优化</button>
+              <button class="opt-tab-btn" id="btn-opt-safe" onclick="setOptStrategy('safe')">保本优化（条件返奖）</button>
             </div>
 
             <button class="btn-action" onclick="runOptimization()">⚡ 求解最优资金配置 (锁定预算)</button>
@@ -769,11 +771,11 @@
     <div class="quant-bar">
       <div class="quant-bar-title">
         <span>🏟️ 北京单场量化模型选单：</span>
-        <span style="font-size:12px; font-weight:normal; color:#475569;">65% 官方返还率精算，让球盘口价值洼地识别</span>
+        <span style="font-size:12px; font-weight:normal; color:#475569;">市场基准选单；浮动SP与结算参数为待核验情景</span>
       </div>
       <div class="quant-actions">
         <button class="btn-quant btn-quant-steady" onclick="triggerBeidanQuant()">
-          🤖 北单量化模型选单 (高SP价值让球对冲)
+          🤖 北单量化模型选单 (市场概率基准排序)
         </button>
       </div>
     </div>
@@ -783,7 +785,7 @@
         <div class="card">
           <div class="card-header">
             <span>🏟️ 北京单场 (DC) · 浮动SP与让球盘口</span>
-            <span style="font-size:12px; color:#64748b;">体彩官方 65% 浮动返还率结算</span>
+            <span style="font-size:12px; color:#64748b;">0.65 为既有情景参数，未核验为本票实际结算</span>
           </div>
           <div style="padding:16px;">
             <table class="match-table">
@@ -860,7 +862,7 @@
       </div>
       <div class="quant-actions">
         <button class="btn-quant btn-quant-steady" onclick="triggerLancaiQuant()">
-          🤖 篮彩量化模型选单 (节奏克制 & 背靠背疲劳)
+          🤖 篮彩量化模型选单 (市场概率基准排序)
         </button>
       </div>
     </div>
@@ -953,7 +955,7 @@
     <div class="ticket-header-rail">
       <div>
         <h3 id="ticket-modal-title" style="font-size:15px; font-weight:800;">🧾 彩票店打票机批量出单终端 (POS Ready)</h3>
-        <p id="ticket-modal-subtitle" style="font-size:11px; color:#94a3b8;">符合中国体育彩票终端打票格式规范 · 锁定预算与离散注单</p>
+        <p id="ticket-modal-subtitle" style="font-size:11px; color:#94a3b8;">普通文本格式预览；终端协议未核验，不是正式彩票</p>
       </div>
       <span style="cursor:pointer; font-size:20px; color:#94a3b8;" onclick="closeModal('ticket-modal')">✕</span>
     </div>
@@ -1019,8 +1021,16 @@
 <script src="sports-beidan-engine.js"></script>
 <script src="sports-lancai-engine.js"></script>
 <script src="sports-mock-data.js"></script>
+<script src="data/research/dashboard.js"></script>
+<script src="sports-return-policy.js"></script>
+<script src="returns-workbench.js"></script>
 
 <script>
+  function notifyUser(message) {
+    let box=document.getElementById('app-status');
+    if(!box) { box=document.createElement('div'); box.id='app-status'; box.setAttribute('role','status'); box.style.cssText='position:sticky;top:0;z-index:100;background:#eff6ff;padding:12px;white-space:pre-wrap;border:1px solid #93c5fd'; document.body.prepend(box); }
+    box.textContent=message;
+  }
   // State
   let currentTab = 'jingcai';
   let currentDataset = 'live';
@@ -1033,23 +1043,48 @@
   let latestBatchResult = null;
   let activeBatchEngine = 'jingcai';
 
-  // Toggle Dataset
-  function toggleDataset(type) {
-    currentDataset = type;
-    if (type === 'classic') {
-      activeMatches = MockData.CLASSIC_JINGCAI_MATCHES;
-      document.getElementById('live-date-scope').innerText = '经典豪门实盘德比';
-    } else {
-      activeMatches = MockData.JINGCAI_MATCHES;
-      document.getElementById('live-date-scope').innerText = MockData.META.dateScope;
-    }
-    clearSlip();
-    renderJingcai();
+  function validateCurrentSnapshot() {
+    if (currentDataset === 'classic') return true;
+    const age = Date.now() - Date.parse(MockData.META.syncedAt);
+    const invalid = !MockData.META.validSnapshot || !Number.isFinite(age) || age > 86400000 || age < -60000 ||
+      Object.keys(selectedPicks).some(id => { const m=activeMatches.find(m=>m.id===id); return !m || !Number.isFinite(Date.parse(m.kickoffAt)) || Date.parse(m.kickoffAt) <= Date.now(); });
+    if (invalid) { invalidateGeneratedState(); notifyUser('快照不可用、已过期或所选比赛已开赛，请重新核验数据。'); return false; }
+    return true;
   }
-
+  function invalidateGeneratedState() {
+    latestBatchResult = null;
+    ['opt-result-card','beidan-opt-card','lancai-opt-card','ticket-modal'].forEach(id => { const el=document.getElementById(id); if(el) el.style.display='none'; });
+    const text=document.getElementById('pos-text'); if(text) text.value='';
+  }
+  document.addEventListener('input', invalidateGeneratedState);
+  document.addEventListener('change', invalidateGeneratedState);
+  function esc(value) {
+    return String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  function getSFCMatches() { return currentDataset === 'classic' ? MockData.CLASSIC_SFC_MATCHES : (MockData.META.stale ? [] : MockData.SFC_MATCHES); }
+  function getBeidanMatches() { return currentDataset === 'classic' ? MockData.BEIDAN_MATCHES : []; }
+  function getLancaiMatches() { return currentDataset === 'classic' ? MockData.LANCAI_MATCHES : []; }
+  function matchModel(m) {
+    try {
+      const split = FormAnalyzer.analyzeHomeAwaySplits(m.homeTeam, m.awayTeam);
+      const formH = FormAnalyzer.analyzeRecentForm(m.homeTeam);
+      const sim = FormAnalyzer.poissonMatchProbabilities(split.expectedGoalsHome, split.expectedGoalsAway);
+      return { split, formH, sim };
+    } catch (_) { return null; }
+  }
+  function toggleDataset(type) {
+    currentDataset = type === 'classic' ? 'classic' : 'live';
+    activeMatches = currentDataset === 'classic' ? MockData.CLASSIC_JINGCAI_MATCHES : MockData.JINGCAI_MATCHES;
+    const sourceFailures = Object.entries(MockData.META.sourceErrors || {}).filter(([, error]) => error).map(([market, error]) => `${market === 'sfc' ? '胜负彩' : '竞彩'}来源失败：${typeof error === 'string' ? error : error.message || '数据未通过校验'}`);
+    document.getElementById('live-date-scope').innerText = currentDataset === 'classic' ? '演示数据：球队、战绩和赔率均为手工构造，非真实实盘' : [MockData.META.dateScope, ...sourceFailures].join('；');
+    document.getElementById('live-sync-time').innerText = currentDataset === 'classic' ? '' : MockData.META.displayTime;
+    sfcPicks = Array.from({length:14}, () => []);
+    beidanPicks = {}; lancaiPicks = {}; latestBatchResult = null;
+    clearSlip(); renderJingcai(); switchMainTab(currentTab);
+  }
   function refreshLiveMatches() {
-    alert('正在同步中国体彩最新实盘数据...\n当前已载入 ' + activeMatches.length + ' 场官方在售赛事，赔率与让球为即时盘面！');
-    renderJingcai();
+    // Reload the published snapshot. This page has no live odds collector.
+    window.location.reload();
   }
 
   // Switch Tabs
@@ -1069,76 +1104,33 @@
   function renderJingcai() {
     const tbody = document.getElementById('jingcai-tbody');
     tbody.innerHTML = '';
-
+    if (!activeMatches.length) {
+      tbody.innerHTML = '<tr><td colspan="7">没有合格的赛事快照。可显式切换演示数据；演示不能用于概率提升验证。</td></tr>';
+      return;
+    }
     activeMatches.forEach(m => {
-      const formH = FormAnalyzer.analyzeRecentForm(m.homeTeam);
-      const formA = FormAnalyzer.analyzeRecentForm(m.awayTeam);
-      const split = FormAnalyzer.analyzeHomeAwaySplits(m.homeTeam, m.awayTeam);
-      const sim = FormAnalyzer.poissonMatchProbabilities(split.expectedGoalsHome, split.expectedGoalsAway);
-      const valW = FormAnalyzer.evaluateMarketValue({ realProb: sim.probHome, marketOdds: m.odds.SPF['3'], teamFormScore: formH.formScore });
-
+      const model = matchModel(m);
       const tr = document.createElement('tr');
-      tr.className = 'match-row';
-      tr.innerHTML = `
-        <td class="mono font-bold">${m.matchNum}</td>
-        <td><span class="tag" style="background:#f1f5f9; color:${m.leagueColor || '#0284c7'}; font-weight:800;">${m.league}</span></td>
-        <td>
-          <div class="team-cell">
-            <div class="team-line">
-              <span>${m.homeTeam.name} <span class="team-rank">[${m.homeTeam.rank}]</span></span>
-              <div class="form-streak">
-                ${m.homeTeam.recentResults.slice(0, 5).map(r => `<span class="form-dot dot-${r.toLowerCase()}">${r}</span>`).join('')}
-              </div>
-            </div>
-            <div class="team-line" style="color:#64748b;">
-              <span>${m.awayTeam.name} <span class="team-rank">[${m.awayTeam.rank}]</span></span>
-              <div class="form-streak">
-                ${m.awayTeam.recentResults.slice(0, 5).map(r => `<span class="form-dot dot-${r.toLowerCase()}">${r}</span>`).join('')}
-              </div>
-            </div>
-            <div style="display:flex; justify-content:space-between; font-size:11px; margin-top:2px;">
-              <span class="mono">xG: <strong>${split.expectedGoalsHome}</strong> vs <strong>${split.expectedGoalsAway}</strong></span>
-              ${valW.isValueBet ? '<span class="tag tag-val">价值注 EV ' + valW.ev + '</span>' : ''}
-              ${valW.isOverheatedTrap ? '<span class="tag tag-trap">诱盘陷阱预警</span>' : ''}
-            </div>
-          </div>
-        </td>
-        <td class="mono" style="font-weight:700; color:${m.odds.RQSPF.handicap < 0 ? '#16a34a' : (m.odds.RQSPF.handicap > 0 ? '#e11d48' : '#64748b')};">
-          ${m.odds.RQSPF.handicap > 0 ? '+' + m.odds.RQSPF.handicap : m.odds.RQSPF.handicap}
-        </td>
-        <td>
-          <div style="display:flex; gap:3px; justify-content:center;">
-            <div class="odds-btn ${isPicked(m.id, 'SPF', '3') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'SPF', '3', ${m.odds.SPF['3']}, '胜')">
-              <span>胜</span><span class="odds-val">${m.odds.SPF['3'].toFixed(2)}</span>
-            </div>
-            <div class="odds-btn ${isPicked(m.id, 'SPF', '1') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'SPF', '1', ${m.odds.SPF['1']}, '平')">
-              <span>平</span><span class="odds-val">${m.odds.SPF['1'].toFixed(2)}</span>
-            </div>
-            <div class="odds-btn ${isPicked(m.id, 'SPF', '0') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'SPF', '0', ${m.odds.SPF['0']}, '负')">
-              <span>负</span><span class="odds-val">${m.odds.SPF['0'].toFixed(2)}</span>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div style="display:flex; gap:3px; justify-content:center;">
-            <div class="odds-btn ${isPicked(m.id, 'RQSPF', '3') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'RQSPF', '3', ${m.odds.RQSPF['3']}, '让胜')">
-              <span>让胜</span><span class="odds-val">${m.odds.RQSPF['3'].toFixed(2)}</span>
-            </div>
-            <div class="odds-btn ${isPicked(m.id, 'RQSPF', '1') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'RQSPF', '1', ${m.odds.RQSPF['1']}, '让平')">
-              <span>让平</span><span class="odds-val">${m.odds.RQSPF['1'].toFixed(2)}</span>
-            </div>
-            <div class="odds-btn ${isPicked(m.id, 'RQSPF', '0') ? 'selected' : ''}" onclick="togglePick('${m.id}', 'RQSPF', '0', ${m.odds.RQSPF['0']}, '让负')">
-              <span>让负</span><span class="odds-val">${m.odds.RQSPF['0'].toFixed(2)}</span>
-            </div>
-          </div>
-        </td>
-        <td>
-          <button style="padding:4px 6px; font-size:11px; border:1px solid #cbd5e1; background:#fff; border-radius:4px; cursor:pointer;" onclick="openRadar('${m.id}')">
-            🔍 深度雷达
-          </button>
-        </td>
-      `;
-      tbody.appendChild(tr);
+      const expired = m.kickoffAt && Date.parse(m.kickoffAt) <= Date.now();
+      tr.innerHTML = `<td>${esc(m.matchNum)}</td><td>${esc(m.league)}</td><td>${esc(m.homeTeam.name)} vs ${esc(m.awayTeam.name)}<br><small>${model ? '演示/未校准泊松 xG：' + model.split.expectedGoalsHome + ' / ' + model.split.expectedGoalsAway : '近况与主客场观测缺失；不输出预测概率'}</small></td><td>${esc(m.odds.RQSPF?.handicap ?? '未知')}</td><td></td><td></td><td></td>`;
+      ['SPF','RQSPF'].forEach((market, i) => {
+        const cell = tr.children[4+i];
+        const odds = m.odds[market];
+        if (!odds) { cell.textContent = '来源未提供此玩法'; return; }
+        ['3','1','0'].forEach((pick, j) => {
+          if (!Number.isFinite(odds[pick]) || odds[pick] <= 1) return;
+          const button = document.createElement('button');
+          button.className = 'odds-btn ' + (isPicked(m.id, market, pick) ? 'selected' : '');
+          button.textContent = ['胜','平','负'][j] + ' ' + odds[pick].toFixed(2);
+          button.disabled = !!expired || (currentDataset === 'live' && MockData.META.stale);
+          button.addEventListener('click', () => togglePick(m.id, market, pick, odds[pick], ['胜','平','负'][j]));
+          cell.appendChild(button);
+        });
+      });
+      const radar = document.createElement('button');
+      radar.textContent = '近况雷达'; radar.disabled = !model;
+      radar.addEventListener('click', () => openRadar(m.id));
+      tr.children[6].appendChild(radar); tbody.appendChild(tr);
     });
   }
 
@@ -1148,6 +1140,7 @@
   }
 
   function togglePick(matchId, market, selection, odds, label) {
+    invalidateGeneratedState();
     if (!selectedPicks[matchId]) selectedPicks[matchId] = [];
     const idx = selectedPicks[matchId].findIndex(p => p.market === market && p.selection === selection);
     if (idx >= 0) {
@@ -1190,12 +1183,14 @@
   }
 
   function removeMatch(id) {
+    invalidateGeneratedState();
     delete selectedPicks[id];
     renderJingcai();
     renderSlip();
   }
 
   function clearSlip() {
+    invalidateGeneratedState();
     selectedPicks = {};
     renderJingcai();
     renderSlip();
@@ -1203,6 +1198,7 @@
   }
 
   function setOptStrategy(s) {
+    invalidateGeneratedState();
     currentOptStrategy = s;
     ['equal', 'cold', 'safe'].forEach(x => {
       document.getElementById(`btn-opt-${x}`).classList.toggle('active', x === s);
@@ -1210,65 +1206,36 @@
   }
 
   function triggerQuantModel(strategy) {
+    const candidates = activeMatches.flatMap(m => {
+      const model = matchModel(m);
+      if (!model || !m.odds.SPF || (m.kickoffAt && Date.parse(m.kickoffAt) <= Date.now())) return [];
+      const probabilities = [model.sim.probHome, model.sim.probDraw, model.sim.probAway];
+      const picks = ['3','1','0'].map((selection, i) => ({ match:m, selection, p:probabilities[i], ev:probabilities[i] * m.odds.SPF[selection] }));
+      picks.sort((a,b) => strategy === 'cold' ? b.ev-a.ev : b.p-a.p);
+      return strategy === 'cold' && picks[0].ev <= 1 ? [] : [picks[0]];
+    }).sort((a,b) => strategy === 'cold' ? b.ev-a.ev : b.p-a.p);
+    if (candidates.length < 2) { notifyUser('缺少两场有效观测或符合条件的候选；不生成推测票单。'); return; }
     clearSlip();
-    const candidates = activeMatches.map(m => {
-      const split = FormAnalyzer.analyzeHomeAwaySplits(m.homeTeam, m.awayTeam);
-      const sim = FormAnalyzer.poissonMatchProbabilities(split.expectedGoalsHome, split.expectedGoalsAway);
-      const formH = FormAnalyzer.analyzeRecentForm(m.homeTeam);
-      const evH = FormAnalyzer.evaluateMarketValue({ realProb: sim.probHome, marketOdds: m.odds.SPF['3'], teamFormScore: formH.formScore });
-      return { match: m, split, sim, evH, formH };
-    });
-
-    if (strategy === 'steady') {
-      candidates.sort((a, b) => b.sim.probHome - a.sim.probHome);
-      const pick1 = candidates[0].match;
-      const pick2 = candidates[1].match;
-
-      togglePick(pick1.id, 'SPF', '3', pick1.odds.SPF['3'], '胜');
-      togglePick(pick2.id, 'SPF', '3', pick2.odds.SPF['3'], '胜');
-      togglePick(pick2.id, 'SPF', '1', pick2.odds.SPF['1'], '平');
-
-      setOptStrategy('equal');
-      runOptimization();
-      alert(`【🤖 量化稳健对冲选单已生成】\n已自动勾选：${pick1.matchNum} ${pick1.homeTeam.name}(胜) 与 ${pick2.matchNum} ${pick2.homeTeam.name}(胜/平)\n已自动求解 ILP 平均优化锁定预算！`);
-    } else if (strategy === 'cold') {
-      const coldPicks = candidates.filter(c => c.evH.isValueBet || c.match.odds.RQSPF['0'] > 2.2);
-      const p1 = coldPicks[0] ? coldPicks[0].match : candidates[0].match;
-      const p2 = coldPicks[1] ? coldPicks[1].match : candidates[1].match;
-
-      togglePick(p1.id, 'SPF', '3', p1.odds.SPF['3'], '胜');
-      togglePick(p2.id, 'RQSPF', '0', p2.odds.RQSPF['0'], '让负');
-
-      setOptStrategy('cold');
-      runOptimization();
-      alert(`【⚡ 量化价值博冷选单已生成】\n已自动勾选价值注：${p1.matchNum}(胜) 与高赔受让：${p2.matchNum}(让负)\n已自动激活 ILP 博冷优化，利润向高赔注倾斜！`);
-    }
+    candidates.slice(0,2).forEach(p => togglePick(p.match.id,'SPF',p.selection,p.match.odds.SPF[p.selection],{'3':'胜','1':'平','0':'负'}[p.selection]));
+    setOptStrategy(strategy === 'cold' ? 'cold' : 'equal'); runOptimization();
+    notifyUser('已生成未校准模型的演示候选。EV 依赖概率假设，尚无样本外预测优势证据。');
   }
 
   function triggerQuantDiagnosis() {
     const matchIds = Object.keys(selectedPicks);
     if (matchIds.length === 0) {
-      alert('请先勾选比赛赛果，再进行深度量化体检！');
+      notifyUser('请先勾选比赛赛果，再进行深度量化体检！');
       return;
     }
-    let totalReturnRate = JingcaiEngine.theoreticalReturnRate(matchIds.length);
-    let totalOverround = 0;
-    matchIds.forEach(id => {
-      const m = activeMatches.find(x => x.id === id);
-      if (m) {
-        const o = JingcaiEngine.calculateOverround([m.odds.SPF['3'], m.odds.SPF['1'], m.odds.SPF['0']]);
-        totalOverround += o.marginPercent;
-      }
-    });
-    const avgMargin = Math.round(totalOverround / matchIds.length);
-
-    alert(`【💡 选单方案深度量化体检报告】\n- 勾选场次数: ${matchIds.length} 场\n- 串关理论返还率: ${(totalReturnRate*100).toFixed(2)}%\n- 机构平均抽水损耗: ${avgMargin}%\n- 风险提示: ${matchIds.length > 3 ? '⚠️ 串关场次过多导致抽水乘方衰减严重，建议拆单为 2串1！' : '✅ 关数健康，抗抽水风险优秀！'}`);
+    const margins = matchIds.map(id => activeMatches.find(m => m.id === id)).filter(m => m?.odds.SPF).map(m => JingcaiEngine.calculateOverround(['3','1','0'].map(k => m.odds.SPF[k])).marginPercent);
+    notifyUser('已选 ' + matchIds.length + ' 场。胜平负盘口超额概率均值：' + (margins.reduce((a,b)=>a+b,0)/(margins.length || 1)).toFixed(2) + '%。这不是你的预期亏损率；未校准模型无法给出可靠收益预期。');
   }
 
   function runOptimization() {
+    if (!validateCurrentSnapshot()) return;
     const matchIds = Object.keys(selectedPicks);
-    if (matchIds.length < 2) {
-      alert('请至少选择 2 场比赛组合串关！');
+    if (matchIds.length < (document.getElementById('pass-type-select').value === '1_1' ? 1 : 2)) {
+      notifyUser('请至少选择 2 场比赛组合串关！');
       return;
     }
 
@@ -1286,9 +1253,10 @@
     };
 
     const budget = parseInt(document.getElementById('budget-input').value, 10);
-    const combos = JingcaiEngine.expandSlipToCombinations(slip);
+    let combos;
 
     try {
+      combos = JingcaiEngine.expandSlipToCombinations(slip);
       const opt = JingcaiEngine.optimizeBonus(combos, budget, currentOptStrategy);
       const card = document.getElementById('opt-result-card');
       card.style.display = 'block';
@@ -1301,7 +1269,7 @@
             <span class="mono font-bold" style="color:#0284c7;">${a.multiplier}倍</span>
             <span>(${a.legs.map(l => `${l.matchNum || l.matchId}[${l.label || l.selection}]`).join(' × ')})</span>
           </div>
-          <div class="mono" style="font-weight:700; color:#16a34a;">预计 ${a.expectedPayout} 元</div>
+          <div class="mono" style="font-weight:700; color:#16a34a;">该票中奖返奖 ${a.expectedPayout} 元</div>
         </div>
       `).join('');
 
@@ -1311,19 +1279,19 @@
       });
       activeBatchEngine = 'jingcai';
     } catch (e) {
-      alert(e.message);
+      notifyUser(e.message);
     }
   }
 
   // --- TAB 2: SFC / RX9 ---
   function renderSFC() {
     const tbody = document.getElementById('sfc-tbody');
-    const sfcData = MockData.SFC_MATCHES;
+    const sfcData = getSFCMatches();
     tbody.innerHTML = sfcData.map((m, idx) => `
       <tr>
         <td class="mono font-bold">${m.matchIdx}</td>
-        <td><span class="tag" style="background:#f1f5f9;">${m.league}</span></td>
-        <td><strong>${m.home}</strong> vs <strong>${m.away}</strong></td>
+        <td><span class="tag" style="background:#f1f5f9;">${esc(m.league)}</span></td>
+        <td><strong>${esc(m.home)}</strong> vs <strong>${esc(m.away)}</strong></td>
         <td>
           <div class="odds-btn ${sfcPicks[idx].includes('3') ? 'selected' : ''}" onclick="toggleSFCPick(${idx}, '3')">
             <span>主胜</span><span class="odds-val">${m.odds['3'].toFixed(2)}</span>
@@ -1346,6 +1314,7 @@
   }
 
   function toggleSFCPick(idx, pick) {
+    invalidateGeneratedState();
     const p = sfcPicks[idx];
     const i = p.indexOf(pick);
     if (i >= 0) p.splice(i, 1);
@@ -1360,7 +1329,7 @@
         const res = SFCEngine.calculateSFC14Bets(sfcPicks);
         document.getElementById('sfc-bet-count').innerText = res.betCount;
         document.getElementById('sfc-cost').innerText = res.costYuan;
-        const cold = SFCEngine.calculateColdnessIndex(sfcPicks, MockData.SFC_MATCHES);
+        const cold = SFCEngine.calculateColdnessIndex(sfcPicks, getSFCMatches());
         document.getElementById('sfc-cold-alert').innerHTML = `<span class="${cold.firePotWarning ? 'tag tag-trap' : 'tag tag-val'}">${cold.description} (指数: ${cold.score})</span>`;
       } else {
         const res = SFCEngine.calculateRX9Bets(sfcPicks);
@@ -1375,37 +1344,39 @@
   }
 
   function triggerSFCQuant(mode) {
+    invalidateGeneratedState();
+    if (getSFCMatches().length !== 14) { notifyUser('缺少完整14场赛事快照；请显式选择演示模式。'); return; }
     if (mode === '14') {
-      const q = SFCEngine.generateQuantPicks14(MockData.SFC_MATCHES);
+      const q = SFCEngine.generateQuantPicks14(getSFCMatches());
       sfcPicks = q.picks;
       document.querySelector('input[name="sfc-mode"][value="14"]').checked = true;
       renderSFC();
-      alert(`【🤖 14场胜负彩量化选单已生成】\n已自动锁定重热稳胆，并在 4 场胶着场次配置了平局防冷！\n共 ${q.betCount} 注，金额 ${q.costYuan} 元。`);
+      notifyUser(`【🤖 14场胜负彩量化选单已生成】\n已按市场概率排序并分配多选覆盖。\n共 ${q.betCount} 注，金额 ${q.costYuan} 元。仅按市场赔率排序，无已验证预测优势。`);
     } else {
-      const q = SFCEngine.generateQuantPicksRX9(MockData.SFC_MATCHES);
+      const q = SFCEngine.generateQuantPicksRX9(getSFCMatches());
       sfcPicks = q.picks;
       document.querySelector('input[name="sfc-mode"][value="rx9"]').checked = true;
       renderSFC();
-      alert(`【⚡ 黄金任选九量化选单已生成】\n已自动从 14 场中筛选出信心最高的 9 场黄金稳胆！\n共 ${q.betCount} 注，金额 ${q.costYuan} 元。`);
+      notifyUser(`【⚡ 黄金任选九量化选单已生成】\n已按市场基准从14场中选择9场及多选覆盖。\n共 ${q.betCount} 注，金额 ${q.costYuan} 元。仅按市场赔率排序，无已验证预测优势。`);
     }
   }
 
   function reduceSFC() {
     try {
       const wheel = SFCEngine.generateCoveringReduction(sfcPicks, { guarantee: 13 });
-      alert(`保14中13缩水完成！\n原注数: ${wheel.originalBetCount} 注\n缩水后: ${wheel.reducedBets.length} 注\n资金节约率: ${wheel.compressionRate}%`);
+      notifyUser(`保14中13缩水完成！\n原注数: ${wheel.originalBetCount} 注\n缩水后: ${wheel.reducedBets.length} 注\n资金节约率: ${wheel.compressionRate}%`);
     } catch (e) {
-      alert(e.message);
+      notifyUser(e.message);
     }
   }
 
   // --- TAB 3: BEIDAN ---
   function renderBeidan() {
     const tbody = document.getElementById('beidan-tbody');
-    tbody.innerHTML = MockData.BEIDAN_MATCHES.map(m => `
+    tbody.innerHTML = getBeidanMatches().map(m => `
       <tr>
         <td class="mono font-bold">${m.matchNum}</td>
-        <td><span class="tag" style="background:#f1f5f9;">${m.league}</span></td>
+        <td><span class="tag" style="background:#f1f5f9;">${esc(m.league)}</span></td>
         <td><strong>${m.homeTeam}</strong> vs <strong>${m.awayTeam}</strong></td>
         <td class="mono" style="font-weight:700; color:${m.handicap < 0 ? '#16a34a' : '#e11d48'};">${m.handicap}</td>
         <td>
@@ -1433,6 +1404,7 @@
   }
 
   function toggleBeidanPick(matchId, selection, sp, label) {
+    invalidateGeneratedState();
     if (!beidanPicks[matchId]) beidanPicks[matchId] = [];
     const idx = beidanPicks[matchId].findIndex(p => p.selection === selection);
     if (idx >= 0) {
@@ -1452,7 +1424,7 @@
       return;
     }
     list.innerHTML = ids.map(id => {
-      const m = MockData.BEIDAN_MATCHES.find(x => x.id === id);
+      const m = getBeidanMatches().find(x => x.id === id);
       return `
         <div class="slip-item">
           <div>
@@ -1468,36 +1440,39 @@
   }
 
   function removeBeidanMatch(id) {
+    invalidateGeneratedState();
     delete beidanPicks[id];
     renderBeidan();
   }
 
   function clearBeidanSlip() {
+    invalidateGeneratedState();
     beidanPicks = {};
     renderBeidan();
     document.getElementById('beidan-opt-card').style.display = 'none';
   }
 
   function triggerBeidanQuant() {
-    const q = BeidanEngine.generateQuantPicksBeidan(MockData.BEIDAN_MATCHES, 'steady');
+    if (!getBeidanMatches().length) { notifyUser('北单来源快照不可用；请显式选择演示模式。'); return; }
+    const q = BeidanEngine.generateQuantPicksBeidan(getBeidanMatches(), 'steady');
     beidanPicks = {};
     q.matches.forEach(m => {
       beidanPicks[m.matchId] = m.picks;
     });
     renderBeidan();
     runBeidanOptimization();
-    alert('【🤖 北单量化模型选单已生成】\n已自动选取让球盘口价值对冲场次，并计算 65% 浮动返奖率倍数！');
+    notifyUser('【🤖 北单量化模型选单已生成】\n已按市场基准排序，金额使用既有结算假设；没有独立预测优势证据。');
   }
 
   function runBeidanOptimization() {
     const ids = Object.keys(beidanPicks);
     if (ids.length < 2) {
-      alert('北单串关请至少选择 2 场比赛！');
+      notifyUser('北单串关请至少选择 2 场比赛！');
       return;
     }
     const slip = {
       matches: ids.map(id => {
-        const m = MockData.BEIDAN_MATCHES.find(x => x.id === id);
+        const m = getBeidanMatches().find(x => x.id === id);
         return {
           matchId: id,
           matchNum: m.matchNum,
@@ -1519,21 +1494,21 @@
             <span class="mono font-bold" style="color:#0284c7;">${a.multiplier}倍</span>
             <span>(${a.legs.map(l => `${l.matchNum}[${l.label || l.selection}]`).join(' × ')})</span>
           </div>
-          <div class="mono" style="font-weight:700; color:#16a34a;">预估 ${a.expectedPayout} 元</div>
+          <div class="mono" style="font-weight:700; color:#16a34a;">假设该票中奖返奖 ${a.expectedPayout} 元</div>
         </div>
       `).join('');
 
       latestBatchResult = BeidanEngine.generateBatchTickets(opt, { passType: slip.passType });
       activeBatchEngine = 'beidan';
     } catch (e) {
-      alert(e.message);
+      notifyUser(e.message);
     }
   }
 
   // --- TAB 4: LANCAI ---
   function renderLancai() {
     const tbody = document.getElementById('lancai-tbody');
-    tbody.innerHTML = MockData.LANCAI_MATCHES.map(m => {
+    tbody.innerHTML = getLancaiMatches().map(m => {
       const dyn = LancaiEngine.estimateBasketballDynamics(m.homeTeam, m.awayTeam);
       return `
         <tr>
@@ -1590,6 +1565,7 @@
   }
 
   function toggleLancaiPick(matchId, market, selection, odds, label) {
+    invalidateGeneratedState();
     if (!lancaiPicks[matchId]) lancaiPicks[matchId] = [];
     const idx = lancaiPicks[matchId].findIndex(p => p.market === market && p.selection === selection);
     if (idx >= 0) {
@@ -1609,7 +1585,7 @@
       return;
     }
     list.innerHTML = ids.map(id => {
-      const m = MockData.LANCAI_MATCHES.find(x => x.id === id);
+      const m = getLancaiMatches().find(x => x.id === id);
       return `
         <div class="slip-item">
           <div>
@@ -1625,36 +1601,39 @@
   }
 
   function removeLancaiMatch(id) {
+    invalidateGeneratedState();
     delete lancaiPicks[id];
     renderLancai();
   }
 
   function clearLancaiSlip() {
+    invalidateGeneratedState();
     lancaiPicks = {};
     renderLancai();
     document.getElementById('lancai-opt-card').style.display = 'none';
   }
 
   function triggerLancaiQuant() {
-    const q = LancaiEngine.generateQuantPicksLancai(MockData.LANCAI_MATCHES, 'steady');
+    if (!getLancaiMatches().length) { notifyUser('篮彩来源快照不可用；请显式选择演示模式。'); return; }
+    const q = LancaiEngine.generateQuantPicksLancai(getLancaiMatches(), 'steady');
     lancaiPicks = {};
     q.matches.forEach(m => {
       lancaiPicks[m.matchId] = m.picks;
     });
     renderLancai();
     runLancaiOptimization();
-    alert('【🤖 篮彩量化模型选单已生成】\n已结合 NBA 回合节奏与背靠背疲劳折损，自动推荐让分与总分对冲单！');
+    notifyUser('【🤖 篮彩量化模型选单已生成】\n已结合 NBA 回合节奏与背靠背疲劳折损，自动推荐让分与总分对冲单！');
   }
 
   function runLancaiOptimization() {
     const ids = Object.keys(lancaiPicks);
     if (ids.length < 2) {
-      alert('篮彩串关请至少选择 2 场比赛！');
+      notifyUser('篮彩串关请至少选择 2 场比赛！');
       return;
     }
     const slip = {
       matches: ids.map(id => {
-        const m = MockData.LANCAI_MATCHES.find(x => x.id === id);
+        const m = getLancaiMatches().find(x => x.id === id);
         return {
           matchId: id,
           matchNum: m.matchNum,
@@ -1676,57 +1655,59 @@
             <span class="mono font-bold" style="color:#0284c7;">${a.multiplier}倍</span>
             <span>(${a.legs.map(l => `${l.matchNum}[${l.label || l.selection}]`).join(' × ')})</span>
           </div>
-          <div class="mono" style="font-weight:700; color:#16a34a;">预计 ${a.expectedPayout} 元</div>
+          <div class="mono" style="font-weight:700; color:#16a34a;">该票中奖返奖 ${a.expectedPayout} 元</div>
         </div>
       `).join('');
 
       latestBatchResult = LancaiEngine.generateBatchTickets(opt, { passType: slip.passType });
       activeBatchEngine = 'lancai';
     } catch (e) {
-      alert(e.message);
+      notifyUser(e.message);
     }
   }
 
   // --- BATCH TICKETS MODAL (UNIFIED) ---
   function openBatchTicketModal(source) {
+    if (!validateCurrentSnapshot()) return;
     const modal = document.getElementById('ticket-modal');
     const container = document.getElementById('ticket-body');
     container.innerHTML = '';
 
     let batch = null;
-    let title = '彩票店打票机批量出单终端 (POS Ready)';
+    let title = '票单格式预览（终端协议未核验）';
 
     if (source === 'sfc') {
+      if (currentDataset !== 'classic') { notifyUser('来源没有可验证期号，不能导出实体票单。'); return; }
       const mode = document.querySelector('input[name="sfc-mode"]:checked').value;
       const count = sfcPicks.filter(p => p && p.length > 0).length;
       if (mode === '14' && count !== 14) {
-        alert('请先完整勾选 14 场比赛或点击【SFC 量化选单】后再出单！');
+        notifyUser('请先完整勾选 14 场比赛或点击【SFC 量化选单】后再出单！');
         return;
       } else if (mode === 'rx9' && count < 9) {
-        alert('请至少勾选 9 场比赛或点击【RX9 量化选单】后再出单！');
+        notifyUser('请至少勾选 9 场比赛或点击【RX9 量化选单】后再出单！');
         return;
       }
-      batch = SFCEngine.generateBatchTickets(sfcPicks, mode, { issue: '25068', multiplier: 1 });
+      batch = SFCEngine.generateBatchTickets(sfcPicks, mode === 'rx9' ? '9' : '14', { issue: 'DEMO', multiplier: 1 });
       title = `中国体育彩票 · 传统足彩 (${mode === '14' ? '14场' : '任九'}) 批量机打单`;
       activeBatchEngine = 'sfc';
       latestBatchResult = batch;
     } else if (source === 'beidan') {
       if (!latestBatchResult || activeBatchEngine !== 'beidan') {
-        alert('请先点击【求解 65% 浮动返奖率最优资金配置】后再出单！');
+        notifyUser('请先点击【求解 65% 浮动返奖率最优资金配置】后再出单！');
         return;
       }
       batch = latestBatchResult;
       title = '中国体育彩票 · 北京单场(DC) 批量机打单';
     } else if (source === 'lancai') {
       if (!latestBatchResult || activeBatchEngine !== 'lancai') {
-        alert('请先点击【求解最优资金配置】后再出单！');
+        notifyUser('请先点击【求解最优资金配置】后再出单！');
         return;
       }
       batch = latestBatchResult;
       title = '中国体育彩票 · 竞彩篮球(JCLQ) 批量机打单';
     } else {
       if (!latestBatchResult || activeBatchEngine !== 'jingcai') {
-        alert('请先进行奖金优化计算后再出单！');
+        notifyUser('请先进行奖金优化计算后再出单！');
         return;
       }
       batch = latestBatchResult;
@@ -1766,6 +1747,8 @@
   }
 
   function copyPOSText() {
+    if (!validateCurrentSnapshot()) return;
+    if (!latestBatchResult) { notifyUser('输入已变更，请重新生成票单。'); return; }
     if (!latestBatchResult) return;
     let txt = '';
     if (activeBatchEngine === 'sfc') txt = SFCEngine.exportPOSText(latestBatchResult);
@@ -1781,6 +1764,8 @@
   }
 
   function downloadPOSTxt() {
+    if (!validateCurrentSnapshot()) return;
+    if (!latestBatchResult) { notifyUser('输入已变更，请重新生成票单。'); return; }
     if (!latestBatchResult) return;
     let txt = '';
     if (activeBatchEngine === 'sfc') txt = SFCEngine.exportPOSText(latestBatchResult);
@@ -1841,20 +1826,30 @@
   }
 
   // --- Mobile QR Modal & Mobile Bottom Bar Handlers ---
-  function openMobileQRModal() {
-    const port = window.location.port || '8080';
-    const host = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || !window.location.hostname) ? '192.168.0.3' : window.location.hostname;
-    const url = `http://${host}:${port}/sports.html`;
-
-    document.getElementById('lan-url-display').innerText = url;
-    document.getElementById('qr-img').src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=10&data=${encodeURIComponent(url)}`;
-    document.getElementById('mobile-qr-modal').style.display = 'flex';
+  async function openMobileQRModal() {
+    const display=document.getElementById('lan-url-display');
+    document.getElementById('qr-img').style.display='none';
+    let url=window.location.href;
+    if (window.location.protocol === 'file:') {
+      display.innerText='离线文件：将 sports-standalone.html 复制到手机后打开。';
+    } else {
+      try {
+        const response=await fetch('/api/server-info');
+        if(response.ok) {
+          const info=await response.json();
+          if(!info.lanEnabled) { display.innerText='当前服务仅允许本机访问。手机可直接打开离线单文件；局域网服务需显式启用。'; document.getElementById('mobile-qr-modal').style.display='flex'; return; }
+          url=info.sportsUrl;
+        }
+      } catch (_) { /* Static hosting uses its current public URL. */ }
+      display.innerText=url;
+    }
+    document.getElementById('mobile-qr-modal').style.display='flex';
   }
 
   function copyLanUrl() {
     const url = document.getElementById('lan-url-display').innerText;
     navigator.clipboard.writeText(url).then(() => {
-      alert('手机访问链接已复制到剪贴板！\n' + url);
+      notifyUser('手机访问链接已复制到剪贴板！\n' + url);
     });
   }
 
@@ -1910,7 +1905,7 @@
   renderLancai = function() { origRenderLancai(); updateMobileBar(); };
 
   // Init
-  renderJingcai();
+  toggleDataset('live');
   updateMobileBar();
 </script>
 

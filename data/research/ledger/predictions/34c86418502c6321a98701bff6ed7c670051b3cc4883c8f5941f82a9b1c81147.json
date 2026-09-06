@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "34c86418502c6321a98701bff6ed7c670051b3cc4883c8f5941f82a9b1c81147",
+  "recordedAt": "2026-09-05T18:48:53.343Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1419123",
+      "kickoffAt": "2026-09-06T09:00:00.000Z",
+      "homeTeam": "名古屋鲸",
+      "awayTeam": "町田泽维",
+      "competition": "日职",
+      "odds": {
+        "home": 3.05,
+        "draw": 3.35,
+        "away": 1.99
+      },
+      "sourceEventId": "1419123"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-05T18:48:45.225Z",
+      "bodySha256": "4cbc3cb20383abfff1a449977991566076267ed1ebc7ba6ade20443b6a105e27"
+    },
+    "prediction": {
+      "modelId": "uniform",
+      "version": "1.0.0",
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "trainingCutoff": "2026-09-05T18:48:48.855Z",
+      "trainingCount": 4,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-05T18:48:45.225Z",
+    "paperTrade": {
+      "selectionWeights": [
+        0,
+        1,
+        0
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "bf5c26e05e89c78c68f1842d57a4fad7488039073862e458cf9c226fb1956e5f"
+  }
+}

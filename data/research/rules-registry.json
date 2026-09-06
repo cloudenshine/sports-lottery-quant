@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-05T18:18:25Z",
+  "localReviewDate": "2026-09-06",
+  "scope": "China mainland lottery research settlement evidence; rule verification is not live-data or prediction verification",
+  "verificationPolicy": {
+    "verified": "Official primary page or official rule reprint was opened and read; only specified contract verified",
+    "pending": "Only discovery snippet, indirect explanation, inaccessible text, or missing complete contract; no official auto-settlement",
+    "timeNote": "reviewedAt is review compilation time; individual source reads occurred during the same session",
+    "cacheNote": "web may serve cached indexed content; no raw HTTP freshness claim"
+  },
+  "sources": [
+    {
+      "id": "fj-jc-payout",
+      "url": "https://www.fjtc.com.cn/2024-04/01/content_31550891.htm",
+      "publisher": "福建省体育彩票管理中心",
+      "publishedAt": "2024-04-01",
+      "location": "奖金计算一、二（正文61-104行）",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "fj-jc-football",
+      "url": "https://www.fjtc.com.cn/2024-04/01/content_31550872.htm",
+      "publisher": "福建省体育彩票管理中心",
+      "publishedAt": "2024-04-01",
+      "location": "第6、7、11、14、15、19、21条",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "fj-jc-basketball",
+      "url": "https://www.fjtc.com.cn/2024-04/01/content_31550877.htm",
+      "publisher": "福建省体育彩票管理中心",
+      "publishedAt": "2024-04-01",
+      "location": "第6、7、11、14、15、19、21条",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "beijing-sp",
+      "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043167/index.html",
+      "publisher": "北京市体育局",
+      "publishedAt": "2023-02-23",
+      "location": "问答正文30行",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "beijing-return",
+      "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043164/index.html",
+      "publisher": "北京市体育局",
+      "publishedAt": "2023-02-23",
+      "location": "问答正文31行",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "js-dlt-2026",
+      "url": "https://www.js-lottery.com/wfzq/dlt/wfjs/cms/post-146354.html",
+      "publisher": "江苏省体育彩票管理中心",
+      "publishedAt": "2026-01-31",
+      "location": "第15、16、25条",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "js-dlt-effective",
+      "url": "https://www.js-lottery.com/tzgg/tzgg/cms/post-146276.html",
+      "publisher": "江苏省体育彩票管理中心",
+      "publishedAt": "2026-01-17",
+      "location": "公告第1、2段",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "sport-policy-2020",
+      "url": "https://www.sport.gov.cn/gdnps/files/c28047814/28048342.pdf",
+      "publisher": "财政部、国家体育总局",
+      "publishedAt": "2020-10-19",
+      "location": "财综〔2020〕42号 第1-2页",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "sport-policy-2019",
+      "url": "https://www.sport.gov.cn/cpzx/n5656/c897408/content.html",
+      "publisher": "国家体育总局体育彩票管理中心",
+      "publishedAt": "2019-03-22",
+      "location": "财综〔2019〕4号 第（六）项",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "js-sfc-rx9",
+      "url": "https://www.js-lottery.com/wfzq/ctzq/wfjs/cms/post-49203.html",
+      "publisher": "江苏省体育彩票管理中心",
+      "publishedAt": "2009-11-24",
+      "location": "胜负游戏第7-13条、任选9场第7-13条",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    },
+    {
+      "id": "fj-sfc-cancel",
+      "url": "https://www.fjtc.com.cn/2013-07/03/content_31607945.htm",
+      "publisher": "福建省体育彩票管理中心刊载中国体育报解释",
+      "publishedAt": "2013-07-03",
+      "location": "引用管理办法第13条；该页是规则解读非完整规则",
+      "access": "primary_page_read",
+      "verifiedOn": "2026-09-06",
+      "retrievalTool": "web.run open",
+      "rawBodyArchived": false
+    }
+  ],
+  "rules": [
+    {
+      "id": "jingcai.fixed-gross-payout",
+      "games": [
+        "jingcai",
+        "lancai"
+      ],
+      "status": "verified",
+      "sources": [
+        "fj-jc-payout",
+        "fj-jc-football",
+        "fj-jc-basketball"
+      ],
+      "contract": {
+        "baseStakeYuan": 2,
+        "oddsType": "fixed_gross_return_multiplier",
+        "formula": "2 * product(ticket_time_fixed_odds)",
+        "extraReturnRateFactor": 1,
+        "profit": "gross_payout - total_stake"
+      }
+    },
+    {
+      "id": "jingcai.rounding",
+      "games": [
+        "jingcai",
+        "lancai"
+      ],
+      "status": "verified",
+      "sources": [
+        "fj-jc-payout"
+      ],
+      "contract": {
+        "precision": 2,
+        "method": "third_decimal_digit_even_rule",
+        "unitFirst": true,
+        "ticketFormula": "sum(rounded_capped_winning_unit_prizes) * multiplier",
+        "algorithm": "decimal digit 3: 0-4 truncate, 6-9 increment cents, 5 increment iff cents digit odd",
+        "note": "Literal official wording considers the third decimal digit, not an IEEE binary float tie; source does not separately discuss nonzero digits after the third."
+      }
+    },
+    {
+      "id": "jingcai.caps",
+      "games": [
+        "jingcai",
+        "lancai"
+      ],
+      "status": "verified",
+      "sources": [
+        "fj-jc-payout"
+      ],
+      "contract": {
+        "perUnitYuan": {
+          "1": 100000,
+          "2": 200000,
+          "3": 200000,
+          "4": 500000,
+          "5": 500000,
+          "6": 1000000,
+          "7": 1000000,
+          "8": 1000000
+        },
+        "beforeMultiplier": true
+      }
+    },
+    {
+      "id": "jingcai.market-eligibility",
+      "games": [
+        "jingcai",
+        "lancai"
+      ],
+      "status": "verified",
+      "sources": [
+        "fj-jc-football",
+        "fj-jc-basketball"
+      ],
+      "contract": {
+        "singles": "require explicit match and pool eligibility at prediction time",
+        "sameMatchMixedParlay": false,
+        "crossSportParlay": false,
+        "missingEligibility": "unknown"
+      }
+    },
+    {
+      "id": "jingcai.result-scope",
+      "games": [
+        "jingcai",
+        "lancai"
+      ],
+      "status": "verified",
+      "sources": [
+        "fj-jc-football",
+        "fj-jc-basketball"
+      ],
+      "contract": {
+        "football": "90 minutes including stoppage time",
+        "basketball": "full game including overtime",
+        "laterSportResultRevision": "does not revise previously confirmed lottery result"
+      }
+    },
+    {
+      "id": "jingcai.void-settlement",
+      "games": [
+        "jingcai",
+        "lancai"
+      ],
+      "status": "verified",
+      "sources": [
+        "fj-jc-football",
+        "fj-jc-basketball"
+      ],
+      "contract": {
+        "requiredEvidence": "official lottery invalid-match determination",
+        "single": "refund",
+        "parlay": "remove void leg and use remaining fixed odds at original ticket time",
+        "postponedHours": 36,
+        "interruptedHours": 36,
+        "interruptedClockOrigin": "interruption time",
+        "basketballException": "35+ of 40 regulation minutes or 43+ of 48, plus referee or organiser declared officially complete",
+        "automaticVoidFromMissingScore": false
+      }
+    },
+    {
+      "id": "jingcai.policy-limits",
+      "games": [
+        "jingcai",
+        "lancai"
+      ],
+      "status": "verified",
+      "sources": [
+        "sport-policy-2019",
+        "sport-policy-2020"
+      ],
+      "contract": {
+        "ticketStakeCapYuan": 6000,
+        "multiBetRange": [
+          2,
+          50
+        ],
+        "singleBetMultiplier": 1,
+        "aggregateGameReturnRate": 0.7,
+        "extraFactorOnQuotedFixedOdds": false
+      },
+      "note": "1 is one base bet; the stated multi-bet range governs multiplied tickets. Limits require physical ticket splitting, not discarding total-plan budget."
+    },
+    {
+      "id": "beidan.sp-definition",
+      "games": [
+        "beidan"
+      ],
+      "status": "verified",
+      "sources": [
+        "beijing-sp"
+      ],
+      "contract": {
+        "finalSP": "total_match_stake / winning_match_stake",
+        "includesReturnRate": false,
+        "indicativeSP": "market tendency only, not settlement price",
+        "requiredSettlementInput": "official final SP"
+      }
+    },
+    {
+      "id": "beidan.return-rate",
+      "games": [
+        "beidan"
+      ],
+      "status": "verified",
+      "sources": [
+        "beijing-return"
+      ],
+      "contract": {
+        "rate": 0.65,
+        "model": "floating_pool"
+      },
+      "note": "For raw SP, multiplying by 0.65 once is not a duplicate deduction. Do not apply again to an already net-of-pool payout multiplier."
+    },
+    {
+      "id": "beidan.full-settlement",
+      "games": [
+        "beidan"
+      ],
+      "status": "pending",
+      "sources": [
+        "beijing-sp",
+        "beijing-return"
+      ],
+      "missing": [
+        "full official rule for each supported Beijing single game",
+        "parlay formula original text",
+        "rounding and minimum payout",
+        "cancellation and postponement thresholds",
+        "per-unit prize cap",
+        "handicap format and pass eligibility"
+      ],
+      "candidateFormula": "2 * product(finalSP) * 0.65",
+      "automaticOfficialSettlementAllowed": false,
+      "note": "Government Q&A proves SP definition and rate separately, not the complete parlay/rounding contract. Do not conflate three-way handicap WDL with two-way win-loss pass game."
+    },
+    {
+      "id": "sfc-rx9.prize-classification",
+      "games": [
+        "sfc",
+        "rx9"
+      ],
+      "status": "verified",
+      "sources": [
+        "js-sfc-rx9"
+      ],
+      "contract": {
+        "baseStakeYuan": 2,
+        "sfc": {
+          "13": "second",
+          "14": "first"
+        },
+        "rx9": {
+          "9": "first"
+        },
+        "settlementAmount": "use official prize amount for that draw; floating, not predicted fixed payout",
+        "perUnitCapYuan": 5000000,
+        "prizeUnit": "whole yuan"
+      },
+      "note": "Historical published rule; prize pool allocation is intentionally not assumed current. Special event notices override ordinary treatment."
+    },
+    {
+      "id": "sfc-rx9.cancellation",
+      "games": [
+        "sfc",
+        "rx9"
+      ],
+      "status": "pending",
+      "sources": [
+        "fj-sfc-cancel",
+        "js-sfc-rx9"
+      ],
+      "contract": {
+        "candidate": "postponement before next draw may defer settlement; after next draw or cancelled, all choices treated correct",
+        "require": "draw-specific official notice and result"
+      },
+      "missing": [
+        "current complete Management Measures original text or fetched current draw-specific official notice"
+      ],
+      "automaticClockBasedSettlementAllowed": false
+    },
+    {
+      "id": "dlt.2026-prizes",
+      "games": [
+        "dlt"
+      ],
+      "status": "verified",
+      "sources": [
+        "js-dlt-2026",
+        "js-dlt-effective"
+      ],
+      "contract": {
+        "effectiveIssue": "26014",
+        "saleStart": "2026-01-31T21:10:00+08:00",
+        "poolThresholdYuan": 800000000,
+        "fixedBelowThreshold": {
+          "3": 5000,
+          "4": 300,
+          "5": 150,
+          "6": 15,
+          "7": 5
+        },
+        "fixedAtOrAboveThreshold": {
+          "3": 6666,
+          "4": 380,
+          "5": 200,
+          "6": 18,
+          "7": 7
+        },
+        "matchClasses": {
+          "5+2": 1,
+          "5+1": 2,
+          "5+0": 3,
+          "4+2": 3,
+          "4+1": 4,
+          "4+0": 5,
+          "3+2": 5,
+          "3+1": 6,
+          "2+2": 6,
+          "3+0": 7,
+          "2+1": 7,
+          "1+2": 7,
+          "0+2": 7
+        },
+        "additionalBetYuan": 1,
+        "additionalAwardFraction": 0.8,
+        "additionalAwardClasses": [
+          1,
+          2
+        ],
+        "require": "draw-specific official prize amounts and special-promotion status for exact historical cash settlement"
+      },
+      "note": "Do not determine this draw's payout regime from the post-draw carryover pool alone; source/pool timing must be known. Risk-control and promotions may affect final published amounts."
+    }
+  ],
+  "sourceDiscovery": {
+    "officialApiCandidates": [
+      {
+        "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchListV1.qry?clientCode=3001",
+        "purpose": "scheduled matches and selling status",
+        "status": "pending_live_fetch",
+        "discovery": "public third-party source code, not official API documentation",
+        "observedAttempts": [
+          "web.run open: internal error",
+          "local Node fetch: EACCES (sandbox network)"
+        ],
+        "commercialAPIOrSLAConfirmed": false
+      },
+      {
+        "url": "https://webapi.sporttery.cn/gateway/jc/football/getFixedBonusV1.qry?clientCode=3001&matchId={matchId}",
+        "purpose": "fixed bonus history and match result",
+        "status": "pending_live_fetch",
+        "discovery": "public third-party source code",
+        "observedAttempts": [],
+        "commercialAPIOrSLAConfirmed": false
+      }
+    ],
+    "rejectedEvidence": [
+      "SEO pages claiming to be Beijing single or Sporttery official without institutional provenance",
+      "unrelated gov.cn pages containing lottery SEO and ky.cn promotions",
+      "old Sporttery help pages with floating singles or 68% without current amendments"
+    ],
+    "networkExplanation": "Local direct requests returned EACCES, which establishes sandbox denial, not that official service is down. Use an authorized network run for actual live interface verification."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "sourceId": "fj-jc-football",
+  "url": "https://www.fjtc.com.cn/2024-04/01/content_31550872.htm",
+  "publisher": "福建省体育彩票管理中心",
+  "status": "ok",
+  "cached": false,
+  "lastAttemptAt": "2026-09-05T18:44:02.270Z",
+  "lastSuccessfulFetchAt": "2026-09-05T18:44:02.270Z",
+  "lastSuccessfulBodySha256": "a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430",
+  "initialBodySha256": "a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430",
+  "previousBodySha256": null,
+  "changeStatus": "initial_archive_needs_review",
+  "reviewRequired": true,
+  "error": null,
+  "observedBodySha256": "a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430",
+  "httpStatus": 200,
+  "finalUrl": "https://www.fjtc.com.cn/2024-04/01/content_31550872.htm",
+  "contentType": "text/html",
+  "bodyBytes": 181360,
+  "comparisonStatus": "initial_archive",
+  "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
+}

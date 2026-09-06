@@ -5,7 +5,7 @@ const assert = require("node:assert/strict");
 const fs = require("fs");
 const path = require("path");
 
-const html = fs.readFileSync(path.join(__dirname, "../index.html"), "utf8");
+const html = fs.readFileSync(path.join(__dirname, "../number-tools.html"), "utf8");
 
 describe("UI contract matches L0-L4 controls", () => {
   const ids = [

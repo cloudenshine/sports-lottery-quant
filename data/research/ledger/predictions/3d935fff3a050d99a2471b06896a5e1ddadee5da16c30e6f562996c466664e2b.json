@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "3d935fff3a050d99a2471b06896a5e1ddadee5da16c30e6f562996c466664e2b",
+  "recordedAt": "2026-09-05T18:49:02.457Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1414182",
+      "kickoffAt": "2026-09-07T16:30:00.000Z",
+      "homeTeam": "卡利亚里",
+      "awayTeam": "莱切",
+      "competition": "意甲",
+      "odds": {
+        "home": 1.83,
+        "draw": 3.05,
+        "away": 3.95
+      },
+      "sourceEventId": "1414182"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-05T18:48:45.225Z",
+      "bodySha256": "4cbc3cb20383abfff1a449977991566076267ed1ebc7ba6ade20443b6a105e27"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.3220420410449794,
+        0.27286189552693757,
+        0.40509606342808313
+      ],
+      "trainingCutoff": "2026-09-05T18:48:51.848Z",
+      "trainingCount": 6,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-05T18:48:45.225Z",
+    "paperTrade": null,
+    "batchId": "589323fc2c01753492596a5f290c46ad464028b7c692c82653c31e01d682ead9"
+  }
+}

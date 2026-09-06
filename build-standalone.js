@@ -32,12 +32,13 @@ ${mockDataJs}
 </script>`
   );
 
+  sportsStandalone = sportsStandalone.replace(/<script src="(data\/research\/dashboard\.js|sports-return-policy\.js|returns-workbench\.js)"><\/script>/g, (_, name) => `<script>\n${fs.readFileSync(path.join(__dirname, name), 'utf8').replace(/<\/script/gi, '<\\/script')}\n</script>`);
   const sportsOut = path.join(__dirname, 'sports-standalone.html');
   fs.writeFileSync(sportsOut, sportsStandalone, 'utf8');
   console.log('Successfully created:', sportsOut, `(${Math.round(sportsStandalone.length / 1024)} KB)`);
 
   // 2. Build lotto-standalone.html (双色球/大乐透)
-  const lottoBase = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const lottoBase = fs.readFileSync(path.join(__dirname, 'number-tools.html'), 'utf8');
   const ssqCompactJs = fs.readFileSync(path.join(__dirname, 'data', 'ssq-compact.js'), 'utf8');
   const dltCompactJs = fs.readFileSync(path.join(__dirname, 'data', 'dlt-compact.js'), 'utf8');
   const engineJs = fs.readFileSync(path.join(__dirname, 'engine.js'), 'utf8');
@@ -52,9 +53,32 @@ ${engineJs}
 </script>`
   );
 
-  const lottoOut = path.join(__dirname, 'lotto-standalone.html');
+  const lottoOut = path.join(__dirname, 'number-tools-standalone.html');
   fs.writeFileSync(lottoOut, lottoStandalone, 'utf8');
   console.log('Successfully created:', lottoOut, `(${Math.round(lottoStandalone.length / 1024)} KB)`);
+
+  const numberBase = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8').replace('<head>', '<head>\n<script>window.NUMBER_APP_OFFLINE = true;</script>');
+  const numberStandalone = numberBase.replace(/<script src="(number-models\.js|number-settlement\.js|number-app\.js|data\/numbers\/dashboard\.js|number-crowd-model\.js|data\/returns\/crowd-report\.js|returns-workbench\.js)"><\/script>/g, (_, name) => {
+    const filename = path.join(__dirname, name);
+    const code = fs.existsSync(filename) ? fs.readFileSync(filename, 'utf8') : name === 'data/numbers/dashboard.js' ? 'window.NUMBER_DASHBOARD = null;' : (() => { throw new Error('Missing module: ' + name); })();
+    return `<script>\n${code.replace(/<\/script/gi, '<\\/script')}\n</script>`;
+  });
+  if (/<script[^>]+src=/.test(numberStandalone)) throw new Error('Number standalone has unresolved scripts');
+  fs.writeFileSync(path.join(__dirname, 'lotto-standalone.html'), numberStandalone, 'utf8');
+  console.log('Successfully created: lotto-standalone.html');
+
+  // 3. Research: embed the last saved snapshot; the page never collects data itself.
+  const researchBase = fs.readFileSync(path.join(__dirname, 'research.html'), 'utf8');
+  const dashboardPath = path.join(__dirname, 'data', 'research', 'dashboard.js');
+  const dashboardJs = fs.existsSync(dashboardPath) ? fs.readFileSync(dashboardPath, 'utf8') : 'window.RESEARCH_DASHBOARD = null;';
+  const rendererJs = fs.readFileSync(path.join(__dirname, 'research-dashboard.js'), 'utf8');
+  const researchStandalone = researchBase.replace(
+    /<script src="data\/research\/dashboard\.js"><\/script>\s*<script src="research-dashboard\.js"><\/script>/,
+    () => `<script>\n${dashboardJs.replace(/<\/script/gi, '<\\/script')}\n${rendererJs.replace(/<\/script/gi, '<\\/script')}\n</script>`
+  );
+  const researchOut = path.join(__dirname, 'research-standalone.html');
+  fs.writeFileSync(researchOut, researchStandalone, 'utf8');
+  console.log('Successfully created:', researchOut, `(${Math.round(researchStandalone.length / 1024)} KB)`);
 }
 
 buildStandalone();

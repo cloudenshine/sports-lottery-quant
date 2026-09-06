@@ -5,8 +5,20 @@
   "description": "Honest SSQ/DLT funnel selector with adversarial tests",
   "scripts": {
     "serve": "node serve.js",
-    "test": "node --test --test-reporter=spec test/adversarial.test.js test/prizes-and-budget.test.js test/ui-contract.test.js test/diversity.test.js test/timemachine-and-radar.test.js test/advanced-modules.test.js test/math-genius.test.js test/realtime-sync.test.js test/sports-team-form.test.js test/sports-jingcai.test.js test/sports-sfc.test.js test/sports-beidan.test.js test/sports-lancai.test.js test/sports-ui-contract.test.js",
+    "test": "node --test --test-reporter=spec test/*.test.js",
     "test:sports": "node --test --test-reporter=spec test/sports-*.test.js",
-    "test:coverage": "node --test --experimental-test-coverage --test-coverage-lines=80 --test-coverage-functions=80 --test-coverage-branches=70 test/adversarial.test.js test/prizes-and-budget.test.js test/ui-contract.test.js test/diversity.test.js test/timemachine-and-radar.test.js test/advanced-modules.test.js test/math-genius.test.js test/realtime-sync.test.js test/sports-*.test.js"
+    "test:coverage": "node --test --experimental-test-coverage --test-coverage-lines=80 --test-coverage-functions=80 --test-coverage-branches=70 test/adversarial.test.js test/prizes-and-budget.test.js test/ui-contract.test.js test/diversity.test.js test/timemachine-and-radar.test.js test/advanced-modules.test.js test/math-genius.test.js test/realtime-sync.test.js test/sports-*.test.js",
+    "build": "node build-standalone.js",
+    "science:evaluate": "node scripts/evaluate-science.js",
+    "verify": "node scripts/verify.js",
+    "research:daily": "node scripts/research-daily.js",
+    "research:models": "node scripts/evaluate-research-models.js",
+    "research:numbers": "node scripts/evaluate-number-strategies.js",
+    "numbers:sync": "node scripts/sync-number-sources.js",
+    "numbers:evaluate": "node scripts/evaluate-numbers-v2.js",
+    "numbers:daily": "node scripts/numbers-daily.js",
+    "returns:evaluate": "node scripts/evaluate-number-crowd.js",
+    "build:public": "node scripts/build-public-site.js",
+    "cloud:refresh": "node scripts/cloud-refresh.js"
   }
 }

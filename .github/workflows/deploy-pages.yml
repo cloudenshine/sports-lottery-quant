@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy public site to GitHub Pages
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -17,13 +17,31 @@ concurrency:
 
 jobs:
   deploy:
+    # sync-live.yml deploys its own refresh; bot commits must not enqueue a
+    # second ordinary deployment even if skip-ci handling changes upstream.
+    if: github.actor != 'github-actions[bot]'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run deterministic build and verification
+        run: |
+          npm run build
+          npm run verify
+
+      - name: Build explicit public allowlist
+        run: node scripts/build-public-site.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -31,7 +49,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'dist-public'
 
       - name: Deploy to GitHub Pages
         id: deployment

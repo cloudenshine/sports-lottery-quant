@@ -1,0 +1,8 @@
+# Frozen experiments hash original bytes. Preserve them across Windows/Linux checkouts.
+*.js -text
+*.json -text
+*.html -text
+*.body -text
+*.csv -text
+*.md text eol=lf
+*.yml text eol=lf

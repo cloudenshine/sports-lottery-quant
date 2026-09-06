@@ -1,0 +1,82 @@
+{
+  "protocolId": "lottery-research-v1-20260906",
+  "registeredAt": "2026-09-05T18:48:38.414Z",
+  "protocolSha256": "4269c8c160bea320e736edc503f327676c258256bf3ce5a6d657c4d5921995f7",
+  "codeHashes": {
+    "research-daily.js": "029bd1f4d174d946051d2343c507118f56062aa82898fc8ad497d6009ddf9002",
+    "research-sources.js": "e5aa97a1f1a3d593c42f9845c17998f0f4cbe317cef47bceecbcb7bea89abf62",
+    "research-models.js": "e3d867763c9189edd58af6dddbd5b92fde9548ef273d8f612f935d5685c657d9",
+    "research-ledger.js": "c4fc4c91e0dcade4d31494f16d05b560d07bf43c9f9f33e17b0034cc60500b79",
+    "research-promotion.js": "74c1d01631425e3800e1e2d0c54683fd376104a9ff07f4e58a2f019388dd1677",
+    "scripts/research-daily.js": "ee2cbf1d88773fb857a1bc3ea5b40da34b6e4c55cee78635c5a0d609d720c68d"
+  },
+  "protocol": {
+    "schemaVersion": 1,
+    "protocolId": "lottery-research-v1-20260906",
+    "paperOnly": true,
+    "sports": {
+      "market": "1X2_REGULATION",
+      "candidateFamily": [
+        "uniform",
+        "historical",
+        "poisson",
+        "elo",
+        "market",
+        "market-power",
+        "ensemble"
+      ],
+      "forecastWindow": "first-observed-72h-v1",
+      "maximumHoursToKickoff": 72,
+      "minimumMinutesToKickoff": 15,
+      "primaryScore": "multiclass-log-loss",
+      "secondaryScore": "multiclass-brier",
+      "comparators": [
+        "uniform",
+        "market"
+      ],
+      "paperStake": 2,
+      "promotion": {
+        "minimumSettledEvents": 500,
+        "minimumCalendarDays": 90,
+        "familyWiseAlpha": 0.05,
+        "method": "fixed-horizon paired block bootstrap with Bonferroni family correction",
+        "requiresPositiveNetReturnLowerBound": true,
+        "requiresMarketImprovement": true,
+        "reviewOnlyAtRegisteredHorizon": true,
+        "fixedCalendarHorizonDays": 90
+      },
+      "maximumSourceAgeMinutes": 30,
+      "paperDecision": {
+        "policy": "ev-threshold",
+        "minimumExpectedGrossReturn": 1.05,
+        "settlementAssumption": "fixed-decimal-1x2-paper-v1",
+        "singleBetEligibilityRequired": true,
+        "tiePolicy": "exact-expectation-of-uniform-random-tie-selection",
+        "cashOnAbstain": true
+      },
+      "sourceFamilies": [
+        "espn-eng1",
+        "500-jingcai"
+      ]
+    },
+    "numbers": {
+      "candidateFamily": [
+        "uniform",
+        "hot_shrink",
+        "cold_shrink",
+        "coverage"
+      ],
+      "equalTicketBudget": 5,
+      "seeds": [
+        1701,
+        2903,
+        4109
+      ],
+      "periods": 100,
+      "status": "exploratory-current-rule-prize-scenarios"
+    },
+    "decisionPolicy": "All candidates remain research-only. No strategy is promoted by a daily favorable fluctuation. A change to candidates, parameters, lookahead or thresholds creates a new protocol/version.",
+    "draftedAt": "2026-09-05T18:20:00Z"
+  },
+  "scope": "Local immutable preregistration; no external trusted timestamp claim"
+}

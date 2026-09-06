@@ -14,11 +14,28 @@ function combinations(arr, k) {
   return [...withHead, ...withoutHead];
 }
 
+function sfcValidatePicks(picks, allowEmpty = false) {
+  if (!Array.isArray(picks) || picks.length !== 14) throw new RangeError('SFC 14 requires exactly 14 matches');
+  picks.forEach((p, i) => {
+    if (allowEmpty && (p == null || (Array.isArray(p) && p.length === 0))) return;
+    if (!Array.isArray(p) || p.length === 0) throw new RangeError(`Match ${i + 1} has no picks`);
+    if (p.some(v => !['3', '1', '0'].includes(v)) || new Set(p).size !== p.length) throw new RangeError('Picks must be unique selections from 3, 1, 0');
+  });
+}
+
+function sfcRankMarket(match) {
+  const odds = match && match.odds;
+  if (!odds || ['3', '1', '0'].some(k => !Number.isFinite(odds[k]) || odds[k] <= 1)) throw new RangeError('Complete finite decimal odds greater than 1 are required');
+  const sum = ['3', '1', '0'].reduce((n, k) => n + 1 / odds[k], 0);
+  return ['3', '1', '0'].map(selection => ({ selection, prob: (1 / odds[selection]) / sum })).sort((a, b) => b.prob - a.prob);
+}
+
 const SFCEngine = {
   /**
    * 14场胜负彩注数计算
    */
   calculateSFC14Bets(picks) {
+    sfcValidatePicks(picks);
     if (!picks || picks.length !== 14) {
       throw new Error('SFC 14 requires exactly 14 matches');
     }
@@ -40,6 +57,7 @@ const SFCEngine = {
    * 任选九场注数计算 (C(M, 9) 展开)
    */
   calculateRX9Bets(picks) {
+    sfcValidatePicks(picks, true);
     if (!picks || picks.length < 14) {
       throw new Error('Picks array must cover 14 matches structure');
     }
@@ -77,6 +95,8 @@ const SFCEngine = {
    * 冷门指数与火锅奖 (超低赔大热火锅) 预警分析
    */
   calculateColdnessIndex(picks, oddsList) {
+    sfcValidatePicks(picks, true);
+    if (!Array.isArray(oddsList)) throw new RangeError('Market odds are required');
     let totalScore = 0;
     let countedMatches = 0;
 
@@ -84,11 +104,12 @@ const SFCEngine = {
     for (let i = 0; i < picks.length; i++) {
       const p = picks[i];
       if (!p || p.length === 0) continue;
-      const odds = oddsList[i] && oddsList[i].odds ? oddsList[i].odds : { '3': 2.0, '1': 3.2, '0': 3.5 };
+      sfcRankMarket(oddsList[i]);
+      const odds = oddsList[i].odds;
 
       let maxMatchOdds = 0;
       for (const sel of p) {
-        const o = odds[sel] || 2.0;
+        const o = odds[sel];
         if (o > maxMatchOdds) maxMatchOdds = o;
       }
 
@@ -99,7 +120,8 @@ const SFCEngine = {
       countedMatches++;
     }
 
-    const avgColdScore = countedMatches > 0 ? totalScore / countedMatches : 20;
+    if (!countedMatches) throw new RangeError('Coldness requires selected matches with market odds');
+    const avgColdScore = totalScore / countedMatches;
     // 胜负彩中，只要出现 1~3 场深冷大冷，全国奖池就产生质变；因此综合平均冷度与最高冷度
     const blendedScore = 0.6 * avgColdScore + 0.4 * maxColdInTicket;
     const finalScore = Math.round(blendedScore * 10) / 10;
@@ -111,8 +133,10 @@ const SFCEngine = {
       score: finalScore,
       firePotWarning,
       description: firePotWarning 
-        ? '⚠️ 大热火锅奖预警：选项全为超低赔主力正路，全国中奖注数极多，奖金可能极其微薄！'
-        : (finalScore > 50 ? '🌟 黄金冷门配比：兼顾主力防冷，具有极高单注奖池博弈价值' : '⚖️ 均衡防守单：正路为主兼顾稳妥')
+        ? '低赔率选项集中；仅凭赔率无法推断中奖注数和分奖金额。'
+        : (finalScore > 50 ? '含较高赔率选项；这不构成正期望或预测优势证据。' : '赔率分布居中；未估计奖池收益。'),
+      modelStatus: 'descriptive-odds-heuristic',
+      evidenceOfPredictiveEdge: false
     };
   },
 
@@ -120,7 +144,10 @@ const SFCEngine = {
    * 保14中13 覆盖设计缩水矩阵 (Covering Wheel)
    */
   generateCoveringReduction(picks, options = {}) {
-    const guarantee = options.guarantee || 13;
+    sfcValidatePicks(picks);
+    const guarantee = options.guarantee ?? 13;
+    if (!Number.isInteger(guarantee) || guarantee < 0 || guarantee > 14) throw new RangeError('guarantee must be an integer from 0 to 14');
+    if (this.calculateSFC14Bets(picks).betCount > 2048) throw new RangeError('Exact covering search supports at most 2048 combinations');
 
     // 生成所有全组合
     function cartesian(arr) {
@@ -178,7 +205,8 @@ const SFCEngine = {
       originalBetCount,
       reducedBets,
       compressionRate,
-      guaranteedRank: guarantee
+      guaranteedRank: guarantee,
+      guaranteeCondition: 'All 14 realized outcomes must belong to the supplied picks'
     };
   },
 
@@ -186,92 +214,33 @@ const SFCEngine = {
    * 14场胜负彩量化模型自动选单 (防冷对冲型)
    */
   generateQuantPicks14(matches) {
-    if (!matches || matches.length < 14) throw new Error('Requires 14 matches');
-    const picks = [];
-    let doubleCount = 0;
-
-    for (let i = 0; i < 14; i++) {
-      const m = matches[i];
-      const odds = m.odds || { '3': 2.0, '1': 3.2, '0': 3.5 };
-      const o3 = odds['3'], o1 = odds['1'], o0 = odds['0'];
-
-      if (o3 <= 1.45 && doubleCount >= 4) {
-        picks.push(['3']); // 稳胆
-      } else if (o0 <= 1.45 && doubleCount >= 4) {
-        picks.push(['0']); // 客场稳胆
-      } else if (o3 < o0) {
-        // 主队占优但需防平
-        if (doubleCount < 4) {
-          picks.push(['3', '1']);
-          doubleCount++;
-        } else {
-          picks.push(['3']);
-        }
-      } else {
-        // 势均力敌或客队微优
-        if (doubleCount < 4) {
-          picks.push(['1', '0']);
-          doubleCount++;
-        } else {
-          picks.push(['0']);
-        }
-      }
-    }
-
-    // 确保至少有 3 个双选进行防冷覆盖
-    while (doubleCount < 3) {
-      for (let i = 0; i < 14; i++) {
-        if (picks[i].length === 1 && doubleCount < 3) {
-          picks[i].push('1');
-          doubleCount++;
-        }
-      }
-    }
-
+    if (!Array.isArray(matches) || matches.length !== 14) throw new Error('Requires 14 matches');
+    const ranked = matches.map(sfcRankMarket);
+    // At fixed four doubles, maximize product coverage under the market-implied independence baseline.
+    const doubled = new Set(ranked.map((r, i) => ({ i, gain: (r[0].prob + r[1].prob) / r[0].prob }))
+      .sort((a, b) => b.gain - a.gain).slice(0, 4).map(x => x.i));
+    const picks = ranked.map((r, i) => r.slice(0, doubled.has(i) ? 2 : 1).map(x => x.selection));
     const { betCount, costYuan } = this.calculateSFC14Bets(picks);
-    return { picks, betCount, costYuan, doubleCount };
+    return { picks, betCount, costYuan, doubleCount: doubled.size, modelStatus: 'market-implied-baseline', evidenceOfPredictiveEdge: false };
   },
 
   /**
    * 任选九场量化模型自动选单 (高性价比稳胆型)
    */
   generateQuantPicksRX9(matches) {
-    if (!matches || matches.length < 14) throw new Error('Requires 14 matches');
-    // 按最低赔率升序排序，挑选最有信心的 9 场
-    const indexed = matches.map((m, idx) => {
-      const odds = m.odds || { '3': 2.0, '1': 3.2, '0': 3.5 };
-      const minOdds = Math.min(odds['3'], odds['1'], odds['0']);
-      return { idx, minOdds, odds };
-    });
-    indexed.sort((a, b) => a.minOdds - b.minOdds);
-
-    const chosenIndices = new Set(indexed.slice(0, 9).map(item => item.idx));
-    const picks = new Array(14).fill(null).map(() => []);
-
-    let doubleCount = 0;
-    for (let i = 0; i < 14; i++) {
-      if (chosenIndices.has(i)) {
-        const o = matches[i].odds || { '3': 2.0, '1': 3.2, '0': 3.5 };
-        if (o['3'] < o['0']) {
-          if (doubleCount < 2 && o['3'] > 1.4) {
-            picks[i] = ['3', '1'];
-            doubleCount++;
-          } else {
-            picks[i] = ['3'];
-          }
-        } else {
-          if (doubleCount < 2 && o['0'] > 1.4) {
-            picks[i] = ['1', '0'];
-            doubleCount++;
-          } else {
-            picks[i] = ['0'];
-          }
-        }
-      }
+    if (!Array.isArray(matches) || matches.length !== 14) throw new Error('Requires 14 matches');
+    const ranked = matches.map(sfcRankMarket);
+    let best = null;
+    // Enumerate 2002 subsets; choose the best two doubles within each at a fixed four-bet budget.
+    for (const group of combinations(ranked.map((_, i) => i), 9)) {
+      const doubles = group.slice().sort((a, b) => ranked[b][1].prob / ranked[b][0].prob - ranked[a][1].prob / ranked[a][0].prob).slice(0, 2);
+      const probability = group.reduce((p, i) => p * (ranked[i][0].prob + (doubles.includes(i) ? ranked[i][1].prob : 0)), 1);
+      if (!best || probability > best.probability) best = { group, doubles, probability };
     }
-
+    const picks = ranked.map((r, i) => best.group.includes(i) ? r.slice(0, best.doubles.includes(i) ? 2 : 1).map(x => x.selection) : []);
     const res = this.calculateRX9Bets(picks);
-    return { picks, betCount: res.betCount, costYuan: res.costYuan, selectedCount: 9 };
+    return { picks, betCount: res.betCount, costYuan: res.costYuan, selectedCount: 9,
+      modelStatus: 'market-implied-baseline', evidenceOfPredictiveEdge: false, independenceAssumed: true };
   },
 
   /**
@@ -279,18 +248,21 @@ const SFCEngine = {
    */
   generateBatchTickets(picks, mode = '14', meta = {}) {
     const issue = meta.issue || '25068';
-    const multiplier = meta.multiplier || 1;
+    const multiplier = meta.multiplier ?? 1;
+    if (!Number.isSafeInteger(multiplier) || multiplier < 1) throw new RangeError('multiplier must be a positive integer');
+    if (!['14', '9'].includes(mode)) throw new RangeError('mode must be 14 or 9');
+    const count = mode === '14' ? this.calculateSFC14Bets(picks) : this.calculateRX9Bets(picks);
+    if (count.betCount > 100000) throw new RangeError('Batch export supports at most 100000 bets');
     const gameName = mode === '14' ? '中国体育彩票 · 14场胜负彩' : '中国体育彩票 · 任选九场';
 
     function cartesian(arr) {
       return arr.reduce((a, b) => a.flatMap(d => b.map(e => [...d, e])), [[]]);
     }
 
-    const activePicks = mode === '14' ? picks : picks.filter(p => p && p.length > 0);
-    const allBets = cartesian(picks.map(p => (p && p.length > 0 ? p : ['*'])));
-
-    // 最多截取前 20 注作为实体出单展示，避免几百注撑爆
-    const displayBets = allBets.slice(0, 20);
+    const activeIndices = picks.map((p, i) => p && p.length ? i : -1).filter(i => i >= 0);
+    const groups = mode === '14' ? [activeIndices] : combinations(activeIndices, 9);
+    const allBets = groups.flatMap(group => cartesian(picks.map((p, i) => group.includes(i) ? p : ['*'])));
+    const displayBets = allBets;
     const tickets = displayBets.map((bet, idx) => {
       const ticketNo = `SFC-${issue}-${String(idx + 1).padStart(3, '0')}`;
       const betStr = bet.join(' ');

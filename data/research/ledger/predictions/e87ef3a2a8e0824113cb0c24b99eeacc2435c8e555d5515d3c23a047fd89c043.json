@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "e87ef3a2a8e0824113cb0c24b99eeacc2435c8e555d5515d3c23a047fd89c043",
+  "recordedAt": "2026-09-05T18:48:59.932Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1414168",
+      "kickoffAt": "2026-09-06T16:00:00.000Z",
+      "homeTeam": "博洛尼亚",
+      "awayTeam": "萨索洛",
+      "competition": "意甲",
+      "odds": {
+        "home": 1.88,
+        "draw": 3.25,
+        "away": 3.45
+      },
+      "sourceEventId": "1414168"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-05T18:48:45.225Z",
+      "bodySha256": "4cbc3cb20383abfff1a449977991566076267ed1ebc7ba6ade20443b6a105e27"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.2382110935643196,
+        0.2650618626256309,
+        0.4967270438100495
+      ],
+      "trainingCutoff": "2026-09-05T18:48:51.848Z",
+      "trainingCount": 6,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-05T18:48:45.225Z",
+    "paperTrade": null,
+    "batchId": "95c525d83241f2831d7b30628626120badafbbab232880a18611191ebef7764a"
+  }
+}

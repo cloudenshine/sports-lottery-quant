@@ -1,16 +1,32 @@
-name: Auto Sync Live Sports Lottery Data
+name: Refresh public lottery data and deploy Pages
 
 on:
   schedule:
-    # 每天北京时间 10:30, 14:30, 18:30, 22:30 自动云端触发抓取更新
-    - cron: '30 2,6,10,14 * * *'
-  workflow_dispatch: # 支持手动一键点击触发
+    # 10:30, 18:30 and 23:30 Asia/Shanghai = 02:30, 10:30 and 15:30 UTC.
+    - cron: '30 2,10,15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     permissions:
       contents: write
+      pages: write
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -18,16 +34,47 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
-      - name: Fetch and Sync Live Lottery Fixtures & Odds
-        run: |
-          node sync-sports-live.js
-          node build-standalone.js
+      - name: Refresh public source snapshots
+        run: node scripts/cloud-refresh.js
+        continue-on-error: true
 
-      - name: Commit and Push Updated Live Data
+      - name: Verify source and public snapshot contracts
+        run: node --test test/public-site.test.js test/data-integrity.test.js test/numbers-sources.test.js
+
+      - name: Archive public source responses and hashes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-source-evidence-${{ github.run_id }}
+          path: |
+            data/research/raw/cloud-refresh/
+            data/sports-source-evidence/
+            data/cloud-refresh-status.json
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Build explicit public allowlist
+        run: node scripts/build-public-site.js
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist-public
+
+      - name: Deploy Pages from this refresh
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Commit only refresh outputs
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/sports_live.json data/sports-live-data.js sports-standalone.html lotto-standalone.html
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync real-time sports lottery data [skip ci]" && git push)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for file in data/sports_live.json data/sports-live-data.js data/numbers/public-snapshot.json data/cloud-refresh-status.json; do
+            test -f "$file" && git add -- "$file"
+          done
+          git diff --cached --quiet || (git commit -m "chore: refresh public lottery snapshots [skip ci]" && git push)

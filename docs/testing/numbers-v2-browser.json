@@ -1,0 +1,18 @@
+{
+  "surface": "Codex in-app browser",
+  "url": "http://127.0.0.1:8080/index.html",
+  "checks": {
+    "ssqSeedZeroFiveValidTickets": "PASS",
+    "ssqUniformCompleteProbability": 5.6429944e-8,
+    "ssq26103RealRegistration": "PASS",
+    "dlt26102RealRegistration": "PASS",
+    "dltAdditionalFiveTicketsTenYuanRejected": "PASS",
+    "invalidBudgetExportDisabled": "PASS",
+    "dltMixtureSeedZeroFiveTicketsFifteenYuan": "PASS",
+    "offlineSnapshotRegistrationDisabled": "PASS",
+    "offlineSnapshotLedgerAnd120PeriodReturnsVisible": "PASS",
+    "consoleWarningsAndErrors": 0
+  },
+  "scope": "Paper research only; no actual wagering, no future result assumed",
+  "recordedAt": "2026-09-06T01:28:42.545Z"
+}

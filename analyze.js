@@ -1,5 +1,7 @@
 const fs = require("fs");
 const path = require("path");
+const { validateDraws } = require('./update-all-history');
+const { writeFileSet } = require('./sync-sports-live');
 
 function comb(n, k) {
   if (k < 0 || k > n) return 0;
@@ -107,12 +109,13 @@ function quantile(sorted, q) {
   return sorted[lo] + (sorted[hi] - sorted[lo]) * (idx - lo);
 }
 
-function analyzeSSQ(draws) {
+function analyzeSSQ(draws, options = {}) {
+  draws = validateDraws(draws, 'ssq', options);
   const total = draws.length;
-  const reds = draws.map((d) => [...d.redBalls].sort((a, b) => a - b));
-  const blues = draws.map((d) => d.blueBall);
+  const reds = draws.map((d) => d.main);
+  const blues = draws.map((d) => d.special[0]);
   const redKeys = reds.map((r) => r.join(","));
-  const fullKeys = draws.map((d) => [...d.redBalls].sort((a, b) => a - b).join(",") + "+" + d.blueBall);
+  const fullKeys = draws.map((d) => d.main.join(",") + "+" + d.special[0]);
 
   const maxRun = reds.map(maxConsecutive);
   const groups = reds.map(consecutiveGroups);
@@ -148,7 +151,7 @@ function analyzeSSQ(draws) {
   for (const g of groups) {
     const maxG = g.length ? Math.max(...g) : 1;
     if (g.length === 0) noConsecutive += 1;
-    if (g.filter((x) => x === 2).length >= 1 && maxG === 2) onePair += 1;
+    if (g.filter((x) => x === 2).length === 1 && maxG === 2) onePair += 1;
     if (g.filter((x) => x === 2).length >= 2) twoPlusTwo += 1;
     if (maxG >= 3) threePlus += 1;
     if (maxG >= 4) fourPlus += 1;
@@ -173,12 +176,14 @@ function analyzeSSQ(draws) {
     const prev = reds[i + 1];
     overlapPrev[overlap(reds[i], prev)] += 1;
   }
-  for (let i = 0; i < reds.length - 20; i++) {
+  for (let i = 0; i < reds.length - 5; i++) {
     const pool5 = new Set(reds.slice(i + 1, i + 6).flat());
-    const pool20 = new Set(reds.slice(i + 1, i + 21).flat());
     const o5 = reds[i].filter((n) => pool5.has(n)).length;
-    const o20 = reds[i].filter((n) => pool20.has(n)).length;
     overlapLast5[o5] += 1;
+  }
+  for (let i = 0; i < reds.length - 20; i++) {
+    const pool20 = new Set(reds.slice(i + 1, i + 21).flat());
+    const o20 = reds[i].filter((n) => pool20.has(n)).length;
     overlapLast20[o20] += 1;
     if (o20 >= 4) fourFromLast20 += 1;
     if (o20 >= 5) fiveFromLast20 += 1;
@@ -261,15 +266,16 @@ function analyzeSSQ(draws) {
   };
 }
 
-function analyzeDLT(draws) {
+function analyzeDLT(draws, options = {}) {
+  draws = validateDraws(draws, 'dlt', options);
   const total = draws.length;
-  const fronts = draws.map((d) => [...d.frontBalls].sort((a, b) => a - b));
-  const backs = draws.map((d) => [...d.backBalls].sort((a, b) => a - b));
+  const fronts = draws.map((d) => d.main);
+  const backs = draws.map((d) => d.special);
   const fullKeys = draws.map(
     (d) =>
-      [...d.frontBalls].sort((a, b) => a - b).join(",") +
+      d.main.join(",") +
       "+" +
-      [...d.backBalls].sort((a, b) => a - b).join(",")
+      d.special.join(",")
   );
   const frontKeys = fronts.map((r) => r.join(","));
 
@@ -295,7 +301,7 @@ function analyzeDLT(draws) {
   for (const g of groups) {
     const maxG = g.length ? Math.max(...g) : 1;
     if (g.length === 0) noConsecutive += 1;
-    if (g.filter((x) => x === 2).length >= 1 && maxG === 2) onePair += 1;
+    if (g.filter((x) => x === 2).length === 1 && maxG === 2) onePair += 1;
     if (g.filter((x) => x === 2).length >= 2) twoPairs += 1;
     if (maxG >= 3) threePlus += 1;
     if (maxG >= 4) fourPlus += 1;
@@ -382,10 +388,15 @@ function analyzeDLT(draws) {
   };
 }
 
-const ssq = JSON.parse(fs.readFileSync(path.join(__dirname, "data/ssq_history.json"), "utf8"));
-const dlt = JSON.parse(fs.readFileSync(path.join(__dirname, "data/dlt_history.json"), "utf8"));
-const ssqStats = analyzeSSQ(ssq.draws);
-const dltStats = analyzeDLT(dlt.draws);
-const out = { ssq: ssqStats, dlt: dltStats };
-fs.writeFileSync(path.join(__dirname, "data/stats.json"), JSON.stringify(out, null, 2));
-console.log(JSON.stringify(out, null, 2));
+function analyze({ dataDir = path.join(__dirname, 'data'), now = new Date() } = {}) {
+  const ssq = JSON.parse(fs.readFileSync(path.join(dataDir, 'ssq_history.json'), 'utf8'));
+  const dlt = JSON.parse(fs.readFileSync(path.join(dataDir, 'dlt_history.json'), 'utf8'));
+  const out = { ssq: analyzeSSQ(ssq, { now }), dlt: analyzeDLT(dlt, { now }) };
+  writeFileSet([[path.join(dataDir, 'stats.json'), JSON.stringify(out, null, 2)]]);
+  return out;
+}
+if (require.main === module) {
+  try { console.log(JSON.stringify(analyze(), null, 2)); }
+  catch (error) { console.error('History analysis failed:', error.message); process.exitCode = 1; }
+}
+module.exports = { analyzeSSQ, analyzeDLT, analyze };

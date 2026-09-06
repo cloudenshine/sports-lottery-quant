@@ -1,0 +1,22 @@
+{
+  "sourceId": "sport-policy-2020",
+  "url": "https://www.sport.gov.cn/gdnps/files/c28047814/28048342.pdf",
+  "publisher": "财政部、国家体育总局",
+  "status": "ok",
+  "cached": false,
+  "lastAttemptAt": "2026-09-05T18:44:06.160Z",
+  "lastSuccessfulFetchAt": "2026-09-05T18:44:06.160Z",
+  "lastSuccessfulBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
+  "initialBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
+  "previousBodySha256": null,
+  "changeStatus": "initial_archive_needs_review",
+  "reviewRequired": true,
+  "error": null,
+  "observedBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
+  "httpStatus": 200,
+  "finalUrl": "https://www.sport.gov.cn/gdnps/files/c28047814/28048342.pdf",
+  "contentType": "application/pdf; charset=UTF-8",
+  "bodyBytes": 125084,
+  "comparisonStatus": "initial_archive",
+  "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
+}

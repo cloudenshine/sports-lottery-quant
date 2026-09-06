@@ -1,0 +1,45 @@
+{
+  "id": "numbers-prospective-v2",
+  "schemaVersion": 2,
+  "modelIds": [
+    "uniform",
+    "frequency_shrink",
+    "recency_shrink",
+    "omission_reversal",
+    "transition_shrink",
+    "mixture",
+    "coverage"
+  ],
+  "games": [
+    "ssq",
+    "dlt"
+  ],
+  "ticketCount": 5,
+  "costYuan": 10,
+  "additional": false,
+  "sourceMaxAgeHours": 24,
+  "registrationLeadHours": 3,
+  "minimumTrainingDraws": 200,
+  "evaluationDays": 365,
+  "minimumIssuesPerGame": 120,
+  "alpha": 0.05,
+  "comparisonFamily": 12,
+  "distributionEThreshold": 240,
+  "returns": "Published-table paper returns before tax; distribution evidence is not return advantage. Missing payouts remain pending.",
+  "stopping": "The return review occurs after the fixed 365-day window, using every registered issue; no early profit promotion or favorable-subset selection.",
+  "codeHashes": {
+    "number-models.js": "31925bec937e60cb1febacffce56dda6b95bcb566154857e639f41f6fe22a77f",
+    "number-settlement.js": "99617338edfe1196745ac436672d149564cbd3bff1db703c4a9bb8bb80335138",
+    "number-rule-context.js": "af4b0d8e9f23e1846242685f227940039ef709d4f8597209ce49d45d0d66ccc7",
+    "number-evaluation.js": "4670b34c49a30a4d53de6e74ad927936935156025130e668288733b7b3ac5a5d",
+    "numbers-ledger.js": "afd03be558dc29d3e926901c13e71554cff76941fa3377eb0f265d2e3f722b78",
+    "numbers-sources.js": "f9f66e5d609cca065895a3140d3e2116b2885c6ca016758ad8f3b6f5b9760d90",
+    "numbers-runtime.js": "efcc8cd841b5088c32407c1e182d21c75bfc06c59ff9524fb447ca38a59de03f",
+    "scripts/numbers-daily.js": "d0f3fc47140ad2881e89989e8eeba170e1a597e56f563cedd4747d6e3f626918"
+  },
+  "hash": "9cd93e1ab0d228e7a21ec6dd247488fd46ad7b3c28fddcb36c6fbfeabb7ad60d",
+  "status": "frozen",
+  "frozenAt": "2026-09-06T01:16:57.994Z",
+  "reviewAt": "2027-09-06T01:16:57.994Z",
+  "receiptSha256": "aebf8e66f378054589d8df670fe356183c8f507ddfca4cafc497e8fbaaf1778f"
+}

@@ -190,3 +190,91 @@ test('Jingcai (JCZQ) Core Engine & Optimization Tests', async (t) => {
     assert.match(posTxt, /终端代码: JCZQ\|/);
   });
 });
+
+test('Invalid prices, nonfinite budgets, spoofed match IDs and unsupported passes cannot form tickets', () => {
+  assert.throws(() => JingcaiEngine.calculateOverround([]));
+  assert.throws(() => JingcaiEngine.calculateOverround([2, NaN]));
+  const market = JingcaiEngine.calculateOverround([1.9, 3.2, 3.6]);
+  assert.ok(Math.abs(market.normalizedProbabilities.reduce((sum, p) => sum + p, 0) - 1) < 1e-12);
+  const match = { matchId: 'M', picks: [{ selection: 'home', odds: 2, matchId: 'SPOOF' }] };
+  assert.equal(JingcaiEngine.expandSlipToCombinations({ matches: [match] })[0].legs[0].matchId, 'M');
+  assert.throws(() => JingcaiEngine.expandSlipToCombinations({ matches: [match, match] }));
+  assert.throws(() => JingcaiEngine.expandSlipToCombinations({ matches: [match], passType: '2_1' }));
+  assert.throws(() => JingcaiEngine.expandSlipToCombinations({ matches: [{ matchId: 'M', picks: [{ selection: 'home' }] }] }));
+  assert.throws(() => JingcaiEngine.validateParlayTicket([{ matchId: 1 }, { matchId: '1' }]));
+  for (const budget of [NaN, Infinity, -2]) assert.throws(() => JingcaiEngine.optimizeBonus([{ totalOdds: 2 }], budget));
+  assert.throws(() => JingcaiEngine.optimizeBonus([{ totalOdds: 2 }], 10, 'unknown'));
+  assert.throws(() => JingcaiEngine.calculateSingleBetPayout([NaN]));
+  assert.throws(() => JingcaiEngine.calculateSingleBetPayout([2], 1.5));
+});
+
+test('Conditional allocation uses the same assumed prize cap as payout calculation', () => {
+  const result = JingcaiEngine.optimizeBonus([{ id: 'huge', totalOdds: 250000, passType: '2_1' }], 4);
+  assert.equal(result.allocations[0].expectedPayout, 400000);
+  assert.equal(result.allocations[0].payoutIfWin, 400000);
+  assert.equal(result.guaranteedProfit, false);
+  assert.equal(result.allocations[0].payoutMeaning, 'conditional-on-winning-not-expected-value');
+});
+
+test('Official decimal third-digit rule: even/odd, trailing digits, carry and published example', () => {
+  // Source: https://www.fjtc.com.cn/2024-04/01/content_31550891.htm I.1-2.
+  // This is the literal third-digit rule; nonzero later digits do not convert it to generic half-even.
+  const cases = [
+    ['1.0024', 2.00], ['1.0025', 2.00], ['1.0025001', 2.00],
+    ['1.0026', 2.00], ['1.003', 2.01], ['1.0075', 2.02], ['1.9975', 4.00]
+  ];
+  for (const [odds, expected] of cases) assert.equal(JingcaiEngine.calculateSingleBetPayout([odds], 1, '1_1'), expected);
+  assert.equal(Math.round(2 * 1.0025 * 100) / 100, 2.01, 'The old algorithm is a counterexample');
+  assert.equal(JingcaiEngine.calculateSingleBetPayout([1.0025], 1, '1_1'), 2);
+  assert.equal(JingcaiEngine.calculateSingleBetPayout([1.65, 1.75]), 5.78);
+  assert.equal(JingcaiEngine.calculateSingleBetPayout([1.25, 1.25]), 3.12,
+    'Two ordinary two-decimal quotes produce an even-cent tie that Math.round gets wrong');
+  assert.equal(JingcaiEngine.calculateTicketPayout([
+    [1.65, 1.75], [1.65, 1.46], [1.75, 1.46], [1.65, 1.75, 1.46]
+  ], 5), 120.70, 'Reproduce official four-winning-unit example');
+  assert.equal(JingcaiEngine.calculateTicketPayout([['1.0025'], ['1.0025']], 5), 20,
+    'Each unit is rounded before summation and multiplication');
+});
+
+test('Caps precede multiplication and decimal legs remain authoritative over rounded totalOdds', () => {
+  for (const [passType, odds, cap] of [
+    ['1_1', ['60000'], 100000], ['2_1', ['500', '500'], 200000],
+    ['3_1', ['500', '500', '1'], 200000], ['4_1', ['100', '100', '10', '10'], 500000],
+    ['5_1', ['100', '100', '10', '10', '1'], 500000],
+    ['6_1', ['20', '20', '20', '20', '5', '5'], 1000000],
+    ['8_1', ['20', '20', '20', '20', '5', '5', '1', '1'], 1000000]
+  ]) assert.equal(JingcaiEngine.calculateSingleBetPayout(odds, 3, passType), cap * 3);
+  const opt = JingcaiEngine.optimizeBonus([{
+    id: 'decimal', totalOdds: 1.01, passType: '1_1',
+    legs: [{ matchId: 'M', selection: 'home', odds: 1.0025, oddsDecimal: '1.0025' }]
+  }], 10);
+  assert.equal(opt.allocations[0].payoutIfWin, 10);
+  assert.equal(opt.allocations[0].quotePrecisionStatus, 'original-leg-decimals');
+  assert.equal(opt.payoutRulesStatus, 'verified-fixed-payout-arithmetic-only');
+  assert.equal(opt.eligibilityStatus, 'not-evaluated');
+});
+
+test('Physical limits split plan multipliers without dropping budget or duplicating prize', () => {
+  // 2019 notice III.6: 50x; 2020 notice II.2: 6000 Yuan per physical ticket.
+  assert.doesNotThrow(() => JingcaiEngine.validateTicketLimits(60, 50));
+  assert.throws(() => JingcaiEngine.validateTicketLimits(61, 50), /6000/);
+  assert.throws(() => JingcaiEngine.validateTicketLimits(1, 51), /50/);
+  assert.throws(() => JingcaiEngine.calculateTicketPayout([[2]], 51), /50/);
+  assert.throws(() => JingcaiEngine.calculateTicketPayout([[2]], 50, { totalUnitBets: 61 }), /6000/);
+  assert.deepEqual(JingcaiEngine.splitTicketMultipliers(80, 100), [30, 30, 20]);
+  const combo = { id: 'A', totalOdds: 2.8875, passType: '2_1', legs: [
+    { matchId: 'A', selection: 'home', odds: 1.65 }, { matchId: 'B', selection: 'home', odds: 1.75 }
+  ] };
+  const opt = JingcaiEngine.optimizeBonus([combo], 242);
+  const batch = JingcaiEngine.generateBatchTickets(opt);
+  assert.deepEqual(batch.tickets.map(t => t.multiplier), [50, 50, 21]);
+  assert.equal(batch.totalAmountYuan, opt.totalCost);
+  assert.equal(new Set(batch.tickets.map(t => t.ticketNo)).size, 3);
+  assert.equal(Math.round(batch.tickets.reduce((n, t) => n + t.payoutIfWin, 0) * 100),
+    Math.round(opt.allocations[0].payoutIfWin * 100));
+  for (const ticket of batch.tickets) {
+    assert.ok(ticket.multiplier <= 50);
+    assert.ok(ticket.amountYuan <= 6000);
+    assert.equal(ticket.sourceAllocationId, 'A');
+  }
+});

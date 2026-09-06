@@ -74,25 +74,30 @@ describe("Math Genius Module 3: Dynamic EV & Kelly Criterion (动态期望值与
     assert.equal(kelly.level, "DEFENSIVE");
   });
 
-  it("detects positive or surging EV in massive jackpot or promotion periods", () => {
+  it("does not fabricate promotion EV without published payout terms", () => {
     // 派奖期
     const evPromo = E.evaluateDynamicEV("ssq", 3000000000, true);
-    assert.ok(evPromo.totalEV > 1.1, "Promotion boosts total EV dramatically");
-    assert.ok(evPromo.roiExpected > 50);
+    const ordinary = E.evaluateDynamicEV("ssq", 3000000000, false);
+    assert.equal(evPromo.totalEV, ordinary.totalEV);
+    assert.equal(evPromo.actualEVKnown, false);
+    assert.equal(evPromo.isPositiveEV, false);
   });
 });
 
-describe("Math Genius Module 4: POS-Ready TXT Exporter (彩站打票终端标准格式)", () => {
-  it("generates valid standard formatted TXT for POS machines", () => {
+describe("Number list text export", () => {
+  it("exports a reviewable text list without claiming an official terminal protocol", () => {
     const tickets = [
       { main: [3, 8, 12, 19, 25, 31], special: [9] },
       { main: [4, 7, 14, 20, 26, 33], special: [12] },
     ];
     const txt = E.exportTerminalTxt("ssq", tickets, { issue: "26102" });
-    assert.ok(txt.includes("QUANT-LOTTO 彩票中心专用打票机标准批量导出格式"));
+    assert.ok(txt.includes("QUANT-LOTTO 号码文本清单（非销售终端导入协议）"));
     assert.ok(txt.includes("001 | 03 08 12 19 25 31 + 09"));
     assert.ok(txt.includes("002 | 04 07 14 20 26 33 + 12"));
-    assert.ok(txt.includes("校验码:"));
+    assert.ok(txt.includes("内容校验 FNV-1a/UTF-16:"));
+    const changed = E.exportTerminalTxt("ssq", [{main:[1,8,12,19,25,31],special:[9]},tickets[1]], {issue:"26102"});
+    const checksum = value => value.match(/UTF-16: ([0-9A-F]{8})/)[1];
+    assert.notEqual(checksum(txt), checksum(changed));
   });
 });
 
@@ -106,19 +111,20 @@ describe("Math Genius Module 5: Backtest Pipeline Controls (回测管线与香�
     // 运行带凯利仓位自适应的回测
     const resKelly = E.simulateTimeMachine("ssq", { periods: 10, count: 5, kellyAdapt: true });
     assert.ok(resKelly.periods === 10);
-    assert.ok(resKelly.totalCost > 0);
+    assert.equal(resKelly.totalCost, 0, "Unknown multi-prize return distribution cannot justify a Kelly stake");
   });
 });
 
 describe("Math Genius Module 6: Effective Action Ratio (有效作用占比多元对冲)", () => {
-  it("allocates tickets according to natural repeat ratios (0-repeat, 1-repeat, 2-repeat) across portfolio", () => {
+  it("reports exact repeat-class probabilities without forced historical quotas", () => {
     const out = E.generate("ssq", { count: 10, mode: "unique", seed: 999 });
     assert.equal(out.tickets.length, 10);
     
-    // 检查是否具备多元对冲角色
-    const roles = out.tickets.map(t => t.topologyRole);
-    assert.ok(roles.some(r => r && r.includes("0重号")), "Portfolio contains 0-repeat defensive tickets (27% ratio)");
-    assert.ok(roles.some(r => r && r.includes("1重号")), "Portfolio contains 1-repeat core tickets (44% ratio)");
-    assert.ok(roles.some(r => r && r.includes("2重号")), "Portfolio contains 2-repeat attack tickets (24% ratio)");
+    // Repeat classes are descriptive; no fixed empirical quota is a prediction.
+    const last = E.analyze("ssq").last;
+    for (const t of out.tickets) {
+      assert.ok(t.topologyRole.startsWith(E.overlap(t.main, last.main) + "重号"));
+      assert.ok(t.explain.actionRatio.includes("理论概率"));
+    }
   });
 });

@@ -85,3 +85,27 @@ test('Beidan (北京单场 - DC) Engine Tests', async (t) => {
     assert.match(posTxt, /终端代码: DC\|/);
   });
 });
+
+test('Beidan rejects duplicate-match dependence, invalid prices and noninteger counts', () => {
+  const m = { matchId: 'A', picks: [{ selection: '3', sp: 2 }] };
+  assert.throws(() => BeidanEngine.expandSlipToCombinations({ matches: [m, m] }));
+  for (const n of [NaN, Infinity, 1.5, 0]) assert.throws(() => BeidanEngine.validateParlayLegCount(n));
+  assert.throws(() => BeidanEngine.calculateFloatingPayout([0]));
+  assert.throws(() => BeidanEngine.calculateFloatingPayout([2], -1));
+  assert.throws(() => BeidanEngine.evaluateHandicapResult(-1, 2, 0));
+  assert.throws(() => BeidanEngine.optimizeBonus([{ totalSp: 2 }], Infinity));
+  assert.throws(() => BeidanEngine.optimizeBonus([{ totalSp: NaN }], 10));
+});
+
+test('Beidan selection responds to observed SP instead of fixed first-home second-away', () => {
+  const matches = [
+    { id: 'A', spOdds: { '3': 5, '1': 4, '0': 1.2 } },
+    { id: 'B', spOdds: { '3': 5, '1': 1.3, '0': 4 } },
+    { id: 'C', spOdds: { '3': 2.5, '1': 3, '0': 3 } }
+  ];
+  const slip = BeidanEngine.generateQuantPicksBeidan(matches);
+  assert.deepEqual(slip.matches.map(m => [m.matchId, m.picks[0].selection]), [['A', '0'], ['B', '1']]);
+  assert.equal(slip.evidenceOfPredictiveEdge, false);
+  assert.deepEqual(BeidanEngine.generateQuantPicksBeidan(matches.slice().reverse()).matches, slip.matches);
+  assert.throws(() => BeidanEngine.generateQuantPicksBeidan([{ id: 'A' }, { id: 'B' }]));
+});

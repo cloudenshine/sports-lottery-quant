@@ -1,0 +1,9 @@
+{
+  "sourceId": "sfc",
+  "sourceUrl": "https://trade.500.com/sfc/",
+  "fetchedAt": "2026-09-06T12:09:08.058Z",
+  "httpStatus": 200,
+  "bodyBytes": 75423,
+  "bodySha256": "e2751e94de3ad4338fd4e3b085a6c74724dbaeee6ee094c0c77f882a69ee02b7",
+  "rawBody": "sfc-20260906120908-e2751e94de3a.body"
+}

@@ -1,0 +1,22 @@
+{
+  "sourceId": "sport-policy-2019",
+  "url": "https://www.sport.gov.cn/cpzx/n5656/c897408/content.html",
+  "publisher": "国家体育总局体育彩票管理中心",
+  "status": "ok",
+  "cached": false,
+  "lastAttemptAt": "2026-09-05T18:44:07.973Z",
+  "lastSuccessfulFetchAt": "2026-09-05T18:44:07.973Z",
+  "lastSuccessfulBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
+  "initialBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
+  "previousBodySha256": null,
+  "changeStatus": "initial_archive_needs_review",
+  "reviewRequired": true,
+  "error": null,
+  "observedBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
+  "httpStatus": 200,
+  "finalUrl": "https://www.sport.gov.cn/cpzx/n5656/c897408/content.html",
+  "contentType": "text/html",
+  "bodyBytes": 34806,
+  "comparisonStatus": "initial_archive",
+  "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
+}

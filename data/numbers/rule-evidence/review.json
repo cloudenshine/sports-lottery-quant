@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-06T01:07:57.696Z",
+  "sources": [
+    {
+      "sourceUrl": "https://www.scflcp.com.cn/yxgz/823145252.jhtml",
+      "fetchedAt": "2026-09-06T01:00:26.673Z",
+      "httpStatus": 200,
+      "bodySha256": "8f405091246d5fac8569da5b3800bb8300df414aa2fc9bbf2c51b5ec09b082ef",
+      "bytes": 74173,
+      "rawRef": "rule-evidence/8f405091246d5fac8569da5b3800bb8300df414aa2fc9bbf2c51b5ec09b082ef.body",
+      "hashVerified": true,
+      "contentVerified": true
+    },
+    {
+      "sourceUrl": "https://www.hbfcw.cn/csyw/cszx/202602/t20260203_404677.shtml",
+      "fetchedAt": "2026-09-06T01:00:29.599Z",
+      "httpStatus": 200,
+      "bodySha256": "f7920c31e8c00c645b19ae21bc3a9e5b7968bf33f211fd7ab755abc2c6dfcdd3",
+      "bytes": 12284,
+      "rawRef": "rule-evidence/f7920c31e8c00c645b19ae21bc3a9e5b7968bf33f211fd7ab755abc2c6dfcdd3.body",
+      "hashVerified": true,
+      "contentVerified": true
+    },
+    {
+      "sourceUrl": "https://www.gdfc.org.cn/datas/content/content_284502.html?subjectID=14",
+      "fetchedAt": "2026-09-06T01:00:32.484Z",
+      "httpStatus": 405,
+      "bodySha256": "d0fb746e46ef579ed8e1ba7cc4899584169896f530adfab1ce7d2ab5c107913c",
+      "bytes": 2657,
+      "rawRef": "rule-evidence/d0fb746e46ef579ed8e1ba7cc4899584169896f530adfab1ce7d2ab5c107913c.body",
+      "hashVerified": true,
+      "contentVerified": false
+    },
+    {
+      "sourceUrl": "https://www.gdfc.org.cn/datas/content/content_284502.html",
+      "fetchedAt": "2026-09-06T01:01:50.468Z",
+      "httpStatus": 405,
+      "bodySha256": "af5ca700b9f385ab9c9b20249237cc4dc0862a1fb197740e9ea9afbdca9fea6b",
+      "bytes": 2657,
+      "rawRef": "rule-evidence/af5ca700b9f385ab9c9b20249237cc4dc0862a1fb197740e9ea9afbdca9fea6b.body",
+      "hashVerified": true,
+      "contentVerified": false
+    }
+  ],
+  "input": {
+    "path": "data/numbers/ssq.json",
+    "bodySha256": "10d3c17ca6daba8dd3511e7abf48ff6fa728de0dd8b7302ef3789a20cdeceb45"
+  },
+  "summary": {
+    "total": 555,
+    "active": 62,
+    "inactive": 493,
+    "unknown": 0,
+    "derived": 26,
+    "gaps": [],
+    "conflicts": []
+  },
+  "modernPeriod": {
+    "from": "2026014",
+    "to": "2026102",
+    "count": 89,
+    "active": 62,
+    "inactive": 27
+  },
+  "notes": [
+    "Sichuan official rules decoded UTF-8; Article 18 thresholds read from archived body",
+    "Hubei official first-issue report decoded GB18030; issue 2026014 and active provision read from archived body",
+    "Guangdong suspension declaration read in official indexed text; raw requests HTTP 405 are preserved as failed receipts, not official content",
+    "Current detailed prize table already publishes fortune amounts for active periods; no amounts imputed",
+    "26075 after-draw pool 283183968 yields inactive 26076 independently of indexed anchor"
+  ]
+}
