@@ -334,6 +334,28 @@
       font-size: 12px;
     }
 
+    /* Every market exposes the same two-step interaction: choose legs, then combine. */
+    .selection-help {
+      margin: 10px 14px 0;
+      padding: 9px 11px;
+      border: 1px solid #bae6fd;
+      border-radius: 6px;
+      background: #f0f9ff;
+      color: #0c4a6e;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+    .selection-help strong { color: #075985; }
+    .market-empty-state {
+      padding: 18px 12px;
+      color: #475569;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .market-empty-state strong { color: #0f172a; }
+    .market-empty-state small { display: block; margin-top: 3px; color: #64748b; }
+    .market-empty-state button { margin-top: 10px; width: auto; }
+
     /* Tags */
     .form-streak { display: inline-flex; gap: 2px; }
     .form-dot {
@@ -624,6 +646,9 @@
             <span style="font-size:12px; color:var(--text-muted);">已选: <strong id="selected-matches-count" style="color:#0284c7;">0</strong> 场</span>
           </div>
           <div style="overflow-x:auto;">
+            <div class="selection-help" id="jingcai-selection-help">
+              <strong>怎么选：</strong>可手动点击不同比赛的结果，或点击“量化模型选单”自动选出 2 场。已选场次按“比赛”计数；组合至少需要 2 场，选择结果仍由你确认。
+            </div>
             <table class="match-table" id="jingcai-table">
               <thead>
                 <tr>
@@ -728,6 +753,9 @@
         </div>
       </div>
       <div style="padding:16px;">
+        <div class="selection-help" id="sfc-selection-help">
+          <strong>怎么选：</strong>14 场模式需为 14 场逐场选择；任选九需至少选择 9 场。可手动点选赛果，也可使用上方量化选单自动生成覆盖组合。
+        </div>
         <table class="match-table" id="sfc-table">
           <thead>
             <tr>
@@ -743,8 +771,10 @@
           <tbody id="sfc-tbody"></tbody>
         </table>
 
-        <div style="margin-top:16px; padding:16px; background:#f8fafc; border-radius:6px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+          <div style="margin-top:16px; padding:16px; background:#f8fafc; border-radius:6px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
           <div>
+            <span style="font-size:14px; font-weight:700;">已选场次：</span>
+            <span id="sfc-selected-count" class="mono" style="font-size:16px; font-weight:800; color:#0284c7;">0</span> 场 |
             <span style="font-size:14px; font-weight:700;">方案注数：</span>
             <span id="sfc-bet-count" class="mono" style="font-size:16px; font-weight:800; color:#0284c7;">0</span> 注 |
             <span style="font-size:14px; font-weight:700;">投注金额：</span>
@@ -785,9 +815,12 @@
         <div class="card">
           <div class="card-header">
             <span>🏟️ 北京单场 (DC) · 浮动SP与让球盘口</span>
-            <span style="font-size:12px; color:#64748b;">0.65 为既有情景参数，未核验为本票实际结算</span>
+            <span style="font-size:12px; color:#64748b;">已选 <strong id="beidan-selected-count" style="color:#0284c7;">0</strong> 场 · 至少 2 场组合 · 0.65 为情景参数</span>
           </div>
           <div style="padding:16px;">
+            <div class="selection-help" id="beidan-selection-help">
+              <strong>怎么选：</strong>可手动点击每场的结果，或点击“北单量化模型选单”自动选出 2 场。已选场次按“比赛”计数；串关至少需要 2 场不同比赛，选择结果仍由你确认。
+            </div>
             <table class="match-table">
               <thead>
                 <tr>
@@ -872,8 +905,12 @@
         <div class="card">
           <div class="card-header">
             <span>🏀 竞彩篮球 (JCLQ) · 胜负 / 让分胜负 / 大小分</span>
+            <span style="font-size:12px; color:#64748b;">已选 <strong id="lancai-selected-count" style="color:#0284c7;">0</strong> 场 · 至少 2 场组合</span>
           </div>
           <div style="padding:16px;">
+            <div class="selection-help" id="lancai-selection-help">
+              <strong>怎么选：</strong>可手动点击每场的胜负、让分或大小分结果，或点击“篮彩量化模型选单”自动选出 2 场。已选场次按“比赛”计数；串关至少需要 2 场不同比赛，同一场只能进入一条玩法。
+            </div>
             <table class="match-table">
               <thead>
                 <tr>
@@ -1064,6 +1101,32 @@
   function getSFCMatches() { return currentDataset === 'classic' ? MockData.CLASSIC_SFC_MATCHES : (MockData.META.stale ? [] : MockData.SFC_MATCHES); }
   function getBeidanMatches() { return currentDataset === 'classic' ? MockData.BEIDAN_MATCHES : []; }
   function getLancaiMatches() { return currentDataset === 'classic' ? MockData.LANCAI_MATCHES : []; }
+  function marketSelectionCount(market) {
+    if (market === 'sfc') return sfcPicks.filter(p => Array.isArray(p) && p.length > 0).length;
+    if (market === 'beidan') return Object.keys(beidanPicks).length;
+    if (market === 'lancai') return Object.keys(lancaiPicks).length;
+    return Object.keys(selectedPicks).length;
+  }
+  function updateMarketSelectionCount(market) {
+    const id = market === 'jingcai' ? 'selected-matches-count' : `${market}-selected-count`;
+    const node = document.getElementById(id);
+    if (node) node.innerText = String(marketSelectionCount(market));
+    updateMobileBar();
+  }
+  function switchToDemoFromEmpty(market) {
+    const selector = document.getElementById('dataset-selector');
+    if (selector) selector.value = 'classic';
+    toggleDataset('classic');
+    switchMainTab(market);
+    notifyUser('已切换到演示数据，仅用于验证手动选择与组合流程；演示队伍、赔率和结果不代表真实赛事。');
+  }
+  function renderMarketEmpty(tbody, colspan, market, title, detail) {
+    const canUseDemo = currentDataset !== 'classic';
+    const action = canUseDemo
+      ? `<button type="button" class="btn-action btn-quant-diag" onclick="switchToDemoFromEmpty('${market}')">切换到演示数据验证交互</button>`
+      : '';
+    tbody.innerHTML = `<tr><td colspan="${colspan}"><div class="market-empty-state"><strong>${esc(title)}</strong><small>${esc(detail)}</small>${action}</div></td></tr>`;
+  }
   function matchModel(m) {
     try {
       const split = FormAnalyzer.analyzeHomeAwaySplits(m.homeTeam, m.awayTeam);
@@ -1071,6 +1134,31 @@
       const sim = FormAnalyzer.poissonMatchProbabilities(split.expectedGoalsHome, split.expectedGoalsAway);
       return { split, formH, sim };
     } catch (_) { return null; }
+  }
+  function marketImpliedProbabilities(odds) {
+    if (!odds || ['3', '1', '0'].some(k => !Number.isFinite(odds[k]) || odds[k] <= 1)) return null;
+    const inverseSum = ['3', '1', '0'].reduce((sum, key) => sum + 1 / odds[key], 0);
+    if (!Number.isFinite(inverseSum) || inverseSum <= 0) return null;
+    return ['3', '1', '0'].map(key => (1 / odds[key]) / inverseSum);
+  }
+  function matchSubsets(items, size) {
+    const result = [];
+    function visit(start, chosen) {
+      if (chosen.length === size) { result.push(chosen.slice()); return; }
+      for (let i = start; i <= items.length - (size - chosen.length); i++) {
+        chosen.push(items[i]); visit(i + 1, chosen); chosen.pop();
+      }
+    }
+    visit(0, []);
+    return result;
+  }
+  function expandSelectedCombinations(engine, matches, passType) {
+    if (!Array.isArray(matches) || matches.length < 2) throw new Error('组合至少需要 2 场不同比赛');
+    const match = /^(\d+)_1$/.exec(String(passType || ''));
+    const legCount = match ? Number(match[1]) : NaN;
+    if (!Number.isInteger(legCount) || legCount < 2) throw new Error('组合玩法必须至少为 2 串 1');
+    if (matches.length < legCount) throw new Error(`当前选择 ${matches.length} 场，${legCount} 串 1 至少需要 ${legCount} 场`);
+    return matchSubsets(matches, legCount).flatMap(group => engine.expandSlipToCombinations({ matches: group, passType }));
   }
   function toggleDataset(type) {
     currentDataset = type === 'classic' ? 'classic' : 'live';
@@ -1105,7 +1193,8 @@
     const tbody = document.getElementById('jingcai-tbody');
     tbody.innerHTML = '';
     if (!activeMatches.length) {
-      tbody.innerHTML = '<tr><td colspan="7">没有合格的赛事快照。可显式切换演示数据；演示不能用于概率提升验证。</td></tr>';
+      renderMarketEmpty(tbody, 7, 'jingcai', '没有通过完整性校验的竞彩赛事快照', '实时来源缺失或已过期时不伪造比赛和赔率；可切换演示数据检查选择与组合操作。');
+      updateMarketSelectionCount('jingcai');
       return;
     }
     activeMatches.forEach(m => {
@@ -1132,6 +1221,7 @@
       radar.addEventListener('click', () => openRadar(m.id));
       tr.children[6].appendChild(radar); tbody.appendChild(tr);
     });
+    updateMarketSelectionCount('jingcai');
   }
 
   function isPicked(matchId, market, selection) {
@@ -1208,17 +1298,26 @@
   function triggerQuantModel(strategy) {
     const candidates = activeMatches.flatMap(m => {
       const model = matchModel(m);
-      if (!model || !m.odds.SPF || (m.kickoffAt && Date.parse(m.kickoffAt) <= Date.now())) return [];
-      const probabilities = [model.sim.probHome, model.sim.probDraw, model.sim.probAway];
-      const picks = ['3','1','0'].map((selection, i) => ({ match:m, selection, p:probabilities[i], ev:probabilities[i] * m.odds.SPF[selection] }));
-      picks.sort((a,b) => strategy === 'cold' ? b.ev-a.ev : b.p-a.p);
-      return strategy === 'cold' && picks[0].ev <= 1 ? [] : [picks[0]];
+      const odds = m && m.odds && m.odds.SPF;
+      const marketProbabilities = marketImpliedProbabilities(odds);
+      if ((!model && !marketProbabilities) || (m.kickoffAt && Date.parse(m.kickoffAt) <= Date.now())) return [];
+      // A source snapshot may contain valid odds but no team history. In that
+      // case use the normalized market baseline only, never a fabricated form
+      // estimate. The result remains a selectable research candidate.
+      const probabilities = model ? [model.sim.probHome, model.sim.probDraw, model.sim.probAway] : marketProbabilities;
+      const picks = ['3','1','0'].map((selection, i) => ({ match:m, selection, odds:m.odds.SPF[selection], p:probabilities[i], ev:probabilities[i] * m.odds.SPF[selection] }));
+      picks.sort((a,b) => strategy === 'cold' ? (b.odds || 0) - (a.odds || 0) || b.p-a.p : b.p-a.p || (a.odds || 0) - (b.odds || 0));
+      return [{ ...picks[0], modelStatus: model ? 'uncalibrated-model' : 'market-implied-baseline' }];
     }).sort((a,b) => strategy === 'cold' ? b.ev-a.ev : b.p-a.p);
     if (candidates.length < 2) { notifyUser('缺少两场有效观测或符合条件的候选；不生成推测票单。'); return; }
     clearSlip();
-    candidates.slice(0,2).forEach(p => togglePick(p.match.id,'SPF',p.selection,p.match.odds.SPF[p.selection],{'3':'胜','1':'平','0':'负'}[p.selection]));
+    const selected = candidates.slice(0,2);
+    selected.forEach(p => togglePick(p.match.id,'SPF',p.selection,p.match.odds.SPF[p.selection],{'3':'胜','1':'平','0':'负'}[p.selection]));
     setOptStrategy(strategy === 'cold' ? 'cold' : 'equal'); runOptimization();
-    notifyUser('已生成未校准模型的演示候选。EV 依赖概率假设，尚无样本外预测优势证据。');
+    const baselineOnly = selected.some(p => p.modelStatus === 'market-implied-baseline');
+    notifyUser(baselineOnly
+      ? '已按来源赔率的市场隐含概率自动选出 2 场并组合。该排序不等于独立预测，也没有收益优势证据。'
+      : '已生成未校准模型的 2 场候选并组合。EV 依赖概率假设，尚无样本外预测优势证据。');
   }
 
   function triggerQuantDiagnosis() {
@@ -1234,12 +1333,11 @@
   function runOptimization() {
     if (!validateCurrentSnapshot()) return;
     const matchIds = Object.keys(selectedPicks);
-    if (matchIds.length < (document.getElementById('pass-type-select').value === '1_1' ? 1 : 2)) {
-      notifyUser('请至少选择 2 场比赛组合串关！');
+    const passType = document.getElementById('pass-type-select').value;
+    if (matchIds.length < 2) {
+      notifyUser(`当前已选 ${matchIds.length} 场；竞彩组合至少需要 2 场不同比赛。可手动点选，或点击量化模型选单自动选择 2 场。`);
       return;
     }
-
-    const passType = document.getElementById('pass-type-select').value;
     const slip = {
       matches: matchIds.map(id => {
         const m = activeMatches.find(x => x.id === id) || MockData.CLASSIC_JINGCAI_MATCHES.find(x => x.id === id);
@@ -1256,7 +1354,7 @@
     let combos;
 
     try {
-      combos = JingcaiEngine.expandSlipToCombinations(slip);
+      combos = expandSelectedCombinations(JingcaiEngine, slip.matches, passType);
       const opt = JingcaiEngine.optimizeBonus(combos, budget, currentOptStrategy);
       const card = document.getElementById('opt-result-card');
       card.style.display = 'block';
@@ -1288,7 +1386,9 @@
     const tbody = document.getElementById('sfc-tbody');
     const sfcData = getSFCMatches();
     if (!sfcData.length) {
-      tbody.innerHTML = '<tr><td colspan="7">当前没有通过完整性校验的 14 场对阵。请查看上方来源状态。</td></tr>';
+      const sourceError = MockData.META && MockData.META.sourceErrors && MockData.META.sourceErrors.sfc;
+      renderMarketEmpty(tbody, 7, 'sfc', '当前没有通过完整性校验的 14 场对阵', sourceError ? `来源状态：${sourceError}；没有完整 14 场就不生成胜负彩组合。` : '没有完整 14 场就不生成胜负彩组合；可切换演示数据检查操作。');
+      updateMarketSelectionCount('sfc');
       updateSFCSummary();
       return;
     }
@@ -1298,23 +1398,24 @@
         <td><span class="tag" style="background:#f1f5f9;">${esc(m.league)}</span></td>
         <td><strong>${esc(m.home)}</strong> vs <strong>${esc(m.away)}</strong></td>
         <td>
-          <div class="odds-btn ${sfcPicks[idx].includes('3') ? 'selected' : ''}" onclick="toggleSFCPick(${idx}, '3')">
+          <button type="button" class="odds-btn ${sfcPicks[idx].includes('3') ? 'selected' : ''}" aria-pressed="${sfcPicks[idx].includes('3')}" onclick="toggleSFCPick(${idx}, '3')">
             <span>主胜</span><span class="odds-val">${m.odds['3'].toFixed(2)}</span>
-          </div>
+          </button>
         </td>
         <td>
-          <div class="odds-btn ${sfcPicks[idx].includes('1') ? 'selected' : ''}" onclick="toggleSFCPick(${idx}, '1')">
+          <button type="button" class="odds-btn ${sfcPicks[idx].includes('1') ? 'selected' : ''}" aria-pressed="${sfcPicks[idx].includes('1')}" onclick="toggleSFCPick(${idx}, '1')">
             <span>平局</span><span class="odds-val">${m.odds['1'].toFixed(2)}</span>
-          </div>
+          </button>
         </td>
         <td>
-          <div class="odds-btn ${sfcPicks[idx].includes('0') ? 'selected' : ''}" onclick="toggleSFCPick(${idx}, '0')">
+          <button type="button" class="odds-btn ${sfcPicks[idx].includes('0') ? 'selected' : ''}" aria-pressed="${sfcPicks[idx].includes('0')}" onclick="toggleSFCPick(${idx}, '0')">
             <span>客胜</span><span class="odds-val">${m.odds['0'].toFixed(2)}</span>
-          </div>
+          </button>
         </td>
         <td><span class="tag ${m.odds['0'] > 4.5 ? 'tag-val' : ''}">冷门指数 ${(m.odds['0'] * 7.5).toFixed(1)}</span></td>
       </tr>
     `).join('');
+    updateMarketSelectionCount('sfc');
     updateSFCSummary();
   }
 
@@ -1378,29 +1479,37 @@
   // --- TAB 3: BEIDAN ---
   function renderBeidan() {
     const tbody = document.getElementById('beidan-tbody');
-    tbody.innerHTML = getBeidanMatches().map(m => `
+    const matches = getBeidanMatches();
+    if (!matches.length) {
+      renderMarketEmpty(tbody, 7, 'beidan', '当前没有可选的北单赛事快照', '当前来源只提供经过校验的竞彩数据；北单赔率缺失时不伪造赛事或 SP。');
+      updateMarketSelectionCount('beidan');
+      renderBeidanSlip();
+      return;
+    }
+    tbody.innerHTML = matches.map(m => `
       <tr>
-        <td class="mono font-bold">${m.matchNum}</td>
+        <td class="mono font-bold">${esc(m.matchNum)}</td>
         <td><span class="tag" style="background:#f1f5f9;">${esc(m.league)}</span></td>
-        <td><strong>${m.homeTeam}</strong> vs <strong>${m.awayTeam}</strong></td>
+        <td><strong>${esc(m.homeTeam)}</strong> vs <strong>${esc(m.awayTeam)}</strong></td>
         <td class="mono" style="font-weight:700; color:${m.handicap < 0 ? '#16a34a' : '#e11d48'};">${m.handicap}</td>
         <td>
-          <div class="odds-btn ${isBeidanPicked(m.id, '3') ? 'selected' : ''}" onclick="toggleBeidanPick('${m.id}', '3', ${m.spOdds['3']}, '胜')">
+          <button type="button" class="odds-btn ${isBeidanPicked(m.id, '3') ? 'selected' : ''}" aria-pressed="${isBeidanPicked(m.id, '3')}" data-match-id="${esc(m.id)}" data-market="beidan" data-selection="3" onclick="toggleBeidanPick('${m.id}', '3', ${m.spOdds['3']}, '胜')">
             <span>胜</span><span class="odds-val">${m.spOdds['3'].toFixed(2)}</span>
-          </div>
+          </button>
         </td>
         <td>
-          <div class="odds-btn ${isBeidanPicked(m.id, '1') ? 'selected' : ''}" onclick="toggleBeidanPick('${m.id}', '1', ${m.spOdds['1']}, '平')">
+          <button type="button" class="odds-btn ${isBeidanPicked(m.id, '1') ? 'selected' : ''}" aria-pressed="${isBeidanPicked(m.id, '1')}" data-match-id="${esc(m.id)}" data-market="beidan" data-selection="1" onclick="toggleBeidanPick('${m.id}', '1', ${m.spOdds['1']}, '平')">
             <span>平</span><span class="odds-val">${m.spOdds['1'].toFixed(2)}</span>
-          </div>
+          </button>
         </td>
         <td>
-          <div class="odds-btn ${isBeidanPicked(m.id, '0') ? 'selected' : ''}" onclick="toggleBeidanPick('${m.id}', '0', ${m.spOdds['0']}, '负')">
+          <button type="button" class="odds-btn ${isBeidanPicked(m.id, '0') ? 'selected' : ''}" aria-pressed="${isBeidanPicked(m.id, '0')}" data-match-id="${esc(m.id)}" data-market="beidan" data-selection="0" onclick="toggleBeidanPick('${m.id}', '0', ${m.spOdds['0']}, '负')">
             <span>负</span><span class="odds-val">${m.spOdds['0'].toFixed(2)}</span>
-          </div>
+          </button>
         </td>
       </tr>
     `).join('');
+    updateMarketSelectionCount('beidan');
     renderBeidanSlip();
   }
 
@@ -1466,13 +1575,14 @@
     });
     renderBeidan();
     runBeidanOptimization();
-    notifyUser('【🤖 北单量化模型选单已生成】\n已按市场基准排序，金额使用既有结算假设；没有独立预测优势证据。');
+    notifyUser(`【🤖 北单量化模型选单已生成】\n已按市场基准自动选择 ${q.matches.length} 场并组合，金额使用既有结算假设；没有独立预测优势证据。`);
   }
 
   function runBeidanOptimization() {
     const ids = Object.keys(beidanPicks);
+    const passType = document.getElementById('beidan-pass-type').value;
     if (ids.length < 2) {
-      notifyUser('北单串关请至少选择 2 场比赛！');
+      notifyUser(`当前已选 ${ids.length} 场；北单组合至少需要 2 场不同比赛。可手动点选，或点击量化模型选单自动选择 2 场。`);
       return;
     }
     const slip = {
@@ -1484,12 +1594,12 @@
           picks: beidanPicks[id]
         };
       }),
-      passType: document.getElementById('beidan-pass-type').value
+      passType
     };
     const budget = parseInt(document.getElementById('beidan-budget').value, 10);
-    const combos = BeidanEngine.expandSlipToCombinations(slip);
     try {
-      const opt = BeidanEngine.optimizeBonus(combos, budget, 'equal');
+      const expanded = expandSelectedCombinations(BeidanEngine, slip.matches, passType);
+      const opt = BeidanEngine.optimizeBonus(expanded, budget, 'equal');
       const card = document.getElementById('beidan-opt-card');
       card.style.display = 'block';
       document.getElementById('beidan-cost-summary').innerText = `总花费: ${opt.totalCost}元 / 余 ${opt.leftoverYuan}元`;
@@ -1513,7 +1623,14 @@
   // --- TAB 4: LANCAI ---
   function renderLancai() {
     const tbody = document.getElementById('lancai-tbody');
-    tbody.innerHTML = getLancaiMatches().map(m => {
+    const matches = getLancaiMatches();
+    if (!matches.length) {
+      renderMarketEmpty(tbody, 7, 'lancai', '当前没有可选的篮彩赛事快照', '当前来源没有经过校验的篮球赛事与赔率；缺少真实快照时不生成篮彩组合。');
+      updateMarketSelectionCount('lancai');
+      renderLancaiSlip();
+      return;
+    }
+    tbody.innerHTML = matches.map(m => {
       const dyn = LancaiEngine.estimateBasketballDynamics(m.homeTeam, m.awayTeam);
       return `
         <tr>
@@ -1525,34 +1642,34 @@
           </td>
           <td>
             <div style="display:flex; gap:3px; justify-content:center;">
-              <div class="odds-btn ${isLancaiPicked(m.id, 'MNL', 'away') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'MNL', 'away', ${m.odds.MNL.away}, '客胜')">
+              <button type="button" class="odds-btn ${isLancaiPicked(m.id, 'MNL', 'away') ? 'selected' : ''}" aria-pressed="${isLancaiPicked(m.id, 'MNL', 'away')}" data-match-id="${esc(m.id)}" data-market="MNL" data-selection="away" onclick="toggleLancaiPick('${m.id}', 'MNL', 'away', ${m.odds.MNL.away}, '客胜')">
                 <span>客胜</span><span class="odds-val">${m.odds.MNL.away.toFixed(2)}</span>
-              </div>
-              <div class="odds-btn ${isLancaiPicked(m.id, 'MNL', 'home') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'MNL', 'home', ${m.odds.MNL.home}, '主胜')">
+              </button>
+              <button type="button" class="odds-btn ${isLancaiPicked(m.id, 'MNL', 'home') ? 'selected' : ''}" aria-pressed="${isLancaiPicked(m.id, 'MNL', 'home')}" data-match-id="${esc(m.id)}" data-market="MNL" data-selection="home" onclick="toggleLancaiPick('${m.id}', 'MNL', 'home', ${m.odds.MNL.home}, '主胜')">
                 <span>主胜</span><span class="odds-val">${m.odds.MNL.home.toFixed(2)}</span>
-              </div>
+              </button>
             </div>
           </td>
           <td>
             <span class="tag" style="background:#f1f5f9;">${m.odds.HDC.handicap}</span>
             <div style="display:flex; gap:3px; justify-content:center; margin-top:2px;">
-              <div class="odds-btn ${isLancaiPicked(m.id, 'HDC', 'rq_away') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'HDC', 'rq_away', ${m.odds.HDC.rq_away}, '让客胜')">
+              <button type="button" class="odds-btn ${isLancaiPicked(m.id, 'HDC', 'rq_away') ? 'selected' : ''}" aria-pressed="${isLancaiPicked(m.id, 'HDC', 'rq_away')}" data-match-id="${esc(m.id)}" data-market="HDC" data-selection="rq_away" onclick="toggleLancaiPick('${m.id}', 'HDC', 'rq_away', ${m.odds.HDC.rq_away}, '让客胜')">
                 <span>让客</span><span class="odds-val">${m.odds.HDC.rq_away.toFixed(2)}</span>
-              </div>
-              <div class="odds-btn ${isLancaiPicked(m.id, 'HDC', 'rq_home') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'HDC', 'rq_home', ${m.odds.HDC.rq_home}, '让主')">
+              </button>
+              <button type="button" class="odds-btn ${isLancaiPicked(m.id, 'HDC', 'rq_home') ? 'selected' : ''}" aria-pressed="${isLancaiPicked(m.id, 'HDC', 'rq_home')}" data-match-id="${esc(m.id)}" data-market="HDC" data-selection="rq_home" onclick="toggleLancaiPick('${m.id}', 'HDC', 'rq_home', ${m.odds.HDC.rq_home}, '让主')">
                 <span>让主</span><span class="odds-val">${m.odds.HDC.rq_home.toFixed(2)}</span>
-              </div>
+              </button>
             </div>
           </td>
           <td>
             <span class="tag" style="background:#f1f5f9;">${m.odds.HILO.totalLine}</span>
             <div style="display:flex; gap:3px; justify-content:center; margin-top:2px;">
-              <div class="odds-btn ${isLancaiPicked(m.id, 'HILO', 'over') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'HILO', 'over', ${m.odds.HILO.over}, '大分')">
+              <button type="button" class="odds-btn ${isLancaiPicked(m.id, 'HILO', 'over') ? 'selected' : ''}" aria-pressed="${isLancaiPicked(m.id, 'HILO', 'over')}" data-match-id="${esc(m.id)}" data-market="HILO" data-selection="over" onclick="toggleLancaiPick('${m.id}', 'HILO', 'over', ${m.odds.HILO.over}, '大分')">
                 <span>大分</span><span class="odds-val">${m.odds.HILO.over.toFixed(2)}</span>
-              </div>
-              <div class="odds-btn ${isLancaiPicked(m.id, 'HILO', 'under') ? 'selected' : ''}" onclick="toggleLancaiPick('${m.id}', 'HILO', 'under', ${m.odds.HILO.under}, '小分')">
+              </button>
+              <button type="button" class="odds-btn ${isLancaiPicked(m.id, 'HILO', 'under') ? 'selected' : ''}" aria-pressed="${isLancaiPicked(m.id, 'HILO', 'under')}" data-match-id="${esc(m.id)}" data-market="HILO" data-selection="under" onclick="toggleLancaiPick('${m.id}', 'HILO', 'under', ${m.odds.HILO.under}, '小分')">
                 <span>小分</span><span class="odds-val">${m.odds.HILO.under.toFixed(2)}</span>
-              </div>
+              </button>
             </div>
           </td>
           <td style="font-size:11px; text-align:left;">
@@ -1562,6 +1679,7 @@
         </tr>
       `;
     }).join('');
+    updateMarketSelectionCount('lancai');
     renderLancaiSlip();
   }
 
@@ -1627,13 +1745,14 @@
     });
     renderLancai();
     runLancaiOptimization();
-    notifyUser('【🤖 篮彩量化模型选单已生成】\n已结合 NBA 回合节奏与背靠背疲劳折损，自动推荐让分与总分对冲单！');
+    notifyUser(`【🤖 篮彩量化模型选单已生成】\n已按市场基准自动选择 ${q.matches.length} 场并组合。节奏与背靠背仅作研究信息，没有独立预测优势证据。`);
   }
 
   function runLancaiOptimization() {
     const ids = Object.keys(lancaiPicks);
+    const passType = document.getElementById('lancai-pass-type').value;
     if (ids.length < 2) {
-      notifyUser('篮彩串关请至少选择 2 场比赛！');
+      notifyUser(`当前已选 ${ids.length} 场；篮彩组合至少需要 2 场不同比赛。可手动点选，或点击量化模型选单自动选择 2 场。`);
       return;
     }
     const slip = {
@@ -1645,12 +1764,12 @@
           picks: lancaiPicks[id]
         };
       }),
-      passType: document.getElementById('lancai-pass-type').value
+      passType
     };
     const budget = parseInt(document.getElementById('lancai-budget').value, 10);
-    const combos = LancaiEngine.expandSlipToCombinations(slip);
     try {
-      const opt = LancaiEngine.optimizeBonus(combos, budget, 'equal');
+      const expanded = expandSelectedCombinations(LancaiEngine, slip.matches, passType);
+      const opt = LancaiEngine.optimizeBonus(expanded, budget, 'equal');
       const card = document.getElementById('lancai-opt-card');
       card.style.display = 'block';
       document.getElementById('lancai-cost-summary').innerText = `总花费: ${opt.totalCost}元 / 余 ${opt.leftoverYuan}元`;

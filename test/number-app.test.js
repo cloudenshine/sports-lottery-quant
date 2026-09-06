@@ -22,6 +22,40 @@ test('readiness uses server eligibility, research cutoff and real source instead
   assert.equal(app.issueReadiness(game, Date.parse(game.registration.cutoff)).ready, false);
   assert.equal(app.issueReadiness(game, Date.parse(game.nextIssue.drawAt) + 1).ready, false);
 });
+test('read-only exploration is independent from formal registration eligibility', () => {
+  const closed = { ...game, registration: { eligible: false, reason: '本期正式登记截止', cutoff: null, sourceFresh: false } };
+  assert.equal(app.explorationReadiness(closed, now).ready, true);
+  assert.equal(app.issueReadiness(closed, now).ready, false);
+  const dom = fakeDOM();
+  app.mount(dom, { NUMBER_DASHBOARD: { games: { ssq: { ...currentGame(), registration: { eligible: false, reason: '本期正式登记截止', cutoff: null, sourceFresh: false } } } }, location: { protocol: 'https:', hostname: 'example.com' }, NumberModels: models });
+  assert.equal(dom.elements.generate.disabled, false);
+  assert.equal(dom.elements.register.disabled, true);
+  dom.elements.generate.listeners.click();
+  assert.match(dom.elements['generation-status'].textContent, /已生成/);
+  assert.match(dom.elements['data-summary'].innerHTML, /生成本期探索组合/);
+  assert.match(dom.elements['data-summary'].innerHTML, /正式登记/);
+});
+test('expired or missing target remains usable as an explicitly non-prospective history snapshot', () => {
+  for (const nextIssue of [{ ...game.nextIssue, drawAt: new Date(now - 1).toISOString() }, null]) {
+    const snapshotGame = { ...game, nextIssue };
+    const readiness = app.explorationReadiness(snapshotGame, now);
+    assert.equal(readiness.ready, true);
+    assert.equal(readiness.prospective, false);
+    assert.equal(app.issueReadiness(snapshotGame, now).ready, false);
+    const result = app.generateSelection(models, snapshotGame, input, now);
+    assert.equal(result.prospectiveTarget, false);
+    assert.equal(result.purpose, 'historical_snapshot_exploration_only');
+    assert.equal(result.target.snapshotAfterIssue, history[0].issue);
+    assert.match(app.renderTickets(result), /历史快照探索/);
+  }
+  const dom = fakeDOM();
+  app.mount(dom, { NUMBER_DASHBOARD: { games: { ssq: { ...game, nextIssue: { ...game.nextIssue, drawAt: new Date(now - 1).toISOString() } } } }, location: { protocol: 'https:', hostname: 'example.com' }, NumberModels: models });
+  assert.equal(dom.elements.generate.disabled, false);
+  assert.equal(dom.elements.generate.textContent, '生成历史快照探索组合');
+  dom.elements.generate.listeners.click();
+  assert.match(dom.elements['generation-status'].textContent, /历史快照/);
+  assert.equal(dom.elements.register.disabled, true);
+});
 test('readiness independently expires a source after 24 hours and rejects future or missing capture times', () => {
   const withCapturedAt = fetchedAt => ({ ...game, nextIssue: { ...game.nextIssue, source: { ...game.nextIssue.source, fetchedAt } } });
   assert.equal(app.issueReadiness(withCapturedAt(new Date(now - 24 * 3600000).toISOString()), now).ready, true);
@@ -31,7 +65,7 @@ test('new app generates valid complete-combination probabilities reproducibly th
   const result = app.generateSelection(models, game, input, now);
   assert.equal(result.selection.seed, 0);
   assert.equal(result.tickets.length, 5);
-  assert.equal(result.purpose, 'exploratory_paper_only');
+  assert.equal(result.purpose, 'prospective_exploratory_paper_only');
   assert.deepEqual(result.tickets, app.generateSelection(models, game, input, now).tickets);
   for (const ticket of result.tickets) {
     assert.equal(ticket.probabilityRatio, 1);
@@ -40,7 +74,7 @@ test('new app generates valid complete-combination probabilities reproducibly th
     assert.equal(ticket.special.length, 1);
   }
   assert.throws(() => app.generateSelection(null, game, input, now), /引擎/);
-  assert.throws(() => app.generateSelection(models, {}, input, now), /目标期/);
+  assert.throws(() => app.generateSelection(models, {}, input, now), /历史开奖/);
 });
 test('all seven candidates generate both games through the new engine with an equal-cost baseline', () => {
   for (const modelId of Object.keys(app.names)) for (const gameId of ['ssq', 'dlt']) {

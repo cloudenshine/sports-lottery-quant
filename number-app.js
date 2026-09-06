@@ -37,24 +37,46 @@
     if (count * unitCost > budget) throw new Error(`预算不足：${count} 注需要 ${count * unitCost} 元。请调整注数或预算。`);
     return { gameId: input.gameId, modelId: input.modelId, count, budget, seed, additional, unitCost, costYuan: count * unitCost };
   }
-  function issueReadiness(game, now) {
+  // Exploration is a read-only calculation. It must not depend on whether the
+  // local ledger is currently open for a formal prospective registration.
+  // Keeping this gate separate also means a public snapshot can remain useful
+  // after registration has closed, while the registration button stays
+  // correctly disabled.
+  function explorationReadiness(game, now) {
+    const draws = array(game && game.draws);
+    if (!draws.length) return { ready: false, prospective: false, reason: '缺少历史开奖记录，暂不能生成研究组合。' };
+    const latest = draws.reduce((a, b) => Date.parse(a.drawAt || a.date) > Date.parse(b.drawAt || b.date) ? a : b);
     const target = game && game.nextIssue;
-    if (!target || typeof target.issue !== 'string' || !target.issue.trim() || !Number.isFinite(Date.parse(target.drawAt))) return { ready: false, reason: '缺少来源确认的目标期号与开奖时间。请先更新数字彩数据。' };
-    if (Date.parse(target.drawAt) <= now) return { ready: false, reason: '目标期已开奖或已过预计开奖时间，请更新数据后继续。' };
-    if (target.salesCloseAt && (!Number.isFinite(Date.parse(target.salesCloseAt)) || Date.parse(target.salesCloseAt) <= now)) return { ready: false, reason: '目标期已截止登记，请等待下一期真实预告。' };
-    if (!array(game.draws).length) return { ready: false, reason: '缺少历史开奖记录，暂不能生成本期研究组合。' };
+    let targetProblem = '';
+    if (!target || typeof target.issue !== 'string' || !target.issue.trim() || !Number.isFinite(Date.parse(target.drawAt))) targetProblem = '缺少来源确认的未来目标期';
+    else if (Date.parse(target.drawAt) <= now) targetProblem = '目标期已过预计开奖时间';
+    else if (target.salesCloseAt && (!Number.isFinite(Date.parse(target.salesCloseAt)) || Date.parse(target.salesCloseAt) <= now)) targetProblem = '目标期销售已截止';
+    else if (!target.source) targetProblem = '目标期缺少来源凭据';
+    else {
+      const fetchedAt = Date.parse(target.source.fetchedAt);
+      const sourceAge = now - fetchedAt;
+      if (!Number.isFinite(fetchedAt) || sourceAge < 0 || sourceAge > 24 * 60 * 60 * 1000) targetProblem = '目标期来源时间无效或已超过 24 小时';
+    }
+    if (!targetProblem) return { ready: true, prospective: true, target, reason: '目标期有效，可生成本期探索组合；生成只读，不会自动登记。' };
+    return {
+      ready: true,
+      prospective: false,
+      target: { issue: null, drawAt: null, snapshotAfterIssue: latest.issue || null, unavailableTargetIssue: target && target.issue || null },
+      reason: `${targetProblem}。仍可基于截至 ${latest.issue || '最近一期'} 的历史快照生成无目标期探索组合；该结果不能登记或作为赛前预测。`
+    };
+  }
+  function issueReadiness(game, now) {
+    const exploration = explorationReadiness(game, now);
+    if (!exploration.ready) return exploration;
+    if (!exploration.prospective) return { ready: false, reason: `正式登记需要来源有效且尚未截止的未来目标期。${exploration.reason}` };
     const registration = game.registration;
     if (!registration || registration.eligible !== true) return { ready: false, reason: registration && registration.reason || '服务端尚未确认本期来源与登记条件，请更新数字彩数据。' };
     if (!Number.isFinite(Date.parse(registration.cutoff)) || Date.parse(registration.cutoff) <= now) return { ready: false, reason: '本期研究登记窗口已关闭，请更新数据。' };
-    if (!target.source) return { ready: false, reason: '目标期缺少来源凭据，暂不能作为真实目标期使用。' };
-    const fetchedAt = Date.parse(target.source.fetchedAt);
-    const sourceAge = now - fetchedAt;
-    if (!Number.isFinite(fetchedAt) || sourceAge < 0 || sourceAge > 24 * 60 * 60 * 1000) return { ready: false, reason: '目标期来源时间无效或已超过 24 小时，请更新本机数据。' };
-    return { ready: true, target };
+    return exploration;
   }
   function generateSelection(models, game, input, now = Date.now()) {
     const selection = validateSelection(input);
-    const readiness = issueReadiness(game, now);
+    const readiness = explorationReadiness(game, now);
     if (!readiness.ready) throw new Error(readiness.reason);
     if (!models || typeof models.generate !== 'function' || typeof models.logProbability !== 'function') throw new Error('概率引擎未加载，请检查本机资源并刷新。');
     const asOf = new Date(now).toISOString();
@@ -67,7 +89,7 @@
       if (!Number.isFinite(logProbability) || !Number.isFinite(baselineLogProbability) || logProbability > 0 || baselineLogProbability > 0) throw new Error('模型返回了无效的完整组合概率。');
       return { main: ticket.main, special: ticket.special, logProbability, probability: Math.exp(logProbability), baselineProbability: Math.exp(baselineLogProbability), probabilityRatio: Math.exp(logProbability - baselineLogProbability) };
     });
-    return { schemaVersion: 1, purpose: 'exploratory_paper_only', generatedAt: asOf, target: readiness.target, selection, model: generated.model, portfolio: { ...generated.portfolio, costYuan: selection.costYuan, additional: selection.additional }, tickets };
+    return { schemaVersion: 1, purpose: readiness.prospective ? 'prospective_exploratory_paper_only' : 'historical_snapshot_exploration_only', prospectiveTarget: readiness.prospective, generatedAt: asOf, target: readiness.target, readinessNote: readiness.reason, selection, model: generated.model, portfolio: { ...generated.portfolio, costYuan: selection.costYuan, additional: selection.additional }, tickets };
   }
   function csv(result) {
     const quote = value => { let text = String(value == null ? '' : value); if (typeof value === 'string' && /^[=+\-@\t\r]/.test(text)) text = "'" + text; return `"${text.replace(/"/g, '""')}"`; };
@@ -77,7 +99,8 @@
   }
   function renderTickets(result) {
     const balls = (values, special) => values.map(v => `<span class="ball${special ? ' special' : ''}">${escape(String(v).padStart(2, '0'))}</span>`).join('');
-    return `<p class="note">第 ${escape(result.target.issue)} 期 · ${escape(names[result.selection.modelId])} · ${result.selection.count} 注 / ${result.selection.costYuan} 元 · 探索性纸面组合</p>` + table(['组合', '模型完整概率 / 对数概率', '均匀基线 / 概率比'], result.tickets.map(ticket => [`<div class="balls">${balls(ticket.main, false)}<span class="plus">+</span>${balls(ticket.special, true)}</div>`, `${scientific(ticket.probability)}<small>log P = ${number(ticket.logProbability, 10)}</small>`, `${scientific(ticket.baselineProbability)}<small>${number(ticket.probabilityRatio, 4)} 倍 · 模型估计比</small>`])) + `<p class="note">概率比表示模型相对均匀先验的估计差异，不能单独证明实际命中率或收益提升。</p>` + detail('查看训练参数、时间截断与组合目标', { model: result.model, portfolio: result.portfolio });
+    const targetLabel = result.prospectiveTarget ? `第 ${escape(result.target.issue)} 期` : `历史快照探索（最近开奖 ${escape(result.target.snapshotAfterIssue || '未标注')}）`;
+    return `<p class="note">${targetLabel} · ${escape(names[result.selection.modelId])} · ${result.selection.count} 注 / ${result.selection.costYuan} 元 · 探索性纸面组合</p><p class="notice">${escape(result.readinessNote)}</p>` + table(['组合', '模型完整概率 / 对数概率', '均匀基线 / 概率比'], result.tickets.map(ticket => [`<div class="balls">${balls(ticket.main, false)}<span class="plus">+</span>${balls(ticket.special, true)}</div>`, `${scientific(ticket.probability)}<small>log P = ${number(ticket.logProbability, 10)}</small>`, `${scientific(ticket.baselineProbability)}<small>${number(ticket.probabilityRatio, 4)} 倍 · 模型估计比</small>`])) + `<p class="note">概率比表示模型相对均匀先验的估计差异，不能单独证明实际命中率或收益提升。</p>` + detail('查看训练参数、时间截断与组合目标', { targetMode: result.prospectiveTarget ? 'prospective' : 'historical_snapshot', model: result.model, portfolio: result.portfolio });
   }
 
   function mount(document, environment = scope) {
@@ -105,16 +128,19 @@
       const current = game();
       const draws = array(current.draws);
       const latest = draws.length ? draws.reduce((a, b) => Date.parse(a.drawAt || a.date) > Date.parse(b.drawAt || b.date) ? a : b) : null;
-      const ready = issueReadiness(current, Date.now());
+      const exploration = explorationReadiness(current, Date.now());
+      const registration = issueReadiness(current, Date.now());
       get('game-heading').textContent = gameId === 'ssq' ? '双色球' : '大乐透';
       for (const id of ['ssq', 'dlt']) get(`game-${id}`).setAttribute('aria-selected', String(gameId === id));
       get('additional-control').hidden = gameId !== 'dlt';
-      get('data-summary').innerHTML = `<div class="stats">${stat(number(draws.length), '历史记录')}${stat(latest ? latest.issue : '—', '最近开奖期号')}${stat(current.nextIssue ? current.nextIssue.issue : '—', '研究目标期')}</div><p class="note">目标开奖（北京）：${escape(date(current.nextIssue && current.nextIssue.drawAt))}<br>研究登记截止：${escape(date(current.registration && current.registration.cutoff))}（研究协议设定）<br>官方销售截止：${escape(date(current.nextIssue && current.nextIssue.salesCloseAt))}</p><p class="notice">${escape(ready.ready ? '目标期有效，可生成组合并在开奖前登记。' : ready.reason)}</p>`;
+      const registrationMessage = registration.ready ? '本机已满足正式登记条件。' : `正式登记：${registration.reason}`;
+      get('data-summary').innerHTML = `<div class="stats">${stat(number(draws.length), '历史记录')}${stat(latest ? latest.issue : '—', '最近开奖期号')}${stat(current.nextIssue ? current.nextIssue.issue : '—', '数据中的目标期')}</div><p class="note">目标开奖（北京）：${escape(date(current.nextIssue && current.nextIssue.drawAt))}<br>研究登记截止：${escape(date(current.registration && current.registration.cutoff))}（仅影响正式登记）<br>官方销售截止：${escape(date(current.nextIssue && current.nextIssue.salesCloseAt))}</p><p class="notice">${escape(exploration.reason)}</p><p class="note">${escape(registrationMessage)}</p>`;
       get('source-details').innerHTML = `<p class="note">最近开奖日期：${escape(latest && latest.date || '未提供')}<br>本期来源时效：${current.registration?.sourceFresh === true ? '服务端已确认' : '待确认'}</p>` + detail('数据来源记录', { sourceStatus: current.sourceStatus || '未提供', nextIssue: current.nextIssue || null, sources: dashboard.sources || [] });
       get('model-description').textContent = descriptions[get('model').value] || '';
-      get('generate').disabled = !ready.ready || refreshState === 'loading';
+      get('generate').textContent = exploration.prospective ? '生成本期探索组合' : '生成历史快照探索组合';
+      get('generate').disabled = !exploration.ready || refreshState === 'loading';
       const local = canRegister();
-      get('register').disabled = registering || !ready.ready || !local || refreshState === 'loading';
+      get('register').disabled = registering || !registration.ready || !local || refreshState === 'loading';
       if (!local) message('registration-status', '当前为只读快照。请运行 npm run serve，并在 http://127.0.0.1:8080/index.html 登记实验。');
       const protocol = dashboard.protocol || {};
       get('protocol-summary').textContent = `协议：${protocol.protocolId || protocol.id || '等待载入'} · 固定每模型 ${number(protocol.ticketCount)} 注 / ${number(protocol.costYuan)} 元（基本投注）。`;
@@ -135,18 +161,18 @@
         result = generateSelection(environment.NumberModels, game(), { gameId, modelId: get('model').value, count: get('count').value, budget: get('budget').value, seed: get('seed').value, additional: get('additional').value });
         get('generated').innerHTML = renderTickets(result);
         get('export-json').disabled = false; get('export-csv').disabled = false;
-        message('generation-status', `已生成 ${result.selection.count} 注可复现组合。种子 ${result.selection.seed}，尚未登记为前瞻实验。`);
+        message('generation-status', result.prospectiveTarget ? `已生成 ${result.selection.count} 注可复现组合。种子 ${result.selection.seed}，尚未登记为前瞻实验。` : `已生成 ${result.selection.count} 注历史快照探索组合。种子 ${result.selection.seed}；没有有效未来目标期，不能登记为赛前预测。`);
       } catch (error) { result = null; message('generation-status', error.message, true); }
     });
     function download(kind) {
       if (!result) return;
-      // The target period can expire while this page remains open.
-      if (!issueReadiness(game(), Date.now()).ready) { invalidate(); message('generation-status', '目标期已失效，请更新数据后重新生成。', true); return; }
+      if (!explorationReadiness(game(), Date.now()).ready) { invalidate(); message('generation-status', '历史开奖数据已不可用，请更新数据后重新生成。', true); return; }
       const content = kind === 'json' ? JSON.stringify(result, null, 2) : csv(result);
       const blob = new environment.Blob([content], { type: kind === 'json' ? 'application/json;charset=utf-8' : 'text/csv;charset=utf-8' });
       const url = environment.URL.createObjectURL(blob);
       const link = document.createElement('a');
-      link.href = url; link.download = `number-${gameId}-${String(result.target.issue).replace(/[^a-zA-Z0-9_-]/g, '')}-exploratory.${kind}`;
+      const targetName = result.prospectiveTarget ? result.target.issue : `snapshot-after-${result.target.snapshotAfterIssue || 'latest'}`;
+      link.href = url; link.download = `number-${gameId}-${String(targetName).replace(/[^a-zA-Z0-9_-]/g, '')}-exploratory.${kind}`;
       document.body.appendChild(link); link.click(); link.remove();
       environment.setTimeout(() => environment.URL.revokeObjectURL(url), 1000);
     }
@@ -192,7 +218,7 @@
     })() : Promise.resolve();
     return { render, ready, getResult: () => result, getDashboard: () => dashboard };
   }
-  const api = { names, descriptions, escape, validateSelection, issueReadiness, generateSelection, csv, renderTickets, mount };
+  const api = { names, descriptions, escape, validateSelection, explorationReadiness, issueReadiness, generateSelection, csv, renderTickets, mount };
   if (typeof module === 'object' && module.exports) module.exports = api;
   else { scope.NumberApp = api; if (scope.document) mount(scope.document, scope); }
 })(typeof window !== 'undefined' ? window : globalThis);

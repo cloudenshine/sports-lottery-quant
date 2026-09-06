@@ -93,4 +93,27 @@ test('Sports Lottery UI Contract & Layout Suite', async (t) => {
     assert.match(html, /mobile-bottom-bar|mobile-cart/i);
     assert.match(html, /mobile-qr-modal|qr-modal/i);
   });
+
+  await t.test('16. Jingcai live snapshots can auto-select a two-match market baseline', () => {
+    assert.match(html, /marketImpliedProbabilities/);
+    assert.match(html, /market-implied-baseline/);
+    assert.match(html, /自动选出 2 场/);
+    assert.match(html, /当前已选 \$\{matchIds\.length\} 场；竞彩组合至少需要 2 场/);
+  });
+
+  await t.test('17. Beidan and Lancai provide keyboard-accessible manual pick controls', () => {
+    assert.match(html, /data-market="beidan"/);
+    assert.match(html, /data-market="MNL"/);
+    assert.match(html, /aria-pressed="\$\{/);
+    assert.match(html, /type="button" class="odds-btn/);
+    assert.match(html, /至少需要 2 场不同比赛/);
+  });
+
+  await t.test('18. Empty live markets explain the evidence boundary and offer an explicit demo switch', () => {
+    assert.match(html, /function renderMarketEmpty\(/);
+    assert.match(html, /当前没有可选的北单赛事快照/);
+    assert.match(html, /当前没有可选的篮彩赛事快照/);
+    assert.match(html, /switchToDemoFromEmpty\('\$\{market\}'\)/);
+    assert.match(html, /仅用于验证手动选择与组合流程/);
+  });
 });
