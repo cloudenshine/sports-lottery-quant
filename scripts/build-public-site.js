@@ -176,7 +176,11 @@ function copyStandalone(rootDir, outDir, relative) {
   let html = fs.readFileSync(source, 'utf8');
   for (const [dashboard, globalName] of DASHBOARDS) {
     const dashboardFile = path.resolve(rootDir, dashboard);
-    if (fs.existsSync(dashboardFile)) html = replaceEmbeddedObject(html, globalName, readDashboard(dashboardFile, globalName).replace(`window.${globalName} = `, '').trim().replace(/;$/, ''));
+    if (fs.existsSync(dashboardFile)) {
+      let projected = parseDashboard(dashboardFile, globalName);
+      if (globalName === 'NUMBER_DASHBOARD') projected = mergePublicNumberSnapshot(rootDir, projected);
+      html = replaceEmbeddedObject(html, globalName, JSON.stringify(projected).replace(/</g, '\\u003c'));
+    }
   }
   const crowd = path.resolve(rootDir, 'data/returns/crowd-report.js');
   if (fs.existsSync(crowd)) html = replaceEmbeddedObject(html, 'NUMBER_CROWD_REPORT', readDashboard(crowd, 'NUMBER_CROWD_REPORT').replace('window.NUMBER_CROWD_REPORT = ', '').trim().replace(/;$/, ''));

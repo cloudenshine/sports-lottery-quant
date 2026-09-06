@@ -41,7 +41,9 @@ jobs:
         continue-on-error: true
 
       - name: Verify source and public snapshot contracts
-        run: node --test test/public-site.test.js test/data-integrity.test.js test/numbers-sources.test.js
+        run: |
+          npm run build
+          node --test test/public-site.test.js test/data-integrity.test.js test/numbers-sources.test.js
 
       - name: Archive public source responses and hashes
         if: always()
