@@ -52,4 +52,11 @@ describe("UI contract matches L0-L4 controls", () => {
   it("exposes dan-tuo budget lock copy", () => {
     assert.match(html, /超出预算会直接拒绝/);
   });
+
+  it("loads the cloud number dashboard and exposes a manual source refresh", () => {
+    assert.match(html, /src="data\/numbers\/dashboard\.js"/);
+    assert.match(html, /src="number-tools-live\.js"/);
+    assert.match(html, /id="refresh-draw-source"/);
+    assert.doesNotMatch(html, /此页面未连接实时开奖源/);
+  });
 });

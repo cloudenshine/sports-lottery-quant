@@ -4,6 +4,11 @@ on:
   schedule:
     # 10:30, 18:30 and 23:30 Asia/Shanghai = 02:30, 10:30 and 15:30 UTC.
     - cron: '30 2,10,15 * * *'
+    # Near-live draw refresh: every 10 minutes from 21:10 to 22:30 Beijing
+    # on SSQ/DLT draw days (Sun-Thu and Sat). GitHub scheduling and Pages
+    # deployment can add several minutes, so the UI reports the observed time.
+    - cron: '10,20,30,40,50 13 * * 0-4,6'
+    - cron: '0,10,20,30 14 * * 0-4,6'
   workflow_dispatch:
 
 permissions:

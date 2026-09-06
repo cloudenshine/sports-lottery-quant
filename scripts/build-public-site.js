@@ -22,6 +22,7 @@ const PUBLIC_FILES = Object.freeze([
   'manifest.json',
   'docs/testing/scientific-evaluation.json',
   'engine.js',
+  'number-tools-live.js',
   'number-models.js',
   'number-settlement.js',
   'number-app.js',

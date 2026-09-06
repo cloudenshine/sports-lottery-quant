@@ -41,19 +41,25 @@ ${mockDataJs}
   const lottoBase = fs.readFileSync(path.join(__dirname, 'number-tools.html'), 'utf8');
   const ssqCompactJs = fs.readFileSync(path.join(__dirname, 'data', 'ssq-compact.js'), 'utf8');
   const dltCompactJs = fs.readFileSync(path.join(__dirname, 'data', 'dlt-compact.js'), 'utf8');
+  const numberPublicSnapshot = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'numbers', 'public-snapshot.json'), 'utf8'));
+  const numberDashboardJs = `window.NUMBER_DASHBOARD = ${JSON.stringify(numberPublicSnapshot).replace(/</g, '\\u003c')};`;
   const engineJs = fs.readFileSync(path.join(__dirname, 'engine.js'), 'utf8');
+  const numberToolsLiveJs = fs.readFileSync(path.join(__dirname, 'number-tools-live.js'), 'utf8');
 
   let lottoStandalone = lottoBase.replace(
-    /<script src="data\/ssq-compact\.js"><\/script>[\s\S]*?<script src="engine\.js"><\/script>/,
+    /<script src="data\/ssq-compact\.js"><\/script>[\s\S]*?<script src="number-tools-live\.js"><\/script>/,
     `<!-- Inlined Scripts for Standalone Mobile Running -->
 <script>
 ${ssqCompactJs}
 ${dltCompactJs}
+${numberDashboardJs}
 ${engineJs}
+${numberToolsLiveJs}
 </script>`
   );
 
   const lottoOut = path.join(__dirname, 'number-tools-standalone.html');
+  if (/<script[^>]+src=/.test(lottoStandalone)) throw new Error('Number tools standalone has unresolved scripts');
   fs.writeFileSync(lottoOut, lottoStandalone, 'utf8');
   console.log('Successfully created:', lottoOut, `(${Math.round(lottoStandalone.length / 1024)} KB)`);
 

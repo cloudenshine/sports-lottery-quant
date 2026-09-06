@@ -44,7 +44,9 @@ async function refresh({ root = rootDir, now = new Date(), syncSportsImpl = sync
   const temporaryDir = fs.mkdtempSync(path.join(os.tmpdir(), 'lottery-cloud-refresh-'));
   try {
     try {
-      const result = await syncNumbersImpl({ dataDir: temporaryDir, detailLimit: 30, concurrency: 4, now });
+      // The history endpoints provide the complete draw list. Limit detail
+      // notices during frequent draw-window refreshes to recent prize tables.
+      const result = await syncNumbersImpl({ dataDir: temporaryDir, detailLimit: 8, concurrency: 4, now });
       const snapshot = projectPublic({
         schemaVersion: 1,
         generatedAt,

@@ -511,8 +511,9 @@
         <span>倒计时:</span>
         <span class="mono" id="countdown-timer" style="font-weight:800; color:var(--accent);">--:--:--</span>
         <span style="color:#cbd5e1;">|</span>
-        <span id="sync-status-indicator" style="font-weight:600;">本地历史快照；此页面未连接实时开奖源</span>
+        <span id="sync-status-indicator" style="font-weight:600;">正在连接云端开奖源…</span>
       </div>
+      <button class="btn-secondary" id="refresh-draw-source" type="button" style="padding:7px 11px; font-size:11px;">刷新开奖源</button>
       <div class="data-source-tag">北京时间: <span class="mono" id="current-bj-clock" style="font-weight:700; color:var(--ink);">2026-09-02 20:15:00</span></div>
     </div>
   </div>
@@ -1036,7 +1037,9 @@
 <!-- Scripts -->
 <script src="data/ssq-compact.js"></script>
 <script src="data/dlt-compact.js"></script>
+<script src="data/numbers/dashboard.js"></script>
 <script src="engine.js"></script>
+<script src="number-tools-live.js"></script>
 <script>
 (function() {
   const E = window.LotteryEngine;
@@ -1047,6 +1050,27 @@
 
   const $ = (id) => document.getElementById(id);
   let currentPortfolio = null;
+  let drawSourceState = null;
+  let drawSourceError = null;
+
+  function currentSourceGame() {
+    return drawSourceState && drawSourceState.games && drawSourceState.games[$("game").value];
+  }
+
+  function updateSourceStatus() {
+    const indicator = $("sync-status-indicator");
+    if (!indicator) return;
+    const gameState = currentSourceGame();
+    if (drawSourceError && !gameState) {
+      indicator.textContent = `在线刷新失败：${drawSourceError.message}；保留已验证快照`;
+      indicator.style.color = "#b91c1c";
+      return;
+    }
+    const freshness = window.NumberToolsLive.freshnessLabel(gameState, Date.now());
+    indicator.textContent = drawSourceError ? `${freshness.text}；本次刷新失败` : freshness.text;
+    indicator.style.color = freshness.level === "live" ? "#15803d" : freshness.level === "stale" ? "#b45309" : "#b91c1c";
+    indicator.title = gameState && gameState.source ? `来源：${gameState.source}` : "";
+  }
 
   // Tabs Handler
   document.querySelectorAll(".tab").forEach(tab => {
@@ -1070,7 +1094,11 @@
       const game = $("game").value;
       const sched = E.getNextDrawInfo(game, actualNow);
       if (sched) {
-        if ($("countdown-day-badge")) $("countdown-day-badge").innerText = `${sched.dayName} ${String(sched.nextDrawTime.getHours()).padStart(2,'0')}:${String(sched.nextDrawTime.getMinutes()).padStart(2,'0')}`;
+        if ($("countdown-day-badge")) {
+          const sourceGame = currentSourceGame();
+          const issue = sourceGame && sourceGame.nextIssue && sourceGame.nextIssue.issue;
+          $("countdown-day-badge").innerText = `${issue ? `第 ${issue} 期 · ` : ""}${sched.dayName} ${String(sched.nextDrawTime.getHours()).padStart(2,'0')}:${String(sched.nextDrawTime.getMinutes()).padStart(2,'0')}`;
+        }
         
         const diff = sched.diffSeconds;
         const h = Math.floor(diff / 3600);
@@ -1087,15 +1115,14 @@
           if (radarBox) radarBox.classList.remove("imminent");
         }
 
-        // 15 秒同步触发检测
+        // 接近预计开奖时提示等待来源刷新；开奖结果以云端来源为准。
         if (diff === 0 || (diff <= 15 && diff >= 0)) {
           if ($("sync-status-indicator")) {
-            $("sync-status-indicator").innerHTML = `<b style="color:#e11d48; animation:pulse 1s infinite;">接近预计开奖时间；请通过正式来源核实结果</b>`;
+            $("sync-status-indicator").textContent = "接近预计开奖时间；正在等待云端开奖源更新";
+            $("sync-status-indicator").style.color = "#e11d48";
           }
         } else {
-          if ($("sync-status-indicator")) {
-            $("sync-status-indicator").innerText = "本地历史快照；此页面未连接实时开奖源";
-          }
+          updateSourceStatus();
         }
       }
     }
@@ -1108,9 +1135,10 @@
     const meta = (game === 'ssq' ? window.SSQ_META : window.DLT_META) || {};
     const draws = (game === 'ssq' ? window.SSQ_DRAWS : window.DLT_DRAWS) || [];
     const latest = draws[0];
-    $("banner-draw-title").textContent = (game === 'ssq' ? '双色球' : '大乐透') + ' 本地快照：' + (meta.latestIssue || '未知期号') + ' / ' + (meta.latestDate || '未知日期');
+    $("banner-draw-title").textContent = (game === 'ssq' ? '双色球' : '大乐透') + ' 最新开奖：' + (meta.latestIssue || '未知期号') + ' / ' + (meta.latestDate || '未知日期');
     $("banner-draw-balls").textContent = latest ? latest.join(' ') : '开奖数据不可用';
-    $("header-history-span").textContent = '历史快照 ' + draws.length + ' 期；未验证为最新官方数据';
+    const sourceGame = drawSourceState && drawSourceState.games && drawSourceState.games[game];
+    $("header-history-span").textContent = sourceGame ? `历史 ${draws.length} 期；云端源最近同步 ${sourceGame.fetchedAt || '时间未知'}` : `历史快照 ${draws.length} 期；正在核验云端源`;
   }
 
   // Random seed button (重新掷骰)
@@ -1136,6 +1164,7 @@
       $("box-zhuijia").style.display = "flex";
     }
     updateLatestDrawBanner(g);
+    updateSourceStatus();
     renderMain();
   });
 
@@ -1443,7 +1472,7 @@
     $("thermal-time").innerText = timeStr;
 
     const meta = game === "ssq" ? (window.SSQ_META || {}) : (window.DLT_META || {});
-    const nextIssue = "未核验";
+    const nextIssue = meta.nextIssue && meta.nextIssue.issue ? meta.nextIssue.issue : "未核验";
     $("thermal-issue-display").innerText = `目标期号: ${nextIssue}`;
 
     const isZhuijia = portfolio.unitPrice === 3;
@@ -1860,6 +1889,26 @@
   }
 
   // Initial Boot
+  const liveSource = window.NumberToolsLive.start({
+    target: window,
+    intervalMs: 300000,
+    onUpdate(state, error) {
+      drawSourceState = state || drawSourceState;
+      drawSourceError = error || null;
+      const selectedGame = $("game").value;
+      updateLatestDrawBanner(selectedGame);
+      updateSourceStatus();
+      if (state) renderMain();
+    }
+  });
+  $("refresh-draw-source").addEventListener("click", async () => {
+    const button = $("refresh-draw-source");
+    button.disabled = true;
+    button.textContent = "刷新中…";
+    await liveSource.refresh();
+    button.disabled = false;
+    button.textContent = "刷新开奖源";
+  });
   updateLatestDrawBanner("ssq");
   initRealtimeClockAndScheduler();
   loadStats();
