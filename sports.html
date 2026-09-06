@@ -620,7 +620,7 @@
       <div>
         <div class="card">
           <div class="card-header">
-            <span>🔥 竞彩足球开售赛事列表 (混合过关 & 队伍近况全景)</span>
+            <span>🔥 竞彩足球来源赛事列表（销售状态待核验）</span>
             <span style="font-size:12px; color:var(--text-muted);">已选: <strong id="selected-matches-count" style="color:#0284c7;">0</strong> 场</span>
           </div>
           <div style="overflow-x:auto;">
@@ -721,7 +721,7 @@
 
     <div class="card">
       <div class="card-header">
-        <span>🏆 传统足球彩票：14场胜负彩 / 任选九场对阵表 (第25068期 实盘在售)</span>
+        <span>🏆 传统足球彩票：14场胜负彩 / 任选九场对阵表（期号与销售状态待核验）</span>
         <div style="display:flex; gap:10px; align-items:center;">
           <label><input type="radio" name="sfc-mode" value="14" checked onchange="renderSFC()" /> 14场胜负彩</label>
           <label><input type="radio" name="sfc-mode" value="rx9" onchange="renderSFC()" /> 任选九场 (RX9)</label>
@@ -1287,6 +1287,11 @@
   function renderSFC() {
     const tbody = document.getElementById('sfc-tbody');
     const sfcData = getSFCMatches();
+    if (!sfcData.length) {
+      tbody.innerHTML = '<tr><td colspan="7">当前没有通过完整性校验的 14 场对阵。请查看上方来源状态。</td></tr>';
+      updateSFCSummary();
+      return;
+    }
     tbody.innerHTML = sfcData.map((m, idx) => `
       <tr>
         <td class="mono font-bold">${m.matchIdx}</td>

@@ -620,7 +620,7 @@
       <div>
         <div class="card">
           <div class="card-header">
-            <span>🔥 竞彩足球开售赛事列表 (混合过关 & 队伍近况全景)</span>
+            <span>🔥 竞彩足球来源赛事列表（销售状态待核验）</span>
             <span style="font-size:12px; color:var(--text-muted);">已选: <strong id="selected-matches-count" style="color:#0284c7;">0</strong> 场</span>
           </div>
           <div style="overflow-x:auto;">
@@ -721,7 +721,7 @@
 
     <div class="card">
       <div class="card-header">
-        <span>🏆 传统足球彩票：14场胜负彩 / 任选九场对阵表 (第25068期 实盘在售)</span>
+        <span>🏆 传统足球彩票：14场胜负彩 / 任选九场对阵表（期号与销售状态待核验）</span>
         <div style="display:flex; gap:10px; align-items:center;">
           <label><input type="radio" name="sfc-mode" value="14" checked onchange="renderSFC()" /> 14场胜负彩</label>
           <label><input type="radio" name="sfc-mode" value="rx9" onchange="renderSFC()" /> 任选九场 (RX9)</label>
@@ -1019,54 +1019,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-06T12:26:26.792Z",
-  "displayTime": "2026/9/6 20:26:26",
-  "jingcaiCount": 26,
+  "syncedAt": "2026-09-06T12:43:01.070Z",
+  "displayTime": "2026/9/6 20:43:01",
+  "jingcaiCount": 25,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1415917",
-      "matchNum": "周日007",
-      "matchDate": "2026-09-06",
-      "kickoffTime": "20:30",
-      "kickoffAt": "2026-09-06T12:30:00.000Z",
-      "league": "荷甲",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "海伦芬",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "阿尔克马",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.69,
-          "1": 3.9,
-          "3": 3.55
-        },
-        "RQSPF": {
-          "0": 2.76,
-          "1": 4.15,
-          "3": 1.9,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1420387",
       "matchNum": "周日008",
@@ -1132,14 +1089,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.45,
-          "1": 3.45,
-          "3": 2.32
+          "0": 2.6,
+          "1": 3.5,
+          "3": 2.18
         },
         "RQSPF": {
-          "0": 5.5,
-          "1": 4.2,
-          "3": 1.41,
+          "0": 5.8,
+          "1": 4.5,
+          "3": 1.36,
           "handicap": 1
         }
       },
@@ -1261,14 +1218,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.33,
-          "1": 3.17,
+          "0": 2.38,
+          "1": 3.08,
           "3": 2.6
         },
         "RQSPF": {
-          "0": 5.25,
-          "1": 4.1,
-          "3": 1.44,
+          "0": 5.35,
+          "1": 4.2,
+          "3": 1.42,
           "handicap": 1
         }
       },
@@ -1739,8 +1696,8 @@ window.SPORTS_LIVE = {
           "3": 2.1
         },
         "RQSPF": {
-          "0": 1.57,
-          "1": 3.55,
+          "0": 1.55,
+          "1": 3.65,
           "3": 4.75,
           "handicap": -1
         }
@@ -4969,6 +4926,11 @@ if (global && typeof global === 'object') global.SportsReturnPolicy = api;
   function renderSFC() {
     const tbody = document.getElementById('sfc-tbody');
     const sfcData = getSFCMatches();
+    if (!sfcData.length) {
+      tbody.innerHTML = '<tr><td colspan="7">当前没有通过完整性校验的 14 场对阵。请查看上方来源状态。</td></tr>';
+      updateSFCSummary();
+      return;
+    }
     tbody.innerHTML = sfcData.map((m, idx) => `
       <tr>
         <td class="mono font-bold">${m.matchIdx}</td>
