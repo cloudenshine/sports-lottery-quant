@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "5b170b0744c85ddd75746358184c209ddf71e7399a6449198ba1d84a9c548786",
+  "recordedAt": "2026-09-07T10:32:24.727Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1427980",
+      "kickoffAt": "2026-09-06T16:30:00.000Z",
+      "homeTeam": "阿拉维斯",
+      "awayTeam": "奥萨苏纳",
+      "competition": "西甲",
+      "odds": {
+        "home": 2.12,
+        "draw": 2.82,
+        "away": 3.3
+      },
+      "sourceEventId": "1427980",
+      "homeGoals": 5,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

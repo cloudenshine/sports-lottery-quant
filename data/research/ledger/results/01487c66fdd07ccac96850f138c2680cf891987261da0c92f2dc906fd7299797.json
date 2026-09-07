@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "01487c66fdd07ccac96850f138c2680cf891987261da0c92f2dc906fd7299797",
+  "recordedAt": "2026-09-07T10:32:23.925Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1415917",
+      "kickoffAt": "2026-09-06T12:30:00.000Z",
+      "homeTeam": "海伦芬",
+      "awayTeam": "阿尔克马",
+      "competition": "荷甲",
+      "odds": {
+        "home": 3.55,
+        "draw": 3.9,
+        "away": 1.69
+      },
+      "sourceEventId": "1415917",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

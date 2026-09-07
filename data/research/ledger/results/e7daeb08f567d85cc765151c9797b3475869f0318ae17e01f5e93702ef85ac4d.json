@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "e7daeb08f567d85cc765151c9797b3475869f0318ae17e01f5e93702ef85ac4d",
+  "recordedAt": "2026-09-07T10:32:24.785Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1428003",
+      "kickoffAt": "2026-09-06T16:30:00.000Z",
+      "homeTeam": "马拉加",
+      "awayTeam": "莱万特",
+      "competition": "西甲",
+      "odds": {
+        "home": 2.28,
+        "draw": 3.15,
+        "away": 2.68
+      },
+      "sourceEventId": "1428003",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "dcb544e2db28b9a4c88ade012f2a26eb9619a435779993ed547ab5a74a400e73",
+  "recordedAt": "2026-09-07T10:32:25.054Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1362471",
+      "kickoffAt": "2026-09-06T21:30:00.000Z",
+      "homeTeam": "博塔弗戈",
+      "awayTeam": "帕梅拉斯",
+      "competition": "巴甲",
+      "odds": {
+        "home": 3.48,
+        "draw": 3.35,
+        "away": 1.84
+      },
+      "sourceEventId": "1362471",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

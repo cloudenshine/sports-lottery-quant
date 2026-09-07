@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "568aaaff655535ac9823a2d477699de9e037a0a42bf48930cf3312793689f788",
+  "recordedAt": "2026-09-07T10:32:24.653Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1414168",
+      "kickoffAt": "2026-09-06T16:00:00.000Z",
+      "homeTeam": "博洛尼亚",
+      "awayTeam": "萨索洛",
+      "competition": "意甲",
+      "odds": {
+        "home": 1.76,
+        "draw": 3.3,
+        "away": 3.87
+      },
+      "sourceEventId": "1414168",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

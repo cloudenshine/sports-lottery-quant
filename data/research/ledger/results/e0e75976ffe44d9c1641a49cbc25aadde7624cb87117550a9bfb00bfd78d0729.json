@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "e0e75976ffe44d9c1641a49cbc25aadde7624cb87117550a9bfb00bfd78d0729",
+  "recordedAt": "2026-09-07T10:32:24.484Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1364329",
+      "kickoffAt": "2026-09-06T15:00:00.000Z",
+      "homeTeam": "莫尔德",
+      "awayTeam": "奥斯KFUM",
+      "competition": "挪超",
+      "odds": {
+        "home": 1.18,
+        "draw": 6.1,
+        "away": 8.45
+      },
+      "sourceEventId": "1364329",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

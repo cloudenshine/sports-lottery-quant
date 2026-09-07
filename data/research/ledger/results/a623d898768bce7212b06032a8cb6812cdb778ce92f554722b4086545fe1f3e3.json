@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "a623d898768bce7212b06032a8cb6812cdb778ce92f554722b4086545fe1f3e3",
+  "recordedAt": "2026-09-07T10:32:24.939Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1415100",
+      "kickoffAt": "2026-09-06T18:45:00.000Z",
+      "homeTeam": "马赛",
+      "awayTeam": "巴黎FC",
+      "competition": "法甲",
+      "odds": {
+        "home": 1.67,
+        "draw": 3.6,
+        "away": 3.95
+      },
+      "sourceEventId": "1415100",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

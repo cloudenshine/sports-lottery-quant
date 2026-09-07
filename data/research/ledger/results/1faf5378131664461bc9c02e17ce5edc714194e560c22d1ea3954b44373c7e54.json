@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "1faf5378131664461bc9c02e17ce5edc714194e560c22d1ea3954b44373c7e54",
+  "recordedAt": "2026-09-07T10:32:24.361Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1428005",
+      "kickoffAt": "2026-09-06T14:15:00.000Z",
+      "homeTeam": "巴伦西亚",
+      "awayTeam": "巴萨",
+      "competition": "西甲",
+      "odds": {
+        "home": 10.75,
+        "draw": 6.6,
+        "away": 1.13
+      },
+      "sourceEventId": "1428005",
+      "homeGoals": 0,
+      "awayGoals": 5,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

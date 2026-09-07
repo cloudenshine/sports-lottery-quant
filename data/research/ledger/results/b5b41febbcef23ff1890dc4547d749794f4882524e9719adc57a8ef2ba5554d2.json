@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "b5b41febbcef23ff1890dc4547d749794f4882524e9719adc57a8ef2ba5554d2",
+  "recordedAt": "2026-09-07T10:32:24.416Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1438089",
+      "kickoffAt": "2026-09-06T14:30:00.000Z",
+      "homeTeam": "圣克拉拉",
+      "awayTeam": "里奥阿维",
+      "competition": "葡超",
+      "odds": {
+        "home": 1.75,
+        "draw": 3.1,
+        "away": 4.25
+      },
+      "sourceEventId": "1438089",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

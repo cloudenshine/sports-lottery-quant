@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "e26bd1dd1327d796aface3d79bad9dde09199db7ad0c58e4ad2dae7f6a0a8c5c",
+  "recordedAt": "2026-09-07T10:32:24.174Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1415104",
+      "kickoffAt": "2026-09-06T13:00:00.000Z",
+      "homeTeam": "特鲁瓦",
+      "awayTeam": "斯特拉斯",
+      "competition": "法甲",
+      "odds": {
+        "home": 2.8,
+        "draw": 3.15,
+        "away": 2.2
+      },
+      "sourceEventId": "1415104",
+      "homeGoals": 2,
+      "awayGoals": 6,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

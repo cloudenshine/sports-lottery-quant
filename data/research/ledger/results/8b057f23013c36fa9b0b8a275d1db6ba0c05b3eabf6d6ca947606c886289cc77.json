@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "8b057f23013c36fa9b0b8a275d1db6ba0c05b3eabf6d6ca947606c886289cc77",
+  "recordedAt": "2026-09-07T10:32:24.241Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1420387",
+      "kickoffAt": "2026-09-06T13:00:00.000Z",
+      "homeTeam": "埃弗顿",
+      "awayTeam": "曼联",
+      "competition": "英超",
+      "odds": {
+        "home": 3.57,
+        "draw": 3.6,
+        "away": 1.75
+      },
+      "sourceEventId": "1420387",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

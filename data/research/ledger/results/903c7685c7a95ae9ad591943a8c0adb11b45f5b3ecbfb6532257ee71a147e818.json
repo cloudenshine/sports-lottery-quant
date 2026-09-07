@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "903c7685c7a95ae9ad591943a8c0adb11b45f5b3ecbfb6532257ee71a147e818",
+  "recordedAt": "2026-09-07T10:32:25.006Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1428000",
+      "kickoffAt": "2026-09-06T19:00:00.000Z",
+      "homeTeam": "西班牙人",
+      "awayTeam": "塞维利亚",
+      "competition": "西甲",
+      "odds": {
+        "home": 2.1,
+        "draw": 2.92,
+        "away": 3.22
+      },
+      "sourceEventId": "1428000",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

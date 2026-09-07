@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ed9c8ada8a12d563f4df0094d52bbe49a3eaa7556310589576eff98d3fe5f23f",
+  "recordedAt": "2026-09-07T10:32:24.592Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1428475",
+      "kickoffAt": "2026-09-06T15:30:00.000Z",
+      "homeTeam": "法兰克福",
+      "awayTeam": "奥格斯堡",
+      "competition": "德甲",
+      "odds": {
+        "home": 1.64,
+        "draw": 3.9,
+        "away": 3.8
+      },
+      "sourceEventId": "1428475",
+      "homeGoals": 1,
+      "awayGoals": 4,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}

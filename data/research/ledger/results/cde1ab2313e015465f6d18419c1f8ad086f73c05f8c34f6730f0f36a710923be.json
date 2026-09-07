@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "cde1ab2313e015465f6d18419c1f8ad086f73c05f8c34f6730f0f36a710923be",
+  "recordedAt": "2026-09-07T10:32:24.860Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1414199",
+      "kickoffAt": "2026-09-06T18:45:00.000Z",
+      "homeTeam": "尤文图斯",
+      "awayTeam": "AC米兰",
+      "competition": "意甲",
+      "odds": {
+        "home": 2.04,
+        "draw": 2.85,
+        "away": 3.48
+      },
+      "sourceEventId": "1414199",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+      "fetchedAt": "2026-09-07T10:32:10.620Z",
+      "bodySha256": "ccf083c64a8fe07cd4f0b2efc9ca05fa991a71431a39fcd1cc5c792e76dbea1a"
+    },
+    "observedAt": "2026-09-07T10:32:10.620Z",
+    "revisionReason": null
+  }
+}
