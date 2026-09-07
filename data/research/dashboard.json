@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06T15:33:45.573Z",
+  "generatedAt": "2026-09-07T02:44:16.696Z",
   "protocol": {
     "schemaVersion": 1,
     "protocolId": "lottery-research-v1-20260906",
@@ -153,10 +153,10 @@
   },
   "sources": {
     "schemaVersion": 1,
-    "runAt": "2026-09-06T15:33:25.126Z",
+    "runAt": "2026-09-07T02:42:14.823Z",
     "status": "degraded",
-    "records": 1657,
-    "fixtures": 55,
+    "records": 1658,
+    "fixtures": 52,
     "results": [
       {
         "sourceId": "espn-eng1-2024",
@@ -197,15 +197,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-06T15:33:27.232Z",
-        "records": 29,
-        "fixtures": 21,
+        "fetchedAt": "2026-09-07T02:42:21.386Z",
+        "records": 30,
+        "fixtures": 20,
         "sources": [
           {
             "sourceId": "espn-eng1-current",
-            "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260802-20260927&limit=1000",
-            "fetchedAt": "2026-09-06T15:33:27.232Z",
-            "bodySha256": "0bfcc4688742eeb2d02406e3bd5bb29ffc87ca52ed21aaa3a5ee26fb0fe56ee8"
+            "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260803-20260928&limit=1000",
+            "fetchedAt": "2026-09-07T02:42:21.386Z",
+            "bodySha256": "a8dc5b829fbe562c5cd323d87f77242961e310b746d5622e033f47b3289d9304"
           }
         ]
       },
@@ -214,15 +214,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-06T15:33:32.492Z",
+        "fetchedAt": "2026-09-07T02:42:28.975Z",
         "records": 6,
-        "fixtures": 26,
+        "fixtures": 8,
         "sources": [
           {
             "sourceId": "500-jingcai",
             "sourceUrl": "https://trade.500.com/jczq/",
-            "fetchedAt": "2026-09-06T15:33:32.492Z",
-            "bodySha256": "e3e9922007cc922e4d2fc3b7459974451846ab3532cd435cb9cd3143392756eb"
+            "fetchedAt": "2026-09-07T02:42:28.975Z",
+            "bodySha256": "4851fa2a28df8fc0b5a759385baa02165d9951f7d93ad148a69d009706003773"
           }
         ]
       },
@@ -231,15 +231,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-06T15:33:33.183Z",
-        "records": 27,
-        "fixtures": 2,
+        "fetchedAt": "2026-09-07T02:42:30.583Z",
+        "records": 33,
+        "fixtures": 18,
         "sources": [
           {
             "sourceId": "500-jingcai-results-1",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
-            "fetchedAt": "2026-09-06T15:33:33.183Z",
-            "bodySha256": "528491155cee425ec123922b5e9b4895b45448ea11e58d369886ff74bdc8f2d7"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+            "fetchedAt": "2026-09-07T02:42:30.583Z",
+            "bodySha256": "68c583dd24653ef84d1f5a2d5872ed7e450ab7738041c8961fbed609d255035b"
           }
         ]
       },
@@ -248,15 +248,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-06T15:33:33.918Z",
-        "records": 13,
-        "fixtures": 1,
+        "fetchedAt": "2026-09-07T02:42:32.739Z",
+        "records": 40,
+        "fixtures": 2,
         "sources": [
           {
             "sourceId": "500-jingcai-results-2",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-04",
-            "fetchedAt": "2026-09-06T15:33:33.918Z",
-            "bodySha256": "350c1eca5927939b8f521c85cc148fd50fcc95f28c852d6b1a19a92974404c90"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
+            "fetchedAt": "2026-09-07T02:42:32.739Z",
+            "bodySha256": "b1390bead563806eac335ea65bc8229416593ec592aff4dcf95466d30b7b6f86"
           }
         ]
       },
@@ -265,15 +265,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-06T15:33:34.790Z",
-        "records": 7,
-        "fixtures": 0,
+        "fetchedAt": "2026-09-07T02:42:34.617Z",
+        "records": 20,
+        "fixtures": 1,
         "sources": [
           {
             "sourceId": "500-jingcai-results-3",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-03",
-            "fetchedAt": "2026-09-06T15:33:34.790Z",
-            "bodySha256": "b7ce9a2cd82eecb82b8e84c9466874edc1a7fd211786bbc6582792871edb691b"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-04",
+            "fetchedAt": "2026-09-07T02:42:34.617Z",
+            "bodySha256": "849f788a547b929e1b66bd5d959113b101541b9d05ffec23d4f9c06bd0f2978e"
           }
         ]
       },
@@ -282,15 +282,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-06T15:33:35.567Z",
-        "records": 12,
-        "fixtures": 1,
+        "fetchedAt": "2026-09-07T02:42:36.617Z",
+        "records": 19,
+        "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-4",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-02",
-            "fetchedAt": "2026-09-06T15:33:35.567Z",
-            "bodySha256": "a124dc3c7f76e908e9ef479496421d0e8d3d00a487679dbb320855cf57a02fec"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-03",
+            "fetchedAt": "2026-09-07T02:42:36.617Z",
+            "bodySha256": "2197f68ed66ed72a90dbd186038847d4938aef5835fc83abfcb6b5c37227d6c9"
           }
         ]
       },
@@ -299,15 +299,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-06T15:33:36.573Z",
-        "records": 10,
-        "fixtures": 0,
+        "fetchedAt": "2026-09-07T02:42:37.970Z",
+        "records": 22,
+        "fixtures": 1,
         "sources": [
           {
             "sourceId": "500-jingcai-results-5",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-01",
-            "fetchedAt": "2026-09-06T15:33:36.573Z",
-            "bodySha256": "d3246958ed1e3a94e41a598d94bcd788e3f4e0556811b76c03aba4fe627330c5"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-02",
+            "fetchedAt": "2026-09-07T02:42:37.970Z",
+            "bodySha256": "da4f2e9a95ba03d8ca4b9d782c53bbfab23c1da568ba11c474444b1addb1760f"
           }
         ]
       },
@@ -316,15 +316,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-06T15:33:37.555Z",
-        "records": 10,
-        "fixtures": 2,
+        "fetchedAt": "2026-09-07T02:42:39.831Z",
+        "records": 20,
+        "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-6",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-08-31",
-            "fetchedAt": "2026-09-06T15:33:37.555Z",
-            "bodySha256": "b3fca51e2aa6692b4a9e422dc4e8435e8659a021595bab7f977dd4f73d1e645a"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-01",
+            "fetchedAt": "2026-09-07T02:42:39.831Z",
+            "bodySha256": "1d23c6a09c7270b5b02b793d2ae09d45bc560507d98741f24875434dc9d4f509"
           }
         ]
       },
@@ -333,15 +333,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-06T15:33:38.568Z",
-        "records": 23,
+        "fetchedAt": "2026-09-07T02:42:42.101Z",
+        "records": 33,
         "fixtures": 2,
         "sources": [
           {
             "sourceId": "500-jingcai-results-7",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-08-30",
-            "fetchedAt": "2026-09-06T15:33:38.568Z",
-            "bodySha256": "a71d58c6fcb21b45e71dfedfeefc9817666dbaac9ef3256f0f2a927288a87e5b"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-08-31",
+            "fetchedAt": "2026-09-07T02:42:42.101Z",
+            "bodySha256": "963ac028bba1e3bf94e44b31edfc84201de50ffad882eff6fac5cfd30341afa0"
           }
         ]
       },
@@ -380,7 +380,7 @@
           {
             "sourceId": "football-data-primary",
             "sourceUrl": "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
-            "fetchedAt": "2026-09-06T15:33:40.080Z",
+            "fetchedAt": "2026-09-07T02:42:47.072Z",
             "bodySha256": "1397510822a778378de1f8c45b83cd2e9422e73d7277915866af5a0d7d294dab"
           }
         ]
@@ -393,8 +393,8 @@
     ]
   },
   "data": {
-    "historyCount": 1657,
-    "fixtureCount": 55,
+    "historyCount": 1658,
+    "fixtureCount": 52,
     "bySource": [
       {
         "sourceId": "espn-eng1-2024",
@@ -408,47 +408,47 @@
       },
       {
         "sourceId": "espn-eng1-current",
-        "historyCount": 29,
-        "fixtureCount": 21
+        "historyCount": 30,
+        "fixtureCount": 20
       },
       {
         "sourceId": "500-jingcai",
         "historyCount": 6,
-        "fixtureCount": 26
+        "fixtureCount": 8
       },
       {
         "sourceId": "500-jingcai-results-1",
-        "historyCount": 27,
-        "fixtureCount": 2
+        "historyCount": 33,
+        "fixtureCount": 18
       },
       {
         "sourceId": "500-jingcai-results-2",
-        "historyCount": 13,
-        "fixtureCount": 1
-      },
-      {
-        "sourceId": "500-jingcai-results-3",
-        "historyCount": 7,
-        "fixtureCount": 0
-      },
-      {
-        "sourceId": "500-jingcai-results-4",
-        "historyCount": 12,
-        "fixtureCount": 1
-      },
-      {
-        "sourceId": "500-jingcai-results-5",
-        "historyCount": 10,
-        "fixtureCount": 0
-      },
-      {
-        "sourceId": "500-jingcai-results-6",
-        "historyCount": 10,
+        "historyCount": 40,
         "fixtureCount": 2
       },
       {
+        "sourceId": "500-jingcai-results-3",
+        "historyCount": 20,
+        "fixtureCount": 1
+      },
+      {
+        "sourceId": "500-jingcai-results-4",
+        "historyCount": 19,
+        "fixtureCount": 0
+      },
+      {
+        "sourceId": "500-jingcai-results-5",
+        "historyCount": 22,
+        "fixtureCount": 1
+      },
+      {
+        "sourceId": "500-jingcai-results-6",
+        "historyCount": 20,
+        "fixtureCount": 0
+      },
+      {
         "sourceId": "500-jingcai-results-7",
-        "historyCount": 23,
+        "historyCount": 33,
         "fixtureCount": 2
       },
       {
@@ -465,7 +465,7 @@
   },
   "ledger": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-06T15:33:45.262Z",
+    "generatedAt": "2026-09-07T02:44:12.148Z",
     "predictionCount": 224,
     "resultVersionCount": 6,
     "retractionVersionCount": 0,
@@ -774,20 +774,12 @@
     "predictiveAdvantage": "not_established"
   },
   "daily": {
-    "startedAt": "2026-09-06T15:33:25.116Z",
+    "startedAt": "2026-09-07T02:42:14.253Z",
     "createdPredictions": 0,
-    "createdResults": 6,
-    "createdSettlements": 42,
+    "createdResults": 0,
+    "createdSettlements": 0,
     "createdRetractions": 0,
     "skipped": [
-      {
-        "eventId": "500:1415897",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1427973",
-        "reason": "outside_registered_forecast_window"
-      },
       {
         "eventId": "500:1438077",
         "reason": "outside_registered_forecast_window"
@@ -857,36 +849,32 @@
         "reason": "outside_registered_forecast_window"
       },
       {
-        "eventId": "espn:401879292",
+        "eventId": "500:1414168",
         "reason": "outside_registered_forecast_window"
       },
       {
-        "eventId": "500:1414168",
-        "reason": "sales_closed"
-      },
-      {
         "eventId": "500:1427980",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1428003",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1414199",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1415100",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1428000",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1362471",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "espn:401879279",
@@ -970,20 +958,20 @@
       }
     ],
     "errors": [],
-    "finishedAt": "2026-09-06T15:33:45.573Z",
+    "finishedAt": "2026-09-07T02:44:16.696Z",
     "status": "degraded"
   },
   "promotion": {
     "schemaVersion": 1,
     "protocolId": "lottery-research-v1-20260906",
     "protocolHash": "4e3d22f8ce0df7f18bfecce5b9eebdf9ec6fc13f2df57a770c751a2d17e749c3",
-    "generatedAt": "2026-09-06T15:33:45.280Z",
+    "generatedAt": "2026-09-07T02:44:12.372Z",
     "status": "COLLECTING_PROSPECTIVE_EVIDENCE",
     "eligible": false,
     "researchEvidenceEligible": false,
     "locked": false,
     "settledEvents": 6,
-    "calendarDays": 0,
+    "calendarDays": 1,
     "minimumSettledEvents": 500,
     "minimumCalendarDays": 90,
     "registeredAt": "2026-09-05T18:48:38.414Z",
@@ -1014,7 +1002,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1040,7 +1028,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1066,7 +1054,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1092,7 +1080,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1118,7 +1106,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1144,7 +1132,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1170,7 +1158,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1196,7 +1184,7 @@
         "locked": false,
         "settledEvents": 6,
         "matchedEvents": 32,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1320,7 +1308,7 @@
         "locked": false,
         "settledEvents": 6,
         "matchedEvents": 32,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1476,7 +1464,7 @@
         "locked": false,
         "settledEvents": 6,
         "matchedEvents": 32,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1632,7 +1620,7 @@
         "locked": false,
         "settledEvents": 6,
         "matchedEvents": 32,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1788,7 +1776,7 @@
         "locked": false,
         "settledEvents": 6,
         "matchedEvents": 32,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1912,7 +1900,7 @@
         "locked": false,
         "settledEvents": 6,
         "matchedEvents": 32,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -2068,7 +2056,7 @@
         "locked": false,
         "settledEvents": 6,
         "matchedEvents": 32,
-        "calendarDays": 0,
+        "calendarDays": 1,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -15382,7 +15370,7 @@
     ]
   },
   "numberTournament": {
-    "generatedAt": "2026-09-06T12:40:52.347Z",
+    "generatedAt": "2026-09-07T02:39:45.688Z",
     "status": "EXPLORATORY_ONLY_NO_PREDICTIVE_ADVANTAGE_ESTABLISHED",
     "reproducibility": "node scripts/evaluate-number-strategies.js; offline bundled historical snapshots; fixed protocol and seeds; generatedAt is metadata only.",
     "protocol": {
@@ -406724,10 +406712,10 @@
   ],
   "ruleWatch": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-06T15:33:45.342Z",
-    "status": "ok",
+    "generatedAt": "2026-09-07T02:44:15.663Z",
+    "status": "degraded",
     "sourceCount": 11,
-    "failedCount": 0,
+    "failedCount": 11,
     "reviewRequiredCount": 0,
     "registryMutated": false,
     "intervalHours": 24,
@@ -406736,23 +406724,17 @@
         "sourceId": "fj-jc-payout",
         "url": "https://www.fjtc.com.cn/2024-04/01/content_31550891.htm",
         "publisher": "福建省体育彩票管理中心",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:02.232Z",
+        "lastAttemptAt": "2026-09-07T02:34:18.520Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:02.232Z",
         "lastSuccessfulBodySha256": "19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f",
         "initialBodySha256": "19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f",
-        "httpStatus": 200,
-        "finalUrl": "https://www.fjtc.com.cn/2024-04/01/content_31550891.htm",
-        "contentType": "text/html",
-        "bodyBytes": 22823,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406760,23 +406742,17 @@
         "sourceId": "fj-jc-football",
         "url": "https://www.fjtc.com.cn/2024-04/01/content_31550872.htm",
         "publisher": "福建省体育彩票管理中心",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:02.270Z",
+        "lastAttemptAt": "2026-09-07T02:34:18.832Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:02.270Z",
         "lastSuccessfulBodySha256": "a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430",
         "initialBodySha256": "a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430",
-        "httpStatus": 200,
-        "finalUrl": "https://www.fjtc.com.cn/2024-04/01/content_31550872.htm",
-        "contentType": "text/html",
-        "bodyBytes": 181360,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406784,23 +406760,17 @@
         "sourceId": "fj-jc-basketball",
         "url": "https://www.fjtc.com.cn/2024-04/01/content_31550877.htm",
         "publisher": "福建省体育彩票管理中心",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:02.271Z",
+        "lastAttemptAt": "2026-09-07T02:34:19.013Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:02.271Z",
         "lastSuccessfulBodySha256": "0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e",
         "initialBodySha256": "0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e",
-        "httpStatus": 200,
-        "finalUrl": "https://www.fjtc.com.cn/2024-04/01/content_31550877.htm",
-        "contentType": "text/html",
-        "bodyBytes": 181780,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406808,23 +406778,17 @@
         "sourceId": "beijing-sp",
         "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043167/index.html",
         "publisher": "北京市体育局",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:02.272Z",
+        "lastAttemptAt": "2026-09-07T02:34:19.650Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:02.272Z",
         "lastSuccessfulBodySha256": "381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500",
         "initialBodySha256": "381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500",
-        "httpStatus": 200,
-        "finalUrl": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043167/index.html",
-        "contentType": "text/html; charset=utf-8",
-        "bodyBytes": 37701,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406832,23 +406796,17 @@
         "sourceId": "beijing-return",
         "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043164/index.html",
         "publisher": "北京市体育局",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:06.036Z",
+        "lastAttemptAt": "2026-09-07T02:34:20.204Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:06.036Z",
         "lastSuccessfulBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
         "initialBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
-        "httpStatus": 200,
-        "finalUrl": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043164/index.html",
-        "contentType": "text/html; charset=utf-8",
-        "bodyBytes": 37591,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406856,23 +406814,17 @@
         "sourceId": "js-dlt-2026",
         "url": "https://www.js-lottery.com/wfzq/dlt/wfjs/cms/post-146354.html",
         "publisher": "江苏省体育彩票管理中心",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:06.058Z",
+        "lastAttemptAt": "2026-09-07T02:34:21.008Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:06.058Z",
         "lastSuccessfulBodySha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
         "initialBodySha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
-        "httpStatus": 200,
-        "finalUrl": "https://www.js-lottery.com/wfzq/dlt/wfjs/cms/post-146354.html",
-        "contentType": "text/html; charset=utf-8",
-        "bodyBytes": 109939,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406880,23 +406832,17 @@
         "sourceId": "js-dlt-effective",
         "url": "https://www.js-lottery.com/tzgg/tzgg/cms/post-146276.html",
         "publisher": "江苏省体育彩票管理中心",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:06.097Z",
+        "lastAttemptAt": "2026-09-07T02:34:21.632Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:06.097Z",
         "lastSuccessfulBodySha256": "3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9",
         "initialBodySha256": "3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9",
-        "httpStatus": 200,
-        "finalUrl": "https://www.js-lottery.com/tzgg/tzgg/cms/post-146276.html",
-        "contentType": "text/html; charset=utf-8",
-        "bodyBytes": 63210,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406904,23 +406850,17 @@
         "sourceId": "sport-policy-2020",
         "url": "https://www.sport.gov.cn/gdnps/files/c28047814/28048342.pdf",
         "publisher": "财政部、国家体育总局",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:06.160Z",
+        "lastAttemptAt": "2026-09-07T02:34:22.125Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:06.160Z",
         "lastSuccessfulBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
         "initialBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
-        "httpStatus": 200,
-        "finalUrl": "https://www.sport.gov.cn/gdnps/files/c28047814/28048342.pdf",
-        "contentType": "application/pdf; charset=UTF-8",
-        "bodyBytes": 125084,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406928,23 +406868,17 @@
         "sourceId": "sport-policy-2019",
         "url": "https://www.sport.gov.cn/cpzx/n5656/c897408/content.html",
         "publisher": "国家体育总局体育彩票管理中心",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:07.973Z",
+        "lastAttemptAt": "2026-09-07T02:34:22.413Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:07.973Z",
         "lastSuccessfulBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
         "initialBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
-        "httpStatus": 200,
-        "finalUrl": "https://www.sport.gov.cn/cpzx/n5656/c897408/content.html",
-        "contentType": "text/html",
-        "bodyBytes": 34806,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406952,23 +406886,17 @@
         "sourceId": "js-sfc-rx9",
         "url": "https://www.js-lottery.com/wfzq/ctzq/wfjs/cms/post-49203.html",
         "publisher": "江苏省体育彩票管理中心",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:08.276Z",
+        "lastAttemptAt": "2026-09-07T02:34:23.647Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:08.276Z",
         "lastSuccessfulBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
         "initialBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
-        "httpStatus": 200,
-        "finalUrl": "https://www.js-lottery.com/wfzq/ctzq/wfjs/cms/post-49203.html",
-        "contentType": "text/html; charset=utf-8",
-        "bodyBytes": 78864,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
@@ -406976,23 +406904,17 @@
         "sourceId": "fj-sfc-cancel",
         "url": "https://www.fjtc.com.cn/2013-07/03/content_31607945.htm",
         "publisher": "福建省体育彩票管理中心刊载中国体育报解释",
-        "status": "cached",
+        "status": "failed",
         "cached": true,
-        "lastAttemptAt": "2026-09-05T18:44:09.089Z",
+        "lastAttemptAt": "2026-09-07T02:34:24.789Z",
         "lastSuccessfulFetchAt": "2026-09-05T18:44:09.089Z",
         "lastSuccessfulBodySha256": "72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417",
         "initialBodySha256": "72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417",
         "previousBodySha256": null,
         "changeStatus": "reviewed_exact_body",
         "reviewRequired": false,
-        "error": null,
-        "observedBodySha256": "72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417",
-        "httpStatus": 200,
-        "finalUrl": "https://www.fjtc.com.cn/2013-07/03/content_31607945.htm",
-        "contentType": "text/html",
-        "bodyBytes": 20825,
-        "comparisonStatus": "initial_archive",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "error": "fetch failed",
+        "stale": true,
         "reviewedAt": "2026-09-05T18:49:39.951Z",
         "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       }
