@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "c7249b13b18e1d363ebf4933529518344b8791ee3c56768534d828bfec1767f7",
+  "recordedAt": "2026-09-07T10:32:21.665Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1479942",
+      "kickoffAt": "2026-09-08T19:00:00.000Z",
+      "homeTeam": "多特蒙德",
+      "awayTeam": "比利亚雷",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.65,
+        "draw": 3.8,
+        "away": 3.85
+      },
+      "sourceEventId": "1479942"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-07T10:32:09.887Z",
+      "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+    },
+    "prediction": {
+      "modelId": "uniform",
+      "version": "1.0.0",
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "trainingCutoff": "2026-09-07T10:32:21.651Z",
+      "trainingCount": 0,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+        "No same-source competition training history; statistical predictions are cold-start priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+    "paperTrade": {
+      "selectionWeights": [
+        0,
+        0,
+        1
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "2859cf0746e92f6017700d47863780427d6fcf5176d6ca88f5a6de4bdafe3dc0"
+  }
+}

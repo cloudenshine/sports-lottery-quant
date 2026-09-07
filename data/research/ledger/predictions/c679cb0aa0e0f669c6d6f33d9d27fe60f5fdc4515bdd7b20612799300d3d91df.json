@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "c679cb0aa0e0f669c6d6f33d9d27fe60f5fdc4515bdd7b20612799300d3d91df",
+  "recordedAt": "2026-09-07T10:32:20.379Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1467718",
+      "kickoffAt": "2026-09-07T18:00:00.000Z",
+      "homeTeam": "利雅得新月",
+      "awayTeam": "新未来SC",
+      "competition": "沙特职业联赛",
+      "odds": {
+        "home": 1.11,
+        "draw": 6.9,
+        "away": 12
+      },
+      "sourceEventId": "1467718"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-07T10:32:09.887Z",
+      "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.5119398080307983,
+        0.2476520018385825,
+        0.24040819013061926
+      ],
+      "trainingCutoff": "2026-09-07T10:32:14.994Z",
+      "trainingCount": 6,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+    "paperTrade": null,
+    "batchId": "b1621630b82c900aef23742868eda88fc2537cfe704304f85e9070759203b851"
+  }
+}

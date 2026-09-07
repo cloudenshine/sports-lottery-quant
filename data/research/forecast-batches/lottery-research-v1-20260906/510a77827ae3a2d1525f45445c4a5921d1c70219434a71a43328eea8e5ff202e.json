@@ -1,0 +1,524 @@
+{
+  "batchId": "51a5d25cbac892215da889d3c8586464849f8cb8d3bdc7fe6222025d4eaea4e1",
+  "preparedAt": "2026-09-07T10:32:21.268Z",
+  "inputs": [
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1479926",
+        "sourceEventId": "1479926",
+        "kickoffAt": "2026-09-08T16:45:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "布鲁日",
+        "awayTeam": "维拉",
+        "competition": "欧冠",
+        "processDate": "2026-09-08",
+        "odds": {
+          "home": 2.6,
+          "draw": 3.35,
+          "away": 2.25
+        },
+        "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": true,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-08T14:00:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-07T10:32:09.887Z",
+          "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c",
+        "observedAt": "2026-09-07T10:32:09.887Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+      },
+      "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+      "prediction": {
+        "modelId": "uniform",
+        "version": "1.0.0",
+        "probabilities": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "trainingCutoff": "2026-09-07T10:32:21.263Z",
+        "trainingCount": 0,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+          "No same-source competition training history; statistical predictions are cold-start priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": {
+        "selectionWeights": [
+          0,
+          1,
+          0
+        ],
+        "stake": 2,
+        "decisionPolicy": "ev-threshold"
+      },
+      "batchId": "51a5d25cbac892215da889d3c8586464849f8cb8d3bdc7fe6222025d4eaea4e1"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1479926",
+        "sourceEventId": "1479926",
+        "kickoffAt": "2026-09-08T16:45:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "布鲁日",
+        "awayTeam": "维拉",
+        "competition": "欧冠",
+        "processDate": "2026-09-08",
+        "odds": {
+          "home": 2.6,
+          "draw": 3.35,
+          "away": 2.25
+        },
+        "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": true,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-08T14:00:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-07T10:32:09.887Z",
+          "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c",
+        "observedAt": "2026-09-07T10:32:09.887Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+      },
+      "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+      "prediction": {
+        "modelId": "historical",
+        "version": "1.0.0",
+        "probabilities": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "trainingCutoff": "2026-09-07T10:32:21.263Z",
+        "trainingCount": 0,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+          "No same-source competition training history; statistical predictions are cold-start priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": {
+        "selectionWeights": [
+          0,
+          1,
+          0
+        ],
+        "stake": 2,
+        "decisionPolicy": "ev-threshold"
+      },
+      "batchId": "51a5d25cbac892215da889d3c8586464849f8cb8d3bdc7fe6222025d4eaea4e1"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1479926",
+        "sourceEventId": "1479926",
+        "kickoffAt": "2026-09-08T16:45:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "布鲁日",
+        "awayTeam": "维拉",
+        "competition": "欧冠",
+        "processDate": "2026-09-08",
+        "odds": {
+          "home": 2.6,
+          "draw": 3.35,
+          "away": 2.25
+        },
+        "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": true,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-08T14:00:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-07T10:32:09.887Z",
+          "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c",
+        "observedAt": "2026-09-07T10:32:09.887Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+      },
+      "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+      "prediction": {
+        "modelId": "poisson",
+        "version": "1.0.0",
+        "probabilities": [
+          0.4380427069205374,
+          0.26634485427468957,
+          0.2956124388047731
+        ],
+        "trainingCutoff": "2026-09-07T10:32:21.263Z",
+        "trainingCount": 0,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+          "No same-source competition training history; statistical predictions are cold-start priors."
+        ],
+        "tuning": {
+          "parameters": {
+            "shrinkage": 12,
+            "halfLifeDays": 365
+          },
+          "validationCount": 0
+        },
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": {
+        "selectionWeights": [
+          1,
+          0,
+          0
+        ],
+        "stake": 2,
+        "decisionPolicy": "ev-threshold"
+      },
+      "batchId": "51a5d25cbac892215da889d3c8586464849f8cb8d3bdc7fe6222025d4eaea4e1"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1479926",
+        "sourceEventId": "1479926",
+        "kickoffAt": "2026-09-08T16:45:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "布鲁日",
+        "awayTeam": "维拉",
+        "competition": "欧冠",
+        "processDate": "2026-09-08",
+        "odds": {
+          "home": 2.6,
+          "draw": 3.35,
+          "away": 2.25
+        },
+        "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": true,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-08T14:00:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-07T10:32:09.887Z",
+          "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c",
+        "observedAt": "2026-09-07T10:32:09.887Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+      },
+      "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+      "prediction": {
+        "modelId": "elo",
+        "version": "1.0.0",
+        "probabilities": [
+          0.4407468955607249,
+          0.24722819774666405,
+          0.312024906692611
+        ],
+        "trainingCutoff": "2026-09-07T10:32:21.263Z",
+        "trainingCount": 0,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Davidson draw model, home advantage 60 Elo, K=24; fixed research assumptions.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+          "No same-source competition training history; statistical predictions are cold-start priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": {
+        "selectionWeights": [
+          1,
+          0,
+          0
+        ],
+        "stake": 2,
+        "decisionPolicy": "ev-threshold"
+      },
+      "batchId": "51a5d25cbac892215da889d3c8586464849f8cb8d3bdc7fe6222025d4eaea4e1"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1479926",
+        "sourceEventId": "1479926",
+        "kickoffAt": "2026-09-08T16:45:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "布鲁日",
+        "awayTeam": "维拉",
+        "competition": "欧冠",
+        "processDate": "2026-09-08",
+        "odds": {
+          "home": 2.6,
+          "draw": 3.35,
+          "away": 2.25
+        },
+        "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": true,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-08T14:00:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-07T10:32:09.887Z",
+          "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c",
+        "observedAt": "2026-09-07T10:32:09.887Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+      },
+      "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+      "prediction": {
+        "modelId": "market",
+        "version": "1.0.0",
+        "probabilities": [
+          0.3411019346079873,
+          0.2647358298450051,
+          0.3941622355470076
+        ],
+        "trainingCutoff": "2026-09-07T10:32:21.263Z",
+        "trainingCount": 0,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+          "No same-source competition training history; statistical predictions are cold-start priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "51a5d25cbac892215da889d3c8586464849f8cb8d3bdc7fe6222025d4eaea4e1"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1479926",
+        "sourceEventId": "1479926",
+        "kickoffAt": "2026-09-08T16:45:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "布鲁日",
+        "awayTeam": "维拉",
+        "competition": "欧冠",
+        "processDate": "2026-09-08",
+        "odds": {
+          "home": 2.6,
+          "draw": 3.35,
+          "away": 2.25
+        },
+        "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": true,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-08T14:00:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-07T10:32:09.887Z",
+          "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c",
+        "observedAt": "2026-09-07T10:32:09.887Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+      },
+      "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+      "prediction": {
+        "modelId": "market-power",
+        "version": "1.0.0",
+        "probabilities": [
+          0.3414652943982233,
+          0.2567834304561844,
+          0.4017512751455922
+        ],
+        "trainingCutoff": "2026-09-07T10:32:21.263Z",
+        "trainingCount": 0,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+          "No same-source competition training history; statistical predictions are cold-start priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "51a5d25cbac892215da889d3c8586464849f8cb8d3bdc7fe6222025d4eaea4e1"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1479926",
+        "sourceEventId": "1479926",
+        "kickoffAt": "2026-09-08T16:45:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "布鲁日",
+        "awayTeam": "维拉",
+        "competition": "欧冠",
+        "processDate": "2026-09-08",
+        "odds": {
+          "home": 2.6,
+          "draw": 3.35,
+          "away": 2.25
+        },
+        "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": true,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-08T14:00:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-07T10:32:09.887Z",
+          "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c",
+        "observedAt": "2026-09-07T10:32:09.887Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-07T10:32:09.887Z",
+        "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+      },
+      "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+      "prediction": {
+        "modelId": "ensemble",
+        "version": "1.0.0",
+        "probabilities": [
+          0.3411019346079873,
+          0.2647358298450051,
+          0.3941622355470076
+        ],
+        "trainingCutoff": "2026-09-07T10:32:21.263Z",
+        "trainingCount": 0,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+          "No same-source competition training history; statistical predictions are cold-start priors."
+        ],
+        "tuning": {
+          "parameters": {
+            "shrinkage": 12,
+            "halfLifeDays": 365
+          },
+          "validationCount": 0,
+          "ensemble": {
+            "probabilities": [
+              0.3411019346079873,
+              0.2647358298450051,
+              0.3941622355470076
+            ],
+            "marketWeight": 1,
+            "validationCount": 0
+          }
+        },
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "51a5d25cbac892215da889d3c8586464849f8cb8d3bdc7fe6222025d4eaea4e1"
+    }
+  ]
+}

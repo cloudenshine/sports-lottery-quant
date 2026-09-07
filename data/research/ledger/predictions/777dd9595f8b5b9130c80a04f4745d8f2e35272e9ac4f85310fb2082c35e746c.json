@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "777dd9595f8b5b9130c80a04f4745d8f2e35272e9ac4f85310fb2082c35e746c",
+  "recordedAt": "2026-09-07T10:32:23.493Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1480060",
+      "kickoffAt": "2026-09-08T19:00:00.000Z",
+      "homeTeam": "皇马",
+      "awayTeam": "国际米兰",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.45,
+        "draw": 4.2,
+        "away": 4.95
+      },
+      "sourceEventId": "1480060"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-07T10:32:09.887Z",
+      "bodySha256": "f211228122ef7efab00e42a5189e704ee1dd6cb5f30d7d0f9f1239c887ff522c"
+    },
+    "prediction": {
+      "modelId": "ensemble",
+      "version": "1.0.0",
+      "probabilities": [
+        0.6104382294648756,
+        0.21074653160096893,
+        0.17881523893415546
+      ],
+      "trainingCutoff": "2026-09-07T10:32:23.126Z",
+      "trainingCount": 0,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+        "No same-source competition training history; statistical predictions are cold-start priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-07T10:32:09.887Z",
+    "paperTrade": null,
+    "batchId": "e594a35cf97afd74bb49a37f323cc831534f5510912c91719f05577629e7a24e"
+  }
+}
