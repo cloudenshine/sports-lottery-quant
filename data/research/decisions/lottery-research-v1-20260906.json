@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "protocolId": "lottery-research-v1-20260906",
   "protocolHash": "4e3d22f8ce0df7f18bfecce5b9eebdf9ec6fc13f2df57a770c751a2d17e749c3",
-  "generatedAt": "2026-09-07T10:32:32.895Z",
+  "generatedAt": "2026-09-07T15:40:30.660Z",
   "status": "COLLECTING_PROSPECTIVE_EVIDENCE",
   "eligible": false,
   "researchEvidenceEligible": false,
