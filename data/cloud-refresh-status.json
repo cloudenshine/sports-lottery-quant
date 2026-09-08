@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-08T07:21:36.672Z",
+  "generatedAt": "2026-09-08T14:41:36.516Z",
   "status": "degraded",
   "steps": [
     {
@@ -14,7 +14,7 @@
         },
         "sfc": {
           "status": "failed",
-          "error": "Invalid SFC fixture 7"
+          "error": "Invalid SFC fixture 1"
         },
         "markets": {
           "jingcai": {
@@ -23,15 +23,15 @@
           },
           "sfc": {
             "status": "failed",
-            "error": "Invalid SFC fixture 7"
+            "error": "Invalid SFC fixture 1"
           }
         }
       },
       "sourceErrors": {
         "jingcai": null,
-        "sfc": "Invalid SFC fixture 7"
+        "sfc": "Invalid SFC fixture 1"
       },
-      "jingcaiCount": 23,
+      "jingcaiCount": 22,
       "sfcCount": 0
     },
     {
@@ -39,7 +39,7 @@
       "status": "ok",
       "games": {
         "ssq": {
-          "draws": 556,
+          "draws": 557,
           "status": "ok"
         },
         "dlt": {
