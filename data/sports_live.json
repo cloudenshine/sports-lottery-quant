@@ -2,171 +2,42 @@
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-07T18:32:47.131Z",
-  "displayTime": "2026/9/8 02:32:47",
-  "jingcaiCount": 10,
+  "syncedAt": "2026-09-08T07:21:36.672Z",
+  "displayTime": "2026/9/8 15:21:36",
+  "jingcaiCount": 23,
   "sfcCount": 0,
   "jingcai": [
     {
-      "id": "LIVE_1414189",
-      "matchNum": "周一006",
+      "id": "LIVE_1373244",
+      "matchNum": "周二001",
       "matchDate": "2026-09-08",
-      "kickoffTime": "02:45",
-      "kickoffAt": "2026-09-07T18:45:00.000Z",
-      "league": "意甲",
+      "kickoffTime": "18:30",
+      "kickoffAt": "2026-09-08T10:30:00.000Z",
+      "league": "韩职",
       "leagueColor": "#3b82f6",
       "status": "来源快照，销售状态未核验",
       "homeTeam": {
-        "name": "乌迪内斯",
+        "name": "蔚山现代",
         "rank": null,
         "recentResults": []
       },
       "awayTeam": {
-        "name": "拉齐奥",
+        "name": "首尔FC",
         "rank": null,
         "recentResults": []
       },
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.6,
-          "1": 2.7,
-          "3": 2.67
+          "0": 1.81,
+          "1": 3.58,
+          "3": 3.36
         },
         "RQSPF": {
-          "0": 6.65,
-          "1": 4.1,
-          "3": 1.36,
+          "0": 3.4,
+          "1": 3.7,
+          "3": 1.77,
           "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1438084",
-      "matchNum": "周一007",
-      "matchDate": "2026-09-08",
-      "kickoffTime": "03:15",
-      "kickoffAt": "2026-09-07T19:15:00.000Z",
-      "league": "葡超",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "埃斯托里",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "阿罗卡",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.53,
-          "1": 3.25,
-          "3": 2.35
-        },
-        "RQSPF": {
-          "0": 1.43,
-          "1": 4.1,
-          "3": 5.4,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1427999",
-      "matchNum": "周一008",
-      "matchDate": "2026-09-08",
-      "kickoffTime": "03:30",
-      "kickoffAt": "2026-09-07T19:30:00.000Z",
-      "league": "西甲",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "埃尔切",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "皇家社会",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.89,
-          "1": 3.27,
-          "3": 3.4
-        },
-        "RQSPF": {
-          "0": 3.96,
-          "1": 3.55,
-          "3": 1.68,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1362496",
-      "matchNum": "周一009",
-      "matchDate": "2026-09-08",
-      "kickoffTime": "07:00",
-      "kickoffAt": "2026-09-07T23:00:00.000Z",
-      "league": "巴甲",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "维多利亚",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "格雷米奥",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 3.28,
-          "1": 2.95,
-          "3": 2.06
-        },
-        "RQSPF": {
-          "0": 1.58,
-          "1": 3.65,
-          "3": 4.5,
-          "handicap": -1
         }
       },
       "dataQuality": {
@@ -201,14 +72,14 @@
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 3.85,
-          "1": 3.65,
-          "3": 1.68
+          "0": 4.15,
+          "1": 3.85,
+          "3": 1.59
         },
         "RQSPF": {
-          "0": 1.93,
-          "1": 3.6,
-          "3": 3,
+          "0": 2.03,
+          "1": 3.7,
+          "3": 2.73,
           "handicap": -1
         }
       },
@@ -244,15 +115,187 @@
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.25,
+          "0": 2.41,
           "1": 3.35,
-          "3": 2.6
+          "3": 2.41
         },
         "RQSPF": {
-          "0": 4.7,
-          "1": 4.1,
-          "3": 1.49,
+          "0": 5.2,
+          "1": 4.3,
+          "3": 1.42,
           "handicap": 1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1415869",
+      "matchNum": "周二004",
+      "matchDate": "2026-09-09",
+      "kickoffTime": "00:45",
+      "kickoffAt": "2026-09-08T16:45:00.000Z",
+      "league": "荷甲",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "奈梅亨",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "SBV精英",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 4.55,
+          "1": 4.3,
+          "3": 1.48
+        },
+        "RQSPF": {
+          "0": 2.24,
+          "1": 3.9,
+          "3": 2.35,
+          "handicap": -1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1467722",
+      "matchNum": "周二005",
+      "matchDate": "2026-09-09",
+      "kickoffTime": "02:00",
+      "kickoffAt": "2026-09-08T18:00:00.000Z",
+      "league": "沙特职业联赛",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "胡巴尔卡德西亚",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "吉达国民",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 3.4,
+          "1": 3.8,
+          "3": 1.75
+        },
+        "RQSPF": {
+          "0": 1.83,
+          "1": 3.85,
+          "3": 3.1,
+          "handicap": -1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1425498",
+      "matchNum": "周二006",
+      "matchDate": "2026-09-09",
+      "kickoffTime": "02:45",
+      "kickoffAt": "2026-09-08T18:45:00.000Z",
+      "league": "英冠",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "南安普敦",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "斯旺西",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 3.95,
+          "1": 3.6,
+          "3": 1.67
+        },
+        "RQSPF": {
+          "0": 1.92,
+          "1": 3.56,
+          "3": 3.05,
+          "handicap": -1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1479738",
+      "matchNum": "周二007",
+      "matchDate": "2026-09-09",
+      "kickoffTime": "02:45",
+      "kickoffAt": "2026-09-08T18:45:00.000Z",
+      "league": "英联赛杯",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "桑德兰",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "赫尔城",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 5,
+          "1": 3.65,
+          "3": 1.53
+        },
+        "RQSPF": {
+          "0": 2.15,
+          "1": 3.25,
+          "3": 2.82,
+          "handicap": -1
         }
       },
       "dataQuality": {
@@ -287,14 +330,14 @@
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 4.95,
-          "1": 4.2,
-          "3": 1.45
+          "0": 5.05,
+          "1": 4.4,
+          "3": 1.42
         },
         "RQSPF": {
-          "0": 2.35,
+          "0": 2.4,
           "1": 3.75,
-          "3": 2.3,
+          "3": 2.25,
           "handicap": -1
         }
       },
@@ -330,14 +373,14 @@
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 3.96,
-          "1": 3.85,
-          "3": 1.62
+          "0": 3.92,
+          "1": 3.95,
+          "3": 1.61
         },
         "RQSPF": {
-          "0": 1.98,
-          "1": 3.78,
-          "3": 2.78,
+          "0": 2.03,
+          "1": 3.85,
+          "3": 2.65,
           "handicap": -1
         }
       },
@@ -425,6 +468,498 @@
           "1": 3.65,
           "3": 2.26,
           "handicap": 1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1476139",
+      "matchNum": "周二012",
+      "matchDate": "2026-09-09",
+      "kickoffTime": "06:00",
+      "kickoffAt": "2026-09-08T22:00:00.000Z",
+      "league": "解放者杯",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "弗鲁米嫩",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "普拉滕斯",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 6.15,
+          "1": 3.2,
+          "3": 1.53
+        },
+        "RQSPF": {
+          "0": 2.13,
+          "1": 3.18,
+          "3": 2.9,
+          "handicap": -1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1373217",
+      "matchNum": "周三001",
+      "matchDate": "2026-09-09",
+      "kickoffTime": "18:30",
+      "kickoffAt": "2026-09-09T10:30:00.000Z",
+      "league": "韩职",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "江原FC",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "全北现代",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 2.44,
+          "1": 2.92,
+          "3": 2.65
+        },
+        "RQSPF": {
+          "0": 6.25,
+          "1": 3.85,
+          "3": 1.41,
+          "handicap": 1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1479898",
+      "matchNum": "周三003",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "00:45",
+      "kickoffAt": "2026-09-09T16:45:00.000Z",
+      "league": "欧冠",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "巴萨",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "费耶诺德",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "RQSPF": {
+          "0": 2.02,
+          "1": 4.8,
+          "3": 2.35,
+          "handicap": -3
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1480111",
+      "matchNum": "周三004",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "00:45",
+      "kickoffAt": "2026-09-09T16:45:00.000Z",
+      "league": "欧冠",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "斯图加特",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "维京",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "RQSPF": {
+          "0": 2.3,
+          "1": 4.25,
+          "3": 2.18,
+          "handicap": -2
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1415882",
+      "matchNum": "周三005",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "00:45",
+      "kickoffAt": "2026-09-09T16:45:00.000Z",
+      "league": "荷甲",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "特温特",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "特尔斯达",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "RQSPF": {
+          "0": 2.23,
+          "1": 4.1,
+          "3": 2.29,
+          "handicap": -2
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1480102",
+      "matchNum": "周三006",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "03:00",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "league": "欧冠",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "里斯本",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "加拉塔萨",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 4.35,
+          "1": 3.75,
+          "3": 1.58
+        },
+        "RQSPF": {
+          "0": 2.04,
+          "1": 3.45,
+          "3": 2.86,
+          "handicap": -1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1480030",
+      "matchNum": "周三007",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "03:00",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "league": "欧冠",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "那不勒斯",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "阿森纳",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 1.62,
+          "1": 3.4,
+          "3": 4.58
+        },
+        "RQSPF": {
+          "0": 2.95,
+          "1": 3.5,
+          "3": 1.98,
+          "handicap": 1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1480008",
+      "matchNum": "周三008",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "03:00",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "league": "欧冠",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "利物浦",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "马竞",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 4.07,
+          "1": 3.7,
+          "3": 1.63
+        },
+        "RQSPF": {
+          "0": 1.98,
+          "1": 3.65,
+          "3": 2.85,
+          "handicap": -1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1480043",
+      "matchNum": "周三009",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "03:00",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "league": "欧冠",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "巴黎圣曼",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "布拉迪斯",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "RQSPF": {
+          "0": 2.55,
+          "1": 4.75,
+          "3": 1.9,
+          "handicap": -3
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1479744",
+      "matchNum": "周三011",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "03:00",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "league": "英联赛杯",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "切尔西",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "利兹联",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 4.85,
+          "1": 3.85,
+          "3": 1.51
+        },
+        "RQSPF": {
+          "0": 2.2,
+          "1": 3.45,
+          "3": 2.6,
+          "handicap": -1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1476140",
+      "matchNum": "周三013",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "06:00",
+      "kickoffAt": "2026-09-09T22:00:00.000Z",
+      "league": "解放者杯",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "帕梅拉斯",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "基多体大",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 11,
+          "1": 4.95,
+          "3": 1.2
+        },
+        "RQSPF": {
+          "0": 3.6,
+          "1": 3.35,
+          "3": 1.81,
+          "handicap": -1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_1476138",
+      "matchNum": "周三014",
+      "matchDate": "2026-09-10",
+      "kickoffTime": "08:30",
+      "kickoffAt": "2026-09-10T00:30:00.000Z",
+      "league": "解放者杯",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "拉普大学",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "科林蒂安",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 4.15,
+          "1": 2.58,
+          "3": 2
+        },
+        "RQSPF": {
+          "0": 1.63,
+          "1": 3.3,
+          "3": 4.7,
+          "handicap": -1
         }
       },
       "dataQuality": {
