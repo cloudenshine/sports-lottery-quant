@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "5d979e32141da35d71dea6e8edac4e081007636c4cb290a1c08d1f6626e566da",
+  "recordedAt": "2026-09-08T10:37:52.664Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1479738",
+      "kickoffAt": "2026-09-08T18:45:00.000Z",
+      "homeTeam": "桑德兰",
+      "awayTeam": "赫尔城",
+      "competition": "英联赛杯",
+      "odds": {
+        "home": 1.58,
+        "draw": 3.55,
+        "away": 4.65
+      },
+      "sourceEventId": "1479738"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "ensemble",
+      "version": "1.0.0",
+      "probabilities": [
+        0.5602694859741714,
+        0.24935937685611012,
+        0.19037113716971846
+      ],
+      "trainingCutoff": "2026-09-08T10:37:51.946Z",
+      "trainingCount": 0,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+        "No same-source competition training history; statistical predictions are cold-start priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": null,
+    "batchId": "05b0fa4eb41c0334156648178f9607e34e06c858c7946ec2fb37c3cd829784a6"
+  }
+}

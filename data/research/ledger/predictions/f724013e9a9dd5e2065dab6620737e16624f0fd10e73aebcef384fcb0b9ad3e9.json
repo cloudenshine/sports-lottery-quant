@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "f724013e9a9dd5e2065dab6620737e16624f0fd10e73aebcef384fcb0b9ad3e9",
+  "recordedAt": "2026-09-08T10:37:51.421Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1425498",
+      "kickoffAt": "2026-09-08T18:45:00.000Z",
+      "homeTeam": "南安普敦",
+      "awayTeam": "斯旺西",
+      "competition": "英冠",
+      "odds": {
+        "home": 1.67,
+        "draw": 3.6,
+        "away": 3.95
+      },
+      "sourceEventId": "1425498"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.34481181255050847,
+        0.2720337280687105,
+        0.38315445938078097
+      ],
+      "trainingCutoff": "2026-09-08T10:37:44.460Z",
+      "trainingCount": 14,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": null,
+    "batchId": "056e9c63812759800301860242f8c971710d562d98083d256e451ee650f88851"
+  }
+}

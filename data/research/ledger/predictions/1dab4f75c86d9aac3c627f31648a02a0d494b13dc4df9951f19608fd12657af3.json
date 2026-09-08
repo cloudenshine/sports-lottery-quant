@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "1dab4f75c86d9aac3c627f31648a02a0d494b13dc4df9951f19608fd12657af3",
+  "recordedAt": "2026-09-08T10:37:52.833Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1476139",
+      "kickoffAt": "2026-09-08T22:00:00.000Z",
+      "homeTeam": "弗鲁米嫩",
+      "awayTeam": "普拉滕斯",
+      "competition": "解放者杯",
+      "odds": {
+        "home": 1.5,
+        "draw": 3.2,
+        "away": 6.7
+      },
+      "sourceEventId": "1476139"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "historical",
+      "version": "1.0.0",
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "trainingCutoff": "2026-09-08T10:37:52.739Z",
+      "trainingCount": 0,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+        "No same-source competition training history; statistical predictions are cold-start priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": null,
+    "batchId": "09a093eace825b92265cc573dd1b86b882a580317a388f27ad4da042c6f37897"
+  }
+}

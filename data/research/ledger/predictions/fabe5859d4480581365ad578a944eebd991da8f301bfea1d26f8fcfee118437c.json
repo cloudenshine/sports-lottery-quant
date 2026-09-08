@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "fabe5859d4480581365ad578a944eebd991da8f301bfea1d26f8fcfee118437c",
+  "recordedAt": "2026-09-08T10:37:49.963Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1415869",
+      "kickoffAt": "2026-09-08T16:45:00.000Z",
+      "homeTeam": "奈梅亨",
+      "awayTeam": "SBV精英",
+      "competition": "荷甲",
+      "odds": {
+        "home": 1.51,
+        "draw": 4.2,
+        "away": 4.38
+      },
+      "sourceEventId": "1415869"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "elo",
+      "version": "1.0.0",
+      "probabilities": [
+        0.42753457039653375,
+        0.2697941328127568,
+        0.3026712967907095
+      ],
+      "trainingCutoff": "2026-09-08T10:37:41.381Z",
+      "trainingCount": 3,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Davidson draw model, home advantage 60 Elo, K=24; fixed research assumptions.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": null,
+    "batchId": "4bd849659472fd92add871afca18c9cf309d651de5eb25bba39ef25c9937508b"
+  }
+}

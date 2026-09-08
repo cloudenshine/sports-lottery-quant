@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "d9985e85c2fae62b4c3d0097277ce05fd44ae0b141cc43c32f5e0118c6f76c9f",
+  "recordedAt": "2026-09-08T10:37:54.961Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1480008",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "homeTeam": "利物浦",
+      "awayTeam": "马竞",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.63,
+        "draw": 3.7,
+        "away": 4.07
+      },
+      "sourceEventId": "1480008"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.4380427069205374,
+        0.26634485427468957,
+        0.2956124388047731
+      ],
+      "trainingCutoff": "2026-09-08T10:37:54.693Z",
+      "trainingCount": 0,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+        "No same-source competition training history; statistical predictions are cold-start priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": {
+      "selectionWeights": [
+        0,
+        0,
+        1
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "1c4d34266020a6f64f372330944a2cf6e44a20618d449918a4edfcca1fffaef1"
+  }
+}

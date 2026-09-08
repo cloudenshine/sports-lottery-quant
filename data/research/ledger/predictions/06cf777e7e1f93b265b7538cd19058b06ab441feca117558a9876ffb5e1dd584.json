@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "06cf777e7e1f93b265b7538cd19058b06ab441feca117558a9876ffb5e1dd584",
+  "recordedAt": "2026-09-08T10:37:54.484Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1479744",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "homeTeam": "切尔西",
+      "awayTeam": "利兹联",
+      "competition": "英联赛杯",
+      "odds": {
+        "home": 1.51,
+        "draw": 3.85,
+        "away": 4.85
+      },
+      "sourceEventId": "1479744"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "market-power",
+      "version": "1.0.0",
+      "probabilities": [
+        0.6233723889452156,
+        0.21310230989022005,
+        0.1635253011645643
+      ],
+      "trainingCutoff": "2026-09-08T10:37:54.099Z",
+      "trainingCount": 0,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+        "No same-source competition training history; statistical predictions are cold-start priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": null,
+    "batchId": "5628654453e2ce49eb71a7fc29a89953f7bef2d5a53232eccbb11aef52acec3b"
+  }
+}

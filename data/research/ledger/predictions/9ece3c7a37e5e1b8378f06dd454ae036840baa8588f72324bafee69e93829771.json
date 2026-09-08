@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "9ece3c7a37e5e1b8378f06dd454ae036840baa8588f72324bafee69e93829771",
+  "recordedAt": "2026-09-08T10:37:54.267Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1479744",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "homeTeam": "切尔西",
+      "awayTeam": "利兹联",
+      "competition": "英联赛杯",
+      "odds": {
+        "home": 1.51,
+        "draw": 3.85,
+        "away": 4.85
+      },
+      "sourceEventId": "1479744"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.4380427069205374,
+        0.26634485427468957,
+        0.2956124388047731
+      ],
+      "trainingCutoff": "2026-09-08T10:37:54.099Z",
+      "trainingCount": 0,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+        "No same-source competition training history; statistical predictions are cold-start priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": null,
+    "batchId": "5628654453e2ce49eb71a7fc29a89953f7bef2d5a53232eccbb11aef52acec3b"
+  }
+}

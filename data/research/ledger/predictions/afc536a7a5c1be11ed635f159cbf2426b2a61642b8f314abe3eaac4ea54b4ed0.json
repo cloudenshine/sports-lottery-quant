@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "afc536a7a5c1be11ed635f159cbf2426b2a61642b8f314abe3eaac4ea54b4ed0",
+  "recordedAt": "2026-09-08T10:37:56.929Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1480102",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "homeTeam": "里斯本",
+      "awayTeam": "加拉塔萨",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.58,
+        "draw": 3.75,
+        "away": 4.35
+      },
+      "sourceEventId": "1480102"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "ensemble",
+      "version": "1.0.0",
+      "probabilities": [
+        0.5603648168186737,
+        0.23610037615293453,
+        0.20353480702839186
+      ],
+      "trainingCutoff": "2026-09-08T10:37:56.326Z",
+      "trainingCount": 0,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+        "No same-source competition training history; statistical predictions are cold-start priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": null,
+    "batchId": "d4831e789fc001f764d450b9d551ae0187a9d2d984599e8cce1f0c10e3229ce6"
+  }
+}

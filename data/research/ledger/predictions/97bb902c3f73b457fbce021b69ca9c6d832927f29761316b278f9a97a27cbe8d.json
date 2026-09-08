@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "97bb902c3f73b457fbce021b69ca9c6d832927f29761316b278f9a97a27cbe8d",
+  "recordedAt": "2026-09-08T10:37:58.175Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1476138",
+      "kickoffAt": "2026-09-10T00:30:00.000Z",
+      "homeTeam": "拉普大学",
+      "awayTeam": "科林蒂安",
+      "competition": "解放者杯",
+      "odds": {
+        "home": 2,
+        "draw": 2.58,
+        "away": 4.15
+      },
+      "sourceEventId": "1476138"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "market-power",
+      "version": "1.0.0",
+      "probabilities": [
+        0.45696837143117797,
+        0.3427189758864856,
+        0.2003126526823364
+      ],
+      "trainingCutoff": "2026-09-08T10:37:57.810Z",
+      "trainingCount": 0,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors.",
+        "No same-source competition training history; statistical predictions are cold-start priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": null,
+    "batchId": "a1de669c69845f922c977920d57b182d520a3661414b520bf7fef3569793daa8"
+  }
+}

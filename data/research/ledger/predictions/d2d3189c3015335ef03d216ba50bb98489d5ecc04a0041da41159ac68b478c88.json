@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "d2d3189c3015335ef03d216ba50bb98489d5ecc04a0041da41159ac68b478c88",
+  "recordedAt": "2026-09-08T10:37:53.646Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1373217",
+      "kickoffAt": "2026-09-09T10:30:00.000Z",
+      "homeTeam": "江原FC",
+      "awayTeam": "全北现代",
+      "competition": "韩职",
+      "odds": {
+        "home": 2.65,
+        "draw": 2.92,
+        "away": 2.44
+      },
+      "sourceEventId": "1373217"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-08T10:37:38.063Z",
+      "bodySha256": "f025a9025092a9ed80b406c28b510640c3f79c0422b72ca7ae6520f8953e40c8"
+    },
+    "prediction": {
+      "modelId": "historical",
+      "version": "1.0.0",
+      "probabilities": [
+        0.2222222222222222,
+        0.4444444444444444,
+        0.3333333333333333
+      ],
+      "trainingCutoff": "2026-09-08T10:37:40.510Z",
+      "trainingCount": 3,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-08T10:37:38.063Z",
+    "paperTrade": {
+      "selectionWeights": [
+        0,
+        1,
+        0
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "427133c944e5bc0324a5ceb60c4da7e0247afb14f6d2f396a2b8b21e712d11b1"
+  }
+}
