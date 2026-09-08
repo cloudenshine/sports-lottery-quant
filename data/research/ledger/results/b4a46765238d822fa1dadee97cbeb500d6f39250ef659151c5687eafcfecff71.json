@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "b4a46765238d822fa1dadee97cbeb500d6f39250ef659151c5687eafcfecff71",
+  "recordedAt": "2026-09-08T10:37:59.211Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1427999",
+      "kickoffAt": "2026-09-07T19:30:00.000Z",
+      "homeTeam": "埃尔切",
+      "awayTeam": "皇家社会",
+      "competition": "西甲",
+      "odds": {
+        "home": 3.4,
+        "draw": 3.27,
+        "away": 1.89
+      },
+      "sourceEventId": "1427999",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
+      "fetchedAt": "2026-09-08T10:37:38.729Z",
+      "bodySha256": "4fd2ba2e66c6da4d3412e57315595d04218729989b4a4c6864de1b22067bf78e"
+    },
+    "observedAt": "2026-09-08T10:37:38.729Z",
+    "revisionReason": null
+  }
+}

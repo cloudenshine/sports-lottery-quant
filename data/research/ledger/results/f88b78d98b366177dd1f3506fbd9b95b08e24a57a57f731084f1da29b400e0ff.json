@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "f88b78d98b366177dd1f3506fbd9b95b08e24a57a57f731084f1da29b400e0ff",
+  "recordedAt": "2026-09-08T10:37:59.005Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1414189",
+      "kickoffAt": "2026-09-07T18:45:00.000Z",
+      "homeTeam": "乌迪内斯",
+      "awayTeam": "拉齐奥",
+      "competition": "意甲",
+      "odds": {
+        "home": 2.67,
+        "draw": 2.7,
+        "away": 2.6
+      },
+      "sourceEventId": "1414189",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
+      "fetchedAt": "2026-09-08T10:37:38.729Z",
+      "bodySha256": "4fd2ba2e66c6da4d3412e57315595d04218729989b4a4c6864de1b22067bf78e"
+    },
+    "observedAt": "2026-09-08T10:37:38.729Z",
+    "revisionReason": null
+  }
+}

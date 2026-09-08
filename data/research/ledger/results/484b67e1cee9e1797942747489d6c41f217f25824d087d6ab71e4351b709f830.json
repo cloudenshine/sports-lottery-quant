@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "484b67e1cee9e1797942747489d6c41f217f25824d087d6ab71e4351b709f830",
+  "recordedAt": "2026-09-08T10:37:58.823Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1467718",
+      "kickoffAt": "2026-09-07T18:00:00.000Z",
+      "homeTeam": "利雅得新月",
+      "awayTeam": "新未来SC",
+      "competition": "沙特职业联赛",
+      "odds": {
+        "home": 1.1,
+        "draw": 6.75,
+        "away": 14
+      },
+      "sourceEventId": "1467718",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
+      "fetchedAt": "2026-09-08T10:37:38.729Z",
+      "bodySha256": "4fd2ba2e66c6da4d3412e57315595d04218729989b4a4c6864de1b22067bf78e"
+    },
+    "observedAt": "2026-09-08T10:37:38.729Z",
+    "revisionReason": null
+  }
+}

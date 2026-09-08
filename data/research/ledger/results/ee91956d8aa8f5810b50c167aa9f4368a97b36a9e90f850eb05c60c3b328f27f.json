@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ee91956d8aa8f5810b50c167aa9f4368a97b36a9e90f850eb05c60c3b328f27f",
+  "recordedAt": "2026-09-08T10:37:58.562Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1362764",
+      "kickoffAt": "2026-09-07T17:00:00.000Z",
+      "homeTeam": "马尔默",
+      "awayTeam": "索尔纳",
+      "competition": "瑞超",
+      "odds": {
+        "home": 1.64,
+        "draw": 3.88,
+        "away": 3.82
+      },
+      "sourceEventId": "1362764",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
+      "fetchedAt": "2026-09-08T10:37:38.729Z",
+      "bodySha256": "4fd2ba2e66c6da4d3412e57315595d04218729989b4a4c6864de1b22067bf78e"
+    },
+    "observedAt": "2026-09-08T10:37:38.729Z",
+    "revisionReason": null
+  }
+}

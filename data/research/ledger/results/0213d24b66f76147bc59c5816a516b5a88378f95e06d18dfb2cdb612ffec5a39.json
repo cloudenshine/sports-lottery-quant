@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "0213d24b66f76147bc59c5816a516b5a88378f95e06d18dfb2cdb612ffec5a39",
+  "recordedAt": "2026-09-08T10:37:58.394Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1414182",
+      "kickoffAt": "2026-09-07T16:30:00.000Z",
+      "homeTeam": "卡利亚里",
+      "awayTeam": "莱切",
+      "competition": "意甲",
+      "odds": {
+        "home": 1.88,
+        "draw": 2.93,
+        "away": 3.9
+      },
+      "sourceEventId": "1414182",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
+      "fetchedAt": "2026-09-08T10:37:38.729Z",
+      "bodySha256": "4fd2ba2e66c6da4d3412e57315595d04218729989b4a4c6864de1b22067bf78e"
+    },
+    "observedAt": "2026-09-08T10:37:38.729Z",
+    "revisionReason": null
+  }
+}
