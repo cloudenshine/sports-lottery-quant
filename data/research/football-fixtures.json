@@ -18,14 +18,14 @@
       "source": {
         "sourceId": "500-jingcai-results-7",
         "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-02",
-        "fetchedAt": "2026-09-09T10:31:50.577Z",
+        "fetchedAt": "2026-09-09T15:31:29.662Z",
         "bodySha256": "05c1ddcb2311953f9159bcf889ef9f386ee178f128274911c1a3a39b1aa17bf3"
       },
       "sourceId": "500-jingcai-results-7",
       "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-02",
-      "fetchedAt": "2026-09-09T10:31:50.577Z",
+      "fetchedAt": "2026-09-09T15:31:29.662Z",
       "bodySha256": "05c1ddcb2311953f9159bcf889ef9f386ee178f128274911c1a3a39b1aa17bf3",
-      "observedAt": "2026-09-09T10:31:50.577Z",
+      "observedAt": "2026-09-09T15:31:29.662Z",
       "status": "result-awaiting-1x2-settlement",
       "stale": false
     },
@@ -47,14 +47,14 @@
       "source": {
         "sourceId": "500-jingcai-results-5",
         "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-04",
-        "fetchedAt": "2026-09-09T10:31:48.877Z",
+        "fetchedAt": "2026-09-09T15:31:27.135Z",
         "bodySha256": "dfa86878f216b0cc9db327ce04cf955dc1c3bb6937d9f89801b531e9077a9a19"
       },
       "sourceId": "500-jingcai-results-5",
       "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-04",
-      "fetchedAt": "2026-09-09T10:31:48.877Z",
+      "fetchedAt": "2026-09-09T15:31:27.135Z",
       "bodySha256": "dfa86878f216b0cc9db327ce04cf955dc1c3bb6937d9f89801b531e9077a9a19",
-      "observedAt": "2026-09-09T10:31:48.877Z",
+      "observedAt": "2026-09-09T15:31:27.135Z",
       "status": "result-awaiting-1x2-settlement",
       "stale": false
     },
@@ -76,14 +76,14 @@
       "source": {
         "sourceId": "500-jingcai-results-4",
         "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
-        "fetchedAt": "2026-09-09T10:31:48.072Z",
+        "fetchedAt": "2026-09-09T15:31:26.168Z",
         "bodySha256": "c1b0fafddf80904dcca4e030003e53c7905aaefc7c30b1c47f358ab318c96821"
       },
       "sourceId": "500-jingcai-results-4",
       "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
-      "fetchedAt": "2026-09-09T10:31:48.072Z",
+      "fetchedAt": "2026-09-09T15:31:26.168Z",
       "bodySha256": "c1b0fafddf80904dcca4e030003e53c7905aaefc7c30b1c47f358ab318c96821",
-      "observedAt": "2026-09-09T10:31:48.072Z",
+      "observedAt": "2026-09-09T15:31:26.168Z",
       "status": "result-awaiting-1x2-settlement",
       "stale": false
     },
@@ -105,48 +105,15 @@
       "source": {
         "sourceId": "500-jingcai-results-4",
         "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
-        "fetchedAt": "2026-09-09T10:31:48.072Z",
+        "fetchedAt": "2026-09-09T15:31:26.168Z",
         "bodySha256": "c1b0fafddf80904dcca4e030003e53c7905aaefc7c30b1c47f358ab318c96821"
       },
       "sourceId": "500-jingcai-results-4",
       "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
-      "fetchedAt": "2026-09-09T10:31:48.072Z",
+      "fetchedAt": "2026-09-09T15:31:26.168Z",
       "bodySha256": "c1b0fafddf80904dcca4e030003e53c7905aaefc7c30b1c47f358ab318c96821",
-      "observedAt": "2026-09-09T10:31:48.072Z",
+      "observedAt": "2026-09-09T15:31:26.168Z",
       "status": "result-awaiting-1x2-settlement",
-      "stale": false
-    },
-    {
-      "eventId": "500:1373217",
-      "sourceEventId": "1373217",
-      "kickoffAt": "2026-09-09T10:30:00.000Z",
-      "kickoffPrecision": "minute",
-      "homeTeam": "江原FC",
-      "awayTeam": "全北现代",
-      "competition": "韩职",
-      "processDate": "2026-09-09",
-      "odds": {
-        "home": 2.92,
-        "draw": 2.9,
-        "away": 2.26
-      },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
-      "oddsKind": "china-jingcai-1x2-secondary-publisher",
-      "singleBetAvailable": true,
-      "salesOpen": false,
-      "stopSellingAt": "2026-09-09T10:30:00.000Z",
-      "source": {
-        "sourceId": "500-jingcai",
-        "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
-      },
-      "sourceId": "500-jingcai",
-      "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -159,27 +126,27 @@
       "competition": "沙特职业联赛",
       "processDate": "2026-09-09",
       "odds": {
-        "home": 2.51,
+        "home": 2.56,
         "draw": 3.35,
-        "away": 2.31
+        "away": 2.27
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -195,20 +162,20 @@
       "oddsObservedAt": null,
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -224,20 +191,20 @@
       "oddsObservedAt": null,
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -253,20 +220,20 @@
       "oddsObservedAt": null,
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -279,27 +246,27 @@
       "competition": "英冠",
       "processDate": "2026-09-09",
       "odds": {
-        "home": 3.12,
-        "draw": 3.1,
+        "home": 3.22,
+        "draw": 3,
         "away": 2.06
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -312,27 +279,27 @@
       "competition": "英联赛杯",
       "processDate": "2026-09-09",
       "odds": {
-        "home": 1.38,
-        "draw": 4.35,
-        "away": 5.75
+        "home": 1.32,
+        "draw": 4.6,
+        "away": 6.5
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -345,27 +312,27 @@
       "competition": "欧冠",
       "processDate": "2026-09-09",
       "odds": {
-        "home": 1.55,
-        "draw": 3.9,
-        "away": 4.4
+        "home": 1.59,
+        "draw": 3.77,
+        "away": 4.25
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": true,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -382,23 +349,23 @@
         "draw": 3.8,
         "away": 1.45
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": true,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -414,20 +381,20 @@
       "oddsObservedAt": null,
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -440,27 +407,27 @@
       "competition": "欧冠",
       "processDate": "2026-09-09",
       "odds": {
-        "home": 1.53,
-        "draw": 3.87,
-        "away": 4.6
+        "home": 1.5,
+        "draw": 3.96,
+        "away": 4.75
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -476,20 +443,20 @@
       "oddsObservedAt": null,
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -506,23 +473,23 @@
         "draw": 4.95,
         "away": 10
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -535,27 +502,27 @@
       "competition": "美职足",
       "processDate": "2026-09-09",
       "odds": {
-        "home": 2.23,
+        "home": 2.13,
         "draw": 4.06,
-        "away": 2.3
+        "away": 2.42
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -568,27 +535,27 @@
       "competition": "解放者杯",
       "processDate": "2026-09-09",
       "odds": {
-        "home": 2,
-        "draw": 2.5,
-        "away": 4.35
+        "home": 2.1,
+        "draw": 2.4,
+        "away": 4.22
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
-      "salesOpen": true,
+      "salesOpen": false,
       "stopSellingAt": "2026-09-09T14:00:00.000Z",
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
-      "status": "scheduled",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
+      "status": "sales-closed-awaiting-result",
       "stale": false
     },
     {
@@ -605,7 +572,7 @@
         "draw": 3.35,
         "away": 2
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": true,
       "salesOpen": true,
@@ -613,14 +580,14 @@
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
       "status": "scheduled",
       "stale": false
     },
@@ -642,14 +609,14 @@
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
       "status": "scheduled",
       "stale": false
     },
@@ -667,7 +634,7 @@
         "draw": 3.7,
         "away": 3.7
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": true,
       "salesOpen": true,
@@ -675,14 +642,14 @@
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
       "status": "scheduled",
       "stale": false
     },
@@ -704,14 +671,14 @@
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
       "status": "scheduled",
       "stale": false
     },
@@ -729,7 +696,7 @@
         "draw": 3.28,
         "away": 2.38
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": true,
       "salesOpen": true,
@@ -737,14 +704,14 @@
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
       "status": "scheduled",
       "stale": false
     },
@@ -762,7 +729,7 @@
         "draw": 3.8,
         "away": 1.48
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
       "salesOpen": true,
@@ -770,14 +737,14 @@
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
       "status": "scheduled",
       "stale": false
     },
@@ -795,7 +762,7 @@
         "draw": 2.93,
         "away": 2.58
       },
-      "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+      "oddsObservedAt": "2026-09-09T15:31:20.257Z",
       "oddsKind": "china-jingcai-1x2-secondary-publisher",
       "singleBetAvailable": false,
       "salesOpen": true,
@@ -803,14 +770,14 @@
       "source": {
         "sourceId": "500-jingcai",
         "sourceUrl": "https://trade.500.com/jczq/",
-        "fetchedAt": "2026-09-09T10:31:44.097Z",
-        "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
       },
       "sourceId": "500-jingcai",
       "sourceUrl": "https://trade.500.com/jczq/",
-      "fetchedAt": "2026-09-09T10:31:44.097Z",
-      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852",
-      "observedAt": "2026-09-09T10:31:44.097Z",
+      "fetchedAt": "2026-09-09T15:31:20.257Z",
+      "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04",
+      "observedAt": "2026-09-09T15:31:20.257Z",
       "status": "scheduled",
       "stale": false
     },
@@ -828,14 +795,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -854,14 +821,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -880,14 +847,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -906,14 +873,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -932,14 +899,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -958,14 +925,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -984,14 +951,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1010,14 +977,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1036,14 +1003,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1062,14 +1029,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1088,14 +1055,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1114,14 +1081,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1140,14 +1107,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1166,14 +1133,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1192,14 +1159,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1218,14 +1185,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1244,14 +1211,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1270,14 +1237,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1296,14 +1263,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false
@@ -1322,14 +1289,14 @@
       "source": {
         "sourceId": "espn-eng1-current",
         "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-        "fetchedAt": "2026-09-09T10:31:39.147Z",
-        "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1"
+        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
       },
       "sourceId": "espn-eng1-current",
       "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-      "fetchedAt": "2026-09-09T10:31:39.147Z",
-      "bodySha256": "873fce831bed7d2247cb01f5bf5db38a1346af37f99f14028a1b957fcdf8f3b1",
-      "observedAt": "2026-09-09T10:31:39.147Z",
+      "fetchedAt": "2026-09-09T15:31:13.958Z",
+      "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1",
+      "observedAt": "2026-09-09T15:31:13.958Z",
       "status": "STATUS_SCHEDULED",
       "salesOpen": true,
       "stale": false

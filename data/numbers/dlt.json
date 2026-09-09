@@ -1,6 +1,6 @@
 {
   "gameId": "dlt",
-  "fetchedAt": "2026-09-09T10:31:56.202Z",
+  "fetchedAt": "2026-09-09T15:31:47.706Z",
   "draws": [
     {
       "gameId": "dlt",
@@ -41,9 +41,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -86,9 +86,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -131,9 +131,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -176,9 +176,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -221,9 +221,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -266,9 +266,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -311,9 +311,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -356,9 +356,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -401,9 +401,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -446,9 +446,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -491,9 +491,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -536,9 +536,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -581,9 +581,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -626,9 +626,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -671,9 +671,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -716,9 +716,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -761,9 +761,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -806,9 +806,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -851,9 +851,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -896,9 +896,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -941,9 +941,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -986,9 +986,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1031,9 +1031,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1076,9 +1076,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1121,9 +1121,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1166,9 +1166,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1211,9 +1211,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1256,9 +1256,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1301,9 +1301,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1346,9 +1346,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1391,9 +1391,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1436,9 +1436,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1481,9 +1481,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1526,9 +1526,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1571,9 +1571,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1616,9 +1616,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1661,9 +1661,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1706,9 +1706,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1751,9 +1751,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1796,9 +1796,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1841,9 +1841,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1886,9 +1886,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1931,9 +1931,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -1976,9 +1976,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2021,9 +2021,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2066,9 +2066,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2111,9 +2111,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2156,9 +2156,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2201,9 +2201,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2246,9 +2246,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2291,9 +2291,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2336,9 +2336,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2381,9 +2381,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2426,9 +2426,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2471,9 +2471,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2516,9 +2516,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2561,9 +2561,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2606,9 +2606,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2651,9 +2651,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2696,9 +2696,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2741,9 +2741,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2786,9 +2786,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2831,9 +2831,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2876,9 +2876,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2921,9 +2921,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -2966,9 +2966,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3011,9 +3011,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3056,9 +3056,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3101,9 +3101,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3146,9 +3146,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3191,9 +3191,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3236,9 +3236,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3281,9 +3281,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3326,9 +3326,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3371,9 +3371,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3416,9 +3416,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3461,9 +3461,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3506,9 +3506,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3551,9 +3551,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3596,9 +3596,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3641,9 +3641,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3686,9 +3686,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3731,9 +3731,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3776,9 +3776,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3821,9 +3821,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3866,9 +3866,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3911,9 +3911,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -3956,9 +3956,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4001,9 +4001,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4046,9 +4046,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4091,9 +4091,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4136,9 +4136,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4181,9 +4181,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4226,9 +4226,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4271,9 +4271,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4316,9 +4316,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4361,9 +4361,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4406,9 +4406,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4451,9 +4451,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4496,9 +4496,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4541,9 +4541,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4586,9 +4586,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4631,9 +4631,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4676,9 +4676,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4721,9 +4721,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4766,9 +4766,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4811,9 +4811,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4856,9 +4856,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4901,9 +4901,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4946,9 +4946,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -4991,9 +4991,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5036,9 +5036,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5081,9 +5081,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5126,9 +5126,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5171,9 +5171,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5216,9 +5216,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5261,9 +5261,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5306,9 +5306,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5351,9 +5351,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5396,9 +5396,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5441,9 +5441,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5486,9 +5486,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5531,9 +5531,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5576,9 +5576,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5621,9 +5621,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5666,9 +5666,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5711,9 +5711,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5756,9 +5756,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5801,9 +5801,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5846,9 +5846,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5891,9 +5891,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5936,9 +5936,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -5981,9 +5981,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6026,9 +6026,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6071,9 +6071,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6116,9 +6116,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6161,9 +6161,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6206,9 +6206,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6251,9 +6251,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6296,9 +6296,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6341,9 +6341,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6386,9 +6386,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6431,9 +6431,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6476,9 +6476,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6521,9 +6521,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6566,9 +6566,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6611,9 +6611,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6656,9 +6656,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6701,9 +6701,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6746,9 +6746,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6791,9 +6791,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6836,9 +6836,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6881,9 +6881,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6926,9 +6926,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -6971,9 +6971,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7016,9 +7016,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7061,9 +7061,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7106,9 +7106,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7151,9 +7151,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7196,9 +7196,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7241,9 +7241,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7286,9 +7286,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7331,9 +7331,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7376,9 +7376,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7421,9 +7421,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7466,9 +7466,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7511,9 +7511,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7556,9 +7556,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7601,9 +7601,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7646,9 +7646,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7691,9 +7691,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7736,9 +7736,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7781,9 +7781,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7826,9 +7826,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7871,9 +7871,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7916,9 +7916,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -7961,9 +7961,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8006,9 +8006,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8051,9 +8051,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8096,9 +8096,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8141,9 +8141,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8186,9 +8186,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8231,9 +8231,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8276,9 +8276,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8321,9 +8321,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8366,9 +8366,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8411,9 +8411,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8456,9 +8456,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8501,9 +8501,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8546,9 +8546,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8591,9 +8591,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8636,9 +8636,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8681,9 +8681,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8726,9 +8726,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8771,9 +8771,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8816,9 +8816,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8861,9 +8861,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8906,9 +8906,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8951,9 +8951,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -8996,9 +8996,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9041,9 +9041,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9086,9 +9086,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9131,9 +9131,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9176,9 +9176,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9221,9 +9221,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9266,9 +9266,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9311,9 +9311,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9356,9 +9356,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9401,9 +9401,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9446,9 +9446,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9491,9 +9491,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9536,9 +9536,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9581,9 +9581,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9626,9 +9626,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9671,9 +9671,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9716,9 +9716,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9761,9 +9761,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9806,9 +9806,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9851,9 +9851,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9896,9 +9896,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9941,9 +9941,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -9986,9 +9986,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10031,9 +10031,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10076,9 +10076,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10121,9 +10121,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10166,9 +10166,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10211,9 +10211,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10256,9 +10256,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10301,9 +10301,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10346,9 +10346,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10391,9 +10391,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10436,9 +10436,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10481,9 +10481,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10526,9 +10526,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10571,9 +10571,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10616,9 +10616,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10661,9 +10661,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10706,9 +10706,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10751,9 +10751,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10796,9 +10796,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10841,9 +10841,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10886,9 +10886,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10931,9 +10931,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -10976,9 +10976,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -11021,9 +11021,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -11066,9 +11066,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -11111,9 +11111,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -11156,9 +11156,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -11201,9 +11201,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -11246,9 +11246,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -11291,9 +11291,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -11336,9 +11336,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -11381,9 +11381,9 @@
       "source": {
         "sourceId": "500star-dlt-history",
         "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-09T10:32:07.557Z",
-        "bodySha256": "284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb",
-        "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
+        "fetchedAt": "2026-09-09T15:32:02.069Z",
+        "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+        "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
       },
       "payoutEvidence": "published_draw_table_partial"
     },
@@ -33870,7 +33870,7 @@
       "source": {
         "sourceId": "guangdong-ticai-dlt-detail",
         "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26094.html",
-        "fetchedAt": "2026-09-09T10:32:11.003Z",
+        "fetchedAt": "2026-09-09T15:32:05.962Z",
         "bodySha256": "f84f068d0c456bb300e92b9d0ee20f6d267d9186668712fc89c666b840889b89",
         "rawRef": "raw/f84f068d0c456bb300e92b9d0ee20f6d267d9186668712fc89c666b840889b89.body"
       },
@@ -33940,7 +33940,7 @@
       "source": {
         "sourceId": "guangdong-ticai-dlt-detail",
         "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26095.html",
-        "fetchedAt": "2026-09-09T10:32:10.995Z",
+        "fetchedAt": "2026-09-09T15:32:05.969Z",
         "bodySha256": "dd55e48e2bdfa32afae7627a0d19c798234aa7937fa4749b094fbbd537e177ef",
         "rawRef": "raw/dd55e48e2bdfa32afae7627a0d19c798234aa7937fa4749b094fbbd537e177ef.body"
       },
@@ -34010,7 +34010,7 @@
       "source": {
         "sourceId": "guangdong-ticai-dlt-detail",
         "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26096.html",
-        "fetchedAt": "2026-09-09T10:32:10.318Z",
+        "fetchedAt": "2026-09-09T15:32:05.394Z",
         "bodySha256": "6be29465c05477a4e338a6331cd92dc9236c6a22f7dff800479841d82fbd727a",
         "rawRef": "raw/6be29465c05477a4e338a6331cd92dc9236c6a22f7dff800479841d82fbd727a.body"
       },
@@ -34080,7 +34080,7 @@
       "source": {
         "sourceId": "guangdong-ticai-dlt-detail",
         "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26097.html",
-        "fetchedAt": "2026-09-09T10:32:10.297Z",
+        "fetchedAt": "2026-09-09T15:32:05.956Z",
         "bodySha256": "e753d71fe29b89ddb68fc3ba1bb0982da65af32979d840fce4b3eb1b39019980",
         "rawRef": "raw/e753d71fe29b89ddb68fc3ba1bb0982da65af32979d840fce4b3eb1b39019980.body"
       },
@@ -34150,7 +34150,7 @@
       "source": {
         "sourceId": "guangdong-ticai-dlt-detail",
         "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26098.html",
-        "fetchedAt": "2026-09-09T10:32:10.283Z",
+        "fetchedAt": "2026-09-09T15:32:05.376Z",
         "bodySha256": "f901cfbf802836ee2e6dd5048faa393bbda1ceeca065148cfe75b7479c40650b",
         "rawRef": "raw/f901cfbf802836ee2e6dd5048faa393bbda1ceeca065148cfe75b7479c40650b.body"
       },
@@ -34220,7 +34220,7 @@
       "source": {
         "sourceId": "guangdong-ticai-dlt-detail",
         "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26099.html",
-        "fetchedAt": "2026-09-09T10:32:09.820Z",
+        "fetchedAt": "2026-09-09T15:32:05.359Z",
         "bodySha256": "4eece69f2e63eeae5e4076cbc37b0a445fdc2ee674f5608e9f5be191824998ff",
         "rawRef": "raw/4eece69f2e63eeae5e4076cbc37b0a445fdc2ee674f5608e9f5be191824998ff.body"
       },
@@ -34290,7 +34290,7 @@
       "source": {
         "sourceId": "guangdong-ticai-dlt-detail",
         "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26100.html",
-        "fetchedAt": "2026-09-09T10:32:09.803Z",
+        "fetchedAt": "2026-09-09T15:32:04.805Z",
         "bodySha256": "1ce9fcfeec29ca8b937b554590d54c2b0ff214293d7d708acf5e0172adb7ec94",
         "rawRef": "raw/1ce9fcfeec29ca8b937b554590d54c2b0ff214293d7d708acf5e0172adb7ec94.body"
       },
@@ -34360,7 +34360,7 @@
       "source": {
         "sourceId": "guangdong-ticai-dlt-detail",
         "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26101.html",
-        "fetchedAt": "2026-09-09T10:32:09.811Z",
+        "fetchedAt": "2026-09-09T15:32:04.826Z",
         "bodySha256": "1a15433009a6f752ddd00cc33b5ae97e067b19caf7e89c2ec1bbda916632eb35",
         "rawRef": "raw/1a15433009a6f752ddd00cc33b5ae97e067b19caf7e89c2ec1bbda916632eb35.body"
       },
@@ -34430,7 +34430,7 @@
       "source": {
         "sourceId": "guangdong-ticai-dlt-detail",
         "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26102.html",
-        "fetchedAt": "2026-09-09T10:32:09.886Z",
+        "fetchedAt": "2026-09-09T15:32:04.830Z",
         "bodySha256": "a6ccfc5a7065d99d5bccb3e33c54e81b728b85cb3a515b732f0bc2970348b69d",
         "rawRef": "raw/a6ccfc5a7065d99d5bccb3e33c54e81b728b85cb3a515b732f0bc2970348b69d.body"
       },
@@ -34444,19 +34444,89 @@
           "rawRef": "raw/284f08cb44492549986d494b2b6b7469af2014e74145cd57a26dc6455778e8cb.body"
         }
       ]
+    },
+    {
+      "gameId": "dlt",
+      "issue": "26103",
+      "date": "2026-09-09",
+      "drawAt": "2026-09-09T23:59:59+08:00",
+      "drawAtPrecision": "day",
+      "drawAtEvidence": "Conservative end-of-published-date boundary, not observed draw time",
+      "main": [
+        3,
+        16,
+        17,
+        32,
+        35
+      ],
+      "special": [
+        2,
+        12
+      ],
+      "payouts": {
+        "base": {
+          "1": 10000000,
+          "2": 241603,
+          "3": 5000,
+          "4": 300,
+          "5": 150,
+          "6": 15,
+          "7": 5
+        },
+        "additional": {
+          "1": null,
+          "2": 193282
+        }
+      },
+      "winners": {
+        "base": {
+          "1": 3,
+          "2": 68,
+          "3": 786,
+          "4": 13115,
+          "5": 50235,
+          "6": 611583,
+          "7": 6736274
+        },
+        "additional": {
+          "1": 0,
+          "2": 14
+        }
+      },
+      "salesYuan": 296391996,
+      "poolYuan": 763164025.28,
+      "ruleId": "dlt-2026-7-level",
+      "specialPrizeActive": false,
+      "source": {
+        "sourceId": "guangdong-ticai-dlt-detail",
+        "sourceUrl": "https://gdlottery.cn/f_html/kjgg/P085_26103.html",
+        "fetchedAt": "2026-09-09T15:32:04.816Z",
+        "bodySha256": "44cf5efcd93ba5a625636b3ed69bef9d7745e89c58e8b5471c86e3d8882ab02d",
+        "rawRef": "raw/44cf5efcd93ba5a625636b3ed69bef9d7745e89c58e8b5471c86e3d8882ab02d.body"
+      },
+      "payoutEvidence": "published_draw_table",
+      "corroboration": [
+        {
+          "sourceId": "500star-dlt-history",
+          "sourceUrl": "https://datachart.500star.com/dlt/history/newinc/history.php?start=23001",
+          "fetchedAt": "2026-09-09T15:32:02.069Z",
+          "bodySha256": "0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137",
+          "rawRef": "raw/0db6a213147af6c2a8afba393a20dc293a5ba9f3beb8ba1f779d5219ec0e5137.body"
+        }
+      ]
     }
   ],
   "nextIssue": {
-    "issue": "26103",
-    "drawAt": "2026-09-09T21:25:00+08:00",
+    "issue": "26104",
+    "drawAt": "2026-09-12T21:25:00+08:00",
     "salesCloseAt": null,
     "scheduleEvidence": "secondary_published_next_issue_announcement",
     "source": {
       "sourceId": "tifucai-next-issue",
       "sourceUrl": "https://www.tifucai.com/index.php",
-      "fetchedAt": "2026-09-09T10:32:14.355Z",
-      "bodySha256": "d8aa5b6de9d4daeff9df947442341b05f2be32f75b7480f04f1b5a9116900a57",
-      "rawRef": "raw/d8aa5b6de9d4daeff9df947442341b05f2be32f75b7480f04f1b5a9116900a57.body"
+      "fetchedAt": "2026-09-09T15:32:11.117Z",
+      "bodySha256": "d948568c6d4648c38c484b188d55cd3bd18c132ba0d9eeeb3f974a5e6a17bb7a",
+      "rawRef": "raw/d948568c6d4648c38c484b188d55cd3bd18c132ba0d9eeeb3f974a5e6a17bb7a.body"
     }
   },
   "status": "ok",
