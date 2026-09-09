@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "87bce6c2ae598b11760b430d3989563a2177b9c1b37f866f69b7c8f1a880147c",
+  "recordedAt": "2026-09-09T10:31:53.171Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1479945",
+      "kickoffAt": "2026-09-08T19:00:00.000Z",
+      "homeTeam": "波尔图",
+      "awayTeam": "曼城",
+      "competition": "欧冠",
+      "odds": {
+        "home": 4.99,
+        "draw": 4.1,
+        "away": 1.46
+      },
+      "sourceEventId": "1479945",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
+      "fetchedAt": "2026-09-09T10:31:45.105Z",
+      "bodySha256": "f7ab174ef6f62dea8f8773e7c845847023d996f42fbd0d377300b3f84fb25523"
+    },
+    "observedAt": "2026-09-09T10:31:45.105Z",
+    "revisionReason": null
+  }
+}

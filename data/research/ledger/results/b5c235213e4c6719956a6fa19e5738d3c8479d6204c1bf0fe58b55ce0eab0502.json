@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "b5c235213e4c6719956a6fa19e5738d3c8479d6204c1bf0fe58b55ce0eab0502",
+  "recordedAt": "2026-09-09T10:31:53.042Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1479870",
+      "kickoffAt": "2026-09-08T16:45:00.000Z",
+      "homeTeam": "雅典AEK",
+      "awayTeam": "LASK林茨",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.53,
+        "draw": 4.06,
+        "away": 4.35
+      },
+      "sourceEventId": "1479870",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
+      "fetchedAt": "2026-09-09T10:31:45.105Z",
+      "bodySha256": "f7ab174ef6f62dea8f8773e7c845847023d996f42fbd0d377300b3f84fb25523"
+    },
+    "observedAt": "2026-09-09T10:31:45.105Z",
+    "revisionReason": null
+  }
+}

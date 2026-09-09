@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "fb8814b2b47ab14f9a5af61695c5dc63da57847f4725a1c2504cc2051527b2ae",
+  "recordedAt": "2026-09-09T10:31:53.063Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1479926",
+      "kickoffAt": "2026-09-08T16:45:00.000Z",
+      "homeTeam": "布鲁日",
+      "awayTeam": "维拉",
+      "competition": "欧冠",
+      "odds": {
+        "home": 2.36,
+        "draw": 3.35,
+        "away": 2.46
+      },
+      "sourceEventId": "1479926",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
+      "fetchedAt": "2026-09-09T10:31:45.105Z",
+      "bodySha256": "f7ab174ef6f62dea8f8773e7c845847023d996f42fbd0d377300b3f84fb25523"
+    },
+    "observedAt": "2026-09-09T10:31:45.105Z",
+    "revisionReason": null
+  }
+}

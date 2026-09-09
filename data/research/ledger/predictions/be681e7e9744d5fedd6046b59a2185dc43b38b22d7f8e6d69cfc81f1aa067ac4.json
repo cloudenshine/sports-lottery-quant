@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "be681e7e9744d5fedd6046b59a2185dc43b38b22d7f8e6d69cfc81f1aa067ac4",
+  "recordedAt": "2026-09-09T10:31:52.667Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1479934",
+      "kickoffAt": "2026-09-10T19:00:00.000Z",
+      "homeTeam": "科莫",
+      "awayTeam": "莱红牛",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.7,
+        "draw": 3.7,
+        "away": 3.7
+      },
+      "sourceEventId": "1479934"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-09T10:31:44.097Z",
+      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+    },
+    "prediction": {
+      "modelId": "market",
+      "version": "1.0.0",
+      "probabilities": [
+        0.5211267605633804,
+        0.23943661971830985,
+        0.23943661971830985
+      ],
+      "trainingCutoff": "2026-09-09T10:31:45.105Z",
+      "trainingCount": 6,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+    "paperTrade": null,
+    "batchId": "2f10fa0039c3442ca64e5d0db162c02549ce02ca034cad9b3fe23e65deb25099"
+  }
+}

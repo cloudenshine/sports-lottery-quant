@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "9288fcd70b192946531dddb242d208729d87ea59e6f11c97fb6d2868f4d8555d",
+  "recordedAt": "2026-09-09T10:31:53.269Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1476139",
+      "kickoffAt": "2026-09-08T22:00:00.000Z",
+      "homeTeam": "弗鲁米嫩",
+      "awayTeam": "普拉滕斯",
+      "competition": "解放者杯",
+      "odds": {
+        "home": 1.5,
+        "draw": 3.2,
+        "away": 6.7
+      },
+      "sourceEventId": "1476139",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
+      "fetchedAt": "2026-09-09T10:31:45.105Z",
+      "bodySha256": "f7ab174ef6f62dea8f8773e7c845847023d996f42fbd0d377300b3f84fb25523"
+    },
+    "observedAt": "2026-09-09T10:31:45.105Z",
+    "revisionReason": null
+  }
+}

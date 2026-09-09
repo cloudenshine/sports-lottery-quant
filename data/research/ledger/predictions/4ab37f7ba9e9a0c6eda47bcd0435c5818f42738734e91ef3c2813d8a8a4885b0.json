@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "4ab37f7ba9e9a0c6eda47bcd0435c5818f42738734e91ef3c2813d8a8a4885b0",
+  "recordedAt": "2026-09-09T10:31:52.655Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1479934",
+      "kickoffAt": "2026-09-10T19:00:00.000Z",
+      "homeTeam": "科莫",
+      "awayTeam": "莱红牛",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.7,
+        "draw": 3.7,
+        "away": 3.7
+      },
+      "sourceEventId": "1479934"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-09T10:31:44.097Z",
+      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.3933100686501914,
+        0.24289643010188006,
+        0.3637935012479284
+      ],
+      "trainingCutoff": "2026-09-09T10:31:45.105Z",
+      "trainingCount": 6,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+    "paperTrade": {
+      "selectionWeights": [
+        0,
+        0,
+        1
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "2f10fa0039c3442ca64e5d0db162c02549ce02ca034cad9b3fe23e65deb25099"
+  }
+}

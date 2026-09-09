@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "e325d0dcd7583423a265f6fd12f9ac0c9383e75b18652e39e603b342a456791b",
+  "recordedAt": "2026-09-09T10:31:52.370Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1467723",
+      "kickoffAt": "2026-09-09T15:55:00.000Z",
+      "homeTeam": "拉斯永恒",
+      "awayTeam": "利雅得青年",
+      "competition": "沙特职业联赛",
+      "odds": {
+        "home": 2.51,
+        "draw": 3.35,
+        "away": 2.31
+      },
+      "sourceEventId": "1467723"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-09T10:31:44.097Z",
+      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+    },
+    "prediction": {
+      "modelId": "uniform",
+      "version": "1.0.0",
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "trainingCutoff": "2026-09-09T10:31:49.939Z",
+      "trainingCount": 8,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+    "paperTrade": null,
+    "batchId": "47a75b9e7b20a6fb470a6b1254c1c8a068b378f414dded01f94793cdd2578ff7"
+  }
+}

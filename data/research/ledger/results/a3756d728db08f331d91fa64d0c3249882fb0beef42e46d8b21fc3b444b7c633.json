@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "a3756d728db08f331d91fa64d0c3249882fb0beef42e46d8b21fc3b444b7c633",
+  "recordedAt": "2026-09-09T10:31:53.232Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1480060",
+      "kickoffAt": "2026-09-08T19:00:00.000Z",
+      "homeTeam": "皇马",
+      "awayTeam": "国际米兰",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.4,
+        "draw": 4.5,
+        "away": 5.18
+      },
+      "sourceEventId": "1480060",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
+      "fetchedAt": "2026-09-09T10:31:45.105Z",
+      "bodySha256": "f7ab174ef6f62dea8f8773e7c845847023d996f42fbd0d377300b3f84fb25523"
+    },
+    "observedAt": "2026-09-09T10:31:45.105Z",
+    "revisionReason": null
+  }
+}

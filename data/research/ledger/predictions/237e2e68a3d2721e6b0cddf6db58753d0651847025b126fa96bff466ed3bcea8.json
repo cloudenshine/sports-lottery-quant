@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "237e2e68a3d2721e6b0cddf6db58753d0651847025b126fa96bff466ed3bcea8",
+  "recordedAt": "2026-09-09T10:31:52.414Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1425502",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "homeTeam": "查尔顿",
+      "awayTeam": "女王巡游",
+      "competition": "英冠",
+      "odds": {
+        "home": 3.12,
+        "draw": 3.1,
+        "away": 2.06
+      },
+      "sourceEventId": "1425502"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-09T10:31:44.097Z",
+      "bodySha256": "f8b8f5ab63ce6cc9ea4eb0da5bde58a42fbf0578ff8a5bf45cafbc27eb4da852"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.39741518544921633,
+        0.2595904998510239,
+        0.34299431469975983
+      ],
+      "trainingCutoff": "2026-09-09T10:31:50.577Z",
+      "trainingCount": 15,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-09T10:31:44.097Z",
+    "paperTrade": null,
+    "batchId": "c2ce054f01751e6937f1e5472d1e03e763136d8fab1950dd41bc38e4f180e6c6"
+  }
+}

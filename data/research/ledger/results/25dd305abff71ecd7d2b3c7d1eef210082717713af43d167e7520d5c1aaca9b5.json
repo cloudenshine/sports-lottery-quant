@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "25dd305abff71ecd7d2b3c7d1eef210082717713af43d167e7520d5c1aaca9b5",
+  "recordedAt": "2026-09-09T10:31:53.076Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1467722",
+      "kickoffAt": "2026-09-08T18:00:00.000Z",
+      "homeTeam": "胡巴尔卡德西亚",
+      "awayTeam": "吉达国民",
+      "competition": "沙特职业联赛",
+      "odds": {
+        "home": 1.9,
+        "draw": 3.6,
+        "away": 3.08
+      },
+      "sourceEventId": "1467722",
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
+      "fetchedAt": "2026-09-09T10:31:45.105Z",
+      "bodySha256": "f7ab174ef6f62dea8f8773e7c845847023d996f42fbd0d377300b3f84fb25523"
+    },
+    "observedAt": "2026-09-09T10:31:45.105Z",
+    "revisionReason": null
+  }
+}
