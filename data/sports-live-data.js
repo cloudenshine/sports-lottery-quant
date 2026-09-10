@@ -2,54 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-10T14:33:23.291Z",
-  "displayTime": "2026/9/10 22:33:23",
-  "jingcaiCount": 19,
+  "syncedAt": "2026-09-10T16:58:53.682Z",
+  "displayTime": "2026/9/11 00:58:53",
+  "jingcaiCount": 18,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1479955",
-      "matchNum": "周四001",
-      "matchDate": "2026-09-11",
-      "kickoffTime": "00:45",
-      "kickoffAt": "2026-09-10T16:45:00.000Z",
-      "league": "欧冠",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "费内巴切",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "罗马",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.83,
-          "1": 3.55,
-          "3": 3.32
-        },
-        "RQSPF": {
-          "0": 3.75,
-          "1": 3.47,
-          "3": 1.74,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1479934",
       "matchNum": "周四002",
