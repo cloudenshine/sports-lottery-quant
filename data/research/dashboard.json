@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-09T15:31:45.267Z",
+  "generatedAt": "2026-09-10T02:32:35.871Z",
   "protocol": {
     "schemaVersion": 1,
     "protocolId": "lottery-research-v1-20260906",
@@ -153,10 +153,10 @@
   },
   "sources": {
     "schemaVersion": 1,
-    "runAt": "2026-09-09T15:31:11.974Z",
+    "runAt": "2026-09-10T02:32:21.011Z",
     "status": "degraded",
     "records": 1698,
-    "fixtures": 45,
+    "fixtures": 44,
     "results": [
       {
         "sourceId": "espn-eng1-2024",
@@ -197,15 +197,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-09T15:31:13.958Z",
+        "fetchedAt": "2026-09-10T02:32:22.467Z",
         "records": 30,
         "fixtures": 20,
         "sources": [
           {
             "sourceId": "espn-eng1-current",
-            "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260805-20260930&limit=1000",
-            "fetchedAt": "2026-09-09T15:31:13.958Z",
-            "bodySha256": "f524adda25b53559e31d00d6391cf53e5c5b49bcbcd161647dcfda8d3a65f4d1"
+            "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260806-20261001&limit=1000",
+            "fetchedAt": "2026-09-10T02:32:22.467Z",
+            "bodySha256": "c7a7bf5821c76da2b94146c798ce8a90a470e3701305f71d5d88f091ac7348dd"
           }
         ]
       },
@@ -214,15 +214,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-09T15:31:20.257Z",
+        "fetchedAt": "2026-09-10T02:32:27.140Z",
         "records": 7,
-        "fixtures": 21,
+        "fixtures": 7,
         "sources": [
           {
             "sourceId": "500-jingcai",
             "sourceUrl": "https://trade.500.com/jczq/",
-            "fetchedAt": "2026-09-09T15:31:20.257Z",
-            "bodySha256": "2e59bf5c8542ddc73af9f6e7d1664fff0e2194d048250a8d531f1612926a0b04"
+            "fetchedAt": "2026-09-10T02:32:27.140Z",
+            "bodySha256": "4b162e98b72e00653c95d1f3551616698d6b270303acb485024c1ab5ee04609a"
           }
         ]
       },
@@ -231,15 +231,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-09T15:31:22.221Z",
-        "records": 63,
-        "fixtures": 0,
+        "fetchedAt": "2026-09-10T02:32:27.768Z",
+        "records": 64,
+        "fixtures": 14,
         "sources": [
           {
             "sourceId": "500-jingcai-results-1",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
-            "fetchedAt": "2026-09-09T15:31:22.221Z",
-            "bodySha256": "f7ab174ef6f62dea8f8773e7c845847023d996f42fbd0d377300b3f84fb25523"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
+            "fetchedAt": "2026-09-10T02:32:27.768Z",
+            "bodySha256": "e0c16cf918dcee2a8ad07f414fc8b0936e899ba1a326520e0d96240375b263af"
           }
         ]
       },
@@ -248,15 +248,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-09T15:31:23.136Z",
-        "records": 49,
+        "fetchedAt": "2026-09-10T02:32:28.649Z",
+        "records": 61,
         "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-2",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
-            "fetchedAt": "2026-09-09T15:31:23.136Z",
-            "bodySha256": "94ccbf77b062bd7fd43a3b8057e5b20aba77ec334d26a43651ae9d4c0c0bc8ab"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
+            "fetchedAt": "2026-09-10T02:32:28.649Z",
+            "bodySha256": "4d6548d84fca66f2f069804ba4f32ecc0ed775302641075b7aaeeebb13b29433"
           }
         ]
       },
@@ -265,15 +265,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-09T15:31:24.169Z",
-        "records": 44,
+        "fetchedAt": "2026-09-10T02:32:29.714Z",
+        "records": 53,
         "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-3",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
-            "fetchedAt": "2026-09-09T15:31:24.169Z",
-            "bodySha256": "9675066cb2d1b1a6618af7a573b4a2a30a7a2179a8460dc9c30c15fe35ebf945"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
+            "fetchedAt": "2026-09-10T02:32:29.714Z",
+            "bodySha256": "0d34c0e0600480c5ff376cd5322397d833360569e864ff8723e0c5db737457ad"
           }
         ]
       },
@@ -282,15 +282,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-09T15:31:26.168Z",
-        "records": 46,
-        "fixtures": 2,
+        "fetchedAt": "2026-09-10T02:32:30.659Z",
+        "records": 70,
+        "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-4",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
-            "fetchedAt": "2026-09-09T15:31:26.168Z",
-            "bodySha256": "c1b0fafddf80904dcca4e030003e53c7905aaefc7c30b1c47f358ab318c96821"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
+            "fetchedAt": "2026-09-10T02:32:30.659Z",
+            "bodySha256": "d53a1b8dba72f60aac5b3f9b879690a73547d51d755165260579165896127d9d"
           }
         ]
       },
@@ -299,15 +299,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-09T15:31:27.135Z",
-        "records": 35,
-        "fixtures": 1,
+        "fetchedAt": "2026-09-10T02:32:31.591Z",
+        "records": 62,
+        "fixtures": 2,
         "sources": [
           {
             "sourceId": "500-jingcai-results-5",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-04",
-            "fetchedAt": "2026-09-09T15:31:27.135Z",
-            "bodySha256": "dfa86878f216b0cc9db327ce04cf955dc1c3bb6937d9f89801b531e9077a9a19"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
+            "fetchedAt": "2026-09-10T02:32:31.591Z",
+            "bodySha256": "8416b2d783adc442b6c653ae3a6ee8c85289885d099aaa8b3fb42f75d73546fb"
           }
         ]
       },
@@ -316,15 +316,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-09T15:31:28.204Z",
-        "records": 27,
-        "fixtures": 0,
+        "fetchedAt": "2026-09-10T02:32:32.596Z",
+        "records": 40,
+        "fixtures": 1,
         "sources": [
           {
             "sourceId": "500-jingcai-results-6",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-03",
-            "fetchedAt": "2026-09-09T15:31:28.204Z",
-            "bodySha256": "67968c7ba35ebb31e0a4f51e46ba5b72ba9bb1979cc93cbc75f688b295c30646"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-04",
+            "fetchedAt": "2026-09-10T02:32:32.596Z",
+            "bodySha256": "a7e6c2aeeb9af512b0629436cdae2015f1f086a3cf6a5abced26ee0d4751aa2c"
           }
         ]
       },
@@ -333,15 +333,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-09T15:31:29.662Z",
-        "records": 45,
-        "fixtures": 1,
+        "fetchedAt": "2026-09-10T02:32:33.339Z",
+        "records": 52,
+        "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-7",
-            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-02",
-            "fetchedAt": "2026-09-09T15:31:29.662Z",
-            "bodySha256": "05c1ddcb2311953f9159bcf889ef9f386ee178f128274911c1a3a39b1aa17bf3"
+            "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-03",
+            "fetchedAt": "2026-09-10T02:32:33.339Z",
+            "bodySha256": "90016b5d5cd6d7c6293900f2a3c11eddf5240f9aac16c583d99f617a668109d8"
           }
         ]
       },
@@ -380,7 +380,7 @@
           {
             "sourceId": "football-data-primary",
             "sourceUrl": "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
-            "fetchedAt": "2026-09-09T15:31:31.106Z",
+            "fetchedAt": "2026-09-10T02:32:34.944Z",
             "bodySha256": "b518e7cdfa503f30674d48da26271fb2ccdf0d51e8432c17ce9e3f6fcd44e8d5"
           }
         ]
@@ -394,7 +394,7 @@
   },
   "data": {
     "historyCount": 1698,
-    "fixtureCount": 45,
+    "fixtureCount": 44,
     "bySource": [
       {
         "sourceId": "espn-eng1-2024",
@@ -414,42 +414,42 @@
       {
         "sourceId": "500-jingcai",
         "historyCount": 7,
-        "fixtureCount": 21
+        "fixtureCount": 7
       },
       {
         "sourceId": "500-jingcai-results-1",
-        "historyCount": 63,
-        "fixtureCount": 0
+        "historyCount": 64,
+        "fixtureCount": 14
       },
       {
         "sourceId": "500-jingcai-results-2",
-        "historyCount": 49,
+        "historyCount": 61,
         "fixtureCount": 0
       },
       {
         "sourceId": "500-jingcai-results-3",
-        "historyCount": 44,
+        "historyCount": 53,
         "fixtureCount": 0
       },
       {
         "sourceId": "500-jingcai-results-4",
-        "historyCount": 46,
-        "fixtureCount": 2
-      },
-      {
-        "sourceId": "500-jingcai-results-5",
-        "historyCount": 35,
-        "fixtureCount": 1
-      },
-      {
-        "sourceId": "500-jingcai-results-6",
-        "historyCount": 27,
+        "historyCount": 70,
         "fixtureCount": 0
       },
       {
-        "sourceId": "500-jingcai-results-7",
-        "historyCount": 45,
+        "sourceId": "500-jingcai-results-5",
+        "historyCount": 62,
+        "fixtureCount": 2
+      },
+      {
+        "sourceId": "500-jingcai-results-6",
+        "historyCount": 40,
         "fixtureCount": 1
+      },
+      {
+        "sourceId": "500-jingcai-results-7",
+        "historyCount": 52,
+        "fixtureCount": 0
       },
       {
         "sourceId": "football-data-mirror",
@@ -465,7 +465,7 @@
   },
   "ledger": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-09T15:31:32.160Z",
+    "generatedAt": "2026-09-10T02:32:35.825Z",
     "predictionCount": 413,
     "resultVersionCount": 45,
     "retractionVersionCount": 0,
@@ -774,16 +774,12 @@
     "predictiveAdvantage": "not_established"
   },
   "daily": {
-    "startedAt": "2026-09-09T15:31:11.968Z",
+    "startedAt": "2026-09-10T02:32:21.008Z",
     "createdPredictions": 0,
-    "createdResults": 1,
-    "createdSettlements": 7,
+    "createdResults": 0,
+    "createdSettlements": 0,
     "createdRetractions": 0,
     "skipped": [
-      {
-        "eventId": "500:1414817",
-        "reason": "outside_registered_forecast_window"
-      },
       {
         "eventId": "500:1438086",
         "reason": "outside_registered_forecast_window"
@@ -798,59 +794,59 @@
       },
       {
         "eventId": "500:1467723",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1415882",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1479898",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1480111",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1425502",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1479744",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1480008",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1480030",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1480043",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1480102",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1438070",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1476140",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1358655",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1476138",
-        "reason": "sales_closed"
+        "reason": "outside_registered_forecast_window"
       },
       {
         "eventId": "500:1479905",
@@ -882,11 +878,11 @@
       },
       {
         "eventId": "espn:401879277",
-        "reason": "outside_registered_forecast_window"
+        "reason": "complete_market_required_for_matched_forecast_batch"
       },
       {
         "eventId": "espn:401878779",
-        "reason": "outside_registered_forecast_window"
+        "reason": "complete_market_required_for_matched_forecast_batch"
       },
       {
         "eventId": "espn:401879282",
@@ -942,20 +938,20 @@
       }
     ],
     "errors": [],
-    "finishedAt": "2026-09-09T15:31:45.267Z",
+    "finishedAt": "2026-09-10T02:32:35.871Z",
     "status": "degraded"
   },
   "promotion": {
     "schemaVersion": 1,
     "protocolId": "lottery-research-v1-20260906",
     "protocolHash": "4e3d22f8ce0df7f18bfecce5b9eebdf9ec6fc13f2df57a770c751a2d17e749c3",
-    "generatedAt": "2026-09-09T15:31:32.166Z",
+    "generatedAt": "2026-09-10T02:32:35.837Z",
     "status": "COLLECTING_PROSPECTIVE_EVIDENCE",
     "eligible": false,
     "researchEvidenceEligible": false,
     "locked": false,
     "settledEvents": 45,
-    "calendarDays": 3,
+    "calendarDays": 4,
     "minimumSettledEvents": 500,
     "minimumCalendarDays": 90,
     "registeredAt": "2026-09-05T18:48:38.414Z",
@@ -986,7 +982,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1012,7 +1008,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1038,7 +1034,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1064,7 +1060,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1090,7 +1086,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1116,7 +1112,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1142,7 +1138,7 @@
         "locked": false,
         "settledEvents": 0,
         "matchedEvents": 0,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1168,7 +1164,7 @@
         "locked": false,
         "settledEvents": 45,
         "matchedEvents": 59,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1373,7 +1369,7 @@
         "locked": false,
         "settledEvents": 45,
         "matchedEvents": 59,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1637,7 +1633,7 @@
         "locked": false,
         "settledEvents": 45,
         "matchedEvents": 59,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -1901,7 +1897,7 @@
         "locked": false,
         "settledEvents": 45,
         "matchedEvents": 59,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -2165,7 +2161,7 @@
         "locked": false,
         "settledEvents": 45,
         "matchedEvents": 59,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -2370,7 +2366,7 @@
         "locked": false,
         "settledEvents": 45,
         "matchedEvents": 59,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -2634,7 +2630,7 @@
         "locked": false,
         "settledEvents": 45,
         "matchedEvents": 59,
-        "calendarDays": 3,
+        "calendarDays": 4,
         "minimumSettledEvents": 500,
         "minimumCalendarDays": 90,
         "startedAt": "2026-09-05T18:48:38.414Z",
@@ -16056,7 +16052,7 @@
     ]
   },
   "numberTournament": {
-    "generatedAt": "2026-09-09T10:44:31.287Z",
+    "generatedAt": "2026-09-09T15:41:19.470Z",
     "status": "EXPLORATORY_ONLY_NO_PREDICTIVE_ADVANTAGE_ESTABLISHED",
     "reproducibility": "node scripts/evaluate-number-strategies.js; offline bundled historical snapshots; fixed protocol and seeds; generatedAt is metadata only.",
     "protocol": {
@@ -407633,7 +407629,7 @@
   ],
   "ruleWatch": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-09T15:31:32.197Z",
+    "generatedAt": "2026-09-10T02:32:35.863Z",
     "status": "needs_review",
     "sourceCount": 11,
     "failedCount": 0,
@@ -407645,8 +407641,8 @@
         "sourceId": "fj-jc-payout",
         "url": "https://www.fjtc.com.cn/2024-04/01/content_31550891.htm",
         "publisher": "福建省体育彩票管理中心",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:32.205Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:32.205Z",
         "lastSuccessfulBodySha256": "06f2611ff6a78b32935f5bebcd46fe22ebdcce82d38edaf6267c3ac30137b59c",
@@ -407667,8 +407663,8 @@
         "sourceId": "fj-jc-football",
         "url": "https://www.fjtc.com.cn/2024-04/01/content_31550872.htm",
         "publisher": "福建省体育彩票管理中心",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:32.213Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:32.213Z",
         "lastSuccessfulBodySha256": "ec4f063c53017a3579fc501fcf08c2cc0a28c23525b74911ac22143c14eadfc9",
@@ -407689,8 +407685,8 @@
         "sourceId": "fj-jc-basketball",
         "url": "https://www.fjtc.com.cn/2024-04/01/content_31550877.htm",
         "publisher": "福建省体育彩票管理中心",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:32.216Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:32.216Z",
         "lastSuccessfulBodySha256": "7fe0439b0f667cb7b32a133fb69603ce1283ef02a81c4cd642f407295d3a44c2",
@@ -407711,8 +407707,8 @@
         "sourceId": "beijing-sp",
         "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043167/index.html",
         "publisher": "北京市体育局",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:32.219Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:32.219Z",
         "lastSuccessfulBodySha256": "381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500",
@@ -407735,8 +407731,8 @@
         "sourceId": "beijing-return",
         "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043164/index.html",
         "publisher": "北京市体育局",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:36.107Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:36.107Z",
         "lastSuccessfulBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
@@ -407759,8 +407755,8 @@
         "sourceId": "js-dlt-2026",
         "url": "https://www.js-lottery.com/wfzq/dlt/wfjs/cms/post-146354.html",
         "publisher": "江苏省体育彩票管理中心",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:36.188Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:36.188Z",
         "lastSuccessfulBodySha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
@@ -407783,8 +407779,8 @@
         "sourceId": "js-dlt-effective",
         "url": "https://www.js-lottery.com/tzgg/tzgg/cms/post-146276.html",
         "publisher": "江苏省体育彩票管理中心",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:37.032Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:37.032Z",
         "lastSuccessfulBodySha256": "3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9",
@@ -407807,8 +407803,8 @@
         "sourceId": "sport-policy-2020",
         "url": "https://www.sport.gov.cn/gdnps/files/c28047814/28048342.pdf",
         "publisher": "财政部、国家体育总局",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:38.097Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:38.097Z",
         "lastSuccessfulBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
@@ -407831,8 +407827,8 @@
         "sourceId": "sport-policy-2019",
         "url": "https://www.sport.gov.cn/cpzx/n5656/c897408/content.html",
         "publisher": "国家体育总局体育彩票管理中心",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:38.208Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:38.208Z",
         "lastSuccessfulBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
@@ -407855,8 +407851,8 @@
         "sourceId": "js-sfc-rx9",
         "url": "https://www.js-lottery.com/wfzq/ctzq/wfjs/cms/post-49203.html",
         "publisher": "江苏省体育彩票管理中心",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:40.436Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:40.436Z",
         "lastSuccessfulBodySha256": "713a7d5e09248fddc0ccd103bb233e2ead312dba73ce31a3570ae61b5c80e189",
@@ -407877,8 +407873,8 @@
         "sourceId": "fj-sfc-cancel",
         "url": "https://www.fjtc.com.cn/2013-07/03/content_31607945.htm",
         "publisher": "福建省体育彩票管理中心刊载中国体育报解释",
-        "status": "ok",
-        "cached": false,
+        "status": "cached",
+        "cached": true,
         "lastAttemptAt": "2026-09-09T15:31:40.558Z",
         "lastSuccessfulFetchAt": "2026-09-09T15:31:40.558Z",
         "lastSuccessfulBodySha256": "7bcc55c396d6e8da29e49f33e35c23e8f16b5bd62f6f7c5068cc285d1a5bbfbe",

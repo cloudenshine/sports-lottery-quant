@@ -1,7 +1,75 @@
 {
+  "schemaVersion": 1,
+  "batchId": "af5c1568f7b210684869ec225c9d49929546efec4af9674963b551e632234843",
   "gameId": "dlt",
-  "fetchedAt": "2026-09-10T02:32:37.491Z",
-  "draws": [
+  "issue": "26104",
+  "forecastAsOf": "2026-09-10T02:33:18.157Z",
+  "registeredAt": "2026-09-10T02:33:18.433Z",
+  "cutoffAt": "2026-09-12T10:25:00.000Z",
+  "protocol": {
+    "id": "numbers-prospective-v2",
+    "schemaVersion": 2,
+    "modelIds": [
+      "uniform",
+      "frequency_shrink",
+      "recency_shrink",
+      "omission_reversal",
+      "transition_shrink",
+      "mixture",
+      "coverage"
+    ],
+    "games": [
+      "ssq",
+      "dlt"
+    ],
+    "ticketCount": 5,
+    "costYuan": 10,
+    "additional": false,
+    "sourceMaxAgeHours": 24,
+    "registrationLeadHours": 3,
+    "minimumTrainingDraws": 200,
+    "evaluationDays": 365,
+    "minimumIssuesPerGame": 120,
+    "alpha": 0.05,
+    "comparisonFamily": 12,
+    "distributionEThreshold": 240,
+    "returns": "Published-table paper returns before tax; distribution evidence is not return advantage. Missing payouts remain pending.",
+    "stopping": "The return review occurs after the fixed 365-day window, using every registered issue; no early profit promotion or favorable-subset selection.",
+    "codeHashes": {
+      "number-models.js": "31925bec937e60cb1febacffce56dda6b95bcb566154857e639f41f6fe22a77f",
+      "number-settlement.js": "99617338edfe1196745ac436672d149564cbd3bff1db703c4a9bb8bb80335138",
+      "number-rule-context.js": "af4b0d8e9f23e1846242685f227940039ef709d4f8597209ce49d45d0d66ccc7",
+      "number-evaluation.js": "4670b34c49a30a4d53de6e74ad927936935156025130e668288733b7b3ac5a5d",
+      "numbers-ledger.js": "afd03be558dc29d3e926901c13e71554cff76941fa3377eb0f265d2e3f722b78",
+      "numbers-sources.js": "f9f66e5d609cca065895a3140d3e2116b2885c6ca016758ad8f3b6f5b9760d90",
+      "numbers-runtime.js": "efcc8cd841b5088c32407c1e182d21c75bfc06c59ff9524fb447ca38a59de03f",
+      "scripts/numbers-daily.js": "d0f3fc47140ad2881e89989e8eeba170e1a597e56f563cedd4747d6e3f626918"
+    },
+    "hash": "9cd93e1ab0d228e7a21ec6dd247488fd46ad7b3c28fddcb36c6fbfeabb7ad60d",
+    "status": "frozen",
+    "frozenAt": "2026-09-06T01:16:57.994Z",
+    "reviewAt": "2027-09-06T01:16:57.994Z",
+    "receiptSha256": "aebf8e66f378054589d8df670fe356183c8f507ddfca4cafc497e8fbaaf1778f"
+  },
+  "engineVersions": {
+    "models": "2.0.0",
+    "settlement": "1.0.0"
+  },
+  "nextIssue": {
+    "issue": "26104",
+    "drawAt": "2026-09-12T21:25:00+08:00",
+    "salesCloseAt": null,
+    "scheduleEvidence": "secondary_published_next_issue_announcement",
+    "source": {
+      "sourceId": "tifucai-next-issue",
+      "sourceUrl": "https://www.tifucai.com/index.php",
+      "fetchedAt": "2026-09-10T02:32:53.146Z",
+      "bodySha256": "d948568c6d4648c38c484b188d55cd3bd18c132ba0d9eeeb3f974a5e6a17bb7a",
+      "rawRef": "raw/d948568c6d4648c38c484b188d55cd3bd18c132ba0d9eeeb3f974a5e6a17bb7a.body"
+    }
+  },
+  "trainingHash": "60392da512f432352c0a8b078bea4398bd67c5f4f9281ad9f5f0c92c21ee8826",
+  "trainingDraws": [
     {
       "gameId": "dlt",
       "issue": "23001",
@@ -34516,20 +34584,2288 @@
       ]
     }
   ],
-  "nextIssue": {
-    "issue": "26104",
-    "drawAt": "2026-09-12T21:25:00+08:00",
-    "salesCloseAt": null,
-    "scheduleEvidence": "secondary_published_next_issue_announcement",
-    "source": {
-      "sourceId": "tifucai-next-issue",
-      "sourceUrl": "https://www.tifucai.com/index.php",
-      "fetchedAt": "2026-09-10T02:32:53.146Z",
-      "bodySha256": "d948568c6d4648c38c484b188d55cd3bd18c132ba0d9eeeb3f974a5e6a17bb7a",
-      "rawRef": "raw/d948568c6d4648c38c484b188d55cd3bd18c132ba0d9eeeb3f974a5e6a17bb7a.body"
+  "predictions": [
+    {
+      "modelId": "uniform",
+      "seed": 3422117306,
+      "additional": false,
+      "costYuan": 10,
+      "trainingHash": "60392da512f432352c0a8b078bea4398bd67c5f4f9281ad9f5f0c92c21ee8826",
+      "tickets": [
+        {
+          "main": [
+            5,
+            19,
+            23,
+            26,
+            28
+          ],
+          "special": [
+            2,
+            11
+          ]
+        },
+        {
+          "main": [
+            9,
+            27,
+            30,
+            33,
+            35
+          ],
+          "special": [
+            1,
+            8
+          ]
+        },
+        {
+          "main": [
+            6,
+            10,
+            11,
+            30,
+            34
+          ],
+          "special": [
+            6,
+            10
+          ]
+        },
+        {
+          "main": [
+            2,
+            4,
+            8,
+            14,
+            20
+          ],
+          "special": [
+            1,
+            5
+          ]
+        },
+        {
+          "main": [
+            5,
+            7,
+            10,
+            12,
+            20
+          ],
+          "special": [
+            8,
+            9
+          ]
+        }
+      ],
+      "model": {
+        "id": "uniform",
+        "version": "2.0.0",
+        "gameId": "dlt",
+        "asOf": "2026-09-10T02:33:18.157Z",
+        "trainingCount": 500,
+        "trainingCutoff": "2026-09-10T02:32:50.661Z",
+        "parameters": {
+          "maximumHistory": 500,
+          "priorDraws": 100,
+          "logOddsStrength": 0.5,
+          "halfLifeDraws": 100,
+          "omissionPriorWaitingTimes": 10,
+          "coverageCandidates": 64
+        },
+        "assumptions": [
+          "Every legal complete combination is equally likely; no historical predictive signal is assumed.",
+          "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+          "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+          "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+          "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution."
+        ],
+        "zones": {
+          "main": {
+            "count": 5,
+            "weights": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "logNormalizer": 12.690447512074885
+          },
+          "special": {
+            "count": 2,
+            "weights": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "logNormalizer": 4.189654742026426
+          }
+        },
+        "probabilities": {
+          "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+          "main": [
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285
+          ],
+          "special": [
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652
+          ]
+        }
+      },
+      "portfolio": {
+        "count": 5,
+        "costYuan": 10,
+        "seed": 3422117306,
+        "duplicateCount": 0,
+        "candidatesExamined": 5,
+        "selection": "model-sampling-with-distinct-ticket-rejection",
+        "coverage": {
+          "main": 21,
+          "mainPairs": 50,
+          "special": 8,
+          "specialPairs": 5
+        },
+        "objective": "Sample complete tickets from the registered probability model and reject duplicate tickets within the budget.",
+        "assumptions": [
+          "The output portfolio is a selection policy, not a set of independent probability samples after deduplication or coverage optimization.",
+          "Under independent uniform draws, each legal fixed ticket has the same prize probabilities. Distinct tickets change coverage and return dependence, not expected gross return for a fixed additive prize table.",
+          "Prize sharing, pool amounts, rule versions and actual per-issue payouts require separate settlement evidence; this model does not estimate other buyers' choices."
+        ]
+      }
+    },
+    {
+      "modelId": "frequency_shrink",
+      "seed": 764114626,
+      "additional": false,
+      "costYuan": 10,
+      "trainingHash": "60392da512f432352c0a8b078bea4398bd67c5f4f9281ad9f5f0c92c21ee8826",
+      "tickets": [
+        {
+          "main": [
+            6,
+            8,
+            21,
+            22,
+            33
+          ],
+          "special": [
+            2,
+            5
+          ]
+        },
+        {
+          "main": [
+            17,
+            21,
+            24,
+            30,
+            31
+          ],
+          "special": [
+            5,
+            10
+          ]
+        },
+        {
+          "main": [
+            1,
+            12,
+            19,
+            30,
+            35
+          ],
+          "special": [
+            5,
+            10
+          ]
+        },
+        {
+          "main": [
+            8,
+            13,
+            19,
+            25,
+            33
+          ],
+          "special": [
+            2,
+            7
+          ]
+        },
+        {
+          "main": [
+            6,
+            7,
+            11,
+            31,
+            35
+          ],
+          "special": [
+            2,
+            7
+          ]
+        }
+      ],
+      "model": {
+        "id": "frequency_shrink",
+        "version": "2.0.0",
+        "gameId": "dlt",
+        "asOf": "2026-09-10T02:33:18.157Z",
+        "trainingCount": 500,
+        "trainingCutoff": "2026-09-10T02:32:50.661Z",
+        "parameters": {
+          "maximumHistory": 500,
+          "priorDraws": 100,
+          "logOddsStrength": 0.5,
+          "halfLifeDraws": 100,
+          "omissionPriorWaitingTimes": 10,
+          "coverageCandidates": 64
+        },
+        "assumptions": [
+          "Tests persistence of historical number frequency, with fixed shrinkage toward the fair-draw prior.",
+          "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+          "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+          "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+          "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution.",
+          "Smoothed empirical inclusion odds define fixed-strength distribution weights; the exact model marginals are recomputed from the subset normalizer, not equated with the smoothed observations."
+        ],
+        "zones": {
+          "main": {
+            "count": 5,
+            "weights": [
+              0.9278343966323893,
+              1.003885665484851,
+              1.0841580296513065,
+              0.9902572485382514,
+              1.0309123479027185,
+              1.0643065218666896,
+              1.0309123479027185,
+              1.0576597126659453,
+              1.0643065218666896,
+              1.017435933804672,
+              1.010670294475333,
+              1.0709382234233258,
+              0.9627475799469909,
+              0.9558139185602917,
+              0.9902572485382514,
+              1.0309123479027185,
+              0.9065722850755673,
+              1.003885665484851,
+              1.003885665484851,
+              1.003885665484851,
+              1.0443189830868562,
+              1.0709382234233258,
+              0.9278343966323893,
+              0.8994279006682,
+              0.9696581095173676,
+              1.0509973514524567,
+              0.9834123278002213,
+              1.010670294475333,
+              1.0443189830868562,
+              0.9348674166656169,
+              0.9278343966323893,
+              1.003885665484851,
+              0.9765461505253913,
+              0.9902572485382514,
+              0.9348674166656169
+            ],
+            "logNormalizer": 12.687009721635794
+          },
+          "special": {
+            "count": 2,
+            "weights": [
+              1.0397504898200727,
+              1.0515866412442767,
+              0.9187795405622853,
+              0.9249663694672435,
+              1.0985884360051028,
+              0.9434258614331824,
+              1.0633861907772242,
+              1.0278752798116675,
+              1.009983608595757,
+              1.0159584547457818,
+              0.9434258614331824,
+              0.9556526620652943
+            ],
+            "logNormalizer": 4.188249858930097
+          }
+        },
+        "probabilities": {
+          "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+          "main": [
+            0.13378084951362387,
+            0.1434533439139683,
+            0.15347097779711466,
+            0.1417331411690345,
+            0.14684792723945173,
+            0.15101168934244769,
+            0.14684792723945145,
+            0.15018561143451167,
+            0.1510116893424474,
+            0.14515805396789921,
+            0.14430759366282783,
+            0.15183456650084537,
+            0.1382434370366054,
+            0.13736019084754586,
+            0.14173314116903474,
+            0.14684792723945145,
+            0.13104451030276162,
+            0.14345334391396858,
+            0.14345334391396858,
+            0.14345334391396858,
+            0.14852358396199247,
+            0.15183456650084512,
+            0.1337808495136241,
+            0.13012187622843477,
+            0.13912225736469888,
+            0.1493562658653738,
+            0.14086701457033746,
+            0.14430759366282758,
+            0.14852358396199247,
+            0.13468285660009233,
+            0.1337808495136241,
+            0.14345334391396858,
+            0.13999675111213172,
+            0.14173314116903474,
+            0.13468285660009233
+          ],
+          "special": [
+            0.1728038263060738,
+            0.17458211179971544,
+            0.15438516153330248,
+            0.1553379240502154,
+            0.18160178896164578,
+            0.15817375555608024,
+            0.17635066660067597,
+            0.17101540025571116,
+            0.16831280457986042,
+            0.16921640502901908,
+            0.15817375555608024,
+            0.16004639977162055
+          ]
+        }
+      },
+      "portfolio": {
+        "count": 5,
+        "costYuan": 10,
+        "seed": 764114626,
+        "duplicateCount": 0,
+        "candidatesExamined": 5,
+        "selection": "model-sampling-with-distinct-ticket-rejection",
+        "coverage": {
+          "main": 17,
+          "mainPairs": 49,
+          "special": 4,
+          "specialPairs": 3
+        },
+        "objective": "Sample complete tickets from the registered probability model and reject duplicate tickets within the budget.",
+        "assumptions": [
+          "The output portfolio is a selection policy, not a set of independent probability samples after deduplication or coverage optimization.",
+          "Under independent uniform draws, each legal fixed ticket has the same prize probabilities. Distinct tickets change coverage and return dependence, not expected gross return for a fixed additive prize table.",
+          "Prize sharing, pool amounts, rule versions and actual per-issue payouts require separate settlement evidence; this model does not estimate other buyers' choices."
+        ]
+      }
+    },
+    {
+      "modelId": "recency_shrink",
+      "seed": 1001291709,
+      "additional": false,
+      "costYuan": 10,
+      "trainingHash": "60392da512f432352c0a8b078bea4398bd67c5f4f9281ad9f5f0c92c21ee8826",
+      "tickets": [
+        {
+          "main": [
+            9,
+            12,
+            30,
+            31,
+            35
+          ],
+          "special": [
+            1,
+            12
+          ]
+        },
+        {
+          "main": [
+            2,
+            3,
+            10,
+            27,
+            31
+          ],
+          "special": [
+            4,
+            11
+          ]
+        },
+        {
+          "main": [
+            1,
+            19,
+            21,
+            30,
+            31
+          ],
+          "special": [
+            2,
+            12
+          ]
+        },
+        {
+          "main": [
+            5,
+            6,
+            10,
+            21,
+            28
+          ],
+          "special": [
+            1,
+            4
+          ]
+        },
+        {
+          "main": [
+            13,
+            17,
+            21,
+            27,
+            29
+          ],
+          "special": [
+            1,
+            12
+          ]
+        }
+      ],
+      "model": {
+        "id": "recency_shrink",
+        "version": "2.0.0",
+        "gameId": "dlt",
+        "asOf": "2026-09-10T02:33:18.157Z",
+        "trainingCount": 500,
+        "trainingCutoff": "2026-09-10T02:32:50.661Z",
+        "parameters": {
+          "maximumHistory": 500,
+          "priorDraws": 100,
+          "logOddsStrength": 0.5,
+          "halfLifeDraws": 100,
+          "omissionPriorWaitingTimes": 10,
+          "coverageCandidates": 64
+        },
+        "assumptions": [
+          "Tests recent frequency persistence using fixed exponential decay and prior shrinkage.",
+          "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+          "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+          "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+          "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution.",
+          "Smoothed empirical inclusion odds define fixed-strength distribution weights; the exact model marginals are recomputed from the subset normalizer, not equated with the smoothed observations."
+        ],
+        "zones": {
+          "main": {
+            "count": 5,
+            "weights": [
+              0.9330165459396436,
+              0.9965832584867255,
+              1.098988173085963,
+              1.013133276807618,
+              0.9920932539651696,
+              1.014519502557043,
+              0.9843609506304197,
+              1.0119044560876365,
+              1.0689140020208117,
+              1.0888457399708602,
+              1.0090317874038919,
+              1.05552336980028,
+              1.0422875082305234,
+              1.0233430111799893,
+              1.0028774749276705,
+              1.009961989807159,
+              0.9268234237038658,
+              1.0221216212415163,
+              0.9733810598164679,
+              0.9833692012276714,
+              1.029339450087208,
+              1.0260852706991734,
+              0.9742125119297885,
+              0.9461048035478874,
+              0.958299255758586,
+              1.0993971638065585,
+              1.0032648318680115,
+              0.9952100675187172,
+              1.034042125767494,
+              0.8927845474843588,
+              0.8990927695372443,
+              0.9695150877338852,
+              1.0133584938624083,
+              0.9512077667238246,
+              0.9382706711275334
+            ],
+            "logNormalizer": 12.687037356474859
+          },
+          "special": {
+            "count": 2,
+            "weights": [
+              1.0205645674054236,
+              1.0594647687941,
+              0.8650926186142107,
+              0.9910902190921632,
+              1.07703094974633,
+              0.9372323331397235,
+              1.0511090242205883,
+              1.0211631787926974,
+              0.9922363321158219,
+              0.9842746613218635,
+              0.986836333427128,
+              1.0075157636213496
+            ],
+            "logNormalizer": 4.188318759799935
+          }
+        },
+        "probabilities": {
+          "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+          "main": [
+            0.1344449465444941,
+            0.14253161376261422,
+            0.15529974051071913,
+            0.14461663522895288,
+            0.14196450423370602,
+            0.14479089659754538,
+            0.14098642688773985,
+            0.1444621121415802,
+            0.15158278270266776,
+            0.15404922583999586,
+            0.14410069697498823,
+            0.14991907381823943,
+            0.14826928590277996,
+            0.14589872131472942,
+            0.14332556471443225,
+            0.14421775483305277,
+            0.1336503860200962,
+            0.14574551247712805,
+            0.13959439616653482,
+            0.14086084528168816,
+            0.1466502456647364,
+            0.14624253995916198,
+            0.13969993760566576,
+            0.13612020193521118,
+            0.137676263465563,
+            0.15535010288874093,
+            0.1433743862371098,
+            0.1423582386110423,
+            0.14723886110874929,
+            0.12926184769486354,
+            0.13007789730578553,
+            0.13910338402807612,
+            0.14464495107629385,
+            0.13677192194087304,
+            0.1351180985244468
+          ],
+          "special": [
+            0.16990414236679863,
+            0.1757549888274643,
+            0.14606165536078547,
+            0.1654404306829474,
+            0.17838200926268127,
+            0.15721588739020273,
+            0.17450210198285657,
+            0.16999452531635645,
+            0.16561449515185167,
+            0.16440450317957486,
+            0.16479402865620285,
+            0.16793123182227807
+          ]
+        }
+      },
+      "portfolio": {
+        "count": 5,
+        "costYuan": 10,
+        "seed": 1001291709,
+        "duplicateCount": 0,
+        "candidatesExamined": 5,
+        "selection": "model-sampling-with-distinct-ticket-rejection",
+        "coverage": {
+          "main": 18,
+          "mainPairs": 49,
+          "special": 5,
+          "specialPairs": 4
+        },
+        "objective": "Sample complete tickets from the registered probability model and reject duplicate tickets within the budget.",
+        "assumptions": [
+          "The output portfolio is a selection policy, not a set of independent probability samples after deduplication or coverage optimization.",
+          "Under independent uniform draws, each legal fixed ticket has the same prize probabilities. Distinct tickets change coverage and return dependence, not expected gross return for a fixed additive prize table.",
+          "Prize sharing, pool amounts, rule versions and actual per-issue payouts require separate settlement evidence; this model does not estimate other buyers' choices."
+        ]
+      }
+    },
+    {
+      "modelId": "omission_reversal",
+      "seed": 3282699162,
+      "additional": false,
+      "costYuan": 10,
+      "trainingHash": "60392da512f432352c0a8b078bea4398bd67c5f4f9281ad9f5f0c92c21ee8826",
+      "tickets": [
+        {
+          "main": [
+            2,
+            9,
+            18,
+            20,
+            22
+          ],
+          "special": [
+            3,
+            8
+          ]
+        },
+        {
+          "main": [
+            2,
+            9,
+            12,
+            17,
+            30
+          ],
+          "special": [
+            7,
+            9
+          ]
+        },
+        {
+          "main": [
+            12,
+            21,
+            31,
+            33,
+            35
+          ],
+          "special": [
+            1,
+            7
+          ]
+        },
+        {
+          "main": [
+            6,
+            7,
+            18,
+            22,
+            34
+          ],
+          "special": [
+            3,
+            9
+          ]
+        },
+        {
+          "main": [
+            8,
+            18,
+            20,
+            28,
+            30
+          ],
+          "special": [
+            2,
+            3
+          ]
+        }
+      ],
+      "model": {
+        "id": "omission_reversal",
+        "version": "2.0.0",
+        "gameId": "dlt",
+        "asOf": "2026-09-10T02:33:18.157Z",
+        "trainingCount": 500,
+        "trainingCutoff": "2026-09-10T02:32:50.661Z",
+        "parameters": {
+          "maximumHistory": 500,
+          "priorDraws": 100,
+          "logOddsStrength": 0.5,
+          "halfLifeDraws": 100,
+          "omissionPriorWaitingTimes": 10,
+          "coverageCandidates": 64
+        },
+        "assumptions": [
+          "Tests a fixed, shrunk waiting-time reversal hypothesis. Independent fair draws have no compensating memory.",
+          "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+          "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+          "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+          "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution.",
+          "Numbers never seen inside the fixed history window have right-censored waiting times; the window length is used as a lower bound, not an observed complete waiting time."
+        ],
+        "zones": {
+          "main": {
+            "count": 5,
+            "weights": [
+              0.9619631668251951,
+              0.9773555548504417,
+              0.9541738631895289,
+              1.0148156218095268,
+              1.0221429055679958,
+              0.9773555548504417,
+              0.9619631668251951,
+              1.0074350466081314,
+              0.9696899027331812,
+              0.9999999999999999,
+              0.9696899027331812,
+              0.9999999999999999,
+              1.0927167294163058,
+              1.0148156218095268,
+              0.9773555548504417,
+              0.9541738631895289,
+              0.9541738631895289,
+              0.9696899027331812,
+              0.9925092578236595,
+              0.9849615493669502,
+              0.9925092578236595,
+              1.029418035851963,
+              1.0995249992067468,
+              1.0509412980468027,
+              0.9999999999999999,
+              0.9696899027331812,
+              0.9619631668251951,
+              0.9619631668251951,
+              0.9849615493669502,
+              1.0927167294163058,
+              0.9773555548504417,
+              0.9541738631895289,
+              0.9696899027331812,
+              1.1062913707585924,
+              0.9541738631895289
+            ],
+            "logNormalizer": 12.670189568198492
+          },
+          "special": {
+            "count": 2,
+            "weights": [
+              1.008889063701824,
+              0.9543135154205277,
+              1.0436885140144612,
+              1.0177004891982149,
+              1.026436275942851,
+              0.9636241116594315,
+              0.9636241116594315,
+              0.9819805060619657,
+              0.9728456051340169,
+              1.0436885140144612,
+              0.9728456051340169,
+              0.9543135154205277
+            ],
+            "logNormalizer": 4.17348373044922
+          }
+        },
+        "probabilities": {
+          "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+          "main": [
+            0.13855138822742238,
+            0.14051218737244317,
+            0.13755632103685844,
+            0.14525353668411659,
+            0.1461759134679227,
+            0.14051218737244292,
+            0.13855138822742263,
+            0.14432278799179618,
+            0.13953659774092841,
+            0.14338347849925281,
+            0.13953659774092841,
+            0.14338347849925281,
+            0.1549763484206809,
+            0.14525353668411659,
+            0.14051218737244317,
+            0.13755632103685794,
+            0.13755632103685794,
+            0.13953659774092841,
+            0.14243541220617567,
+            0.14147838562443046,
+            0.14243541220617567,
+            0.1470901004812199,
+            0.15581738298567013,
+            0.149785249810644,
+            0.14338347849925256,
+            0.13953659774092841,
+            0.13855138822742238,
+            0.13855138822742238,
+            0.14147838562443046,
+            0.1549763484206809,
+            0.14051218737244317,
+            0.13755632103685794,
+            0.13953659774092841,
+            0.15665186760577723,
+            0.13755632103685794
+          ],
+          "special": [
+            0.16925913481749008,
+            0.16090510185282966,
+            0.17453809224208602,
+            0.1705993240176305,
+            0.17192564838976532,
+            0.16233679066566695,
+            0.16233679066566695,
+            0.16515162994711016,
+            0.16375214665341858,
+            0.17453809224208602,
+            0.16375214665341858,
+            0.16090510185282966
+          ]
+        }
+      },
+      "portfolio": {
+        "count": 5,
+        "costYuan": 10,
+        "seed": 3282699162,
+        "duplicateCount": 0,
+        "candidatesExamined": 5,
+        "selection": "model-sampling-with-distinct-ticket-rejection",
+        "coverage": {
+          "main": 17,
+          "mainPairs": 47,
+          "special": 6,
+          "specialPairs": 5
+        },
+        "objective": "Sample complete tickets from the registered probability model and reject duplicate tickets within the budget.",
+        "assumptions": [
+          "The output portfolio is a selection policy, not a set of independent probability samples after deduplication or coverage optimization.",
+          "Under independent uniform draws, each legal fixed ticket has the same prize probabilities. Distinct tickets change coverage and return dependence, not expected gross return for a fixed additive prize table.",
+          "Prize sharing, pool amounts, rule versions and actual per-issue payouts require separate settlement evidence; this model does not estimate other buyers' choices."
+        ]
+      }
+    },
+    {
+      "modelId": "transition_shrink",
+      "seed": 1365470674,
+      "additional": false,
+      "costYuan": 10,
+      "trainingHash": "60392da512f432352c0a8b078bea4398bd67c5f4f9281ad9f5f0c92c21ee8826",
+      "tickets": [
+        {
+          "main": [
+            14,
+            15,
+            21,
+            27,
+            29
+          ],
+          "special": [
+            1,
+            9
+          ]
+        },
+        {
+          "main": [
+            2,
+            5,
+            10,
+            17,
+            21
+          ],
+          "special": [
+            8,
+            9
+          ]
+        },
+        {
+          "main": [
+            1,
+            12,
+            13,
+            22,
+            35
+          ],
+          "special": [
+            1,
+            8
+          ]
+        },
+        {
+          "main": [
+            9,
+            10,
+            18,
+            20,
+            34
+          ],
+          "special": [
+            3,
+            8
+          ]
+        },
+        {
+          "main": [
+            1,
+            4,
+            21,
+            22,
+            31
+          ],
+          "special": [
+            1,
+            5
+          ]
+        }
+      ],
+      "model": {
+        "id": "transition_shrink",
+        "version": "2.0.0",
+        "gameId": "dlt",
+        "asOf": "2026-09-10T02:33:18.157Z",
+        "trainingCount": 500,
+        "trainingCutoff": "2026-09-10T02:32:50.661Z",
+        "parameters": {
+          "maximumHistory": 500,
+          "priorDraws": 100,
+          "logOddsStrength": 0.5,
+          "halfLifeDraws": 100,
+          "omissionPriorWaitingTimes": 10,
+          "coverageCandidates": 64
+        },
+        "assumptions": [
+          "Tests per-number dependence between successive supplied observations conditional on appearance in the last observed draw, shrunk toward independence; gaps do not establish a true one-draw lag.",
+          "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+          "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+          "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+          "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution.",
+          "Smoothed empirical inclusion odds define fixed-strength distribution weights; the exact model marginals are recomputed from the subset normalizer, not equated with the smoothed observations."
+        ],
+        "zones": {
+          "main": {
+            "count": 5,
+            "weights": [
+              0.9573072120564432,
+              1.0307957533531185,
+              1.1123345430189697,
+              0.9977935355305723,
+              1.0431169317024143,
+              1.0874596564732488,
+              1.0199924584939906,
+              1.0938164685269338,
+              1.1102759863914227,
+              1.0022211672613657,
+              1.0242746121886543,
+              1.088718394818611,
+              0.9702553008549911,
+              0.9846554230038868,
+              1.00550708278514,
+              1.0298149018092877,
+              0.9435476308387627,
+              1.0307957533531185,
+              0.9922387359181684,
+              0.9844509011759784,
+              1.0222886335205776,
+              1.0579906721210173,
+              0.9261010344170914,
+              0.8906155516705005,
+              0.9868043228196663,
+              1.0389497252536035,
+              0.9734297833285978,
+              1.0165770233076765,
+              1.0145108436320889,
+              0.9033030954895166,
+              0.9261010344170914,
+              1.0439502773785239,
+              0.9567386462400808,
+              0.9822882887073741,
+              0.9036217450153112
+            ],
+            "logNormalizer": 12.711265055289848
+          },
+          "special": {
+            "count": 2,
+            "weights": [
+              1.0269948770071298,
+              1.0899105319257134,
+              0.9064859630319054,
+              0.93561259070264,
+              1.0749081968144756,
+              0.8890675882465788,
+              1.0949220689858294,
+              1.0315436386702275,
+              1.0348266239966402,
+              1.0360510298171426,
+              0.9527470449877727,
+              0.968975761899812
+            ],
+            "logNormalizer": 4.19623489689847
+          }
+        },
+        "probabilities": {
+          "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+          "main": [
+            0.13696512796989763,
+            0.14621411728736303,
+            0.15628625249823763,
+            0.14208088477613806,
+            0.1477488173773309,
+            0.15323449732955893,
+            0.1448647238726674,
+            0.1540161155176476,
+            0.15603439250754297,
+            0.14263732031706508,
+            0.1454000101691549,
+            0.15338936369090855,
+            0.13860666650368825,
+            0.1404262665794721,
+            0.14304988809323996,
+            0.14609174840712058,
+            0.13521506594724844,
+            0.1462141172873633,
+            0.1413819521950491,
+            0.14040046749733565,
+            0.14515182367960663,
+            0.14959539661214813,
+            0.13298766171516416,
+            0.1284280893106072,
+            0.14069725908823966,
+            0.1472302690953685,
+            0.13900833861676853,
+            0.1444373841715787,
+            0.14417869245396622,
+            0.13006283230538573,
+            0.13298766171516416,
+            0.147852452642583,
+            0.13689292820077598,
+            0.14012759013949933,
+            0.13010382442912471
+          ],
+          "special": [
+            0.17027587886356993,
+            0.1796751402007201,
+            0.1519397765581484,
+            0.15641161880212717,
+            0.17744469147062583,
+            0.14925331153134824,
+            0.18041871290822997,
+            0.17095943575459363,
+            0.1714523933939809,
+            0.1716361613436856,
+            0.159030358654901,
+            0.16150252051806835
+          ]
+        }
+      },
+      "portfolio": {
+        "count": 5,
+        "costYuan": 10,
+        "seed": 1365470674,
+        "duplicateCount": 0,
+        "candidatesExamined": 5,
+        "selection": "model-sampling-with-distinct-ticket-rejection",
+        "coverage": {
+          "main": 20,
+          "mainPairs": 49,
+          "special": 5,
+          "specialPairs": 5
+        },
+        "objective": "Sample complete tickets from the registered probability model and reject duplicate tickets within the budget.",
+        "assumptions": [
+          "The output portfolio is a selection policy, not a set of independent probability samples after deduplication or coverage optimization.",
+          "Under independent uniform draws, each legal fixed ticket has the same prize probabilities. Distinct tickets change coverage and return dependence, not expected gross return for a fixed additive prize table.",
+          "Prize sharing, pool amounts, rule versions and actual per-issue payouts require separate settlement evidence; this model does not estimate other buyers' choices."
+        ]
+      }
+    },
+    {
+      "modelId": "mixture",
+      "seed": 3740141127,
+      "additional": false,
+      "costYuan": 10,
+      "trainingHash": "60392da512f432352c0a8b078bea4398bd67c5f4f9281ad9f5f0c92c21ee8826",
+      "tickets": [
+        {
+          "main": [
+            20,
+            25,
+            29,
+            32,
+            35
+          ],
+          "special": [
+            5,
+            9
+          ]
+        },
+        {
+          "main": [
+            9,
+            20,
+            26,
+            27,
+            29
+          ],
+          "special": [
+            6,
+            9
+          ]
+        },
+        {
+          "main": [
+            15,
+            26,
+            31,
+            32,
+            34
+          ],
+          "special": [
+            9,
+            12
+          ]
+        },
+        {
+          "main": [
+            9,
+            18,
+            22,
+            24,
+            27
+          ],
+          "special": [
+            9,
+            12
+          ]
+        },
+        {
+          "main": [
+            11,
+            19,
+            21,
+            24,
+            34
+          ],
+          "special": [
+            2,
+            10
+          ]
+        }
+      ],
+      "model": {
+        "id": "mixture",
+        "version": "2.0.0",
+        "gameId": "dlt",
+        "asOf": "2026-09-10T02:33:18.157Z",
+        "trainingCount": 500,
+        "trainingCutoff": "2026-09-10T02:32:50.661Z",
+        "parameters": {
+          "maximumHistory": 500,
+          "priorDraws": 100,
+          "logOddsStrength": 0.5,
+          "halfLifeDraws": 100,
+          "omissionPriorWaitingTimes": 10,
+          "coverageCandidates": 64
+        },
+        "assumptions": [
+          "Fixed equal mixture of five complete-ticket probability models; weights are never selected from holdout performance.",
+          "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+          "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+          "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+          "Main and special zones are independent conditional on a component; the joint mixture is computed on whole tickets, not on averaged zone weights."
+        ],
+        "components": [
+          {
+            "weight": 0.2,
+            "model": {
+              "id": "uniform",
+              "version": "2.0.0",
+              "gameId": "dlt",
+              "asOf": "2026-09-10T02:33:18.157Z",
+              "trainingCount": 500,
+              "trainingCutoff": "2026-09-10T02:32:50.661Z",
+              "parameters": {
+                "maximumHistory": 500,
+                "priorDraws": 100,
+                "logOddsStrength": 0.5,
+                "halfLifeDraws": 100,
+                "omissionPriorWaitingTimes": 10,
+                "coverageCandidates": 64
+              },
+              "assumptions": [
+                "Every legal complete combination is equally likely; no historical predictive signal is assumed.",
+                "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+                "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+                "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+                "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution."
+              ],
+              "zones": {
+                "main": {
+                  "count": 5,
+                  "weights": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "logNormalizer": 12.690447512074885
+                },
+                "special": {
+                  "count": 2,
+                  "weights": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "logNormalizer": 4.189654742026426
+                }
+              },
+              "probabilities": {
+                "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+                "main": [
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285,
+                  0.14285714285714285
+                ],
+                "special": [
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652,
+                  0.16666666666666652
+                ]
+              }
+            }
+          },
+          {
+            "weight": 0.2,
+            "model": {
+              "id": "frequency_shrink",
+              "version": "2.0.0",
+              "gameId": "dlt",
+              "asOf": "2026-09-10T02:33:18.157Z",
+              "trainingCount": 500,
+              "trainingCutoff": "2026-09-10T02:32:50.661Z",
+              "parameters": {
+                "maximumHistory": 500,
+                "priorDraws": 100,
+                "logOddsStrength": 0.5,
+                "halfLifeDraws": 100,
+                "omissionPriorWaitingTimes": 10,
+                "coverageCandidates": 64
+              },
+              "assumptions": [
+                "Tests persistence of historical number frequency, with fixed shrinkage toward the fair-draw prior.",
+                "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+                "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+                "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+                "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution.",
+                "Smoothed empirical inclusion odds define fixed-strength distribution weights; the exact model marginals are recomputed from the subset normalizer, not equated with the smoothed observations."
+              ],
+              "zones": {
+                "main": {
+                  "count": 5,
+                  "weights": [
+                    0.9278343966323893,
+                    1.003885665484851,
+                    1.0841580296513065,
+                    0.9902572485382514,
+                    1.0309123479027185,
+                    1.0643065218666896,
+                    1.0309123479027185,
+                    1.0576597126659453,
+                    1.0643065218666896,
+                    1.017435933804672,
+                    1.010670294475333,
+                    1.0709382234233258,
+                    0.9627475799469909,
+                    0.9558139185602917,
+                    0.9902572485382514,
+                    1.0309123479027185,
+                    0.9065722850755673,
+                    1.003885665484851,
+                    1.003885665484851,
+                    1.003885665484851,
+                    1.0443189830868562,
+                    1.0709382234233258,
+                    0.9278343966323893,
+                    0.8994279006682,
+                    0.9696581095173676,
+                    1.0509973514524567,
+                    0.9834123278002213,
+                    1.010670294475333,
+                    1.0443189830868562,
+                    0.9348674166656169,
+                    0.9278343966323893,
+                    1.003885665484851,
+                    0.9765461505253913,
+                    0.9902572485382514,
+                    0.9348674166656169
+                  ],
+                  "logNormalizer": 12.687009721635794
+                },
+                "special": {
+                  "count": 2,
+                  "weights": [
+                    1.0397504898200727,
+                    1.0515866412442767,
+                    0.9187795405622853,
+                    0.9249663694672435,
+                    1.0985884360051028,
+                    0.9434258614331824,
+                    1.0633861907772242,
+                    1.0278752798116675,
+                    1.009983608595757,
+                    1.0159584547457818,
+                    0.9434258614331824,
+                    0.9556526620652943
+                  ],
+                  "logNormalizer": 4.188249858930097
+                }
+              },
+              "probabilities": {
+                "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+                "main": [
+                  0.13378084951362387,
+                  0.1434533439139683,
+                  0.15347097779711466,
+                  0.1417331411690345,
+                  0.14684792723945173,
+                  0.15101168934244769,
+                  0.14684792723945145,
+                  0.15018561143451167,
+                  0.1510116893424474,
+                  0.14515805396789921,
+                  0.14430759366282783,
+                  0.15183456650084537,
+                  0.1382434370366054,
+                  0.13736019084754586,
+                  0.14173314116903474,
+                  0.14684792723945145,
+                  0.13104451030276162,
+                  0.14345334391396858,
+                  0.14345334391396858,
+                  0.14345334391396858,
+                  0.14852358396199247,
+                  0.15183456650084512,
+                  0.1337808495136241,
+                  0.13012187622843477,
+                  0.13912225736469888,
+                  0.1493562658653738,
+                  0.14086701457033746,
+                  0.14430759366282758,
+                  0.14852358396199247,
+                  0.13468285660009233,
+                  0.1337808495136241,
+                  0.14345334391396858,
+                  0.13999675111213172,
+                  0.14173314116903474,
+                  0.13468285660009233
+                ],
+                "special": [
+                  0.1728038263060738,
+                  0.17458211179971544,
+                  0.15438516153330248,
+                  0.1553379240502154,
+                  0.18160178896164578,
+                  0.15817375555608024,
+                  0.17635066660067597,
+                  0.17101540025571116,
+                  0.16831280457986042,
+                  0.16921640502901908,
+                  0.15817375555608024,
+                  0.16004639977162055
+                ]
+              }
+            }
+          },
+          {
+            "weight": 0.2,
+            "model": {
+              "id": "recency_shrink",
+              "version": "2.0.0",
+              "gameId": "dlt",
+              "asOf": "2026-09-10T02:33:18.157Z",
+              "trainingCount": 500,
+              "trainingCutoff": "2026-09-10T02:32:50.661Z",
+              "parameters": {
+                "maximumHistory": 500,
+                "priorDraws": 100,
+                "logOddsStrength": 0.5,
+                "halfLifeDraws": 100,
+                "omissionPriorWaitingTimes": 10,
+                "coverageCandidates": 64
+              },
+              "assumptions": [
+                "Tests recent frequency persistence using fixed exponential decay and prior shrinkage.",
+                "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+                "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+                "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+                "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution.",
+                "Smoothed empirical inclusion odds define fixed-strength distribution weights; the exact model marginals are recomputed from the subset normalizer, not equated with the smoothed observations."
+              ],
+              "zones": {
+                "main": {
+                  "count": 5,
+                  "weights": [
+                    0.9330165459396436,
+                    0.9965832584867255,
+                    1.098988173085963,
+                    1.013133276807618,
+                    0.9920932539651696,
+                    1.014519502557043,
+                    0.9843609506304197,
+                    1.0119044560876365,
+                    1.0689140020208117,
+                    1.0888457399708602,
+                    1.0090317874038919,
+                    1.05552336980028,
+                    1.0422875082305234,
+                    1.0233430111799893,
+                    1.0028774749276705,
+                    1.009961989807159,
+                    0.9268234237038658,
+                    1.0221216212415163,
+                    0.9733810598164679,
+                    0.9833692012276714,
+                    1.029339450087208,
+                    1.0260852706991734,
+                    0.9742125119297885,
+                    0.9461048035478874,
+                    0.958299255758586,
+                    1.0993971638065585,
+                    1.0032648318680115,
+                    0.9952100675187172,
+                    1.034042125767494,
+                    0.8927845474843588,
+                    0.8990927695372443,
+                    0.9695150877338852,
+                    1.0133584938624083,
+                    0.9512077667238246,
+                    0.9382706711275334
+                  ],
+                  "logNormalizer": 12.687037356474859
+                },
+                "special": {
+                  "count": 2,
+                  "weights": [
+                    1.0205645674054236,
+                    1.0594647687941,
+                    0.8650926186142107,
+                    0.9910902190921632,
+                    1.07703094974633,
+                    0.9372323331397235,
+                    1.0511090242205883,
+                    1.0211631787926974,
+                    0.9922363321158219,
+                    0.9842746613218635,
+                    0.986836333427128,
+                    1.0075157636213496
+                  ],
+                  "logNormalizer": 4.188318759799935
+                }
+              },
+              "probabilities": {
+                "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+                "main": [
+                  0.1344449465444941,
+                  0.14253161376261422,
+                  0.15529974051071913,
+                  0.14461663522895288,
+                  0.14196450423370602,
+                  0.14479089659754538,
+                  0.14098642688773985,
+                  0.1444621121415802,
+                  0.15158278270266776,
+                  0.15404922583999586,
+                  0.14410069697498823,
+                  0.14991907381823943,
+                  0.14826928590277996,
+                  0.14589872131472942,
+                  0.14332556471443225,
+                  0.14421775483305277,
+                  0.1336503860200962,
+                  0.14574551247712805,
+                  0.13959439616653482,
+                  0.14086084528168816,
+                  0.1466502456647364,
+                  0.14624253995916198,
+                  0.13969993760566576,
+                  0.13612020193521118,
+                  0.137676263465563,
+                  0.15535010288874093,
+                  0.1433743862371098,
+                  0.1423582386110423,
+                  0.14723886110874929,
+                  0.12926184769486354,
+                  0.13007789730578553,
+                  0.13910338402807612,
+                  0.14464495107629385,
+                  0.13677192194087304,
+                  0.1351180985244468
+                ],
+                "special": [
+                  0.16990414236679863,
+                  0.1757549888274643,
+                  0.14606165536078547,
+                  0.1654404306829474,
+                  0.17838200926268127,
+                  0.15721588739020273,
+                  0.17450210198285657,
+                  0.16999452531635645,
+                  0.16561449515185167,
+                  0.16440450317957486,
+                  0.16479402865620285,
+                  0.16793123182227807
+                ]
+              }
+            }
+          },
+          {
+            "weight": 0.2,
+            "model": {
+              "id": "omission_reversal",
+              "version": "2.0.0",
+              "gameId": "dlt",
+              "asOf": "2026-09-10T02:33:18.157Z",
+              "trainingCount": 500,
+              "trainingCutoff": "2026-09-10T02:32:50.661Z",
+              "parameters": {
+                "maximumHistory": 500,
+                "priorDraws": 100,
+                "logOddsStrength": 0.5,
+                "halfLifeDraws": 100,
+                "omissionPriorWaitingTimes": 10,
+                "coverageCandidates": 64
+              },
+              "assumptions": [
+                "Tests a fixed, shrunk waiting-time reversal hypothesis. Independent fair draws have no compensating memory.",
+                "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+                "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+                "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+                "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution.",
+                "Numbers never seen inside the fixed history window have right-censored waiting times; the window length is used as a lower bound, not an observed complete waiting time."
+              ],
+              "zones": {
+                "main": {
+                  "count": 5,
+                  "weights": [
+                    0.9619631668251951,
+                    0.9773555548504417,
+                    0.9541738631895289,
+                    1.0148156218095268,
+                    1.0221429055679958,
+                    0.9773555548504417,
+                    0.9619631668251951,
+                    1.0074350466081314,
+                    0.9696899027331812,
+                    0.9999999999999999,
+                    0.9696899027331812,
+                    0.9999999999999999,
+                    1.0927167294163058,
+                    1.0148156218095268,
+                    0.9773555548504417,
+                    0.9541738631895289,
+                    0.9541738631895289,
+                    0.9696899027331812,
+                    0.9925092578236595,
+                    0.9849615493669502,
+                    0.9925092578236595,
+                    1.029418035851963,
+                    1.0995249992067468,
+                    1.0509412980468027,
+                    0.9999999999999999,
+                    0.9696899027331812,
+                    0.9619631668251951,
+                    0.9619631668251951,
+                    0.9849615493669502,
+                    1.0927167294163058,
+                    0.9773555548504417,
+                    0.9541738631895289,
+                    0.9696899027331812,
+                    1.1062913707585924,
+                    0.9541738631895289
+                  ],
+                  "logNormalizer": 12.670189568198492
+                },
+                "special": {
+                  "count": 2,
+                  "weights": [
+                    1.008889063701824,
+                    0.9543135154205277,
+                    1.0436885140144612,
+                    1.0177004891982149,
+                    1.026436275942851,
+                    0.9636241116594315,
+                    0.9636241116594315,
+                    0.9819805060619657,
+                    0.9728456051340169,
+                    1.0436885140144612,
+                    0.9728456051340169,
+                    0.9543135154205277
+                  ],
+                  "logNormalizer": 4.17348373044922
+                }
+              },
+              "probabilities": {
+                "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+                "main": [
+                  0.13855138822742238,
+                  0.14051218737244317,
+                  0.13755632103685844,
+                  0.14525353668411659,
+                  0.1461759134679227,
+                  0.14051218737244292,
+                  0.13855138822742263,
+                  0.14432278799179618,
+                  0.13953659774092841,
+                  0.14338347849925281,
+                  0.13953659774092841,
+                  0.14338347849925281,
+                  0.1549763484206809,
+                  0.14525353668411659,
+                  0.14051218737244317,
+                  0.13755632103685794,
+                  0.13755632103685794,
+                  0.13953659774092841,
+                  0.14243541220617567,
+                  0.14147838562443046,
+                  0.14243541220617567,
+                  0.1470901004812199,
+                  0.15581738298567013,
+                  0.149785249810644,
+                  0.14338347849925256,
+                  0.13953659774092841,
+                  0.13855138822742238,
+                  0.13855138822742238,
+                  0.14147838562443046,
+                  0.1549763484206809,
+                  0.14051218737244317,
+                  0.13755632103685794,
+                  0.13953659774092841,
+                  0.15665186760577723,
+                  0.13755632103685794
+                ],
+                "special": [
+                  0.16925913481749008,
+                  0.16090510185282966,
+                  0.17453809224208602,
+                  0.1705993240176305,
+                  0.17192564838976532,
+                  0.16233679066566695,
+                  0.16233679066566695,
+                  0.16515162994711016,
+                  0.16375214665341858,
+                  0.17453809224208602,
+                  0.16375214665341858,
+                  0.16090510185282966
+                ]
+              }
+            }
+          },
+          {
+            "weight": 0.2,
+            "model": {
+              "id": "transition_shrink",
+              "version": "2.0.0",
+              "gameId": "dlt",
+              "asOf": "2026-09-10T02:33:18.157Z",
+              "trainingCount": 500,
+              "trainingCutoff": "2026-09-10T02:32:50.661Z",
+              "parameters": {
+                "maximumHistory": 500,
+                "priorDraws": 100,
+                "logOddsStrength": 0.5,
+                "halfLifeDraws": 100,
+                "omissionPriorWaitingTimes": 10,
+                "coverageCandidates": 64
+              },
+              "assumptions": [
+                "Tests per-number dependence between successive supplied observations conditional on appearance in the last observed draw, shrunk toward independence; gaps do not establish a true one-draw lag.",
+                "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+                "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+                "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+                "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution.",
+                "Smoothed empirical inclusion odds define fixed-strength distribution weights; the exact model marginals are recomputed from the subset normalizer, not equated with the smoothed observations."
+              ],
+              "zones": {
+                "main": {
+                  "count": 5,
+                  "weights": [
+                    0.9573072120564432,
+                    1.0307957533531185,
+                    1.1123345430189697,
+                    0.9977935355305723,
+                    1.0431169317024143,
+                    1.0874596564732488,
+                    1.0199924584939906,
+                    1.0938164685269338,
+                    1.1102759863914227,
+                    1.0022211672613657,
+                    1.0242746121886543,
+                    1.088718394818611,
+                    0.9702553008549911,
+                    0.9846554230038868,
+                    1.00550708278514,
+                    1.0298149018092877,
+                    0.9435476308387627,
+                    1.0307957533531185,
+                    0.9922387359181684,
+                    0.9844509011759784,
+                    1.0222886335205776,
+                    1.0579906721210173,
+                    0.9261010344170914,
+                    0.8906155516705005,
+                    0.9868043228196663,
+                    1.0389497252536035,
+                    0.9734297833285978,
+                    1.0165770233076765,
+                    1.0145108436320889,
+                    0.9033030954895166,
+                    0.9261010344170914,
+                    1.0439502773785239,
+                    0.9567386462400808,
+                    0.9822882887073741,
+                    0.9036217450153112
+                  ],
+                  "logNormalizer": 12.711265055289848
+                },
+                "special": {
+                  "count": 2,
+                  "weights": [
+                    1.0269948770071298,
+                    1.0899105319257134,
+                    0.9064859630319054,
+                    0.93561259070264,
+                    1.0749081968144756,
+                    0.8890675882465788,
+                    1.0949220689858294,
+                    1.0315436386702275,
+                    1.0348266239966402,
+                    1.0360510298171426,
+                    0.9527470449877727,
+                    0.968975761899812
+                  ],
+                  "logNormalizer": 4.19623489689847
+                }
+              },
+              "probabilities": {
+                "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+                "main": [
+                  0.13696512796989763,
+                  0.14621411728736303,
+                  0.15628625249823763,
+                  0.14208088477613806,
+                  0.1477488173773309,
+                  0.15323449732955893,
+                  0.1448647238726674,
+                  0.1540161155176476,
+                  0.15603439250754297,
+                  0.14263732031706508,
+                  0.1454000101691549,
+                  0.15338936369090855,
+                  0.13860666650368825,
+                  0.1404262665794721,
+                  0.14304988809323996,
+                  0.14609174840712058,
+                  0.13521506594724844,
+                  0.1462141172873633,
+                  0.1413819521950491,
+                  0.14040046749733565,
+                  0.14515182367960663,
+                  0.14959539661214813,
+                  0.13298766171516416,
+                  0.1284280893106072,
+                  0.14069725908823966,
+                  0.1472302690953685,
+                  0.13900833861676853,
+                  0.1444373841715787,
+                  0.14417869245396622,
+                  0.13006283230538573,
+                  0.13298766171516416,
+                  0.147852452642583,
+                  0.13689292820077598,
+                  0.14012759013949933,
+                  0.13010382442912471
+                ],
+                "special": [
+                  0.17027587886356993,
+                  0.1796751402007201,
+                  0.1519397765581484,
+                  0.15641161880212717,
+                  0.17744469147062583,
+                  0.14925331153134824,
+                  0.18041871290822997,
+                  0.17095943575459363,
+                  0.1714523933939809,
+                  0.1716361613436856,
+                  0.159030358654901,
+                  0.16150252051806835
+                ]
+              }
+            }
+          }
+        ],
+        "probabilities": {
+          "interpretation": "Exact model marginal inclusion probabilities; each zone sums to its draw count.",
+          "main": [
+            0.13731989102251618,
+            0.14311368103870634,
+            0.14909408694001455,
+            0.14330826814307698,
+            0.14511886103511085,
+            0.14648128269982755,
+            0.14282152181688484,
+            0.14716875398853568,
+            0.1482045210301459,
+            0.14561704429627118,
+            0.14324040828100845,
+            0.14827672507327783,
+            0.14459057614417947,
+            0.14235917165660136,
+            0.1422955848412586,
+            0.14351417887472512,
+            0.13606468523282142,
+            0.14356134285530625,
+            0.1419444494677742,
+            0.14181003703491316,
+            0.1451236416739308,
+            0.1475239492821036,
+            0.1410285949354534,
+            0.137462512028408,
+            0.1407472802549794,
+            0.1468660756895109,
+            0.1409316541017562,
+            0.14250234950600277,
+            0.14485533320125626,
+            0.13836820557563306,
+            0.13604314775283197,
+            0.1421645288957257,
+            0.14078567419745455,
+            0.14362833274246545,
+            0.1360636486895329
+          ],
+          "special": [
+            0.16978192980411982,
+            0.1715168018694792,
+            0.15871827047219778,
+            0.16289119284391743,
+            0.17520416095027697,
+            0.15872928236199293,
+            0.1720549877648192,
+            0.1687575315880876,
+            0.16715970128915564,
+            0.16929236569220646,
+            0.16248339123745387,
+            0.16341038412629266
+          ]
+        }
+      },
+      "portfolio": {
+        "count": 5,
+        "costYuan": 10,
+        "seed": 3740141127,
+        "duplicateCount": 0,
+        "candidatesExamined": 5,
+        "selection": "model-sampling-with-distinct-ticket-rejection",
+        "coverage": {
+          "main": 17,
+          "mainPairs": 48,
+          "special": 6,
+          "specialPairs": 4
+        },
+        "objective": "Sample complete tickets from the registered probability model and reject duplicate tickets within the budget.",
+        "assumptions": [
+          "The output portfolio is a selection policy, not a set of independent probability samples after deduplication or coverage optimization.",
+          "Under independent uniform draws, each legal fixed ticket has the same prize probabilities. Distinct tickets change coverage and return dependence, not expected gross return for a fixed additive prize table.",
+          "Prize sharing, pool amounts, rule versions and actual per-issue payouts require separate settlement evidence; this model does not estimate other buyers' choices."
+        ]
+      }
+    },
+    {
+      "modelId": "coverage",
+      "seed": 1637064350,
+      "additional": false,
+      "costYuan": 10,
+      "trainingHash": "60392da512f432352c0a8b078bea4398bd67c5f4f9281ad9f5f0c92c21ee8826",
+      "tickets": [
+        {
+          "main": [
+            13,
+            20,
+            21,
+            27,
+            35
+          ],
+          "special": [
+            2,
+            10
+          ]
+        },
+        {
+          "main": [
+            1,
+            14,
+            15,
+            22,
+            25
+          ],
+          "special": [
+            4,
+            5
+          ]
+        },
+        {
+          "main": [
+            8,
+            16,
+            29,
+            33,
+            34
+          ],
+          "special": [
+            11,
+            12
+          ]
+        },
+        {
+          "main": [
+            2,
+            3,
+            6,
+            17,
+            28
+          ],
+          "special": [
+            1,
+            3
+          ]
+        },
+        {
+          "main": [
+            3,
+            7,
+            9,
+            21,
+            35
+          ],
+          "special": [
+            6,
+            8
+          ]
+        }
+      ],
+      "model": {
+        "id": "coverage",
+        "version": "2.0.0",
+        "gameId": "dlt",
+        "asOf": "2026-09-10T02:33:18.157Z",
+        "trainingCount": 500,
+        "trainingCutoff": "2026-09-10T02:32:50.661Z",
+        "parameters": {
+          "maximumHistory": 500,
+          "priorDraws": 100,
+          "logOddsStrength": 0.5,
+          "halfLifeDraws": 100,
+          "omissionPriorWaitingTimes": 10,
+          "coverageCandidates": 64
+        },
+        "assumptions": [
+          "Uses the uniform predictive model and a finite greedy search for number/pair coverage in the ticket portfolio.",
+          "Only draws whose draw and supplied observation timestamps strictly precede asOf are used. Date-only records become eligible after the end of that Beijing calendar day.",
+          "Untimestamped historical archives establish retrospective availability assumptions only, not prospective publication evidence.",
+          "Parameters are fixed research hypotheses, not measured or guaranteed winning advantages.",
+          "Main and special zones are modeled independently. Within each zone P(S)=product(weights in S)/e_k(weights), an exactly normalized fixed-size subset distribution."
+        ],
+        "zones": {
+          "main": {
+            "count": 5,
+            "weights": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "logNormalizer": 12.690447512074885
+          },
+          "special": {
+            "count": 2,
+            "weights": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "logNormalizer": 4.189654742026426
+          }
+        },
+        "probabilities": {
+          "interpretation": "Exact model marginal inclusion probabilities; they are not independent Bernoulli probabilities and each zone sums to its draw count.",
+          "main": [
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285
+          ],
+          "special": [
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652,
+            0.16666666666666652
+          ]
+        }
+      },
+      "portfolio": {
+        "count": 5,
+        "costYuan": 10,
+        "seed": 1637064350,
+        "duplicateCount": 0,
+        "candidatesExamined": 320,
+        "selection": "greedy-low-order-coverage",
+        "coverage": {
+          "main": 22,
+          "mainPairs": 49,
+          "special": 10,
+          "specialPairs": 5
+        },
+        "objective": "Greedily maximize the sum of newly covered fractions of main numbers, main pairs, special numbers and special pairs across 64 uniform candidates per step; not a global optimum guarantee.",
+        "assumptions": [
+          "The output portfolio is a selection policy, not a set of independent probability samples after deduplication or coverage optimization.",
+          "Under independent uniform draws, each legal fixed ticket has the same prize probabilities. Distinct tickets change coverage and return dependence, not expected gross return for a fixed additive prize table.",
+          "Prize sharing, pool amounts, rule versions and actual per-issue payouts require separate settlement evidence; this model does not estimate other buyers' choices."
+        ]
+      }
     }
-  },
-  "status": "ok",
-  "detailsOk": 300,
-  "detailTarget": 300
+  ],
+  "ticketCountPerModel": 5,
+  "costYuanPerModel": 10,
+  "paperOnly": true,
+  "digest": "6210a318035a6c3cead2cbbee07a67abdaba628184154e349f835a61565ae564"
 }
