@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "a62599707a9e59f44207923f5348f15f9c5cf256ce125a3d6be652572387713f",
+  "recordedAt": "2026-09-10T10:32:16.017Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1467723",
+      "kickoffAt": "2026-09-09T15:55:00.000Z",
+      "homeTeam": "拉斯永恒",
+      "awayTeam": "利雅得青年",
+      "competition": "沙特职业联赛",
+      "odds": {
+        "home": 2.56,
+        "draw": 3.35,
+        "away": 2.27
+      },
+      "sourceEventId": "1467723",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
+      "fetchedAt": "2026-09-10T10:32:06.311Z",
+      "bodySha256": "6c9f26f7a8d0b449e0aa5077873119cd091783cd8a9b957fd7c57be1f95a4f01"
+    },
+    "observedAt": "2026-09-10T10:32:06.311Z",
+    "revisionReason": null
+  }
+}

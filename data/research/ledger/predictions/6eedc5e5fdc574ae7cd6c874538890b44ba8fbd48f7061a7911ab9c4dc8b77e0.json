@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "6eedc5e5fdc574ae7cd6c874538890b44ba8fbd48f7061a7911ab9c4dc8b77e0",
+  "recordedAt": "2026-09-10T10:32:15.512Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1419191",
+      "kickoffAt": "2026-09-11T10:00:00.000Z",
+      "homeTeam": "京都",
+      "awayTeam": "柏太阳神",
+      "competition": "日职",
+      "odds": {
+        "home": 4.07,
+        "draw": 3.65,
+        "away": 1.64
+      },
+      "sourceEventId": "1419191"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-10T10:32:05.682Z",
+      "bodySha256": "bef10a8fbd64bb9dce2ac7bf1db5a2f26e769f0f85de01b6ac0050260595fb8b"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.4678550393889712,
+        0.26053697775360773,
+        0.27160798285742094
+      ],
+      "trainingCutoff": "2026-09-10T10:32:09.477Z",
+      "trainingCount": 7,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-10T10:32:05.682Z",
+    "paperTrade": {
+      "selectionWeights": [
+        1,
+        0,
+        0
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "0d3e30ddf386aacaa42b7732ad8c90723fcf75f43ca95e8b7c33eca74079e4f9"
+  }
+}

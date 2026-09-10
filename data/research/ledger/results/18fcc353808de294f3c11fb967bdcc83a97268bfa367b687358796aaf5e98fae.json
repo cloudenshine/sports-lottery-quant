@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "18fcc353808de294f3c11fb967bdcc83a97268bfa367b687358796aaf5e98fae",
+  "recordedAt": "2026-09-10T10:32:16.033Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1425502",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "homeTeam": "查尔顿",
+      "awayTeam": "女王巡游",
+      "competition": "英冠",
+      "odds": {
+        "home": 3.22,
+        "draw": 3,
+        "away": 2.06
+      },
+      "sourceEventId": "1425502",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
+      "fetchedAt": "2026-09-10T10:32:06.311Z",
+      "bodySha256": "6c9f26f7a8d0b449e0aa5077873119cd091783cd8a9b957fd7c57be1f95a4f01"
+    },
+    "observedAt": "2026-09-10T10:32:06.311Z",
+    "revisionReason": null
+  }
+}

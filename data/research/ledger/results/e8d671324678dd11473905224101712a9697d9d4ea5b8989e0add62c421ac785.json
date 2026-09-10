@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "e8d671324678dd11473905224101712a9697d9d4ea5b8989e0add62c421ac785",
+  "recordedAt": "2026-09-10T10:32:16.066Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1476140",
+      "kickoffAt": "2026-09-09T22:00:00.000Z",
+      "homeTeam": "帕梅拉斯",
+      "awayTeam": "基多体大",
+      "competition": "解放者杯",
+      "odds": {
+        "home": 1.21,
+        "draw": 4.95,
+        "away": 10
+      },
+      "sourceEventId": "1476140",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
+      "fetchedAt": "2026-09-10T10:32:06.311Z",
+      "bodySha256": "6c9f26f7a8d0b449e0aa5077873119cd091783cd8a9b957fd7c57be1f95a4f01"
+    },
+    "observedAt": "2026-09-10T10:32:06.311Z",
+    "revisionReason": null
+  }
+}

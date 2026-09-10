@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "runAt": "2026-09-10T02:32:21.011Z",
-  "status": "degraded",
-  "records": 1698,
-  "fixtures": 44,
+  "runAt": "2026-09-10T10:31:59.798Z",
+  "status": "ok",
+  "records": 1707,
+  "fixtures": 47,
   "results": [
     {
       "sourceId": "espn-eng1-2024",
@@ -44,15 +44,15 @@
       "status": "ok",
       "stale": false,
       "error": null,
-      "fetchedAt": "2026-09-10T02:32:22.467Z",
+      "fetchedAt": "2026-09-10T10:32:01.240Z",
       "records": 30,
       "fixtures": 20,
       "sources": [
         {
           "sourceId": "espn-eng1-current",
           "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260806-20261001&limit=1000",
-          "fetchedAt": "2026-09-10T02:32:22.467Z",
-          "bodySha256": "c7a7bf5821c76da2b94146c798ce8a90a470e3701305f71d5d88f091ac7348dd"
+          "fetchedAt": "2026-09-10T10:32:01.240Z",
+          "bodySha256": "be1cec52eda96a500690c729b2f45f86d4d490d8ec3d784bf14f8ddea7e4de59"
         }
       ]
     },
@@ -61,15 +61,15 @@
       "status": "ok",
       "stale": false,
       "error": null,
-      "fetchedAt": "2026-09-10T02:32:27.140Z",
+      "fetchedAt": "2026-09-10T10:32:05.682Z",
       "records": 7,
-      "fixtures": 7,
+      "fixtures": 19,
       "sources": [
         {
           "sourceId": "500-jingcai",
           "sourceUrl": "https://trade.500.com/jczq/",
-          "fetchedAt": "2026-09-10T02:32:27.140Z",
-          "bodySha256": "4b162e98b72e00653c95d1f3551616698d6b270303acb485024c1ab5ee04609a"
+          "fetchedAt": "2026-09-10T10:32:05.682Z",
+          "bodySha256": "bef10a8fbd64bb9dce2ac7bf1db5a2f26e769f0f85de01b6ac0050260595fb8b"
         }
       ]
     },
@@ -78,15 +78,15 @@
       "status": "ok",
       "stale": false,
       "error": null,
-      "fetchedAt": "2026-09-10T02:32:27.768Z",
-      "records": 64,
-      "fixtures": 14,
+      "fetchedAt": "2026-09-10T10:32:06.311Z",
+      "records": 73,
+      "fixtures": 5,
       "sources": [
         {
           "sourceId": "500-jingcai-results-1",
           "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
-          "fetchedAt": "2026-09-10T02:32:27.768Z",
-          "bodySha256": "e0c16cf918dcee2a8ad07f414fc8b0936e899ba1a326520e0d96240375b263af"
+          "fetchedAt": "2026-09-10T10:32:06.311Z",
+          "bodySha256": "6c9f26f7a8d0b449e0aa5077873119cd091783cd8a9b957fd7c57be1f95a4f01"
         }
       ]
     },
@@ -95,14 +95,14 @@
       "status": "ok",
       "stale": false,
       "error": null,
-      "fetchedAt": "2026-09-10T02:32:28.649Z",
+      "fetchedAt": "2026-09-10T10:32:07.309Z",
       "records": 61,
       "fixtures": 0,
       "sources": [
         {
           "sourceId": "500-jingcai-results-2",
           "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
-          "fetchedAt": "2026-09-10T02:32:28.649Z",
+          "fetchedAt": "2026-09-10T10:32:07.309Z",
           "bodySha256": "4d6548d84fca66f2f069804ba4f32ecc0ed775302641075b7aaeeebb13b29433"
         }
       ]
@@ -112,14 +112,14 @@
       "status": "ok",
       "stale": false,
       "error": null,
-      "fetchedAt": "2026-09-10T02:32:29.714Z",
+      "fetchedAt": "2026-09-10T10:32:07.910Z",
       "records": 53,
       "fixtures": 0,
       "sources": [
         {
           "sourceId": "500-jingcai-results-3",
           "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
-          "fetchedAt": "2026-09-10T02:32:29.714Z",
+          "fetchedAt": "2026-09-10T10:32:07.910Z",
           "bodySha256": "0d34c0e0600480c5ff376cd5322397d833360569e864ff8723e0c5db737457ad"
         }
       ]
@@ -129,14 +129,14 @@
       "status": "ok",
       "stale": false,
       "error": null,
-      "fetchedAt": "2026-09-10T02:32:30.659Z",
+      "fetchedAt": "2026-09-10T10:32:08.517Z",
       "records": 70,
       "fixtures": 0,
       "sources": [
         {
           "sourceId": "500-jingcai-results-4",
           "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
-          "fetchedAt": "2026-09-10T02:32:30.659Z",
+          "fetchedAt": "2026-09-10T10:32:08.517Z",
           "bodySha256": "d53a1b8dba72f60aac5b3f9b879690a73547d51d755165260579165896127d9d"
         }
       ]
@@ -146,14 +146,14 @@
       "status": "ok",
       "stale": false,
       "error": null,
-      "fetchedAt": "2026-09-10T02:32:31.591Z",
+      "fetchedAt": "2026-09-10T10:32:09.477Z",
       "records": 62,
       "fixtures": 2,
       "sources": [
         {
           "sourceId": "500-jingcai-results-5",
           "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
-          "fetchedAt": "2026-09-10T02:32:31.591Z",
+          "fetchedAt": "2026-09-10T10:32:09.477Z",
           "bodySha256": "8416b2d783adc442b6c653ae3a6ee8c85289885d099aaa8b3fb42f75d73546fb"
         }
       ]
@@ -163,14 +163,14 @@
       "status": "ok",
       "stale": false,
       "error": null,
-      "fetchedAt": "2026-09-10T02:32:32.596Z",
+      "fetchedAt": "2026-09-10T10:32:10.445Z",
       "records": 40,
       "fixtures": 1,
       "sources": [
         {
           "sourceId": "500-jingcai-results-6",
           "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-04",
-          "fetchedAt": "2026-09-10T02:32:32.596Z",
+          "fetchedAt": "2026-09-10T10:32:10.445Z",
           "bodySha256": "a7e6c2aeeb9af512b0629436cdae2015f1f086a3cf6a5abced26ee0d4751aa2c"
         }
       ]
@@ -180,14 +180,14 @@
       "status": "ok",
       "stale": false,
       "error": null,
-      "fetchedAt": "2026-09-10T02:32:33.339Z",
+      "fetchedAt": "2026-09-10T10:32:11.303Z",
       "records": 52,
       "fixtures": 0,
       "sources": [
         {
           "sourceId": "500-jingcai-results-7",
           "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-03",
-          "fetchedAt": "2026-09-10T02:32:33.339Z",
+          "fetchedAt": "2026-09-10T10:32:11.303Z",
           "bodySha256": "90016b5d5cd6d7c6293900f2a3c11eddf5240f9aac16c583d99f617a668109d8"
         }
       ]
@@ -217,18 +217,18 @@
     },
     {
       "sourceId": "football-data-primary",
-      "status": "failed",
+      "status": "ok",
       "stale": false,
-      "error": "HTTP 503 https://www.football-data.co.uk/mmz4281/2526/E0.csv",
-      "fetchedAt": null,
+      "error": null,
+      "fetchedAt": "2026-09-10T10:32:15.010Z",
       "records": 0,
       "fixtures": 0,
       "sources": [
         {
           "sourceId": "football-data-primary",
           "sourceUrl": "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
-          "fetchedAt": "2026-09-10T02:32:34.944Z",
-          "bodySha256": "b518e7cdfa503f30674d48da26271fb2ccdf0d51e8432c17ce9e3f6fcd44e8d5"
+          "fetchedAt": "2026-09-10T10:32:15.010Z",
+          "bodySha256": "3e3a8352f9ada6789c508d6ca184424421fed56a30400904a4a327c583407e62"
         }
       ]
     }

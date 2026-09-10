@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "8a05201f5d30e98b15070e1a5085201dc61c024fddc9efcfeaf60ad0b3e8a502",
+  "recordedAt": "2026-09-10T10:32:16.072Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1358655",
+      "kickoffAt": "2026-09-10T00:30:00.000Z",
+      "homeTeam": "芝加哥",
+      "awayTeam": "迈阿密国际",
+      "competition": "美职足",
+      "odds": {
+        "home": 2.13,
+        "draw": 4.06,
+        "away": 2.42
+      },
+      "sourceEventId": "1358655",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
+      "fetchedAt": "2026-09-10T10:32:06.311Z",
+      "bodySha256": "6c9f26f7a8d0b449e0aa5077873119cd091783cd8a9b957fd7c57be1f95a4f01"
+    },
+    "observedAt": "2026-09-10T10:32:06.311Z",
+    "revisionReason": null
+  }
+}

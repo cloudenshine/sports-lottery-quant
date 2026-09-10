@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "6919ad67a9f42dac96c4a3e76b6d2618b7c754f9b96994bf16bc14d68e9b589d",
+  "recordedAt": "2026-09-10T10:32:16.078Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1476138",
+      "kickoffAt": "2026-09-10T00:30:00.000Z",
+      "homeTeam": "拉普大学",
+      "awayTeam": "科林蒂安",
+      "competition": "解放者杯",
+      "odds": {
+        "home": 2.1,
+        "draw": 2.4,
+        "away": 4.22
+      },
+      "sourceEventId": "1476138",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
+      "fetchedAt": "2026-09-10T10:32:06.311Z",
+      "bodySha256": "6c9f26f7a8d0b449e0aa5077873119cd091783cd8a9b957fd7c57be1f95a4f01"
+    },
+    "observedAt": "2026-09-10T10:32:06.311Z",
+    "revisionReason": null
+  }
+}

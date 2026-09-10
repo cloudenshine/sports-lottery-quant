@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "52dd7bdd7a9213c0cf3541e90c6515e9b1e68167b1958907f1260bd0432f80d7",
+  "recordedAt": "2026-09-10T10:32:16.050Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1480008",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "homeTeam": "利物浦",
+      "awayTeam": "马竞",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.59,
+        "draw": 3.77,
+        "away": 4.25
+      },
+      "sourceEventId": "1480008",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
+      "fetchedAt": "2026-09-10T10:32:06.311Z",
+      "bodySha256": "6c9f26f7a8d0b449e0aa5077873119cd091783cd8a9b957fd7c57be1f95a4f01"
+    },
+    "observedAt": "2026-09-10T10:32:06.311Z",
+    "revisionReason": null
+  }
+}

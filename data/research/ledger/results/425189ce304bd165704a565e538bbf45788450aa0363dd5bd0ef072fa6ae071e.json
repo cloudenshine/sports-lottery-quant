@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "425189ce304bd165704a565e538bbf45788450aa0363dd5bd0ef072fa6ae071e",
+  "recordedAt": "2026-09-10T10:32:16.056Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1480030",
+      "kickoffAt": "2026-09-09T19:00:00.000Z",
+      "homeTeam": "那不勒斯",
+      "awayTeam": "阿森纳",
+      "competition": "欧冠",
+      "odds": {
+        "home": 5.65,
+        "draw": 3.8,
+        "away": 1.45
+      },
+      "sourceEventId": "1480030",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
+      "fetchedAt": "2026-09-10T10:32:06.311Z",
+      "bodySha256": "6c9f26f7a8d0b449e0aa5077873119cd091783cd8a9b957fd7c57be1f95a4f01"
+    },
+    "observedAt": "2026-09-10T10:32:06.311Z",
+    "revisionReason": null
+  }
+}
