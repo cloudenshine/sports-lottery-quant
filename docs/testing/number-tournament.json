@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T10:44:47.378Z",
+  "generatedAt": "2026-09-10T15:34:10.460Z",
   "status": "EXPLORATORY_ONLY_NO_PREDICTIVE_ADVANTAGE_ESTABLISHED",
   "reproducibility": "node scripts/evaluate-number-strategies.js; offline bundled historical snapshots; fixed protocol and seeds; generatedAt is metadata only.",
   "protocol": {

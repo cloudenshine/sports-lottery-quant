@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-10T10:32:16.830Z",
+  "generatedAt": "2026-09-10T15:32:26.081Z",
   "protocol": {
     "schemaVersion": 1,
     "protocolId": "lottery-research-v1-20260906",
@@ -153,7 +153,7 @@
   },
   "sources": {
     "schemaVersion": 1,
-    "runAt": "2026-09-10T10:31:59.798Z",
+    "runAt": "2026-09-10T15:32:00.347Z",
     "status": "ok",
     "records": 1707,
     "fixtures": 47,
@@ -197,15 +197,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-10T10:32:01.240Z",
+        "fetchedAt": "2026-09-10T15:32:02.158Z",
         "records": 30,
         "fixtures": 20,
         "sources": [
           {
             "sourceId": "espn-eng1-current",
             "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260806-20261001&limit=1000",
-            "fetchedAt": "2026-09-10T10:32:01.240Z",
-            "bodySha256": "be1cec52eda96a500690c729b2f45f86d4d490d8ec3d784bf14f8ddea7e4de59"
+            "fetchedAt": "2026-09-10T15:32:02.158Z",
+            "bodySha256": "f1faebea53ab856392e2172d662ab1a0c5b101d3aac79bfeb076e240ec0b4c12"
           }
         ]
       },
@@ -214,15 +214,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-10T10:32:05.682Z",
+        "fetchedAt": "2026-09-10T15:32:07.709Z",
         "records": 7,
         "fixtures": 19,
         "sources": [
           {
             "sourceId": "500-jingcai",
             "sourceUrl": "https://trade.500.com/jczq/",
-            "fetchedAt": "2026-09-10T10:32:05.682Z",
-            "bodySha256": "bef10a8fbd64bb9dce2ac7bf1db5a2f26e769f0f85de01b6ac0050260595fb8b"
+            "fetchedAt": "2026-09-10T15:32:07.709Z",
+            "bodySha256": "f65802ffe8e0df851122bcc0484fc67e850a78e0971d02af8008fc2fd25f9c30"
           }
         ]
       },
@@ -231,14 +231,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-10T10:32:06.311Z",
+        "fetchedAt": "2026-09-10T15:32:09.062Z",
         "records": 73,
         "fixtures": 5,
         "sources": [
           {
             "sourceId": "500-jingcai-results-1",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
-            "fetchedAt": "2026-09-10T10:32:06.311Z",
+            "fetchedAt": "2026-09-10T15:32:09.062Z",
             "bodySha256": "6c9f26f7a8d0b449e0aa5077873119cd091783cd8a9b957fd7c57be1f95a4f01"
           }
         ]
@@ -248,14 +248,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-10T10:32:07.309Z",
+        "fetchedAt": "2026-09-10T15:32:09.742Z",
         "records": 61,
         "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-2",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
-            "fetchedAt": "2026-09-10T10:32:07.309Z",
+            "fetchedAt": "2026-09-10T15:32:09.742Z",
             "bodySha256": "4d6548d84fca66f2f069804ba4f32ecc0ed775302641075b7aaeeebb13b29433"
           }
         ]
@@ -265,14 +265,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-10T10:32:07.910Z",
+        "fetchedAt": "2026-09-10T15:32:11.245Z",
         "records": 53,
         "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-3",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
-            "fetchedAt": "2026-09-10T10:32:07.910Z",
+            "fetchedAt": "2026-09-10T15:32:11.245Z",
             "bodySha256": "0d34c0e0600480c5ff376cd5322397d833360569e864ff8723e0c5db737457ad"
           }
         ]
@@ -282,14 +282,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-10T10:32:08.517Z",
+        "fetchedAt": "2026-09-10T15:32:13.108Z",
         "records": 70,
         "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-4",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
-            "fetchedAt": "2026-09-10T10:32:08.517Z",
+            "fetchedAt": "2026-09-10T15:32:13.108Z",
             "bodySha256": "d53a1b8dba72f60aac5b3f9b879690a73547d51d755165260579165896127d9d"
           }
         ]
@@ -299,14 +299,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-10T10:32:09.477Z",
+        "fetchedAt": "2026-09-10T15:32:14.155Z",
         "records": 62,
         "fixtures": 2,
         "sources": [
           {
             "sourceId": "500-jingcai-results-5",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-05",
-            "fetchedAt": "2026-09-10T10:32:09.477Z",
+            "fetchedAt": "2026-09-10T15:32:14.155Z",
             "bodySha256": "8416b2d783adc442b6c653ae3a6ee8c85289885d099aaa8b3fb42f75d73546fb"
           }
         ]
@@ -316,14 +316,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-10T10:32:10.445Z",
+        "fetchedAt": "2026-09-10T15:32:15.196Z",
         "records": 40,
         "fixtures": 1,
         "sources": [
           {
             "sourceId": "500-jingcai-results-6",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-04",
-            "fetchedAt": "2026-09-10T10:32:10.445Z",
+            "fetchedAt": "2026-09-10T15:32:15.196Z",
             "bodySha256": "a7e6c2aeeb9af512b0629436cdae2015f1f086a3cf6a5abced26ee0d4751aa2c"
           }
         ]
@@ -333,14 +333,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-10T10:32:11.303Z",
+        "fetchedAt": "2026-09-10T15:32:16.156Z",
         "records": 52,
         "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-7",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-03",
-            "fetchedAt": "2026-09-10T10:32:11.303Z",
+            "fetchedAt": "2026-09-10T15:32:16.156Z",
             "bodySha256": "90016b5d5cd6d7c6293900f2a3c11eddf5240f9aac16c583d99f617a668109d8"
           }
         ]
@@ -370,7 +370,7 @@
       },
       {
         "sourceId": "football-data-primary",
-        "status": "ok",
+        "status": "cached",
         "stale": false,
         "error": null,
         "fetchedAt": "2026-09-10T10:32:15.010Z",
@@ -465,7 +465,7 @@
   },
   "ledger": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-10T10:32:16.784Z",
+    "generatedAt": "2026-09-10T15:32:16.527Z",
     "predictionCount": 490,
     "resultVersionCount": 54,
     "retractionVersionCount": 0,
@@ -774,10 +774,10 @@
     "predictiveAdvantage": "not_established"
   },
   "daily": {
-    "startedAt": "2026-09-10T10:31:59.795Z",
-    "createdPredictions": 77,
-    "createdResults": 9,
-    "createdSettlements": 63,
+    "startedAt": "2026-09-10T15:32:00.346Z",
+    "createdPredictions": 0,
+    "createdResults": 0,
+    "createdSettlements": 0,
     "createdRetractions": 0,
     "skipped": [
       {
@@ -813,12 +813,32 @@
         "reason": "outside_registered_forecast_window"
       },
       {
+        "eventId": "500:1479955",
+        "reason": "sales_closed"
+      },
+      {
         "eventId": "500:1479905",
-        "reason": "complete_market_required_for_matched_forecast_batch"
+        "reason": "sales_closed"
+      },
+      {
+        "eventId": "500:1479934",
+        "reason": "sales_closed"
       },
       {
         "eventId": "500:1480028",
-        "reason": "complete_market_required_for_matched_forecast_batch"
+        "reason": "sales_closed"
+      },
+      {
+        "eventId": "500:1480089",
+        "reason": "sales_closed"
+      },
+      {
+        "eventId": "500:1438066",
+        "reason": "sales_closed"
+      },
+      {
+        "eventId": "500:1479260",
+        "reason": "sales_closed"
       },
       {
         "eventId": "500:1415923",
@@ -854,11 +874,11 @@
       },
       {
         "eventId": "espn:401879282",
-        "reason": "outside_registered_forecast_window"
+        "reason": "complete_market_required_for_matched_forecast_batch"
       },
       {
         "eventId": "espn:401879278",
-        "reason": "outside_registered_forecast_window"
+        "reason": "complete_market_required_for_matched_forecast_batch"
       },
       {
         "eventId": "espn:401879280",
@@ -906,14 +926,14 @@
       }
     ],
     "errors": [],
-    "finishedAt": "2026-09-10T10:32:16.830Z",
+    "finishedAt": "2026-09-10T15:32:26.081Z",
     "status": "ok"
   },
   "promotion": {
     "schemaVersion": 1,
     "protocolId": "lottery-research-v1-20260906",
     "protocolHash": "4e3d22f8ce0df7f18bfecce5b9eebdf9ec6fc13f2df57a770c751a2d17e749c3",
-    "generatedAt": "2026-09-10T10:32:16.790Z",
+    "generatedAt": "2026-09-10T15:32:16.530Z",
     "status": "COLLECTING_PROSPECTIVE_EVIDENCE",
     "eligible": false,
     "researchEvidenceEligible": false,
@@ -16306,7 +16326,7 @@
     ]
   },
   "numberTournament": {
-    "generatedAt": "2026-09-10T02:39:42.701Z",
+    "generatedAt": "2026-09-10T10:44:47.378Z",
     "status": "EXPLORATORY_ONLY_NO_PREDICTIVE_ADVANTAGE_ESTABLISHED",
     "reproducibility": "node scripts/evaluate-number-strategies.js; offline bundled historical snapshots; fixed protocol and seeds; generatedAt is metadata only.",
     "protocol": {
@@ -407850,7 +407870,7 @@
   ],
   "ruleWatch": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-10T10:32:16.815Z",
+    "generatedAt": "2026-09-10T15:32:16.555Z",
     "status": "needs_review",
     "sourceCount": 11,
     "failedCount": 0,
@@ -407862,17 +407882,17 @@
         "sourceId": "fj-jc-payout",
         "url": "https://www.fjtc.com.cn/2024-04/01/content_31550891.htm",
         "publisher": "福建省体育彩票管理中心",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:32.205Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:32.205Z",
-        "lastSuccessfulBodySha256": "06f2611ff6a78b32935f5bebcd46fe22ebdcce82d38edaf6267c3ac30137b59c",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:16.557Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:16.557Z",
+        "lastSuccessfulBodySha256": "d5b3ffa9a01640c4ccb65b4b58161c89423e34e2cb836660dcd876caed8627e0",
         "initialBodySha256": "19e79564f829f8f0b123daa65929002110cba3200c8cebc0cda8032440572d8f",
-        "previousBodySha256": "c26ba1a8e50d34b86bc3ed934858d5b3d379c3d120c857cbedccf9fb2d5ecdf7",
+        "previousBodySha256": "06f2611ff6a78b32935f5bebcd46fe22ebdcce82d38edaf6267c3ac30137b59c",
         "changeStatus": "needs_review",
         "reviewRequired": true,
         "error": null,
-        "observedBodySha256": "06f2611ff6a78b32935f5bebcd46fe22ebdcce82d38edaf6267c3ac30137b59c",
+        "observedBodySha256": "d5b3ffa9a01640c4ccb65b4b58161c89423e34e2cb836660dcd876caed8627e0",
         "httpStatus": 200,
         "finalUrl": "https://www.fjtc.com.cn/2024-04/01/content_31550891.htm",
         "contentType": "text/html",
@@ -407884,17 +407904,17 @@
         "sourceId": "fj-jc-football",
         "url": "https://www.fjtc.com.cn/2024-04/01/content_31550872.htm",
         "publisher": "福建省体育彩票管理中心",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:32.213Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:32.213Z",
-        "lastSuccessfulBodySha256": "ec4f063c53017a3579fc501fcf08c2cc0a28c23525b74911ac22143c14eadfc9",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:16.560Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:16.560Z",
+        "lastSuccessfulBodySha256": "f121d01971176035cee1114e711a08ee37a50bb4d72540408e1433d40a3daab0",
         "initialBodySha256": "a08c000892d478b749731d080c6c4952932b231cb3ef0c19feb2e81e0bf3c430",
-        "previousBodySha256": "739b61d6862d1cb3a77baa2fc85555730ca98ebd6ef3a56897d3d0256d3b31e9",
+        "previousBodySha256": "ec4f063c53017a3579fc501fcf08c2cc0a28c23525b74911ac22143c14eadfc9",
         "changeStatus": "needs_review",
         "reviewRequired": true,
         "error": null,
-        "observedBodySha256": "ec4f063c53017a3579fc501fcf08c2cc0a28c23525b74911ac22143c14eadfc9",
+        "observedBodySha256": "f121d01971176035cee1114e711a08ee37a50bb4d72540408e1433d40a3daab0",
         "httpStatus": 200,
         "finalUrl": "https://www.fjtc.com.cn/2024-04/01/content_31550872.htm",
         "contentType": "text/html",
@@ -407906,17 +407926,17 @@
         "sourceId": "fj-jc-basketball",
         "url": "https://www.fjtc.com.cn/2024-04/01/content_31550877.htm",
         "publisher": "福建省体育彩票管理中心",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:32.216Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:32.216Z",
-        "lastSuccessfulBodySha256": "7fe0439b0f667cb7b32a133fb69603ce1283ef02a81c4cd642f407295d3a44c2",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:16.561Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:16.561Z",
+        "lastSuccessfulBodySha256": "742f022240c64dd36edb07853a795c4a450d8b781ad471e69a2c7ed2b5b8a856",
         "initialBodySha256": "0749c56480724d1009e8a36cc75edd388cb0bacbb8e904098ed459ee1a6b5d4e",
-        "previousBodySha256": "1d51298bc817df5c3275683c6f9c2f19bf085360c78de09df0d066344176900a",
+        "previousBodySha256": "7fe0439b0f667cb7b32a133fb69603ce1283ef02a81c4cd642f407295d3a44c2",
         "changeStatus": "needs_review",
         "reviewRequired": true,
         "error": null,
-        "observedBodySha256": "7fe0439b0f667cb7b32a133fb69603ce1283ef02a81c4cd642f407295d3a44c2",
+        "observedBodySha256": "742f022240c64dd36edb07853a795c4a450d8b781ad471e69a2c7ed2b5b8a856",
         "httpStatus": 200,
         "finalUrl": "https://www.fjtc.com.cn/2024-04/01/content_31550877.htm",
         "contentType": "text/html",
@@ -407928,10 +407948,10 @@
         "sourceId": "beijing-sp",
         "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043167/index.html",
         "publisher": "北京市体育局",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:32.219Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:32.219Z",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:16.564Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:16.564Z",
         "lastSuccessfulBodySha256": "381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500",
         "initialBodySha256": "381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500",
         "previousBodySha256": "381a76ad1a1a12a683452d0114d0a81dcd2f463876b70231d034455edf1ca500",
@@ -407952,10 +407972,10 @@
         "sourceId": "beijing-return",
         "url": "https://tyj.beijing.gov.cn/bjsports/qaknowledge/326043164/index.html",
         "publisher": "北京市体育局",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:36.107Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:36.107Z",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:20.067Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:20.067Z",
         "lastSuccessfulBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
         "initialBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
         "previousBodySha256": "29bde3fad3dbf9e4134be78b1e9f0acc10783acae74e24fc82cdea2efec3d796",
@@ -407976,34 +407996,32 @@
         "sourceId": "js-dlt-2026",
         "url": "https://www.js-lottery.com/wfzq/dlt/wfjs/cms/post-146354.html",
         "publisher": "江苏省体育彩票管理中心",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:36.188Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:36.188Z",
-        "lastSuccessfulBodySha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:20.946Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:20.946Z",
+        "lastSuccessfulBodySha256": "a2869fa08b22b46eafe02f7bc394199b14b97bb834a7c05d047a6b7b8457ddc6",
         "initialBodySha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
         "previousBodySha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
-        "changeStatus": "reviewed_exact_body",
-        "reviewRequired": false,
+        "changeStatus": "needs_review",
+        "reviewRequired": true,
         "error": null,
-        "observedBodySha256": "41603e206e91821756a6bad19cb04cc2a15d3ec3c42c93bc45d9bba6c8319726",
+        "observedBodySha256": "a2869fa08b22b46eafe02f7bc394199b14b97bb834a7c05d047a6b7b8457ddc6",
         "httpStatus": 200,
         "finalUrl": "https://www.js-lottery.com/wfzq/dlt/wfjs/cms/post-146354.html",
         "contentType": "text/html; charset=utf-8",
         "bodyBytes": 109939,
-        "comparisonStatus": "unchanged",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
-        "reviewedAt": "2026-09-05T18:49:39.951Z",
-        "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
+        "comparisonStatus": "body_changed",
+        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
       },
       {
         "sourceId": "js-dlt-effective",
         "url": "https://www.js-lottery.com/tzgg/tzgg/cms/post-146276.html",
         "publisher": "江苏省体育彩票管理中心",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:37.032Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:37.032Z",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:21.520Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:21.520Z",
         "lastSuccessfulBodySha256": "3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9",
         "initialBodySha256": "3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9",
         "previousBodySha256": "3570782e7f285709b5f22218716bd5f391c8bde196ff5d006d7ba59de53d98d9",
@@ -408024,10 +408042,10 @@
         "sourceId": "sport-policy-2020",
         "url": "https://www.sport.gov.cn/gdnps/files/c28047814/28048342.pdf",
         "publisher": "财政部、国家体育总局",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:38.097Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:38.097Z",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:21.526Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:21.526Z",
         "lastSuccessfulBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
         "initialBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
         "previousBodySha256": "050ff38a8693a6d1e2a4d9cbd3e99c2f508d2326898a187ce026c75fadfc0bc0",
@@ -408048,10 +408066,10 @@
         "sourceId": "sport-policy-2019",
         "url": "https://www.sport.gov.cn/cpzx/n5656/c897408/content.html",
         "publisher": "国家体育总局体育彩票管理中心",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:38.208Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:38.208Z",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:22.614Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:22.614Z",
         "lastSuccessfulBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
         "initialBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
         "previousBodySha256": "b8269f1a91d1b1f7bde893d2272fdd7589e925ad96da2155230e71d092f9bef9",
@@ -408072,39 +408090,41 @@
         "sourceId": "js-sfc-rx9",
         "url": "https://www.js-lottery.com/wfzq/ctzq/wfjs/cms/post-49203.html",
         "publisher": "江苏省体育彩票管理中心",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:40.436Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:40.436Z",
-        "lastSuccessfulBodySha256": "713a7d5e09248fddc0ccd103bb233e2ead312dba73ce31a3570ae61b5c80e189",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:23.098Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:23.098Z",
+        "lastSuccessfulBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
         "initialBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
-        "previousBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
-        "changeStatus": "needs_review",
-        "reviewRequired": true,
+        "previousBodySha256": "713a7d5e09248fddc0ccd103bb233e2ead312dba73ce31a3570ae61b5c80e189",
+        "changeStatus": "reviewed_exact_body",
+        "reviewRequired": false,
         "error": null,
-        "observedBodySha256": "713a7d5e09248fddc0ccd103bb233e2ead312dba73ce31a3570ae61b5c80e189",
+        "observedBodySha256": "94f9e317a72a0379be67eb914ee3296d25c3bb39fe29c3eaed101b31552a85e0",
         "httpStatus": 200,
         "finalUrl": "https://www.js-lottery.com/wfzq/ctzq/wfjs/cms/post-49203.html",
         "contentType": "text/html; charset=utf-8",
-        "bodyBytes": 78857,
+        "bodyBytes": 78864,
         "comparisonStatus": "body_changed",
-        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules."
+        "changeCaveat": "Raw-byte differences may be navigation, timestamps or scripts; human review is required before changing registered rules.",
+        "reviewedAt": "2026-09-05T18:49:39.951Z",
+        "reviewScope": "Exact archived source bytes only; pending contracts are not promoted"
       },
       {
         "sourceId": "fj-sfc-cancel",
         "url": "https://www.fjtc.com.cn/2013-07/03/content_31607945.htm",
         "publisher": "福建省体育彩票管理中心刊载中国体育报解释",
-        "status": "cached",
-        "cached": true,
-        "lastAttemptAt": "2026-09-09T15:31:40.558Z",
-        "lastSuccessfulFetchAt": "2026-09-09T15:31:40.558Z",
-        "lastSuccessfulBodySha256": "7bcc55c396d6e8da29e49f33e35c23e8f16b5bd62f6f7c5068cc285d1a5bbfbe",
+        "status": "ok",
+        "cached": false,
+        "lastAttemptAt": "2026-09-10T15:32:23.912Z",
+        "lastSuccessfulFetchAt": "2026-09-10T15:32:23.912Z",
+        "lastSuccessfulBodySha256": "0c52975a4e7eb86ea3ec94554818fce3ed1d1db400e22e0fd918e05aebc435f9",
         "initialBodySha256": "72aea23ac5f16adc65cbd39237f1df28875732ba174aec1bbae02476b61c0417",
-        "previousBodySha256": "1a40c7c5d81607ec40e2d9c67f6ed35b9c69fe8149836fa45ff215c5ee96bc80",
+        "previousBodySha256": "7bcc55c396d6e8da29e49f33e35c23e8f16b5bd62f6f7c5068cc285d1a5bbfbe",
         "changeStatus": "needs_review",
         "reviewRequired": true,
         "error": null,
-        "observedBodySha256": "7bcc55c396d6e8da29e49f33e35c23e8f16b5bd62f6f7c5068cc285d1a5bbfbe",
+        "observedBodySha256": "0c52975a4e7eb86ea3ec94554818fce3ed1d1db400e22e0fd918e05aebc435f9",
         "httpStatus": 200,
         "finalUrl": "https://www.fjtc.com.cn/2013-07/03/content_31607945.htm",
         "contentType": "text/html",
