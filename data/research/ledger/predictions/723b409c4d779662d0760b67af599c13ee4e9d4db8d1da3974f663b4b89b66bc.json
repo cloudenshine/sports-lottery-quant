@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "723b409c4d779662d0760b67af599c13ee4e9d4db8d1da3974f663b4b89b66bc",
+  "recordedAt": "2026-09-11T10:31:29.100Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1420403",
+      "kickoffAt": "2026-09-12T14:00:00.000Z",
+      "homeTeam": "伯恩茅斯",
+      "awayTeam": "布伦特",
+      "competition": "英超",
+      "odds": {
+        "home": 2.33,
+        "draw": 3.42,
+        "away": 2.45
+      },
+      "sourceEventId": "1420403"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-11T10:31:20.627Z",
+      "bodySha256": "36984dc07e82ba8db5f0e57c342891fec02717cd72ed2c7a476fbb796ffdb1f5"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.40872213916743877,
+        0.26321008753443903,
+        0.3280677732981222
+      ],
+      "trainingCutoff": "2026-09-11T10:31:28.472Z",
+      "trainingCount": 12,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-11T10:31:20.627Z",
+    "paperTrade": null,
+    "batchId": "5c6c8602724ca7359fcd26165b5f4d6870fef2eca97a62f91b9ae729ee1870d7"
+  }
+}

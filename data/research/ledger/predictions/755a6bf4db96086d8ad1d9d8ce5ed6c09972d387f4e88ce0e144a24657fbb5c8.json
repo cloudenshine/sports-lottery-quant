@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "755a6bf4db96086d8ad1d9d8ce5ed6c09972d387f4e88ce0e144a24657fbb5c8",
+  "recordedAt": "2026-09-11T10:31:29.318Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1414217",
+      "kickoffAt": "2026-09-12T16:00:00.000Z",
+      "homeTeam": "拉齐奥",
+      "awayTeam": "AC米兰",
+      "competition": "意甲",
+      "odds": {
+        "home": 3.35,
+        "draw": 3.1,
+        "away": 1.97
+      },
+      "sourceEventId": "1414217"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-11T10:31:20.627Z",
+      "bodySha256": "36984dc07e82ba8db5f0e57c342891fec02717cd72ed2c7a476fbb796ffdb1f5"
+    },
+    "prediction": {
+      "modelId": "market",
+      "version": "1.0.0",
+      "probabilities": [
+        0.2644696100296646,
+        0.2857978043868956,
+        0.4497325855834398
+      ],
+      "trainingCutoff": "2026-09-11T10:31:28.472Z",
+      "trainingCount": 15,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-11T10:31:20.627Z",
+    "paperTrade": null,
+    "batchId": "4865922caf5832193a8f34e25bff25101d4c67306fb9673f9d35f8b9de268f55"
+  }
+}

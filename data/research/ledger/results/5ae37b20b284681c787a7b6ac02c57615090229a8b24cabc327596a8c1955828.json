@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "5ae37b20b284681c787a7b6ac02c57615090229a8b24cabc327596a8c1955828",
+  "recordedAt": "2026-09-11T10:31:29.967Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1438066",
+      "kickoffAt": "2026-09-10T19:15:00.000Z",
+      "homeTeam": "阿马多拉",
+      "awayTeam": "布拉加",
+      "competition": "葡超",
+      "odds": {
+        "home": 5.95,
+        "draw": 4.05,
+        "away": 1.4
+      },
+      "sourceEventId": "1438066",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-10",
+      "fetchedAt": "2026-09-11T10:31:21.245Z",
+      "bodySha256": "1542321928c320af8f7c150ab4d0144c7fc6e353ddff1afb4536ed70e3b0c72c"
+    },
+    "observedAt": "2026-09-11T10:31:21.245Z",
+    "revisionReason": null
+  }
+}

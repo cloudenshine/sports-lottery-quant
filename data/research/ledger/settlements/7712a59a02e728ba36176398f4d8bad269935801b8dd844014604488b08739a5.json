@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "7712a59a02e728ba36176398f4d8bad269935801b8dd844014604488b08739a5",
+  "recordedAt": "2026-09-11T10:31:30.138Z",
+  "payload": {
+    "predictionId": "42a243949eb6321e8e15e2de393cce1824da12cd242c7b41ddd563a4622cffa2",
+    "resultId": "381110235cd7927c034f2d401bde6a724ea9e727d3a5515cc1b0d3d349a50dd7",
+    "status": "scored_no_trade",
+    "scoring": {
+      "outcome": "A",
+      "logLoss": 0.9752798901847444,
+      "logLossStatus": "finite",
+      "brier": 0.586749695339636
+    },
+    "paper": null,
+    "ruleVerification": {
+      "verified": false
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "6ca5905b535fc0174b34f1bcab6569f669cced7865d4ab4d38d1803826f93907",
+  "recordedAt": "2026-09-11T10:31:29.374Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1428497",
+      "kickoffAt": "2026-09-12T16:30:00.000Z",
+      "homeTeam": "科隆",
+      "awayTeam": "不来梅",
+      "competition": "德甲",
+      "odds": {
+        "home": 1.92,
+        "draw": 3.56,
+        "away": 3.05
+      },
+      "sourceEventId": "1428497"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-11T10:31:20.627Z",
+      "bodySha256": "36984dc07e82ba8db5f0e57c342891fec02717cd72ed2c7a476fbb796ffdb1f5"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.42526703759671575,
+        0.20615214074651333,
+        0.36858082165677086
+      ],
+      "trainingCutoff": "2026-09-11T10:31:28.472Z",
+      "trainingCount": 10,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-11T10:31:20.627Z",
+    "paperTrade": null,
+    "batchId": "a3d5b072ca3ed192e07568898c866e76c9507439d4719ce103782b55a5d30f94"
+  }
+}

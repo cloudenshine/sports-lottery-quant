@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "381110235cd7927c034f2d401bde6a724ea9e727d3a5515cc1b0d3d349a50dd7",
+  "recordedAt": "2026-09-11T10:31:29.962Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1480089",
+      "kickoffAt": "2026-09-10T19:00:00.000Z",
+      "homeTeam": "斯拉维亚",
+      "awayTeam": "朗斯",
+      "competition": "欧冠",
+      "odds": {
+        "home": 2.55,
+        "draw": 3.15,
+        "away": 2.38
+      },
+      "sourceEventId": "1480089",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-10",
+      "fetchedAt": "2026-09-11T10:31:21.245Z",
+      "bodySha256": "1542321928c320af8f7c150ab4d0144c7fc6e353ddff1afb4536ed70e3b0c72c"
+    },
+    "observedAt": "2026-09-11T10:31:21.245Z",
+    "revisionReason": null
+  }
+}

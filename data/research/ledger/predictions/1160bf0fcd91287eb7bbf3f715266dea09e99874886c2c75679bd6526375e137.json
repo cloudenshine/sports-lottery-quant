@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "1160bf0fcd91287eb7bbf3f715266dea09e99874886c2c75679bd6526375e137",
+  "recordedAt": "2026-09-11T10:31:29.395Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1438105",
+      "kickoffAt": "2026-09-12T17:00:00.000Z",
+      "homeTeam": "卡萨皮亚",
+      "awayTeam": "波尔图",
+      "competition": "葡超",
+      "odds": {
+        "home": 12,
+        "draw": 5.42,
+        "away": 1.16
+      },
+      "sourceEventId": "1438105"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-11T10:31:20.627Z",
+      "bodySha256": "36984dc07e82ba8db5f0e57c342891fec02717cd72ed2c7a476fbb796ffdb1f5"
+    },
+    "prediction": {
+      "modelId": "historical",
+      "version": "1.0.0",
+      "probabilities": [
+        0.4166666666666667,
+        0.3333333333333333,
+        0.25
+      ],
+      "trainingCutoff": "2026-09-11T10:31:25.097Z",
+      "trainingCount": 6,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-11T10:31:20.627Z",
+    "paperTrade": null,
+    "batchId": "53353616a8a2db694d44199cf8b3f02d1a13ede9df9b6fb54af5c18f0bb03e4e"
+  }
+}

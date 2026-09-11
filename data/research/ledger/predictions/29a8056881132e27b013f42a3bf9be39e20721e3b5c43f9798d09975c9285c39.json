@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "29a8056881132e27b013f42a3bf9be39e20721e3b5c43f9798d09975c9285c39",
+  "recordedAt": "2026-09-11T10:31:29.530Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1428008",
+      "kickoffAt": "2026-09-13T12:00:00.000Z",
+      "homeTeam": "塞尔塔",
+      "awayTeam": "马拉加",
+      "competition": "西甲",
+      "odds": {
+        "home": 1.56,
+        "draw": 3.45,
+        "away": 5.05
+      },
+      "sourceEventId": "1428008"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-11T10:31:20.627Z",
+      "bodySha256": "36984dc07e82ba8db5f0e57c342891fec02717cd72ed2c7a476fbb796ffdb1f5"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.35922732591351636,
+        0.292145674879243,
+        0.3486269992072407
+      ],
+      "trainingCutoff": "2026-09-11T10:31:28.472Z",
+      "trainingCount": 14,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-11T10:31:20.627Z",
+    "paperTrade": {
+      "selectionWeights": [
+        0,
+        0,
+        1
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "288ab87c2b672e91b49baab5e21bcd0ca73420a78d7ca526cdde36587cd6482a"
+  }
+}

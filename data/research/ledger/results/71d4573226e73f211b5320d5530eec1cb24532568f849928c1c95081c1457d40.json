@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "71d4573226e73f211b5320d5530eec1cb24532568f849928c1c95081c1457d40",
+  "recordedAt": "2026-09-11T10:31:29.985Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1479260",
+      "kickoffAt": "2026-09-11T00:30:00.000Z",
+      "homeTeam": "德尔瓦耶",
+      "awayTeam": "弗拉门戈",
+      "competition": "解放者杯",
+      "odds": {
+        "home": 3,
+        "draw": 2.6,
+        "away": 2.43
+      },
+      "sourceEventId": "1479260",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-10",
+      "fetchedAt": "2026-09-11T10:31:21.245Z",
+      "bodySha256": "1542321928c320af8f7c150ab4d0144c7fc6e353ddff1afb4536ed70e3b0c72c"
+    },
+    "observedAt": "2026-09-11T10:31:21.245Z",
+    "revisionReason": null
+  }
+}

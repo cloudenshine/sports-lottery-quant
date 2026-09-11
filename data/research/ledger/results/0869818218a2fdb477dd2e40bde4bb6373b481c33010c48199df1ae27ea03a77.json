@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "0869818218a2fdb477dd2e40bde4bb6373b481c33010c48199df1ae27ea03a77",
+  "recordedAt": "2026-09-11T10:31:29.954Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1479934",
+      "kickoffAt": "2026-09-10T19:00:00.000Z",
+      "homeTeam": "科莫",
+      "awayTeam": "莱红牛",
+      "competition": "欧冠",
+      "odds": {
+        "home": 1.57,
+        "draw": 4,
+        "away": 4.12
+      },
+      "sourceEventId": "1479934",
+      "homeGoals": 4,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-10",
+      "fetchedAt": "2026-09-11T10:31:21.245Z",
+      "bodySha256": "1542321928c320af8f7c150ab4d0144c7fc6e353ddff1afb4536ed70e3b0c72c"
+    },
+    "observedAt": "2026-09-11T10:31:21.245Z",
+    "revisionReason": null
+  }
+}
