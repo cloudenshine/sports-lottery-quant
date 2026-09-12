@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "d79aeeda6d01b62187ae093e334e407b55a163e12adbf92e0c55932b6724b135",
+  "recordedAt": "2026-09-12T15:32:32.021Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1362772",
+      "kickoffAt": "2026-09-11T17:00:00.000Z",
+      "homeTeam": "赫根",
+      "awayTeam": "米亚尔比",
+      "competition": "瑞超",
+      "odds": {
+        "home": 1.38,
+        "draw": 4.5,
+        "away": 5.5
+      },
+      "sourceEventId": "1362772",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
+      "fetchedAt": "2026-09-12T15:32:24.895Z",
+      "bodySha256": "97362932d3a4164b0afc6a1acbfd722c3477442b98104b562095b1f70ee4cf86"
+    },
+    "observedAt": "2026-09-12T15:32:24.895Z",
+    "revisionReason": null
+  }
+}

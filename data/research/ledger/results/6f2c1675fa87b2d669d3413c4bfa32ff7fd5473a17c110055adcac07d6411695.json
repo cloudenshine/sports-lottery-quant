@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "6f2c1675fa87b2d669d3413c4bfa32ff7fd5473a17c110055adcac07d6411695",
+  "recordedAt": "2026-09-12T15:32:32.090Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1415112",
+      "kickoffAt": "2026-09-11T18:45:00.000Z",
+      "homeTeam": "雷恩",
+      "awayTeam": "马赛",
+      "competition": "法甲",
+      "odds": {
+        "home": 1.87,
+        "draw": 3.65,
+        "away": 3.12
+      },
+      "sourceEventId": "1415112",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
+      "fetchedAt": "2026-09-12T15:32:24.895Z",
+      "bodySha256": "97362932d3a4164b0afc6a1acbfd722c3477442b98104b562095b1f70ee4cf86"
+    },
+    "observedAt": "2026-09-12T15:32:24.895Z",
+    "revisionReason": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "029ea414f9ff937f40df7bbd4321433b1514a813fa1cebaa34e41d02c3b7b9bd",
+  "recordedAt": "2026-09-12T15:32:31.983Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1430489",
+      "kickoffAt": "2026-09-11T16:30:00.000Z",
+      "homeTeam": "纽伦堡",
+      "awayTeam": "汉诺威96",
+      "competition": "德乙",
+      "odds": {
+        "home": 2.15,
+        "draw": 3.8,
+        "away": 2.49
+      },
+      "sourceEventId": "1430489",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
+      "fetchedAt": "2026-09-12T15:32:24.895Z",
+      "bodySha256": "97362932d3a4164b0afc6a1acbfd722c3477442b98104b562095b1f70ee4cf86"
+    },
+    "observedAt": "2026-09-12T15:32:24.895Z",
+    "revisionReason": null
+  }
+}

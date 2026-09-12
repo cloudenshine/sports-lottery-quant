@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "096aa595442fd85c6d504eeda97236a2b652789ecf8736beab272bac1bc04486",
+  "recordedAt": "2026-09-12T15:32:32.058Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1428496",
+      "kickoffAt": "2026-09-11T18:30:00.000Z",
+      "homeTeam": "柏林联合",
+      "awayTeam": "沙尔克04",
+      "competition": "德甲",
+      "odds": {
+        "home": 2.15,
+        "draw": 3.25,
+        "away": 2.81
+      },
+      "sourceEventId": "1428496",
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
+      "fetchedAt": "2026-09-12T15:32:24.895Z",
+      "bodySha256": "97362932d3a4164b0afc6a1acbfd722c3477442b98104b562095b1f70ee4cf86"
+    },
+    "observedAt": "2026-09-12T15:32:24.895Z",
+    "revisionReason": null
+  }
+}

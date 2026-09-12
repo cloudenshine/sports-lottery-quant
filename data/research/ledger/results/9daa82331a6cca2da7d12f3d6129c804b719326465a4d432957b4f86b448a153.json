@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "9daa82331a6cca2da7d12f3d6129c804b719326465a4d432957b4f86b448a153",
+  "recordedAt": "2026-09-12T15:32:32.078Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1414188",
+      "kickoffAt": "2026-09-11T18:45:00.000Z",
+      "homeTeam": "威尼斯",
+      "awayTeam": "佛罗伦萨",
+      "competition": "意甲",
+      "odds": {
+        "home": 2.69,
+        "draw": 3.1,
+        "away": 2.3
+      },
+      "sourceEventId": "1414188",
+      "homeGoals": 2,
+      "awayGoals": 4,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
+      "fetchedAt": "2026-09-12T15:32:24.895Z",
+      "bodySha256": "97362932d3a4164b0afc6a1acbfd722c3477442b98104b562095b1f70ee4cf86"
+    },
+    "observedAt": "2026-09-12T15:32:24.895Z",
+    "revisionReason": null
+  }
+}

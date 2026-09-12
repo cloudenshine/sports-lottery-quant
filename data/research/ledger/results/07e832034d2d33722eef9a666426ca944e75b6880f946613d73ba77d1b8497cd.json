@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "07e832034d2d33722eef9a666426ca944e75b6880f946613d73ba77d1b8497cd",
+  "recordedAt": "2026-09-12T15:32:31.932Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1419191",
+      "kickoffAt": "2026-09-11T10:00:00.000Z",
+      "homeTeam": "京都",
+      "awayTeam": "柏太阳神",
+      "competition": "日职",
+      "odds": {
+        "home": 4.1,
+        "draw": 3.73,
+        "away": 1.62
+      },
+      "sourceEventId": "1419191",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
+      "fetchedAt": "2026-09-12T15:32:24.895Z",
+      "bodySha256": "97362932d3a4164b0afc6a1acbfd722c3477442b98104b562095b1f70ee4cf86"
+    },
+    "observedAt": "2026-09-12T15:32:24.895Z",
+    "revisionReason": null
+  }
+}

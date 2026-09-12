@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "d43272e8b174bce25b3035b664619c940bd1500f32b6bccea9b15d0e015b3e11",
+  "recordedAt": "2026-09-12T15:32:32.041Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1415944",
+      "kickoffAt": "2026-09-11T18:00:00.000Z",
+      "homeTeam": "马斯特里",
+      "awayTeam": "阿尔梅勒",
+      "competition": "荷乙",
+      "odds": {
+        "home": 2.85,
+        "draw": 3.65,
+        "away": 1.98
+      },
+      "sourceEventId": "1415944",
+      "homeGoals": 0,
+      "awayGoals": 4,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
+      "fetchedAt": "2026-09-12T15:32:24.895Z",
+      "bodySha256": "97362932d3a4164b0afc6a1acbfd722c3477442b98104b562095b1f70ee4cf86"
+    },
+    "observedAt": "2026-09-12T15:32:24.895Z",
+    "revisionReason": null
+  }
+}

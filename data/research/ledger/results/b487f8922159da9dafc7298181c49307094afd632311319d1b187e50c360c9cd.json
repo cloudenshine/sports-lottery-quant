@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "b487f8922159da9dafc7298181c49307094afd632311319d1b187e50c360c9cd",
+  "recordedAt": "2026-09-12T15:32:32.119Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1362484",
+      "kickoffAt": "2026-09-12T00:00:00.000Z",
+      "homeTeam": "科里蒂巴",
+      "awayTeam": "巴竞技",
+      "competition": "巴甲",
+      "odds": {
+        "home": 3.15,
+        "draw": 2.85,
+        "away": 2.17
+      },
+      "sourceEventId": "1362484",
+      "homeGoals": 3,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
+      "fetchedAt": "2026-09-12T15:32:24.895Z",
+      "bodySha256": "97362932d3a4164b0afc6a1acbfd722c3477442b98104b562095b1f70ee4cf86"
+    },
+    "observedAt": "2026-09-12T15:32:24.895Z",
+    "revisionReason": null
+  }
+}

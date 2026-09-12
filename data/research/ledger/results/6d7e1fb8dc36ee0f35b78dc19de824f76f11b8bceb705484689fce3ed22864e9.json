@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "6d7e1fb8dc36ee0f35b78dc19de824f76f11b8bceb705484689fce3ed22864e9",
+  "recordedAt": "2026-09-12T15:32:32.101Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1425569",
+      "kickoffAt": "2026-09-11T19:00:00.000Z",
+      "homeTeam": "西汉姆联",
+      "awayTeam": "雷克斯",
+      "competition": "英冠",
+      "odds": {
+        "home": 1.38,
+        "draw": 4.35,
+        "away": 5.75
+      },
+      "sourceEventId": "1425569",
+      "homeGoals": 6,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
+      "fetchedAt": "2026-09-12T15:32:24.895Z",
+      "bodySha256": "97362932d3a4164b0afc6a1acbfd722c3477442b98104b562095b1f70ee4cf86"
+    },
+    "observedAt": "2026-09-12T15:32:24.895Z",
+    "revisionReason": null
+  }
+}

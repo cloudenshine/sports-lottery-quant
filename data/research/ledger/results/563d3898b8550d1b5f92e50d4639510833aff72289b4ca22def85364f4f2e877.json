@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "563d3898b8550d1b5f92e50d4639510833aff72289b4ca22def85364f4f2e877",
+  "recordedAt": "2026-09-12T15:32:32.126Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1428014",
+      "kickoffAt": "2026-09-12T12:00:00.000Z",
+      "homeTeam": "桑坦德",
+      "awayTeam": "阿拉维斯",
+      "competition": "西甲",
+      "odds": {
+        "home": 2.54,
+        "draw": 3.35,
+        "away": 2.29
+      },
+      "sourceEventId": "1428014",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T15:32:24.235Z",
+      "bodySha256": "ce8ddf1fc3b060d74b03643f8a3d733cfc52fdf4fba8e975c06dc0ee21781e8f"
+    },
+    "observedAt": "2026-09-12T15:32:24.235Z",
+    "revisionReason": null
+  }
+}
