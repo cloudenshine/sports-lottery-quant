@@ -1,0 +1,485 @@
+{
+  "batchId": "a504ce89e3ae4abc967db81a8ca3fd0ec5fa3e03c4928ac72ce8779520817430",
+  "preparedAt": "2026-09-12T12:59:45.283Z",
+  "inputs": [
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1428485",
+        "sourceEventId": "1428485",
+        "kickoffAt": "2026-09-12T13:30:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "霍芬海姆",
+        "awayTeam": "斯图加特",
+        "competition": "德甲",
+        "processDate": "2026-09-12",
+        "odds": {
+          "home": 2.08,
+          "draw": 3.75,
+          "away": 2.62
+        },
+        "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": false,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-12T13:30:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-12T12:59:31.769Z",
+          "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b",
+        "observedAt": "2026-09-12T12:59:31.769Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+      },
+      "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+      "prediction": {
+        "modelId": "uniform",
+        "version": "1.0.0",
+        "probabilities": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "trainingCutoff": "2026-09-12T12:59:41.094Z",
+        "trainingCount": 10,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "a504ce89e3ae4abc967db81a8ca3fd0ec5fa3e03c4928ac72ce8779520817430"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1428485",
+        "sourceEventId": "1428485",
+        "kickoffAt": "2026-09-12T13:30:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "霍芬海姆",
+        "awayTeam": "斯图加特",
+        "competition": "德甲",
+        "processDate": "2026-09-12",
+        "odds": {
+          "home": 2.08,
+          "draw": 3.75,
+          "away": 2.62
+        },
+        "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": false,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-12T13:30:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-12T12:59:31.769Z",
+          "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b",
+        "observedAt": "2026-09-12T12:59:31.769Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+      },
+      "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+      "prediction": {
+        "modelId": "historical",
+        "version": "1.0.0",
+        "probabilities": [
+          0.4375,
+          0.125,
+          0.4375
+        ],
+        "trainingCutoff": "2026-09-12T12:59:41.094Z",
+        "trainingCount": 10,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "a504ce89e3ae4abc967db81a8ca3fd0ec5fa3e03c4928ac72ce8779520817430"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1428485",
+        "sourceEventId": "1428485",
+        "kickoffAt": "2026-09-12T13:30:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "霍芬海姆",
+        "awayTeam": "斯图加特",
+        "competition": "德甲",
+        "processDate": "2026-09-12",
+        "odds": {
+          "home": 2.08,
+          "draw": 3.75,
+          "away": 2.62
+        },
+        "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": false,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-12T13:30:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-12T12:59:31.769Z",
+          "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b",
+        "observedAt": "2026-09-12T12:59:31.769Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+      },
+      "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+      "prediction": {
+        "modelId": "poisson",
+        "version": "1.0.0",
+        "probabilities": [
+          0.366429439253483,
+          0.20652580403716284,
+          0.4270447567093542
+        ],
+        "trainingCutoff": "2026-09-12T12:59:41.094Z",
+        "trainingCount": 10,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+        ],
+        "tuning": {
+          "parameters": {
+            "shrinkage": 12,
+            "halfLifeDays": 365
+          },
+          "validationCount": 0
+        },
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "a504ce89e3ae4abc967db81a8ca3fd0ec5fa3e03c4928ac72ce8779520817430"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1428485",
+        "sourceEventId": "1428485",
+        "kickoffAt": "2026-09-12T13:30:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "霍芬海姆",
+        "awayTeam": "斯图加特",
+        "competition": "德甲",
+        "processDate": "2026-09-12",
+        "odds": {
+          "home": 2.08,
+          "draw": 3.75,
+          "away": 2.62
+        },
+        "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": false,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-12T13:30:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-12T12:59:31.769Z",
+          "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b",
+        "observedAt": "2026-09-12T12:59:31.769Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+      },
+      "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+      "prediction": {
+        "modelId": "elo",
+        "version": "1.0.0",
+        "probabilities": [
+          0.4905759695171079,
+          0.11058404907604481,
+          0.3988399814068473
+        ],
+        "trainingCutoff": "2026-09-12T12:59:41.094Z",
+        "trainingCount": 10,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Davidson draw model, home advantage 60 Elo, K=24; fixed research assumptions.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "a504ce89e3ae4abc967db81a8ca3fd0ec5fa3e03c4928ac72ce8779520817430"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1428485",
+        "sourceEventId": "1428485",
+        "kickoffAt": "2026-09-12T13:30:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "霍芬海姆",
+        "awayTeam": "斯图加特",
+        "competition": "德甲",
+        "processDate": "2026-09-12",
+        "odds": {
+          "home": 2.08,
+          "draw": 3.75,
+          "away": 2.62
+        },
+        "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": false,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-12T13:30:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-12T12:59:31.769Z",
+          "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b",
+        "observedAt": "2026-09-12T12:59:31.769Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+      },
+      "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+      "prediction": {
+        "modelId": "market",
+        "version": "1.0.0",
+        "probabilities": [
+          0.42579286314822357,
+          0.23617310809288136,
+          0.33803402875889504
+        ],
+        "trainingCutoff": "2026-09-12T12:59:41.094Z",
+        "trainingCount": 10,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "a504ce89e3ae4abc967db81a8ca3fd0ec5fa3e03c4928ac72ce8779520817430"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1428485",
+        "sourceEventId": "1428485",
+        "kickoffAt": "2026-09-12T13:30:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "霍芬海姆",
+        "awayTeam": "斯图加特",
+        "competition": "德甲",
+        "processDate": "2026-09-12",
+        "odds": {
+          "home": 2.08,
+          "draw": 3.75,
+          "away": 2.62
+        },
+        "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": false,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-12T13:30:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-12T12:59:31.769Z",
+          "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b",
+        "observedAt": "2026-09-12T12:59:31.769Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+      },
+      "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+      "prediction": {
+        "modelId": "market-power",
+        "version": "1.0.0",
+        "probabilities": [
+          0.43764037775158465,
+          0.22506051362279433,
+          0.33729910862562096
+        ],
+        "trainingCutoff": "2026-09-12T12:59:41.094Z",
+        "trainingCount": 10,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+        ],
+        "tuning": null,
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "a504ce89e3ae4abc967db81a8ca3fd0ec5fa3e03c4928ac72ce8779520817430"
+    },
+    {
+      "protocolId": "lottery-research-v1-20260906",
+      "windowId": "first-observed-72h-v1",
+      "match": {
+        "eventId": "500:1428485",
+        "sourceEventId": "1428485",
+        "kickoffAt": "2026-09-12T13:30:00.000Z",
+        "kickoffPrecision": "minute",
+        "homeTeam": "霍芬海姆",
+        "awayTeam": "斯图加特",
+        "competition": "德甲",
+        "processDate": "2026-09-12",
+        "odds": {
+          "home": 2.08,
+          "draw": 3.75,
+          "away": 2.62
+        },
+        "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+        "oddsKind": "china-jingcai-1x2-secondary-publisher",
+        "singleBetAvailable": false,
+        "salesOpen": true,
+        "stopSellingAt": "2026-09-12T13:30:00.000Z",
+        "source": {
+          "sourceId": "500-jingcai",
+          "sourceUrl": "https://trade.500.com/jczq/",
+          "fetchedAt": "2026-09-12T12:59:31.769Z",
+          "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+        },
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b",
+        "observedAt": "2026-09-12T12:59:31.769Z",
+        "status": "scheduled",
+        "stale": false
+      },
+      "source": {
+        "sourceId": "500-jingcai",
+        "sourceUrl": "https://trade.500.com/jczq/",
+        "fetchedAt": "2026-09-12T12:59:31.769Z",
+        "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+      },
+      "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+      "prediction": {
+        "modelId": "ensemble",
+        "version": "1.0.0",
+        "probabilities": [
+          0.42579286314822357,
+          0.23617310809288136,
+          0.33803402875889504
+        ],
+        "trainingCutoff": "2026-09-12T12:59:41.094Z",
+        "trainingCount": 10,
+        "assumptions": [
+          "Competition-specific history only; results must be available strictly before kickoff.",
+          "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+          "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+          "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+        ],
+        "tuning": {
+          "parameters": {
+            "shrinkage": 12,
+            "halfLifeDays": 365
+          },
+          "validationCount": 0,
+          "ensemble": {
+            "probabilities": [
+              0.42579286314822357,
+              0.23617310809288136,
+              0.33803402875889504
+            ],
+            "marketWeight": 1,
+            "validationCount": 10
+          }
+        },
+        "evidenceClass": "retrospective",
+        "status": "available"
+      },
+      "paperTrade": null,
+      "batchId": "a504ce89e3ae4abc967db81a8ca3fd0ec5fa3e03c4928ac72ce8779520817430"
+    }
+  ]
+}

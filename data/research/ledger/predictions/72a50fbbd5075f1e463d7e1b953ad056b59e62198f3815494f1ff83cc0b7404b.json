@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "72a50fbbd5075f1e463d7e1b953ad056b59e62198f3815494f1ff83cc0b7404b",
+  "recordedAt": "2026-09-12T12:59:45.632Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1416903",
+      "kickoffAt": "2026-09-14T18:45:00.000Z",
+      "homeTeam": "圣旺红星",
+      "awayTeam": "梅斯",
+      "competition": "法乙",
+      "odds": {
+        "home": 2.4,
+        "draw": 3.05,
+        "away": 2.6
+      },
+      "sourceEventId": "1416903"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.37096084511275645,
+        0.24934030670908142,
+        0.3796988481781622
+      ],
+      "trainingCutoff": "2026-09-11T10:31:28.472Z",
+      "trainingCount": 2,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+    "paperTrade": null,
+    "batchId": "c80232ecc158be04fb59fb9f581779f5ba3322a18aee97d51b30cc0e3d6055b3"
+  }
+}

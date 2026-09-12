@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "5678577b6ad9a710b32aac627621619a0a1340c22ff4637cac9411afa68c9601",
+  "recordedAt": "2026-09-12T12:59:45.840Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1419150",
+      "kickoffAt": "2026-09-12T10:00:00.000Z",
+      "homeTeam": "大阪钢巴",
+      "awayTeam": "东京FC",
+      "competition": "日职",
+      "odds": {
+        "home": 3.47,
+        "draw": 3.5,
+        "away": 1.8
+      },
+      "sourceEventId": "1419150",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "observedAt": "2026-09-12T12:59:31.769Z",
+    "revisionReason": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "3f0d90b27203c1c5adc1f9896f103bf13f1b11cd0cb55d7f3d2ddf3f6e5a93a2",
+  "recordedAt": "2026-09-12T12:59:45.833Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1418962",
+      "kickoffAt": "2026-09-12T10:00:00.000Z",
+      "homeTeam": "广岛三箭",
+      "awayTeam": "大阪樱花",
+      "competition": "日职",
+      "odds": {
+        "home": 1.51,
+        "draw": 4,
+        "away": 4.6
+      },
+      "sourceEventId": "1418962",
+      "homeGoals": 6,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "observedAt": "2026-09-12T12:59:31.769Z",
+    "revisionReason": null
+  }
+}

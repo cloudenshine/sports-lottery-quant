@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "e0525a541a9696680dcfc6ca23b12530a52c9e2306d3b27151eff040ca71f27e",
+  "recordedAt": "2026-09-12T12:59:45.521Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1489035",
+      "kickoffAt": "2026-09-14T15:00:00.000Z",
+      "homeTeam": "国际图尔",
+      "awayTeam": "瓦萨",
+      "competition": "芬兰超级联赛",
+      "odds": {
+        "home": 1.55,
+        "draw": 3.65,
+        "away": 4.75
+      },
+      "sourceEventId": "1489035"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "prediction": {
+      "modelId": "historical",
+      "version": "1.0.0",
+      "probabilities": [
+        0.375,
+        0.375,
+        0.25
+      ],
+      "trainingCutoff": "2026-09-07T10:32:15.827Z",
+      "trainingCount": 2,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+    "paperTrade": null,
+    "batchId": "efbf36d6541568c938b6f93ea0514513b91d10a7e0922af107219be7302d039e"
+  }
+}

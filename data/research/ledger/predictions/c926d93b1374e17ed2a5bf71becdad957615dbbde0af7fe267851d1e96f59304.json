@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "c926d93b1374e17ed2a5bf71becdad957615dbbde0af7fe267851d1e96f59304",
+  "recordedAt": "2026-09-12T12:59:45.649Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1420409",
+      "kickoffAt": "2026-09-14T19:00:00.000Z",
+      "homeTeam": "利兹联",
+      "awayTeam": "纽卡斯尔",
+      "competition": "英超",
+      "odds": {
+        "home": 2.15,
+        "draw": 3.3,
+        "away": 2.77
+      },
+      "sourceEventId": "1420409"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "prediction": {
+      "modelId": "uniform",
+      "version": "1.0.0",
+      "probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "trainingCutoff": "2026-09-12T12:59:41.094Z",
+      "trainingCount": 12,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+    "paperTrade": {
+      "selectionWeights": [
+        0,
+        1,
+        0
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "752ce3c151bdd51d06bb65f22c06348ec107a61e3a63d266baa829500996b428"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "2ec9d018246a1c1ae753b640878a2c643906eb18da838f937dcb597723c1dac4",
+  "recordedAt": "2026-09-12T12:59:45.693Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1438102",
+      "kickoffAt": "2026-09-14T19:45:00.000Z",
+      "homeTeam": "布拉加",
+      "awayTeam": "埃斯托里",
+      "competition": "葡超",
+      "odds": {
+        "home": 1.35,
+        "draw": 4.3,
+        "away": 6.4
+      },
+      "sourceEventId": "1438102"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.45120100890841724,
+        0.3023082737390324,
+        0.24649071735255046
+      ],
+      "trainingCutoff": "2026-09-12T12:59:41.094Z",
+      "trainingCount": 6,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+    "paperTrade": null,
+    "batchId": "d3a8a56b8c71c09aa29b253060127f4b079fea3ed1a400f5a56c239955b664cc"
+  }
+}

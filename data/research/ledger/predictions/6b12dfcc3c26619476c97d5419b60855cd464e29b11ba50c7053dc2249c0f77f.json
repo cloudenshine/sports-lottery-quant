@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "6b12dfcc3c26619476c97d5419b60855cd464e29b11ba50c7053dc2249c0f77f",
+  "recordedAt": "2026-09-12T12:59:45.352Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1364311",
+      "kickoffAt": "2026-09-12T16:00:00.000Z",
+      "homeTeam": "罗森博格",
+      "awayTeam": "特罗姆瑟",
+      "competition": "挪超",
+      "odds": {
+        "home": 1.54,
+        "draw": 4,
+        "away": 4.35
+      },
+      "sourceEventId": "1364311"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "prediction": {
+      "modelId": "ensemble",
+      "version": "1.0.0",
+      "probabilities": [
+        0.5750355266201791,
+        0.22138867774876897,
+        0.20357579563105196
+      ],
+      "trainingCutoff": "2026-09-12T12:59:41.094Z",
+      "trainingCount": 4,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+    "paperTrade": null,
+    "batchId": "b748e52cd64109688c923a2011057b653f9731c96cb621e00d88cac0e3a47acf"
+  }
+}

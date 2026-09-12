@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "704b9727424deedb97e77765d67580333ab7f2c3dc28bb89285e24d1822e2362",
+  "recordedAt": "2026-09-12T12:59:45.553Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1414184",
+      "kickoffAt": "2026-09-14T16:30:00.000Z",
+      "homeTeam": "科莫",
+      "awayTeam": "帕尔马",
+      "competition": "意甲",
+      "odds": {
+        "home": 1.14,
+        "draw": 5.8,
+        "away": 12.5
+      },
+      "sourceEventId": "1414184"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "prediction": {
+      "modelId": "market-power",
+      "version": "1.0.0",
+      "probabilities": [
+        0.848230501965427,
+        0.10988836169047703,
+        0.04188113634409594
+      ],
+      "trainingCutoff": "2026-09-12T12:59:41.094Z",
+      "trainingCount": 15,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+    "paperTrade": null,
+    "batchId": "b5c5dff6e3e270c03c0de2547734ba9506e432f93922a70743d6981bd10f7aa7"
+  }
+}

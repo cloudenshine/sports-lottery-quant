@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "00749e88c2ddc655d2eabe74e8e40b1598a4ec9568735e48dab193d18bbe855c",
+  "recordedAt": "2026-09-12T12:59:45.826Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1373206",
+      "kickoffAt": "2026-09-12T07:30:00.000Z",
+      "homeTeam": "蔚山现代",
+      "awayTeam": "仁川联",
+      "competition": "韩职",
+      "odds": {
+        "home": 1.93,
+        "draw": 3.2,
+        "away": 3.35
+      },
+      "sourceEventId": "1373206",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "observedAt": "2026-09-12T12:59:31.769Z",
+    "revisionReason": null
+  }
+}

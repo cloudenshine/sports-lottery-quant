@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "d1ac3fd38ab9eac1999ebcf444744ce393df790462f1dc9f4c125bab4e5780db",
+  "recordedAt": "2026-09-12T12:59:45.820Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1373191",
+      "kickoffAt": "2026-09-12T07:30:00.000Z",
+      "homeTeam": "全北现代",
+      "awayTeam": "首尔FC",
+      "competition": "韩职",
+      "odds": {
+        "home": 3.05,
+        "draw": 3.15,
+        "away": 2.07
+      },
+      "sourceEventId": "1373191",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "observedAt": "2026-09-12T12:59:31.769Z",
+    "revisionReason": null
+  }
+}

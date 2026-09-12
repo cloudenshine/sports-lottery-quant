@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "61057fbffaa25adfcfe5619483dbb6dc828b1171aa490f4fd0deddd89ccb67bd",
+  "recordedAt": "2026-09-12T12:59:45.459Z",
+  "payload": {
+    "protocolId": "lottery-research-v1-20260906",
+    "windowId": "first-observed-72h-v1",
+    "match": {
+      "eventId": "500:1420414",
+      "kickoffAt": "2026-09-13T15:30:00.000Z",
+      "homeTeam": "曼联",
+      "awayTeam": "曼城",
+      "competition": "英超",
+      "odds": {
+        "home": 2.85,
+        "draw": 3.6,
+        "away": 2
+      },
+      "sourceEventId": "1420414"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-12T12:59:31.769Z",
+      "bodySha256": "f4defc1a9b1dcc8e6d9c84e2b592961e5c18597f687de6b8650d90380c91f86b"
+    },
+    "prediction": {
+      "modelId": "poisson",
+      "version": "1.0.0",
+      "probabilities": [
+        0.4789627238080948,
+        0.23333520628054802,
+        0.2877020699113572
+      ],
+      "trainingCutoff": "2026-09-12T12:59:41.094Z",
+      "trainingCount": 12,
+      "assumptions": [
+        "Competition-specific history only; results must be available strictly before kickoff.",
+        "Missing result publication timestamp assumes kickoff + 3 hours (date-only: next day); retrospective research only.",
+        "Independent goal counts; empirical shrinkage attack/defence ratios; rates bounded [0.05,15]; no injury or lineup covariates.",
+        "Prospective receipt uses only results actually fetched before this forecast; zero-history models use explicit priors."
+      ]
+    },
+    "oddsObservedAt": "2026-09-12T12:59:31.769Z",
+    "paperTrade": {
+      "selectionWeights": [
+        1,
+        0,
+        0
+      ],
+      "stake": 2,
+      "selectionMethod": "single_randomized_selection_expected_profit",
+      "execution": "paper_only"
+    },
+    "batchId": "99b3f0204abf2f5a6efa3b493e2e14d86dcffa1407916c3dce476306342fb874"
+  }
+}

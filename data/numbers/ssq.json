@@ -1,6 +1,6 @@
 {
   "gameId": "ssq",
-  "fetchedAt": "2026-09-11T10:31:31.404Z",
+  "fetchedAt": "2026-09-12T12:59:56.105Z",
   "draws": [
     {
       "gameId": "ssq",
@@ -41,7 +41,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -86,7 +86,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -131,7 +131,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -176,7 +176,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -221,7 +221,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -266,7 +266,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -311,7 +311,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -356,7 +356,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -401,7 +401,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -446,7 +446,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -491,7 +491,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -536,7 +536,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -581,7 +581,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -626,7 +626,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -671,7 +671,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -716,7 +716,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -761,7 +761,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -806,7 +806,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -851,7 +851,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -896,7 +896,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -941,7 +941,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -986,7 +986,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1031,7 +1031,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1076,7 +1076,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1121,7 +1121,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1166,7 +1166,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1211,7 +1211,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1256,7 +1256,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1301,7 +1301,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1346,7 +1346,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1391,7 +1391,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1436,7 +1436,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1481,7 +1481,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1526,7 +1526,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1571,7 +1571,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1616,7 +1616,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1661,7 +1661,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1706,7 +1706,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1751,7 +1751,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1796,7 +1796,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1841,7 +1841,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1886,7 +1886,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1931,7 +1931,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -1976,7 +1976,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2021,7 +2021,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2066,7 +2066,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2111,7 +2111,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2156,7 +2156,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2201,7 +2201,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2246,7 +2246,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2291,7 +2291,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2336,7 +2336,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2381,7 +2381,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2426,7 +2426,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2471,7 +2471,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2516,7 +2516,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2561,7 +2561,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2606,7 +2606,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2651,7 +2651,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2696,7 +2696,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2741,7 +2741,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2786,7 +2786,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2831,7 +2831,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2876,7 +2876,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2921,7 +2921,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -2966,7 +2966,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3011,7 +3011,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3056,7 +3056,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3101,7 +3101,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3146,7 +3146,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3191,7 +3191,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3236,7 +3236,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3281,7 +3281,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3326,7 +3326,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3371,7 +3371,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3416,7 +3416,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3461,7 +3461,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3506,7 +3506,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3551,7 +3551,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3596,7 +3596,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3641,7 +3641,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3686,7 +3686,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3731,7 +3731,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3776,7 +3776,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3821,7 +3821,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3866,7 +3866,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3911,7 +3911,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -3956,7 +3956,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4001,7 +4001,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4046,7 +4046,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4091,7 +4091,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4136,7 +4136,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4181,7 +4181,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4226,7 +4226,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4271,7 +4271,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4316,7 +4316,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4361,7 +4361,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4406,7 +4406,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4451,7 +4451,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4496,7 +4496,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4541,7 +4541,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4586,7 +4586,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4631,7 +4631,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4676,7 +4676,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4721,7 +4721,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4766,7 +4766,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4811,7 +4811,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4856,7 +4856,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4901,7 +4901,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4946,7 +4946,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -4991,7 +4991,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5036,7 +5036,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5081,7 +5081,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5126,7 +5126,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5171,7 +5171,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5216,7 +5216,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5261,7 +5261,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5306,7 +5306,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5351,7 +5351,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5396,7 +5396,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5441,7 +5441,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5486,7 +5486,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5531,7 +5531,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5576,7 +5576,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5621,7 +5621,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5666,7 +5666,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5711,7 +5711,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5756,7 +5756,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5801,7 +5801,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5846,7 +5846,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5891,7 +5891,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5936,7 +5936,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -5981,7 +5981,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6026,7 +6026,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6071,7 +6071,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6116,7 +6116,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6161,7 +6161,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6206,7 +6206,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6251,7 +6251,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6296,7 +6296,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6341,7 +6341,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6386,7 +6386,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6431,7 +6431,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6476,7 +6476,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6521,7 +6521,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6566,7 +6566,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6611,7 +6611,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6656,7 +6656,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6701,7 +6701,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6746,7 +6746,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6791,7 +6791,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6836,7 +6836,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6881,7 +6881,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6926,7 +6926,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -6971,7 +6971,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7016,7 +7016,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7061,7 +7061,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7106,7 +7106,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7151,7 +7151,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7196,7 +7196,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7241,7 +7241,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7286,7 +7286,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7331,7 +7331,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7376,7 +7376,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7421,7 +7421,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7466,7 +7466,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7511,7 +7511,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7556,7 +7556,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7601,7 +7601,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7646,7 +7646,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7691,7 +7691,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7736,7 +7736,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7781,7 +7781,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7826,7 +7826,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7871,7 +7871,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7916,7 +7916,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -7961,7 +7961,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8006,7 +8006,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8051,7 +8051,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8096,7 +8096,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8141,7 +8141,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8186,7 +8186,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8231,7 +8231,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8276,7 +8276,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8321,7 +8321,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8366,7 +8366,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8411,7 +8411,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8456,7 +8456,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8501,7 +8501,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8546,7 +8546,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8591,7 +8591,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8636,7 +8636,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8681,7 +8681,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8726,7 +8726,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8771,7 +8771,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8816,7 +8816,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8861,7 +8861,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8906,7 +8906,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8951,7 +8951,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -8996,7 +8996,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9041,7 +9041,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9086,7 +9086,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9131,7 +9131,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9176,7 +9176,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9221,7 +9221,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9266,7 +9266,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9311,7 +9311,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9356,7 +9356,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9401,7 +9401,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9446,7 +9446,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9491,7 +9491,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9536,7 +9536,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9581,7 +9581,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9626,7 +9626,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9671,7 +9671,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9716,7 +9716,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9761,7 +9761,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9806,7 +9806,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9851,7 +9851,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9896,7 +9896,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9941,7 +9941,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -9986,7 +9986,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10031,7 +10031,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10076,7 +10076,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10121,7 +10121,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10166,7 +10166,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10211,7 +10211,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10256,7 +10256,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10301,7 +10301,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10346,7 +10346,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10391,7 +10391,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10436,7 +10436,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10481,7 +10481,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10526,7 +10526,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10571,7 +10571,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10616,7 +10616,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10661,7 +10661,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10706,7 +10706,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10751,7 +10751,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10796,7 +10796,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10841,7 +10841,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10886,7 +10886,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10931,7 +10931,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -10976,7 +10976,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11021,7 +11021,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11066,7 +11066,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11111,7 +11111,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11156,7 +11156,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11201,7 +11201,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11246,7 +11246,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11291,7 +11291,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11336,7 +11336,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11381,7 +11381,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11426,7 +11426,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -11471,7 +11471,7 @@
       "source": {
         "sourceId": "500star-ssq-history",
         "sourceUrl": "https://datachart.500star.com/ssq/history/newinc/history.php?start=23001",
-        "fetchedAt": "2026-09-11T10:31:34.316Z",
+        "fetchedAt": "2026-09-12T12:59:59.657Z",
         "bodySha256": "1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c",
         "rawRef": "raw/1683c7825bb8d27b031bfc7fa2db0cf8ef02c36c0af76823fd5126fe0c87a80c.body"
       },
@@ -29828,9 +29828,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026096",
-        "fetchedAt": "2026-09-11T10:31:37.891Z",
-        "bodySha256": "df6653e2dadfad623a508b1238bcf00a6093bcee47e1a2b93ae63659901263c4",
-        "rawRef": "raw/df6653e2dadfad623a508b1238bcf00a6093bcee47e1a2b93ae63659901263c4.body"
+        "fetchedAt": "2026-09-12T13:00:03.722Z",
+        "bodySha256": "29164e79d33184e5ddda8c02061e5c1a82264c9cc7503ea12551abba997a1dfd",
+        "rawRef": "raw/29164e79d33184e5ddda8c02061e5c1a82264c9cc7503ea12551abba997a1dfd.body"
       },
       "payoutEvidence": "published_draw_table_special_status_unknown",
       "corroboration": [
@@ -29890,9 +29890,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026097",
-        "fetchedAt": "2026-09-11T10:31:38.168Z",
-        "bodySha256": "5dd15b0f0e3d2e9a9f1be047221047659010e2d33209638b99b07664ab402db5",
-        "rawRef": "raw/5dd15b0f0e3d2e9a9f1be047221047659010e2d33209638b99b07664ab402db5.body"
+        "fetchedAt": "2026-09-12T13:00:03.482Z",
+        "bodySha256": "cfc645e141e214185365ea290adbb4b1285d0eca16f21b4a8c3138f04de24615",
+        "rawRef": "raw/cfc645e141e214185365ea290adbb4b1285d0eca16f21b4a8c3138f04de24615.body"
       },
       "payoutEvidence": "published_draw_table_special_status_unknown",
       "corroboration": [
@@ -29952,9 +29952,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026098",
-        "fetchedAt": "2026-09-11T10:31:37.850Z",
-        "bodySha256": "d05d257b002d0ea74248f0b673edc05726d5e9b3c99f918919816f9ddfbd0d52",
-        "rawRef": "raw/d05d257b002d0ea74248f0b673edc05726d5e9b3c99f918919816f9ddfbd0d52.body"
+        "fetchedAt": "2026-09-12T13:00:03.505Z",
+        "bodySha256": "220f16b80d0acc3eed4badf62e9d2e62c587f0b207fea964a2e197f148a7109c",
+        "rawRef": "raw/220f16b80d0acc3eed4badf62e9d2e62c587f0b207fea964a2e197f148a7109c.body"
       },
       "payoutEvidence": "published_draw_table_special_status_unknown",
       "corroboration": [
@@ -30014,9 +30014,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026099",
-        "fetchedAt": "2026-09-11T10:31:37.278Z",
-        "bodySha256": "823218dcacc5a307318d00f7399a4c44d8a8e65884030f2bb8c400f4eaf4587d",
-        "rawRef": "raw/823218dcacc5a307318d00f7399a4c44d8a8e65884030f2bb8c400f4eaf4587d.body"
+        "fetchedAt": "2026-09-12T13:00:03.000Z",
+        "bodySha256": "ee41322a3723598f275f36d28b5af172905c33eee391c62046a3a5b9415f91ac",
+        "rawRef": "raw/ee41322a3723598f275f36d28b5af172905c33eee391c62046a3a5b9415f91ac.body"
       },
       "payoutEvidence": "published_draw_table_special_status_unknown",
       "corroboration": [
@@ -30076,9 +30076,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026100",
-        "fetchedAt": "2026-09-11T10:31:37.286Z",
-        "bodySha256": "0fd5b16661b539a209f04ccff9feada8327de9e4f82c4af8fe5dbab9ee550412",
-        "rawRef": "raw/0fd5b16661b539a209f04ccff9feada8327de9e4f82c4af8fe5dbab9ee550412.body"
+        "fetchedAt": "2026-09-12T13:00:02.816Z",
+        "bodySha256": "f6fa2fa44542e7c31301869b28faf835ed001c9e18a10c6e9ccbf8ba10b6c2b8",
+        "rawRef": "raw/f6fa2fa44542e7c31301869b28faf835ed001c9e18a10c6e9ccbf8ba10b6c2b8.body"
       },
       "payoutEvidence": "published_draw_table_special_status_unknown",
       "corroboration": [
@@ -30138,9 +30138,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026101",
-        "fetchedAt": "2026-09-11T10:31:37.246Z",
-        "bodySha256": "d3b5baf99088ccc8e198b1efe3e0d6eec4f9d5880746f146beaf0c51f7bd9c19",
-        "rawRef": "raw/d3b5baf99088ccc8e198b1efe3e0d6eec4f9d5880746f146beaf0c51f7bd9c19.body"
+        "fetchedAt": "2026-09-12T13:00:02.801Z",
+        "bodySha256": "65aaff894bd019ca127793b262874a8988b8831615f7675b2feb0e4e1972ec92",
+        "rawRef": "raw/65aaff894bd019ca127793b262874a8988b8831615f7675b2feb0e4e1972ec92.body"
       },
       "payoutEvidence": "published_draw_table_special_status_unknown",
       "corroboration": [
@@ -30200,9 +30200,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026102",
-        "fetchedAt": "2026-09-11T10:31:36.662Z",
-        "bodySha256": "f77b11255dd333c98d93f28653519730720d3906b4e3b7faa74faed7556c0307",
-        "rawRef": "raw/f77b11255dd333c98d93f28653519730720d3906b4e3b7faa74faed7556c0307.body"
+        "fetchedAt": "2026-09-12T13:00:02.182Z",
+        "bodySha256": "40501f4ecd05fc9893161382198cb94de74d9c0c296bf59c7e2f04a83adc6337",
+        "rawRef": "raw/40501f4ecd05fc9893161382198cb94de74d9c0c296bf59c7e2f04a83adc6337.body"
       },
       "payoutEvidence": "published_draw_table_special_status_unknown",
       "corroboration": [
@@ -30264,9 +30264,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026103",
-        "fetchedAt": "2026-09-11T10:31:36.671Z",
-        "bodySha256": "b0bf192f3de7af64aabcc83643825dfacfdf678c251930e61566abba21b09ff9",
-        "rawRef": "raw/b0bf192f3de7af64aabcc83643825dfacfdf678c251930e61566abba21b09ff9.body"
+        "fetchedAt": "2026-09-12T13:00:03.138Z",
+        "bodySha256": "e2c9baa4984a4ccc2feb8439fdbd3453d861b6e5193004acb56c5175fde88a12",
+        "rawRef": "raw/e2c9baa4984a4ccc2feb8439fdbd3453d861b6e5193004acb56c5175fde88a12.body"
       },
       "payoutEvidence": "published_draw_table",
       "corroboration": [
@@ -30326,9 +30326,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026104",
-        "fetchedAt": "2026-09-11T10:31:36.644Z",
-        "bodySha256": "b814d6cd38fdfeda5509cb30dce8d1381bf9675ccb9459cd674ccf91598e29c2",
-        "rawRef": "raw/b814d6cd38fdfeda5509cb30dce8d1381bf9675ccb9459cd674ccf91598e29c2.body"
+        "fetchedAt": "2026-09-12T13:00:02.358Z",
+        "bodySha256": "de475ecd520d15c664de547d70ec6cc76591f695d900cf561616d32c2b25ce6c",
+        "rawRef": "raw/de475ecd520d15c664de547d70ec6cc76591f695d900cf561616d32c2b25ce6c.body"
       },
       "payoutEvidence": "published_draw_table_special_status_unknown",
       "corroboration": [
@@ -30390,9 +30390,9 @@
       "source": {
         "sourceId": "vipc-ssq-detail",
         "sourceUrl": "https://www.vipc.cn/result/ssq/2026105",
-        "fetchedAt": "2026-09-11T10:31:37.262Z",
-        "bodySha256": "1649f6c976162251315c8cf7aac0feedd14bb3b117a3333edc08b31ea7c2300a",
-        "rawRef": "raw/1649f6c976162251315c8cf7aac0feedd14bb3b117a3333edc08b31ea7c2300a.body"
+        "fetchedAt": "2026-09-12T13:00:02.154Z",
+        "bodySha256": "3ada5336d4b6b46fd5a89ae9d54347d99dc10ab7f90a72fe5f82425c0842ac42",
+        "rawRef": "raw/3ada5336d4b6b46fd5a89ae9d54347d99dc10ab7f90a72fe5f82425c0842ac42.body"
       },
       "payoutEvidence": "published_draw_table",
       "corroboration": [
@@ -30414,9 +30414,9 @@
     "source": {
       "sourceId": "tifucai-next-issue",
       "sourceUrl": "https://www.tifucai.com/index.php",
-      "fetchedAt": "2026-09-11T10:31:46.225Z",
-      "bodySha256": "aa65f047dec14bde8567713e81ec5211d71d332acd11968993ac754f35d2432f",
-      "rawRef": "raw/aa65f047dec14bde8567713e81ec5211d71d332acd11968993ac754f35d2432f.body"
+      "fetchedAt": "2026-09-12T13:00:15.228Z",
+      "bodySha256": "d5d6c2fe5f1eaa9f26194210e8adeb3fb55d22b264443c438a1f20f04020e68f",
+      "rawRef": "raw/d5d6c2fe5f1eaa9f26194210e8adeb3fb55d22b264443c438a1f20f04020e68f.body"
     }
   },
   "status": "ok",
