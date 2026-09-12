@@ -2,54 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-12T16:41:16.621Z",
-  "displayTime": "2026/9/13 00:41:16",
-  "jingcaiCount": 40,
+  "syncedAt": "2026-09-12T17:46:48.947Z",
+  "displayTime": "2026/9/13 01:46:48",
+  "jingcaiCount": 39,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1438105",
-      "matchNum": "周六025",
-      "matchDate": "2026-09-13",
-      "kickoffTime": "01:00",
-      "kickoffAt": "2026-09-12T17:00:00.000Z",
-      "league": "葡超",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "卡萨皮亚",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "波尔图",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.1,
-          "1": 6.5,
-          "3": 15
-        },
-        "RQSPF": {
-          "0": 2.4,
-          "1": 3.75,
-          "3": 2.24,
-          "handicap": 2
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1415929",
       "matchNum": "周六026",
