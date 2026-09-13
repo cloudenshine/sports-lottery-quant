@@ -2,48 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-13T16:57:24.392Z",
-  "displayTime": "2026/9/14 00:57:24",
-  "jingcaiCount": 18,
+  "syncedAt": "2026-09-13T17:11:18.066Z",
+  "displayTime": "2026/9/14 01:11:18",
+  "jingcaiCount": 17,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1438099",
-      "matchNum": "周日017",
-      "matchDate": "2026-09-14",
-      "kickoffTime": "01:00",
-      "kickoffAt": "2026-09-13T17:00:00.000Z",
-      "league": "葡超",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "本菲卡",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "吉维森特",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "RQSPF": {
-          "0": 2.72,
-          "1": 4,
-          "3": 1.96,
-          "handicap": -2
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1415937",
       "matchNum": "周日018",
