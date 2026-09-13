@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ad4bdf0853f91e8f457ab354d8264858ac239fa2fa4ebb337642202a90031edb",
+  "recordedAt": "2026-09-13T15:33:06.035Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1489034",
+      "kickoffAt": "2026-09-13T12:00:00.000Z",
+      "homeTeam": "库奥皮奥",
+      "awayTeam": "赫尔辛基",
+      "competition": "芬兰超级联赛",
+      "odds": {
+        "home": 2.08,
+        "draw": 3.3,
+        "away": 2.9
+      },
+      "sourceEventId": "1489034",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-13T15:32:46.352Z",
+      "bodySha256": "ba25a0f6eabc77524b1af5bd5bb91a654ca1d58057d482d5a055acbdf72db85b"
+    },
+    "observedAt": "2026-09-13T15:32:46.352Z",
+    "revisionReason": null
+  }
+}

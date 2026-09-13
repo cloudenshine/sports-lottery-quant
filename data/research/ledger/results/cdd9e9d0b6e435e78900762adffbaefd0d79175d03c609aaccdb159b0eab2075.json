@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "cdd9e9d0b6e435e78900762adffbaefd0d79175d03c609aaccdb159b0eab2075",
+  "recordedAt": "2026-09-13T15:33:05.998Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1428008",
+      "kickoffAt": "2026-09-13T12:00:00.000Z",
+      "homeTeam": "塞尔塔",
+      "awayTeam": "马拉加",
+      "competition": "西甲",
+      "odds": {
+        "home": 1.55,
+        "draw": 3.55,
+        "away": 4.95
+      },
+      "sourceEventId": "1428008",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-13T15:32:46.352Z",
+      "bodySha256": "ba25a0f6eabc77524b1af5bd5bb91a654ca1d58057d482d5a055acbdf72db85b"
+    },
+    "observedAt": "2026-09-13T15:32:46.352Z",
+    "revisionReason": null
+  }
+}

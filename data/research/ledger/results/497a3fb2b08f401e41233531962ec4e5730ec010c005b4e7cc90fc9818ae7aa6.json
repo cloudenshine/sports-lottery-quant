@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "497a3fb2b08f401e41233531962ec4e5730ec010c005b4e7cc90fc9818ae7aa6",
+  "recordedAt": "2026-09-13T15:33:05.975Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1419178",
+      "kickoffAt": "2026-09-13T09:00:00.000Z",
+      "homeTeam": "东京绿茵",
+      "awayTeam": "千叶市原",
+      "competition": "日职",
+      "odds": {
+        "home": 2.17,
+        "draw": 2.9,
+        "away": 3.1
+      },
+      "sourceEventId": "1419178",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai",
+      "sourceUrl": "https://trade.500.com/jczq/",
+      "fetchedAt": "2026-09-13T15:32:46.352Z",
+      "bodySha256": "ba25a0f6eabc77524b1af5bd5bb91a654ca1d58057d482d5a055acbdf72db85b"
+    },
+    "observedAt": "2026-09-13T15:32:46.352Z",
+    "revisionReason": null
+  }
+}
