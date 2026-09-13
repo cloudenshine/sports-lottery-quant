@@ -2,48 +2,11 @@
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-13T17:11:18.066Z",
-  "displayTime": "2026/9/14 01:11:18",
-  "jingcaiCount": 17,
+  "syncedAt": "2026-09-13T18:17:21.083Z",
+  "displayTime": "2026/9/14 02:17:21",
+  "jingcaiCount": 16,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1415937",
-      "matchNum": "周日018",
-      "matchDate": "2026-09-14",
-      "kickoffTime": "02:00",
-      "kickoffAt": "2026-09-13T18:00:00.000Z",
-      "league": "荷甲",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "埃因霍温",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "鹿斯巴达",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "RQSPF": {
-          "0": 2.85,
-          "1": 4.75,
-          "3": 1.76,
-          "handicap": -2
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1414232",
       "matchNum": "周日019",
