@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "692a45f28ab9b6bf8bec67ecc71307ac46725afa716c6be044e5d14bbfd54129",
+  "recordedAt": "2026-09-13T10:31:43.246Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1414191",
+      "kickoffAt": "2026-09-12T18:45:00.000Z",
+      "homeTeam": "亚特兰大",
+      "awayTeam": "卡利亚里",
+      "competition": "意甲",
+      "odds": {
+        "home": 1.5,
+        "draw": 3.75,
+        "away": 5.1
+      },
+      "sourceEventId": "1414191",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

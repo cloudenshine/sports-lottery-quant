@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "1291f6ad38e6f14eb56e0804c8644a419f6b0d0dcd561462b53f5b383145c084",
+  "recordedAt": "2026-09-13T10:31:43.356Z",
+  "payload": {
+    "predictionId": "0404a9113b3b82ebb4e67e7fe8a86c280b773fab25a23ce3e3bc3f3d583e71c2",
+    "resultId": "185d672a7c37eb9a098eec21c98c020e41af290b3c0e110a8936fb42ae665e94",
+    "status": "settled_paper_assumption",
+    "scoring": {
+      "outcome": "D",
+      "logLoss": 1.4840132018205212,
+      "logLossStatus": "finite",
+      "brier": 0.8972067449714881
+    },
+    "paper": {
+      "stake": 2,
+      "profit": -2,
+      "randomExpectedProfit": 0.3333333333333335,
+      "marketExpectedProfit": -0.2290806346446428,
+      "baselineMethod": "same_stake_expected_profit_of_random_or_normalized_implied_odds_selection",
+      "execution": "paper_only",
+      "profitKind": "exact_expected_profit_of_single_randomized_selection",
+      "selectionWeights": [
+        1,
+        0,
+        0
+      ],
+      "selectionInterpretation": "One hypothetical whole-stake choice drawn from H/D/A weights; expectation over choice, not split stakes or an actual order.",
+      "ruleAssumption": {
+        "id": "fixed-decimal-1x2-paper-v1",
+        "market": "1X2_REGULATION",
+        "currency": "CNY",
+        "fixedStake": 2,
+        "description": "One hypothetical 2 yuan selection at observed fixed decimal odds; mathematical paper payoff only, not verified official settlement or actual/redeemable earnings.",
+        "officialSettlement": false,
+        "actualOrder": false,
+        "redeemable": false
+      }
+    },
+    "ruleVerification": {
+      "verified": false
+    }
+  }
+}

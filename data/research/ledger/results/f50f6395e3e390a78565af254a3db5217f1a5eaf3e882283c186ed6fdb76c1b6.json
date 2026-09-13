@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "f50f6395e3e390a78565af254a3db5217f1a5eaf3e882283c186ed6fdb76c1b6",
+  "recordedAt": "2026-09-13T10:31:43.060Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1420403",
+      "kickoffAt": "2026-09-12T14:00:00.000Z",
+      "homeTeam": "伯恩茅斯",
+      "awayTeam": "布伦特",
+      "competition": "英超",
+      "odds": {
+        "home": 2.19,
+        "draw": 3.42,
+        "away": 2.63
+      },
+      "sourceEventId": "1420403",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

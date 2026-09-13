@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "4f8ce21b6109464be2d3f2074eaf43b1a96d5784f20e84fbb1cddc9a0aab309b",
+  "recordedAt": "2026-09-13T10:31:43.050Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1420401",
+      "kickoffAt": "2026-09-12T14:00:00.000Z",
+      "homeTeam": "维拉",
+      "awayTeam": "诺丁汉",
+      "competition": "英超",
+      "odds": {
+        "home": 2.02,
+        "draw": 3.15,
+        "away": 3.16
+      },
+      "sourceEventId": "1420401",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

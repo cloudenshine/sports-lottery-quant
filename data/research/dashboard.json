@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T02:31:21.504Z",
+  "generatedAt": "2026-09-13T10:31:44.106Z",
   "protocol": {
     "schemaVersion": 1,
     "protocolId": "lottery-research-v1-20260906",
@@ -153,14 +153,14 @@
   },
   "sources": {
     "schemaVersion": 1,
-    "runAt": "2026-09-13T02:31:02.671Z",
+    "runAt": "2026-09-13T10:31:30.181Z",
     "status": "ok",
-    "records": 1735,
-    "fixtures": 80,
+    "records": 1759,
+    "fixtures": 56,
     "results": [
       {
         "sourceId": "espn-eng1-2024",
-        "status": "ok",
+        "status": "cached",
         "stale": false,
         "error": null,
         "fetchedAt": "2026-09-13T02:31:04.804Z",
@@ -177,7 +177,7 @@
       },
       {
         "sourceId": "espn-eng1-2025",
-        "status": "ok",
+        "status": "cached",
         "stale": false,
         "error": null,
         "fetchedAt": "2026-09-13T02:31:05.386Z",
@@ -197,15 +197,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-13T02:31:05.815Z",
+        "fetchedAt": "2026-09-13T10:31:31.658Z",
         "records": 37,
         "fixtures": 13,
         "sources": [
           {
             "sourceId": "espn-eng1-current",
             "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20260809-20261004&limit=1000",
-            "fetchedAt": "2026-09-13T02:31:05.815Z",
-            "bodySha256": "ca65aea96d8647a572d0d51164dbaa8dc36bc8cfdb17b4430632738704829bfa"
+            "fetchedAt": "2026-09-13T10:31:31.658Z",
+            "bodySha256": "c6902e9f83cdbcff5eb3ccb250ab3b7a291e52a2207e7a50c79c8f1509943a2d"
           }
         ]
       },
@@ -214,15 +214,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-13T02:31:10.632Z",
+        "fetchedAt": "2026-09-13T10:31:36.737Z",
         "records": 12,
         "fixtures": 34,
         "sources": [
           {
             "sourceId": "500-jingcai",
             "sourceUrl": "https://trade.500.com/jczq/",
-            "fetchedAt": "2026-09-13T02:31:10.632Z",
-            "bodySha256": "73cb55b2d439e6936aee64a468993b3fd68a17d67141c30e5069d0d5290cbf7d"
+            "fetchedAt": "2026-09-13T10:31:36.737Z",
+            "bodySha256": "3034613419275f2044d6d08aa9befa2bc7e2f05047fccc005301078ee16687e7"
           }
         ]
       },
@@ -231,15 +231,15 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-13T02:31:11.308Z",
-        "records": 94,
-        "fixtures": 25,
+        "fetchedAt": "2026-09-13T10:31:37.596Z",
+        "records": 118,
+        "fixtures": 1,
         "sources": [
           {
             "sourceId": "500-jingcai-results-1",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
-            "fetchedAt": "2026-09-13T02:31:11.308Z",
-            "bodySha256": "e741207e6c2e89de48b6b45258d9a670a3be12526b91bbe6be9bce813442ba79"
+            "fetchedAt": "2026-09-13T10:31:37.596Z",
+            "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
           }
         ]
       },
@@ -248,14 +248,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-13T02:31:12.295Z",
+        "fetchedAt": "2026-09-13T10:31:38.255Z",
         "records": 87,
         "fixtures": 1,
         "sources": [
           {
             "sourceId": "500-jingcai-results-2",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-11",
-            "fetchedAt": "2026-09-13T02:31:12.295Z",
+            "fetchedAt": "2026-09-13T10:31:38.255Z",
             "bodySha256": "1cba8358c0534316d9a22124c69a8b251e54eb3d63ec53b7291c80f49b78dc77"
           }
         ]
@@ -265,14 +265,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-13T02:31:13.196Z",
+        "fetchedAt": "2026-09-13T10:31:39.342Z",
         "records": 80,
         "fixtures": 2,
         "sources": [
           {
             "sourceId": "500-jingcai-results-3",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-10",
-            "fetchedAt": "2026-09-13T02:31:13.196Z",
+            "fetchedAt": "2026-09-13T10:31:39.342Z",
             "bodySha256": "9b0384940cae4317b07a42a6bbc0862842dd8390d7624f42241cd8cdf14bafe1"
           }
         ]
@@ -282,14 +282,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-13T02:31:14.065Z",
+        "fetchedAt": "2026-09-13T10:31:39.957Z",
         "records": 101,
         "fixtures": 5,
         "sources": [
           {
             "sourceId": "500-jingcai-results-4",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-09",
-            "fetchedAt": "2026-09-13T02:31:14.065Z",
+            "fetchedAt": "2026-09-13T10:31:39.957Z",
             "bodySha256": "2f2a15a9d377a1748b2272c2d1ab8d3f774076d1a4cb3e85cf54e542b7aa7c5a"
           }
         ]
@@ -299,14 +299,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-13T02:31:14.947Z",
+        "fetchedAt": "2026-09-13T10:31:40.783Z",
         "records": 107,
         "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-5",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-08",
-            "fetchedAt": "2026-09-13T02:31:14.947Z",
+            "fetchedAt": "2026-09-13T10:31:40.783Z",
             "bodySha256": "c3bd51e92d512d6d69dff71e8deca6c2a839ef02f4343c635fcf88807baa5e27"
           }
         ]
@@ -316,14 +316,14 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-13T02:31:15.873Z",
+        "fetchedAt": "2026-09-13T10:31:41.729Z",
         "records": 100,
         "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-6",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-07",
-            "fetchedAt": "2026-09-13T02:31:15.873Z",
+            "fetchedAt": "2026-09-13T10:31:41.729Z",
             "bodySha256": "82702c0c701e3413ff29181f5253af473cd4d3a92b1718098060cc136331c942"
           }
         ]
@@ -333,21 +333,21 @@
         "status": "ok",
         "stale": false,
         "error": null,
-        "fetchedAt": "2026-09-13T02:31:16.725Z",
+        "fetchedAt": "2026-09-13T10:31:42.672Z",
         "records": 116,
         "fixtures": 0,
         "sources": [
           {
             "sourceId": "500-jingcai-results-7",
             "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-06",
-            "fetchedAt": "2026-09-13T02:31:16.725Z",
+            "fetchedAt": "2026-09-13T10:31:42.672Z",
             "bodySha256": "4bc9bf08e5dc722aed62b7b4eb2b47851cf8ccf2296da31a6590ba802b431689"
           }
         ]
       },
       {
         "sourceId": "football-data-mirror",
-        "status": "ok",
+        "status": "cached",
         "stale": false,
         "error": null,
         "fetchedAt": "2026-09-13T02:31:19.853Z",
@@ -393,8 +393,8 @@
     ]
   },
   "data": {
-    "historyCount": 1735,
-    "fixtureCount": 80,
+    "historyCount": 1759,
+    "fixtureCount": 56,
     "bySource": [
       {
         "sourceId": "espn-eng1-2024",
@@ -418,8 +418,8 @@
       },
       {
         "sourceId": "500-jingcai-results-1",
-        "historyCount": 94,
-        "fixtureCount": 25
+        "historyCount": 118,
+        "fixtureCount": 1
       },
       {
         "sourceId": "500-jingcai-results-2",
@@ -465,31 +465,31 @@
   },
   "ledger": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-13T02:31:21.460Z",
+    "generatedAt": "2026-09-13T10:31:44.078Z",
     "predictionCount": 889,
-    "resultVersionCount": 75,
+    "resultVersionCount": 99,
     "retractionVersionCount": 0,
-    "settlementVersionCount": 525,
+    "settlementVersionCount": 693,
     "settledPaperCount": 0,
-    "assumedPaperCount": 87,
+    "assumedPaperCount": 105,
     "assumedPaperTotals": {
-      "stake": 174,
-      "profit": -95.27999999999999,
-      "randomExpectedProfit": -45.20666666666668,
-      "marketExpectedProfit": -19.873858422912825
+      "stake": 210,
+      "profit": -96.16,
+      "randomExpectedProfit": -39.953333333333326,
+      "marketExpectedProfit": -23.98675125418195
     },
-    "pendingCount": 364,
+    "pendingCount": 196,
     "pendingReasons": {
-      "awaiting_result": 364
+      "awaiting_result": 196
     },
     "properScores": {
-      "count": 525,
-      "sumBrier": 327.2454897956856,
-      "sumLogLoss": 545.9454497810842,
+      "count": 693,
+      "sumBrier": 445.859010079912,
+      "sumLogLoss": 741.886006334066,
       "logLossStatus": "finite",
       "infiniteLogLossCount": 0,
-      "meanBrier": 0.6233247424679726,
-      "meanLogLoss": 1.039896094821113
+      "meanBrier": 0.643375194920508,
+      "meanLogLoss": 1.070542577682635
     },
     "totals": {
       "stake": 0,
@@ -503,12 +503,12 @@
         "modelId": "elo",
         "version": "1.0.0",
         "predictionCount": 127,
-        "scoredCount": 75,
+        "scoredCount": 99,
         "settledPaperCount": 0,
-        "assumedPaperCount": 23,
-        "pendingCount": 52,
+        "assumedPaperCount": 28,
+        "pendingCount": 28,
         "pendingReasons": {
-          "awaiting_result": 52
+          "awaiting_result": 28
         },
         "paper": {
           "stake": 0,
@@ -517,19 +517,19 @@
           "marketExpectedProfit": 0
         },
         "assumedPaper": {
-          "stake": 46,
-          "profit": -37.6,
-          "randomExpectedProfit": -11.926666666666668,
-          "marketExpectedProfit": -5.251528160849601
+          "stake": 56,
+          "profit": -40.900000000000006,
+          "randomExpectedProfit": -10.60666666666667,
+          "marketExpectedProfit": -6.394714905175391
         },
         "properScores": {
-          "count": 75,
-          "sumBrier": 49.493088866044666,
-          "sumLogLoss": 81.68209156329068,
+          "count": 99,
+          "sumBrier": 67.61853210758132,
+          "sumLogLoss": 112.20752100781138,
           "logLossStatus": "finite",
           "infiniteLogLossCount": 0,
-          "meanBrier": 0.6599078515472622,
-          "meanLogLoss": 1.089094554177209
+          "meanBrier": 0.6830154758341547,
+          "meanLogLoss": 1.1334093031092058
         }
       },
       {
@@ -537,12 +537,12 @@
         "modelId": "ensemble",
         "version": "1.0.0",
         "predictionCount": 127,
-        "scoredCount": 75,
+        "scoredCount": 99,
         "settledPaperCount": 0,
         "assumedPaperCount": 0,
-        "pendingCount": 52,
+        "pendingCount": 28,
         "pendingReasons": {
-          "awaiting_result": 52
+          "awaiting_result": 28
         },
         "paper": {
           "stake": 0,
@@ -557,13 +557,13 @@
           "marketExpectedProfit": 0
         },
         "properScores": {
-          "count": 75,
-          "sumBrier": 41.964421579493,
-          "sumLogLoss": 71.44683330852526,
+          "count": 99,
+          "sumBrier": 58.230950469564675,
+          "sumLogLoss": 98.13274245249919,
           "logLossStatus": "finite",
           "infiniteLogLossCount": 0,
-          "meanBrier": 0.5595256210599067,
-          "meanLogLoss": 0.9526244441136701
+          "meanBrier": 0.5881914188844917,
+          "meanLogLoss": 0.991239822752517
         }
       },
       {
@@ -571,12 +571,114 @@
         "modelId": "historical",
         "version": "1.0.0",
         "predictionCount": 127,
-        "scoredCount": 75,
+        "scoredCount": 99,
+        "settledPaperCount": 0,
+        "assumedPaperCount": 28,
+        "pendingCount": 28,
+        "pendingReasons": {
+          "awaiting_result": 28
+        },
+        "paper": {
+          "stake": 0,
+          "profit": 0,
+          "randomExpectedProfit": 0,
+          "marketExpectedProfit": 0
+        },
+        "assumedPaper": {
+          "stake": 56,
+          "profit": -17.82,
+          "randomExpectedProfit": -10.386666666666667,
+          "marketExpectedProfit": -6.399697123382518
+        },
+        "properScores": {
+          "count": 99,
+          "sumBrier": 68.95733293127192,
+          "sumLogLoss": 113.73076638717373,
+          "logLossStatus": "finite",
+          "infiniteLogLossCount": 0,
+          "meanBrier": 0.6965387164774941,
+          "meanLogLoss": 1.1487956200724618
+        }
+      },
+      {
+        "protocolId": "lottery-research-v1-20260906",
+        "modelId": "market",
+        "version": "1.0.0",
+        "predictionCount": 127,
+        "scoredCount": 99,
+        "settledPaperCount": 0,
+        "assumedPaperCount": 0,
+        "pendingCount": 28,
+        "pendingReasons": {
+          "awaiting_result": 28
+        },
+        "paper": {
+          "stake": 0,
+          "profit": 0,
+          "randomExpectedProfit": 0,
+          "marketExpectedProfit": 0
+        },
+        "assumedPaper": {
+          "stake": 0,
+          "profit": 0,
+          "randomExpectedProfit": 0,
+          "marketExpectedProfit": 0
+        },
+        "properScores": {
+          "count": 99,
+          "sumBrier": 58.41939191400988,
+          "sumLogLoss": 98.36159073278932,
+          "logLossStatus": "finite",
+          "infiniteLogLossCount": 0,
+          "meanBrier": 0.5900948678182816,
+          "meanLogLoss": 0.9935514215433265
+        }
+      },
+      {
+        "protocolId": "lottery-research-v1-20260906",
+        "modelId": "market-power",
+        "version": "1.0.0",
+        "predictionCount": 127,
+        "scoredCount": 99,
+        "settledPaperCount": 0,
+        "assumedPaperCount": 0,
+        "pendingCount": 28,
+        "pendingReasons": {
+          "awaiting_result": 28
+        },
+        "paper": {
+          "stake": 0,
+          "profit": 0,
+          "randomExpectedProfit": 0,
+          "marketExpectedProfit": 0
+        },
+        "assumedPaper": {
+          "stake": 0,
+          "profit": 0,
+          "randomExpectedProfit": 0,
+          "marketExpectedProfit": 0
+        },
+        "properScores": {
+          "count": 99,
+          "sumBrier": 58.40348450989536,
+          "sumLogLoss": 98.6738078378587,
+          "logLossStatus": "finite",
+          "infiniteLogLossCount": 0,
+          "meanBrier": 0.58993418696864,
+          "meanLogLoss": 0.9967051296753404
+        }
+      },
+      {
+        "protocolId": "lottery-research-v1-20260906",
+        "modelId": "poisson",
+        "version": "1.0.0",
+        "predictionCount": 127,
+        "scoredCount": 99,
         "settledPaperCount": 0,
         "assumedPaperCount": 23,
-        "pendingCount": 52,
+        "pendingCount": 28,
         "pendingReasons": {
-          "awaiting_result": 52
+          "awaiting_result": 28
         },
         "paper": {
           "stake": 0,
@@ -586,120 +688,18 @@
         },
         "assumedPaper": {
           "stake": 46,
-          "profit": -14.52,
-          "randomExpectedProfit": -11.706666666666669,
-          "marketExpectedProfit": -5.25651037905673
+          "profit": -29.060000000000002,
+          "randomExpectedProfit": -8.599999999999998,
+          "marketExpectedProfit": -5.256106290739967
         },
         "properScores": {
-          "count": 75,
-          "sumBrier": 51.785297853762955,
-          "sumLogLoss": 84.88540842339768,
+          "count": 99,
+          "sumBrier": 68.22931814758843,
+          "sumLogLoss": 112.01696133778889,
           "logLossStatus": "finite",
           "infiniteLogLossCount": 0,
-          "meanBrier": 0.6904706380501727,
-          "meanLogLoss": 1.1318054456453024
-        }
-      },
-      {
-        "protocolId": "lottery-research-v1-20260906",
-        "modelId": "market",
-        "version": "1.0.0",
-        "predictionCount": 127,
-        "scoredCount": 75,
-        "settledPaperCount": 0,
-        "assumedPaperCount": 0,
-        "pendingCount": 52,
-        "pendingReasons": {
-          "awaiting_result": 52
-        },
-        "paper": {
-          "stake": 0,
-          "profit": 0,
-          "randomExpectedProfit": 0,
-          "marketExpectedProfit": 0
-        },
-        "assumedPaper": {
-          "stake": 0,
-          "profit": 0,
-          "randomExpectedProfit": 0,
-          "marketExpectedProfit": 0
-        },
-        "properScores": {
-          "count": 75,
-          "sumBrier": 41.98142605216651,
-          "sumLogLoss": 71.47059446833966,
-          "logLossStatus": "finite",
-          "infiniteLogLossCount": 0,
-          "meanBrier": 0.5597523473622201,
-          "meanLogLoss": 0.952941259577862
-        }
-      },
-      {
-        "protocolId": "lottery-research-v1-20260906",
-        "modelId": "market-power",
-        "version": "1.0.0",
-        "predictionCount": 127,
-        "scoredCount": 75,
-        "settledPaperCount": 0,
-        "assumedPaperCount": 0,
-        "pendingCount": 52,
-        "pendingReasons": {
-          "awaiting_result": 52
-        },
-        "paper": {
-          "stake": 0,
-          "profit": 0,
-          "randomExpectedProfit": 0,
-          "marketExpectedProfit": 0
-        },
-        "assumedPaper": {
-          "stake": 0,
-          "profit": 0,
-          "randomExpectedProfit": 0,
-          "marketExpectedProfit": 0
-        },
-        "properScores": {
-          "count": 75,
-          "sumBrier": 41.50199474945528,
-          "sumLogLoss": 71.08253680807816,
-          "logLossStatus": "finite",
-          "infiniteLogLossCount": 0,
-          "meanBrier": 0.5533599299927371,
-          "meanLogLoss": 0.9477671574410421
-        }
-      },
-      {
-        "protocolId": "lottery-research-v1-20260906",
-        "modelId": "poisson",
-        "version": "1.0.0",
-        "predictionCount": 127,
-        "scoredCount": 75,
-        "settledPaperCount": 0,
-        "assumedPaperCount": 19,
-        "pendingCount": 52,
-        "pendingReasons": {
-          "awaiting_result": 52
-        },
-        "paper": {
-          "stake": 0,
-          "profit": 0,
-          "randomExpectedProfit": 0,
-          "marketExpectedProfit": 0
-        },
-        "assumedPaper": {
-          "stake": 38,
-          "profit": -21.060000000000002,
-          "randomExpectedProfit": -9.906666666666666,
-          "marketExpectedProfit": -4.342846619431194
-        },
-        "properScores": {
-          "count": 75,
-          "sumBrier": 50.51926069476319,
-          "sumLogLoss": 82.98206355934491,
-          "logLossStatus": "finite",
-          "infiniteLogLossCount": 0,
-          "meanBrier": 0.6735901425968426,
-          "meanLogLoss": 1.1064275141245987
+          "meanBrier": 0.6891850317938225,
+          "meanLogLoss": 1.1314844579574634
         }
       },
       {
@@ -707,12 +707,12 @@
         "modelId": "uniform",
         "version": "1.0.0",
         "predictionCount": 127,
-        "scoredCount": 75,
+        "scoredCount": 99,
         "settledPaperCount": 0,
-        "assumedPaperCount": 22,
-        "pendingCount": 52,
+        "assumedPaperCount": 26,
+        "pendingCount": 28,
         "pendingReasons": {
-          "awaiting_result": 52
+          "awaiting_result": 28
         },
         "paper": {
           "stake": 0,
@@ -721,19 +721,19 @@
           "marketExpectedProfit": 0
         },
         "assumedPaper": {
-          "stake": 44,
-          "profit": -22.099999999999998,
-          "randomExpectedProfit": -11.666666666666664,
-          "marketExpectedProfit": -5.022973263575299
+          "stake": 52,
+          "profit": -8.379999999999999,
+          "randomExpectedProfit": -10.359999999999996,
+          "marketExpectedProfit": -5.936232934884071
         },
         "properScores": {
-          "count": 75,
-          "sumBrier": 49.99999999999996,
-          "sumLogLoss": 82.39592165010814,
+          "count": 99,
+          "sumBrier": 65.99999999999991,
+          "sumLogLoss": 108.76261657814271,
           "logLossStatus": "finite",
           "infiniteLogLossCount": 0,
-          "meanBrier": 0.6666666666666661,
-          "meanLogLoss": 1.0986122886681084
+          "meanBrier": 0.6666666666666659,
+          "meanLogLoss": 1.0986122886681082
         }
       }
     ],
@@ -741,12 +741,12 @@
       {
         "sourceId": "500-jingcai",
         "predictionCount": 889,
-        "scoredCount": 525,
+        "scoredCount": 693,
         "settledPaperCount": 0,
-        "assumedPaperCount": 87,
-        "pendingCount": 364,
+        "assumedPaperCount": 105,
+        "pendingCount": 196,
         "pendingReasons": {
-          "awaiting_result": 364
+          "awaiting_result": 196
         },
         "paper": {
           "stake": 0,
@@ -755,29 +755,29 @@
           "marketExpectedProfit": 0
         },
         "assumedPaper": {
-          "stake": 174,
-          "profit": -95.27999999999999,
-          "randomExpectedProfit": -45.20666666666668,
-          "marketExpectedProfit": -19.873858422912825
+          "stake": 210,
+          "profit": -96.16,
+          "randomExpectedProfit": -39.953333333333326,
+          "marketExpectedProfit": -23.98675125418195
         },
         "properScores": {
-          "count": 525,
-          "sumBrier": 327.2454897956856,
-          "sumLogLoss": 545.9454497810842,
+          "count": 693,
+          "sumBrier": 445.859010079912,
+          "sumLogLoss": 741.886006334066,
           "logLossStatus": "finite",
           "infiniteLogLossCount": 0,
-          "meanBrier": 0.6233247424679726,
-          "meanLogLoss": 1.039896094821113
+          "meanBrier": 0.643375194920508,
+          "meanLogLoss": 1.070542577682635
         }
       }
     ],
     "predictiveAdvantage": "not_established"
   },
   "daily": {
-    "startedAt": "2026-09-13T02:31:02.667Z",
+    "startedAt": "2026-09-13T10:31:30.179Z",
     "createdPredictions": 0,
-    "createdResults": 0,
-    "createdSettlements": 0,
+    "createdResults": 24,
+    "createdSettlements": 168,
     "createdRetractions": 0,
     "skipped": [
       {
@@ -813,103 +813,15 @@
         "reason": "outside_registered_forecast_window"
       },
       {
-        "eventId": "500:1414175",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1428483",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1428485",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1428486",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1428489",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1428493",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1420401",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1420403",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1420404",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1420407",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1420410",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1428013",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1415113",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1467731",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1364311",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1414217",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1420417",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1428007",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1428497",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1438105",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1415929",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1414191",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1415111",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
-        "eventId": "500:1420416",
-        "reason": "outside_registered_forecast_window"
-      },
-      {
         "eventId": "500:1428015",
+        "reason": "outside_registered_forecast_window"
+      },
+      {
+        "eventId": "500:1419152",
+        "reason": "outside_registered_forecast_window"
+      },
+      {
+        "eventId": "500:1419178",
         "reason": "outside_registered_forecast_window"
       },
       {
@@ -990,19 +902,19 @@
       }
     ],
     "errors": [],
-    "finishedAt": "2026-09-13T02:31:21.504Z",
+    "finishedAt": "2026-09-13T10:31:44.106Z",
     "status": "ok"
   },
   "promotion": {
     "schemaVersion": 1,
     "protocolId": "lottery-research-v1-20260906",
     "protocolHash": "4e3d22f8ce0df7f18bfecce5b9eebdf9ec6fc13f2df57a770c751a2d17e749c3",
-    "generatedAt": "2026-09-13T02:31:21.467Z",
+    "generatedAt": "2026-09-13T10:31:44.081Z",
     "status": "COLLECTING_PROSPECTIVE_EVIDENCE",
     "eligible": false,
     "researchEvidenceEligible": false,
     "locked": false,
-    "settledEvents": 75,
+    "settledEvents": 99,
     "calendarDays": 7,
     "minimumSettledEvents": 500,
     "minimumCalendarDays": 90,
@@ -1214,7 +1126,7 @@
         "eligible": false,
         "researchEvidenceEligible": false,
         "locked": false,
-        "settledEvents": 75,
+        "settledEvents": 99,
         "matchedEvents": 127,
         "calendarDays": 7,
         "minimumSettledEvents": 500,
@@ -1623,7 +1535,7 @@
         "eligible": false,
         "researchEvidenceEligible": false,
         "locked": false,
-        "settledEvents": 75,
+        "settledEvents": 99,
         "matchedEvents": 127,
         "calendarDays": 7,
         "minimumSettledEvents": 500,
@@ -2159,7 +2071,7 @@
         "eligible": false,
         "researchEvidenceEligible": false,
         "locked": false,
-        "settledEvents": 75,
+        "settledEvents": 99,
         "matchedEvents": 127,
         "calendarDays": 7,
         "minimumSettledEvents": 500,
@@ -2695,7 +2607,7 @@
         "eligible": false,
         "researchEvidenceEligible": false,
         "locked": false,
-        "settledEvents": 75,
+        "settledEvents": 99,
         "matchedEvents": 127,
         "calendarDays": 7,
         "minimumSettledEvents": 500,
@@ -3231,7 +3143,7 @@
         "eligible": false,
         "researchEvidenceEligible": false,
         "locked": false,
-        "settledEvents": 75,
+        "settledEvents": 99,
         "matchedEvents": 127,
         "calendarDays": 7,
         "minimumSettledEvents": 500,
@@ -3640,7 +3552,7 @@
         "eligible": false,
         "researchEvidenceEligible": false,
         "locked": false,
-        "settledEvents": 75,
+        "settledEvents": 99,
         "matchedEvents": 127,
         "calendarDays": 7,
         "minimumSettledEvents": 500,
@@ -4176,7 +4088,7 @@
         "eligible": false,
         "researchEvidenceEligible": false,
         "locked": false,
-        "settledEvents": 75,
+        "settledEvents": 99,
         "matchedEvents": 127,
         "calendarDays": 7,
         "minimumSettledEvents": 500,
@@ -17872,7 +17784,7 @@
     ]
   },
   "numberTournament": {
-    "generatedAt": "2026-09-12T15:43:41.207Z",
+    "generatedAt": "2026-09-13T02:37:52.569Z",
     "status": "EXPLORATORY_ONLY_NO_PREDICTIVE_ADVANTAGE_ESTABLISHED",
     "reproducibility": "node scripts/evaluate-number-strategies.js; offline bundled historical snapshots; fixed protocol and seeds; generatedAt is metadata only.",
     "protocol": {
@@ -407785,23 +407697,343 @@
   "recentSettlements": [
     {
       "schemaVersion": 1,
-      "id": "f1c9e06dc4eeca7384b56c1474de2954f368401a50d9f62bce4866a6056996e2",
-      "recordedAt": "2026-09-12T15:32:32.947Z",
+      "id": "953d7d0363ef176a8f35ca799d41ed86b3d2602e10f3e05aa66eefa3a6ed93a4",
+      "recordedAt": "2026-09-13T10:31:43.876Z",
       "payload": {
-        "predictionId": "fd53bedd8adc23cf6e07c35f73c57784a82fc79bc076cb2ee1caf4079b1c0c71",
-        "resultId": "07e832034d2d33722eef9a666426ca944e75b6880f946613d73ba77d1b8497cd",
-        "status": "settled_paper_assumption",
+        "predictionId": "fff69f5ef0a0df13e4e64c36ac7c9186ef262382a36c4558466dcd6f355e43f9",
+        "resultId": "248073db1e660819caf02c62d58db12de1b9ad306c09d062734a524b7a718dfe",
+        "status": "scored_no_trade",
         "scoring": {
           "outcome": "A",
-          "logLoss": 1.1011105970148194,
+          "logLoss": 1.2039728043259361,
           "logLossStatus": "finite",
-          "brier": 0.7053876020981745
+          "brier": 0.74
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "6b70d113edeebe039aeb1fd24c87ac241be3ba3f6b69a3f74906ebb1e57c1d92",
+      "recordedAt": "2026-09-13T10:31:43.874Z",
+      "payload": {
+        "predictionId": "fe0a9b54e8b78dff27aeb7c4416ff769cbe6a2e5be74503266e82317d2912461",
+        "resultId": "923eb6f1671a19b40ed1a26132202086bbea0c5f1d65f6a0525ae38ae26c3b4d",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "H",
+          "logLoss": 0.741319221150505,
+          "logLossStatus": "finite",
+          "brier": 0.4297240715878543
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "410d3d52bd663e954210de5ba8bb09f31859491c4a5a0a4021c316e7db770a4f",
+      "recordedAt": "2026-09-13T10:31:43.870Z",
+      "payload": {
+        "predictionId": "fbba1c24dce0633cbb9bf64d534bae68ec774df5b2be94c57f55102c4a5ad83b",
+        "resultId": "10919e436c7a1d3bc7dd9aec8381060adf60bea946f3996fe96377af7785fdb0",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.5218748086796117,
+          "logLossStatus": "finite",
+          "brier": 0.9793470484139813
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "74dbde0d8b3fff60cf1c486b206a32915fe99472875afffb22785c0d54d8ec7d",
+      "recordedAt": "2026-09-13T10:31:43.867Z",
+      "payload": {
+        "predictionId": "f965b395d6ff7d909ca549856c05e7f3562807d81eef39ef26692659a49ee153",
+        "resultId": "0baa5704f7f6ec3e04b43b97dc371ab4b3f49b16ab9226c88b510aa407e4b9f3",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 1.1867201151179498,
+          "logLossStatus": "finite",
+          "brier": 0.7380584203765099
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "54c06d546790a6df5353fa9a42ff26a6eeeb53af0f2b70f3de074e837b2e3e72",
+      "recordedAt": "2026-09-13T10:31:43.865Z",
+      "payload": {
+        "predictionId": "f84a575de1b019b1038e45a2d10a3c037a92b9fecf9cce3f74d99d263f96dedc",
+        "resultId": "782022ab9c79ffd2d7093504bf8003d617566126adf035815f9948a8cda3291e",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.391625072950405,
+          "logLossStatus": "finite",
+          "brier": 0.8613338450295969
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "be6fb90994cddf41606ce0e7b4db389a7e391b93ac9cab66488835c74d799422",
+      "recordedAt": "2026-09-13T10:31:43.862Z",
+      "payload": {
+        "predictionId": "f83119087eea1b7fb55ad3e54c771ec36eb1d5b078b9621376787e4d369abcb4",
+        "resultId": "f50f6395e3e390a78565af254a3db5217f1a5eaf3e882283c186ed6fdb76c1b6",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.0986122886681098,
+          "logLossStatus": "finite",
+          "brier": 0.6666666666666667
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "a7bce10dba78af0479c4e10a923de3b76453f41362bb1e7ba39f6ecabfa0f411",
+      "recordedAt": "2026-09-13T10:31:43.860Z",
+      "payload": {
+        "predictionId": "f7ce63017f6fd09a74bef759d2e6eb7adb0bd5ca411e5808f06db63c405f2f59",
+        "resultId": "289a744e1cba27d895f26062df09c796f47dc702d281675ae5a4ef8eff6b99e9",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.3153018975838093,
+          "logLossStatus": "finite",
+          "brier": 0.8193407724248187
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "24ba43cb9b8795ce0efc0c9050f818ad208f222fd51d0f7b9dc2cda10bf91554",
+      "recordedAt": "2026-09-13T10:31:43.858Z",
+      "payload": {
+        "predictionId": "f70a049ace16ab32f6edf189ceb10f657f5031e3d5cbf26ebf9add8be3856f4e",
+        "resultId": "0baa5704f7f6ec3e04b43b97dc371ab4b3f49b16ab9226c88b510aa407e4b9f3",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 1.0986122886681098,
+          "logLossStatus": "finite",
+          "brier": 0.6666666666666667
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "042c07f558de76ceae761494c92252401cbd656453a2c090e8fcdbc6e39d91cf",
+      "recordedAt": "2026-09-13T10:31:43.856Z",
+      "payload": {
+        "predictionId": "f65d72de41b47c0ccbf10ad98924b77788ea33dd0d3a7246927203f9659043e2",
+        "resultId": "06811445dc219bce1fd451dbf5c67e3636e18a55e7cdb209bf03b0ff8fd4e00f",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "H",
+          "logLoss": 0.5980233529000248,
+          "logLossStatus": "finite",
+          "brier": 0.3039160088225327
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "dc93f02d3d3de5c47f546744d9dc323b14a7986fa32688a6f1654d65cef01a7e",
+      "recordedAt": "2026-09-13T10:31:43.853Z",
+      "payload": {
+        "predictionId": "f5aa50760a322b48bfed1195556711efff3a18cc1532bcb46235b4d2ee690687",
+        "resultId": "ca529585548c9bad8fbf8cff276fbc6eb7753bf3ec43f1df0e56130778a3a61d",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.7480270869002497,
+          "logLossStatus": "finite",
+          "brier": 1.1806538783804166
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "d02e577a9009737e2ade10e3987e07b74b98fa550a605c22880d555e03de058e",
+      "recordedAt": "2026-09-13T10:31:43.851Z",
+      "payload": {
+        "predictionId": "f461b92086b24ae180e15022ce45ebaf7fbf765bdce86ab34622419e4c1cb136",
+        "resultId": "0a40dfc78e1320997147e50f85656a435269804130c8709f550c3f034769960e",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 1.0986122886681098,
+          "logLossStatus": "finite",
+          "brier": 0.6666666666666667
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "e1a7e40133eedd880ccd6e3ebf97be6450c0cecda567506d9ed647009427fa8d",
+      "recordedAt": "2026-09-13T10:31:43.848Z",
+      "payload": {
+        "predictionId": "f3d9024fd99ad68ea315cfc60fce0be7fab151eac849b1697128f41f7f6d681a",
+        "resultId": "185d672a7c37eb9a098eec21c98c020e41af290b3c0e110a8936fb42ae665e94",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.3744113218640857,
+          "logLossStatus": "finite",
+          "brier": 0.8466232617848921
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "06f44e42370fb7ce424ea44e132b58ed2fb928f8e347de03d658af73a62277ad",
+      "recordedAt": "2026-09-13T10:31:43.844Z",
+      "payload": {
+        "predictionId": "f2ebdfc62b3e1c7bbc8f9a15c7c42079ff8cfd87d2ed464c5c326ffc25fd04b7",
+        "resultId": "185d672a7c37eb9a098eec21c98c020e41af290b3c0e110a8936fb42ae665e94",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.4139972811828154,
+          "logLossStatus": "finite",
+          "brier": 0.8716430168100051
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "1cf40cef8e94e1818f6f02c11e60fc5b40888399bbffc08d02116f1f978fc3d9",
+      "recordedAt": "2026-09-13T10:31:43.842Z",
+      "payload": {
+        "predictionId": "f2ac5d7aab0238c0a6c209b71c7fc111fd413cf880356ff9b6a767750d83b7e5",
+        "resultId": "10919e436c7a1d3bc7dd9aec8381060adf60bea946f3996fe96377af7785fdb0",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.4969935388085984,
+          "logLossStatus": "finite",
+          "brier": 0.9826871565455433
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "bf507e93781aa04839df94ea40f9ec99820e8fba0877e615c703ef07fbde59c2",
+      "recordedAt": "2026-09-13T10:31:43.840Z",
+      "payload": {
+        "predictionId": "f16514514adbe1e945bb1faa374f59b5910c70c33a5eb73074b2c3b9eff6a0d5",
+        "resultId": "248073db1e660819caf02c62d58db12de1b9ad306c09d062734a524b7a718dfe",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 1.0986122886681098,
+          "logLossStatus": "finite",
+          "brier": 0.6666666666666667
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "2efdde991d8cf4fe8f93ef37cdd9d10e0d1d57d42487cd7378356c346a7cfa4c",
+      "recordedAt": "2026-09-13T10:31:43.838Z",
+      "payload": {
+        "predictionId": "f0a690642165a73081756dd4732dfe8ac848805a9126bb76fcf51c2ddadce7c8",
+        "resultId": "ca529585548c9bad8fbf8cff276fbc6eb7753bf3ec43f1df0e56130778a3a61d",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 0.9395295107961019,
+          "logLossStatus": "finite",
+          "brier": 0.5703953785444644
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "0f8b45eb2722b87fe26ce0b0922210a72ac3460626362fb4fff3ec23ca65ee7a",
+      "recordedAt": "2026-09-13T10:31:43.836Z",
+      "payload": {
+        "predictionId": "f03a739eb26efbd92548bba47116a1b88a87d9b309669fdbe58bf46aab23ba45",
+        "resultId": "978bee703bd5c00ed484984c0c3667fd135515b4ffe60f6cdc0cc3447b7237fd",
+        "status": "settled_paper_assumption",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.4350845252893227,
+          "logLossStatus": "finite",
+          "brier": 0.8707482993197277
         },
         "paper": {
           "stake": 2,
           "profit": -2,
-          "randomExpectedProfit": -0.9066666666666667,
-          "marketExpectedProfit": -0.2291936052448913,
+          "randomExpectedProfit": 0.06666666666666687,
+          "marketExpectedProfit": -0.22805361280124714,
           "baselineMethod": "same_stake_expected_profit_of_random_or_normalized_implied_odds_selection",
           "execution": "paper_only",
           "profitKind": "exact_expected_profit_of_single_randomized_selection",
@@ -407829,97 +408061,17 @@
     },
     {
       "schemaVersion": 1,
-      "id": "377b684543a9f314f613a63190d275fce635e9d86a95f9ec86fece70154a8251",
-      "recordedAt": "2026-09-12T15:32:32.934Z",
+      "id": "2be68b1c36fcf7483ff65dc536092dce84f272d5efdc6535740de15916339530",
+      "recordedAt": "2026-09-13T10:31:43.833Z",
       "payload": {
-        "predictionId": "fa88ff42c67b4b433c9d5c803e219f570cf4fbe3294aa24fcb8dd75055a21072",
-        "resultId": "9daa82331a6cca2da7d12f3d6129c804b719326465a4d432957b4f86b448a153",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.9133232210577653,
-          "logLossStatus": "finite",
-          "brier": 0.5402099454066374
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "5c2cc364873ae99d16ab16396beede976639653fb36ced2d6af1f8dcc1899f2c",
-      "recordedAt": "2026-09-12T15:32:32.924Z",
-      "payload": {
-        "predictionId": "f89f504a49c2fd984f70a477102f6ff71bf9f879696d3f33d32e660e0c09c9f5",
-        "resultId": "3800a489081103ef995d043627397e8c415cb5d8172dd5f7e3696885f68c79df",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.4436369354364034,
-          "logLossStatus": "finite",
-          "brier": 0.1934194086540813
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "33be6f8df7a9c5903945ccf5d8d23c246c5badbb16a4c5c3a8ffd90e5ad52a2a",
-      "recordedAt": "2026-09-12T15:32:32.915Z",
-      "payload": {
-        "predictionId": "f3950b04cb862a9808e6a326e751ff8046c256233e0763651d16bdf816fbc97b",
-        "resultId": "d43272e8b174bce25b3035b664619c940bd1500f32b6bccea9b15d0e015b3e11",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 1.2884623802557855,
-          "logLossStatus": "finite",
-          "brier": 0.8257947418385804
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "b9cd2b3fb1e4612c969c55b6e15fa6c4abe0f1c2316644a30c2778998408b56d",
-      "recordedAt": "2026-09-12T15:32:32.912Z",
-      "payload": {
-        "predictionId": "f3538855de751822ae8e64154091637b26904c3224f4823e62a40288a11ae368",
-        "resultId": "d79aeeda6d01b62187ae093e334e407b55a163e12adbf92e0c55932b6724b135",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.5189689362463556,
-          "logLossStatus": "finite",
-          "brier": 0.9865368923879858
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "55d3682c3d4a9357f7338b5d015363e349ab9cf1356288cfe746b92f8904e369",
-      "recordedAt": "2026-09-12T15:32:32.908Z",
-      "payload": {
-        "predictionId": "f31a40cadc515b321e74398095523d39137aad9924df2b2b8a37bde7bc082435",
-        "resultId": "6d7e1fb8dc36ee0f35b78dc19de824f76f11b8bceb705484689fce3ed22864e9",
+        "predictionId": "ef3e12befb39616e468c84e199f507cd4d7e6fb6c00d4ef86a35d71d23d88c8f",
+        "resultId": "e9dd21786816ac5242807626416a3fa77fc746331838d8190f3bbee04de4cc7e",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "H",
-          "logLoss": 0.9582228370650926,
+          "logLoss": 0.8263577612179368,
           "logLossStatus": "finite",
-          "brier": 0.5776474603180721
+          "brier": 0.48067126820717476
         },
         "paper": null,
         "ruleVerification": {
@@ -407929,17 +408081,17 @@
     },
     {
       "schemaVersion": 1,
-      "id": "b336ec731b7ba90cfaf628dc5eafa024693846cab2afd45f5d3d0b1de71416f6",
-      "recordedAt": "2026-09-12T15:32:32.901Z",
+      "id": "512690786f12b5e85e48d252ad9c1d273af49787f78edd46a0b873fb2f185b24",
+      "recordedAt": "2026-09-13T10:31:43.831Z",
       "payload": {
-        "predictionId": "f19642ef57800758a127dafe2eff335e274c14d1c898b14682191305706f04c0",
-        "resultId": "029ea414f9ff937f40df7bbd4321433b1514a813fa1cebaa34e41d02c3b7b9bd",
+        "predictionId": "ef1edabd9eab9fde59320e878e148e27add6b0f71054a49d1a35f9b61c931ee7",
+        "resultId": "3119664b64dd86eb72f6d873d84d383eb9cddd4e6b9b7dd1fff8e9de479e9b5d",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "H",
-          "logLoss": 0.9102521475800804,
+          "logLoss": 1.0986122886681098,
           "logLossStatus": "finite",
-          "brier": 0.5407042108465067
+          "brier": 0.6666666666666667
         },
         "paper": null,
         "ruleVerification": {
@@ -407949,83 +408101,23 @@
     },
     {
       "schemaVersion": 1,
-      "id": "045e73b0e7e2aa8945bd47c0307a5c5743dff13ad99b1893589aa54f6c035d28",
-      "recordedAt": "2026-09-12T15:32:32.897Z",
+      "id": "f338ff99696ed4a3e67160e4676ce12cc826300654b83c99871ae4f0a27c288b",
+      "recordedAt": "2026-09-13T10:31:43.829Z",
       "payload": {
-        "predictionId": "f046916a17e313516b90e125867127580783995a7e43173755637618a1051742",
-        "resultId": "d79aeeda6d01b62187ae093e334e407b55a163e12adbf92e0c55932b6724b135",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.5629914172318078,
-          "logLossStatus": "finite",
-          "brier": 0.9546902307146988
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "532feeaaa5e920cf7ac7e6885c85c0899c93ad13ed20317546ef6393006ff947",
-      "recordedAt": "2026-09-12T15:32:32.893Z",
-      "payload": {
-        "predictionId": "efc35ee5f00e5d0377b03174de4ad6de189666d3deddbcea16fbf099ec5d7690",
-        "resultId": "9daa82331a6cca2da7d12f3d6129c804b719326465a4d432957b4f86b448a153",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.9650808960435872,
-          "logLossStatus": "finite",
-          "brier": 0.5850340136054422
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "e41058a93b77a58563a6cd9e4b321aba0a76e17f2e5c7fd422f5c89ae2daf7ec",
-      "recordedAt": "2026-09-12T15:32:32.890Z",
-      "payload": {
-        "predictionId": "ef3c71e0735be148442f106957b70f294b7e9ac3171dadd1e3e6b7e13e54109f",
-        "resultId": "d43272e8b174bce25b3035b664619c940bd1500f32b6bccea9b15d0e015b3e11",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 1.252762968495368,
-          "logLossStatus": "finite",
-          "brier": 0.7755102040816326
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "e703f953011779952d2cd14015bafdd6dfcd0ec3e0b1887545acb2191515f433",
-      "recordedAt": "2026-09-12T15:32:32.881Z",
-      "payload": {
-        "predictionId": "ed7a27e9841926677ac5d12a7b2d4360cadf8c8cfb022403c657a650b00a7728",
-        "resultId": "096aa595442fd85c6d504eeda97236a2b652789ecf8736beab272bac1bc04486",
+        "predictionId": "ee7c5fc68b66b1caa0086f2f332218063b0fe3d11f7b54fcc8b9e894e6d8ba49",
+        "resultId": "1460e3959ca33cb6edd6c4feede1c19b0dd44bf16c963ca00bd93514c3cd1908",
         "status": "settled_paper_assumption",
         "scoring": {
-          "outcome": "A",
-          "logLoss": 0.9970968624847374,
+          "outcome": "D",
+          "logLoss": 2.2170382665343396,
           "logLossStatus": "finite",
-          "brier": 0.6821074069279894
+          "brier": 1.208294410715337
         },
         "paper": {
           "stake": 2,
           "profit": -2,
-          "randomExpectedProfit": -0.10666666666666669,
-          "marketExpectedProfit": -0.22973229040431864,
+          "randomExpectedProfit": 0.6733333333333333,
+          "marketExpectedProfit": -0.2294052887847915,
           "baselineMethod": "same_stake_expected_profit_of_random_or_normalized_implied_odds_selection",
           "execution": "paper_only",
           "profitKind": "exact_expected_profit_of_single_randomized_selection",
@@ -408053,17 +408145,17 @@
     },
     {
       "schemaVersion": 1,
-      "id": "ecafa85588891cb565938b9fc6392656dbf882f3bd27b4d140068f3e063769ba",
-      "recordedAt": "2026-09-12T15:32:32.879Z",
+      "id": "a4154387719195d8e7fef9ed600350bb48ec3b377c3190d4d3df1587e51c8fff",
+      "recordedAt": "2026-09-13T10:31:43.826Z",
       "payload": {
-        "predictionId": "e88655f5c88a8bcf68cd62a5d4ad1418cd081cdfec23264e0a82d7c2a45f9f5c",
-        "resultId": "b487f8922159da9dafc7298181c49307094afd632311319d1b187e50c360c9cd",
+        "predictionId": "ed65ab46c92878106670847c3c97cb1518577392304d6a54d3749e168bc51b19",
+        "resultId": "0a40dfc78e1320997147e50f85656a435269804130c8709f550c3f034769960e",
         "status": "scored_no_trade",
         "scoring": {
-          "outcome": "D",
-          "logLoss": 1.2105088781876023,
+          "outcome": "A",
+          "logLoss": 0.45818189028056877,
           "logLossStatus": "finite",
-          "brier": 0.7437724122822986
+          "brier": 0.20639883126369615
         },
         "paper": null,
         "ruleVerification": {
@@ -408073,37 +408165,17 @@
     },
     {
       "schemaVersion": 1,
-      "id": "791b39f4a642131f08fbf5a1879c28c5776ec4929d1562e11943c068aaaa1bcc",
-      "recordedAt": "2026-09-12T15:32:32.877Z",
+      "id": "315a552db3eade0c54bf8c523ce41f2f3693f096955e72ff43c3a31e1d60b7b8",
+      "recordedAt": "2026-09-13T10:31:43.822Z",
       "payload": {
-        "predictionId": "df4d36d4ecd094b0b889603477ca9346b46400ce5c99abd72fc03214d54c33c1",
-        "resultId": "029ea414f9ff937f40df7bbd4321433b1514a813fa1cebaa34e41d02c3b7b9bd",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "H",
-          "logLoss": 1.0986122886681098,
-          "logLossStatus": "finite",
-          "brier": 0.6666666666666667
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "4f55fd4be0a7ac4744c4accb85c45ffaa3c4a8e584576bb7ed7aaf90057129bb",
-      "recordedAt": "2026-09-12T15:32:32.872Z",
-      "payload": {
-        "predictionId": "dda72a98da88fafa8267ab1f99fac7f483e166a65b0b6fdfb8ffb2390bf34a84",
-        "resultId": "6d7e1fb8dc36ee0f35b78dc19de824f76f11b8bceb705484689fce3ed22864e9",
+        "predictionId": "ec965ce617b31328810b69a2574519aaf29f150cf9850b6e7b7bab2d7cb788f3",
+        "resultId": "923eb6f1671a19b40ed1a26132202086bbea0c5f1d65f6a0525ae38ae26c3b4d",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "H",
-          "logLoss": 1.0986122886681098,
+          "logLoss": 0.553323454667029,
           "logLossStatus": "finite",
-          "brier": 0.6666666666666667
+          "brier": 0.27105085483715263
         },
         "paper": null,
         "ruleVerification": {
@@ -408113,23 +408185,63 @@
     },
     {
       "schemaVersion": 1,
-      "id": "694c76a16a2b858b718c466f5ec84d9a3f9c3703eae5a9d771aa0f3741eb56bd",
-      "recordedAt": "2026-09-12T15:32:32.864Z",
+      "id": "e040bc390097f2aae3898a4f94f0ef62c27a08f7c983ee26c911514147e5ac4d",
+      "recordedAt": "2026-09-13T10:31:43.819Z",
       "payload": {
-        "predictionId": "dc2dbfd1d06d0c653982ce934bba85a3afb054a4d5672fa3ccd1f670702de9fa",
-        "resultId": "cbed73683c6672ae4e8239ea3d5b182903a3fe29f0e4b9b07acbcb6d8383ed13",
+        "predictionId": "ebc3f5e7e798bd1f265206ff8a54bcc84b2c08fd822aac1d3c0ac9fbf32b7423",
+        "resultId": "0a40dfc78e1320997147e50f85656a435269804130c8709f550c3f034769960e",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 1.3468306894202249,
+          "logLossStatus": "finite",
+          "brier": 0.8228033621911676
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "ec27e2ca1108f6002cbd056ec8e3fe1a00e64e8eea52ecec5c3e246fce5b1d4d",
+      "recordedAt": "2026-09-13T10:31:43.814Z",
+      "payload": {
+        "predictionId": "eb2ab6586445b6c712716f8ee1e58566da8c166b027dcab0d0ceeec41ebc6ce2",
+        "resultId": "248073db1e660819caf02c62d58db12de1b9ad306c09d062734a524b7a718dfe",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 1.1995934275589664,
+          "logLossStatus": "finite",
+          "brier": 0.7449363605728976
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "d1d5ebcba863f1564742bf95c5c14f51a0711da1e04ba13c06358273288468a3",
+      "recordedAt": "2026-09-13T10:31:43.811Z",
+      "payload": {
+        "predictionId": "e96415f0db6765a29e7f6f118ad2a8114e7331aa9b122f48d3a77bee755dcd67",
+        "resultId": "4033d4f61a49f8ae3e062c1fedc827c0a95420f6d04ff42617bdb1f1e703a5e6",
         "status": "settled_paper_assumption",
         "scoring": {
-          "outcome": "H",
-          "logLoss": 1.0986122886681098,
+          "outcome": "D",
+          "logLoss": 1.2993022801816783,
           "logLossStatus": "finite",
-          "brier": 0.6666666666666667
+          "brier": 0.796976394915731
         },
         "paper": {
           "stake": 2,
           "profit": -2,
-          "randomExpectedProfit": -0.74,
-          "marketExpectedProfit": -0.22924064979221792,
+          "randomExpectedProfit": 0.2333333333333334,
+          "marketExpectedProfit": -0.22672013507809208,
           "baselineMethod": "same_stake_expected_profit_of_random_or_normalized_implied_odds_selection",
           "execution": "paper_only",
           "profitKind": "exact_expected_profit_of_single_randomized_selection",
@@ -408157,37 +408269,17 @@
     },
     {
       "schemaVersion": 1,
-      "id": "b58b78941304aa10e4d4c7e4878912ca5786614013ae17c3615989b4003e223d",
-      "recordedAt": "2026-09-12T15:32:32.861Z",
+      "id": "f9313e092bd792a391148d6298aa7a132967b41a6d2d56e018b2c3e8810c9d6f",
+      "recordedAt": "2026-09-13T10:31:43.809Z",
       "payload": {
-        "predictionId": "d8de9a421c56bc64082ac0b920f7e6a36a39d26ab71d51c0afe94a405a163bf5",
-        "resultId": "cbed73683c6672ae4e8239ea3d5b182903a3fe29f0e4b9b07acbcb6d8383ed13",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "H",
-          "logLoss": 0.7198161942098995,
-          "logLossStatus": "finite",
-          "brier": 0.3959337138462832
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "b935628d51eb56564f417480c1dd22520931704da41d6f637db5469968c21117",
-      "recordedAt": "2026-09-12T15:32:32.858Z",
-      "payload": {
-        "predictionId": "d47127dcaa7482494d1634e4163969d57a3e09e01e7f02b7937f44f0989059b4",
-        "resultId": "b487f8922159da9dafc7298181c49307094afd632311319d1b187e50c360c9cd",
+        "predictionId": "e5fed977feb029432334c52e831e2d63ef514cee8c0da5a37ee4f5d88897eb7f",
+        "resultId": "93db959705d21ff05910f10a08d50f769f6e77352c6524965f4b1547d9e343a8",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "D",
-          "logLoss": 1.33613779193087,
+          "logLoss": 1.362059317656682,
           "logLossStatus": "finite",
-          "brier": 0.8583920755045251
+          "brier": 0.8319486098542814
         },
         "paper": null,
         "ruleVerification": {
@@ -408197,17 +408289,17 @@
     },
     {
       "schemaVersion": 1,
-      "id": "61afe0f0b04a5a5326ce2463c1990c4c5893843c61c0912d8eb3f1f30f5107f1",
-      "recordedAt": "2026-09-12T15:32:32.856Z",
+      "id": "96d2b83ecdc2f677773a10f15e94f9187495470dbf2f5007581aaed6bbb4a952",
+      "recordedAt": "2026-09-13T10:31:43.807Z",
       "payload": {
-        "predictionId": "d20a8ca4df472af1dfce34d35f977431a2f0d69dfb73a2f9e5d9143a9ea6a415",
-        "resultId": "3800a489081103ef995d043627397e8c415cb5d8172dd5f7e3696885f68c79df",
+        "predictionId": "e4e4e8512fc98ed2b4e75565947644cc72f76b3f260204bc70bb056ca9223630",
+        "resultId": "ca529585548c9bad8fbf8cff276fbc6eb7753bf3ec43f1df0e56130778a3a61d",
         "status": "scored_no_trade",
         "scoring": {
-          "outcome": "A",
-          "logLoss": 1.038382551033667,
+          "outcome": "D",
+          "logLoss": 1.3792171992237494,
           "logLossStatus": "finite",
-          "brier": 0.6697217726759849
+          "brier": 0.8705030759409842
         },
         "paper": null,
         "ruleVerification": {
@@ -408217,17 +408309,37 @@
     },
     {
       "schemaVersion": 1,
-      "id": "5ae8894f10dc68310fe1f2b325f8039ee5253328d2f0ef9f362feedda069a84b",
-      "recordedAt": "2026-09-12T15:32:32.854Z",
+      "id": "4e9f72d549bdbb978eecb859f9bf33fe86d7a956ef278d94e06bc36029f947c7",
+      "recordedAt": "2026-09-13T10:31:43.804Z",
       "payload": {
-        "predictionId": "d1a6c41a146ad7a7501cbf7a9922208a0634556422204ec674d8950e5f27dc00",
-        "resultId": "029ea414f9ff937f40df7bbd4321433b1514a813fa1cebaa34e41d02c3b7b9bd",
+        "predictionId": "e4a0f9d0da43f8256f069f9639f35c663728d3253224693aba94a852086e866e",
+        "resultId": "bf97a7971038e257e568483dd3948b185a2aabf2a23bbee6cf425a3ac8299de0",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.9777251717009987,
+          "logLossStatus": "finite",
+          "brier": 1.3727102645903688
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "0c5feebf707b8fbfbe47256d79bfd25082a8be0ffb3e47dadafdc83162247a45",
+      "recordedAt": "2026-09-13T10:31:43.802Z",
+      "payload": {
+        "predictionId": "e38e151e37edc9187cd37cfc0cfc6146d3dcaa4fb9961a8931b3b7b11e454653",
+        "resultId": "06811445dc219bce1fd451dbf5c67e3636e18a55e7cdb209bf03b0ff8fd4e00f",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "H",
-          "logLoss": 0.9868956228163368,
+          "logLoss": 0.8266785731844679,
           "logLossStatus": "finite",
-          "brier": 0.6034123145767052
+          "brier": 0.5234375
         },
         "paper": null,
         "ruleVerification": {
@@ -408237,11 +408349,11 @@
     },
     {
       "schemaVersion": 1,
-      "id": "9e62b7e73c4ef7a57a1d93d82eff5aee6f2e1a3b60e9e35a189e1e02a4fefbea",
-      "recordedAt": "2026-09-12T15:32:32.851Z",
+      "id": "e9c81ad35fdafef3718b85842f465040d88f848780135f1ac1d1a1fa9c0a80dd",
+      "recordedAt": "2026-09-13T10:31:43.798Z",
       "payload": {
-        "predictionId": "c9ceeaadbd1990751bf46eb840ed2b4b75a4092a341cffbd1674e3161f6fe7e4",
-        "resultId": "d43272e8b174bce25b3035b664619c940bd1500f32b6bccea9b15d0e015b3e11",
+        "predictionId": "e2ddbe03e031e1d8b81c847a5e853f4eb8d77e5825b52fb0252934c035b5c888",
+        "resultId": "c801be42adaea86e4bbf25f977c8ba21b9216fe26035f3928b9c1dbe57f39ebc",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "A",
@@ -408257,17 +408369,17 @@
     },
     {
       "schemaVersion": 1,
-      "id": "6d76eb4c5a2dcd5845a54bc6e3134b2c2f493ae497da098ead03ff9aa00e3b83",
-      "recordedAt": "2026-09-12T15:32:32.848Z",
+      "id": "cd15919c55c5a556598b9957848cc31a82636457c9b26752e500a703e70ca11f",
+      "recordedAt": "2026-09-13T10:31:43.792Z",
       "payload": {
-        "predictionId": "c473038e64860946e7946b6e661b21386a33a12e5296f87e9fc9f52103ed2ba1",
-        "resultId": "3800a489081103ef995d043627397e8c415cb5d8172dd5f7e3696885f68c79df",
+        "predictionId": "e0e3c1c6d15d3ca6f026a49c7a90a72b19f6013218674109f0647a673b22fdb5",
+        "resultId": "692a45f28ab9b6bf8bec67ecc71307ac46725afa716c6be044e5d14bbfd54129",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "A",
-          "logLoss": 0.5067770352399905,
+          "logLoss": 1.133589583354348,
           "logLossStatus": "finite",
-          "brier": 0.2378782879172513
+          "brier": 0.7207646859683807
         },
         "paper": null,
         "ruleVerification": {
@@ -408277,17 +408389,177 @@
     },
     {
       "schemaVersion": 1,
-      "id": "1f5e59ec924d26493c0afe53f012263f5e604e9e230e470e0ffdb97c5b7346bc",
-      "recordedAt": "2026-09-12T15:32:32.846Z",
+      "id": "b9e8db47a2d2ef2e4241882938aaee991419358dd23126480c8a545448a8fb24",
+      "recordedAt": "2026-09-13T10:31:43.790Z",
       "payload": {
-        "predictionId": "c3389a995fd9c207d4ac2434a0497a8613bb77d0cb3ae773418f74a6c877df39",
-        "resultId": "563d3898b8550d1b5f92e50d4639510833aff72289b4ca22def85364f4f2e877",
+        "predictionId": "decc190e13a6972d1ab313a6c2cc13012078d09bd499cb78cbb591af4cd7b9d3",
+        "resultId": "bf97a7971038e257e568483dd3948b185a2aabf2a23bbee6cf425a3ac8299de0",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 2.3627324118305766,
+          "logLossStatus": "finite",
+          "brier": 1.5715458853425086
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "9f5b8c1d5251d87ee5f5916ad39db447771474924fe0eb972c9d4e98ae72a987",
+      "recordedAt": "2026-09-13T10:31:43.786Z",
+      "payload": {
+        "predictionId": "dd43b0d253baa13a71428a3abb690d15e1daf48c359b3f1657135a4c975d8a84",
+        "resultId": "692a45f28ab9b6bf8bec67ecc71307ac46725afa716c6be044e5d14bbfd54129",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 2.012545816139344,
+          "logLossStatus": "finite",
+          "brier": 1.2251195169616618
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "0b2afbf7795afd5ed7d2e391be4a5b50e1348d2e8b0c8dbbf18b2946ca2ca4ea",
+      "recordedAt": "2026-09-13T10:31:43.783Z",
+      "payload": {
+        "predictionId": "dcaf1d0dd179f82d905cb0a6093a59fc6bcdfc1e4ddf7f269151a8cd93115ae7",
+        "resultId": "0baa5704f7f6ec3e04b43b97dc371ab4b3f49b16ab9226c88b510aa407e4b9f3",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 0.37600989024516274,
+          "logLossStatus": "finite",
+          "brier": 0.14816907092913384
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "48041b4bed66546ee5ee21ef11e5a431914f0ea464dc39ca47a397d4e5480568",
+      "recordedAt": "2026-09-13T10:31:43.781Z",
+      "payload": {
+        "predictionId": "d95be9558ff3f68feba7bddf43e96b24a81710a56acaf6590c8bb120e48c027b",
+        "resultId": "eb808fe6b995cb15926a6d8c9bb3ea5187e8b56f6b9e9c8031aa80a8f647a613",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 1.3601924148058209,
+          "logLossStatus": "finite",
+          "brier": 0.8436976690817661
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "ce68e087c29faa7ac9d890f1f7d1ae368d1bc329a0ad83607ddefe0e3c9c69e4",
+      "recordedAt": "2026-09-13T10:31:43.779Z",
+      "payload": {
+        "predictionId": "d4d4d80ec7740d0e2ec08da8e9c9af89a9b822ba7afe62f71f812b7fb1e468f7",
+        "resultId": "4033d4f61a49f8ae3e062c1fedc827c0a95420f6d04ff42617bdb1f1e703a5e6",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.3292766635258648,
+          "logLossStatus": "finite",
+          "brier": 0.8306651395068673
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "3d468b0bafe4d6cbb1a3ffb2a3a229a377206d4d406cf8ae57569e9e8cf7016a",
+      "recordedAt": "2026-09-13T10:31:43.777Z",
+      "payload": {
+        "predictionId": "d1c99677c6c3be6c9b52c349204a9a386c422e913f5c708c9d28aad596338bc9",
+        "resultId": "f50f6395e3e390a78565af254a3db5217f1a5eaf3e882283c186ed6fdb76c1b6",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.3516329154906468,
+          "logLossStatus": "finite",
+          "brier": 0.8242008294617028
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "9e6136014e388cc527a0154b6edbe7ac2718c0ac5b633c8beb7f1b83e750d839",
+      "recordedAt": "2026-09-13T10:31:43.774Z",
+      "payload": {
+        "predictionId": "d0e57e9d32be0fdb531e39ea4cbe2f7c353a308c5e8bf75b130b2d78472b1256",
+        "resultId": "782022ab9c79ffd2d7093504bf8003d617566126adf035815f9948a8cda3291e",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.0986122886681098,
+          "logLossStatus": "finite",
+          "brier": 0.6666666666666667
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "3180a48eb096151f122d0a82a92869a974e44d467b557f15d5b5b5dbbfdc27c9",
+      "recordedAt": "2026-09-13T10:31:43.772Z",
+      "payload": {
+        "predictionId": "d0b51d74f38b20bbbd49c3de7d7d811e85193c76d2f033205bf4b89a7c3ee962",
+        "resultId": "0baa5704f7f6ec3e04b43b97dc371ab4b3f49b16ab9226c88b510aa407e4b9f3",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 0.37600989024516274,
+          "logLossStatus": "finite",
+          "brier": 0.14816907092913384
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "889f0a4ffcf611df7047ec4644a498f34c94c5d352ca76ecd8f25ecad3837e00",
+      "recordedAt": "2026-09-13T10:31:43.768Z",
+      "payload": {
+        "predictionId": "cdac8e1fc09ff18a881f18e871317d1878fb8ee72d4625ee1143c3e18239185f",
+        "resultId": "923eb6f1671a19b40ed1a26132202086bbea0c5f1d65f6a0525ae38ae26c3b4d",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "H",
-          "logLoss": 1.0394207591813256,
+          "logLoss": 0.8255950678849926,
           "logLossStatus": "finite",
-          "brier": 0.6474679349307526
+          "brier": 0.47851818599871504
         },
         "paper": null,
         "ruleVerification": {
@@ -408297,30 +408569,70 @@
     },
     {
       "schemaVersion": 1,
-      "id": "5c3743a5926bd1416b91b08c2e49c3ee44a19da7fc52499d80322941dc1253cf",
-      "recordedAt": "2026-09-12T15:32:32.843Z",
+      "id": "e8a7f6b98138478d5e8af1c7898579cfdc2abd42f9dbac683cb795de3e347c73",
+      "recordedAt": "2026-09-13T10:31:43.766Z",
       "payload": {
-        "predictionId": "c328aafedb64d1ea162fce281715dab5945465f47955b065aca7a0b0fc120b86",
-        "resultId": "6f2c1675fa87b2d669d3413c4bfa32ff7fd5473a17c110055adcac07d6411695",
-        "status": "settled_paper_assumption",
+        "predictionId": "cd2bbb0a507b64cc7beeabd852f79887b69850c775eac969981868dfcb2110bb",
+        "resultId": "ca529585548c9bad8fbf8cff276fbc6eb7753bf3ec43f1df0e56130778a3a61d",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.6241580806053986,
+          "logLossStatus": "finite",
+          "brier": 1.0879345075997846
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "0df1be9533ad79509e6c218e0cfcf5477ff1511118a80e31789f3a1f7d718701",
+      "recordedAt": "2026-09-13T10:31:43.764Z",
+      "payload": {
+        "predictionId": "c91934977c0b45ba05441e1793e52f982fdf1920235e0dcfa463758acb297140",
+        "resultId": "923eb6f1671a19b40ed1a26132202086bbea0c5f1d65f6a0525ae38ae26c3b4d",
+        "status": "scored_no_trade",
         "scoring": {
           "outcome": "H",
-          "logLoss": 0.6030836532903219,
+          "logLoss": 1.0986122886681098,
           "logLossStatus": "finite",
-          "brier": 0.33261706501357047
+          "brier": 0.6666666666666667
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "9dce0b0af451d752f39bb866cb2ea77d70b05c9708aeaeea4fb0a9f6680ea8a1",
+      "recordedAt": "2026-09-13T10:31:43.761Z",
+      "payload": {
+        "predictionId": "c8bc8e7187a7106bda873ca57d6de32d01e6ef434b0394f484c61a1403f61c27",
+        "resultId": "4f8ce21b6109464be2d3f2074eaf43b1a96d5784f20e84fbb1cddc9a0aab309b",
+        "status": "settled_paper_assumption",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 1.2809338454620642,
+          "logLossStatus": "finite",
+          "brier": 0.7962962962962963
         },
         "paper": {
           "stake": 2,
           "profit": -2,
-          "randomExpectedProfit": -0.7866666666666666,
-          "marketExpectedProfit": -0.2260273972602742,
+          "randomExpectedProfit": 0.013333333333333197,
+          "marketExpectedProfit": -0.22992707301701665,
           "baselineMethod": "same_stake_expected_profit_of_random_or_normalized_implied_odds_selection",
           "execution": "paper_only",
           "profitKind": "exact_expected_profit_of_single_randomized_selection",
           "selectionWeights": [
             0,
-            0,
-            1
+            1,
+            0
           ],
           "selectionInterpretation": "One hypothetical whole-stake choice drawn from H/D/A weights; expectation over choice, not split stakes or an actual order.",
           "ruleAssumption": {
@@ -408341,281 +408653,125 @@
     },
     {
       "schemaVersion": 1,
-      "id": "1c62188e2fb9202a3f4130181ed6b70e40a9aed10443ca301cb3a7b6438b7f10",
-      "recordedAt": "2026-09-12T15:32:32.839Z",
+      "id": "e1a61bb4d31d14e02b18ea5c232c9ed37aee864a9ae74efac87f245a232bcf17",
+      "recordedAt": "2026-09-13T10:31:43.754Z",
       "payload": {
-        "predictionId": "bed80fcf6a595d312bca3bee31c8280f0d83d14184fe2b6ebed730f3b5793008",
-        "resultId": "b487f8922159da9dafc7298181c49307094afd632311319d1b187e50c360c9cd",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.1970391240582101,
-          "logLossStatus": "finite",
-          "brier": 0.7342676450471319
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "a7c188ad84de3f8e1bf2692acc46c1606bf5dc6caa4f30edd427cfa604a9ec91",
-      "recordedAt": "2026-09-12T15:32:32.835Z",
-      "payload": {
-        "predictionId": "baf84205e2e38d4e6ae26af49fa54525b5aedc3e4dbb4a4abd6f367e53567775",
-        "resultId": "b487f8922159da9dafc7298181c49307094afd632311319d1b187e50c360c9cd",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.2992829841302609,
-          "logLossStatus": "finite",
-          "brier": 0.8099173553719008
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "b7427145705fc42923dd72ffce1dc4c538dc6dd0b44a143ba5b42bed34133b3d",
-      "recordedAt": "2026-09-12T15:32:32.828Z",
-      "payload": {
-        "predictionId": "ba135df57d1b7baf3ce90d62cb3b6add857969a18daf719124cfa879837cd54f",
-        "resultId": "563d3898b8550d1b5f92e50d4639510833aff72289b4ca22def85364f4f2e877",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "H",
-          "logLoss": 0.943858498277591,
-          "logLossStatus": "finite",
-          "brier": 0.5651749405393109
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "374d6dad32e8ab46a6ad52fcc896e01b31e2d6bc7357d45cae0f636f74034cbf",
-      "recordedAt": "2026-09-12T15:32:32.825Z",
-      "payload": {
-        "predictionId": "b8d07069343a90104e1e02b003aa899f8e7161ddeb2a0205fb5a21e23b6e8463",
-        "resultId": "cbed73683c6672ae4e8239ea3d5b182903a3fe29f0e4b9b07acbcb6d8383ed13",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "H",
-          "logLoss": 0.7583155436280189,
-          "logLossStatus": "finite",
-          "brier": 0.42459711966230745
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "00cf90e76409ac6630f9ec7380491da309b7823e2364a4895bade5eef6f11539",
-      "recordedAt": "2026-09-12T15:32:32.819Z",
-      "payload": {
-        "predictionId": "b4f4ea9f3d2d0718c69ccd42c3536be4d3de07d6fb871effd754f3a5a14069d7",
-        "resultId": "d79aeeda6d01b62187ae093e334e407b55a163e12adbf92e0c55932b6724b135",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.3862943611198906,
-          "logLossStatus": "finite",
-          "brier": 0.8472222222222223
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "597c274f70e5394cdb7e84f3cd9b10369fcfc4a9900e051116cea1b55f208b71",
-      "recordedAt": "2026-09-12T15:32:32.816Z",
-      "payload": {
-        "predictionId": "b3f8d6a481a3caf3b1e414df7b15c2d42b244989f6c6dbc1134212fff3c413ed",
-        "resultId": "d43272e8b174bce25b3035b664619c940bd1500f32b6bccea9b15d0e015b3e11",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 1.1287151741273855,
-          "logLossStatus": "finite",
-          "brier": 0.7147182563427124
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "dc1be20efa6d7849f43bac09a77e70a5cb60077ef0e87e82578662ad4e62edd9",
-      "recordedAt": "2026-09-12T15:32:32.814Z",
-      "payload": {
-        "predictionId": "afe99104394f914e57292af79e21ae91bd8cfa469e12f7a4ebcdad345047829f",
-        "resultId": "d43272e8b174bce25b3035b664619c940bd1500f32b6bccea9b15d0e015b3e11",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.7718115734700113,
-          "logLossStatus": "finite",
-          "brier": 0.43667251630803544
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "98973b2c50232c8e6aa270ff434498a431af63087e2887290384aaecdcd247e9",
-      "recordedAt": "2026-09-12T15:32:32.811Z",
-      "payload": {
-        "predictionId": "af472fbb53281555a94a1d1c51ea10cc9e1ee0dbc1ff6fe15d79ca1da16888ee",
-        "resultId": "096aa595442fd85c6d504eeda97236a2b652789ecf8736beab272bac1bc04486",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 1.0673473192425829,
-          "logLossStatus": "finite",
-          "brier": 0.6693998974105275
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "4878249fb011a50f1ccbfec2bd7b9d7e4ddef1f907dad141f5283cf94647a4ad",
-      "recordedAt": "2026-09-12T15:32:32.809Z",
-      "payload": {
-        "predictionId": "ab56a9b0177a32f31fb8ae7f9c607176ee71887565d98ef030abbdd22178594e",
-        "resultId": "b487f8922159da9dafc7298181c49307094afd632311319d1b187e50c360c9cd",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.1970391240582101,
-          "logLossStatus": "finite",
-          "brier": 0.7342676450471319
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "09a024c6264db756efd8abb3da70658a9855d498c19928437ffca37184c62885",
-      "recordedAt": "2026-09-12T15:32:32.807Z",
-      "payload": {
-        "predictionId": "a61d8cbbd58a1c91e1b2da8ca83755f7d9ae10eb0b9aa4beb19e78168551c3df",
-        "resultId": "029ea414f9ff937f40df7bbd4321433b1514a813fa1cebaa34e41d02c3b7b9bd",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "H",
-          "logLoss": 0.9970098232493465,
-          "logLossStatus": "finite",
-          "brier": 0.6079036631141747
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "2ccf4639e360949333317c877dcd0150980c3a537cdc3ec0f95f8ccf29ef3d86",
-      "recordedAt": "2026-09-12T15:32:32.805Z",
-      "payload": {
-        "predictionId": "a605d074915483af7393b8552c802b5cfcb9bedbe7862a468995a3ab5bb49b19",
-        "resultId": "9daa82331a6cca2da7d12f3d6129c804b719326465a4d432957b4f86b448a153",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.9327010612721933,
-          "logLossStatus": "finite",
-          "brier": 0.5536847509182157
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "5267f16b50809ddad5074afe25036e51330a22e36d904606f12fba0403575106",
-      "recordedAt": "2026-09-12T15:32:32.801Z",
-      "payload": {
-        "predictionId": "9d41ca757a46a795390fe6873eb7ba765043e08ad909af09cfe7f31dc9c493ff",
-        "resultId": "cbed73683c6672ae4e8239ea3d5b182903a3fe29f0e4b9b07acbcb6d8383ed13",
+        "predictionId": "c8997edc387e7427b3231169f7040c88bf100698be8863c1b4ce81c1eb44cf7d",
+        "resultId": "978bee703bd5c00ed484984c0c3667fd135515b4ffe60f6cdc0cc3447b7237fd",
         "status": "settled_paper_assumption",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 1.5477551162631489,
+          "logLossStatus": "finite",
+          "brier": 0.9463714850366856
+        },
+        "paper": {
+          "stake": 2,
+          "profit": -2,
+          "randomExpectedProfit": 0.06666666666666687,
+          "marketExpectedProfit": -0.22805361280124714,
+          "baselineMethod": "same_stake_expected_profit_of_random_or_normalized_implied_odds_selection",
+          "execution": "paper_only",
+          "profitKind": "exact_expected_profit_of_single_randomized_selection",
+          "selectionWeights": [
+            1,
+            0,
+            0
+          ],
+          "selectionInterpretation": "One hypothetical whole-stake choice drawn from H/D/A weights; expectation over choice, not split stakes or an actual order.",
+          "ruleAssumption": {
+            "id": "fixed-decimal-1x2-paper-v1",
+            "market": "1X2_REGULATION",
+            "currency": "CNY",
+            "fixedStake": 2,
+            "description": "One hypothetical 2 yuan selection at observed fixed decimal odds; mathematical paper payoff only, not verified official settlement or actual/redeemable earnings.",
+            "officialSettlement": false,
+            "actualOrder": false,
+            "redeemable": false
+          }
+        },
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "df75f31ecc6aa9a6a0b035bd85802821644628571b7170db62858d3694735047",
+      "recordedAt": "2026-09-13T10:31:43.748Z",
+      "payload": {
+        "predictionId": "c72c6f53398edc14467403f21a4b395cca1cd1a69f64d6cd129a45697cbfe70e",
+        "resultId": "4033d4f61a49f8ae3e062c1fedc827c0a95420f6d04ff42617bdb1f1e703a5e6",
+        "status": "settled_paper_assumption",
+        "scoring": {
+          "outcome": "D",
+          "logLoss": 0.9259818149372905,
+          "logLossStatus": "finite",
+          "brier": 0.5527434658018863
+        },
+        "paper": {
+          "stake": 2,
+          "profit": 4.7,
+          "randomExpectedProfit": 0.2333333333333334,
+          "marketExpectedProfit": -0.22672013507809208,
+          "baselineMethod": "same_stake_expected_profit_of_random_or_normalized_implied_odds_selection",
+          "execution": "paper_only",
+          "profitKind": "exact_expected_profit_of_single_randomized_selection",
+          "selectionWeights": [
+            0,
+            1,
+            0
+          ],
+          "selectionInterpretation": "One hypothetical whole-stake choice drawn from H/D/A weights; expectation over choice, not split stakes or an actual order.",
+          "ruleAssumption": {
+            "id": "fixed-decimal-1x2-paper-v1",
+            "market": "1X2_REGULATION",
+            "currency": "CNY",
+            "fixedStake": 2,
+            "description": "One hypothetical 2 yuan selection at observed fixed decimal odds; mathematical paper payoff only, not verified official settlement or actual/redeemable earnings.",
+            "officialSettlement": false,
+            "actualOrder": false,
+            "redeemable": false
+          }
+        },
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "378754062479d88c29e8ef97085607747baa9e822ae44233bd585f51b31ea587",
+      "recordedAt": "2026-09-13T10:31:43.740Z",
+      "payload": {
+        "predictionId": "c5084d712d52e3cc4ed5e02ceb6602d12ff4d2a8bc7f72d3e76d784ae9dd5371",
+        "resultId": "58763da05babb1554b7e30963885d6902203624badca8b1d1189d1439f6d8822",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 0.8266785731844679,
+          "logLossStatus": "finite",
+          "brier": 0.5234375
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "2638727bbef894dad9950c9d85ec5a933d51c97bd5b9ce2e0dea4a617ebf7a06",
+      "recordedAt": "2026-09-13T10:31:43.736Z",
+      "payload": {
+        "predictionId": "c10a1de98fca495bce7d7fbb9749b09f1e8ef4c0d84f696b54f69742028e39c8",
+        "resultId": "923eb6f1671a19b40ed1a26132202086bbea0c5f1d65f6a0525ae38ae26c3b4d",
+        "status": "scored_no_trade",
         "scoring": {
           "outcome": "H",
           "logLoss": 0.916290731874155,
           "logLossStatus": "finite",
-          "brier": 0.5399999999999999
-        },
-        "paper": {
-          "stake": 2,
-          "profit": -2,
-          "randomExpectedProfit": -0.74,
-          "marketExpectedProfit": -0.22924064979221792,
-          "baselineMethod": "same_stake_expected_profit_of_random_or_normalized_implied_odds_selection",
-          "execution": "paper_only",
-          "profitKind": "exact_expected_profit_of_single_randomized_selection",
-          "selectionWeights": [
-            0,
-            0,
-            1
-          ],
-          "selectionInterpretation": "One hypothetical whole-stake choice drawn from H/D/A weights; expectation over choice, not split stakes or an actual order.",
-          "ruleAssumption": {
-            "id": "fixed-decimal-1x2-paper-v1",
-            "market": "1X2_REGULATION",
-            "currency": "CNY",
-            "fixedStake": 2,
-            "description": "One hypothetical 2 yuan selection at observed fixed decimal odds; mathematical paper payoff only, not verified official settlement or actual/redeemable earnings.",
-            "officialSettlement": false,
-            "actualOrder": false,
-            "redeemable": false
-          }
-        },
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "4bf070bcdbb6672325ef7f30daa9253f7235ef869fc8c79d72471b277a838a4d",
-      "recordedAt": "2026-09-12T15:32:32.799Z",
-      "payload": {
-        "predictionId": "9d05fcf93e950d91ba982b71bd2782cdef5f83efa7fc43f0dc865d6a7c447953",
-        "resultId": "07e832034d2d33722eef9a666426ca944e75b6880f946613d73ba77d1b8497cd",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.6164083893029217,
-          "logLossStatus": "finite",
-          "brier": 0.31787893521629657
+          "brier": 0.56
         },
         "paper": null,
         "ruleVerification": {
@@ -408625,17 +408781,17 @@
     },
     {
       "schemaVersion": 1,
-      "id": "c2729216780417854c6a4bbfa2b3125bd73875509a1a2f290e1c87c967ded164",
-      "recordedAt": "2026-09-12T15:32:32.796Z",
+      "id": "b48b3ad893c8195cebab591810075bd76b9080b9101bb8d63027ddbf5c7641ad",
+      "recordedAt": "2026-09-13T10:31:43.734Z",
       "payload": {
-        "predictionId": "99366504d6b39041094e8c6e6436bd6c9b082651a32fac035f1a1df77ed34230",
-        "resultId": "6f2c1675fa87b2d669d3413c4bfa32ff7fd5473a17c110055adcac07d6411695",
+        "predictionId": "c0156902047c93be0adac4282aec703273c17ce02504b92b362c2be8b501fceb",
+        "resultId": "3119664b64dd86eb72f6d873d84d383eb9cddd4e6b9b7dd1fff8e9de479e9b5d",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "H",
-          "logLoss": 0.6768675115859015,
+          "logLoss": 0.2875644184719993,
           "logLossStatus": "finite",
-          "brier": 0.3634385494922079
+          "brier": 0.09481681399902189
         },
         "paper": null,
         "ruleVerification": {
@@ -408645,281 +408801,37 @@
     },
     {
       "schemaVersion": 1,
-      "id": "a61cb08d1af391d19c66b7bc025007a87b514ee1c4734130bbe0f131586758dc",
-      "recordedAt": "2026-09-12T15:32:32.793Z",
+      "id": "142f654f124497bab6749373f154aefcbcf5b37584988e0b87ea2ec595a56306",
+      "recordedAt": "2026-09-13T10:31:43.732Z",
       "payload": {
-        "predictionId": "9890ab28682e0018fc2373a8f9a138ededb7d80bc8385d68c0e3abcd3c079dec",
-        "resultId": "6d7e1fb8dc36ee0f35b78dc19de824f76f11b8bceb705484689fce3ed22864e9",
+        "predictionId": "c0030e675a977d5a9143baf7a02d4c528e3e27083dcc018c50b0b1e670ebd7be",
+        "resultId": "8879ebd14d90c5e38f6bdf6a51f8f0394dd7e4d1c09252ce7c9d64b89d58b18c",
+        "status": "scored_no_trade",
+        "scoring": {
+          "outcome": "A",
+          "logLoss": 1.506235299757467,
+          "logLossStatus": "finite",
+          "brier": 0.9453585585807154
+        },
+        "paper": null,
+        "ruleVerification": {
+          "verified": false
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "341f8c63b0cdf153ac46d38b481f84e19beeab8c3b9d5f3cc23e5c490ef33f70",
+      "recordedAt": "2026-09-13T10:31:43.730Z",
+      "payload": {
+        "predictionId": "bf8ed174596ffd3b4a2fa5357f5459125fb96b3ab7ee37e3aefe5bd23a108b02",
+        "resultId": "3119664b64dd86eb72f6d873d84d383eb9cddd4e6b9b7dd1fff8e9de479e9b5d",
         "status": "scored_no_trade",
         "scoring": {
           "outcome": "H",
-          "logLoss": 0.5327172891238743,
+          "logLoss": 0.20246613544450381,
           "logLossStatus": "finite",
-          "brier": 0.25648504869394123
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "e1427040485021be9098e2f94ae79a6cfebbcbcf3d218a9e0d9259fff4b45278",
-      "recordedAt": "2026-09-12T15:32:32.789Z",
-      "payload": {
-        "predictionId": "97fb16a6f55ddda865139462c4c37550073d356e4ebd8912505a7e27334f89b0",
-        "resultId": "d43272e8b174bce25b3035b664619c940bd1500f32b6bccea9b15d0e015b3e11",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.8052262441335486,
-          "logLossStatus": "finite",
-          "brier": 0.46105171785457266
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "b348461bcde0f4db7b6ecb4dd7dac71c62733e75b2368109d3b96bb8a41c40d7",
-      "recordedAt": "2026-09-12T15:32:32.784Z",
-      "payload": {
-        "predictionId": "8e064b3398ae64507d4d1dec20793ca9e5e34a923798384e5d6b7837e49bb6a2",
-        "resultId": "b487f8922159da9dafc7298181c49307094afd632311319d1b187e50c360c9cd",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.4777704460315837,
-          "logLossStatus": "finite",
-          "brier": 0.9023484177941988
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "476f15d89d5aea77ed0adb63739159da75647d55b662b038c3b3eb797ef0d573",
-      "recordedAt": "2026-09-12T15:32:32.780Z",
-      "payload": {
-        "predictionId": "88b111268f63a8b909c2eff5998fe21253f138272e339edeb7379eb468abec8f",
-        "resultId": "3800a489081103ef995d043627397e8c415cb5d8172dd5f7e3696885f68c79df",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 1.144595298949898,
-          "logLossStatus": "finite",
-          "brier": 0.7134666415602624
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "9a298907cda083084ceecf90053b2456159ec5d7b152ea17e65f6b96d8c467f2",
-      "recordedAt": "2026-09-12T15:32:32.776Z",
-      "payload": {
-        "predictionId": "80d51150a6b3883f462b4652d5abe490a6f1c141f3db033264f48373099cce94",
-        "resultId": "9daa82331a6cca2da7d12f3d6129c804b719326465a4d432957b4f86b448a153",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.9327010612721933,
-          "logLossStatus": "finite",
-          "brier": 0.5536847509182157
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "5cb287bc15c95814475cf60446308ff4882443da3dda229bcd80092b7de3c0a8",
-      "recordedAt": "2026-09-12T15:32:32.770Z",
-      "payload": {
-        "predictionId": "7d2b905edb2d4598a07514787a089a58bf7af5564ab91325850bdf0afcd6a82b",
-        "resultId": "d79aeeda6d01b62187ae093e334e407b55a163e12adbf92e0c55932b6724b135",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.3867694902738594,
-          "logLossStatus": "finite",
-          "brier": 0.9008990228078023
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "1a1b2f00bf58afc9806cdca9d4526ffd36a2e036b107360fa04f02c3f11e3371",
-      "recordedAt": "2026-09-12T15:32:32.762Z",
-      "payload": {
-        "predictionId": "79d9db444a9aab4d7b952856dbd05726ea61dd3fb5587104d7fcb7c887988542",
-        "resultId": "d79aeeda6d01b62187ae093e334e407b55a163e12adbf92e0c55932b6724b135",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.6005568656062141,
-          "logLossStatus": "finite",
-          "brier": 1.0486750746160887
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "d436dc8b66f16e719ed658b0f0c454fbfd1a51bff64f922da2b5f8843dd1e6c2",
-      "recordedAt": "2026-09-12T15:32:32.751Z",
-      "payload": {
-        "predictionId": "78b1b4d340439e1ad075a8ace24455436f1db591875a02d1044a83f1b991c916",
-        "resultId": "563d3898b8550d1b5f92e50d4639510833aff72289b4ca22def85364f4f2e877",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "H",
-          "logLoss": 1.0986122886681098,
-          "logLossStatus": "finite",
-          "brier": 0.6666666666666667
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "bf8a9ace29a4ae3a9121565cba2e3810184d1b29cc32193e1d1dfb5ae2628e97",
-      "recordedAt": "2026-09-12T15:32:32.741Z",
-      "payload": {
-        "predictionId": "74b639f188c7d749dbe91baf50f084871286292a89854f10bbfe231a9ae9fd44",
-        "resultId": "d43272e8b174bce25b3035b664619c940bd1500f32b6bccea9b15d0e015b3e11",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.8052262441335486,
-          "logLossStatus": "finite",
-          "brier": 0.46105171785457266
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "cc67488bf1e425b5094485d515502d6cdc952e3ee00ff5e28a7744c4e927857e",
-      "recordedAt": "2026-09-12T15:32:32.736Z",
-      "payload": {
-        "predictionId": "7384af5c125e5995b03eff515bb0e3daa16a6d5eecca0818919b10fe59aeffc7",
-        "resultId": "b487f8922159da9dafc7298181c49307094afd632311319d1b187e50c360c9cd",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "D",
-          "logLoss": 1.0986122886681098,
-          "logLossStatus": "finite",
-          "brier": 0.6666666666666667
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "5dd41dfff689665e0a324f726b7e5031bbe9235695c3c6a25a5e6409baf12b57",
-      "recordedAt": "2026-09-12T15:32:32.733Z",
-      "payload": {
-        "predictionId": "6f39e7b11b5958811d9f827eeab6ee79237dd886fec4df095e56593f905434dd",
-        "resultId": "096aa595442fd85c6d504eeda97236a2b652789ecf8736beab272bac1bc04486",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 1.1658204492250601,
-          "logLossStatus": "finite",
-          "brier": 0.7260534230239953
-        },
-        "paper": null,
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "afd764248d58f8b5049bd4e3383f25664ad1c4bab966aae968666f66e8deb86d",
-      "recordedAt": "2026-09-12T15:32:32.730Z",
-      "payload": {
-        "predictionId": "6eedc5e5fdc574ae7cd6c874538890b44ba8fbd48f7061a7911ab9c4dc8b77e0",
-        "resultId": "07e832034d2d33722eef9a666426ca944e75b6880f946613d73ba77d1b8497cd",
-        "status": "settled_paper_assumption",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 1.3033954917655366,
-          "logLossStatus": "finite",
-          "brier": 0.8173227852956749
-        },
-        "paper": {
-          "stake": 2,
-          "profit": -2,
-          "randomExpectedProfit": -0.9066666666666667,
-          "marketExpectedProfit": -0.2291936052448913,
-          "baselineMethod": "same_stake_expected_profit_of_random_or_normalized_implied_odds_selection",
-          "execution": "paper_only",
-          "profitKind": "exact_expected_profit_of_single_randomized_selection",
-          "selectionWeights": [
-            1,
-            0,
-            0
-          ],
-          "selectionInterpretation": "One hypothetical whole-stake choice drawn from H/D/A weights; expectation over choice, not split stakes or an actual order.",
-          "ruleAssumption": {
-            "id": "fixed-decimal-1x2-paper-v1",
-            "market": "1X2_REGULATION",
-            "currency": "CNY",
-            "fixedStake": 2,
-            "description": "One hypothetical 2 yuan selection at observed fixed decimal odds; mathematical paper payoff only, not verified official settlement or actual/redeemable earnings.",
-            "officialSettlement": false,
-            "actualOrder": false,
-            "redeemable": false
-          }
-        },
-        "ruleVerification": {
-          "verified": false
-        }
-      }
-    },
-    {
-      "schemaVersion": 1,
-      "id": "bc12dd1e53dd42430c4ca6b27bb45da2ed9cbfe91a27528da0d873e607aa9084",
-      "recordedAt": "2026-09-12T15:32:32.725Z",
-      "payload": {
-        "predictionId": "66391f95d6cfc506868dff06745596256b160c3bd8a50b292e9a67e89b47cc27",
-        "resultId": "07e832034d2d33722eef9a666426ca944e75b6880f946613d73ba77d1b8497cd",
-        "status": "scored_no_trade",
-        "scoring": {
-          "outcome": "A",
-          "logLoss": 0.5635936815137748,
-          "logLossStatus": "finite",
-          "brier": 0.27879099350795544
+          "brier": 0.05129153372147357
         },
         "paper": null,
         "ruleVerification": {
@@ -409395,7 +409307,7 @@
   ],
   "ruleWatch": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-13T02:31:21.495Z",
+    "generatedAt": "2026-09-13T10:31:44.101Z",
     "status": "needs_review",
     "sourceCount": 11,
     "failedCount": 0,

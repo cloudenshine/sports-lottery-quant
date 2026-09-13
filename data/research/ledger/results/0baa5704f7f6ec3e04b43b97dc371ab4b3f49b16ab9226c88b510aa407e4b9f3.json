@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "0baa5704f7f6ec3e04b43b97dc371ab4b3f49b16ab9226c88b510aa407e4b9f3",
+  "recordedAt": "2026-09-13T10:31:43.235Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1415929",
+      "kickoffAt": "2026-09-12T18:00:00.000Z",
+      "homeTeam": "福图纳",
+      "awayTeam": "阿贾克斯",
+      "competition": "荷甲",
+      "odds": {
+        "home": 6.6,
+        "draw": 5.1,
+        "away": 1.28
+      },
+      "sourceEventId": "1415929",
+      "homeGoals": 1,
+      "awayGoals": 5,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

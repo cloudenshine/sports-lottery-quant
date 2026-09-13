@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ca529585548c9bad8fbf8cff276fbc6eb7753bf3ec43f1df0e56130778a3a61d",
+  "recordedAt": "2026-09-13T10:31:43.094Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1420410",
+      "kickoffAt": "2026-09-12T14:00:00.000Z",
+      "homeTeam": "利物浦",
+      "awayTeam": "富勒姆",
+      "competition": "英超",
+      "odds": {
+        "home": 1.37,
+        "draw": 4.5,
+        "away": 5.7
+      },
+      "sourceEventId": "1420410",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

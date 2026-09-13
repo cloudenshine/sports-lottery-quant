@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "923eb6f1671a19b40ed1a26132202086bbea0c5f1d65f6a0525ae38ae26c3b4d",
+  "recordedAt": "2026-09-13T10:31:43.137Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1364311",
+      "kickoffAt": "2026-09-12T16:00:00.000Z",
+      "homeTeam": "罗森博格",
+      "awayTeam": "特罗姆瑟",
+      "competition": "挪超",
+      "odds": {
+        "home": 1.48,
+        "draw": 4.1,
+        "away": 4.76
+      },
+      "sourceEventId": "1364311",
+      "homeGoals": 5,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

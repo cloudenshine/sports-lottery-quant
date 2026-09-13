@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "4033d4f61a49f8ae3e062c1fedc827c0a95420f6d04ff42617bdb1f1e703a5e6",
+  "recordedAt": "2026-09-13T10:31:43.160Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1420417",
+      "kickoffAt": "2026-09-12T16:30:00.000Z",
+      "homeTeam": "热刺",
+      "awayTeam": "埃弗顿",
+      "competition": "英超",
+      "odds": {
+        "home": 1.82,
+        "draw": 3.4,
+        "away": 3.5
+      },
+      "sourceEventId": "1420417",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

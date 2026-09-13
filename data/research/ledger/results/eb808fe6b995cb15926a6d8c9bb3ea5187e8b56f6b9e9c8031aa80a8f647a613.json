@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "eb808fe6b995cb15926a6d8c9bb3ea5187e8b56f6b9e9c8031aa80a8f647a613",
+  "recordedAt": "2026-09-13T10:31:43.208Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1438105",
+      "kickoffAt": "2026-09-12T17:00:00.000Z",
+      "homeTeam": "卡萨皮亚",
+      "awayTeam": "波尔图",
+      "competition": "葡超",
+      "odds": {
+        "home": 15,
+        "draw": 6.5,
+        "away": 1.1
+      },
+      "sourceEventId": "1438105",
+      "homeGoals": 1,
+      "awayGoals": 4,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

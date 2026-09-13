@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "c801be42adaea86e4bbf25f977c8ba21b9216fe26035f3928b9c1dbe57f39ebc",
+  "recordedAt": "2026-09-13T10:31:43.128Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1467731",
+      "kickoffAt": "2026-09-12T15:50:00.000Z",
+      "homeTeam": "布赖代合作",
+      "awayTeam": "利雅得新月",
+      "competition": "沙特职业联赛",
+      "odds": {
+        "home": 9.4,
+        "draw": 5.95,
+        "away": 1.17
+      },
+      "sourceEventId": "1467731",
+      "homeGoals": 0,
+      "awayGoals": 6,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

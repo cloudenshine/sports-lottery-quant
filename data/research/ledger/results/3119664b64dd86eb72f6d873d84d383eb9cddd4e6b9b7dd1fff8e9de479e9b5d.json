@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "3119664b64dd86eb72f6d873d84d383eb9cddd4e6b9b7dd1fff8e9de479e9b5d",
+  "recordedAt": "2026-09-13T10:31:43.004Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1428483",
+      "kickoffAt": "2026-09-12T13:30:00.000Z",
+      "homeTeam": "多特蒙德",
+      "awayTeam": "帕德博恩",
+      "competition": "德甲",
+      "odds": {
+        "home": 1.14,
+        "draw": 6.55,
+        "away": 10
+      },
+      "sourceEventId": "1428483",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}

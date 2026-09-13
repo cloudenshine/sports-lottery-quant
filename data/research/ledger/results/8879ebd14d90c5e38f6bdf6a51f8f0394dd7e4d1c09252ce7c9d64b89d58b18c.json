@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "8879ebd14d90c5e38f6bdf6a51f8f0394dd7e4d1c09252ce7c9d64b89d58b18c",
+  "recordedAt": "2026-09-13T10:31:43.085Z",
+  "payload": {
+    "match": {
+      "eventId": "500:1420407",
+      "kickoffAt": "2026-09-12T14:00:00.000Z",
+      "homeTeam": "水晶宫",
+      "awayTeam": "伊普斯",
+      "competition": "英超",
+      "odds": {
+        "home": 1.89,
+        "draw": 3.3,
+        "away": 3.36
+      },
+      "sourceEventId": "1420407",
+      "homeGoals": 2,
+      "awayGoals": 3,
+      "status": "finished"
+    },
+    "source": {
+      "sourceId": "500-jingcai-results-1",
+      "sourceUrl": "https://trade.500.com/jczq/?date=2026-09-12",
+      "fetchedAt": "2026-09-13T10:31:37.596Z",
+      "bodySha256": "d3c2e26a842c87ec65fa667e7c15e3609dc27ed7cf49d4205a175dd61b1da1bb"
+    },
+    "observedAt": "2026-09-13T10:31:37.596Z",
+    "revisionReason": null
+  }
+}
