@@ -2,97 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-15T15:09:01.137Z",
-  "displayTime": "2026/9/15 23:09:01",
-  "jingcaiCount": 17,
+  "syncedAt": "2026-09-15T17:39:55.342Z",
+  "displayTime": "2026/9/16 01:39:55",
+  "jingcaiCount": 15,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1473875",
-      "matchNum": "周二006",
-      "matchDate": "2026-09-16",
-      "kickoffTime": "00:00",
-      "kickoffAt": "2026-09-15T16:00:00.000Z",
-      "league": "亚冠",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "艾因",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "利雅得胜利",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.65,
-          "1": 3.9,
-          "3": 3.75
-        },
-        "RQSPF": {
-          "0": 2.88,
-          "1": 3.75,
-          "3": 1.94,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1428039",
-      "matchNum": "周二007",
-      "matchDate": "2026-09-16",
-      "kickoffTime": "01:00",
-      "kickoffAt": "2026-09-15T17:00:00.000Z",
-      "league": "西甲",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "巴列卡诺",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "西班牙人",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.85,
-          "1": 3.05,
-          "3": 2.22
-        },
-        "RQSPF": {
-          "0": 1.49,
-          "1": 3.95,
-          "3": 4.88,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1428026",
       "matchNum": "周二008",
