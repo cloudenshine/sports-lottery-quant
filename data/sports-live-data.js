@@ -2,48 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-19T16:59:15.891Z",
-  "displayTime": "2026/9/20 00:59:15",
-  "jingcaiCount": 37,
+  "syncedAt": "2026-09-19T18:09:04.821Z",
+  "displayTime": "2026/9/20 02:09:04",
+  "jingcaiCount": 36,
   "sfcCount": 14,
   "jingcai": [
-    {
-      "id": "LIVE_1415947",
-      "matchNum": "周六024",
-      "matchDate": "2026-09-20",
-      "kickoffTime": "02:00",
-      "kickoffAt": "2026-09-19T18:00:00.000Z",
-      "league": "荷甲",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "阿贾克斯",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "SBV精英",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "RQSPF": {
-          "0": 2.35,
-          "1": 4.3,
-          "3": 2.12,
-          "handicap": -2
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1414213",
       "matchNum": "周六025",

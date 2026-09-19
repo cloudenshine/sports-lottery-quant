@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T16:59:15.891Z",
+  "generatedAt": "2026-09-19T18:09:04.821Z",
   "status": "ok",
   "steps": [
     {
@@ -31,7 +31,7 @@
         "jingcai": null,
         "sfc": null
       },
-      "jingcaiCount": 37,
+      "jingcaiCount": 36,
       "sfcCount": 14
     },
     {
