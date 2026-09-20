@@ -2,54 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-20T17:15:10.747Z",
-  "displayTime": "2026/9/21 01:15:10",
-  "jingcaiCount": 7,
+  "syncedAt": "2026-09-20T18:14:46.054Z",
+  "displayTime": "2026/9/21 02:14:46",
+  "jingcaiCount": 6,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1428519",
-      "matchNum": "周日025",
-      "matchDate": "2026-09-21",
-      "kickoffTime": "01:30",
-      "kickoffAt": "2026-09-20T17:30:00.000Z",
-      "league": "德甲",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "帕德博恩",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "霍芬海姆",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.52,
-          "1": 4.15,
-          "3": 4.33
-        },
-        "RQSPF": {
-          "0": 2.54,
-          "1": 3.7,
-          "3": 2.15,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1414251",
       "matchNum": "周日026",
