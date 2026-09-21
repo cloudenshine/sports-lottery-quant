@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-20T18:14:46.054Z",
+  "generatedAt": "2026-09-21T08:06:44.039Z",
   "status": "degraded",
   "steps": [
     {
@@ -31,7 +31,7 @@
         "jingcai": null,
         "sfc": "Invalid SFC fixture 1"
       },
-      "jingcaiCount": 6,
+      "jingcaiCount": 3,
       "sfcCount": 0
     },
     {
