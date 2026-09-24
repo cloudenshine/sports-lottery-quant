@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T07:43:42.445Z",
+  "generatedAt": "2026-09-24T15:22:02.634Z",
   "status": "degraded",
   "steps": [
     {
@@ -31,7 +31,7 @@
         "jingcai": null,
         "sfc": "Invalid SFC fixture 1"
       },
-      "jingcaiCount": 21,
+      "jingcaiCount": 18,
       "sfcCount": 0
     },
     {
@@ -39,7 +39,7 @@
       "status": "degraded",
       "games": {
         "ssq": {
-          "draws": 563,
+          "draws": 564,
           "status": "ok"
         },
         "dlt": {
