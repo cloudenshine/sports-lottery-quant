@@ -2,355 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-26T07:55:06.291Z",
-  "displayTime": "2026/9/26 15:55:06",
-  "jingcaiCount": 27,
+  "syncedAt": "2026-09-26T14:38:31.906Z",
+  "displayTime": "2026/9/26 22:38:31",
+  "jingcaiCount": 19,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1418960",
-      "matchNum": "周六002",
-      "matchDate": "2026-09-26",
-      "kickoffTime": "16:00",
-      "kickoffAt": "2026-09-26T08:00:00.000Z",
-      "league": "日乙",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "磐城FC",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "仙台七夕",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.72,
-          "1": 3.55,
-          "3": 3.75
-        },
-        "RQSPF": {
-          "0": 3.3,
-          "1": 3.4,
-          "3": 1.88,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1419124",
-      "matchNum": "周六003",
-      "matchDate": "2026-09-26",
-      "kickoffTime": "16:00",
-      "kickoffAt": "2026-09-26T08:00:00.000Z",
-      "league": "日乙",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "富山胜利",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "横滨FC",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.3,
-          "1": 3.38,
-          "3": 2.51
-        },
-        "RQSPF": {
-          "0": 4.9,
-          "1": 4,
-          "3": 1.48,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1419090",
-      "matchNum": "周六004",
-      "matchDate": "2026-09-26",
-      "kickoffTime": "16:00",
-      "kickoffAt": "2026-09-26T08:00:00.000Z",
-      "league": "日乙",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "秋田闪电",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "新潟天鹅",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.85,
-          "1": 3,
-          "3": 2.25
-        },
-        "RQSPF": {
-          "0": 1.5,
-          "1": 3.8,
-          "3": 5,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1419109",
-      "matchNum": "周六005",
-      "matchDate": "2026-09-26",
-      "kickoffTime": "16:00",
-      "kickoffAt": "2026-09-26T08:00:00.000Z",
-      "league": "日乙",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "大宫松鼠RB",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "甲府风林",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 5.5,
-          "1": 4.2,
-          "3": 1.41
-        },
-        "RQSPF": {
-          "0": 2.41,
-          "1": 3.2,
-          "3": 2.5,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1418928",
-      "matchNum": "周六006",
-      "matchDate": "2026-09-26",
-      "kickoffTime": "16:00",
-      "kickoffAt": "2026-09-26T08:00:00.000Z",
-      "league": "日乙",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "大分三神",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "藤枝MYFC",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.78,
-          "1": 2.75,
-          "3": 2.46
-        },
-        "RQSPF": {
-          "0": 1.4,
-          "1": 4.1,
-          "3": 5.85,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1495381",
-      "matchNum": "周六007",
-      "matchDate": "2026-09-26",
-      "kickoffTime": "18:30",
-      "kickoffAt": "2026-09-26T10:30:00.000Z",
-      "league": "亚运男足",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "日本亚",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "朝鲜亚运男足",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 15,
-          "1": 6.5,
-          "3": 1.1
-        },
-        "RQSPF": {
-          "0": 4.7,
-          "1": 4.4,
-          "3": 1.45,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1398469",
-      "matchNum": "周六008",
-      "matchDate": "2026-09-26",
-      "kickoffTime": "21:00",
-      "kickoffAt": "2026-09-26T13:00:00.000Z",
-      "league": "欧国联",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "斯洛文尼",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "苏格兰",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.74,
-          "1": 3,
-          "3": 2.32
-        },
-        "RQSPF": {
-          "0": 1.45,
-          "1": 4,
-          "3": 5.3,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1415980",
-      "matchNum": "周六009",
-      "matchDate": "2026-09-26",
-      "kickoffTime": "22:30",
-      "kickoffAt": "2026-09-26T14:30:00.000Z",
-      "league": "荷乙",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "赫拉克勒",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "维迪斯",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 4.88,
-          "1": 4.75,
-          "3": 1.4
-        },
-        "RQSPF": {
-          "0": 2.44,
-          "1": 3.72,
-          "3": 2.22,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1398470",
       "matchNum": "周六010",
@@ -373,13 +29,13 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 3.38,
-          "1": 2.85,
-          "3": 2.07
+          "0": 3.5,
+          "1": 2.95,
+          "3": 1.98
         },
         "RQSPF": {
-          "0": 1.58,
-          "1": 3.5,
+          "0": 1.62,
+          "1": 3.32,
           "3": 4.75,
           "handicap": -1
         }
@@ -416,14 +72,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 10,
-          "1": 5.5,
-          "3": 1.18
+          "0": 11.5,
+          "1": 5.8,
+          "3": 1.15
         },
         "RQSPF": {
-          "0": 3.8,
-          "1": 3.9,
-          "3": 1.64,
+          "0": 4,
+          "1": 4,
+          "3": 1.59,
           "handicap": -1
         }
       },
@@ -459,14 +115,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 3.05,
-          "1": 2.85,
-          "3": 2.22
+          "0": 3.55,
+          "1": 2.65,
+          "3": 2.13
         },
         "RQSPF": {
-          "0": 1.51,
-          "1": 3.72,
-          "3": 5.05,
+          "0": 1.53,
+          "1": 3.57,
+          "3": 5.12,
           "handicap": -1
         }
       },
@@ -502,14 +158,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.7,
-          "1": 3.4,
-          "3": 2.15
+          "0": 2.8,
+          "1": 3.18,
+          "3": 2.19
         },
         "RQSPF": {
-          "0": 1.53,
-          "1": 4,
-          "3": 4.45,
+          "0": 1.51,
+          "1": 4.05,
+          "3": 4.55,
           "handicap": -1
         }
       },
@@ -545,14 +201,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 1.87,
-          "1": 3.28,
-          "3": 3.45
+          "0": 1.74,
+          "1": 3.45,
+          "3": 3.78
         },
         "RQSPF": {
           "0": 3.85,
-          "1": 3.55,
-          "3": 1.7,
+          "1": 3.12,
+          "3": 1.82,
           "handicap": 1
         }
       },
@@ -588,14 +244,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 1.28,
-          "1": 4.75,
-          "3": 7.25
+          "0": 1.23,
+          "1": 4.95,
+          "3": 8.75
         },
         "RQSPF": {
-          "0": 1.98,
-          "1": 3.55,
-          "3": 2.92,
+          "0": 1.8,
+          "1": 3.65,
+          "3": 3.33,
           "handicap": 1
         }
       },
@@ -631,14 +287,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 1.94,
-          "1": 3.35,
-          "3": 3.17
+          "0": 1.83,
+          "1": 3.4,
+          "3": 3.46
         },
         "RQSPF": {
-          "0": 3.9,
-          "1": 3.75,
-          "3": 1.65,
+          "0": 3.75,
+          "1": 3.43,
+          "3": 1.75,
           "handicap": 1
         }
       },
@@ -674,14 +330,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 5.83,
-          "1": 4.1,
-          "3": 1.4
+          "0": 7.3,
+          "1": 4.6,
+          "3": 1.29
         },
         "RQSPF": {
-          "0": 2.5,
-          "1": 3.35,
-          "3": 2.32,
+          "0": 2.87,
+          "1": 3.44,
+          "3": 2.04,
           "handicap": -1
         }
       },
@@ -717,14 +373,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 4.15,
-          "1": 3.42,
-          "3": 1.68
+          "0": 4.6,
+          "1": 3.7,
+          "3": 1.56
         },
         "RQSPF": {
-          "0": 1.94,
-          "1": 3.38,
-          "3": 3.15,
+          "0": 2.07,
+          "1": 3.15,
+          "3": 3.04,
           "handicap": -1
         }
       },
@@ -760,14 +416,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 1.85,
-          "1": 3.75,
-          "3": 3.1
+          "0": 1.65,
+          "1": 4.05,
+          "3": 3.62
         },
         "RQSPF": {
-          "0": 3.43,
-          "1": 3.8,
-          "3": 1.74,
+          "0": 2.95,
+          "1": 3.65,
+          "3": 1.94,
           "handicap": 1
         }
       },
@@ -803,14 +459,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 4.7,
-          "1": 4.6,
-          "3": 1.43
+          "0": 5.45,
+          "1": 5.15,
+          "3": 1.33
         },
         "RQSPF": {
-          "0": 2.42,
-          "1": 3.85,
-          "3": 2.19,
+          "0": 2.75,
+          "1": 3.95,
+          "3": 1.95,
           "handicap": -1
         }
       },
@@ -846,13 +502,13 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.85,
-          "1": 3.45,
+          "0": 2.95,
+          "1": 3.3,
           "3": 2.05
         },
         "RQSPF": {
-          "0": 1.59,
-          "1": 3.85,
+          "0": 1.6,
+          "1": 3.75,
           "3": 4.2,
           "handicap": -1
         }
@@ -895,8 +551,8 @@ window.SPORTS_LIVE = {
         },
         "RQSPF": {
           "0": 2.92,
-          "1": 3.83,
-          "3": 1.9,
+          "1": 3.96,
+          "3": 1.87,
           "handicap": -1
         }
       },
@@ -932,14 +588,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.4,
+          "0": 2.57,
           "1": 3.5,
-          "3": 2.34
+          "3": 2.2
         },
         "RQSPF": {
-          "0": 1.45,
-          "1": 4.3,
-          "3": 4.82,
+          "0": 1.5,
+          "1": 4.15,
+          "3": 4.5,
           "handicap": -1
         }
       },
@@ -975,14 +631,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 3.07,
-          "1": 3.8,
-          "3": 1.85
+          "0": 3.15,
+          "1": 3.85,
+          "3": 1.81
         },
         "RQSPF": {
-          "0": 1.73,
-          "1": 3.92,
-          "3": 3.38,
+          "0": 1.76,
+          "1": 3.85,
+          "3": 3.32,
           "handicap": -1
         }
       },
@@ -1018,14 +674,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.88,
-          "1": 3.52,
-          "3": 2.01
+          "0": 2.94,
+          "1": 3.55,
+          "3": 1.97
         },
         "RQSPF": {
-          "0": 1.62,
+          "0": 1.64,
           "1": 3.8,
-          "3": 4.02,
+          "3": 3.9,
           "handicap": -1
         }
       },
