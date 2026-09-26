@@ -2,54 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-26T17:35:13.640Z",
-  "displayTime": "2026/9/27 01:35:13",
-  "jingcaiCount": 16,
+  "syncedAt": "2026-09-26T18:40:05.948Z",
+  "displayTime": "2026/9/27 02:40:05",
+  "jingcaiCount": 15,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1415990",
-      "matchNum": "周六013",
-      "matchDate": "2026-09-27",
-      "kickoffTime": "02:00",
-      "kickoffAt": "2026-09-26T18:00:00.000Z",
-      "league": "荷乙",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "罗达JC",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "瓦尔韦克",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.8,
-          "1": 3.18,
-          "3": 2.19
-        },
-        "RQSPF": {
-          "0": 1.51,
-          "1": 4.05,
-          "3": 4.55,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1398455",
       "matchNum": "周六014",
