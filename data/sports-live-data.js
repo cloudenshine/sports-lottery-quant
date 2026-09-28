@@ -2,8 +2,8 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-09-28T20:06:41.374Z",
-  "displayTime": "2026/9/29 04:06:41",
+  "syncedAt": "2026-09-28T20:21:14.041Z",
+  "displayTime": "2026/9/29 04:21:14",
   "jingcaiCount": 2,
   "sfcCount": 0,
   "jingcai": [
