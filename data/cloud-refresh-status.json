@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T08:50:11.961Z",
+  "generatedAt": "2026-09-30T16:27:52.647Z",
   "status": "degraded",
   "steps": [
     {
       "id": "sports",
       "status": "failed",
-      "error": "All sports sources failed: read ETIMEDOUT"
+      "error": "All sports sources failed: No recognized match rows; preserve the last snapshot"
     },
     {
       "id": "numbers",
@@ -17,7 +17,7 @@
           "status": "ok"
         },
         "dlt": {
-          "draws": 563,
+          "draws": 564,
           "status": "degraded"
         }
       }
