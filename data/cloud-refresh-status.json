@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T08:38:25.885Z",
+  "generatedAt": "2026-10-04T15:27:11.486Z",
   "status": "degraded",
   "steps": [
     {
       "id": "sports",
       "status": "failed",
-      "error": "All sports sources failed: Request timed out: https://trade.500.com/jczq/"
+      "error": "All sports sources failed: No recognized match rows; preserve the last snapshot"
     },
     {
       "id": "numbers",
