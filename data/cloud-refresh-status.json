@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T17:29:45.259Z",
+  "generatedAt": "2026-10-07T19:19:28.441Z",
   "status": "degraded",
   "steps": [
     {
       "id": "sports",
       "status": "failed",
-      "error": "All sports sources failed: Request timed out: https://trade.500.com/jczq/"
+      "error": "All sports sources failed: Incomplete fixture identity"
     },
     {
       "id": "numbers",
