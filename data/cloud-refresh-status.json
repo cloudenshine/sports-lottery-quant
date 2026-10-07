@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T09:02:38.499Z",
+  "generatedAt": "2026-10-07T17:29:45.259Z",
   "status": "degraded",
   "steps": [
     {
       "id": "sports",
       "status": "failed",
-      "error": "All sports sources failed: Incomplete fixture identity"
+      "error": "All sports sources failed: Request timed out: https://trade.500.com/jczq/"
     },
     {
       "id": "numbers",
@@ -17,7 +17,7 @@
           "status": "ok"
         },
         "dlt": {
-          "draws": 565,
+          "draws": 566,
           "status": "ok"
         }
       }
