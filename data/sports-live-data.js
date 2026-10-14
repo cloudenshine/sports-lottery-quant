@@ -2,97 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-10-14T15:19:53.885Z",
-  "displayTime": "2026/10/14 23:19:53",
-  "jingcaiCount": 10,
+  "syncedAt": "2026-10-14T17:59:34.540Z",
+  "displayTime": "2026/10/15 01:59:34",
+  "jingcaiCount": 8,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1479966",
-      "matchNum": "周三005",
-      "matchDate": "2026-10-15",
-      "kickoffTime": "00:45",
-      "kickoffAt": "2026-10-14T16:45:00.000Z",
-      "league": "欧冠",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "费耶诺德",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "科莫",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.87,
-          "1": 3.75,
-          "3": 3.05
-        },
-        "RQSPF": {
-          "0": 3.45,
-          "1": 4,
-          "3": 1.7,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1479984",
-      "matchNum": "周三006",
-      "matchDate": "2026-10-15",
-      "kickoffTime": "00:45",
-      "kickoffAt": "2026-10-14T16:45:00.000Z",
-      "league": "欧冠",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "LASK林茨",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "利物浦",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.22,
-          "1": 5.4,
-          "3": 8
-        },
-        "RQSPF": {
-          "0": 1.76,
-          "1": 3.9,
-          "3": 3.28,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1425722",
       "matchNum": "周三007",
