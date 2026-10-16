@@ -1,38 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T19:18:05.124Z",
+  "generatedAt": "2026-10-16T07:24:49.522Z",
   "status": "degraded",
   "steps": [
     {
       "id": "sports",
-      "status": "degraded",
-      "sourceStatus": {
-        "status": "partial",
-        "jingcai": {
-          "status": "ok",
-          "error": null
-        },
-        "sfc": {
-          "status": "failed",
-          "error": "Invalid SFC fixture 4"
-        },
-        "markets": {
-          "jingcai": {
-            "status": "ok",
-            "error": null
-          },
-          "sfc": {
-            "status": "failed",
-            "error": "Invalid SFC fixture 4"
-          }
-        }
-      },
-      "sourceErrors": {
-        "jingcai": null,
-        "sfc": "Invalid SFC fixture 4"
-      },
-      "jingcaiCount": 12,
-      "sfcCount": 0
+      "status": "failed",
+      "error": "All sports sources failed: Incomplete fixture identity"
     },
     {
       "id": "numbers",
