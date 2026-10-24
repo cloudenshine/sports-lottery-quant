@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T07:30:19.330Z",
+  "generatedAt": "2026-10-24T14:03:57.188Z",
   "status": "degraded",
   "steps": [
     {
       "id": "sports",
-      "status": "ok",
+      "status": "degraded",
       "sourceStatus": {
-        "status": "ok",
+        "status": "partial",
         "jingcai": {
           "status": "ok",
           "error": null
         },
         "sfc": {
-          "status": "ok",
-          "error": null
+          "status": "failed",
+          "error": "Invalid SFC fixture 14"
         },
         "markets": {
           "jingcai": {
@@ -22,17 +22,17 @@
             "error": null
           },
           "sfc": {
-            "status": "ok",
-            "error": null
+            "status": "failed",
+            "error": "Invalid SFC fixture 14"
           }
         }
       },
       "sourceErrors": {
         "jingcai": null,
-        "sfc": null
+        "sfc": "Invalid SFC fixture 14"
       },
-      "jingcaiCount": 59,
-      "sfcCount": 14
+      "jingcaiCount": 45,
+      "sfcCount": 0
     },
     {
       "id": "numbers",
@@ -43,7 +43,7 @@
           "status": "ok"
         },
         "dlt": {
-          "draws": 572,
+          "draws": 573,
           "status": "degraded"
         }
       }
