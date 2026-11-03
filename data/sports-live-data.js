@@ -2,140 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-11-03T09:49:08.841Z",
-  "displayTime": "2026/11/3 17:49:08",
-  "jingcaiCount": 20,
+  "syncedAt": "2026-11-03T17:58:10.153Z",
+  "displayTime": "2026/11/4 01:58:10",
+  "jingcaiCount": 17,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1474001",
-      "matchNum": "周二002",
-      "matchDate": "2026-11-03",
-      "kickoffTime": "18:00",
-      "kickoffAt": "2026-11-03T10:00:00.000Z",
-      "league": "亚冠",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "柏太阳神",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "大田市民",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 7.3,
-          "1": 4.65,
-          "3": 1.27
-        },
-        "RQSPF": {
-          "0": 2.93,
-          "1": 3.35,
-          "3": 2,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1473915",
-      "matchNum": "周二003",
-      "matchDate": "2026-11-03",
-      "kickoffTime": "20:15",
-      "kickoffAt": "2026-11-03T12:15:00.000Z",
-      "league": "亚冠",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "曼谷港务",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "北京国安",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.62,
-          "1": 3.95,
-          "3": 3.72
-        },
-        "RQSPF": {
-          "0": 2.86,
-          "1": 3.55,
-          "3": 1.97,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1479974",
-      "matchNum": "周二004",
-      "matchDate": "2026-11-04",
-      "kickoffTime": "01:45",
-      "kickoffAt": "2026-11-03T17:45:00.000Z",
-      "league": "欧冠",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "加拉塔萨",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "斯图加特",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.87,
-          "1": 3.95,
-          "3": 1.86
-        },
-        "RQSPF": {
-          "0": 1.68,
-          "1": 3.85,
-          "3": 3.52,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1479886",
       "matchNum": "周二005",
@@ -287,14 +158,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.3,
-          "1": 3.96,
+          "0": 2.26,
+          "1": 4.1,
           "3": 2.21
         },
         "RQSPF": {
-          "0": 1.48,
-          "1": 4.3,
-          "3": 4.32,
+          "0": 1.47,
+          "1": 4.35,
+          "3": 4.36,
           "handicap": -1
         }
       },
@@ -416,14 +287,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 4.55,
-          "1": 4.35,
-          "3": 1.45
+          "0": 4.7,
+          "1": 4.5,
+          "3": 1.42
         },
         "RQSPF": {
-          "0": 2.25,
-          "1": 3.8,
-          "3": 2.32,
+          "0": 2.34,
+          "1": 3.65,
+          "3": 2.28,
           "handicap": -1
         }
       },
@@ -877,7 +748,7 @@ window.SPORTS_LIVE = {
     },
     "sfc": {
       "status": "failed",
-      "error": "Invalid SFC fixture 9"
+      "error": "Invalid SFC fixture 11"
     },
     "markets": {
       "jingcai": {
@@ -886,12 +757,12 @@ window.SPORTS_LIVE = {
       },
       "sfc": {
         "status": "failed",
-        "error": "Invalid SFC fixture 9"
+        "error": "Invalid SFC fixture 11"
       }
     }
   },
   "sourceErrors": {
     "jingcai": null,
-    "sfc": "Invalid SFC fixture 9"
+    "sfc": "Invalid SFC fixture 11"
   }
 };
