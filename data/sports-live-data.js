@@ -2,54 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-11-08T18:20:12.100Z",
-  "displayTime": "2026/11/9 02:20:12",
-  "jingcaiCount": 4,
+  "syncedAt": "2026-11-08T18:37:08.407Z",
+  "displayTime": "2026/11/9 02:37:08",
+  "jingcaiCount": 3,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1428637",
-      "matchNum": "周日027",
-      "matchDate": "2026-11-09",
-      "kickoffTime": "02:30",
-      "kickoffAt": "2026-11-08T18:30:00.000Z",
-      "league": "德甲",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "霍芬海姆",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "沙尔克04",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 5.3,
-          "1": 4.25,
-          "3": 1.4
-        },
-        "RQSPF": {
-          "0": 2.4,
-          "1": 3.65,
-          "3": 2.23,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1414197",
       "matchNum": "周日028",
