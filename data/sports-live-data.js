@@ -2,8 +2,8 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-11-09T10:02:29.520Z",
-  "displayTime": "2026/11/9 18:02:29",
+  "syncedAt": "2026-11-09T20:55:44.644Z",
+  "displayTime": "2026/11/10 04:55:44",
   "jingcaiCount": 4,
   "sfcCount": 0,
   "jingcai": [
@@ -29,14 +29,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.57,
-          "1": 3.38,
-          "3": 2.2
+          "0": 2.65,
+          "1": 3.3,
+          "3": 2.18
         },
         "RQSPF": {
-          "0": 1.5,
-          "1": 3.95,
-          "3": 4.55,
+          "0": 1.51,
+          "1": 3.85,
+          "3": 4.6,
           "handicap": -1
         }
       },
