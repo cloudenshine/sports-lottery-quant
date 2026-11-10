@@ -2,97 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-11-10T18:03:39.951Z",
-  "displayTime": "2026/11/11 02:03:39",
-  "jingcaiCount": 8,
+  "syncedAt": "2026-11-10T20:27:04.904Z",
+  "displayTime": "2026/11/11 04:27:04",
+  "jingcaiCount": 6,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1491201",
-      "matchNum": "周二001",
-      "matchDate": "2026-11-11",
-      "kickoffTime": "03:00",
-      "kickoffAt": "2026-11-10T19:00:00.000Z",
-      "league": "英锦标赛",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "伯顿",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "诺茨郡",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.69,
-          "1": 3.1,
-          "3": 2.25
-        },
-        "RQSPF": {
-          "0": 1.47,
-          "1": 3.72,
-          "3": 5.25,
-          "handicap": -1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
-    {
-      "id": "LIVE_1491190",
-      "matchNum": "周二002",
-      "matchDate": "2026-11-11",
-      "kickoffTime": "03:30",
-      "kickoffAt": "2026-11-10T19:30:00.000Z",
-      "league": "英锦标赛",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "布罗姆利",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "米尔顿",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 1.61,
-          "1": 3.9,
-          "3": 3.82
-        },
-        "RQSPF": {
-          "0": 2.98,
-          "1": 3.45,
-          "3": 1.95,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_2160693",
       "matchNum": "周三001",
