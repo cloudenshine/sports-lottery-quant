@@ -2,9 +2,9 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-11-09T23:15:12.141Z",
-  "displayTime": "2026/11/10 07:15:12",
-  "jingcaiCount": 4,
+  "syncedAt": "2026-11-10T10:12:21.768Z",
+  "displayTime": "2026/11/10 18:12:21",
+  "jingcaiCount": 8,
   "sfcCount": 0,
   "jingcai": [
     {
@@ -29,14 +29,14 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 2.65,
-          "1": 3.3,
-          "3": 2.18
+          "0": 2.58,
+          "1": 3.15,
+          "3": 2.3
         },
         "RQSPF": {
-          "0": 1.51,
+          "0": 1.45,
           "1": 3.85,
-          "3": 4.6,
+          "3": 5.25,
           "handicap": -1
         }
       },
@@ -72,15 +72,187 @@ window.SPORTS_LIVE = {
       "h2h": [],
       "odds": {
         "SPF": {
-          "0": 1.56,
-          "1": 3.92,
-          "3": 4.11
+          "0": 1.44,
+          "1": 4.35,
+          "3": 4.65
         },
         "RQSPF": {
-          "0": 2.64,
-          "1": 3.67,
-          "3": 2.05,
+          "0": 2.44,
+          "1": 3.4,
+          "3": 2.3,
           "handicap": 1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_2160693",
+      "matchNum": "周三001",
+      "matchDate": "2026-11-11",
+      "kickoffTime": "18:00",
+      "kickoffAt": "2026-11-11T10:00:00.000Z",
+      "league": "日联赛杯",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "横滨水手",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "鹿岛鹿角",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 2.04,
+          "1": 3.35,
+          "3": 2.85
+        },
+        "RQSPF": {
+          "0": 4.25,
+          "1": 3.75,
+          "3": 1.57,
+          "handicap": 1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_2160691",
+      "matchNum": "周三002",
+      "matchDate": "2026-11-11",
+      "kickoffTime": "18:00",
+      "kickoffAt": "2026-11-11T10:00:00.000Z",
+      "league": "日联赛杯",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "神户胜利",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "町田泽维",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 2.68,
+          "1": 3.12,
+          "3": 2.25
+        },
+        "RQSPF": {
+          "0": 1.47,
+          "1": 3.8,
+          "3": 5.1,
+          "handicap": -1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_2160689",
+      "matchNum": "周三003",
+      "matchDate": "2026-11-11",
+      "kickoffTime": "18:00",
+      "kickoffAt": "2026-11-11T10:00:00.000Z",
+      "league": "日联赛杯",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "川崎前锋",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "柏太阳神",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 2.21,
+          "1": 3.6,
+          "3": 2.45
+        },
+        "RQSPF": {
+          "0": 4.45,
+          "1": 4.2,
+          "3": 1.48,
+          "handicap": 1
+        }
+      },
+      "dataQuality": {
+        "source": "trade.500.com/jczq/",
+        "teamStatistics": "unavailable",
+        "salesStatus": "unverified",
+        "quotedMarkets": [
+          "SPF",
+          "RQSPF"
+        ]
+      }
+    },
+    {
+      "id": "LIVE_2160695",
+      "matchNum": "周三004",
+      "matchDate": "2026-11-11",
+      "kickoffTime": "18:30",
+      "kickoffAt": "2026-11-11T10:30:00.000Z",
+      "league": "日联赛杯",
+      "leagueColor": "#3b82f6",
+      "status": "来源快照，销售状态未核验",
+      "homeTeam": {
+        "name": "浦和红钻",
+        "rank": null,
+        "recentResults": []
+      },
+      "awayTeam": {
+        "name": "大阪樱花",
+        "rank": null,
+        "recentResults": []
+      },
+      "h2h": [],
+      "odds": {
+        "SPF": {
+          "0": 3.3,
+          "1": 3.6,
+          "3": 1.79
+        },
+        "RQSPF": {
+          "0": 1.76,
+          "1": 3.65,
+          "3": 3.37,
+          "handicap": -1
         }
       },
       "dataQuality": {
@@ -163,8 +335,8 @@ window.SPORTS_LIVE = {
           "3": 1.75
         },
         "RQSPF": {
-          "0": 1.79,
-          "1": 3.7,
+          "0": 1.82,
+          "1": 3.58,
           "3": 3.22,
           "handicap": -1
         }
