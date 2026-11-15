@@ -1,45 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T09:43:35.980Z",
+  "generatedAt": "2026-11-15T17:19:44.773Z",
   "status": "degraded",
   "steps": [
     {
       "id": "sports",
-      "status": "degraded",
-      "sourceStatus": {
-        "status": "partial",
-        "jingcai": {
-          "status": "ok",
-          "error": null
-        },
-        "sfc": {
-          "status": "failed",
-          "error": "Invalid SFC fixture 1"
-        },
-        "markets": {
-          "jingcai": {
-            "status": "ok",
-            "error": null
-          },
-          "sfc": {
-            "status": "failed",
-            "error": "Invalid SFC fixture 1"
-          }
-        }
-      },
-      "sourceErrors": {
-        "jingcai": null,
-        "sfc": "Invalid SFC fixture 1"
-      },
-      "jingcaiCount": 7,
-      "sfcCount": 0
+      "status": "failed",
+      "error": "All sports sources failed: Request timed out: https://trade.500.com/jczq/"
     },
     {
       "id": "numbers",
       "status": "degraded",
       "games": {
         "ssq": {
-          "draws": 583,
+          "draws": 584,
           "status": "ok"
         },
         "dlt": {
