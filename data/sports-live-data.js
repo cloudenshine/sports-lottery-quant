@@ -2,54 +2,11 @@ window.SPORTS_LIVE = {
   "schemaVersion": 2,
   "dataKind": "source-snapshot",
   "salesStatus": "unverified",
-  "syncedAt": "2026-11-19T21:57:04.528Z",
-  "displayTime": "2026/11/20 05:57:04",
-  "jingcaiCount": 12,
+  "syncedAt": "2026-11-19T22:43:24.831Z",
+  "displayTime": "2026/11/20 06:43:24",
+  "jingcaiCount": 11,
   "sfcCount": 0,
   "jingcai": [
-    {
-      "id": "LIVE_1362504",
-      "matchNum": "周四001",
-      "matchDate": "2026-11-20",
-      "kickoffTime": "06:30",
-      "kickoffAt": "2026-11-19T22:30:00.000Z",
-      "league": "巴甲",
-      "leagueColor": "#3b82f6",
-      "status": "来源快照，销售状态未核验",
-      "homeTeam": {
-        "name": "维多利亚",
-        "rank": null,
-        "recentResults": []
-      },
-      "awayTeam": {
-        "name": "布拉干蒂诺RB",
-        "rank": null,
-        "recentResults": []
-      },
-      "h2h": [],
-      "odds": {
-        "SPF": {
-          "0": 2.24,
-          "1": 3.1,
-          "3": 2.7
-        },
-        "RQSPF": {
-          "0": 4.85,
-          "1": 3.9,
-          "3": 1.48,
-          "handicap": 1
-        }
-      },
-      "dataQuality": {
-        "source": "trade.500.com/jczq/",
-        "teamStatistics": "unavailable",
-        "salesStatus": "unverified",
-        "quotedMarkets": [
-          "SPF",
-          "RQSPF"
-        ]
-      }
-    },
     {
       "id": "LIVE_1362571",
       "matchNum": "周四002",
